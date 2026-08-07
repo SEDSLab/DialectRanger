@@ -174,6 +174,7 @@ Detailed development plans are tracked in [TODO.md](TODO.md).
   year    = {2026},
   url     = {https://github.com/SmartFuzz/SmartFuzz}
 }
+```
 
 ---
 
