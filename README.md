@@ -1,13 +1,63 @@
 # DialectRanger
 
-**DialectRanger** is a DBMS knowledge infrastructure for collecting, structuring, and organizing dialect-specific knowledge from heterogeneous sources.
+**DialectRanger** is an intelligent testing platform for multi-dialect database systems. It aims to unify dialect-specific knowledge modeling, test-case generation, and automated validation across heterogeneous DBMSs.
 
-The system is designed around two complementary knowledge bases:
+At its foundation, DialectRanger is organized around two complementary knowledge bases:
 
-- **Feature Knowledge Base** — extracts structured DBMS feature knowledge from official documentation, including functions, operators, data types, syntax, semantics, examples, evidence, and provenance.
-- **Bug Knowledge Base** — organizes structured knowledge from historical DBMS bugs and crash-triggering inputs. **Under Development.**
+- **Feature Knowledge Base** — models what a DBMS supports and how its dialect features are used by extracting structured knowledge from official documentation, including functions, operators, data types, system_variable, syntax, and statement.
+- **Bug Knowledge Base** — models historical DBMS failures and bug-triggering behaviors from bug reports, crash-triggering inputs, and related evidence. **Under Development.**
 
-Together, the two knowledge bases aim to capture both **what a DBMS supports and how its features are used**, and **what feature behaviors or interactions have historically been associated with failures**, providing reusable knowledge for downstream database research and testing.
+Based on dialect-specific knowledge, our current work has explored two complementary DBMS fuzzing directions:
+
+- **SmartFuzz** — feature-guided seed synthesis for **mutation-based DBMS fuzzing**.
+- **FMU** — feature-aware adaptation for **generation-based DBMS fuzzers**.
+
+These two directions focus on how dialect knowledge can improve test-case generation and adapt existing fuzzing techniques to heterogeneous DBMSs.
+
+Looking forward, DialectRanger will further extend this knowledge-driven testing framework to support multiple validation strategies, including:
+
+- **Regression Testing** — replaying and validating known failures across DBMS versions.
+- **Differential Testing** — comparing behaviors across DBMSs to identify inconsistencies.
+- **Metamorphic Testing** — detecting semantic inconsistencies through metamorphic relations without requiring traditional test oracles.
+
+The long-term goal is to build an integrated multi-dialect database testing platform covering the complete workflow of:
+
+> **Knowledge Modeling → Test-Case Generation → Bug Discovery → Bug Knowledge Accumulation → Regression Validation**
+
+Together, these components form a complete testing loop:
+
+```text
+                  DialectRanger
+                       │
+          ┌────────────┴────────────┐
+          │                         │
+          ▼                         ▼
+ Feature Knowledge Base      Bug Knowledge Base
+          │                  (Under Development)
+          └────────────┬────────────┘
+                       ▼
+             Knowledge-Guided Testing
+                       │
+        ┌──────────────┼──────────────┐
+        │              │              │
+        ▼              ▼              ▼
+    SmartFuzz         FMU       Multi-Strategy
+Mutation-based   Generation-based    Validation
+   Fuzzing          Fuzzing       ┌────┼────┐
+                                  ▼    ▼    ▼
+                                RT    DT   MT
+                                  \    │    /
+                                   \   │   /
+                                    ▼  ▼  ▼
+                             Bug Discovery
+                                    │
+                                    ▼
+                          Regression Validation
+```
+
+The long-term goal is to provide a reusable infrastructure covering the full workflow of:
+
+> **Knowledge-driven analysis → Test-case generation → Bug discovery → Regression validation**
 
 ---
 
@@ -18,6 +68,7 @@ Together, the two knowledge bases aim to capture both **what a DBMS supports and
   - [🔧 Extraction Pipeline](#-extraction-pipeline)
 - [🐞 Bug Knowledge Base](#-bug-knowledge-base)
 - [📚 Supported Research](#-supported-research)
+- [🗺️ TODO List](#️-todo-list)
 
 ---
 
@@ -103,14 +154,12 @@ HTML + CSS + JavaScript
 
 and is designed for direct deployment through GitHub Pages.
 
-
-
 ### 🔧 Extraction Pipeline
 
 Feature Crawler follows a five-stage extraction pipeline:
 
 | Step | Stage | Description |
-| :--: | ----- | ----------- |
+| :--: | --- | --- |
 | 01 | **Documentation** | Fetch official DBMS reference documentation |
 | 02 | **Discovery** | Crawl documentation from seed pages and classify URLs by feature type |
 | 03 | **Extraction** | Detect function, operator, and datatype candidates from structured documentation |
@@ -148,18 +197,17 @@ The design goal is:
 
 > Adapt to a new DBMS primarily through configuration and profile tuning rather than modifying the core extraction pipeline.
 
-
 ---
 
 ## 🐞 Bug Knowledge Base
 
-![Status](https://img.shields.io/badge/Status-Under%20Development-orange)
+> **Status: Planned / Under Development**
 
-The Bug Knowledge Base is the second knowledge component of DialectRanger and is currently under development.
+The Bug Knowledge Base is the second knowledge component of DialectRanger.
 
 It is intended to organize structured knowledge extracted from historical DBMS bug reports and crash-triggering inputs, complementing the documentation-derived Feature Knowledge Base with reusable bug-related behaviors, triggering conditions, evidence, and provenance.
 
-Detailed development plans are tracked in [TODO.md](TODO.md).
+The Bug Knowledge Base will eventually be linked with the Feature Knowledge Base to model bug-prone feature combinations and provide structured knowledge for downstream database testing and fuzzing.
 
 ---
 
@@ -178,3 +226,129 @@ Detailed development plans are tracked in [TODO.md](TODO.md).
 
 ---
 
+## 🗺️ TODO List
+
+### Feature Knowledge Base
+
+#### P1 — Generalize Feature Extraction
+
+- [ ] Reduce DBMS-specific profile dependencies in feature detection.
+- [ ] Improve automatic discovery of operators and data types from heterogeneous documentation structures.
+- [ ] Extend token mining beyond table-based documentation to headings, code blocks, lists, and paragraphs.
+- [ ] Add support for additional feature types such as `system_variable`, `syntax`, and `statement`.
+
+**Goal:** make new DBMSs usable with minimal manual profile configuration.
+
+#### P2 — Automate Knowledge Base Updates
+
+- [ ] Add scheduled Feature Crawler runs with GitHub Actions.
+- [ ] Automatically rebuild frontend data after KB updates.
+- [ ] Automatically deploy the latest Knowledge Base to GitHub Pages.
+- [ ] Support incremental crawling so unchanged documentation does not need to be processed again.
+
+**Goal:** keep the Feature Knowledge Base continuously synchronized with evolving DBMS documentation.
+
+#### P3 — Improve Knowledge Quality
+
+- [ ] Improve semantic descriptions extracted from documentation evidence.
+- [ ] Introduce stronger evidence validation for generated semantic claims.
+- [ ] Normalize feature names, signatures, and syntax representations.
+- [ ] Reduce noisy or incorrectly extracted feature candidates.
+- [ ] Improve automated quality checks for curated KB snapshots.
+
+**Goal:** improve the accuracy, consistency, and usability of structured feature records.
+
+#### P4 — Expand Coverage
+
+- [ ] Improve extraction from complex or JavaScript-rendered documentation.
+- [ ] Extend support to additional DBMSs.
+- [ ] Improve coverage of symbolic and irregular operators.
+- [ ] Refine function classification, including aggregate and window functions.
+- [ ] Expand beyond the current function/operator/datatype feature space.
+
+Potential DBMS targets include:
+
+- TiDB
+- MonetDB
+- BigQuery
+- Redshift
+- additional actively maintained DBMSs
+
+**Goal:** build a broader and more representative DBMS feature knowledge base.
+
+#### P5 — Improve Knowledge Base Presentation
+
+- [ ] Introduce a more consistent feature category system.
+- [ ] Add explicit extraction provenance to KB records.
+- [ ] Improve evidence and source-section visualization in the web interface.
+- [ ] Improve browsing and inspection of incomplete or review-required features.
+- [ ] Continue refining the GitHub Pages Knowledge Base browser.
+
+**Goal:** make the extracted knowledge easier to inspect, understand, and reuse.
+
+### Bug Knowledge Base
+
+> **Status: Planned / Under Development**
+
+#### Initial Development
+
+- [ ] Design the Bug Knowledge Base schema.
+- [ ] Collect historical DBMS bug reports and crash-triggering SQL inputs.
+- [ ] Normalize bug metadata across different DBMS issue trackers.
+- [ ] Reduce complex crash-triggering inputs into smaller reproducible cases.
+- [ ] Extract reusable syntactic and semantic bug features.
+- [ ] Preserve links between bug features and their original evidence.
+- [ ] Record DBMS version, affected feature, trigger conditions, and bug status where available.
+- [ ] Build automated validation and curation for bug records.
+- [ ] Develop a browser for inspecting Bug Knowledge Base entries.
+
+#### Feature–Bug Integration
+
+- [ ] Link bug-related knowledge to corresponding entries in the Feature Knowledge Base.
+- [ ] Identify DBMS features frequently involved in historical bugs.
+- [ ] Represent bug-triggering feature combinations and interactions.
+- [ ] Support downstream feature-aware and bug-aware SQL generation.
+- [ ] Provide structured knowledge for database fuzzing and testing systems.
+
+**Goal:** combine:
+
+```text
+Feature Knowledge
+"What does this DBMS support and how is it used?"
+
+                    +
+
+Bug Knowledge
+"What feature behaviors and combinations have historically exposed bugs?"
+
+                    ↓
+
+Feature-aware / Bug-aware DBMS Testing
+```
+
+### Testing Platform Integration
+
+- [ ] Integrate **SmartFuzz** for mutation-based fuzzing seed synthesis.
+- [ ] Integrate **FMU** for adapting feature-aware generation to generation-based fuzzers.
+- [ ] Add regression testing workflows for replaying and validating known DBMS bugs.
+- [ ] Add differential testing across heterogeneous DBMS dialects.
+- [ ] Add metamorphic testing for oracle-free consistency validation.
+- [ ] Build a unified execution and result-management layer across testing strategies.
+- [ ] Connect newly discovered bugs back into the Bug Knowledge Base.
+- [ ] Support regression validation of fixed bugs across DBMS versions.
+
+**Goal:** establish an end-to-end closed loop:
+
+```text
+Knowledge Modeling
+       ↓
+Test-Case Generation
+       ↓
+Multi-Strategy Validation
+       ↓
+Bug Discovery
+       ↓
+Bug Knowledge Accumulation
+       ↓
+Regression Validation
+```
