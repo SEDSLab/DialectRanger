@@ -1,0 +1,1 @@
+{"feature_id": "duckdb.datatype.decimal", "name": "decimal", "status": "invalid", "reason": ["no_valid_syntax", "missing_examples", "syntax[0] missing evidence_refs — removed", "no_description_claims"], "details": []}

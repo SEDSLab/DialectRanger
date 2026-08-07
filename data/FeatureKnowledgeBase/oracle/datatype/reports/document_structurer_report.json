@@ -1,0 +1,40 @@
+{
+  "dbms": "oracle",
+  "feature_type": "datatype",
+  "processed_pages": 2,
+  "skipped_pages": 0,
+  "total_sections": 63,
+  "total_blocks": 2235,
+  "section_sources": {
+    "fallback": 2,
+    "heading_tree": 61
+  },
+  "block_types": {
+    "anchor": 460,
+    "heading": 61,
+    "paragraph": 824,
+    "list": 295,
+    "table": 13,
+    "table_row": 120,
+    "code": 456,
+    "signature": 6
+  },
+  "pages": [
+    {
+      "page_id": "oracle_26_data_types",
+      "sections": 61,
+      "blocks": 1251,
+      "anchors": 214,
+      "tables": 13,
+      "code_blocks": 257
+    },
+    {
+      "page_id": "oracle_26_create_index",
+      "sections": 2,
+      "blocks": 984,
+      "anchors": 246,
+      "tables": 0,
+      "code_blocks": 199
+    }
+  ]
+}

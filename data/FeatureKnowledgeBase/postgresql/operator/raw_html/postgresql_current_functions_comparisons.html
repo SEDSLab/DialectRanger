@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>PostgreSQL: Documentation: 18: 9.25. Row and Array Comparisons</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8" />
+   
+  <meta name="theme-color" content="#336791"/>
+  <meta name="copyright" content="The PostgreSQL Global Development Group" />
+  <meta property="og:url" content="https://www.postgresql.org/docs/18/functions-comparisons.html" />
+  <meta property="og:type" content="article" />
+
+  <meta property="article:published_time" content="2026-05-14T13:09:46" />
+  <meta property="og:image" content="https://www.postgresql.org/media/img/about/press/elephant.png" />
+  <meta property="og:title" content="9.25. Row and Array Comparisons" />
+  <meta property="og:description" content="9.25.&amp;nbsp;Row and Array Comparisons # 9.25.1. IN 9.25.2. NOT IN 9.25.3. ANY/SOME (array) 9.25.4. ALL (array) 9.25.5. Row Constructor Comparison …" />
+  <meta property="og:site_name" content="PostgreSQL Documentation" />
+  <link href="/media/css/fontawesome.css?73aab745" rel="stylesheet">
+  <link rel="stylesheet" href="/media/css/bootstrap-4.4.1.min.css">
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  <link rel="stylesheet" type="text/css" href="/dyncss/base.css?73aab745">
+
+  <script src="/media/js/theme.js?73aab745"></script>
+
+  
+
+
+  <link rel="canonical" href="https://www.postgresql.org/docs/current/functions-comparisons.html" />
+
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-md-center">
+        <div class="col">
+          <!-- Header -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand p-0" href="/">
+              <img class="logo" src="/media/img/about/press/elephant.png" alt="PostgreSQL Elephant Logo">
+            </a>
+            <input type="checkbox" id="navbar-toggler" aria-controls="pgNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <label for="navbar-toggler" id="navbar-toggler-label" class="navbar-toggler" tabindex="0"><span class="navbar-toggler-icon"></span></label>
+            <div class="navbar-collapse" id="pgNavbar">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item p-2"><a href="/" title="Home">Home</a></li>
+                <li class="nav-item p-2"><a href="/about/" title="About">About</a></li>
+                <li class="nav-item p-2"><a href="/download/" title="Download">Download</a></li>
+                <li class="nav-item p-2"><a href="/docs/" title="Documentation">Documentation</a></li>
+                <li class="nav-item p-2"><a href="/community/" title="Community">Community</a></li>
+                <li class="nav-item p-2"><a href="/developer/" title="Developers">Developers</a></li>
+                <li class="nav-item p-2"><a href="/support/" title="Support">Support</a></li>
+                <li class="nav-item p-2"><a href="/about/donate/" title="Donate">Donate</a></li>
+                <li class="nav-item p-2"><a href="/account/" title="Your account">Your account</a></li>
+              </ul>
+              <form role="search" method="get" action="/search/">
+                <div class="input-group">
+                  <input id="q" name="q" type="text" size="20" maxlength="255" accesskey="s"  class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+              <form id="form-theme" class="form-inline d-none">
+                <button id="btn-theme" class="btn btn-default ml-1" type="button"></button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row justify-content-center pg-shout-box">
+        <div class="col text-white text-center">July 16, 2026: <a href="/about/news/postgresql-19-beta-2-released-3350/">PostgreSQL 19 Beta 2 Released!</a>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="container-fluid margin">
+      <div class="row">
+        <div id="pgContentWrap" class="col-11">
+          <div class="row">
+            <div class="col-md-6 mb-2">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <a href="/docs/" title="Documentation">Documentation</a> &rarr; <a href="/docs/18/index.html">PostgreSQL 18</a>
+                  </div>
+                </div>
+              </div>
+              
+                <div class="row">
+                  <div class="col">
+                    Supported Versions:
+                      
+                        
+                        
+                          <a href="/docs/current/functions-comparisons.html" title="PostgreSQL 18 - 9.25. Row and Array Comparisons" class="docs-version-selected">Current</a>
+                          (<a href="/docs/18/functions-comparisons.html" title="PostgreSQL 18 - 9.25. Row and Array Comparisons" class="docs-version-selected">18</a>)
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/17/functions-comparisons.html" title="PostgreSQL 17 - 9.25. Row and Array Comparisons" >17</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/16/functions-comparisons.html" title="PostgreSQL 16 - 9.25. Row and Array Comparisons" >16</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/15/functions-comparisons.html" title="PostgreSQL 15 - 9.25. Row and Array Comparisons" >15</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/14/functions-comparisons.html" title="PostgreSQL 14 - 9.25. Row and Array Comparisons" >14</a>
+                        
+                      
+                  </div>
+                </div>
+              
+              
+                <div class="row">
+                  <div class="col">
+                    Development Versions:
+                    
+                      
+                      <a href="/docs/19/functions-comparisons.html" title="PostgreSQL 19 - 9.25. Row and Array Comparisons"  rel="nofollow">19</a>
+                    
+                       / 
+                      <a href="/docs/devel/functions-comparisons.html" title="PostgreSQL devel - 9.25. Row and Array Comparisons"  rel="nofollow">devel</a>
+                    
+                  </div>
+                </div>
+              
+              
+                <div class="row">
+                  <div class="col-12">
+                    Unsupported versions:
+                    
+                      
+                      <a href="/docs/13/functions-comparisons.html" title="PostgreSQL 13 - 9.25. Row and Array Comparisons"  rel="nofollow">13</a>
+                    
+                       / 
+                      <a href="/docs/12/functions-comparisons.html" title="PostgreSQL 12 - 9.25. Row and Array Comparisons"  rel="nofollow">12</a>
+                    
+                       / 
+                      <a href="/docs/11/functions-comparisons.html" title="PostgreSQL 11 - 9.25. Row and Array Comparisons"  rel="nofollow">11</a>
+                    
+                       / 
+                      <a href="/docs/10/functions-comparisons.html" title="PostgreSQL 10 - 9.25. Row and Array Comparisons"  rel="nofollow">10</a>
+                    
+                       / 
+                      <a href="/docs/9.6/functions-comparisons.html" title="PostgreSQL 9.6 - 9.25. Row and Array Comparisons"  rel="nofollow">9.6</a>
+                    
+                       / 
+                      <a href="/docs/9.5/functions-comparisons.html" title="PostgreSQL 9.5 - 9.25. Row and Array Comparisons"  rel="nofollow">9.5</a>
+                    
+                       / 
+                      <a href="/docs/9.4/functions-comparisons.html" title="PostgreSQL 9.4 - 9.25. Row and Array Comparisons"  rel="nofollow">9.4</a>
+                    
+                       / 
+                      <a href="/docs/9.3/functions-comparisons.html" title="PostgreSQL 9.3 - 9.25. Row and Array Comparisons"  rel="nofollow">9.3</a>
+                    
+                       / 
+                      <a href="/docs/9.2/functions-comparisons.html" title="PostgreSQL 9.2 - 9.25. Row and Array Comparisons"  rel="nofollow">9.2</a>
+                    
+                       / 
+                      <a href="/docs/9.1/functions-comparisons.html" title="PostgreSQL 9.1 - 9.25. Row and Array Comparisons"  rel="nofollow">9.1</a>
+                    
+                       / 
+                      <a href="/docs/9.0/functions-comparisons.html" title="PostgreSQL 9.0 - 9.25. Row and Array Comparisons"  rel="nofollow">9.0</a>
+                    
+                       / 
+                      <a href="/docs/8.4/functions-comparisons.html" title="PostgreSQL 8.4 - 9.25. Row and Array Comparisons"  rel="nofollow">8.4</a>
+                    
+                       / 
+                      <a href="/docs/8.3/functions-comparisons.html" title="PostgreSQL 8.3 - 9.25. Row and Array Comparisons"  rel="nofollow">8.3</a>
+                    
+                       / 
+                      <a href="/docs/8.2/functions-comparisons.html" title="PostgreSQL 8.2 - 9.25. Row and Array Comparisons"  rel="nofollow">8.2</a>
+                    
+                       / 
+                      <a href="/docs/8.1/functions-comparisons.html" title="PostgreSQL 8.1 - 9.25. Row and Array Comparisons"  rel="nofollow">8.1</a>
+                    
+                       / 
+                      <a href="/docs/8.0/functions-comparisons.html" title="PostgreSQL 8.0 - 9.25. Row and Array Comparisons"  rel="nofollow">8.0</a>
+                    
+                       / 
+                      <a href="/docs/7.4/functions-comparisons.html" title="PostgreSQL 7.4 - 9.25. Row and Array Comparisons"  rel="nofollow">7.4</a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+            <div class="col-md-6 col-lg-5 offset-lg-1">
+              <form id="docSearchForm" role="search" method="get" action="/search/">
+                <input type="hidden" name="u" value="/docs/18/" />
+                <div class="input-group">
+                  <input type="text" id="q" name="q" class="form-control" placeholder="Search the documentation for..."/>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+            </div>
+          </div>
+
+          <div id="docContent">
+            <div class="navheader">
+  <table width="100%" summary="Navigation header">
+    <tr>
+      <th colspan="5" align="center">9.25.&nbsp;Row and Array Comparisons</th>
+    </tr>
+    <tr>
+      <td width="10%" align="left"><a accesskey="p" href="functions-subquery.html" title="9.24.&nbsp;Subquery Expressions">Prev</a>&nbsp;</td>
+      <td width="10%" align="left"><a accesskey="u" href="functions.html" title="Chapter&nbsp;9.&nbsp;Functions and Operators">Up</a></td>
+      <th width="60%" align="center">Chapter&nbsp;9.&nbsp;Functions and Operators</th>
+      <td width="10%" align="right"><a accesskey="h" href="index.html" title="PostgreSQL 18.4 Documentation">Home</a></td>
+      <td width="10%" align="right">&nbsp;<a accesskey="n" href="functions-srf.html" title="9.26.&nbsp;Set Returning Functions">Next</a></td>
+    </tr>
+  </table>
+  <hr />
+</div>
+<div class="sect1" id="FUNCTIONS-COMPARISONS">
+  <div class="titlepage">
+    <div>
+      <div>
+        <h2 class="title" style="clear: both">9.25.&nbsp;Row and Array Comparisons <a href="#FUNCTIONS-COMPARISONS" class="id_link">#</a></h2>
+      </div>
+    </div>
+  </div>
+  <div class="toc">
+    <dl class="toc">
+      <dt><span class="sect2"><a href="functions-comparisons.html#FUNCTIONS-COMPARISONS-IN-SCALAR">9.25.1. <code class="literal">IN</code></a></span></dt>
+      <dt><span class="sect2"><a href="functions-comparisons.html#FUNCTIONS-COMPARISONS-NOT-IN">9.25.2. <code class="literal">NOT IN</code></a></span></dt>
+      <dt><span class="sect2"><a href="functions-comparisons.html#FUNCTIONS-COMPARISONS-ANY-SOME">9.25.3. <code class="literal">ANY</code>/<code class="literal">SOME</code> (array)</a></span></dt>
+      <dt><span class="sect2"><a href="functions-comparisons.html#FUNCTIONS-COMPARISONS-ALL">9.25.4. <code class="literal">ALL</code> (array)</a></span></dt>
+      <dt><span class="sect2"><a href="functions-comparisons.html#ROW-WISE-COMPARISON">9.25.5. Row Constructor Comparison</a></span></dt>
+      <dt><span class="sect2"><a href="functions-comparisons.html#COMPOSITE-TYPE-COMPARISON">9.25.6. Composite Type Comparison</a></span></dt>
+    </dl>
+  </div><a id="id-1.5.8.31.2" class="indexterm" name="id-1.5.8.31.2"></a><a id="id-1.5.8.31.3" class="indexterm" name="id-1.5.8.31.3"></a><a id="id-1.5.8.31.4" class="indexterm" name="id-1.5.8.31.4"></a><a id="id-1.5.8.31.5" class="indexterm" name="id-1.5.8.31.5"></a><a id="id-1.5.8.31.6" class="indexterm" name="id-1.5.8.31.6"></a><a id="id-1.5.8.31.7" class="indexterm" name="id-1.5.8.31.7"></a><a id="id-1.5.8.31.8" class="indexterm" name="id-1.5.8.31.8"></a><a id="id-1.5.8.31.9" class="indexterm" name="id-1.5.8.31.9"></a><a id="id-1.5.8.31.10" class="indexterm" name="id-1.5.8.31.10"></a><a id="id-1.5.8.31.11" class="indexterm" name="id-1.5.8.31.11"></a><a id="id-1.5.8.31.12" class="indexterm" name="id-1.5.8.31.12"></a>
+  <p>This section describes several specialized constructs for making multiple comparisons between groups of values. These forms are syntactically related to the subquery forms of the previous section, but do not involve subqueries. The forms involving array subexpressions are <span class="productname">PostgreSQL</span> extensions; the rest are <acronym class="acronym">SQL</acronym>-compliant. All of the expression forms documented in this section return Boolean (true/false) results.</p>
+  <div class="sect2" id="FUNCTIONS-COMPARISONS-IN-SCALAR">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h3 class="title">9.25.1.&nbsp;<code class="literal">IN</code> <a href="#FUNCTIONS-COMPARISONS-IN-SCALAR" class="id_link">#</a></h3>
+        </div>
+      </div>
+    </div>
+    <pre class="synopsis">
+<em class="replaceable"><code>expression</code></em> IN (<em class="replaceable"><code>value</code></em> [<span class="optional">, ...</span>])
+</pre>
+    <p>The right-hand side is a parenthesized list of expressions. The result is <span class="quote">“<span class="quote">true</span>”</span> if the left-hand expression's result is equal to any of the right-hand expressions. This is a shorthand notation for</p>
+    <pre class="synopsis">
+<em class="replaceable"><code>expression</code></em> = <em class="replaceable"><code>value1</code></em>
+OR
+<em class="replaceable"><code>expression</code></em> = <em class="replaceable"><code>value2</code></em>
+OR
+...
+</pre>
+    <p>Note that if the left-hand expression yields null, or if there are no equal right-hand values and at least one right-hand expression yields null, the result of the <code class="token">IN</code> construct will be null, not false. This is in accordance with SQL's normal rules for Boolean combinations of null values.</p>
+  </div>
+  <div class="sect2" id="FUNCTIONS-COMPARISONS-NOT-IN">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h3 class="title">9.25.2.&nbsp;<code class="literal">NOT IN</code> <a href="#FUNCTIONS-COMPARISONS-NOT-IN" class="id_link">#</a></h3>
+        </div>
+      </div>
+    </div>
+    <pre class="synopsis">
+<em class="replaceable"><code>expression</code></em> NOT IN (<em class="replaceable"><code>value</code></em> [<span class="optional">, ...</span>])
+</pre>
+    <p>The right-hand side is a parenthesized list of expressions. The result is <span class="quote">“<span class="quote">true</span>”</span> if the left-hand expression's result is unequal to all of the right-hand expressions. This is a shorthand notation for</p>
+    <pre class="synopsis">
+<em class="replaceable"><code>expression</code></em> &lt;&gt; <em class="replaceable"><code>value1</code></em>
+AND
+<em class="replaceable"><code>expression</code></em> &lt;&gt; <em class="replaceable"><code>value2</code></em>
+AND
+...
+</pre>
+    <p>Note that if the left-hand expression yields null, or if there are no equal right-hand values and at least one right-hand expression yields null, the result of the <code class="token">NOT IN</code> construct will be null, not true as one might naively expect. This is in accordance with SQL's normal rules for Boolean combinations of null values.</p>
+    <div class="tip">
+      <h3 class="title">Tip</h3>
+      <p><code class="literal">x NOT IN y</code> is equivalent to <code class="literal">NOT (x IN y)</code> in all cases. However, null values are much more likely to trip up the novice when working with <code class="token">NOT IN</code> than when working with <code class="token">IN</code>. It is best to express your condition positively if possible.</p>
+    </div>
+  </div>
+  <div class="sect2" id="FUNCTIONS-COMPARISONS-ANY-SOME">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h3 class="title">9.25.3.&nbsp;<code class="literal">ANY</code>/<code class="literal">SOME</code> (array) <a href="#FUNCTIONS-COMPARISONS-ANY-SOME" class="id_link">#</a></h3>
+        </div>
+      </div>
+    </div>
+    <pre class="synopsis">
+<em class="replaceable"><code>expression</code></em> <em class="replaceable"><code>operator</code></em> ANY (<em class="replaceable"><code>array expression</code></em>)
+<em class="replaceable"><code>expression</code></em> <em class="replaceable"><code>operator</code></em> SOME (<em class="replaceable"><code>array expression</code></em>)
+</pre>
+    <p>The right-hand side is a parenthesized expression, which must yield an array value. The left-hand expression is evaluated and compared to each element of the array using the given <em class="replaceable"><code>operator</code></em>, which must yield a Boolean result. The result of <code class="token">ANY</code> is <span class="quote">“<span class="quote">true</span>”</span> if any true result is obtained. The result is <span class="quote">“<span class="quote">false</span>”</span> if no true result is found (including the case where the array has zero elements).</p>
+    <p>If the array expression yields a null array, the result of <code class="token">ANY</code> will be null. If the left-hand expression yields null, the result of <code class="token">ANY</code> is ordinarily null (though a non-strict comparison operator could possibly yield a different result). Also, if the right-hand array contains any null elements and no true comparison result is obtained, the result of <code class="token">ANY</code> will be null, not false (again, assuming a strict comparison operator). This is in accordance with SQL's normal rules for Boolean combinations of null values.</p>
+    <p><code class="token">SOME</code> is a synonym for <code class="token">ANY</code>.</p>
+  </div>
+  <div class="sect2" id="FUNCTIONS-COMPARISONS-ALL">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h3 class="title">9.25.4.&nbsp;<code class="literal">ALL</code> (array) <a href="#FUNCTIONS-COMPARISONS-ALL" class="id_link">#</a></h3>
+        </div>
+      </div>
+    </div>
+    <pre class="synopsis">
+<em class="replaceable"><code>expression</code></em> <em class="replaceable"><code>operator</code></em> ALL (<em class="replaceable"><code>array expression</code></em>)
+</pre>
+    <p>The right-hand side is a parenthesized expression, which must yield an array value. The left-hand expression is evaluated and compared to each element of the array using the given <em class="replaceable"><code>operator</code></em>, which must yield a Boolean result. The result of <code class="token">ALL</code> is <span class="quote">“<span class="quote">true</span>”</span> if all comparisons yield true (including the case where the array has zero elements). The result is <span class="quote">“<span class="quote">false</span>”</span> if any false result is found.</p>
+    <p>If the array expression yields a null array, the result of <code class="token">ALL</code> will be null. If the left-hand expression yields null, the result of <code class="token">ALL</code> is ordinarily null (though a non-strict comparison operator could possibly yield a different result). Also, if the right-hand array contains any null elements and no false comparison result is obtained, the result of <code class="token">ALL</code> will be null, not true (again, assuming a strict comparison operator). This is in accordance with SQL's normal rules for Boolean combinations of null values.</p>
+  </div>
+  <div class="sect2" id="ROW-WISE-COMPARISON">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h3 class="title">9.25.5.&nbsp;Row Constructor Comparison <a href="#ROW-WISE-COMPARISON" class="id_link">#</a></h3>
+        </div>
+      </div>
+    </div>
+    <pre class="synopsis">
+<em class="replaceable"><code>row_constructor</code></em> <em class="replaceable"><code>operator</code></em> <em class="replaceable"><code>row_constructor</code></em>
+</pre>
+    <p>Each side is a row constructor, as described in <a class="xref" href="sql-expressions.html#SQL-SYNTAX-ROW-CONSTRUCTORS" title="4.2.13.&nbsp;Row Constructors">Section&nbsp;4.2.13</a>. The two row constructors must have the same number of fields. The given <em class="replaceable"><code>operator</code></em> is applied to each pair of corresponding fields. (Since the fields could be of different types, this means that a different specific operator could be selected for each pair.) All the selected operators must be members of some B-tree operator class, or be the negator of an <code class="literal">=</code> member of a B-tree operator class, meaning that row constructor comparison is only possible when the <em class="replaceable"><code>operator</code></em> is <code class="literal">=</code>, <code class="literal">&lt;&gt;</code>, <code class="literal">&lt;</code>, <code class="literal">&lt;=</code>, <code class="literal">&gt;</code>, or <code class="literal">&gt;=</code>, or has semantics similar to one of these.</p>
+    <p>The <code class="literal">=</code> and <code class="literal">&lt;&gt;</code> cases work slightly differently from the others. Two rows are considered equal if all their corresponding members are non-null and equal; the rows are unequal if any corresponding members are non-null and unequal; otherwise the result of the row comparison is unknown (null).</p>
+    <p>For the <code class="literal">&lt;</code>, <code class="literal">&lt;=</code>, <code class="literal">&gt;</code> and <code class="literal">&gt;=</code> cases, the row elements are compared left-to-right, stopping as soon as an unequal or null pair of elements is found. If either of this pair of elements is null, the result of the row comparison is unknown (null); otherwise comparison of this pair of elements determines the result. For example, <code class="literal">ROW(1,2,NULL) &lt; ROW(1,3,0)</code> yields true, not null, because the third pair of elements are not considered.</p>
+    <pre class="synopsis">
+<em class="replaceable"><code>row_constructor</code></em> IS DISTINCT FROM <em class="replaceable"><code>row_constructor</code></em>
+</pre>
+    <p>This construct is similar to a <code class="literal">&lt;&gt;</code> row comparison, but it does not yield null for null inputs. Instead, any null value is considered unequal to (distinct from) any non-null value, and any two nulls are considered equal (not distinct). Thus the result will either be true or false, never null.</p>
+    <pre class="synopsis">
+<em class="replaceable"><code>row_constructor</code></em> IS NOT DISTINCT FROM <em class="replaceable"><code>row_constructor</code></em>
+</pre>
+    <p>This construct is similar to a <code class="literal">=</code> row comparison, but it does not yield null for null inputs. Instead, any null value is considered unequal to (distinct from) any non-null value, and any two nulls are considered equal (not distinct). Thus the result will always be either true or false, never null.</p>
+  </div>
+  <div class="sect2" id="COMPOSITE-TYPE-COMPARISON">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h3 class="title">9.25.6.&nbsp;Composite Type Comparison <a href="#COMPOSITE-TYPE-COMPARISON" class="id_link">#</a></h3>
+        </div>
+      </div>
+    </div>
+    <pre class="synopsis">
+<em class="replaceable"><code>record</code></em> <em class="replaceable"><code>operator</code></em> <em class="replaceable"><code>record</code></em>
+</pre>
+    <p>The SQL specification requires row-wise comparison to return NULL if the result depends on comparing two NULL values or a NULL and a non-NULL. <span class="productname">PostgreSQL</span> does this only when comparing the results of two row constructors (as in <a class="xref" href="functions-comparisons.html#ROW-WISE-COMPARISON" title="9.25.5.&nbsp;Row Constructor Comparison">Section&nbsp;9.25.5</a>) or comparing a row constructor to the output of a subquery (as in <a class="xref" href="functions-subquery.html" title="9.24.&nbsp;Subquery Expressions">Section&nbsp;9.24</a>). In other contexts where two composite-type values are compared, two NULL field values are considered equal, and a NULL is considered larger than a non-NULL. This is necessary in order to have consistent sorting and indexing behavior for composite types.</p>
+    <p>Each side is evaluated and they are compared row-wise. Composite type comparisons are allowed when the <em class="replaceable"><code>operator</code></em> is <code class="literal">=</code>, <code class="literal">&lt;&gt;</code>, <code class="literal">&lt;</code>, <code class="literal">&lt;=</code>, <code class="literal">&gt;</code> or <code class="literal">&gt;=</code>, or has semantics similar to one of these. (To be specific, an operator can be a row comparison operator if it is a member of a B-tree operator class, or is the negator of the <code class="literal">=</code> member of a B-tree operator class.) The default behavior of the above operators is the same as for <code class="literal">IS [ NOT ] DISTINCT FROM</code> for row constructors (see <a class="xref" href="functions-comparisons.html#ROW-WISE-COMPARISON" title="9.25.5.&nbsp;Row Constructor Comparison">Section&nbsp;9.25.5</a>).</p>
+    <p>To support matching of rows which include elements without a default B-tree operator class, the following operators are defined for composite type comparison: <code class="literal">*=</code>, <code class="literal">*&lt;&gt;</code>, <code class="literal">*&lt;</code>, <code class="literal">*&lt;=</code>, <code class="literal">*&gt;</code>, and <code class="literal">*&gt;=</code>. These operators compare the internal binary representation of the two rows. Two rows might have a different binary representation even though comparisons of the two rows with the equality operator is true. The ordering of rows under these comparison operators is deterministic but not otherwise meaningful. These operators are used internally for materialized views and might be useful for other specialized purposes such as replication and B-Tree deduplication (see <a class="xref" href="btree.html#BTREE-DEDUPLICATION" title="65.1.4.3.&nbsp;Deduplication">Section&nbsp;65.1.4.3</a>). They are not intended to be generally useful for writing queries, though.</p>
+  </div>
+</div>
+<div class="navfooter">
+  <hr />
+  <table width="100%" summary="Navigation footer">
+    <tr>
+      <td width="40%" align="left"><a accesskey="p" href="functions-subquery.html" title="9.24.&nbsp;Subquery Expressions">Prev</a>&nbsp;</td>
+      <td width="20%" align="center"><a accesskey="u" href="functions.html" title="Chapter&nbsp;9.&nbsp;Functions and Operators">Up</a></td>
+      <td width="40%" align="right">&nbsp;<a accesskey="n" href="functions-srf.html" title="9.26.&nbsp;Set Returning Functions">Next</a></td>
+    </tr>
+    <tr>
+      <td width="40%" align="left" valign="top">9.24.&nbsp;Subquery Expressions&nbsp;</td>
+      <td width="20%" align="center"><a accesskey="h" href="index.html" title="PostgreSQL 18.4 Documentation">Home</a></td>
+      <td width="40%" align="right" valign="top">&nbsp;9.26.&nbsp;Set Returning Functions</td>
+    </tr>
+  </table>
+</div>
+
+          </div>
+          
+            <div id="docComments">
+              <h2>Submit correction</h2>
+              <p>
+              If you see anything in the documentation that is not correct, does not match
+              your experience with the particular feature or requires further clarification,
+              please use
+              <a href="/account/comments/new/18/functions-comparisons.html/" rel="nofollow">this form</a>
+              to report a documentation issue.
+              </p>
+            </div>
+          
+        </div> <!-- pgContentWrap -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <!-- Copyright -->
+      <div class="container">
+        <a href="/about/policies/">Policies</a> |
+        <a href="/about/policies/coc/">Code of Conduct</a> |
+        <a href="/about/">About PostgreSQL</a> |
+        <a href="/about/contact/">Contact</a><br/>
+        <p>Copyright &copy; 1996-2026 The PostgreSQL Global Development Group</p>
+      </div>
+    </footer>
+    <script src="/media/js/main.js?73aab745"></script>
+
+  </body>
+</html>

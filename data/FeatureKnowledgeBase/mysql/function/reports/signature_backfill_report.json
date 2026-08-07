@@ -1,0 +1,3008 @@
+{
+  "signature_backfill_enabled": true,
+  "metadata_backfill_enabled": true,
+  "residual_invalid_handling_enabled": true,
+  "features_backfilled": 353,
+  "formal_signatures_added": 0,
+  "weak_signatures_added": 791,
+  "rejected_example_like_signatures": 0,
+  "source_metadata_backfilled": 477,
+  "examples_backfilled": 23,
+  "description_claims_backfilled": 483,
+  "backfilled_features": [
+    {
+      "feature_id": "mysql.function.aes_decrypt",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.aes_encrypt",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.any_value",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.asymmetric_decrypt",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.asymmetric_derive",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.asymmetric_encrypt",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.asymmetric_sign",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.asymmetric_verify",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.asynchronous_connection_failover_add_managed",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.asynchronous_connection_failover_add_source",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.asynchronous_connection_failover_delete_managed",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.asynchronous_connection_failover_delete_source",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.asynchronous_connection_failover_reset",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.atan",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.avg",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.bin_to_uuid",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.binary",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.bit_and",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.bit_count",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.bit_length",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.bit_or",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.bit_xor",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.can_access_column",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.can_access_database",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.can_access_table",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.can_access_user",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.can_access_view",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.char",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.char_length",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.character_length",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.charset",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.collation",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.concat",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.concat_ws",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.connection_id",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.conv",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.convert",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.convert_tz",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.count",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.create_asymmetric_priv_key",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.create_asymmetric_pub_key",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.create_dh_parameters",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.create_digest",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.cume_dist",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.current_role",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.current_user",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.date_add",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.date_format",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.date_sub",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.dayname",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.dayofmonth",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.dense_rank",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.export_set",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.extractvalue",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.find_in_set",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.first_value",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.floor",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.format_bytes",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.format_pico_time",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.format_time",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.found_rows",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.from_base64",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.from_days",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.from_unixtime",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.gen_blacklist",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.gen_blocklist",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.gen_dictionary",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.gen_dictionary_drop",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.gen_dictionary_load",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.gen_range",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.gen_rnd_canada_sin",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.gen_rnd_email",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.gen_rnd_iban",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.gen_rnd_pan",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.gen_rnd_ssn",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.gen_rnd_uk_nin",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.gen_rnd_us_phone",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.gen_rnd_uuid",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.geometrycollection",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.get_dd_column_privileges",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.get_dd_create_options",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.get_dd_index_sub_part_length",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.get_format",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.get_lock",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.group_concat",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.group_replication_disable_member_action",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.group_replication_enable_member_action",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.group_replication_get_communication_protocol",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.group_replication_get_write_concurrency",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.group_replication_reset_member_actions",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.group_replication_set_as_primary",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.group_replication_set_communication_protocol",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.group_replication_set_write_concurrency",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.group_replication_switch_to_multi_primary_mode",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.group_replication_switch_to_single_primary_mode",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.gtid_subset",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.gtid_subtract",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.hex",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.hour",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.icu_version",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.if",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.inet6_aton",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.inet6_ntoa",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.inet_aton",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.inet_ntoa",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_auto_increment",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_avg_row_length",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_check_time",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_checksum",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_data_free",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_data_length",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_dd_char_length",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_get_comment_or_error",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_get_enabled_role_json",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_get_hostname",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_get_username",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_get_view_warning_or_error",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_index_column_cardinality",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_index_length",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_is_enabled_role",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_is_mandatory_role",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_keys_disabled",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_max_data_length",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_table_rows",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.internal_update_time",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.is_free_lock",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.is_ipv4",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.is_ipv4_compat",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.is_ipv4_mapped",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.is_ipv6",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.is_used_lock",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.is_uuid",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.is_visible_dd_object",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_array_append",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_array_insert",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_arrayagg",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_contains",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_contains_path",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_depth",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_extract",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_insert",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_keys",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_length",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_merge",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_merge_patch",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_merge_preserve",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_object",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_objectagg",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_overlaps",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_pretty",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_quote",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_remove",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_replace",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_schema_valid",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_schema_validation_report",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_search",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_set",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_storage_free",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_storage_size",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_table",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_type",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_unquote",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_valid",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.json_value",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.keyring_aws_rotate_cmk",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.keyring_aws_rotate_keys",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.keyring_hashicorp_update_config",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.keyring_key_fetch",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.keyring_key_generate",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.keyring_key_length_fetch",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.keyring_key_remove",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.keyring_key_store",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.keyring_key_type_fetch",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.lag",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.last_day",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.last_insert_id",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.last_value",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.lead",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.length",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.linestring",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.load_file",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.log",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.log10",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.lower",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.lpad",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.make_set",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.mask_canada_sin",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.mask_iban",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.mask_inner",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.mask_outer",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.mask_pan",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.mask_pan_relaxed",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.mask_ssn",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.mask_uk_nin",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.mask_uuid",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.masking_dictionary_remove",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.masking_dictionary_term_add",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.masking_dictionary_term_remove",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.master_pos_wait",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.match",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.max",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.mbrcovers",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.mid",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.min",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.month",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.multilinestring",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.multipoint",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.multipolygon",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.name_const",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.now",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.nth_value",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.ntile",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.octet_length",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.percent_rank",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.period_add",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.period_diff",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.point",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.polygon",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.ps_current_thread_id",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.ps_thread_id",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.random_bytes",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.rank",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.regexp_instr",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.regexp_like",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.regexp_replace",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.regexp_substr",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.release_all_locks",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.release_lock",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.roles_graphml",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.round",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.row_count",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.row_number",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.rpad",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.sec_to_time",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.session_user",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.sha2",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.sleep",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.source_pos_wait",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.space",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_area",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_asbinary",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_asgeojson",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_astext",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_aswkt",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_buffer",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_buffer_strategy",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_centroid",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_collect",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_contains",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_convexhull",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_crosses",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_difference",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_dimension",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_disjoint",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_distance",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_distance_sphere",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_endpoint",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_envelope",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_equals",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_exteriorring",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_frechetdistance",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_geohash",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_geomcollfromtext",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_geomcollfromwkb",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_geometryn",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_geometrytype",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_geomfromgeojson",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_geomfromtext",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_geomfromwkb",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_hausdorffdistance",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_interiorringn",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_intersection",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_intersects",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_isclosed",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_isempty",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_issimple",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_isvalid",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_latfromgeohash",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_latitude",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_length",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_linefromtext",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_linefromwkb",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_lineinterpolatepoint",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_lineinterpolatepoints",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_longfromgeohash",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_longitude",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_makeenvelope",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_mlinefromtext",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_mlinefromwkb",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_mpointfromtext",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_mpointfromwkb",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_mpolyfromtext",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_mpolyfromwkb",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_numgeometries",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_numinteriorring",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_numinteriorrings",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_numpoints",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_overlaps",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_pointatdistance",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_pointfromgeohash",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_pointfromtext",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_pointfromwkb",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_pointn",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_polyfromtext",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_polyfromwkb",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_simplify",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_srid",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_startpoint",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_swapxy",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_symdifference",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_touches",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_transform",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_union",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_validate",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_within",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_x",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.st_y",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.statement_digest",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.statement_digest_text",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.std",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.stddev",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.stddev_pop",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.stddev_samp",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.str_to_date",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.substr",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.substring_index",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.sum",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.sysdate",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.system_user",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.time_format",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.time_to_sec",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.to_base64",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.to_days",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.to_seconds",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.uncompressed_length",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.unhex",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.unix_timestamp",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.user",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.utc_date",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.utc_time",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.utc_timestamp",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.uuid_short",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.uuid_to_bin",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.validate_password_strength",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.values",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.var_pop",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.var_samp",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.variance",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.wait_for_executed_gtid_set",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.wait_until_sql_thread_after_gtids",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.weight_string",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.year",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "mysql.function.yearweek",
+      "added_syntax": [],
+      "evidence_refs": []
+    }
+  ],
+  "backfilled_examples": [
+    {
+      "feature_id": "mysql.function.binary",
+      "example_count": 2,
+      "evidence_refs": [
+        "mysql_8_0_cast_functions_s0001_b0027",
+        "mysql_8_0_string_functions_s0050_b0009"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.day",
+      "example_count": 2,
+      "evidence_refs": [
+        "mysql_8_0_date_and_time_functions_s0025_b0003",
+        "mysql_8_0_date_and_time_functions_s0058_b0003"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.geometrycollection",
+      "example_count": 2,
+      "evidence_refs": [
+        "mysql_8_0_gis_geometrycollection_property_functions_s0002_b0003",
+        "mysql_8_0_gis_geometrycollection_property_functions_s0003_b0003"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.json_arrayagg",
+      "example_count": 1,
+      "evidence_refs": [
+        "mysql_8_0_aggregate_functions_s0009_b0003"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.json_table",
+      "example_count": 8,
+      "evidence_refs": [
+        "mysql_8_0_json_table_functions_s0001_b0074",
+        "mysql_8_0_json_table_functions_s0001_b0076",
+        "mysql_8_0_json_table_functions_s0001_b0080",
+        "mysql_8_0_json_table_functions_s0001_b0082",
+        "mysql_8_0_json_table_functions_s0001_b0085",
+        "mysql_8_0_json_table_functions_s0001_b0087",
+        "mysql_8_0_json_table_functions_s0001_b0089",
+        "mysql_8_0_json_table_functions_s0001_b0095"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.keyring_key_length_fetch",
+      "example_count": 2,
+      "evidence_refs": [
+        "mysql_8_0_keyring_functions_general_purpose_s0001_b0057",
+        "mysql_8_0_keyring_functions_general_purpose_s0002_b0004"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.keyring_key_type_fetch",
+      "example_count": 2,
+      "evidence_refs": [
+        "mysql_8_0_keyring_functions_general_purpose_s0001_b0057",
+        "mysql_8_0_keyring_functions_general_purpose_s0002_b0004"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.linestring",
+      "example_count": 16,
+      "evidence_refs": [
+        "mysql_8_0_gis_format_conversion_functions_s0002_b0003",
+        "mysql_8_0_gis_format_conversion_functions_s0003_b0003",
+        "mysql_8_0_gis_format_conversion_functions_s0004_b0003",
+        "mysql_8_0_gis_general_property_functions_s0003_b0004",
+        "mysql_8_0_gis_general_property_functions_s0003_b0005",
+        "mysql_8_0_gis_geometrycollection_property_functions_s0002_b0003",
+        "mysql_8_0_gis_geometrycollection_property_functions_s0003_b0003",
+        "mysql_8_0_gis_linestring_property_functions_s0002_b0003",
+        "mysql_8_0_gis_linestring_property_functions_s0003_b0003",
+        "mysql_8_0_gis_linestring_property_functions_s0005_b0003",
+        "mysql_8_0_gis_linestring_property_functions_s0006_b0003",
+        "mysql_8_0_gis_linestring_property_functions_s0007_b0003",
+        "mysql_8_0_gis_polygon_property_functions_s0004_b0003",
+        "mysql_8_0_gis_polygon_property_functions_s0005_b0003",
+        "mysql_8_0_spatial_convenience_functions_s0005_b0003",
+        "mysql_8_0_spatial_convenience_functions_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.match",
+      "example_count": 4,
+      "evidence_refs": [
+        "mysql_8_0_fulltext_search_mecab_s0006_b0003",
+        "mysql_8_0_fulltext_search_mecab_s0006_b0005",
+        "mysql_8_0_fulltext_search_mecab_s0007_b0003",
+        "mysql_8_0_fulltext_search_mecab_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.mid",
+      "example_count": 1,
+      "evidence_refs": [
+        "mysql_8_0_date_and_time_functions_s0057_b0006"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.multilinestring",
+      "example_count": 3,
+      "evidence_refs": [
+        "mysql_8_0_gis_linestring_property_functions_s0003_b0003",
+        "mysql_8_0_gis_wkt_functions_s0002_b0004",
+        "mysql_8_0_spatial_operator_functions_s0012_b0003"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.multipoint",
+      "example_count": 5,
+      "evidence_refs": [
+        "mysql_8_0_gis_format_conversion_functions_s0003_b0004",
+        "mysql_8_0_spatial_aggregate_functions_s0002_b0004",
+        "mysql_8_0_spatial_operator_functions_s0004_b0003",
+        "mysql_8_0_spatial_operator_functions_s0008_b0003",
+        "mysql_8_0_spatial_operator_functions_s0010_b0005"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.multipolygon",
+      "example_count": 1,
+      "evidence_refs": [
+        "mysql_8_0_gis_polygon_property_functions_s0002_b0003"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.point",
+      "example_count": 19,
+      "evidence_refs": [
+        "mysql_8_0_gis_geometrycollection_property_functions_s0002_b0003",
+        "mysql_8_0_gis_linestring_property_functions_s0002_b0003",
+        "mysql_8_0_gis_linestring_property_functions_s0006_b0003",
+        "mysql_8_0_gis_linestring_property_functions_s0007_b0003",
+        "mysql_8_0_gis_mysql_specific_functions_s0001_b0005",
+        "mysql_8_0_gis_point_property_functions_s0002_b0003",
+        "mysql_8_0_gis_point_property_functions_s0003_b0003",
+        "mysql_8_0_gis_point_property_functions_s0004_b0003",
+        "mysql_8_0_gis_point_property_functions_s0005_b0003",
+        "mysql_8_0_gis_polygon_property_functions_s0003_b0003",
+        "mysql_8_0_spatial_geohash_functions_s0005_b0003",
+        "mysql_8_0_spatial_geojson_functions_s0003_b0003",
+        "mysql_8_0_spatial_operator_functions_s0002_b0003",
+        "mysql_8_0_spatial_operator_functions_s0002_b0004",
+        "mysql_8_0_spatial_operator_functions_s0005_b0003",
+        "mysql_8_0_spatial_operator_functions_s0006_b0003",
+        "mysql_8_0_spatial_operator_functions_s0008_b0003",
+        "mysql_8_0_spatial_operator_functions_s0011_b0003",
+        "mysql_8_0_spatial_relation_functions_object_shapes_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.polygon",
+      "example_count": 9,
+      "evidence_refs": [
+        "mysql_8_0_gis_general_property_functions_s0003_b0004",
+        "mysql_8_0_gis_polygon_property_functions_s0002_b0003",
+        "mysql_8_0_gis_polygon_property_functions_s0004_b0003",
+        "mysql_8_0_gis_polygon_property_functions_s0005_b0003",
+        "mysql_8_0_gis_polygon_property_functions_s0006_b0004",
+        "mysql_8_0_spatial_convenience_functions_s0004_b0003",
+        "mysql_8_0_spatial_operator_functions_s0002_b0004",
+        "mysql_8_0_spatial_operator_functions_s0002_b0005",
+        "mysql_8_0_spatial_operator_functions_s0004_b0003"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.st_aswkt",
+      "example_count": 2,
+      "evidence_refs": [
+        "mysql_8_0_gis_format_conversion_functions_s0001_b0005",
+        "mysql_8_0_gis_wkt_functions_s0001_b0008"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.st_disjoint",
+      "example_count": 1,
+      "evidence_refs": [
+        "mysql_8_0_spatial_relation_functions_object_shapes_s0002_b0003"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.st_geomfromtext",
+      "example_count": 33,
+      "evidence_refs": [
+        "mysql_8_0_gis_format_conversion_functions_s0001_b0005",
+        "mysql_8_0_gis_general_property_functions_s0007_b0003",
+        "mysql_8_0_gis_general_property_functions_s0007_b0005",
+        "mysql_8_0_gis_linestring_property_functions_s0004_b0003",
+        "mysql_8_0_gis_point_property_functions_s0002_b0003",
+        "mysql_8_0_gis_point_property_functions_s0003_b0003",
+        "mysql_8_0_gis_polygon_property_functions_s0003_b0003",
+        "mysql_8_0_gis_wkt_functions_s0001_b0008",
+        "mysql_8_0_spatial_aggregate_functions_s0002_b0003",
+        "mysql_8_0_spatial_convenience_functions_s0002_b0003",
+        "mysql_8_0_spatial_convenience_functions_s0003_b0003",
+        "mysql_8_0_spatial_convenience_functions_s0004_b0003",
+        "mysql_8_0_spatial_convenience_functions_s0005_b0003",
+        "mysql_8_0_spatial_convenience_functions_s0006_b0003",
+        "mysql_8_0_spatial_operator_functions_s0002_b0003",
+        "mysql_8_0_spatial_operator_functions_s0002_b0004",
+        "mysql_8_0_spatial_operator_functions_s0002_b0005",
+        "mysql_8_0_spatial_operator_functions_s0006_b0003",
+        "mysql_8_0_spatial_operator_functions_s0008_b0003",
+        "mysql_8_0_spatial_operator_functions_s0010_b0005",
+        "mysql_8_0_spatial_operator_functions_s0011_b0003",
+        "mysql_8_0_spatial_operator_functions_s0012_b0003",
+        "mysql_8_0_spatial_relation_functions_mbr_s0002_b0003",
+        "mysql_8_0_spatial_relation_functions_mbr_s0003_b0003",
+        "mysql_8_0_spatial_relation_functions_mbr_s0004_b0003",
+        "mysql_8_0_spatial_relation_functions_mbr_s0005_b0003",
+        "mysql_8_0_spatial_relation_functions_mbr_s0006_b0003",
+        "mysql_8_0_spatial_relation_functions_mbr_s0007_b0003",
+        "mysql_8_0_spatial_relation_functions_mbr_s0010_b0003",
+        "mysql_8_0_spatial_relation_functions_object_shapes_s0002_b0003",
+        "mysql_8_0_spatial_relation_functions_object_shapes_s0005_b0003",
+        "mysql_8_0_spatial_relation_functions_object_shapes_s0007_b0003",
+        "mysql_8_0_spatial_relation_functions_object_shapes_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.st_intersects",
+      "example_count": 1,
+      "evidence_refs": [
+        "mysql_8_0_spatial_relation_functions_object_shapes_s0002_b0003"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.st_linefromtext",
+      "example_count": 2,
+      "evidence_refs": [
+        "mysql_8_0_gis_format_conversion_functions_s0002_b0003",
+        "mysql_8_0_gis_format_conversion_functions_s0004_b0003"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.st_pointfromtext",
+      "example_count": 1,
+      "evidence_refs": [
+        "mysql_8_0_gis_general_property_functions_s0007_b0005"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.substr",
+      "example_count": 1,
+      "evidence_refs": [
+        "mysql_8_0_bit_functions_s0002_b0059"
+      ]
+    },
+    {
+      "feature_id": "mysql.function.sum",
+      "example_count": 11,
+      "evidence_refs": [
+        "mysql_8_0_aggregate_functions_s0001_b0036",
+        "mysql_8_0_miscellaneous_functions_s0005_b0004",
+        "mysql_8_0_miscellaneous_functions_s0005_b0005",
+        "mysql_8_0_miscellaneous_functions_s0005_b0006",
+        "mysql_8_0_miscellaneous_functions_s0005_b0007",
+        "mysql_8_0_miscellaneous_functions_s0005_b0008",
+        "mysql_8_0_miscellaneous_functions_s0005_b0010",
+        "mysql_8_0_miscellaneous_functions_s0005_b0011",
+        "mysql_8_0_window_functions_frames_s0001_b0008",
+        "mysql_8_0_window_functions_usage_s0001_b0011",
+        "mysql_8_0_window_functions_usage_s0001_b0013"
+      ]
+    }
+  ],
+  "weak_table_row_features_added": 111,
+  "non_function_noise_kept_invalid": 0,
+  "residual_features_kept_invalid": [],
+  "generated_at": "2026-08-06T18:46:22.159088+08:00",
+  "residual_features_added_to_kb": [
+    {
+      "feature_id": "mysql.function.can_access_column",
+      "added_syntax": [
+        "CAN_ACCESS_COLUMN(ARGS)",
+        "CAN_ACCESS_COLUMN()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.can_access_database",
+      "added_syntax": [
+        "CAN_ACCESS_DATABASE(ARGS)",
+        "CAN_ACCESS_DATABASE()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.can_access_table",
+      "added_syntax": [
+        "CAN_ACCESS_TABLE(ARGS)",
+        "CAN_ACCESS_TABLE()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.can_access_user",
+      "added_syntax": [
+        "CAN_ACCESS_USER(ARGS)",
+        "CAN_ACCESS_USER()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.can_access_view",
+      "added_syntax": [
+        "CAN_ACCESS_VIEW(ARGS)",
+        "CAN_ACCESS_VIEW()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.ceil",
+      "added_syntax": [
+        "CEIL(X)",
+        "CEIL()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.character_length",
+      "added_syntax": [
+        "CHARACTER_LENGTH(str)",
+        "CHARACTER_LENGTH()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.contains",
+      "added_syntax": [
+        "contains()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.format_time",
+      "added_syntax": [
+        "format_time()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.gen_blacklist",
+      "added_syntax": [
+        "gen_blacklist(str, dictionary_name, replacement_dictionary_name)",
+        "gen_blacklist()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.geomcollection",
+      "added_syntax": [
+        "GeomCollection(g [, g] ...)",
+        "GeomCollection()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.get_dd_column_privileges",
+      "added_syntax": [
+        "GET_DD_COLUMN_PRIVILEGES(ARGS)",
+        "GET_DD_COLUMN_PRIVILEGES()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.get_dd_create_options",
+      "added_syntax": [
+        "GET_DD_CREATE_OPTIONS(ARGS)",
+        "GET_DD_CREATE_OPTIONS()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.get_dd_index_sub_part_length",
+      "added_syntax": [
+        "GET_DD_INDEX_SUB_PART_LENGTH(ARGS)",
+        "GET_DD_INDEX_SUB_PART_LENGTH()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.icu_version",
+      "added_syntax": [
+        "ICU_VERSION()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.id",
+      "added_syntax": [
+        "id()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_auto_increment",
+      "added_syntax": [
+        "INTERNAL_AUTO_INCREMENT(ARGS)",
+        "INTERNAL_AUTO_INCREMENT()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_avg_row_length",
+      "added_syntax": [
+        "INTERNAL_AVG_ROW_LENGTH(ARGS)",
+        "INTERNAL_AVG_ROW_LENGTH()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_check_time",
+      "added_syntax": [
+        "INTERNAL_CHECK_TIME(ARGS)",
+        "INTERNAL_CHECK_TIME()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_checksum",
+      "added_syntax": [
+        "INTERNAL_CHECKSUM(ARGS)",
+        "INTERNAL_CHECKSUM()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_data_free",
+      "added_syntax": [
+        "INTERNAL_DATA_FREE(ARGS)",
+        "INTERNAL_DATA_FREE()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_data_length",
+      "added_syntax": [
+        "INTERNAL_DATA_LENGTH(ARGS)",
+        "INTERNAL_DATA_LENGTH()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_dd_char_length",
+      "added_syntax": [
+        "INTERNAL_DD_CHAR_LENGTH(ARGS)",
+        "INTERNAL_DD_CHAR_LENGTH()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_get_comment_or_error",
+      "added_syntax": [
+        "INTERNAL_GET_COMMENT_OR_ERROR(ARGS)",
+        "INTERNAL_GET_COMMENT_OR_ERROR()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_get_enabled_role_json",
+      "added_syntax": [
+        "INTERNAL_GET_ENABLED_ROLE_JSON(ARGS)",
+        "INTERNAL_GET_ENABLED_ROLE_JSON()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_get_hostname",
+      "added_syntax": [
+        "INTERNAL_GET_HOSTNAME(ARGS)",
+        "INTERNAL_GET_HOSTNAME()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_get_username",
+      "added_syntax": [
+        "INTERNAL_GET_USERNAME(ARGS)",
+        "INTERNAL_GET_USERNAME()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_get_view_warning_or_error",
+      "added_syntax": [
+        "INTERNAL_GET_VIEW_WARNING_OR_ERROR(ARGS)",
+        "INTERNAL_GET_VIEW_WARNING_OR_ERROR()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_index_column_cardinality",
+      "added_syntax": [
+        "INTERNAL_INDEX_COLUMN_CARDINALITY(ARGS)",
+        "INTERNAL_INDEX_COLUMN_CARDINALITY()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_index_length",
+      "added_syntax": [
+        "INTERNAL_INDEX_LENGTH(ARGS)",
+        "INTERNAL_INDEX_LENGTH()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_is_enabled_role",
+      "added_syntax": [
+        "INTERNAL_IS_ENABLED_ROLE(ARGS)",
+        "INTERNAL_IS_ENABLED_ROLE()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_is_mandatory_role",
+      "added_syntax": [
+        "INTERNAL_IS_MANDATORY_ROLE(ARGS)",
+        "INTERNAL_IS_MANDATORY_ROLE()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_keys_disabled",
+      "added_syntax": [
+        "INTERNAL_KEYS_DISABLED(ARGS)",
+        "INTERNAL_KEYS_DISABLED()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_max_data_length",
+      "added_syntax": [
+        "INTERNAL_MAX_DATA_LENGTH(ARGS)",
+        "INTERNAL_MAX_DATA_LENGTH()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_table_rows",
+      "added_syntax": [
+        "INTERNAL_TABLE_ROWS(ARGS)",
+        "INTERNAL_TABLE_ROWS()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.internal_update_time",
+      "added_syntax": [
+        "INTERNAL_UPDATE_TIME(ARGS)",
+        "INTERNAL_UPDATE_TIME()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.is_free_lock",
+      "added_syntax": [
+        "IS_FREE_LOCK(str)",
+        "IS_FREE_LOCK()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.is_used_lock",
+      "added_syntax": [
+        "IS_USED_LOCK(str)",
+        "IS_USED_LOCK()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.is_visible_dd_object",
+      "added_syntax": [
+        "IS_VISIBLE_DD_OBJECT(ARGS)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.json_append",
+      "added_syntax": [
+        "JSON_APPEND()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.json_schema_validation_reort",
+      "added_syntax": [
+        "JSON_SCHEMA_VALIDATION_REORT()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.keyring_aws_rotate_cmk",
+      "added_syntax": [
+        "keyring_aws_rotate_cmk()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.keyring_aws_rotate_keys",
+      "added_syntax": [
+        "keyring_aws_rotate_keys()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.keyring_hashicorp_update_config",
+      "added_syntax": [
+        "keyring_hashicorp_update_config()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.lang",
+      "added_syntax": [
+        "lang()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.lcase",
+      "added_syntax": [
+        "LCASE(str)",
+        "LCASE()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.localtime",
+      "added_syntax": [
+        "LOCALTIME([fsp])",
+        "LOCALTIME()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.localtimestamp",
+      "added_syntax": [
+        "LOCALTIMESTAMP([fsp])",
+        "LOCALTIMESTAMP()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.master_pos_wait",
+      "added_syntax": [
+        "MASTER_POS_WAIT(log_name,log_pos[,timeout][,channel])",
+        "MASTER_POS_WAIT()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.mbroverlaps",
+      "added_syntax": [
+        "MBROverlaps(g1, g2)",
+        "MBROverlaps()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.mbrtouches",
+      "added_syntax": [
+        "MBRTouches(g1, g2)",
+        "MBRTouches()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.misc_word_char",
+      "added_syntax": [
+        "misc_word_char()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.mysql_affected_rows",
+      "added_syntax": [
+        "mysql_affected_rows()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.mysql_insert_id",
+      "added_syntax": [
+        "mysql_insert_id()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.mysql_real_connect",
+      "added_syntax": [
+        "mysql_real_connect()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.name",
+      "added_syntax": [
+        "name()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.octet_length",
+      "added_syntax": [
+        "OCTET_LENGTH(str)",
+        "OCTET_LENGTH()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.position",
+      "added_syntax": [
+        "POSITION(substr IN str)",
+        "POSITION()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.power",
+      "added_syntax": [
+        "POWER(X,Y)",
+        "POWER()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.release_all_locks",
+      "added_syntax": [
+        "RELEASE_ALL_LOCKS()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.schema",
+      "added_syntax": [
+        "SCHEMA()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.sha",
+      "added_syntax": [
+        "SHA(str)",
+        "SHA()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.source_pos_wait",
+      "added_syntax": [
+        "SOURCE_POS_WAIT(log_name,log_pos[,timeout][,channel])",
+        "SOURCE_POS_WAIT()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_asbinary",
+      "added_syntax": [
+        "ST_AsBinary(g [, options])",
+        "ST_AsBinary()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_crosses",
+      "added_syntax": [
+        "ST_Crosses(g1, g2)",
+        "ST_Crosses()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_geomcollfromtxt",
+      "added_syntax": [
+        "ST_GeomCollFromTxt(wkt [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_geomcollfromwkb",
+      "added_syntax": [
+        "ST_GeomCollFromWKB(wkb [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_geometrycollectionfromtext",
+      "added_syntax": [
+        "ST_GeometryCollectionFromText(wkt [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_geometrycollectionfromwkb",
+      "added_syntax": [
+        "ST_GeometryCollectionFromWKB(wkb [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_geometryfromtext",
+      "added_syntax": [
+        "ST_GeometryFromText(wkt [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_geometryfromwkb",
+      "added_syntax": [
+        "ST_GeometryFromWKB(wkb [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_geomfromwkb",
+      "added_syntax": [
+        "ST_GeomFromWKB(wkb [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_isempty",
+      "added_syntax": [
+        "ST_IsEmpty(g)",
+        "ST_IsEmpty()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_issimple",
+      "added_syntax": [
+        "ST_IsSimple(g)",
+        "ST_IsSimple()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_linefromwkb",
+      "added_syntax": [
+        "ST_LineFromWKB(wkb [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_linestringfromtext",
+      "added_syntax": [
+        "ST_LineStringFromText(wkt [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_linestringfromwkb",
+      "added_syntax": [
+        "ST_LineStringFromWKB(wkb [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_mlinefromtext",
+      "added_syntax": [
+        "ST_MLineFromText(wkt [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_mlinefromwkb",
+      "added_syntax": [
+        "ST_MLineFromWKB(wkb [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_mpointfromtext",
+      "added_syntax": [
+        "ST_MPointFromText(wkt [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_mpointfromwkb",
+      "added_syntax": [
+        "ST_MPointFromWKB(wkb [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_mpolyfromtext",
+      "added_syntax": [
+        "ST_MPolyFromText(wkt [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_mpolyfromwkb",
+      "added_syntax": [
+        "ST_MPolyFromWKB(wkb [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_multilinestringfromtext",
+      "added_syntax": [
+        "ST_MultiLineStringFromText(wkt [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_multilinestringfromwkb",
+      "added_syntax": [
+        "ST_MultiLineStringFromWKB(wkb [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_multipointfromtext",
+      "added_syntax": [
+        "ST_MultiPointFromText(wkt [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_multipointfromwkb",
+      "added_syntax": [
+        "ST_MultiPointFromWKB(wkb [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_multipolygonfromtext",
+      "added_syntax": [
+        "ST_MultiPolygonFromText(wkt [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_multipolygonfromwkb",
+      "added_syntax": [
+        "ST_MultiPolygonFromWKB(wkb [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_numinteriorring",
+      "added_syntax": [
+        "ST_NumInteriorRing(poly)",
+        "ST_NumInteriorRing()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_overlaps",
+      "added_syntax": [
+        "ST_Overlaps(g1, g2)",
+        "ST_Overlaps()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_pointatdistance",
+      "added_syntax": [
+        "ST_PointAtDistance(ls, distance)",
+        "ST_PointAtDistance()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_pointfromwkb",
+      "added_syntax": [
+        "ST_PointFromWKB(wkb [, srid [, options]])",
+        "ST_PointFromWKB()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_polyfromtext",
+      "added_syntax": [
+        "ST_PolyFromText(wkt [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_polyfromwkb",
+      "added_syntax": [
+        "ST_PolyFromWKB(wkb [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_polygonfromtext",
+      "added_syntax": [
+        "ST_PolygonFromText(wkt [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_polygonfromwkb",
+      "added_syntax": [
+        "ST_PolygonFromWKB(wkb [, srid [, options]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.st_touches",
+      "added_syntax": [
+        "ST_Touches(g1, g2)",
+        "ST_Touches()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.std",
+      "added_syntax": [
+        "STD()",
+        "STD(expr)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.stddev",
+      "added_syntax": [
+        "STDDEV()",
+        "STDDEV(expr)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.stddev_pop",
+      "added_syntax": [
+        "STDDEV_POP()",
+        "STDDEV_POP(expr)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.stddev_samp",
+      "added_syntax": [
+        "STDDEV_SAMP()",
+        "STDDEV_SAMP(expr)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.string",
+      "added_syntax": [
+        "string()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.translate",
+      "added_syntax": [
+        "translate()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.true_word_char",
+      "added_syntax": [
+        "true_word_char()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.ucase",
+      "added_syntax": [
+        "UCASE(str)",
+        "UCASE()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.validate_password_strength",
+      "added_syntax": [
+        "VALIDATE_PASSWORD_STRENGTH(str)",
+        "VALIDATE_PASSWORD_STRENGTH()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.var_pop",
+      "added_syntax": [
+        "VAR_POP()",
+        "VAR_POP(expr)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.var_samp",
+      "added_syntax": [
+        "VAR_SAMP()",
+        "VAR_SAMP(expr)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.variance",
+      "added_syntax": [
+        "VARIANCE()",
+        "VARIANCE(expr)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "mysql.function.wait_until_sql_thread_after_gtids",
+      "added_syntax": [
+        "WAIT_UNTIL_SQL_THREAD_AFTER_GTIDS(gtid_set[, timeout][,channel])",
+        "WAIT_UNTIL_SQL_THREAD_AFTER_GTIDS()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    }
+  ],
+  "residual_features_rejected": [],
+  "residual_features_attempted": 111
+}

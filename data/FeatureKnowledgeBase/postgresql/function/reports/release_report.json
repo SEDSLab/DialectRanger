@@ -1,0 +1,31 @@
+{
+  "dbms": "postgresql",
+  "feature_type": "function",
+  "total_pages": 32,
+  "total_sections": 143,
+  "total_blocks": 3024,
+  "candidate_features": 908,
+  "candidate_groups": 651,
+  "feature_drafts": 651,
+  "total_drafts": 651,
+  "clean_validated_features": 223,
+  "validated_with_warnings": 428,
+  "invalid_features": 0,
+  "total_validated_features": 651,
+  "total_kb_features": 651,
+  "total_review_items": 428,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 301,
+    "no_description_claims": 27,
+    "no_valid_syntax": 0,
+    "no_valid_examples": 92,
+    "weak_syntax": 38,
+    "table_block_evidence": 35,
+    "large_evidence_block": 3,
+    "long_examples": 32,
+    "alias_like_feature": 14
+  },
+  "generated_at": "2026-08-06T18:49:13.408735+08:00"
+}

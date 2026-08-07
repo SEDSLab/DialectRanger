@@ -1,0 +1,36 @@
+{
+  "dbms": "sqlite",
+  "feature_type": "datatype",
+  "total_drafts": 9,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 8,
+  "invalid_features": 1,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 9,
+    "no_description_claims": 2,
+    "no_valid_syntax": 1,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 0
+  },
+  "sample_clean_features": [],
+  "sample_warning_features": [
+    "sqlite.datatype.blob",
+    "sqlite.datatype.date",
+    "sqlite.datatype.decimal",
+    "sqlite.datatype.integer",
+    "sqlite.datatype.null",
+    "sqlite.datatype.numeric",
+    "sqlite.datatype.real",
+    "sqlite.datatype.text"
+  ],
+  "sample_invalid_features": [
+    "sqlite.datatype.boolean"
+  ],
+  "generated_at": "2026-08-06T19:08:17.531704+08:00"
+}

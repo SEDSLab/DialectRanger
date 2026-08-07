@@ -1,0 +1,23 @@
+{"feature_id": "sqlserver.operator.%=_sqlserver_current_compound_operators_transact_sql", "name": "%=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator.&=_sqlserver_current_compound_operators_transact_sql", "name": "&=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator.*=_sqlserver_current_compound_operators_transact_sql", "name": "*=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator.+=_sqlserver_current_compound_operators_transact_sql", "name": "+=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator.-=_sqlserver_current_compound_operators_transact_sql", "name": "-=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator./=_sqlserver_current_compound_operators_transact_sql", "name": "/=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator.^=_sqlserver_current_compound_operators_transact_sql", "name": "^=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator.all_sqlserver_current_logical_operators_transact_sql", "name": "ALL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator.and_sqlserver_current_logical_operators_transact_sql", "name": "AND", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator.any_sqlserver_current_logical_operators_transact_sql", "name": "ANY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator.between_sqlserver_current_logical_operators_transact_sql", "name": "BETWEEN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator.exists_sqlserver_current_logical_operators_transact_sql", "name": "EXISTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator.in_sqlserver_current_bitwise_operators_transact_sql", "name": "IN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator.in_sqlserver_current_logical_operators_transact_sql", "name": "IN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator.in_sqlserver_current_string_operators_transact_sql", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "sqlserver.operator.like_sqlserver_current_logical_operators_transact_sql", "name": "LIKE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator.like_sqlserver_current_string_concatenation_transact_sql", "name": "LIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "sqlserver.operator.not_in_sqlserver_current_set_operators_union_transact_sql", "name": "NOT IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "sqlserver.operator.not_sqlserver_current_bitwise_operators_transact_sql", "name": "NOT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator.not_sqlserver_current_logical_operators_transact_sql", "name": "NOT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator.or_sqlserver_current_logical_operators_transact_sql", "name": "OR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.operator.some_sqlserver_current_logical_operators_transact_sql", "name": "SOME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlserver.operator.|_sqlserver_current_compound_operators_transact_sql", "name": "|", "status": "needs_review", "reason": ["missing_examples"], "details": []}

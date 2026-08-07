@@ -1,0 +1,58 @@
+{
+  "dbms": "duckdb",
+  "feature_type": "function",
+  "total_drafts": 585,
+  "clean_validated_features": 34,
+  "validated_with_warnings": 519,
+  "invalid_features": 32,
+  "validation_summary": {
+    "schema_invalid": 32,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 484,
+    "no_description_claims": 387,
+    "no_valid_syntax": 32,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 14,
+    "alias_like_feature": 319
+  },
+  "sample_clean_features": [
+    "duckdb.function.count",
+    "duckdb.function.first",
+    "duckdb.function.glob",
+    "duckdb.function.iceberg_bucket",
+    "duckdb.function.iceberg_column_stats",
+    "duckdb.function.iceberg_snapshots",
+    "duckdb.function.iceberg_truncate",
+    "duckdb.function.json",
+    "duckdb.function.json_array_length",
+    "duckdb.function.json_contains"
+  ],
+  "sample_warning_features": [
+    "duckdb.function.abs",
+    "duckdb.function.acos",
+    "duckdb.function.acosh",
+    "duckdb.function.add",
+    "duckdb.function.age",
+    "duckdb.function.aggregate",
+    "duckdb.function.ago",
+    "duckdb.function.alias",
+    "duckdb.function.any_value",
+    "duckdb.function.approx_count_distinct"
+  ],
+  "sample_invalid_features": [
+    "duckdb.function.apply",
+    "duckdb.function.array_apply",
+    "duckdb.function.array_filter",
+    "duckdb.function.array_reduce",
+    "duckdb.function.array_transform",
+    "duckdb.function.current_setting",
+    "duckdb.function.currval",
+    "duckdb.function.duckdb_bind_add_result_column",
+    "duckdb.function.duckdb_bind_get_named_parameter",
+    "duckdb.function.duckdb_bind_set_bind_data"
+  ],
+  "generated_at": "2026-08-06T18:59:21.522166+08:00"
+}

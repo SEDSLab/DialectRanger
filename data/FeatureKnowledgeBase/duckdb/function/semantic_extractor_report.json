@@ -1,0 +1,22 @@
+{
+  "dbms": "duckdb",
+  "feature_type": "function",
+  "mode": "shadow",
+  "backend": "mock",
+  "total_features": 585,
+  "semantic_drafts": 585,
+  "status_counts": {
+    "extracted": 268,
+    "partial": 127,
+    "insufficient_context": 190,
+    "no_context": 0,
+    "skipped": 0,
+    "validation_failed": 0
+  },
+  "description_claims": 620,
+  "constraints": 628,
+  "example_roles": 200,
+  "invalid_evidence_refs": 0,
+  "merge_into_kb": false,
+  "generated_at": "2026-08-06T18:59:21.019021+08:00"
+}

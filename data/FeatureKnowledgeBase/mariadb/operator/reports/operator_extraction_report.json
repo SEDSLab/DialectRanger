@@ -1,0 +1,13 @@
+{
+  "dbms": "mariadb",
+  "feature_type": "operator",
+  "candidate_features": 428,
+  "candidate_groups": 404,
+  "feature_drafts": 404,
+  "known_operator_coverage": {
+    "total": 0,
+    "covered": 0,
+    "missing": [],
+    "coverage_ratio": 1.0
+  }
+}

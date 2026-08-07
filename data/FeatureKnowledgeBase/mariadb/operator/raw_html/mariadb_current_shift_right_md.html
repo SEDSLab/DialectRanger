@@ -1,0 +1,32 @@
+> For the complete documentation index, see [llms.txt](https://mariadb.com/docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/bit-functions-and-operators/shift-right.md).
+
+# >>
+
+## Syntax
+
+```bnf
+value1 >> value2
+```
+
+## Description
+
+Converts a longlong ([BIGINT](/docs/server/reference/data-types/numeric-data-types/bigint.md)) number (*value1*) to binary and shifts *value2* units to the right.
+
+## Examples
+
+```sql
+SELECT 4 >> 2;
++--------+
+| 4 >> 2 |
++--------+
+|      1 |
++--------+
+```
+
+## See Also
+
+* [Operator Precedence](/docs/server/reference/sql-structure/operators/operator-precedence.md)
+
+<sub>*This page is licensed: GPLv2, originally from*</sub> [<sub>*fill\_help\_tables.sql*</sub>](https://github.com/MariaDB/server/blob/main/scripts/fill_help_tables.sql)
+
+{% @marketo/form formId="4316" %}

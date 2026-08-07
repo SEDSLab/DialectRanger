@@ -1,0 +1,38 @@
+{
+  "dbms": "mariadb",
+  "feature_type": "datatype",
+  "total_drafts": 36,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 35,
+  "invalid_features": 1,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 36,
+    "no_description_claims": 5,
+    "no_valid_syntax": 1,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 0
+  },
+  "sample_clean_features": [],
+  "sample_warning_features": [
+    "mariadb.datatype.bigint",
+    "mariadb.datatype.binary",
+    "mariadb.datatype.bit",
+    "mariadb.datatype.blob",
+    "mariadb.datatype.boolean",
+    "mariadb.datatype.char",
+    "mariadb.datatype.date",
+    "mariadb.datatype.datetime",
+    "mariadb.datatype.decimal",
+    "mariadb.datatype.double"
+  ],
+  "sample_invalid_features": [
+    "mariadb.datatype.real"
+  ],
+  "generated_at": "2026-08-06T20:04:38.725840+08:00"
+}

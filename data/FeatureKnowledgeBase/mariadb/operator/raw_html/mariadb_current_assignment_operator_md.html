@@ -1,0 +1,45 @@
+> For the complete documentation index, see [llms.txt](https://mariadb.com/docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://mariadb.com/docs/server/reference/sql-structure/operators/assignment-operators/assignment-operator.md).
+
+# Assignment Operator (:=)
+
+## Syntax
+
+```bnf
+var_name := expr
+```
+
+## Description
+
+Assignment operator for assigning a value. The value on the right is assigned to the variable on left.
+
+Unlike the [= operator](/docs/server/reference/sql-structure/operators/assignment-operators/assignment-operators-assignment-operator.md), `:=` can always be used to assign a value to a variable.
+
+This operator works with both [user-defined variables](/docs/server/reference/sql-structure/sql-language-structure/user-defined-variables.md) and [local variables](/docs/server/reference/sql-statements/programmatic-compound-statements/declare-variable.md).
+
+When assigning the same value to several variables, [LAST\_VALUE()](/docs/server/reference/sql-functions/secondary-functions/information-functions/last_value.md) can be useful.
+
+## Examples
+
+```sql
+SELECT @x := 10;
++----------+
+| @x := 10 |
++----------+
+|       10 |
++----------+
+
+SELECT @x, @y := @x;
++------+----------+
+| @x   | @y := @x |
++------+----------+
+|   10 |       10 |
++------+----------+
+```
+
+## See Also
+
+* [Operator Precedence](/docs/server/reference/sql-structure/operators/operator-precedence.md)
+
+<sub>*This page is licensed: CC BY-SA / Gnu FDL*</sub>
+
+{% @marketo/form formId="4316" %}

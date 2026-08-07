@@ -1,0 +1,53 @@
+> For the complete documentation index, see [llms.txt](https://mariadb.com/docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://mariadb.com/docs/server/reference/sql-functions/vector-functions/vec_totext.md).
+
+# VEC\_ToText
+
+<table data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th align="center"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center"><strong>WEBINAR</strong></td><td align="center">The Next Generation of MariaDB: Powered by Vector Search</td><td align="center"><a href="https://go.mariadb.com/GLBL-WBN-2025-01-30-WhatsnewinMariaDB-ES.html?utm_source=onpagepromo&#x26;utm_medium=kb&#x26;utm_campaign=webinar-platform-vector"><strong>Watch Now</strong></a></td><td><a href="/files/57TC3V6duqnJsPBeRWiq">/files/57TC3V6duqnJsPBeRWiq</a></td></tr></tbody></table>
+
+{% hint style="info" %}
+[Vectors](/docs/server/reference/sql-structure/vectors.md) are available from [MariaDB Community Server 11.7](/docs/release-notes/community-server/old-releases/11.7/what-is-mariadb-117.md) and from [MariaDB Enterprise Server 11.4.5-3](/docs/release-notes/enterprise-server/11.4/11.4.5-3.md).
+{% endhint %}
+
+## Syntax
+
+```bnf
+VEC_ToText(v)
+```
+
+## Description
+
+`VEC_ToText` converts a binary vector into a json array of numbers (floats). Returns `NULL` and throws a warning [Error 4201](/docs/server/reference/error-codes/mariadb-error-codes-4200-to-4299/e4201.md) if given an invalid vector.
+
+## Example
+
+```sql
+SELECT VEC_ToText(x'e360d63ebe554f3fcdbc523f4522193f5236083d');
++---------------------------------------------------------+
+| VEC_ToText(x'e360d63ebe554f3fcdbc523f4522193f5236083d') |
++---------------------------------------------------------+
+| [0.418708,0.809902,0.823193,0.598179,0.033255]          |
++---------------------------------------------------------+
+```
+
+Invalid vector:
+
+```sql
+SELECT VEC_ToText(x'aabbcc');
++-----------------------+
+| VEC_ToText(x'aabbcc') |
++-----------------------+
+| NULL                  |
++-----------------------+
+1 row in set, 1 warning (0.000 sec)
+
+Warning (Code 4201): Invalid binary vector format. Must use IEEE standard float 
+  representation in little-endian format. Use VEC_FromText() to generate it.
+```
+
+## See Also
+
+* [Error 4201: Invalid binary vector format](/docs/server/reference/error-codes/mariadb-error-codes-4200-to-4299/e4201.md)
+
+<sub>*This page is licensed: CC BY-SA / Gnu FDL*</sub>
+
+{% @marketo/form formId="4316" %}

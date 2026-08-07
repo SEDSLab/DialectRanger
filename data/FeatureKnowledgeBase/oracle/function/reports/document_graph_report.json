@@ -1,0 +1,62 @@
+{
+  "dbms": "oracle",
+  "feature_type": "function",
+  "nodes": {
+    "page": 9,
+    "section": 39,
+    "block": 904,
+    "feature_candidate": 318
+  },
+  "edges": {
+    "page_contains_section": 39,
+    "section_contains_block": 904,
+    "section_previous": 30,
+    "section_next": 30,
+    "feature_documented_in_section": 365,
+    "total": 1368
+  },
+  "noise": {
+    "noise_nodes": 1,
+    "noise_sections": 0,
+    "noise_blocks": 1,
+    "eligible_nodes": 951
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "oracle.function.abs",
+      "target": "oracle_26_single_row_functions_s0003"
+    },
+    {
+      "source": "oracle.function.acos",
+      "target": "oracle_26_single_row_functions_s0003"
+    },
+    {
+      "source": "oracle.function.add_months",
+      "target": "oracle_26_single_row_functions_s0009"
+    },
+    {
+      "source": "oracle.function.aggregate",
+      "target": "oracle_26_aggregate_functions_s0002"
+    },
+    {
+      "source": "oracle.function.any_value",
+      "target": "oracle_26_aggregate_functions_s0002"
+    },
+    {
+      "source": "oracle.function.approx_count",
+      "target": "oracle_26_aggregate_functions_s0002"
+    },
+    {
+      "source": "oracle.function.approx_count_distinct",
+      "target": "oracle_26_aggregate_functions_s0002"
+    },
+    {
+      "source": "oracle.function.approx_count_distinct_agg",
+      "target": "oracle_26_aggregate_functions_s0002"
+    }
+  ],
+  "generated_at": "2026-08-07T14:41:01.974543+08:00"
+}

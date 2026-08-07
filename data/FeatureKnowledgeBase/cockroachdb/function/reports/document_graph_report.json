@@ -1,0 +1,62 @@
+{
+  "dbms": "cockroachdb",
+  "feature_type": "function",
+  "nodes": {
+    "page": 1,
+    "section": 39,
+    "block": 2695,
+    "feature_candidate": 702
+  },
+  "edges": {
+    "page_contains_section": 39,
+    "section_contains_block": 2695,
+    "section_previous": 38,
+    "section_next": 38,
+    "feature_documented_in_section": 706,
+    "total": 3516
+  },
+  "noise": {
+    "noise_nodes": 0,
+    "noise_sections": 0,
+    "noise_blocks": 0,
+    "eligible_nodes": 2735
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "cockroachdb.function._pg_expandarray",
+      "target": "cockroachdb_stable_functions_and_operators_s0027"
+    },
+    {
+      "source": "cockroachdb.function._pg_numeric_precision",
+      "target": "cockroachdb_stable_functions_and_operators_s0010"
+    },
+    {
+      "source": "cockroachdb.function._pg_numeric_precision_radix",
+      "target": "cockroachdb_stable_functions_and_operators_s0010"
+    },
+    {
+      "source": "cockroachdb.function._pg_numeric_scale",
+      "target": "cockroachdb_stable_functions_and_operators_s0010"
+    },
+    {
+      "source": "cockroachdb.function._st_contains",
+      "target": "cockroachdb_stable_functions_and_operators_s0028"
+    },
+    {
+      "source": "cockroachdb.function._st_containsproperly",
+      "target": "cockroachdb_stable_functions_and_operators_s0028"
+    },
+    {
+      "source": "cockroachdb.function._st_coveredby",
+      "target": "cockroachdb_stable_functions_and_operators_s0028"
+    },
+    {
+      "source": "cockroachdb.function._st_covers",
+      "target": "cockroachdb_stable_functions_and_operators_s0028"
+    }
+  ],
+  "generated_at": "2026-08-06T19:12:33.128561+08:00"
+}

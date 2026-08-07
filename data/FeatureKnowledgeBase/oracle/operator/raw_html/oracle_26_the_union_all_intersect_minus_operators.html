@@ -1,0 +1,281 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="reference">
+      <meta name="DC.Title" content="The Set Operators">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-B64FE747-586E-4513-945F-80CB197125EE">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>The Set Operators</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="Hierarchical-Queries.html" title="Previous" type="text/html">
+      <link rel="next" href="Sorting-Query-Results.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"The Set Operators","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="Hierarchical-Queries.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="Sorting-Query-Results.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-B64FE747-586E-4513-945F-80CB197125EE" name="GUID-B64FE747-586E-4513-945F-80CB197125EE"></a><a id="SQLRF52342"></a><a id="SQLRF52343"></a><a id="SQLRF52344"></a><a id="SQLRF52345"></a><a id="SQLRF52346"></a><a id="SQLRF52347"></a><a id="SQLRF52341"></a>
+         
+         <h2 id="SQLRF-GUID-B64FE747-586E-4513-945F-80CB197125EE" class="sect2">The Set Operators</h2>
+         <div class="ind">
+            <div>
+               <div class="section">
+                  <p>You can combine multiple queries using the set operators <code class="codeph">UNION</code>, <code class="codeph">UNION</code> <code class="codeph">ALL</code>, <code class="codeph">INTERSECT</code>, <code class="codeph">INTERSECT</code> <code class="codeph">ALL</code>, <code class="codeph">EXCEPT</code>, <code class="codeph">EXCEPT</code> <code class="codeph">ALL</code>, <code class="codeph">MINUS</code>, and <code class="codeph">MINUS</code> <code class="codeph">ALL</code>. All set operators have equal precedence. If a SQL statement contains multiple set operators, then Oracle Database evaluates them from the left to right unless parentheses explicitly specify another order. 
+                  </p>
+                  <p>The corresponding expressions in the select lists of the component queries of a compound query must match in number and must be in the same data type group (such as numeric or character). </p>
+                  <p>If component queries select character data, then the data type of the return values are determined as follows: </p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>If both queries select values of data type <code class="codeph">CHAR</code> of equal length, then the returned values have data type <code class="codeph">CHAR</code> of that length. If the queries select values of <code class="codeph">CHAR</code> with different lengths, then the returned value is <code class="codeph">VARCHAR2</code> with the length of the larger <code class="codeph">CHAR</code> value. 
+                        </p>
+                     </li>
+                     <li>
+                        <p>If either or both of the queries select values of data type <code class="codeph">VARCHAR2</code>, then the returned values have data type <code class="codeph">VARCHAR2</code>. 
+                        </p>
+                     </li>
+                  </ul>
+                  <p>If component queries select numeric data, then the data type of the return values is determined by numeric precedence:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>If any query selects values of type <code class="codeph">BINARY_DOUBLE</code>, then the returned values have data type <code class="codeph">BINARY_DOUBLE</code>.
+                        </p>
+                     </li>
+                     <li>
+                        <p>If no query selects values of type <code class="codeph">BINARY_DOUBLE</code> but any query selects values of type <code class="codeph">BINARY_FLOAT</code>, then the returned values have data type <code class="codeph">BINARY_FLOAT</code>.
+                        </p>
+                     </li>
+                     <li>
+                        <p>If all queries select values of type <code class="codeph">NUMBER</code>, then the returned values have data type <code class="codeph">NUMBER</code>.
+                        </p>
+                     </li>
+                  </ul>
+                  <p>In queries using set operators, Oracle does not perform implicit conversion across data type groups. Therefore, if the corresponding expressions of component queries resolve to both character data and numeric data, Oracle returns an error.</p>
+                  <p>The <code class="codeph">INTERSECT</code> operator with the keyword <code class="codeph">ALL</code> returns the result of two or more <code class="codeph">SELECT</code> statements in which rows appear in all result sets. Null values that are common across the component queries of <code class="codeph">INTERSECT</code> <code class="codeph">ALL</code> are returned at the end of the result set.
+                  </p>
+                  <p>The <code class="codeph">MINUS</code> operator with the keyword <code class="codeph">ALL</code> returns the result of two <code class="codeph">SELECT</code> statements in which rows appear in the first result set but not in the second result set.
+                  </p>
+                  <p>If the first query has <code class="codeph">x</code> nulls and the second query has <code class="codeph">y</code> nulls,  and <code class="codeph">x</code> is greater than <code class="codeph">y</code>, then <code class="codeph">x</code> minus <code class="codeph">y</code> NULLS are returned at the end of the result query set. <code class="codeph">MINUS</code> <code class="codeph">ALL</code> returns no rows if the result set returned by the first <code class="codeph">SELECT</code>statement is a subset of the result set returned by the second <code class="codeph">SELECT</code>.
+                  </p>
+                  <p>The <code class="codeph">EXCEPT</code> operator is a synonym for <code class="codeph">MINUS</code> and has the exact same semantics. <code class="codeph">EXCEPT ALL</code> returns rows that are present in the first result set but not in the second. However, duplicates may be present in the final result.
+                  </p>
+                  <p><code class="codeph">EXCEPT</code> <code class="codeph">ALL</code>, <code class="codeph">MINUS</code> <code class="codeph">ALL</code> <code class="codeph">INTERSECT</code> <code class="codeph">ALL</code> return equivalent instead of the original value, when <code class="codeph"> NLS_SORT=BINARY_CI[AI]</code> is acceptable for the SQL standard.
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-B64FE747-586E-4513-945F-80CB197125EE__GUID-5C4D1AF6-78AF-4A26-A345-F3A0EF15AFC3">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="Data-Type-Comparison-Rules.html#GUID-98BE3A78-6E33-4181-B5CB-D96FD9DC1694__G195937" title="An X in a cell indicates implicit conversion of the data types">Table 2-9</a> for more information on implicit conversion and <span class="q">"<a href="Data-Types.html#GUID-4C0B65DB-E751-4957-A1ED-5044BAFA7812">Numeric Precedence</a>"</span> for information on numeric precedence
+                     </p>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-B64FE747-586E-4513-945F-80CB197125EE__GUID-71000797-0DB6-40B3-AA01-6B6070EBC03B">Examples for Valid and Invalid Data Type Conversions for Set Operators</p>
+               </div>
+               <div class="section">
+                  <p>The following query is valid:</p><pre class="oac_no_warn" dir="ltr">SELECT 3 FROM DUAL
+   INTERSECT
+SELECT 3f FROM DUAL;
+</pre><p>This is implicitly converted to the following compound query:</p><pre class="oac_no_warn" dir="ltr">SELECT TO_BINARY_FLOAT(3) FROM DUAL
+   INTERSECT
+SELECT 3f FROM DUAL;
+</pre><p>The following query returns an error:</p><pre class="oac_no_warn" dir="ltr">SELECT '3' FROM DUAL
+   INTERSECT
+SELECT 3f FROM DUAL;</pre></div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-B64FE747-586E-4513-945F-80CB197125EE__GUID-5989D186-2C5E-4F7E-B157-2A158955190E">Restrictions on the Set Operators</p>
+               </div>
+               <div class="section">
+                  <p>The set operators are subject to the following restrictions:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>The set operators are not valid on columns of type <code class="codeph">BLOB</code>, <code class="codeph">CLOB</code>, <code class="codeph">BFILE</code>, <code class="codeph">VARRAY</code>, or nested table.
+                        </p>
+                     </li>
+                     <li>
+                        <p>The <code class="codeph">UNION</code>, <code class="codeph">INTERSECT</code>, <code class="codeph">EXCEPT</code>, and <code class="codeph">MINUS</code> operators are not valid on <code class="codeph">LONG</code> columns.
+                        </p>
+                     </li>
+                     <li>
+                        <p>If the select list preceding the set operator contains an expression, then you must provide a column alias for the expression in order to refer to it in the <span class="italic"><code class="codeph">order_by_clause</code></span>.
+                        </p>
+                     </li>
+                     <li>
+                        <p>You cannot also specify the <span class="italic"><code class="codeph">for_update_clause</code></span> with the set operators.
+                        </p>
+                     </li>
+                     <li>
+                        <p>You cannot specify the <span class="italic"><code class="codeph">order_by_clause</code></span> in the <span class="italic"><code class="codeph">subquery</code></span> of these operators.
+                        </p>
+                     </li>
+                     <li>
+                        <p>You cannot use these operators in <code class="codeph">SELECT</code> statements containing <code class="codeph">TABLE</code> collection expressions.
+                        </p>
+                     </li>
+                  </ul>
+                  <div class="infoboxnote" id="GUID-B64FE747-586E-4513-945F-80CB197125EE__GUID-085DB6AA-C82C-4EAB-A352-EAE337416765">
+                     <p class="notep1">Note:</p>
+                     <p>To follow the SQL standard, a future release might give the <code class="codeph">INTERSECT</code> operator greater precedence than the other set operators. Therefore, you should use parentheses to specify order of evaluation in queries that use the <code class="codeph">INTERSECT</code> operator with other set operators.
+                     </p>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-B64FE747-586E-4513-945F-80CB197125EE__GUID-8CA689F1-859F-436B-B54C-DCD58BDDF673">UNION Example</p>
+               </div>
+               <div class="section">
+                  <p>The following statement combines the results of two queries with the <code class="codeph">UNION</code> operator, which eliminates duplicate selected rows. This statement shows that you must match data type (using the <code class="codeph">TO_CHAR</code> function) when columns do not exist in one or the other table:
+                  </p><pre class="oac_no_warn" dir="ltr">SELECT location_id, department_name "Department", 
+   TO_CHAR(NULL) "Warehouse"  FROM departments
+   UNION
+   SELECT location_id, TO_CHAR(NULL) "Department", warehouse_name 
+   FROM warehouses;
+
+LOCATION_ID Department                     Warehouse
+----------- ------------------------------ ---------------------------
+       1400 IT
+       1400                                Southlake, Texas
+       1500 Shipping
+       1500                                San Francisco
+       1600                                New Jersey
+       1700 Accounting
+       1700 Administration
+       1700 Benefits
+       1700 Construction
+       1700 Contracting
+       1700 Control And Credit
+...</pre></div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-B64FE747-586E-4513-945F-80CB197125EE__GUID-ADB31B8C-1B92-4F57-8BBF-F5FD0D75CA50">UNION ALL Example</p>
+               </div>
+               <div class="section">
+                  <p>The <code class="codeph">UNION</code> operator returns only distinct rows that appear in either result, while the <code class="codeph">UNION</code> <code class="codeph">ALL</code> operator returns all rows. The <code class="codeph">UNION</code> <code class="codeph">ALL</code> operator does not eliminate duplicate selected rows:
+                  </p><pre class="oac_no_warn" dir="ltr">SELECT product_id FROM order_items
+UNION
+SELECT product_id FROM inventories
+ORDER BY product_id;
+
+SELECT location_id  FROM locations 
+UNION ALL 
+SELECT location_id  FROM departments
+ORDER BY location_id;
+</pre><p>A <code class="codeph">location_id</code> value that appears multiple times in either or both queries (such as '<code class="codeph">1700</code>') is returned only once by the <code class="codeph">UNION</code> operator, but multiple times by the <code class="codeph">UNION</code> <code class="codeph">ALL</code> operator. 
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-B64FE747-586E-4513-945F-80CB197125EE__GUID-F6637CB9-F2B5-409E-A563-62B60B39A9F5">INTERSECT Example</p>
+               </div>
+               <div class="section">
+                  <p>The following statement combines the results with the <code class="codeph">INTERSECT</code> operator, which returns only those unique rows returned by both queries:
+                  </p><pre class="oac_no_warn" dir="ltr">SELECT product_id FROM inventories
+INTERSECT
+SELECT product_id FROM order_items
+ORDER BY product_id;</pre></div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-B64FE747-586E-4513-945F-80CB197125EE__GUID-AC6E723B-59F7-478F-BC9C-1580C8DAFFB8">MINUS Example</p>
+               </div>
+               <div class="section">
+                  <p>The following statement combines results with the <code class="codeph">MINUS</code> operator, which returns only unique rows returned by the first query but not by the second:
+                  </p><pre class="oac_no_warn" dir="ltr">SELECT product_id FROM inventories
+MINUS
+SELECT product_id FROM order_items
+ORDER BY product_id;</pre></div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-B64FE747-586E-4513-945F-80CB197125EE__GUID-AAF2A7EA-742A-457D-89A5-C89406F1FBC5">EXCEPT Example</p>
+                  <p>You can use <code class="codeph">EXCEPT</code> or  <code class="codeph">MINUS</code> when you want to exclude a result set from the final result set. In this example, the result of the second query is ignored. 
+                  </p>
+                  <p>The following statement combines results with the <code class="codeph">EXCEPT</code> operator, which returns only unique rows returned by the first query but not by the second:
+                  </p><pre class="oac_no_warn" dir="ltr">SELECT product_id FROM inventories
+EXCEPT
+SELECT product_id FROM order_items
+ORDER BY product_id;</pre></div>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

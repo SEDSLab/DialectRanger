@@ -1,0 +1,145 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="reference">
+      <meta name="DC.Title" content="SQL For JSON Conditions">
+      <meta name="DC.subject" content="SQL For JSON, conditions">
+      <meta name="keywords" content="SQL For JSON, conditions">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-08C75404-6E58-4EBE-A8B4-0B6041B0DB63">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>SQL For JSON Conditions</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="XML-Conditions.html" title="Previous" type="text/html">
+      <link rel="next" href="is-json-condition.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"SQL For JSON Conditions","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="XML-Conditions.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="is-json-condition.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-08C75404-6E58-4EBE-A8B4-0B6041B0DB63" name="GUID-08C75404-6E58-4EBE-A8B4-0B6041B0DB63"></a><a id="SQLRF57035"></a><a id="SQLRF56660"></a>
+         
+         <h2 id="SQLRF-GUID-08C75404-6E58-4EBE-A8B4-0B6041B0DB63" class="sect2">SQL For JSON Conditions</h2>
+         <div class="ind">
+            <div>
+               <div class="section">
+                  <p>SQL for JSON conditions allow you to test JavaScript Object Notation (JSON) data as follows:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p><a href="is-json-condition.html#GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA">IS JSON Condition</a> lets you test whether an expression is syntactically correct JSON data.
+                        </p>
+                     </li>
+                     <li>
+                        <p><a href="json_equal-condition.html#GUID-35C7012D-FCDB-4106-88C1-CABA78326896">JSON_EQUAL Condition</a> tests whether two JSON values are the same.
+                        </p>
+                     </li>
+                     <li>
+                        <p><a href="json_exists-condition.html#GUID-57762C80-0C8A-4B18-9BA7-9B3F5ABDC988">JSON_EXISTS Condition</a> lets you test whether a specified JSON value exists in JSON data.
+                        </p>
+                     </li>
+                     <li>
+                        <p><a href="json_textcontains-condition.html#GUID-DEF7941B-1267-44E7-8514-5CD448503179">JSON_TEXTCONTAINS Condition</a> lets you test whether a specified character string exists in JSON property values.
+                        </p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-08C75404-6E58-4EBE-A8B4-0B6041B0DB63__GUID-D762B6B3-E13E-488D-8145-C07A4B60FD81"><span class="italic">JSON_condition</span>::=
+                  </p>
+               </div>
+               <div class="section">
+                  <div class="figure" id="GUID-08C75404-6E58-4EBE-A8B4-0B6041B0DB63__GUID-19BD5A21-0160-41BD-85C3-7C237BDC725F"><img src="img/json_condition.gif" alt="Description of json_condition.eps follows" title="Description of json_condition.eps follows" longdesc="img_text/json_condition.html"><br><a href="img_text/json_condition.html">Description of the illustration json_condition.eps</a></div>
+               </div>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

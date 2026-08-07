@@ -1,0 +1,36 @@
+{
+  "dbms": "mysql",
+  "feature_type": "datatype",
+  "total_drafts": 43,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 43,
+  "invalid_features": 0,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 43,
+    "no_description_claims": 1,
+    "no_valid_syntax": 0,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 0
+  },
+  "sample_clean_features": [],
+  "sample_warning_features": [
+    "mysql.datatype.bigint",
+    "mysql.datatype.binary",
+    "mysql.datatype.bit",
+    "mysql.datatype.blob",
+    "mysql.datatype.bool",
+    "mysql.datatype.boolean",
+    "mysql.datatype.char",
+    "mysql.datatype.date",
+    "mysql.datatype.datetime",
+    "mysql.datatype.decimal"
+  ],
+  "sample_invalid_features": [],
+  "generated_at": "2026-08-06T18:46:58.892573+08:00"
+}

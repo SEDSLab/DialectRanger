@@ -1,0 +1,1785 @@
+{
+  "dbms": "duckdb",
+  "feature_type": "datatype",
+  "processed_pages": 220,
+  "skipped_pages": 5,
+  "total_sections": 1758,
+  "total_blocks": 18090,
+  "section_sources": {
+    "fallback": 490,
+    "heading_tree": 1268
+  },
+  "block_types": {
+    "anchor": 447,
+    "list": 1948,
+    "heading": 1268,
+    "paragraph": 3443,
+    "table": 499,
+    "table_row": 7529,
+    "code": 2741,
+    "note": 189,
+    "signature": 26
+  },
+  "pages": [
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 7,
+      "blocks": 61,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_json_type",
+      "sections": 2,
+      "blocks": 39,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_types",
+      "sections": 16,
+      "blocks": 110,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_types",
+      "sections": 16,
+      "blocks": 110,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_create_type",
+      "sections": 4,
+      "blocks": 24,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 7,
+      "blocks": 61,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 8,
+      "blocks": 55,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_bitstring",
+      "sections": 3,
+      "blocks": 32,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_blob",
+      "sections": 2,
+      "blocks": 22,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_boolean",
+      "sections": 3,
+      "blocks": 40,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_date",
+      "sections": 3,
+      "blocks": 28,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "duckdb_stable_enum",
+      "sections": 7,
+      "blocks": 92,
+      "anchors": 2,
+      "tables": 9,
+      "code_blocks": 20
+    },
+    {
+      "page_id": "duckdb_stable_geometry",
+      "sections": 12,
+      "blocks": 99,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 19
+    },
+    {
+      "page_id": "duckdb_stable_interval",
+      "sections": 4,
+      "blocks": 65,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 6,
+      "blocks": 64,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_literal_types",
+      "sections": 10,
+      "blocks": 78,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 5,
+      "blocks": 42,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_nulls",
+      "sections": 4,
+      "blocks": 44,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "duckdb_stable_numeric",
+      "sections": 6,
+      "blocks": 62,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 12,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 49
+    },
+    {
+      "page_id": "duckdb_stable_text",
+      "sections": 6,
+      "blocks": 34,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_time",
+      "sections": 2,
+      "blocks": 28,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_timestamp",
+      "sections": 11,
+      "blocks": 92,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "duckdb_stable_timezones",
+      "sections": 33,
+      "blocks": 650,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 7,
+      "blocks": 75,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_typecasting",
+      "sections": 12,
+      "blocks": 49,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_variant",
+      "sections": 8,
+      "blocks": 33,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 8
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 7,
+      "blocks": 61,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 7,
+      "blocks": 61,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 7,
+      "blocks": 61,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 7,
+      "blocks": 61,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 7,
+      "blocks": 61,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 7,
+      "blocks": 61,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_numeric",
+      "sections": 6,
+      "blocks": 62,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_typecasting",
+      "sections": 12,
+      "blocks": 49,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 8,
+      "blocks": 55,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 6,
+      "blocks": 64,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 5,
+      "blocks": 42,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 12,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 49
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 7,
+      "blocks": 75,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_variant",
+      "sections": 8,
+      "blocks": 33,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 8
+    },
+    {
+      "page_id": "duckdb_stable_json_type",
+      "sections": 2,
+      "blocks": 39,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_types",
+      "sections": 16,
+      "blocks": 110,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_types",
+      "sections": 16,
+      "blocks": 110,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_create_type",
+      "sections": 4,
+      "blocks": 24,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 8,
+      "blocks": 55,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_bitstring",
+      "sections": 3,
+      "blocks": 32,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_blob",
+      "sections": 2,
+      "blocks": 22,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_boolean",
+      "sections": 3,
+      "blocks": 40,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_date",
+      "sections": 3,
+      "blocks": 28,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "duckdb_stable_enum",
+      "sections": 7,
+      "blocks": 92,
+      "anchors": 2,
+      "tables": 9,
+      "code_blocks": 20
+    },
+    {
+      "page_id": "duckdb_stable_interval",
+      "sections": 4,
+      "blocks": 65,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 6,
+      "blocks": 64,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_literal_types",
+      "sections": 10,
+      "blocks": 78,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 5,
+      "blocks": 42,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_nulls",
+      "sections": 4,
+      "blocks": 44,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "duckdb_stable_numeric",
+      "sections": 6,
+      "blocks": 62,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 12,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 49
+    },
+    {
+      "page_id": "duckdb_stable_text",
+      "sections": 6,
+      "blocks": 34,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_time",
+      "sections": 2,
+      "blocks": 28,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_timestamp",
+      "sections": 11,
+      "blocks": 92,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "duckdb_stable_timezones",
+      "sections": 33,
+      "blocks": 650,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 7,
+      "blocks": 75,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_typecasting",
+      "sections": 12,
+      "blocks": 49,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_json_type",
+      "sections": 2,
+      "blocks": 39,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_types",
+      "sections": 16,
+      "blocks": 110,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_types",
+      "sections": 16,
+      "blocks": 110,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_create_type",
+      "sections": 4,
+      "blocks": 24,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 8,
+      "blocks": 55,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_bitstring",
+      "sections": 3,
+      "blocks": 32,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_blob",
+      "sections": 2,
+      "blocks": 22,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_boolean",
+      "sections": 3,
+      "blocks": 40,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_date",
+      "sections": 3,
+      "blocks": 28,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "duckdb_stable_enum",
+      "sections": 7,
+      "blocks": 92,
+      "anchors": 2,
+      "tables": 9,
+      "code_blocks": 20
+    },
+    {
+      "page_id": "duckdb_stable_interval",
+      "sections": 4,
+      "blocks": 65,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 6,
+      "blocks": 64,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_literal_types",
+      "sections": 10,
+      "blocks": 78,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 5,
+      "blocks": 42,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_nulls",
+      "sections": 4,
+      "blocks": 44,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "duckdb_stable_numeric",
+      "sections": 6,
+      "blocks": 62,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 12,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 49
+    },
+    {
+      "page_id": "duckdb_stable_text",
+      "sections": 6,
+      "blocks": 34,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_time",
+      "sections": 2,
+      "blocks": 28,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_timestamp",
+      "sections": 11,
+      "blocks": 92,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "duckdb_stable_timezones",
+      "sections": 33,
+      "blocks": 650,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 7,
+      "blocks": 75,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_typecasting",
+      "sections": 12,
+      "blocks": 49,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_json_type",
+      "sections": 2,
+      "blocks": 39,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_types",
+      "sections": 16,
+      "blocks": 110,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_types",
+      "sections": 16,
+      "blocks": 110,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_create_type",
+      "sections": 4,
+      "blocks": 24,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 8,
+      "blocks": 55,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_bitstring",
+      "sections": 3,
+      "blocks": 32,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_blob",
+      "sections": 2,
+      "blocks": 22,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_boolean",
+      "sections": 3,
+      "blocks": 40,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_date",
+      "sections": 3,
+      "blocks": 28,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "duckdb_stable_enum",
+      "sections": 7,
+      "blocks": 92,
+      "anchors": 2,
+      "tables": 9,
+      "code_blocks": 20
+    },
+    {
+      "page_id": "duckdb_stable_interval",
+      "sections": 4,
+      "blocks": 65,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 6,
+      "blocks": 64,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_literal_types",
+      "sections": 10,
+      "blocks": 78,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 5,
+      "blocks": 42,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_nulls",
+      "sections": 4,
+      "blocks": 44,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "duckdb_stable_numeric",
+      "sections": 6,
+      "blocks": 62,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 12,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 49
+    },
+    {
+      "page_id": "duckdb_stable_text",
+      "sections": 6,
+      "blocks": 34,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_time",
+      "sections": 2,
+      "blocks": 28,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_timestamp",
+      "sections": 11,
+      "blocks": 92,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "duckdb_stable_timezones",
+      "sections": 33,
+      "blocks": 650,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 7,
+      "blocks": 75,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_typecasting",
+      "sections": 12,
+      "blocks": 49,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_json_type",
+      "sections": 2,
+      "blocks": 39,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_types",
+      "sections": 16,
+      "blocks": 110,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_types",
+      "sections": 16,
+      "blocks": 110,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_create_type",
+      "sections": 4,
+      "blocks": 24,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 8,
+      "blocks": 55,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_bitstring",
+      "sections": 3,
+      "blocks": 32,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_blob",
+      "sections": 2,
+      "blocks": 22,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_boolean",
+      "sections": 3,
+      "blocks": 40,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_date",
+      "sections": 3,
+      "blocks": 28,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "duckdb_stable_enum",
+      "sections": 7,
+      "blocks": 92,
+      "anchors": 2,
+      "tables": 9,
+      "code_blocks": 20
+    },
+    {
+      "page_id": "duckdb_stable_interval",
+      "sections": 4,
+      "blocks": 65,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 6,
+      "blocks": 64,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_literal_types",
+      "sections": 10,
+      "blocks": 78,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 5,
+      "blocks": 42,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_nulls",
+      "sections": 4,
+      "blocks": 44,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "duckdb_stable_numeric",
+      "sections": 6,
+      "blocks": 62,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 12,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 49
+    },
+    {
+      "page_id": "duckdb_stable_text",
+      "sections": 6,
+      "blocks": 34,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_time",
+      "sections": 2,
+      "blocks": 28,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_timestamp",
+      "sections": 11,
+      "blocks": 92,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "duckdb_stable_timezones",
+      "sections": 33,
+      "blocks": 650,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 7,
+      "blocks": 75,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_typecasting",
+      "sections": 12,
+      "blocks": 49,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_types",
+      "sections": 16,
+      "blocks": 110,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_types",
+      "sections": 16,
+      "blocks": 110,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_create_type",
+      "sections": 4,
+      "blocks": 24,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 8,
+      "blocks": 55,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_bitstring",
+      "sections": 3,
+      "blocks": 32,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_blob",
+      "sections": 2,
+      "blocks": 22,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_boolean",
+      "sections": 3,
+      "blocks": 40,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_date",
+      "sections": 3,
+      "blocks": 28,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "duckdb_stable_enum",
+      "sections": 7,
+      "blocks": 92,
+      "anchors": 2,
+      "tables": 9,
+      "code_blocks": 20
+    },
+    {
+      "page_id": "duckdb_stable_interval",
+      "sections": 4,
+      "blocks": 65,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 6,
+      "blocks": 64,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_literal_types",
+      "sections": 10,
+      "blocks": 78,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 5,
+      "blocks": 42,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_nulls",
+      "sections": 4,
+      "blocks": 44,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "duckdb_stable_numeric",
+      "sections": 6,
+      "blocks": 62,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 12,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 49
+    },
+    {
+      "page_id": "duckdb_stable_text",
+      "sections": 6,
+      "blocks": 34,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_time",
+      "sections": 2,
+      "blocks": 28,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_timestamp",
+      "sections": 11,
+      "blocks": 92,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "duckdb_stable_timezones",
+      "sections": 33,
+      "blocks": 650,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 7,
+      "blocks": 75,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_typecasting",
+      "sections": 12,
+      "blocks": 49,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_types",
+      "sections": 16,
+      "blocks": 110,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_types",
+      "sections": 16,
+      "blocks": 110,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_create_type",
+      "sections": 4,
+      "blocks": 24,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 8,
+      "blocks": 55,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_bitstring",
+      "sections": 3,
+      "blocks": 32,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_blob",
+      "sections": 2,
+      "blocks": 22,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_boolean",
+      "sections": 3,
+      "blocks": 40,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_date",
+      "sections": 3,
+      "blocks": 28,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "duckdb_stable_enum",
+      "sections": 7,
+      "blocks": 92,
+      "anchors": 2,
+      "tables": 9,
+      "code_blocks": 20
+    },
+    {
+      "page_id": "duckdb_stable_interval",
+      "sections": 4,
+      "blocks": 65,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 6,
+      "blocks": 64,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_literal_types",
+      "sections": 10,
+      "blocks": 78,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 5,
+      "blocks": 42,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_nulls",
+      "sections": 4,
+      "blocks": 44,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "duckdb_stable_numeric",
+      "sections": 6,
+      "blocks": 62,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 12,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 49
+    },
+    {
+      "page_id": "duckdb_stable_text",
+      "sections": 6,
+      "blocks": 34,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_time",
+      "sections": 2,
+      "blocks": 28,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_timestamp",
+      "sections": 11,
+      "blocks": 92,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "duckdb_stable_timezones",
+      "sections": 33,
+      "blocks": 650,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 7,
+      "blocks": 75,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_typecasting",
+      "sections": 12,
+      "blocks": 49,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_boolean",
+      "sections": 3,
+      "blocks": 40,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_literal_types",
+      "sections": 10,
+      "blocks": 78,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "duckdb_stable_timestamp",
+      "sections": 11,
+      "blocks": 92,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "duckdb_stable_date",
+      "sections": 3,
+      "blocks": 28,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "duckdb_stable_time",
+      "sections": 2,
+      "blocks": 28,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_timezones",
+      "sections": 33,
+      "blocks": 650,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_text",
+      "sections": 6,
+      "blocks": 34,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_json_type",
+      "sections": 2,
+      "blocks": 39,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_bitstring",
+      "sections": 3,
+      "blocks": 32,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_blob",
+      "sections": 2,
+      "blocks": 22,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_interval",
+      "sections": 4,
+      "blocks": 65,
+      "anchors": 2,
+      "tables": 3,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_enum",
+      "sections": 7,
+      "blocks": 92,
+      "anchors": 2,
+      "tables": 9,
+      "code_blocks": 20
+    },
+    {
+      "page_id": "duckdb_stable_geometry",
+      "sections": 12,
+      "blocks": 99,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 19
+    },
+    {
+      "page_id": "duckdb_stable_typecasting",
+      "sections": 12,
+      "blocks": 49,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 8,
+      "blocks": 55,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 6,
+      "blocks": 64,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 5,
+      "blocks": 42,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 12,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 49
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 7,
+      "blocks": 75,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_typecasting",
+      "sections": 12,
+      "blocks": 49,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 8,
+      "blocks": 55,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 6,
+      "blocks": 64,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 5,
+      "blocks": 42,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 12,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 49
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 7,
+      "blocks": 75,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_typecasting",
+      "sections": 12,
+      "blocks": 49,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 8,
+      "blocks": 55,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 6,
+      "blocks": 64,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 5,
+      "blocks": 42,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 12,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 49
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 7,
+      "blocks": 75,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_typecasting",
+      "sections": 12,
+      "blocks": 49,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 8,
+      "blocks": 55,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 6,
+      "blocks": 64,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 5,
+      "blocks": 42,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 12,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 49
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 7,
+      "blocks": 75,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_typecasting",
+      "sections": 12,
+      "blocks": 49,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 8,
+      "blocks": 55,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 6,
+      "blocks": 64,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 5,
+      "blocks": 42,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 12,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 49
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 7,
+      "blocks": 75,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 11
+    }
+  ]
+}

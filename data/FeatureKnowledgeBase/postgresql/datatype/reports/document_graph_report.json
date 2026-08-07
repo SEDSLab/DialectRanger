@@ -1,0 +1,62 @@
+{
+  "dbms": "postgresql",
+  "feature_type": "datatype",
+  "nodes": {
+    "page": 19,
+    "section": 81,
+    "block": 1462,
+    "feature_candidate": 57
+  },
+  "edges": {
+    "page_contains_section": 81,
+    "section_contains_block": 1462,
+    "section_previous": 62,
+    "section_next": 62,
+    "feature_documented_in_section": 173,
+    "total": 1840
+  },
+  "noise": {
+    "noise_nodes": 0,
+    "noise_sections": 0,
+    "noise_blocks": 0,
+    "eligible_nodes": 1562
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "postgresql.datatype.any",
+      "target": "postgresql_current_datatype_pseudo_s0002"
+    },
+    {
+      "source": "postgresql.datatype.any",
+      "target": "postgresql_current_datatype_datetime_s0004"
+    },
+    {
+      "source": "postgresql.datatype.anyarray",
+      "target": "postgresql_current_datatype_pseudo_s0002"
+    },
+    {
+      "source": "postgresql.datatype.anyelement",
+      "target": "postgresql_current_datatype_pseudo_s0002"
+    },
+    {
+      "source": "postgresql.datatype.anyenum",
+      "target": "postgresql_current_datatype_pseudo_s0002"
+    },
+    {
+      "source": "postgresql.datatype.anynonarray",
+      "target": "postgresql_current_datatype_pseudo_s0002"
+    },
+    {
+      "source": "postgresql.datatype.anyrange",
+      "target": "postgresql_current_datatype_pseudo_s0002"
+    },
+    {
+      "source": "postgresql.datatype.array",
+      "target": "postgresql_current_datatype_pseudo_s0002"
+    }
+  ],
+  "generated_at": "2026-08-06T18:50:24.328248+08:00"
+}

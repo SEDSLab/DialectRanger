@@ -1,0 +1,5352 @@
+{
+  "signature_backfill_enabled": true,
+  "metadata_backfill_enabled": true,
+  "residual_invalid_handling_enabled": true,
+  "features_backfilled": 86,
+  "formal_signatures_added": 0,
+  "weak_signatures_added": 170,
+  "rejected_example_like_signatures": 0,
+  "source_metadata_backfilled": 585,
+  "examples_backfilled": 101,
+  "description_claims_backfilled": 198,
+  "backfilled_features": [
+    {
+      "feature_id": "duckdb.function.array_to_string",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.avg",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.contains",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.count",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.degrees",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_bind_get_extra_info",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_bind_get_parameter",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_bind_get_parameter_count",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_bind_set_cardinality",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_create_table_function",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_function_get_bind_data",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_function_get_extra_info",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_function_get_init_data",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_function_get_local_init_data",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_init_get_bind_data",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_init_get_column_count",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_init_get_column_index",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_init_get_extra_info",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_init_set_max_threads",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_register_table_function",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_add_parameter",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_set_bind",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_set_function",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_set_init",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_set_local_init",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_supports_projection_pushdown",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.first",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.flatten",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.format",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.generate_series",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.generate_subscripts",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.glob",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.iceberg_bucket",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.iceberg_column_stats",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.iceberg_snapshots",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.iceberg_truncate",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.json",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.json_array_length",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.json_contains",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.json_extract",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.json_extract_string",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.json_group_array",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.json_group_object",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.json_group_structure",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.json_keys",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.json_structure",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.json_transform",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.json_transform_strict",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.json_type",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.json_valid",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.lag",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.len",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.list",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.list_aggr",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.list_aggregate",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.list_filter",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.list_last",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.list_min",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.list_reduce",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.list_reverse_sort",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.list_slice",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.list_sort",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.list_sum",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.list_transform",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.lower",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.max",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.min",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.now",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.pi",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.printf",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.quantile_cont",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.range",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.regexp_extract",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.regexp_matches",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.regexp_replace",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.replace",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.row_number",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.st_drivers",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.st_read",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.st_readosm",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.strftime",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.string_agg",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.strptime",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.sum",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.unnest",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "duckdb.function.upper",
+      "added_syntax": [],
+      "evidence_refs": []
+    }
+  ],
+  "backfilled_examples": [
+    {
+      "feature_id": "duckdb.function.aggregate",
+      "example_count": 4,
+      "evidence_refs": [
+        "duckdb_stable_list_s0017_b0005",
+        "duckdb_stable_list_s0017_b0007",
+        "duckdb_stable_list_s0017_b0009",
+        "duckdb_stable_list_s0017_b0011"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.apply",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_lambda_s0007_b0007",
+        "duckdb_stable_lambda_s0013_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.array_to_string",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_list_s0019_b0003",
+        "duckdb_stable_nested_s0025_b0003"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.avg",
+      "example_count": 3,
+      "evidence_refs": [
+        "duckdb_stable_window_functions_s0011_b0003",
+        "duckdb_stable_window_functions_s0013_b0003",
+        "duckdb_stable_window_functions_s0013_b0006"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.count",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_aggregates_s0002_b0009",
+        "duckdb_stable_function_s0007_b0004"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.degrees",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_functions_s0049_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_bind_add_result_column",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0003_b0002",
+        "duckdb_stable_table_functions_s0046_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_bind_get_extra_info",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0003_b0002",
+        "duckdb_stable_table_functions_s0043_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_bind_get_named_parameter",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0003_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_bind_get_parameter",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0003_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_bind_get_parameter_count",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0003_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_bind_set_bind_data",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0003_b0002",
+        "duckdb_stable_table_functions_s0058_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_bind_set_cardinality",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0003_b0002",
+        "duckdb_stable_table_functions_s0061_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_bind_set_error",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0003_b0002",
+        "duckdb_stable_table_functions_s0064_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_create_table_function",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0002_b0002",
+        "duckdb_stable_table_functions_s0007_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_destroy_table_function",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0002_b0002",
+        "duckdb_stable_table_functions_s0010_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_function_get_bind_data",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0005_b0002",
+        "duckdb_stable_table_functions_s0091_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_function_get_extra_info",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0005_b0002",
+        "duckdb_stable_table_functions_s0088_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_function_get_init_data",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0005_b0002",
+        "duckdb_stable_table_functions_s0094_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_function_get_local_init_data",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0005_b0002",
+        "duckdb_stable_table_functions_s0097_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_function_set_error",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0005_b0002",
+        "duckdb_stable_table_functions_s0100_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_init_get_bind_data",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0004_b0002",
+        "duckdb_stable_table_functions_s0070_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_init_get_column_count",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0004_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_init_get_column_index",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0004_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_init_get_extra_info",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0004_b0002",
+        "duckdb_stable_table_functions_s0067_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_init_set_error",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0004_b0002",
+        "duckdb_stable_table_functions_s0085_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_init_set_init_data",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0004_b0002",
+        "duckdb_stable_table_functions_s0073_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_init_set_max_threads",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0004_b0002",
+        "duckdb_stable_table_functions_s0082_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_register_table_function",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0002_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_add_named_parameter",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0002_b0002",
+        "duckdb_stable_table_functions_s0019_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_add_parameter",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0002_b0002",
+        "duckdb_stable_table_functions_s0016_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_set_bind",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0002_b0002",
+        "duckdb_stable_table_functions_s0025_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_set_extra_info",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0002_b0002",
+        "duckdb_stable_table_functions_s0022_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_set_function",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0002_b0002",
+        "duckdb_stable_table_functions_s0034_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_set_init",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0002_b0002",
+        "duckdb_stable_table_functions_s0028_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_set_local_init",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0002_b0002",
+        "duckdb_stable_table_functions_s0031_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_set_name",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0002_b0002",
+        "duckdb_stable_table_functions_s0013_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_supports_projection_pushdown",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_table_functions_s0002_b0002",
+        "duckdb_stable_table_functions_s0037_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.filter",
+      "example_count": 6,
+      "evidence_refs": [
+        "duckdb_stable_lambda_s0006_b0003",
+        "duckdb_stable_lambda_s0008_b0004",
+        "duckdb_stable_lambda_s0011_b0003",
+        "duckdb_stable_lambda_s0011_b0006",
+        "duckdb_stable_lambda_s0011_b0009",
+        "duckdb_stable_lambda_s0012_b0006"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.first",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_aggregates_s0002_b0015"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.flatten",
+      "example_count": 14,
+      "evidence_refs": [
+        "duckdb_stable_list_s0021_b0004",
+        "duckdb_stable_list_s0021_b0007",
+        "duckdb_stable_list_s0021_b0011",
+        "duckdb_stable_list_s0021_b0014",
+        "duckdb_stable_list_s0021_b0017",
+        "duckdb_stable_list_s0021_b0020",
+        "duckdb_stable_list_s0021_b0023",
+        "duckdb_stable_nested_s0028_b0004",
+        "duckdb_stable_nested_s0028_b0007",
+        "duckdb_stable_nested_s0028_b0011",
+        "duckdb_stable_nested_s0028_b0014",
+        "duckdb_stable_nested_s0028_b0017",
+        "duckdb_stable_nested_s0028_b0020",
+        "duckdb_stable_nested_s0028_b0023"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.format",
+      "example_count": 25,
+      "evidence_refs": [
+        "duckdb_stable_char_s0011_b0004",
+        "duckdb_stable_char_s0011_b0006",
+        "duckdb_stable_char_s0011_b0008",
+        "duckdb_stable_char_s0013_b0003",
+        "duckdb_stable_char_s0013_b0005",
+        "duckdb_stable_char_s0013_b0007",
+        "duckdb_stable_char_s0013_b0009",
+        "duckdb_stable_char_s0013_b0011",
+        "duckdb_stable_char_s0013_b0013",
+        "duckdb_stable_char_s0013_b0015",
+        "duckdb_stable_char_s0013_b0017",
+        "duckdb_stable_char_s0014_b0002",
+        "duckdb_stable_text_s0011_b0004",
+        "duckdb_stable_text_s0011_b0006",
+        "duckdb_stable_text_s0011_b0008",
+        "duckdb_stable_text_s0013_b0003",
+        "duckdb_stable_text_s0013_b0005",
+        "duckdb_stable_text_s0013_b0007",
+        "duckdb_stable_text_s0013_b0009",
+        "duckdb_stable_text_s0013_b0011",
+        "duckdb_stable_text_s0013_b0013",
+        "duckdb_stable_text_s0013_b0015",
+        "duckdb_stable_text_s0013_b0017",
+        "duckdb_stable_text_s0014_b0003",
+        "duckdb_stable_text_s0014_b0005"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.generate_series",
+      "example_count": 8,
+      "evidence_refs": [
+        "duckdb_stable_list_s0012_b0004",
+        "duckdb_stable_list_s0012_b0007",
+        "duckdb_stable_list_s0012_b0010",
+        "duckdb_stable_list_s0015_b0002",
+        "duckdb_stable_nested_s0019_b0004",
+        "duckdb_stable_nested_s0019_b0007",
+        "duckdb_stable_nested_s0019_b0010",
+        "duckdb_stable_nested_s0022_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.generate_subscripts",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_list_s0012_b0014",
+        "duckdb_stable_nested_s0029_b0003"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.glob",
+      "example_count": 3,
+      "evidence_refs": [
+        "duckdb_stable_pattern_matching_s0006_b0004",
+        "duckdb_stable_pattern_matching_s0007_b0003",
+        "duckdb_stable_pattern_matching_s0007_b0008"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.iceberg_bucket",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_reference_s0006_b0007"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.iceberg_column_stats",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_reference_s0003_b0010"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.iceberg_snapshots",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_reference_s0003_b0010"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.iceberg_truncate",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_reference_s0006_b0007"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.json",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_json_functions_s0003_b0024"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.json_array_length",
+      "example_count": 5,
+      "evidence_refs": [
+        "duckdb_stable_json_functions_s0003_b0034",
+        "duckdb_stable_json_functions_s0003_b0035",
+        "duckdb_stable_json_functions_s0003_b0036",
+        "duckdb_stable_json_functions_s0003_b0037",
+        "duckdb_stable_json_functions_s0003_b0038"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.json_contains",
+      "example_count": 3,
+      "evidence_refs": [
+        "duckdb_stable_json_functions_s0003_b0048",
+        "duckdb_stable_json_functions_s0003_b0050",
+        "duckdb_stable_json_functions_s0003_b0052"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.json_extract",
+      "example_count": 7,
+      "evidence_refs": [
+        "duckdb_stable_json_functions_s0002_b0015",
+        "duckdb_stable_json_functions_s0002_b0043",
+        "duckdb_stable_json_functions_s0002_b0048",
+        "duckdb_stable_json_functions_s0003_b0014",
+        "duckdb_stable_json_functions_s0003_b0016",
+        "duckdb_stable_json_functions_s0003_b0019",
+        "duckdb_stable_json_functions_s0003_b0021"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.json_extract_string",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_json_functions_s0002_b0029"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.json_group_array",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_json_functions_s0004_b0010"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.json_group_object",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_json_functions_s0004_b0012"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.json_group_structure",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_json_functions_s0004_b0015"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.json_keys",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_json_functions_s0003_b0042"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.json_structure",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_json_functions_s0003_b0044",
+        "duckdb_stable_json_functions_s0003_b0046"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.json_transform",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_json_functions_s0005_b0012",
+        "duckdb_stable_json_functions_s0005_b0014"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.json_transform_strict",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_json_functions_s0005_b0016"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.json_type",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_json_functions_s0003_b0040"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.json_valid",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_json_functions_s0003_b0030",
+        "duckdb_stable_json_functions_s0003_b0032"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.lag",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_window_functions_s0002_b0009"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.len",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_list_s0009_b0007",
+        "duckdb_stable_nested_s0007_b0005"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.list",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_aggregates_s0002_b0013",
+        "duckdb_stable_functions_s0065_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.list_aggr",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_list_s0019_b0006",
+        "duckdb_stable_nested_s0025_b0006"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.list_aggregate",
+      "example_count": 8,
+      "evidence_refs": [
+        "duckdb_stable_list_s0017_b0005",
+        "duckdb_stable_list_s0017_b0007",
+        "duckdb_stable_list_s0017_b0009",
+        "duckdb_stable_list_s0017_b0011",
+        "duckdb_stable_nested_s0024_b0004",
+        "duckdb_stable_nested_s0024_b0006",
+        "duckdb_stable_nested_s0024_b0008",
+        "duckdb_stable_nested_s0024_b0010"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.list_apply",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_lambda_s0007_b0007",
+        "duckdb_stable_lambda_s0013_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.list_filter",
+      "example_count": 6,
+      "evidence_refs": [
+        "duckdb_stable_lambda_s0006_b0003",
+        "duckdb_stable_lambda_s0008_b0004",
+        "duckdb_stable_lambda_s0011_b0003",
+        "duckdb_stable_lambda_s0011_b0006",
+        "duckdb_stable_lambda_s0011_b0009",
+        "duckdb_stable_lambda_s0012_b0006"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.list_last",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_list_s0018_b0007",
+        "duckdb_stable_nested_s0024_b0017"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.list_min",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_list_s0018_b0003",
+        "duckdb_stable_nested_s0024_b0013"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.list_reduce",
+      "example_count": 6,
+      "evidence_refs": [
+        "duckdb_stable_lambda_s0006_b0006",
+        "duckdb_stable_lambda_s0012_b0003",
+        "duckdb_stable_lambda_s0012_b0006",
+        "duckdb_stable_lambda_s0012_b0008",
+        "duckdb_stable_lambda_s0012_b0011",
+        "duckdb_stable_lambda_s0012_b0014"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.list_reverse_sort",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_list_s0020_b0019",
+        "duckdb_stable_nested_s0026_b0019"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.list_slice",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_list_s0016_b0042",
+        "duckdb_stable_nested_s0023_b0042"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.list_sort",
+      "example_count": 8,
+      "evidence_refs": [
+        "duckdb_stable_list_s0020_b0006",
+        "duckdb_stable_list_s0020_b0009",
+        "duckdb_stable_list_s0020_b0012",
+        "duckdb_stable_list_s0020_b0016",
+        "duckdb_stable_nested_s0026_b0006",
+        "duckdb_stable_nested_s0026_b0009",
+        "duckdb_stable_nested_s0026_b0012",
+        "duckdb_stable_nested_s0026_b0016"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.list_sum",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_list_s0018_b0005",
+        "duckdb_stable_nested_s0024_b0015"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.list_transform",
+      "example_count": 5,
+      "evidence_refs": [
+        "duckdb_stable_lambda_s0006_b0003",
+        "duckdb_stable_lambda_s0006_b0006",
+        "duckdb_stable_lambda_s0010_b0003",
+        "duckdb_stable_lambda_s0010_b0006",
+        "duckdb_stable_lambda_s0010_b0009"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.lower",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_list_s0009_b0003",
+        "duckdb_stable_nested_s0007_b0003"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.max",
+      "example_count": 3,
+      "evidence_refs": [
+        "duckdb_stable_window_functions_s0013_b0003",
+        "duckdb_stable_window_functions_s0013_b0006",
+        "duckdb_stable_window_functions_s0015_b0003"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.min",
+      "example_count": 3,
+      "evidence_refs": [
+        "duckdb_stable_window_functions_s0013_b0003",
+        "duckdb_stable_window_functions_s0013_b0006",
+        "duckdb_stable_window_functions_s0015_b0003"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.now",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_function_s0003_b0004"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.pi",
+      "example_count": 3,
+      "evidence_refs": [
+        "duckdb_stable_functions_s0494_b0002",
+        "duckdb_stable_functions_s0498_b0002",
+        "duckdb_stable_functions_s0502_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.printf",
+      "example_count": 25,
+      "evidence_refs": [
+        "duckdb_stable_char_s0015_b0004",
+        "duckdb_stable_char_s0015_b0007",
+        "duckdb_stable_char_s0015_b0010",
+        "duckdb_stable_char_s0017_b0003",
+        "duckdb_stable_char_s0017_b0005",
+        "duckdb_stable_char_s0017_b0007",
+        "duckdb_stable_char_s0017_b0009",
+        "duckdb_stable_char_s0017_b0011",
+        "duckdb_stable_char_s0017_b0013",
+        "duckdb_stable_char_s0017_b0015",
+        "duckdb_stable_char_s0017_b0017",
+        "duckdb_stable_char_s0018_b0002",
+        "duckdb_stable_text_s0015_b0004",
+        "duckdb_stable_text_s0015_b0007",
+        "duckdb_stable_text_s0015_b0010",
+        "duckdb_stable_text_s0017_b0003",
+        "duckdb_stable_text_s0017_b0005",
+        "duckdb_stable_text_s0017_b0007",
+        "duckdb_stable_text_s0017_b0009",
+        "duckdb_stable_text_s0017_b0011",
+        "duckdb_stable_text_s0017_b0013",
+        "duckdb_stable_text_s0017_b0015",
+        "duckdb_stable_text_s0017_b0017",
+        "duckdb_stable_text_s0018_b0003",
+        "duckdb_stable_text_s0018_b0005"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.quantile_cont",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_window_functions_s0015_b0003"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.range",
+      "example_count": 12,
+      "evidence_refs": [
+        "duckdb_stable_aggregates_s0005_b0006",
+        "duckdb_stable_function_s0007_b0006",
+        "duckdb_stable_function_s0007_b0009",
+        "duckdb_stable_lambda_s0011_b0009",
+        "duckdb_stable_list_s0011_b0005",
+        "duckdb_stable_list_s0011_b0008",
+        "duckdb_stable_list_s0011_b0011",
+        "duckdb_stable_list_s0014_b0002",
+        "duckdb_stable_nested_s0018_b0005",
+        "duckdb_stable_nested_s0018_b0008",
+        "duckdb_stable_nested_s0018_b0011",
+        "duckdb_stable_nested_s0021_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.reduce",
+      "example_count": 6,
+      "evidence_refs": [
+        "duckdb_stable_lambda_s0006_b0006",
+        "duckdb_stable_lambda_s0012_b0003",
+        "duckdb_stable_lambda_s0012_b0006",
+        "duckdb_stable_lambda_s0012_b0008",
+        "duckdb_stable_lambda_s0012_b0011",
+        "duckdb_stable_lambda_s0012_b0014"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.regexp_extract",
+      "example_count": 4,
+      "evidence_refs": [
+        "duckdb_stable_regular_expressions_s0007_b0003",
+        "duckdb_stable_regular_expressions_s0007_b0005",
+        "duckdb_stable_regular_expressions_s0007_b0007",
+        "duckdb_stable_regular_expressions_s0007_b0009"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.regexp_matches",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_regular_expressions_s0003_b0060",
+        "duckdb_stable_regular_expressions_s0004_b0012"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.regexp_replace",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_regular_expressions_s0006_b0004"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.replace",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_overview_s0003_b0003",
+        "duckdb_stable_overview_s0003_b0005"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.row_number",
+      "example_count": 4,
+      "evidence_refs": [
+        "duckdb_stable_window_functions_s0002_b0003",
+        "duckdb_stable_window_functions_s0002_b0005",
+        "duckdb_stable_window_functions_s0002_b0007",
+        "duckdb_stable_window_functions_s0008_b0035"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.st_drivers",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_functions_s0515_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.st_read",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_functions_s0523_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.st_readosm",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_functions_s0527_b0002"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.strftime",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_dateformat_s0002_b0003",
+        "duckdb_stable_dateformat_s0002_b0005"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.string_agg",
+      "example_count": 1,
+      "evidence_refs": [
+        "duckdb_stable_aggregates_s0005_b0006"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.strptime",
+      "example_count": 3,
+      "evidence_refs": [
+        "duckdb_stable_dateformat_s0003_b0003",
+        "duckdb_stable_dateformat_s0003_b0005",
+        "duckdb_stable_dateformat_s0003_b0008"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.sum",
+      "example_count": 6,
+      "evidence_refs": [
+        "duckdb_stable_aggregates_s0002_b0003",
+        "duckdb_stable_aggregates_s0002_b0005",
+        "duckdb_stable_aggregates_s0002_b0007",
+        "duckdb_stable_aggregates_s0002_b0011",
+        "duckdb_stable_window_functions_s0002_b0011",
+        "duckdb_stable_window_functions_s0010_b0003"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.unnest",
+      "example_count": 5,
+      "evidence_refs": [
+        "duckdb_stable_functions_s0136_b0002",
+        "duckdb_stable_functions_s0473_b0002",
+        "duckdb_stable_functions_s0477_b0002",
+        "duckdb_stable_overview_s0003_b0003",
+        "duckdb_stable_overview_s0003_b0005"
+      ]
+    },
+    {
+      "feature_id": "duckdb.function.upper",
+      "example_count": 2,
+      "evidence_refs": [
+        "duckdb_stable_list_s0009_b0007",
+        "duckdb_stable_nested_s0007_b0005"
+      ]
+    }
+  ],
+  "weak_table_row_features_added": 467,
+  "non_function_noise_kept_invalid": 32,
+  "residual_features_kept_invalid": [
+    {
+      "feature_id": "duckdb.function.apply",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.array_apply",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.array_filter",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.array_reduce",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.array_transform",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.current_setting",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.currval",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_bind_add_result_column",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_bind_get_named_parameter",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_bind_set_bind_data",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_bind_set_error",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_destroy_table_function",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_function_set_error",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_init_set_error",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_init_set_init_data",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_add_named_parameter",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_set_extra_info",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.duckdb_table_function_set_name",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.equi_width_bins",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.filter",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.group",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.iceberg_to_ducklake",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.list_apply",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.map_from_entries",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.nextval",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.reduce",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.reservoir_quantile",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.struct_insert",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.struct_pack",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.struct_update",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.union_extract",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "duckdb.function.union_value",
+      "reason": "non_function_noise"
+    }
+  ],
+  "generated_at": "2026-08-06T18:59:17.779247+08:00",
+  "residual_features_added_to_kb": [
+    {
+      "feature_id": "duckdb.function.abs",
+      "added_syntax": [
+        "abs(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.acos",
+      "added_syntax": [
+        "acos(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.acosh",
+      "added_syntax": [
+        "acosh(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.add",
+      "added_syntax": [
+        "add(x, y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.age",
+      "added_syntax": [
+        "age(timestamp, timestamp)",
+        "age(timestamp)",
+        "age(timestamptz, timestamptz)",
+        "age(timestamptz)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.ago",
+      "added_syntax": [
+        "ago(interval)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.alias",
+      "added_syntax": [
+        "Alias(es)",
+        "alias(column)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.any_value",
+      "added_syntax": [
+        "any_value(arg)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.approx_count_distinct",
+      "added_syntax": [
+        "approx_count_distinct(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.approx_quantile",
+      "added_syntax": [
+        "approx_quantile(x, pos)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.approx_top_k",
+      "added_syntax": [
+        "approx_top_k(arg, k)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.arg_max",
+      "added_syntax": [
+        "arg_max(arg, val)",
+        "arg_max(arg, val, n)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.arg_max_null",
+      "added_syntax": [
+        "arg_max_null(arg, val)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.arg_min",
+      "added_syntax": [
+        "arg_min(arg, val)",
+        "arg_min(arg, val, n)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.arg_min_null",
+      "added_syntax": [
+        "arg_min_null(arg, val)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_aggr",
+      "added_syntax": [
+        "array_aggr(list, function_name, ...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_aggregate",
+      "added_syntax": [
+        "array_aggregate(list, function_name, ...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_append",
+      "added_syntax": [
+        "array_append(list, element)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_cat",
+      "added_syntax": [
+        "array_cat(list_1, ..., list_n)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_concat",
+      "added_syntax": [
+        "array_concat(list_1, ..., list_n)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_contains",
+      "added_syntax": [
+        "array_contains(list, element)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_cosine_distance",
+      "added_syntax": [
+        "array_cosine_distance(array1, array2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_cosine_similarity",
+      "added_syntax": [
+        "array_cosine_similarity(array1, array2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_cross_product",
+      "added_syntax": [
+        "array_cross_product(array, array)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_distance",
+      "added_syntax": [
+        "array_distance(array1, array2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_distinct",
+      "added_syntax": [
+        "array_distinct(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_dot_product",
+      "added_syntax": [
+        "array_dot_product(array1, array2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_extract",
+      "added_syntax": [
+        "array_extract(list, index)",
+        "array_extract(string, index)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_grade_up",
+      "added_syntax": [
+        "array_grade_up(list[, col1][, col2])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_has",
+      "added_syntax": [
+        "array_has(list, element)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_has_all",
+      "added_syntax": [
+        "array_has_all(list1, list2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_has_any",
+      "added_syntax": [
+        "array_has_any(list1, list2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_indexof",
+      "added_syntax": [
+        "array_indexof(list, element)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_inner_product",
+      "added_syntax": [
+        "array_inner_product(array1, array2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_intersect",
+      "added_syntax": [
+        "array_intersect(list1, list2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_length",
+      "added_syntax": [
+        "array_length(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_negative_dot_product",
+      "added_syntax": [
+        "array_negative_dot_product(array1, array2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_negative_inner_product",
+      "added_syntax": [
+        "array_negative_inner_product(array1, array2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_pop_back",
+      "added_syntax": [
+        "array_pop_back(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_pop_front",
+      "added_syntax": [
+        "array_pop_front(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_position",
+      "added_syntax": [
+        "array_position(list, element)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_prepend",
+      "added_syntax": [
+        "array_prepend(element, list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_push_back",
+      "added_syntax": [
+        "array_push_back(list, element)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_push_front",
+      "added_syntax": [
+        "array_push_front(list, element)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_resize",
+      "added_syntax": [
+        "array_resize(list, size[[, value]])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_reverse",
+      "added_syntax": [
+        "array_reverse(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_reverse_sort",
+      "added_syntax": [
+        "array_reverse_sort(list[, col1])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_select",
+      "added_syntax": [
+        "array_select(value_list, index_list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_slice",
+      "added_syntax": [
+        "array_slice(list, begin, end)",
+        "array_slice(list, begin, end, step)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_sort",
+      "added_syntax": [
+        "array_sort(list[, col1][, col2])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_to_string_comma_default",
+      "added_syntax": [
+        "array_to_string_comma_default(array)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_unique",
+      "added_syntax": [
+        "array_unique(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_value",
+      "added_syntax": [
+        "array_value(arg, ...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_where",
+      "added_syntax": [
+        "array_where(value_list, mask_list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.array_zip",
+      "added_syntax": [
+        "array_zip(list_1, ..., list_n[, truncate])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.ascii",
+      "added_syntax": [
+        "ascii(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.asin",
+      "added_syntax": [
+        "asin(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.asinh",
+      "added_syntax": [
+        "asinh(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.atan",
+      "added_syntax": [
+        "atan(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.atan2",
+      "added_syntax": [
+        "atan2(y, x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.atanh",
+      "added_syntax": [
+        "atanh(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.bar",
+      "added_syntax": [
+        "bar(x, min, max[, width])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.base64",
+      "added_syntax": [
+        "base64(blob)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.bin",
+      "added_syntax": [
+        "bin(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.bit_and",
+      "added_syntax": [
+        "bit_and(arg)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.bit_count",
+      "added_syntax": [
+        "bit_count(bitstring)",
+        "bit_count(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.bit_length",
+      "added_syntax": [
+        "bit_length(bitstring)",
+        "bit_length(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.bit_or",
+      "added_syntax": [
+        "bit_or(arg)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.bit_position",
+      "added_syntax": [
+        "bit_position(substring, bitstring)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.bit_xor",
+      "added_syntax": [
+        "bit_xor(arg)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.bitstring",
+      "added_syntax": [
+        "bitstring(bitstring, length)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.bitstring_agg",
+      "added_syntax": [
+        "bitstring_agg(arg)",
+        "bitstring_agg(arg, min, max)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.bool_and",
+      "added_syntax": [
+        "bool_and(arg)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.bool_or",
+      "added_syntax": [
+        "bool_or(arg)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.can_cast_implicitly",
+      "added_syntax": [
+        "can_cast_implicitly(source_value, target_value)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.cardinality",
+      "added_syntax": [
+        "cardinality(map)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.cbrt",
+      "added_syntax": [
+        "cbrt(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.ceil",
+      "added_syntax": [
+        "ceil(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.ceiling",
+      "added_syntax": [
+        "ceiling(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.century",
+      "added_syntax": [
+        "century(date)",
+        "century(timestamp)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.char_length",
+      "added_syntax": [
+        "char_length(list)",
+        "char_length(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.character_length",
+      "added_syntax": [
+        "character_length(list)",
+        "character_length(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.checkpoint",
+      "added_syntax": [
+        "checkpoint(database)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.chr",
+      "added_syntax": [
+        "chr(code_point)",
+        "chr(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.coalesce",
+      "added_syntax": [
+        "coalesce(expr, ...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.concat",
+      "added_syntax": [
+        "concat(value, ...)",
+        "concat(string, ...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.concat_ws",
+      "added_syntax": [
+        "concat_ws(separator, string, ...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.constant_or_null",
+      "added_syntax": [
+        "constant_or_null(arg1, arg2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.contains",
+      "added_syntax": [
+        "contains(list, element)",
+        "contains(string, search_string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.corr",
+      "added_syntax": [
+        "corr(y, x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.cos",
+      "added_syntax": [
+        "cos(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.cot",
+      "added_syntax": [
+        "cot(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.count_if",
+      "added_syntax": [
+        "count_if(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.countif",
+      "added_syntax": [
+        "countif(arg)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.covar_pop",
+      "added_syntax": [
+        "covar_pop(y, x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.covar_samp",
+      "added_syntax": [
+        "covar_samp(y, x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.create_sort_key",
+      "added_syntax": [
+        "create_sort_key(parameters...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.cume_dist",
+      "added_syntax": [
+        "cume_dist()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.current_catalog",
+      "added_syntax": [
+        "current_catalog()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.current_database",
+      "added_syntax": [
+        "current_database()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.current_localtime",
+      "added_syntax": [
+        "current_localtime()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.current_localtimestamp",
+      "added_syntax": [
+        "current_localtimestamp()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.current_query",
+      "added_syntax": [
+        "current_query()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.current_schema",
+      "added_syntax": [
+        "current_schema()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.current_schemas",
+      "added_syntax": [
+        "current_schemas(boolean)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.damerau_levenshtein",
+      "added_syntax": [
+        "damerau_levenshtein(s1, s2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.date_add",
+      "added_syntax": [
+        "date_add(date, interval)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.date_diff",
+      "added_syntax": [
+        "date_diff(part, startdate, enddate)",
+        "date_diff(part, starttime, endtime)",
+        "date_diff(part, starttimestamp, endtimestamp)",
+        "date_diff(part, starttimestamptz, endtimestamptz)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.date_part",
+      "added_syntax": [
+        "date_part([part, ...], timestamptz)",
+        "date_part(part, timestamptz)",
+        "date_part(part, date)",
+        "date_part(part, interval)",
+        "date_part(part, time)",
+        "date_part([part, ...], timestamp)",
+        "date_part(part, timestamp)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.date_sub",
+      "added_syntax": [
+        "date_sub(part, startdate, enddate)",
+        "date_sub(part, starttime, endtime)",
+        "date_sub(part, starttimestamp, endtimestamp)",
+        "date_sub(part, starttimestamptz, endtimestamptz)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.date_trunc",
+      "added_syntax": [
+        "date_trunc(part, date)",
+        "date_trunc(part, timestamp)",
+        "date_trunc(part, timestamptz)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.datediff",
+      "added_syntax": [
+        "datediff(part, starttime, endtime)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.datepart",
+      "added_syntax": [
+        "datepart(part, interval)",
+        "datepart(part, time)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.datesub",
+      "added_syntax": [
+        "datesub(part, starttime, endtime)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.day",
+      "added_syntax": [
+        "day(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.dayname",
+      "added_syntax": [
+        "dayname(date)",
+        "dayname(timestamp)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.dayofmonth",
+      "added_syntax": [
+        "dayofmonth(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.dayofweek",
+      "added_syntax": [
+        "dayofweek(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.dayofyear",
+      "added_syntax": [
+        "dayofyear(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.days_in_month",
+      "added_syntax": [
+        "days_in_month(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.decade",
+      "added_syntax": [
+        "decade(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.decode",
+      "added_syntax": [
+        "decode(blob[, on_error])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.dense_rank",
+      "added_syntax": [
+        "dense_rank()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.divide",
+      "added_syntax": [
+        "divide(x, y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.editdist3",
+      "added_syntax": [
+        "editdist3(s1, s2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.element_at",
+      "added_syntax": [
+        "element_at(map, key)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.encode",
+      "added_syntax": [
+        "encode(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.ends_with",
+      "added_syntax": [
+        "ends_with(string, search_string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.entropy",
+      "added_syntax": [
+        "entropy(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.enum_code",
+      "added_syntax": [
+        "enum_code(enum_value)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.enum_first",
+      "added_syntax": [
+        "enum_first(enum)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.enum_last",
+      "added_syntax": [
+        "enum_last(enum)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.enum_range",
+      "added_syntax": [
+        "enum_range(enum)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.enum_range_boundary",
+      "added_syntax": [
+        "enum_range_boundary(enum, enum)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.epoch",
+      "added_syntax": [
+        "epoch(date)",
+        "epoch(interval)",
+        "epoch(timestamp)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.epoch_ms",
+      "added_syntax": [
+        "epoch_ms(timestamp)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.epoch_ns",
+      "added_syntax": [
+        "epoch_ns(timestamp)",
+        "epoch_ns(timestamptz)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.epoch_us",
+      "added_syntax": [
+        "epoch_us(timestamp)",
+        "epoch_us(timestamptz)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.era",
+      "added_syntax": [
+        "era(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.error",
+      "added_syntax": [
+        "error(message)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.even",
+      "added_syntax": [
+        "even(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.exp",
+      "added_syntax": [
+        "exp(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.extract",
+      "added_syntax": [
+        "extract(part from date)",
+        "extract(part FROM interval)",
+        "extract(part FROM time)",
+        "extract(field FROM timestamp)",
+        "extract(field FROM timestamptz)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.factorial",
+      "added_syntax": [
+        "factorial(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.favg",
+      "added_syntax": [
+        "favg(arg)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.fdiv",
+      "added_syntax": [
+        "fdiv(x, y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.first_value",
+      "added_syntax": [
+        "first_value(expr[ IGNORE NULLS])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.floor",
+      "added_syntax": [
+        "floor(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.fmod",
+      "added_syntax": [
+        "fmod(x, y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.force_checkpoint",
+      "added_syntax": [
+        "force_checkpoint(database)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.format_bytes",
+      "added_syntax": [
+        "format_bytes(integer)",
+        "format_bytes(bytes)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.formatreadabledecimalsize",
+      "added_syntax": [
+        "formatReadableDecimalSize(integer)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.formatreadablesize",
+      "added_syntax": [
+        "formatReadableSize(integer)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.from_base64",
+      "added_syntax": [
+        "from_base64(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.from_binary",
+      "added_syntax": [
+        "from_binary(value)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.from_hex",
+      "added_syntax": [
+        "from_hex(value)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.from_json",
+      "added_syntax": [
+        "from_json(json, structure)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.from_json_strict",
+      "added_syntax": [
+        "from_json_strict(json, structure)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.fsum",
+      "added_syntax": [
+        "fsum(arg)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.gamma",
+      "added_syntax": [
+        "gamma(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.gcd",
+      "added_syntax": [
+        "gcd(x, y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.gen_random_uuid",
+      "added_syntax": [
+        "gen_random_uuid()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.geometric_mean",
+      "added_syntax": [
+        "geometric_mean(arg)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.get_bit",
+      "added_syntax": [
+        "get_bit(bitstring, index)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.get_current_time",
+      "added_syntax": [
+        "get_current_time()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.get_current_timestamp",
+      "added_syntax": [
+        "get_current_timestamp()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.getenv",
+      "added_syntax": [
+        "getenv(var)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.grade_up",
+      "added_syntax": [
+        "grade_up(list[, col1][, col2])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.greatest",
+      "added_syntax": [
+        "greatest(date, date)",
+        "greatest(x1, x2, ...)",
+        "greatest(arg1, ...)",
+        "greatest(timestamp, timestamp)",
+        "greatest(timestamptz, timestamptz)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.greatest_common_divisor",
+      "added_syntax": [
+        "greatest_common_divisor(x, y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.grouping",
+      "added_syntax": [
+        "grouping()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.hamming",
+      "added_syntax": [
+        "hamming(s1, s2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.hash",
+      "added_syntax": [
+        "hash(value, ...)",
+        "hash(value)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.hex",
+      "added_syntax": [
+        "hex(blob)",
+        "hex(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.histogram",
+      "added_syntax": [
+        "histogram(arg)",
+        "histogram(arg, boundaries)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.histogram_exact",
+      "added_syntax": [
+        "histogram_exact(arg, elements)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.histogram_values",
+      "added_syntax": [
+        "histogram_values(source, col_name, technique, bin_count)",
+        "histogram_values(source, boundaries)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.hour",
+      "added_syntax": [
+        "hour(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.iceberg_load_table_response",
+      "added_syntax": [
+        "iceberg_load_table_response(table)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.iceberg_metadata",
+      "added_syntax": [
+        "iceberg_metadata(table, ⟨options⟩)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.iceberg_partition_stats",
+      "added_syntax": [
+        "iceberg_partition_stats(table, ⟨options⟩)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.iceberg_scan",
+      "added_syntax": [
+        "iceberg_scan(table, ⟨options⟩)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.iceberg_schema_properties",
+      "added_syntax": [
+        "iceberg_schema_properties(schema)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.iceberg_table_properties",
+      "added_syntax": [
+        "iceberg_table_properties(table)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.icu_sort_key",
+      "added_syntax": [
+        "icu_sort_key(string, collator)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.if",
+      "added_syntax": [
+        "if(a, b, c)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.ifnull",
+      "added_syntax": [
+        "ifnull(expr, other)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.ilike_escape",
+      "added_syntax": [
+        "ilike_escape(string, like_specifier, escape_character)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.instr",
+      "added_syntax": [
+        "instr(string, search_string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.is_histogram_other_bin",
+      "added_syntax": [
+        "is_histogram_other_bin(arg)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.isfinite",
+      "added_syntax": [
+        "isfinite(date)",
+        "isfinite(x)",
+        "isfinite(timestamp)",
+        "isfinite(timestamptz)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.isinf",
+      "added_syntax": [
+        "isinf(date)",
+        "isinf(x)",
+        "isinf(timestamp)",
+        "isinf(timestamptz)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.isnan",
+      "added_syntax": [
+        "isnan(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.isodow",
+      "added_syntax": [
+        "isodow(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.isoyear",
+      "added_syntax": [
+        "isoyear(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.jaccard",
+      "added_syntax": [
+        "jaccard(s1, s2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.jaro_similarity",
+      "added_syntax": [
+        "jaro_similarity(s1, s2[, score_cutoff])",
+        "jaro_similarity(s1, s2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.jaro_winkler_similarity",
+      "added_syntax": [
+        "jaro_winkler_similarity(s1, s2[, score_cutoff])",
+        "jaro_winkler_similarity(s1, s2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.json_exists",
+      "added_syntax": [
+        "json_exists(json, path)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.json_value",
+      "added_syntax": [
+        "json_value(json, path)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.julian",
+      "added_syntax": [
+        "julian(date)",
+        "julian(timestamp)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.kurtosis",
+      "added_syntax": [
+        "kurtosis(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.kurtosis_pop",
+      "added_syntax": [
+        "kurtosis_pop(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.last",
+      "added_syntax": [
+        "last(arg)",
+        "last(expr[ IGNORE NULLS])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.last_day",
+      "added_syntax": [
+        "last_day(date)",
+        "last_day(timestamp)",
+        "last_day(timestamptz)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.last_value",
+      "added_syntax": [
+        "last_value(expr[ IGNORE NULLS])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.lcase",
+      "added_syntax": [
+        "lcase(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.lcm",
+      "added_syntax": [
+        "lcm(x, y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.lead",
+      "added_syntax": [
+        "lead(expr[, offset[, default]][ IGNORE NULLS])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.least",
+      "added_syntax": [
+        "least(date, date)",
+        "least(x1, x2, ...)",
+        "least(arg1, ...)",
+        "least(timestamp, timestamp)",
+        "least(timestamptz, timestamptz)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.least_common_multiple",
+      "added_syntax": [
+        "least_common_multiple(x, y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.left",
+      "added_syntax": [
+        "left(string, count)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.left_grapheme",
+      "added_syntax": [
+        "left_grapheme(string, count)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.length",
+      "added_syntax": [
+        "length(bitstring)",
+        "length(list)",
+        "length(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.length_grapheme",
+      "added_syntax": [
+        "length_grapheme(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.levenshtein",
+      "added_syntax": [
+        "levenshtein(s1, s2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.lgamma",
+      "added_syntax": [
+        "lgamma(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.like_escape",
+      "added_syntax": [
+        "like_escape(string, like_specifier, escape_character)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_any_value",
+      "added_syntax": [
+        "list_any_value(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_append",
+      "added_syntax": [
+        "list_append(list, element)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_approx_count_distinct",
+      "added_syntax": [
+        "list_approx_count_distinct(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_avg",
+      "added_syntax": [
+        "list_avg(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_bit_and",
+      "added_syntax": [
+        "list_bit_and(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_bit_or",
+      "added_syntax": [
+        "list_bit_or(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_bit_xor",
+      "added_syntax": [
+        "list_bit_xor(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_bool_and",
+      "added_syntax": [
+        "list_bool_and(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_bool_or",
+      "added_syntax": [
+        "list_bool_or(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_cat",
+      "added_syntax": [
+        "list_cat(list_1, ..., list_n)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_concat",
+      "added_syntax": [
+        "list_concat(list_1, ..., list_n)",
+        "list_concat(list1, list2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_contains",
+      "added_syntax": [
+        "list_contains(list, element)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_cosine_distance",
+      "added_syntax": [
+        "list_cosine_distance(list1, list2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_cosine_similarity",
+      "added_syntax": [
+        "list_cosine_similarity(list1, list2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_count",
+      "added_syntax": [
+        "list_count(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_distance",
+      "added_syntax": [
+        "list_distance(list1, list2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_distinct",
+      "added_syntax": [
+        "list_distinct(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_dot_product",
+      "added_syntax": [
+        "list_dot_product(list1, list2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_element",
+      "added_syntax": [
+        "list_element(list, index)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_entropy",
+      "added_syntax": [
+        "list_entropy(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_extract",
+      "added_syntax": [
+        "list_extract(list, index)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_first",
+      "added_syntax": [
+        "list_first(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_grade_up",
+      "added_syntax": [
+        "list_grade_up(list[, col1][, col2])",
+        "list_grade_up(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_has",
+      "added_syntax": [
+        "list_has(list, element)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_has_all",
+      "added_syntax": [
+        "list_has_all(list1, list2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_has_any",
+      "added_syntax": [
+        "list_has_any(list1, list2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_histogram",
+      "added_syntax": [
+        "list_histogram(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_indexof",
+      "added_syntax": [
+        "list_indexof(list, element)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_inner_product",
+      "added_syntax": [
+        "list_inner_product(list1, list2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_intersect",
+      "added_syntax": [
+        "list_intersect(list1, list2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_kurtosis",
+      "added_syntax": [
+        "list_kurtosis(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_kurtosis_pop",
+      "added_syntax": [
+        "list_kurtosis_pop(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_mad",
+      "added_syntax": [
+        "list_mad(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_max",
+      "added_syntax": [
+        "list_max(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_median",
+      "added_syntax": [
+        "list_median(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_mode",
+      "added_syntax": [
+        "list_mode(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_negative_dot_product",
+      "added_syntax": [
+        "list_negative_dot_product(list1, list2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_negative_inner_product",
+      "added_syntax": [
+        "list_negative_inner_product(list1, list2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_pack",
+      "added_syntax": [
+        "list_pack(arg, ...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_position",
+      "added_syntax": [
+        "list_position(list, element)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_prepend",
+      "added_syntax": [
+        "list_prepend(element, list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_product",
+      "added_syntax": [
+        "list_product(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_resize",
+      "added_syntax": [
+        "list_resize(list, size[[, value]])",
+        "list_resize(list, size[, value])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_reverse",
+      "added_syntax": [
+        "list_reverse(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_select",
+      "added_syntax": [
+        "list_select(value_list, index_list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_sem",
+      "added_syntax": [
+        "list_sem(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_skewness",
+      "added_syntax": [
+        "list_skewness(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_stddev_pop",
+      "added_syntax": [
+        "list_stddev_pop(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_stddev_samp",
+      "added_syntax": [
+        "list_stddev_samp(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_string_agg",
+      "added_syntax": [
+        "list_string_agg(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_unique",
+      "added_syntax": [
+        "list_unique(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_value",
+      "added_syntax": [
+        "list_value(arg, ...)",
+        "list_value(any, ...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_var_pop",
+      "added_syntax": [
+        "list_var_pop(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_var_samp",
+      "added_syntax": [
+        "list_var_samp(list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_where",
+      "added_syntax": [
+        "list_where(value_list, mask_list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.list_zip",
+      "added_syntax": [
+        "list_zip(list1, list2, ...)",
+        "list_zip(list_1, ..., list_n[, truncate])",
+        "list_zip(list_1, list_2, ...[, truncate])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.ln",
+      "added_syntax": [
+        "ln(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.log",
+      "added_syntax": [
+        "log(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.log10",
+      "added_syntax": [
+        "log10(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.log2",
+      "added_syntax": [
+        "log2(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.lpad",
+      "added_syntax": [
+        "lpad(string, count, character)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.ltrim",
+      "added_syntax": [
+        "ltrim(string[, characters])",
+        "ltrim(string, characters)",
+        "ltrim(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.mad",
+      "added_syntax": [
+        "mad(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.make_date",
+      "added_syntax": [
+        "make_date(year, month, day)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.make_time",
+      "added_syntax": [
+        "make_time(bigint, bigint, double)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.make_timestamp",
+      "added_syntax": [
+        "make_timestamp(bigint, bigint, bigint, bigint, bigint, double)",
+        "make_timestamp(microseconds)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.make_timestamp_ms",
+      "added_syntax": [
+        "make_timestamp_ms(milliseconds)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.make_timestamp_ns",
+      "added_syntax": [
+        "make_timestamp_ns(nanoseconds)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.make_timestamptz",
+      "added_syntax": [
+        "make_timestamptz(bigint, bigint, bigint, bigint, bigint, double, string)",
+        "make_timestamptz(bigint, bigint, bigint, bigint, bigint, double)",
+        "make_timestamptz(microseconds)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.map",
+      "added_syntax": [
+        "map()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.map_concat",
+      "added_syntax": [
+        "map_concat(maps...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.map_contains",
+      "added_syntax": [
+        "map_contains(map, key)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.map_contains_entry",
+      "added_syntax": [
+        "map_contains_entry(map, key, value)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.map_contains_value",
+      "added_syntax": [
+        "map_contains_value(map, value)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.map_entries",
+      "added_syntax": [
+        "map_entries(map)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.map_extract",
+      "added_syntax": [
+        "map_extract(map, key)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.map_extract_value",
+      "added_syntax": [
+        "map_extract_value(map, key)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.map_keys",
+      "added_syntax": [
+        "map_keys(map)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.map_values",
+      "added_syntax": [
+        "map_values(map)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.md5",
+      "added_syntax": [
+        "md5(blob)",
+        "md5(string)",
+        "md5(value)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.md5_number",
+      "added_syntax": [
+        "md5_number(blob)",
+        "md5_number(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.md5_number_lower",
+      "added_syntax": [
+        "md5_number_lower(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.md5_number_upper",
+      "added_syntax": [
+        "md5_number_upper(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.median",
+      "added_syntax": [
+        "median(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.microsecond",
+      "added_syntax": [
+        "microsecond(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.millennium",
+      "added_syntax": [
+        "millennium(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.millisecond",
+      "added_syntax": [
+        "millisecond(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.minute",
+      "added_syntax": [
+        "minute(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.mismatches",
+      "added_syntax": [
+        "mismatches(s1, s2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.mode",
+      "added_syntax": [
+        "mode(x)",
+        "mode()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.month",
+      "added_syntax": [
+        "month(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.monthname",
+      "added_syntax": [
+        "monthname(date)",
+        "monthname(timestamp)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.multiply",
+      "added_syntax": [
+        "multiply(x, y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.nextafter",
+      "added_syntax": [
+        "nextafter(x, y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.nfc_normalize",
+      "added_syntax": [
+        "nfc_normalize(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.not_ilike_escape",
+      "added_syntax": [
+        "not_ilike_escape(string, like_specifier, escape_character)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.not_like_escape",
+      "added_syntax": [
+        "not_like_escape(string, like_specifier, escape_character)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.nth_value",
+      "added_syntax": [
+        "nth_value(expr, nth[ IGNORE NULLS])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.ntile",
+      "added_syntax": [
+        "ntile(num_buckets)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.nullif",
+      "added_syntax": [
+        "nullif(a, b)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.octet_length",
+      "added_syntax": [
+        "octet_length(bitstring)",
+        "octet_length(blob)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.ord",
+      "added_syntax": [
+        "ord(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.parse_dirname",
+      "added_syntax": [
+        "parse_dirname(path[, separator])",
+        "parse_dirname(path, separator)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.parse_dirpath",
+      "added_syntax": [
+        "parse_dirpath(path[, separator])",
+        "parse_dirpath(path, separator)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.parse_filename",
+      "added_syntax": [
+        "parse_filename(string[, trim_extension][, separator])",
+        "parse_filename(path, trim_extension, separator)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.parse_formatted_bytes",
+      "added_syntax": [
+        "parse_formatted_bytes(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.parse_path",
+      "added_syntax": [
+        "parse_path(path[, separator])",
+        "parse_path(path, separator)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.percent_rank",
+      "added_syntax": [
+        "percent_rank()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.percentile_cont",
+      "added_syntax": [
+        "percentile_cont(fraction)",
+        "percentile_cont(fractions)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.percentile_disc",
+      "added_syntax": [
+        "percentile_disc(fraction)",
+        "percentile_disc(fractions)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.pg_typeof",
+      "added_syntax": [
+        "pg_typeof(expression)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.position",
+      "added_syntax": [
+        "position(search_string IN string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.pow",
+      "added_syntax": [
+        "pow(x, y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.power",
+      "added_syntax": [
+        "power(x, y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.prefix",
+      "added_syntax": [
+        "prefix(string, search_string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.product",
+      "added_syntax": [
+        "product(arg)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.quantile_disc",
+      "added_syntax": [
+        "quantile_disc(x, pos)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.quarter",
+      "added_syntax": [
+        "quarter(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.query",
+      "added_syntax": [
+        "query(query_string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.query_table",
+      "added_syntax": [
+        "query_table(tbl_name)",
+        "query_table(tbl_names, [by_name])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.radians",
+      "added_syntax": [
+        "radians(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.random",
+      "added_syntax": [
+        "random()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.rank",
+      "added_syntax": [
+        "rank()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.rank_dense",
+      "added_syntax": [
+        "rank_dense()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.read_blob",
+      "added_syntax": [
+        "read_blob(source)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.read_text",
+      "added_syntax": [
+        "read_text(source)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.regexp_escape",
+      "added_syntax": [
+        "regexp_escape(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.regexp_extract_all",
+      "added_syntax": [
+        "regexp_extract_all(string, regex, name_list[, options])",
+        "regexp_extract_all(string, regex[, group][, options])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.regexp_full_match",
+      "added_syntax": [
+        "regexp_full_match(string, regex[, options])",
+        "regexp_full_match(string, regex[, col2])",
+        "regexp_full_match(string, regex)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.regexp_split_to_array",
+      "added_syntax": [
+        "regexp_split_to_array(string, regex[, options])",
+        "regexp_split_to_array(string, regex)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.regexp_split_to_table",
+      "added_syntax": [
+        "regexp_split_to_table(string, regex[, options])",
+        "regexp_split_to_table(string, regex)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.regr_avgx",
+      "added_syntax": [
+        "regr_avgx(y, x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.regr_avgy",
+      "added_syntax": [
+        "regr_avgy(y, x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.regr_count",
+      "added_syntax": [
+        "regr_count(y, x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.regr_intercept",
+      "added_syntax": [
+        "regr_intercept(y, x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.regr_r2",
+      "added_syntax": [
+        "regr_r2(y, x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.regr_slope",
+      "added_syntax": [
+        "regr_slope(y, x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.regr_sxx",
+      "added_syntax": [
+        "regr_sxx(y, x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.regr_sxy",
+      "added_syntax": [
+        "regr_sxy(y, x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.regr_syy",
+      "added_syntax": [
+        "regr_syy(y, x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.remove_iceberg_schema_properties",
+      "added_syntax": [
+        "remove_iceberg_schema_properties(schema, property_list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.remove_iceberg_table_properties",
+      "added_syntax": [
+        "remove_iceberg_table_properties(table, property_list)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.repeat",
+      "added_syntax": [
+        "repeat(blob, count)",
+        "repeat(list, count)",
+        "repeat(string, count)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.repeat_row",
+      "added_syntax": [
+        "repeat_row(varargs, num_rows)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.replace_type",
+      "added_syntax": [
+        "replace_type(value, source_type, target_type)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.reverse",
+      "added_syntax": [
+        "reverse(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.right",
+      "added_syntax": [
+        "right(string, count)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.right_grapheme",
+      "added_syntax": [
+        "right_grapheme(string, count)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.round",
+      "added_syntax": [
+        "round(v NUMERIC, s INTEGER)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.round_even",
+      "added_syntax": [
+        "round_even(v NUMERIC, s INTEGER)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.roundbankers",
+      "added_syntax": [
+        "roundbankers(v NUMERIC, s INTEGER)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.row",
+      "added_syntax": [
+        "row(any, ...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.rpad",
+      "added_syntax": [
+        "rpad(string, count, character)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.rtrim",
+      "added_syntax": [
+        "rtrim(string[, characters])",
+        "rtrim(string, characters)",
+        "rtrim(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.second",
+      "added_syntax": [
+        "second(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.sem",
+      "added_syntax": [
+        "sem(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.set_bit",
+      "added_syntax": [
+        "set_bit(bitstring, index, new_value)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.set_iceberg_schema_properties",
+      "added_syntax": [
+        "set_iceberg_schema_properties(schema, properties)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.set_iceberg_table_properties",
+      "added_syntax": [
+        "set_iceberg_table_properties(table, properties)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.setseed",
+      "added_syntax": [
+        "setseed(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.sha1",
+      "added_syntax": [
+        "sha1(blob)",
+        "sha1(value)",
+        "sha1(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.sha256",
+      "added_syntax": [
+        "sha256(blob)",
+        "sha256(value)",
+        "sha256(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.sign",
+      "added_syntax": [
+        "sign(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.signbit",
+      "added_syntax": [
+        "signbit(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.sin",
+      "added_syntax": [
+        "sin(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.skewness",
+      "added_syntax": [
+        "skewness(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.sleep_ms",
+      "added_syntax": [
+        "sleep_ms(milliseconds)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.split",
+      "added_syntax": [
+        "split(string, separator)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.split_part",
+      "added_syntax": [
+        "split_part(string, separator, index)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.sqrt",
+      "added_syntax": [
+        "sqrt(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.st_readshp",
+      "added_syntax": [
+        "ST_ReadSHP (col0 VARCHAR, encoding VARCHAR)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.starts_with",
+      "added_syntax": [
+        "starts_with(string, search_string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.stats",
+      "added_syntax": [
+        "stats(expression)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.stddev_pop",
+      "added_syntax": [
+        "stddev_pop(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.stddev_samp",
+      "added_syntax": [
+        "stddev_samp(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.str_split",
+      "added_syntax": [
+        "str_split(string, separator)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.str_split_regex",
+      "added_syntax": [
+        "str_split_regex(string, regex[, options])",
+        "str_split_regex(string, regex)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.string_split",
+      "added_syntax": [
+        "string_split(string, separator)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.string_split_regex",
+      "added_syntax": [
+        "string_split_regex(string, regex[, options])",
+        "string_split_regex(string, regex)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.string_to_array",
+      "added_syntax": [
+        "string_to_array(string, separator)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.strip_accents",
+      "added_syntax": [
+        "strip_accents(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.strlen",
+      "added_syntax": [
+        "strlen(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.strpos",
+      "added_syntax": [
+        "strpos(string, search_string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.struct_concat",
+      "added_syntax": [
+        "struct_concat(structs...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.struct_contains",
+      "added_syntax": [
+        "struct_contains(struct, entry)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.struct_extract",
+      "added_syntax": [
+        "struct_extract(struct, idx)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.struct_extract_at",
+      "added_syntax": [
+        "struct_extract_at(struct, idx)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.struct_position",
+      "added_syntax": [
+        "struct_position(struct, entry)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.struct_values",
+      "added_syntax": [
+        "struct_values(struct)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.substr",
+      "added_syntax": [
+        "substr(string, start[, length])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.substring",
+      "added_syntax": [
+        "substring(string, start[, length])",
+        "substring(string, start, length)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.substring_grapheme",
+      "added_syntax": [
+        "substring_grapheme(string, start[, length])",
+        "substring_grapheme(string, start, length)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.subtract",
+      "added_syntax": [
+        "subtract(x, y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.suffix",
+      "added_syntax": [
+        "suffix(string, search_string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.tan",
+      "added_syntax": [
+        "tan(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.time_bucket",
+      "added_syntax": [
+        "time_bucket(bucket_width, date[, offset])",
+        "time_bucket(bucket_width, date[, origin])",
+        "time_bucket(bucket_width, timestamp[, offset])",
+        "time_bucket(bucket_width, timestamp[, origin])",
+        "time_bucket(bucket_width, timestamptz[, offset])",
+        "time_bucket(bucket_width, timestamptz[, origin])",
+        "time_bucket(bucket_width, timestamptz[, timezone])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.timetz_byte_comparable",
+      "added_syntax": [
+        "timetz_byte_comparable(timetz)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.timezone",
+      "added_syntax": [
+        "timezone(date)",
+        "timezone(text, timestamp)",
+        "timezone(text, timestamptz)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.timezone_hour",
+      "added_syntax": [
+        "timezone_hour(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.timezone_minute",
+      "added_syntax": [
+        "timezone_minute(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_base",
+      "added_syntax": [
+        "to_base(number, radix[, min_length])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_base64",
+      "added_syntax": [
+        "to_base64(blob)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_binary",
+      "added_syntax": [
+        "to_binary(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_centuries",
+      "added_syntax": [
+        "to_centuries(integer)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_days",
+      "added_syntax": [
+        "to_days(integer)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_decades",
+      "added_syntax": [
+        "to_decades(integer)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_hex",
+      "added_syntax": [
+        "to_hex(blob)",
+        "to_hex(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_hours",
+      "added_syntax": [
+        "to_hours(integer)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_microseconds",
+      "added_syntax": [
+        "to_microseconds(integer)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_millennia",
+      "added_syntax": [
+        "to_millennia(integer)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_milliseconds",
+      "added_syntax": [
+        "to_milliseconds(integer)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_minutes",
+      "added_syntax": [
+        "to_minutes(integer)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_months",
+      "added_syntax": [
+        "to_months(integer)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_quarters",
+      "added_syntax": [
+        "to_quarters(integer)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_seconds",
+      "added_syntax": [
+        "to_seconds(integer)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_timestamp",
+      "added_syntax": [
+        "to_timestamp(double)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_weeks",
+      "added_syntax": [
+        "to_weeks(integer)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.to_years",
+      "added_syntax": [
+        "to_years(integer)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.today",
+      "added_syntax": [
+        "today()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.transaction_timestamp",
+      "added_syntax": [
+        "transaction_timestamp()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.translate",
+      "added_syntax": [
+        "translate(string, from, to)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.trim",
+      "added_syntax": [
+        "trim(string[, characters])",
+        "trim(string, characters)",
+        "trim(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.trunc",
+      "added_syntax": [
+        "trunc(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.try_strptime",
+      "added_syntax": [
+        "try_strptime(text, format)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.txid_current",
+      "added_syntax": [
+        "txid_current()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.typeof",
+      "added_syntax": [
+        "typeof(expression)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.ucase",
+      "added_syntax": [
+        "ucase(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.unbin",
+      "added_syntax": [
+        "unbin(value)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.unhex",
+      "added_syntax": [
+        "unhex(value)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.unicode",
+      "added_syntax": [
+        "unicode(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.union_tag",
+      "added_syntax": [
+        "union_tag(union)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.unpivot_list",
+      "added_syntax": [
+        "unpivot_list(arg, ...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.url_decode",
+      "added_syntax": [
+        "url_decode(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.url_encode",
+      "added_syntax": [
+        "url_encode(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.uuid",
+      "added_syntax": [
+        "uuid()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.uuid_extract_timestamp",
+      "added_syntax": [
+        "uuid_extract_timestamp(uuidv7)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.uuid_extract_version",
+      "added_syntax": [
+        "uuid_extract_version(uuid)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.uuidv4",
+      "added_syntax": [
+        "uuidv4()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.uuidv7",
+      "added_syntax": [
+        "uuidv7()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.var_pop",
+      "added_syntax": [
+        "var_pop(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.var_samp",
+      "added_syntax": [
+        "var_samp(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.version",
+      "added_syntax": [
+        "version()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.week",
+      "added_syntax": [
+        "week(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.weekday",
+      "added_syntax": [
+        "weekday(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.weekofyear",
+      "added_syntax": [
+        "weekofyear(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.weighted_avg",
+      "added_syntax": [
+        "weighted_avg(arg, weight)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.xor",
+      "added_syntax": [
+        "xor(x, y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.year",
+      "added_syntax": [
+        "year(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "duckdb.function.yearweek",
+      "added_syntax": [
+        "yearweek(date)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    }
+  ],
+  "residual_features_rejected": [],
+  "residual_features_attempted": 499
+}

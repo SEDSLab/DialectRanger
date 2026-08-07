@@ -1,0 +1,243 @@
+> For the complete documentation index, see [llms.txt](https://mariadb.com/docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions.md).
+
+# Aggregate Functions
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/ZdTl3TlsM9S3BOcwlBlk" %}
+[Stored Aggregate Functions](/docs/server/server-usage/stored-routines/stored-functions/stored-aggregate-functions.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Stored Aggregate Functions allow users to create custom aggregate functions that process a sequence of rows and return a single summary result. This page provides a general overview.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/5pYxGFLaje8CcTYYqjpJ" %}
+[AVG](/docs/server/reference/sql-functions/aggregate-functions/avg.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Calculate the average value. This function computes the arithmetic mean of a numeric expression, ignoring `NULL` values.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/6WvBEYl9UE0isjBo15jQ" %}
+[BIT\_AND](/docs/server/reference/sql-functions/aggregate-functions/bit_and.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Perform a bitwise `AND` operation. This function returns the result of performing a bitwise `AND` on all values in a given expression.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/hsnp6EZLYq2Zkyhrr8vE" %}
+[BIT\_OR](/docs/server/reference/sql-functions/aggregate-functions/bit_or.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Perform a bitwise `OR` operation. This function returns the result of performing a bitwise `OR` on all values in a given expression.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/4JshiEZY1dgYU7gPUvNM" %}
+[BIT\_XOR](/docs/server/reference/sql-functions/aggregate-functions/bit_xor.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Perform a bitwise `XOR` operation. This function returns the result of performing a bitwise `XOR` on all values in a given expression.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/np0UCozJCuLnShYUqZG1" %}
+[COUNT DISTINCT](/docs/server/reference/sql-functions/aggregate-functions/count-distinct.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Count unique values. This function returns the number of distinct, non-`NULL` values found in the specified column or expression.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/KfYDI1V11HzzR4fmy5le" %}
+[COUNT](/docs/server/reference/sql-functions/aggregate-functions/count.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Complete `COUNT()` function reference: `COUNT(*`) and `COUNT(expr)` syntax, `COUNT(DISTINCT)` usage, `GROUP BY` aggregation, and `OVER(PARTITION BY)` window syntax.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/TC30Em757H3O09L8FfPd" %}
+[GROUP\_CONCAT](/docs/server/reference/sql-functions/aggregate-functions/group_concat.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Complete `GROUP_CONCAT` reference for MariaDB. Complete function guide with syntax, parameters, return values, and usage examples for production use.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/Yen6xD12nnuehN2akB9m" %}
+[JSON\_ARRAYAGG](/docs/server/reference/sql-functions/aggregate-functions/json_arrayagg.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Aggregate values into a JSON array. This function aggregates a result set column into a single JSON array.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/3unQx9uNybyhlCKSfOU4" %}
+[JSON\_OBJECTAGG](/docs/server/reference/sql-functions/aggregate-functions/json_objectagg.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Aggregate key-value pairs into a JSON object. This function aggregates two columns or expressions into a single JSON object.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/n7FDJDlLGQQNBH58003C" %}
+[MAX](/docs/server/reference/sql-functions/aggregate-functions/max.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Find the maximum value. This function returns the highest value in a set of values, applicable to numbers, strings, and dates.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/Ddn9otwjfxPMysTkrr0K" %}
+[MIN](/docs/server/reference/sql-functions/aggregate-functions/min.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Find the minimum value. This function returns the lowest value in a set of values, applicable to numbers, strings, and dates.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/3dwyKHfz8skLhQ39QkDe" %}
+[STD](/docs/server/reference/sql-functions/aggregate-functions/std.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Calculate population standard deviation. This function returns the square root of the population variance. It is a synonym for `STDDEV_POP()`.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/8OyOrvAbFEC5k83S9Dg0" %}
+[STDDEV](/docs/server/reference/sql-functions/aggregate-functions/stddev.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Calculate population standard deviation. This function is a synonym for `STD()` and `STDDEV_POP()`, returning the square root of the population variance.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/4RmobeBoOfQZ2VQGCZt6" %}
+[STDDEV\_POP](/docs/server/reference/sql-functions/aggregate-functions/stddev_pop.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Calculate population standard deviation. This function computes the standard deviation assuming the set of values represents the entire population.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/Ulij5lKS05KVkUuBPGmP" %}
+[STDDEV\_SAMP](/docs/server/reference/sql-functions/aggregate-functions/stddev_samp.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Calculate sample standard deviation. This function computes the standard deviation assuming the set of values represents a sample of the population.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/GYtUSzFyVHA61XxGM9Yq" %}
+[SUM](/docs/server/reference/sql-functions/aggregate-functions/sum.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Calculate the total sum. This function returns the sum of all values in a numeric expression, ignoring `NULL` values.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/XRovYpeykyFj7XvQ06v9" %}
+[VAR\_POP](/docs/server/reference/sql-functions/aggregate-functions/var_pop.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Calculate population variance. This function computes the statistical variance for a set of values assumed to be the entire population.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/moDtj9VnAT6KlyzOGYwU" %}
+[VAR\_SAMP](/docs/server/reference/sql-functions/aggregate-functions/var_samp.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Calculate sample variance. This function computes the statistical variance for a set of values assumed to be a sample of the population.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/v2CtXYCfes8S93S6gNRC" %}
+[VARIANCE](/docs/server/reference/sql-functions/aggregate-functions/variance.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Calculate population variance. This function is a synonym for VAR\_POP() and returns the variance of a set of values.
+{% endcolumn %}
+{% endcolumns %}

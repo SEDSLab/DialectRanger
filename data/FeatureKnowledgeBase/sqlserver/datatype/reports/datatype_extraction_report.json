@@ -1,0 +1,13 @@
+{
+  "dbms": "sqlserver",
+  "feature_type": "datatype",
+  "candidate_features": 397,
+  "candidate_groups": 36,
+  "feature_drafts": 36,
+  "known_type_coverage": {
+    "total": 0,
+    "covered": 0,
+    "missing": [],
+    "coverage_ratio": 1.0
+  }
+}

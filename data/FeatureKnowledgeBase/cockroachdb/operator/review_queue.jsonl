@@ -1,0 +1,58 @@
+{"feature_id": "cockroachdb.operator.!=_cockroachdb_stable_functions_and_operators", "name": "!=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.operator.#>>_cockroachdb_stable_functions_and_operators", "name": "#>>", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.#>_cockroachdb_stable_functions_and_operators", "name": "#>", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.#_cockroachdb_stable_functions_and_operators", "name": "#", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.%_cockroachdb_stable_functions_and_operators", "name": "%", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.&&_cockroachdb_stable_functions_and_operators", "name": "&&", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.&_cockroachdb_stable_functions_and_operators", "name": "&", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.*_cockroachdb_stable_functions_and_operators", "name": "*", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.+_cockroachdb_stable_functions_and_operators", "name": "+", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.->>_cockroachdb_stable_functions_and_operators", "name": "->>", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.->_cockroachdb_stable_functions_and_operators", "name": "->", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.-_cockroachdb_stable_functions_and_operators", "name": "-", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.//_cockroachdb_stable_functions_and_operators", "name": "//", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator./_cockroachdb_stable_functions_and_operators", "name": "/", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.<#>_cockroachdb_stable_functions_and_operators", "name": "<#>", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.<->_cockroachdb_stable_functions_and_operators", "name": "<->", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.<<_cockroachdb_stable_functions_and_operators", "name": "<<", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.<=>_cockroachdb_stable_functions_and_operators", "name": "<=>", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.<=_cockroachdb_stable_functions_and_operators", "name": "<=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.<>_cockroachdb_stable_functions_and_operators", "name": "<>", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.operator.<@_cockroachdb_stable_functions_and_operators", "name": "<@", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.<_cockroachdb_stable_functions_and_operators", "name": "<", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.=_cockroachdb_stable_functions_and_operators", "name": "=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.>=_cockroachdb_stable_functions_and_operators", "name": ">=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.operator.>>_cockroachdb_stable_functions_and_operators", "name": ">>", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.>_cockroachdb_stable_functions_and_operators", "name": ">", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.operator.?&_cockroachdb_stable_functions_and_operators", "name": "?&", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.?<@_cockroachdb_stable_functions_and_operators", "name": "?<@", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.?@>_cockroachdb_stable_functions_and_operators", "name": "?@>", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.?_cockroachdb_stable_functions_and_operators", "name": "?", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.@>_cockroachdb_stable_functions_and_operators", "name": "@>", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.@@_cockroachdb_stable_functions_and_operators", "name": "@@", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.^_cockroachdb_stable_functions_and_operators", "name": "^", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.and_cockroachdb_stable_functions_and_operators", "name": "AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "cockroachdb.operator.any_cockroachdb_stable_functions_and_operators", "name": "ANY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.operator.between_cockroachdb_stable_functions_and_operators", "name": "BETWEEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.operator.exists_cockroachdb_stable_functions_and_operators", "name": "EXISTS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "cockroachdb.operator.ilike_cockroachdb_stable_functions_and_operators", "name": "ILIKE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.in_cockroachdb_stable_functions_and_operators", "name": "IN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.is_cockroachdb_stable_functions_and_operators", "name": "IS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.is_not_cockroachdb_stable_functions_and_operators", "name": "IS NOT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.operator.is_not_distinct_from_cockroachdb_stable_functions_and_operators", "name": "IS NOT DISTINCT FROM", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.is_not_null_cockroachdb_stable_functions_and_operators", "name": "IS NOT NULL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.operator.is_null_cockroachdb_stable_functions_and_operators", "name": "IS NULL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.operator.like_cockroachdb_stable_functions_and_operators", "name": "LIKE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.match_cockroachdb_stable_functions_and_operators", "name": "MATCH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.operator.mod_cockroachdb_stable_functions_and_operators", "name": "MOD", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.not_between_cockroachdb_stable_functions_and_operators", "name": "NOT BETWEEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.operator.not_cockroachdb_stable_functions_and_operators", "name": "NOT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.operator.not_in_cockroachdb_stable_functions_and_operators", "name": "NOT IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.operator.not_like_cockroachdb_stable_functions_and_operators", "name": "NOT LIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.operator.or_cockroachdb_stable_functions_and_operators", "name": "OR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.similar_to_cockroachdb_stable_functions_and_operators", "name": "SIMILAR TO", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.xor_cockroachdb_stable_functions_and_operators", "name": "XOR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.|_cockroachdb_stable_functions_and_operators", "name": "|", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.||_cockroachdb_stable_functions_and_operators", "name": "||", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.operator.~*_cockroachdb_stable_functions_and_operators", "name": "~*", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.operator.~_cockroachdb_stable_functions_and_operators", "name": "~", "status": "needs_review", "reason": ["missing_examples"], "details": []}

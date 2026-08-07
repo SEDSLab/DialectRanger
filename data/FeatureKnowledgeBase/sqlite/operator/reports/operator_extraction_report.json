@@ -1,0 +1,13 @@
+{
+  "dbms": "sqlite",
+  "feature_type": "operator",
+  "candidate_features": 61,
+  "candidate_groups": 41,
+  "feature_drafts": 41,
+  "known_operator_coverage": {
+    "total": 0,
+    "covered": 0,
+    "missing": [],
+    "coverage_ratio": 1.0
+  }
+}

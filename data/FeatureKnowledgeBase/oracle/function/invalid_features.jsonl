@@ -1,0 +1,2 @@
+{"feature_id": "oracle.function.aggregate", "name": "AGGREGATE", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "oracle.function.asterisk", "name": "ASTERISK", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims", "alias_like_feature"], "details": ["signature: empty string"]}

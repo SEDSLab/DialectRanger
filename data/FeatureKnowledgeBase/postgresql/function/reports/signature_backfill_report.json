@@ -1,0 +1,5097 @@
+{
+  "signature_backfill_enabled": true,
+  "metadata_backfill_enabled": true,
+  "residual_invalid_handling_enabled": true,
+  "features_backfilled": 49,
+  "formal_signatures_added": 0,
+  "weak_signatures_added": 88,
+  "rejected_example_like_signatures": 0,
+  "source_metadata_backfilled": 651,
+  "examples_backfilled": 329,
+  "description_claims_backfilled": 624,
+  "backfilled_features": [
+    {
+      "feature_id": "postgresql.function.clock_timestamp",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.coalesce",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.date_bin",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.date_part",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.date_trunc",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.extract",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.format",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.has_table_privilege",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.localtime",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.localtimestamp",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.now",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.nullif",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.pg_event_trigger_table_rewrite_oid",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.pg_event_trigger_table_rewrite_reason",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.pg_log_backend_memory_contexts",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.pg_ls_dir",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.pg_mcv_list_items",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.pg_partition_tree",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.pg_size_pretty",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.pg_split_walfile_name",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.pg_table_is_visible",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.pg_type_is_visible",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.pg_walfile_name_offset",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.regexp_count",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.regexp_instr",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.regexp_like",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.regexp_match",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.regexp_matches",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.regexp_replace",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.regexp_split_to_array",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.regexp_split_to_table",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.regexp_substr",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.statement_timestamp",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.substring",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.sum",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.suppress_redundant_updates_trigger",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.timeofday",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.transaction_timestamp",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.x",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.xmlagg",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.xmlcomment",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.xmlconcat",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.xmlexists",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.xmlforest",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.xmlpi",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.xmlroot",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.xmltext",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.xpath",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "postgresql.function.xpath_exists",
+      "added_syntax": [],
+      "evidence_refs": []
+    }
+  ],
+  "backfilled_examples": [
+    {
+      "feature_id": "postgresql.function.abbrev",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_net_s0002_b0024",
+        "postgresql_current_functions_net_s0002_b0025"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.abs",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0030"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.acldefault",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_info_s0004_b0038"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.acos",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0079"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.acosd",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0080"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.acosh",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0105"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.age",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0036",
+        "postgresql_current_functions_datetime_s0002_b0037"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.area",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_geometry_s0002_b0047"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_append",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0019"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_cat",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0020"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_dims",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0021"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_fill",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0022",
+        "postgresql_current_functions_array_s0002_b0022"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_length",
+      "example_count": 3,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0023",
+        "postgresql_current_functions_array_s0002_b0023",
+        "postgresql_current_functions_array_s0002_b0023"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_lower",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0024"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_ndims",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0025"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_position",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0026"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_positions",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0027"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_prepend",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0028"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_remove",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0029"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_replace",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0030"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_reverse",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0031"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_sample",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0032",
+        "postgresql_current_functions_array_s0002_b0032"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_shuffle",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0033"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_sort",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0034"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_to_json",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0038"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_to_string",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0035"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_to_tsvector",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0023"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.array_upper",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0036"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.ascii",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0013"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.asin",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0081"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.asind",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0082"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.asinh",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0104"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.atan",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0083"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.atan2",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0085"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.atan2d",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0086"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.atand",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0084"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.atanh",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0106"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.bit_count",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_binarystring_s0002_b0011",
+        "postgresql_current_functions_bitstring_s0002_b0020"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.bound_box",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_geometry_s0002_b0069"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.broadcast",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_net_s0002_b0026"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.cardinality",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0037"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.cbrt",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0031"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.ceil",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0032",
+        "postgresql_current_functions_math_s0002_b0032"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.ceiling",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0033"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.center",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_geometry_s0002_b0048"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.chr",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0014"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.coalesce",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_conditional_s0004_b0007"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.concat",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0015"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.concat_ws",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0016"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.convert",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_binarystring_s0002_b0034"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.convert_from",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_binarystring_s0002_b0035"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.convert_to",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_binarystring_s0002_b0036"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.cos",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0087"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.cosd",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0088"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.cosh",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0102"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.cot",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0089"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.cotd",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0090"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.count",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_aggregate_s0002_b0020"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.crc32",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_binarystring_s0002_b0012"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.crc32c",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_binarystring_s0002_b0013"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.current_database",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_info_s0007_b0013"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.current_setting",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0003_b0010"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.date_add",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0044"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.date_bin",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0045"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.date_part",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0046",
+        "postgresql_current_functions_datetime_s0002_b0047"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.date_subtract",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0048"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.date_trunc",
+      "example_count": 3,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0049",
+        "postgresql_current_functions_datetime_s0002_b0050",
+        "postgresql_current_functions_datetime_s0002_b0051"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.decode",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_binarystring_s0002_b0038"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.degrees",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0034"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.diagonal",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_geometry_s0002_b0049"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.diameter",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_geometry_s0002_b0050"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.div",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0035"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.encode",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_binarystring_s0002_b0037"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.enum_range",
+      "example_count": 3,
+      "evidence_refs": [
+        "postgresql_current_functions_enum_s0002_b0011",
+        "postgresql_current_functions_enum_s0002_b0011",
+        "postgresql_current_functions_enum_s0002_b0011"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.erf",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0036"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.erfc",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0037"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.exp",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0038"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.extract",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0052",
+        "postgresql_current_functions_datetime_s0002_b0053"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.factorial",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0039"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.family",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_net_s0002_b0027"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.floor",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0040",
+        "postgresql_current_functions_math_s0002_b0040"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.format",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0017"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.gamma",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0041",
+        "postgresql_current_functions_math_s0002_b0041"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.gcd",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0042"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.generate_series",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_srf_s0002_b0011"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.generate_subscripts",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_srf_s0002_b0019"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.get_bit",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_binarystring_s0002_b0014",
+        "postgresql_current_functions_bitstring_s0002_b0027"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.get_byte",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_binarystring_s0002_b0015"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.has_function_privilege",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_info_s0004_b0013"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.has_table_privilege",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_info_s0004_b0004"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.height",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_geometry_s0002_b0051"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.host",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_net_s0002_b0028"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.hostmask",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_net_s0002_b0029"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.inet_merge",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_net_s0002_b0030"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.inet_same_family",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_net_s0002_b0031"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.initcap",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0018"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.isclosed",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_geometry_s0002_b0052"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.isempty",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_range_s0002_b0064",
+        "postgresql_current_functions_range_s0002_b0076"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.isfinite",
+      "example_count": 3,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0054",
+        "postgresql_current_functions_datetime_s0002_b0055",
+        "postgresql_current_functions_datetime_s0002_b0056"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.isopen",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_geometry_s0002_b0053"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_array_elements",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0057"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_array_elements_text",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0058"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_array_length",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0059"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_arrayagg",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_aggregate_s0002_b0024"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_build_array",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0041"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_build_object",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0042",
+        "postgresql_current_functions_json_s0003_b0042"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_each",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0060"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_each_text",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0061"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_extract_path",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0062"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_extract_path_text",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0063"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_object",
+      "example_count": 4,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0043",
+        "postgresql_current_functions_json_s0003_b0044",
+        "postgresql_current_functions_json_s0003_b0044",
+        "postgresql_current_functions_json_s0003_b0045"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_object_agg",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_aggregate_s0002_b0026"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_object_agg_strict",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_aggregate_s0002_b0027"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_object_agg_unique",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_aggregate_s0002_b0028"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_object_agg_unique_strict",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_aggregate_s0002_b0029"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_object_keys",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0064"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_populate_record",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0065"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_populate_recordset",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0067"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_strip_nulls",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0073"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_to_record",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0068"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_to_recordset",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0069"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_to_tsvector",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0037",
+        "postgresql_current_functions_textsearch_s0002_b0037"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.json_typeof",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0081",
+        "postgresql_current_functions_json_s0003_b0081"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_array_length",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0059"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_build_array",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0024",
+        "postgresql_current_functions_json_s0003_b0041"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_build_object",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0042"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_insert",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0072",
+        "postgresql_current_functions_json_s0003_b0072"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_object_agg",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_aggregate_s0002_b0026"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_object_agg_strict",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_aggregate_s0002_b0027"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_object_agg_unique",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_aggregate_s0002_b0028"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_object_agg_unique_strict",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_aggregate_s0002_b0029"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_path_exists",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0074"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_path_exists_tz",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0079"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_path_match",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0075"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_path_query",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0076"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_path_query_array",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0077"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_path_query_first",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0078"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_populate_record_valid",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0066",
+        "postgresql_current_functions_json_s0003_b0066"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_pretty",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0080"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_set",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0070",
+        "postgresql_current_functions_json_s0003_b0070"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_set_lax",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0071",
+        "postgresql_current_functions_json_s0003_b0071"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_strip_nulls",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0073"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.justify_days",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0057"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.justify_hours",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0058"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.justify_interval",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0059"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.lcm",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0043"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.left",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0020"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.length",
+      "example_count": 6,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0021",
+        "postgresql_current_functions_binarystring_s0002_b0016",
+        "postgresql_current_functions_binarystring_s0002_b0017",
+        "postgresql_current_functions_bitstring_s0002_b0022",
+        "postgresql_current_functions_geometry_s0002_b0054",
+        "postgresql_current_functions_textsearch_s0002_b0025"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.lgamma",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0044"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.ln",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0045"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.localtime",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0061"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.localtimestamp",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0063"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.log",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0046",
+        "postgresql_current_functions_math_s0002_b0048"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.log10",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0047"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.lower_inc",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_range_s0002_b0065",
+        "postgresql_current_functions_range_s0002_b0077"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.lower_inf",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_range_s0002_b0067",
+        "postgresql_current_functions_range_s0002_b0079"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.macaddr8_set7bit",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_net_s0002_b0046",
+        "postgresql_current_functions_net_s0002_b0046"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.make_date",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0064"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.make_interval",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0065"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.make_time",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0066"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.make_timestamp",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0067"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.make_timestamptz",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0002_b0068",
+        "postgresql_current_functions_datetime_s0002_b0068"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.masklen",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_net_s0002_b0032"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.md5",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0022",
+        "postgresql_current_functions_binarystring_s0002_b0018"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.merge_action",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_merge_support_s0002_b0010"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.min_scale",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0049"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.mod",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0050"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.multirange",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_range_s0002_b0082"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.netmask",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_net_s0002_b0033"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.network",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_net_s0002_b0034"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.now",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_datetime_s0007_b0016"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.npoints",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_geometry_s0002_b0055"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.nullif",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_conditional_s0005_b0005"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.num_nonnulls",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_comparison_s0002_b0067"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.num_nulls",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_comparison_s0002_b0068"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.numnode",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0026"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.obj_description",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_info_s0008_b0009"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.parse_ident",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0023"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pclose",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_geometry_s0002_b0056"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_advisory_lock",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0012_b0008"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_advisory_lock_shared",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0012_b0009"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_advisory_unlock",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0012_b0010"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_advisory_unlock_shared",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0012_b0012"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_advisory_xact_lock",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0012_b0013"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_advisory_xact_lock_shared",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0012_b0014"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_backup_stop",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0005_b0022"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_basetype",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_info_s0006_b0008"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_column_compression",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0009_b0008"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_column_size",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0009_b0007"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_column_toast_chunk_id",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0009_b0009"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_event_trigger_table_rewrite_oid",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_event_triggers_s0004_b0010"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_event_trigger_table_rewrite_reason",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_event_triggers_s0004_b0010"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_acl",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_info_s0007_b0013"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_serial_sequence",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_info_s0006_b0023"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_identify_object",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_info_s0007_b0013"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_input_error_info",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_info_s0009_b0008"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_input_is_valid",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_info_s0009_b0007",
+        "postgresql_current_functions_info_s0009_b0007"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_log_backend_memory_contexts",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0004_b0016",
+        "postgresql_current_functions_admin_s0004_b0018"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_ls_dir",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_srf_s0002_b0022"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_mcv_list_items",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_statistics_s0003_b0013"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_partition_tree",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0009_b0054"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_promote",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0006_b0019"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_read_binary_file",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0011_b0020"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_relation_size",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0009_b0054"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_restore_attribute_stats",
+      "example_count": 3,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0009_b0043",
+        "postgresql_current_functions_admin_s0009_b0043",
+        "postgresql_current_functions_admin_s0009_b0043"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_restore_relation_stats",
+      "example_count": 3,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0009_b0041",
+        "postgresql_current_functions_admin_s0009_b0041",
+        "postgresql_current_functions_admin_s0009_b0041"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_size_pretty",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0009_b0054"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_split_walfile_name",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0005_b0025"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_table_is_visible",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_info_s0005_b0003"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_terminate_backend",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0004_b0013"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_try_advisory_lock",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0012_b0015"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_try_advisory_lock_shared",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0012_b0016"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_try_advisory_xact_lock",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0012_b0017"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_try_advisory_xact_lock_shared",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0012_b0018"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_type_is_visible",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_info_s0005_b0024"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_typeof",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_info_s0006_b0037",
+        "postgresql_current_functions_info_s0006_b0037"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_visible_in_snapshot",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_info_s0010_b0016"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_wal_lsn_diff",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0005_b0019"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_walfile_name_offset",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0005_b0022"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.pg_xact_status",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_info_s0010_b0011"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.phraseto_tsquery",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0028",
+        "postgresql_current_functions_textsearch_s0002_b0028"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.plainto_tsquery",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0027"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.popen",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_geometry_s0002_b0057"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.power",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0052"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.querytree",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0030"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.quote_ident",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0025"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.quote_literal",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0026",
+        "postgresql_current_functions_string_s0002_b0027"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.quote_nullable",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0029"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.radians",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0053"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.radius",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_geometry_s0002_b0058"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.random",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0070",
+        "postgresql_current_functions_math_s0002_b0070"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.random_normal",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0071"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.range_merge",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_range_s0002_b0069",
+        "postgresql_current_functions_range_s0002_b0081"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.regexp_count",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0030"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.regexp_instr",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0031"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.regexp_like",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0032"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.regexp_match",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0033"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.regexp_matches",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0034"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.regexp_replace",
+      "example_count": 3,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0035",
+        "postgresql_current_functions_string_s0002_b0036",
+        "postgresql_current_functions_string_s0002_b0036"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.regexp_split_to_array",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0037"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.regexp_split_to_table",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0038"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.regexp_substr",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0039"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.repeat",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0040"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.replace",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0041"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.reverse",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0042",
+        "postgresql_current_functions_binarystring_s0002_b0019"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.right",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0043"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.round",
+      "example_count": 3,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0054",
+        "postgresql_current_functions_math_s0002_b0055",
+        "postgresql_current_functions_math_s0002_b0055"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.row_to_json",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0040"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.scale",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0056"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.set_bit",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_binarystring_s0002_b0020",
+        "postgresql_current_functions_bitstring_s0002_b0028"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.set_byte",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_binarystring_s0002_b0021"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.set_config",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_admin_s0003_b0011"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.set_masklen",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_net_s0002_b0035",
+        "postgresql_current_functions_net_s0002_b0036"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.setseed",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0072"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.setval",
+      "example_count": 3,
+      "evidence_refs": [
+        "postgresql_current_functions_sequence_s0002_b0009",
+        "postgresql_current_functions_sequence_s0002_b0009",
+        "postgresql_current_functions_sequence_s0002_b0009"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.setweight",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0031",
+        "postgresql_current_functions_textsearch_s0002_b0032"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.sha224",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_binarystring_s0002_b0022"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.sha256",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_binarystring_s0002_b0023"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.sha384",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_binarystring_s0002_b0024"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.sha512",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_binarystring_s0002_b0025"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.sign",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0057"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.sin",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0091"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.sind",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0092"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.sinh",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0101"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.slope",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_geometry_s0002_b0059"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.split_part",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0044",
+        "postgresql_current_functions_string_s0002_b0044"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.sqrt",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0058"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.starts_with",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0045"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.string_to_array",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0046"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.string_to_table",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0047"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.strip",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0033"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.strpos",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0048"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.substr",
+      "example_count": 3,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0049",
+        "postgresql_current_functions_string_s0002_b0049",
+        "postgresql_current_functions_binarystring_s0002_b0026"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.sum",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_aggregate_s0002_b0096"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.suppress_redundant_updates_trigger",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_trigger_s0002_b0014"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.tan",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0093"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.tand",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0094"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.tanh",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0103"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.to_ascii",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0050"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.to_bin",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0051",
+        "postgresql_current_functions_string_s0002_b0051"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.to_char",
+      "example_count": 5,
+      "evidence_refs": [
+        "postgresql_current_functions_formatting_s0002_b0008",
+        "postgresql_current_functions_formatting_s0002_b0009",
+        "postgresql_current_functions_formatting_s0002_b0010",
+        "postgresql_current_functions_formatting_s0002_b0010",
+        "postgresql_current_functions_formatting_s0002_b0010"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.to_date",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_formatting_s0002_b0011"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.to_hex",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0052",
+        "postgresql_current_functions_string_s0002_b0052"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.to_json",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0037"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.to_jsonb",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_json_s0003_b0037"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.to_number",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_formatting_s0002_b0012"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.to_oct",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0053",
+        "postgresql_current_functions_string_s0002_b0053"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.to_regtypemod",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_info_s0006_b0048"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.to_timestamp",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_formatting_s0002_b0013",
+        "postgresql_current_functions_datetime_s0002_b0073"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.to_tsquery",
+      "example_count": 3,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0009",
+        "postgresql_current_functions_textsearch_s0002_b0015",
+        "postgresql_current_functions_textsearch_s0002_b0034"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.to_tsvector",
+      "example_count": 3,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0035",
+        "postgresql_current_functions_textsearch_s0002_b0036",
+        "postgresql_current_functions_textsearch_s0002_b0036"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.translate",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0054"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.trim_array",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_array_s0002_b0038"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.trim_scale",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0059"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.trunc",
+      "example_count": 6,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0060",
+        "postgresql_current_functions_math_s0002_b0060",
+        "postgresql_current_functions_math_s0002_b0061",
+        "postgresql_current_functions_net_s0002_b0044",
+        "postgresql_current_functions_net_s0002_b0045",
+        "postgresql_current_functions_net_s0002_b0045"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.ts_debug",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0057"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.ts_delete",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0038",
+        "postgresql_current_functions_textsearch_s0002_b0039"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.ts_filter",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0040"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.ts_headline",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0041",
+        "postgresql_current_functions_textsearch_s0002_b0042"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.ts_lexize",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0058"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.ts_parse",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0059",
+        "postgresql_current_functions_textsearch_s0002_b0060"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.ts_rank",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0043"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.ts_rank_cd",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0044"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.ts_rewrite",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0045",
+        "postgresql_current_functions_textsearch_s0002_b0046"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.ts_stat",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0063"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.ts_token_type",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0061",
+        "postgresql_current_functions_textsearch_s0002_b0062"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.tsquery_phrase",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0047",
+        "postgresql_current_functions_textsearch_s0002_b0048"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.tsvector_to_array",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0049"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.tsvector_update_trigger",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_trigger_s0002_b0009"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.unistr",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_string_s0002_b0055",
+        "postgresql_current_functions_string_s0002_b0055"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.unnest",
+      "example_count": 5,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0050",
+        "postgresql_current_functions_array_s0002_b0039",
+        "postgresql_current_functions_array_s0002_b0039",
+        "postgresql_current_functions_array_s0002_b0040",
+        "postgresql_current_functions_range_s0002_b0083"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.upper_inc",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_range_s0002_b0066",
+        "postgresql_current_functions_range_s0002_b0078"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.upper_inf",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_range_s0002_b0068",
+        "postgresql_current_functions_range_s0002_b0080"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.uuid_extract_timestamp",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_uuid_s0002_b0021"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.uuid_extract_version",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_uuid_s0002_b0022",
+        "postgresql_current_functions_uuid_s0002_b0022"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.websearch_to_tsquery",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_textsearch_s0002_b0029"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.width_bucket",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_math_s0002_b0062",
+        "postgresql_current_functions_math_s0002_b0062"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.xml_is_well_formed",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_xml_s0016_b0008"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.xml_is_well_formed_document",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_xml_s0016_b0008"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.xmlagg",
+      "example_count": 4,
+      "evidence_refs": [
+        "postgresql_current_functions_aggregate_s0002_b0039",
+        "postgresql_current_functions_xml_s0011_b0006",
+        "postgresql_current_functions_xml_s0011_b0008",
+        "postgresql_current_functions_xml_s0011_b0010"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.xmlcomment",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_xml_s0005_b0006",
+        "postgresql_current_functions_xml_s0007_b0014"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.xmlconcat",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_xml_s0006_b0006",
+        "postgresql_current_functions_xml_s0006_b0009"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.xmlexists",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_xml_s0015_b0006"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.xmlforest",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_xml_s0008_b0006"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.xmlpi",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_xml_s0009_b0006"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.xmlroot",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_xml_s0010_b0005"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.xmltext",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_xml_s0004_b0006"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.xpath",
+      "example_count": 2,
+      "evidence_refs": [
+        "postgresql_current_functions_xml_s0018_b0008",
+        "postgresql_current_functions_xml_s0018_b0010"
+      ]
+    },
+    {
+      "feature_id": "postgresql.function.xpath_exists",
+      "example_count": 1,
+      "evidence_refs": [
+        "postgresql_current_functions_xml_s0019_b0006"
+      ]
+    }
+  ],
+  "weak_table_row_features_added": 301,
+  "non_function_noise_kept_invalid": 0,
+  "residual_features_added": [
+    {
+      "feature_id": "postgresql.function.aclexplode",
+      "added_syntax": [
+        "aclexplode ( aclitem[] ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.any_value",
+      "added_syntax": [
+        "any_value ( anyelement ) → same"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.array_agg",
+      "added_syntax": [
+        "array_agg ( anynonarray ORDER BY input_sort_columns ) → anyarray",
+        "array_agg ( anyarray ORDER BY input_sort_columns ) → anyarray"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.avg",
+      "added_syntax": [
+        "avg ( smallint ) → numeric"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.bit_and",
+      "added_syntax": [
+        "bit_and ( smallint ) → smallint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.bit_or",
+      "added_syntax": [
+        "bit_or ( smallint ) → smallint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.bit_xor",
+      "added_syntax": [
+        "bit_xor ( smallint ) → smallint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.bool_and",
+      "added_syntax": [
+        "bool_and ( boolean ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.bool_or",
+      "added_syntax": [
+        "bool_or ( boolean ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.brin_desummarize_range",
+      "added_syntax": [
+        "brin_desummarize_range ( index regclass, blockNumber bigint ) → void"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.brin_summarize_new_values",
+      "added_syntax": [
+        "brin_summarize_new_values ( index regclass ) → integer"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.brin_summarize_range",
+      "added_syntax": [
+        "brin_summarize_range ( index regclass, blockNumber bigint ) → integer"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.casefold",
+      "added_syntax": [
+        "casefold ( text ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.character_length",
+      "added_syntax": [
+        "character_length ( text ) → integer"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.clock_timestamp",
+      "added_syntax": [
+        "clock_timestamp ( ) → timestamp",
+        "clock_timestamp()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.col_description",
+      "added_syntax": [
+        "col_description ( table oid, column integer ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.corr",
+      "added_syntax": [
+        "corr ( Y double precision, X double precision ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.covar_pop",
+      "added_syntax": [
+        "covar_pop ( Y double precision, X double precision ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.covar_samp",
+      "added_syntax": [
+        "covar_samp ( Y double precision, X double precision ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.cume_dist",
+      "added_syntax": [
+        "cume_dist () → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.current_catalog",
+      "added_syntax": [
+        "current_catalog()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.current_query",
+      "added_syntax": [
+        "current_query () → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.current_role",
+      "added_syntax": [
+        "current_role()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.current_schema",
+      "added_syntax": [
+        "current_schema () → name"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.current_schemas",
+      "added_syntax": [
+        "current_schemas ( include_implicit boolean ) → name[]"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.current_user",
+      "added_syntax": [
+        "current_user()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.currval",
+      "added_syntax": [
+        "currval ( regclass ) → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.cursor_to_xml",
+      "added_syntax": [
+        "cursor_to_xml ( cursor refcursor, count integer, nulls boolean, tableforest boolean, targetns text ) → xml"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.cursor_to_xmlschema",
+      "added_syntax": [
+        "cursor_to_xmlschema ( cursor refcursor, nulls boolean, tableforest boolean, targetns text ) → xml"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.database_to_xml",
+      "added_syntax": [
+        "database_to_xml ( nulls boolean, tableforest boolean, targetns text ) → xml"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.database_to_xml_and_xmlschema",
+      "added_syntax": [
+        "database_to_xml_and_xmlschema ( nulls boolean, tableforest boolean, targetns text ) → xml"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.database_to_xmlschema",
+      "added_syntax": [
+        "database_to_xmlschema ( nulls boolean, tableforest boolean, targetns text ) → xml"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.dense_rank",
+      "added_syntax": [
+        "dense_rank () → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.enum_first",
+      "added_syntax": [
+        "enum_first ( anyenum ) → anyenum"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.enum_last",
+      "added_syntax": [
+        "enum_last ( anyenum ) → anyenum"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.every",
+      "added_syntax": [
+        "every ( boolean ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.first_value",
+      "added_syntax": [
+        "first_value ( value anyelement ) → anyelement"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.format_type",
+      "added_syntax": [
+        "format_type ( type oid, typemod integer ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.gen_random_uuid",
+      "added_syntax": [
+        "gen_random_uuid ( ) → uuid"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.get_current_ts_config",
+      "added_syntax": [
+        "get_current_ts_config ( ) → regconfig"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.gin_clean_pending_list",
+      "added_syntax": [
+        "gin_clean_pending_list ( index regclass ) → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.greatest",
+      "added_syntax": [
+        "GREATEST(value [, ...])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.group",
+      "added_syntax": [
+        "GROUP ( ORDER BY anyelement ) → anyelement",
+        "GROUP ( ORDER BY double precision ) → double",
+        "GROUP ( ORDER BY anyelement ) → anyarray",
+        "GROUP ( ORDER BY sorted_args ) → bigint",
+        "GROUP ( ORDER BY sorted_args ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.has_any_column_privilege",
+      "added_syntax": [
+        "has_any_column_privilege ( [ user name or oid, ] table text or oid, privilege text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.has_column_privilege",
+      "added_syntax": [
+        "has_column_privilege ( [ user name or oid, ] table text or oid, column text or smallint, privilege text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.has_database_privilege",
+      "added_syntax": [
+        "has_database_privilege ( [ user name or oid, ] database text or oid, privilege text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.has_foreign_data_wrapper_privilege",
+      "added_syntax": [
+        "has_foreign_data_wrapper_privilege ( [ user name or oid, ] fdw text or oid, privilege text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.has_language_privilege",
+      "added_syntax": [
+        "has_language_privilege ( [ user name or oid, ] language text or oid, privilege text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.has_largeobject_privilege",
+      "added_syntax": [
+        "has_largeobject_privilege ( [ user name or oid, ] largeobject oid, privilege text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.has_parameter_privilege",
+      "added_syntax": [
+        "has_parameter_privilege ( [ user name or oid, ] parameter text, privilege text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.has_schema_privilege",
+      "added_syntax": [
+        "has_schema_privilege ( [ user name or oid, ] schema text or oid, privilege text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.has_sequence_privilege",
+      "added_syntax": [
+        "has_sequence_privilege ( [ user name or oid, ] sequence text or oid, privilege text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.has_server_privilege",
+      "added_syntax": [
+        "has_server_privilege ( [ user name or oid, ] server text or oid, privilege text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.has_tablespace_privilege",
+      "added_syntax": [
+        "has_tablespace_privilege ( [ user name or oid, ] tablespace text or oid, privilege text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.has_type_privilege",
+      "added_syntax": [
+        "has_type_privilege ( [ user name or oid, ] type text or oid, privilege text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.icu_unicode_version",
+      "added_syntax": [
+        "icu_unicode_version () → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.inet_client_addr",
+      "added_syntax": [
+        "inet_client_addr () → inet"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.inet_client_port",
+      "added_syntax": [
+        "inet_client_port () → integer"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.inet_server_addr",
+      "added_syntax": [
+        "inet_server_addr () → inet"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.inet_server_port",
+      "added_syntax": [
+        "inet_server_port () → integer"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.json_agg",
+      "added_syntax": [
+        "json_agg ( anyelement ORDER BY input_sort_columns ) → json"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.json_agg_strict",
+      "added_syntax": [
+        "json_agg_strict ( anyelement ) → json"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_agg",
+      "added_syntax": [
+        "jsonb_agg ( anyelement ORDER BY input_sort_columns ) → jsonb"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_agg_strict",
+      "added_syntax": [
+        "jsonb_agg_strict ( anyelement ) → jsonb"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_array_elements",
+      "added_syntax": [
+        "jsonb_array_elements ( jsonb ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_array_elements_text",
+      "added_syntax": [
+        "jsonb_array_elements_text ( jsonb ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_each",
+      "added_syntax": [
+        "jsonb_each ( jsonb ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_each_text",
+      "added_syntax": [
+        "jsonb_each_text ( jsonb ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_extract_path",
+      "added_syntax": [
+        "jsonb_extract_path ( from_json jsonb, VARIADIC path_elems text[] ) → jsonb"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_extract_path_text",
+      "added_syntax": [
+        "jsonb_extract_path_text ( from_json jsonb, VARIADIC path_elems text[] ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_object",
+      "added_syntax": [
+        "jsonb_object ( text[] ) → jsonb",
+        "jsonb_object ( keys text[], values text[] ) → jsonb"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_object_keys",
+      "added_syntax": [
+        "jsonb_object_keys ( jsonb ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_path_match_tz",
+      "added_syntax": [
+        "jsonb_path_match_tz ( target jsonb, path jsonpath [, vars jsonb [, silent boolean ]] ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_path_query_array_tz",
+      "added_syntax": [
+        "jsonb_path_query_array_tz ( target jsonb, path jsonpath [, vars jsonb [, silent boolean ]] ) → jsonb"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_path_query_first_tz",
+      "added_syntax": [
+        "jsonb_path_query_first_tz ( target jsonb, path jsonpath [, vars jsonb [, silent boolean ]] ) → jsonb"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_path_query_tz",
+      "added_syntax": [
+        "jsonb_path_query_tz ( target jsonb, path jsonpath [, vars jsonb [, silent boolean ]] ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_populate_record",
+      "added_syntax": [
+        "jsonb_populate_record ( base anyelement, from_json jsonb ) → anyelement"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_populate_recordset",
+      "added_syntax": [
+        "jsonb_populate_recordset ( base anyelement, from_json jsonb ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_to_record",
+      "added_syntax": [
+        "jsonb_to_record ( jsonb ) → record"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_to_recordset",
+      "added_syntax": [
+        "jsonb_to_recordset ( jsonb ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_to_tsvector",
+      "added_syntax": [
+        "jsonb_to_tsvector ( [ config regconfig, ] document jsonb, filter jsonb ) → tsvector"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.jsonb_typeof",
+      "added_syntax": [
+        "jsonb_typeof ( jsonb ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.lag",
+      "added_syntax": [
+        "lag ( value anycompatible [, offset integer [, default anycompatible ]] ) → anycompatible"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.last_value",
+      "added_syntax": [
+        "last_value ( value anyelement ) → anyelement"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.lastval",
+      "added_syntax": [
+        "lastval () → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.lead",
+      "added_syntax": [
+        "lead ( value anycompatible [, offset integer [, default anycompatible ]] ) → anycompatible"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.least",
+      "added_syntax": [
+        "LEAST(value [, ...])"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.makeaclitem",
+      "added_syntax": [
+        "makeaclitem ( grantee oid, grantor oid, privileges text, is_grantable boolean ) → aclitem"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.max",
+      "added_syntax": [
+        "max ( see text ) → same"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.min",
+      "added_syntax": [
+        "min ( see text ) → same"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.mxid_age",
+      "added_syntax": [
+        "mxid_age ( xid ) → integer"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.nextval",
+      "added_syntax": [
+        "nextval ( regclass ) → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.nth_value",
+      "added_syntax": [
+        "nth_value ( value anyelement, n integer ) → anyelement"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.ntile",
+      "added_syntax": [
+        "ntile ( num_buckets integer ) → integer"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.percent_rank",
+      "added_syntax": [
+        "percent_rank () → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_advisory_unlock_all",
+      "added_syntax": [
+        "pg_advisory_unlock_all () → void"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_available_wal_summaries",
+      "added_syntax": [
+        "pg_available_wal_summaries () → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_backend_pid",
+      "added_syntax": [
+        "pg_backend_pid () → integer"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_backup_start",
+      "added_syntax": [
+        "pg_backup_start ( label text [, fast boolean ] ) → pg_lsn"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_blocking_pids",
+      "added_syntax": [
+        "pg_blocking_pids ( integer ) → integer[]"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_cancel_backend",
+      "added_syntax": [
+        "pg_cancel_backend ( pid integer ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_char_to_encoding",
+      "added_syntax": [
+        "pg_char_to_encoding ( encoding name ) → integer"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_clear_attribute_stats",
+      "added_syntax": [
+        "pg_clear_attribute_stats ( schemaname text, relname text, attname text, inherited boolean ) → void"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_clear_relation_stats",
+      "added_syntax": [
+        "pg_clear_relation_stats ( schemaname text, relname text ) → void"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_client_encoding",
+      "added_syntax": [
+        "pg_client_encoding ( ) → name"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_collation_actual_version",
+      "added_syntax": [
+        "pg_collation_actual_version ( oid ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_collation_is_visible",
+      "added_syntax": [
+        "pg_collation_is_visible ( collation oid ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_conf_load_time",
+      "added_syntax": [
+        "pg_conf_load_time () → timestamp"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_control_checkpoint",
+      "added_syntax": [
+        "pg_control_checkpoint () → record"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_control_init",
+      "added_syntax": [
+        "pg_control_init () → record"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_control_recovery",
+      "added_syntax": [
+        "pg_control_recovery () → record"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_control_system",
+      "added_syntax": [
+        "pg_control_system () → record"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_conversion_is_visible",
+      "added_syntax": [
+        "pg_conversion_is_visible ( conversion oid ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_copy_logical_replication_slot",
+      "added_syntax": [
+        "pg_copy_logical_replication_slot ( src_slot_name name, dst_slot_name name [, temporary boolean [, plugin name ]] ) → record"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_copy_physical_replication_slot",
+      "added_syntax": [
+        "pg_copy_physical_replication_slot ( src_slot_name name, dst_slot_name name [, temporary boolean ] ) → record"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_create_logical_replication_slot",
+      "added_syntax": [
+        "pg_create_logical_replication_slot ( slot_name name, plugin name [, temporary boolean, twophase boolean, failover boolean ] ) → record"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_create_physical_replication_slot",
+      "added_syntax": [
+        "pg_create_physical_replication_slot ( slot_name name [, immediately_reserve boolean, temporary boolean ] ) → record"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_create_restore_point",
+      "added_syntax": [
+        "pg_create_restore_point ( name text ) → pg_lsn"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_current_logfile",
+      "added_syntax": [
+        "pg_current_logfile ( [ text ] ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_current_snapshot",
+      "added_syntax": [
+        "pg_current_snapshot () → pg_snapshot"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_current_wal_flush_lsn",
+      "added_syntax": [
+        "pg_current_wal_flush_lsn () → pg_lsn"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_current_wal_insert_lsn",
+      "added_syntax": [
+        "pg_current_wal_insert_lsn () → pg_lsn"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_current_wal_lsn",
+      "added_syntax": [
+        "pg_current_wal_lsn () → pg_lsn"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_current_xact_id",
+      "added_syntax": [
+        "pg_current_xact_id () → xid8"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_current_xact_id_if_assigned",
+      "added_syntax": [
+        "pg_current_xact_id_if_assigned () → xid8"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_database_collation_actual_version",
+      "added_syntax": [
+        "pg_database_collation_actual_version ( oid ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_database_size",
+      "added_syntax": [
+        "pg_database_size ( name ) → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_describe_object",
+      "added_syntax": [
+        "pg_describe_object ( classid oid, objid oid, objsubid integer ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_drop_replication_slot",
+      "added_syntax": [
+        "pg_drop_replication_slot ( slot_name name ) → void"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_encoding_to_char",
+      "added_syntax": [
+        "pg_encoding_to_char ( encoding integer ) → name"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_event_trigger_ddl_commands",
+      "added_syntax": [
+        "pg_event_trigger_ddl_commands () → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_export_snapshot",
+      "added_syntax": [
+        "pg_export_snapshot () → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_filenode_relation",
+      "added_syntax": [
+        "pg_filenode_relation ( tablespace oid, filenode oid ) → regclass"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_function_is_visible",
+      "added_syntax": [
+        "pg_function_is_visible ( function oid ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_catalog_foreign_keys",
+      "added_syntax": [
+        "pg_get_catalog_foreign_keys () → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_constraintdef",
+      "added_syntax": [
+        "pg_get_constraintdef ( constraint oid [, pretty boolean ] ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_expr",
+      "added_syntax": [
+        "pg_get_expr ( expr pg_node_tree, relation oid [, pretty boolean ] ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_function_arguments",
+      "added_syntax": [
+        "pg_get_function_arguments ( func oid ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_function_identity_arguments",
+      "added_syntax": [
+        "pg_get_function_identity_arguments ( func oid ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_function_result",
+      "added_syntax": [
+        "pg_get_function_result ( func oid ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_functiondef",
+      "added_syntax": [
+        "pg_get_functiondef ( func oid ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_indexdef",
+      "added_syntax": [
+        "pg_get_indexdef ( index oid [, column integer, pretty boolean ] ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_keywords",
+      "added_syntax": [
+        "pg_get_keywords () → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_loaded_modules",
+      "added_syntax": [
+        "pg_get_loaded_modules () → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_multixact_members",
+      "added_syntax": [
+        "pg_get_multixact_members ( multixid xid ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_object_address",
+      "added_syntax": [
+        "pg_get_object_address ( type text, object_names text[], object_args text[] ) → record"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_partition_constraintdef",
+      "added_syntax": [
+        "pg_get_partition_constraintdef ( table oid ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_partkeydef",
+      "added_syntax": [
+        "pg_get_partkeydef ( table oid ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_ruledef",
+      "added_syntax": [
+        "pg_get_ruledef ( rule oid [, pretty boolean ] ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_statisticsobjdef",
+      "added_syntax": [
+        "pg_get_statisticsobjdef ( statobj oid ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_triggerdef",
+      "added_syntax": [
+        "pg_get_triggerdef ( trigger oid [, pretty boolean ] ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_userbyid",
+      "added_syntax": [
+        "pg_get_userbyid ( role oid ) → name"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_viewdef",
+      "added_syntax": [
+        "pg_get_viewdef ( view oid [, pretty boolean ] ) → text",
+        "pg_get_viewdef ( view oid, wrap_column integer ) → text",
+        "pg_get_viewdef ( view text [, pretty boolean ] ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_wal_replay_pause_state",
+      "added_syntax": [
+        "pg_get_wal_replay_pause_state () → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_wal_resource_managers",
+      "added_syntax": [
+        "pg_get_wal_resource_managers () → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_get_wal_summarizer_state",
+      "added_syntax": [
+        "pg_get_wal_summarizer_state () → record"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_has_role",
+      "added_syntax": [
+        "pg_has_role ( [ user name or oid, ] role text or oid, privilege text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_identify_object_as_address",
+      "added_syntax": [
+        "pg_identify_object_as_address ( classid oid, objid oid, objsubid integer ) → record"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_import_system_collations",
+      "added_syntax": [
+        "pg_import_system_collations ( schema regnamespace ) → integer"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_index_column_has_property",
+      "added_syntax": [
+        "pg_index_column_has_property ( index regclass, column integer, property text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_index_has_property",
+      "added_syntax": [
+        "pg_index_has_property ( index regclass, property text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_indexam_has_property",
+      "added_syntax": [
+        "pg_indexam_has_property ( am oid, property text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_indexes_size",
+      "added_syntax": [
+        "pg_indexes_size ( regclass ) → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_is_in_recovery",
+      "added_syntax": [
+        "pg_is_in_recovery () → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_is_other_temp_schema",
+      "added_syntax": [
+        "pg_is_other_temp_schema ( oid ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_is_wal_replay_paused",
+      "added_syntax": [
+        "pg_is_wal_replay_paused () → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_jit_available",
+      "added_syntax": [
+        "pg_jit_available () → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_last_committed_xact",
+      "added_syntax": [
+        "pg_last_committed_xact () → record"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_last_wal_receive_lsn",
+      "added_syntax": [
+        "pg_last_wal_receive_lsn () → pg_lsn"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_last_wal_replay_lsn",
+      "added_syntax": [
+        "pg_last_wal_replay_lsn () → pg_lsn"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_last_xact_replay_timestamp",
+      "added_syntax": [
+        "pg_last_xact_replay_timestamp () → timestamp"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_listening_channels",
+      "added_syntax": [
+        "pg_listening_channels () → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_log_standby_snapshot",
+      "added_syntax": [
+        "pg_log_standby_snapshot () → pg_lsn"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_logical_emit_message",
+      "added_syntax": [
+        "pg_logical_emit_message ( transactional boolean, prefix text, content text [, flush boolean DEFAULT false] ) → pg_lsn"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_logical_slot_get_binary_changes",
+      "added_syntax": [
+        "pg_logical_slot_get_binary_changes ( slot_name name, upto_lsn pg_lsn, upto_nchanges integer, VARIADIC options text[] ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_logical_slot_get_changes",
+      "added_syntax": [
+        "pg_logical_slot_get_changes ( slot_name name, upto_lsn pg_lsn, upto_nchanges integer, VARIADIC options text[] ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_logical_slot_peek_binary_changes",
+      "added_syntax": [
+        "pg_logical_slot_peek_binary_changes ( slot_name name, upto_lsn pg_lsn, upto_nchanges integer, VARIADIC options text[] ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_logical_slot_peek_changes",
+      "added_syntax": [
+        "pg_logical_slot_peek_changes ( slot_name name, upto_lsn pg_lsn, upto_nchanges integer, VARIADIC options text[] ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_ls_archive_statusdir",
+      "added_syntax": [
+        "pg_ls_archive_statusdir () → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_ls_logdir",
+      "added_syntax": [
+        "pg_ls_logdir () → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_ls_logicalmapdir",
+      "added_syntax": [
+        "pg_ls_logicalmapdir () → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_ls_logicalsnapdir",
+      "added_syntax": [
+        "pg_ls_logicalsnapdir () → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_ls_replslotdir",
+      "added_syntax": [
+        "pg_ls_replslotdir ( slot_name text ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_ls_summariesdir",
+      "added_syntax": [
+        "pg_ls_summariesdir () → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_ls_tmpdir",
+      "added_syntax": [
+        "pg_ls_tmpdir ( [ tablespace oid ] ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_ls_waldir",
+      "added_syntax": [
+        "pg_ls_waldir () → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_my_temp_schema",
+      "added_syntax": [
+        "pg_my_temp_schema () → oid"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_notification_queue_usage",
+      "added_syntax": [
+        "pg_notification_queue_usage () → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_numa_available",
+      "added_syntax": [
+        "pg_numa_available () → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_opclass_is_visible",
+      "added_syntax": [
+        "pg_opclass_is_visible ( opclass oid ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_operator_is_visible",
+      "added_syntax": [
+        "pg_operator_is_visible ( operator oid ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_opfamily_is_visible",
+      "added_syntax": [
+        "pg_opfamily_is_visible ( opclass oid ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_options_to_table",
+      "added_syntax": [
+        "pg_options_to_table ( options_array text[] ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_partition_ancestors",
+      "added_syntax": [
+        "pg_partition_ancestors ( regclass ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_partition_root",
+      "added_syntax": [
+        "pg_partition_root ( regclass ) → regclass"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_postmaster_start_time",
+      "added_syntax": [
+        "pg_postmaster_start_time () → timestamp"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_read_file",
+      "added_syntax": [
+        "pg_read_file ( filename text [, offset bigint, length bigint ] [, missing_ok boolean ] ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_relation_filenode",
+      "added_syntax": [
+        "pg_relation_filenode ( relation regclass ) → oid"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_relation_filepath",
+      "added_syntax": [
+        "pg_relation_filepath ( relation regclass ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_reload_conf",
+      "added_syntax": [
+        "pg_reload_conf () → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_replication_origin_advance",
+      "added_syntax": [
+        "pg_replication_origin_advance ( node_name text, lsn pg_lsn ) → void"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_replication_origin_create",
+      "added_syntax": [
+        "pg_replication_origin_create ( node_name text ) → oid"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_replication_origin_drop",
+      "added_syntax": [
+        "pg_replication_origin_drop ( node_name text ) → void"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_replication_origin_oid",
+      "added_syntax": [
+        "pg_replication_origin_oid ( node_name text ) → oid"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_replication_origin_progress",
+      "added_syntax": [
+        "pg_replication_origin_progress ( node_name text, flush boolean ) → pg_lsn"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_replication_origin_session_is_setup",
+      "added_syntax": [
+        "pg_replication_origin_session_is_setup () → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_replication_origin_session_progress",
+      "added_syntax": [
+        "pg_replication_origin_session_progress ( flush boolean ) → pg_lsn"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_replication_origin_session_reset",
+      "added_syntax": [
+        "pg_replication_origin_session_reset () → void"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_replication_origin_session_setup",
+      "added_syntax": [
+        "pg_replication_origin_session_setup ( node_name text ) → void"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_replication_origin_xact_reset",
+      "added_syntax": [
+        "pg_replication_origin_xact_reset () → void"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_replication_origin_xact_setup",
+      "added_syntax": [
+        "pg_replication_origin_xact_setup ( origin_lsn pg_lsn, origin_timestamp timestamp with time zone ) → void"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_replication_slot_advance",
+      "added_syntax": [
+        "pg_replication_slot_advance ( slot_name name, upto_lsn pg_lsn ) → record"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_rotate_logfile",
+      "added_syntax": [
+        "pg_rotate_logfile () → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_safe_snapshot_blocking_pids",
+      "added_syntax": [
+        "pg_safe_snapshot_blocking_pids ( integer ) → integer[]"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_settings_get_flags",
+      "added_syntax": [
+        "pg_settings_get_flags ( guc text ) → text[]"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_size_bytes",
+      "added_syntax": [
+        "pg_size_bytes ( text ) → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_snapshot_xip",
+      "added_syntax": [
+        "pg_snapshot_xip ( pg_snapshot ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_snapshot_xmax",
+      "added_syntax": [
+        "pg_snapshot_xmax ( pg_snapshot ) → xid8"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_snapshot_xmin",
+      "added_syntax": [
+        "pg_snapshot_xmin ( pg_snapshot ) → xid8"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_stat_file",
+      "added_syntax": [
+        "pg_stat_file ( filename text [, missing_ok boolean ] ) → record"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_statistics_obj_is_visible",
+      "added_syntax": [
+        "pg_statistics_obj_is_visible ( stat oid ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_switch_wal",
+      "added_syntax": [
+        "pg_switch_wal () → pg_lsn"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_sync_replication_slots",
+      "added_syntax": [
+        "pg_sync_replication_slots () → void"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_table_size",
+      "added_syntax": [
+        "pg_table_size ( regclass ) → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_tablespace_databases",
+      "added_syntax": [
+        "pg_tablespace_databases ( tablespace oid ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_tablespace_location",
+      "added_syntax": [
+        "pg_tablespace_location ( tablespace oid ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_tablespace_size",
+      "added_syntax": [
+        "pg_tablespace_size ( name ) → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_total_relation_size",
+      "added_syntax": [
+        "pg_total_relation_size ( regclass ) → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_trigger_depth",
+      "added_syntax": [
+        "pg_trigger_depth () → integer"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_ts_config_is_visible",
+      "added_syntax": [
+        "pg_ts_config_is_visible ( config oid ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_ts_dict_is_visible",
+      "added_syntax": [
+        "pg_ts_dict_is_visible ( dict oid ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_ts_parser_is_visible",
+      "added_syntax": [
+        "pg_ts_parser_is_visible ( parser oid ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_ts_template_is_visible",
+      "added_syntax": [
+        "pg_ts_template_is_visible ( template oid ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_wal_replay_pause",
+      "added_syntax": [
+        "pg_wal_replay_pause () → void"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_wal_replay_resume",
+      "added_syntax": [
+        "pg_wal_replay_resume () → void"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_wal_summary_contents",
+      "added_syntax": [
+        "pg_wal_summary_contents ( tli bigint, start_lsn pg_lsn, end_lsn pg_lsn ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_walfile_name",
+      "added_syntax": [
+        "pg_walfile_name ( lsn pg_lsn ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_xact_commit_timestamp",
+      "added_syntax": [
+        "pg_xact_commit_timestamp ( xid ) → timestamp"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pg_xact_commit_timestamp_origin",
+      "added_syntax": [
+        "pg_xact_commit_timestamp_origin ( xid ) → record"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.pi",
+      "added_syntax": [
+        "pi ( ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.query_to_xml",
+      "added_syntax": [
+        "query_to_xml ( query text, nulls boolean, tableforest boolean, targetns text ) → xml"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.query_to_xml_and_xmlschema",
+      "added_syntax": [
+        "query_to_xml_and_xmlschema ( query text, nulls boolean, tableforest boolean, targetns text ) → xml"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.query_to_xmlschema",
+      "added_syntax": [
+        "query_to_xmlschema ( query text, nulls boolean, tableforest boolean, targetns text ) → xml"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.range_agg",
+      "added_syntax": [
+        "range_agg ( value anyrange ) → anymultirange"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.range_intersect_agg",
+      "added_syntax": [
+        "range_intersect_agg ( value anyrange ) → anyrange"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.rank",
+      "added_syntax": [
+        "rank () → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.regr_avgx",
+      "added_syntax": [
+        "regr_avgx ( Y double precision, X double precision ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.regr_avgy",
+      "added_syntax": [
+        "regr_avgy ( Y double precision, X double precision ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.regr_count",
+      "added_syntax": [
+        "regr_count ( Y double precision, X double precision ) → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.regr_intercept",
+      "added_syntax": [
+        "regr_intercept ( Y double precision, X double precision ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.regr_r2",
+      "added_syntax": [
+        "regr_r2 ( Y double precision, X double precision ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.regr_slope",
+      "added_syntax": [
+        "regr_slope ( Y double precision, X double precision ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.regr_sxx",
+      "added_syntax": [
+        "regr_sxx ( Y double precision, X double precision ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.regr_sxy",
+      "added_syntax": [
+        "regr_sxy ( Y double precision, X double precision ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.regr_syy",
+      "added_syntax": [
+        "regr_syy ( Y double precision, X double precision ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.row_number",
+      "added_syntax": [
+        "row_number () → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.row_security_active",
+      "added_syntax": [
+        "row_security_active ( table text or oid ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.schema_to_xml",
+      "added_syntax": [
+        "schema_to_xml ( schema name, nulls boolean, tableforest boolean, targetns text ) → xml"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.schema_to_xml_and_xmlschema",
+      "added_syntax": [
+        "schema_to_xml_and_xmlschema ( schema name, nulls boolean, tableforest boolean, targetns text ) → xml"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.schema_to_xmlschema",
+      "added_syntax": [
+        "schema_to_xmlschema ( schema name, nulls boolean, tableforest boolean, targetns text ) → xml"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.session_user",
+      "added_syntax": [
+        "session_user()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.shobj_description",
+      "added_syntax": [
+        "shobj_description ( object oid, catalog name ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.statement_timestamp",
+      "added_syntax": [
+        "statement_timestamp ( ) → timestamp",
+        "statement_timestamp()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.stddev",
+      "added_syntax": [
+        "stddev ( numeric_type ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.stddev_pop",
+      "added_syntax": [
+        "stddev_pop ( numeric_type ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.stddev_samp",
+      "added_syntax": [
+        "stddev_samp ( numeric_type ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.string_agg",
+      "added_syntax": [
+        "string_agg ( value text, delimiter text ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.table_to_xml",
+      "added_syntax": [
+        "table_to_xml ( table regclass, nulls boolean, tableforest boolean, targetns text ) → xml"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.table_to_xml_and_xmlschema",
+      "added_syntax": [
+        "table_to_xml_and_xmlschema ( table regclass, nulls boolean, tableforest boolean, targetns text ) → xml"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.table_to_xmlschema",
+      "added_syntax": [
+        "table_to_xmlschema ( table regclass, nulls boolean, tableforest boolean, targetns text ) → xml"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.timeofday",
+      "added_syntax": [
+        "timeofday ( ) → text",
+        "timeofday()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.to_regclass",
+      "added_syntax": [
+        "to_regclass ( text ) → regclass"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.to_regcollation",
+      "added_syntax": [
+        "to_regcollation ( text ) → regcollation"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.to_regnamespace",
+      "added_syntax": [
+        "to_regnamespace ( text ) → regnamespace"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.to_regoper",
+      "added_syntax": [
+        "to_regoper ( text ) → regoper"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.to_regoperator",
+      "added_syntax": [
+        "to_regoperator ( text ) → regoperator"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.to_regproc",
+      "added_syntax": [
+        "to_regproc ( text ) → regproc"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.to_regprocedure",
+      "added_syntax": [
+        "to_regprocedure ( text ) → regprocedure"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.to_regrole",
+      "added_syntax": [
+        "to_regrole ( text ) → regrole"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.to_regtype",
+      "added_syntax": [
+        "to_regtype ( text ) → regtype"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.transaction_timestamp",
+      "added_syntax": [
+        "transaction_timestamp ( ) → timestamp",
+        "transaction_timestamp()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.tsvector_update_trigger_column",
+      "added_syntax": [
+        "tsvector_update_trigger_column ( ) → trigger"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.txid_current",
+      "added_syntax": [
+        "txid_current () → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.txid_current_if_assigned",
+      "added_syntax": [
+        "txid_current_if_assigned () → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.txid_current_snapshot",
+      "added_syntax": [
+        "txid_current_snapshot () → txid_snapshot"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.txid_snapshot_xip",
+      "added_syntax": [
+        "txid_snapshot_xip ( txid_snapshot ) → setof"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.txid_snapshot_xmax",
+      "added_syntax": [
+        "txid_snapshot_xmax ( txid_snapshot ) → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.txid_snapshot_xmin",
+      "added_syntax": [
+        "txid_snapshot_xmin ( txid_snapshot ) → bigint"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.txid_status",
+      "added_syntax": [
+        "txid_status ( bigint ) → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.txid_visible_in_snapshot",
+      "added_syntax": [
+        "txid_visible_in_snapshot ( bigint, txid_snapshot ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.unicode_assigned",
+      "added_syntax": [
+        "unicode_assigned ( text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.unicode_version",
+      "added_syntax": [
+        "unicode_version () → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.user",
+      "added_syntax": [
+        "user()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.uuidv4",
+      "added_syntax": [
+        "uuidv4 ( ) → uuid"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.uuidv7",
+      "added_syntax": [
+        "uuidv7 ( [ shift interval ] ) → uuid"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.var_pop",
+      "added_syntax": [
+        "var_pop ( numeric_type ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.var_samp",
+      "added_syntax": [
+        "var_samp ( numeric_type ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.variance",
+      "added_syntax": [
+        "variance ( numeric_type ) → double"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.version",
+      "added_syntax": [
+        "version () → text"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.x",
+      "added_syntax": [
+        "x(a int, b text, c int[], d text, r myrowtype) → a",
+        "x(a int, b text) → a",
+        "x(a,b) → a",
+        "x (16 rows)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "postgresql.function.xml_is_well_formed_content",
+      "added_syntax": [
+        "xml_is_well_formed_content ( text ) → boolean"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    }
+  ],
+  "residual_features_kept_invalid": [],
+  "generated_at": "2026-08-06T18:49:10.829050+08:00"
+}

@@ -1,0 +1,7 @@
+{
+  "dbms": "mysql",
+  "feature_type": "operator",
+  "candidates": 113,
+  "groups": 108,
+  "drafts": 108
+}

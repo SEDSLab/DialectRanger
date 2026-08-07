@@ -1,0 +1,13 @@
+{
+  "dbms": "oracle",
+  "feature_type": "datatype",
+  "candidate_features": 158,
+  "candidate_groups": 30,
+  "feature_drafts": 30,
+  "known_type_coverage": {
+    "total": 0,
+    "covered": 0,
+    "missing": [],
+    "coverage_ratio": 1.0
+  }
+}

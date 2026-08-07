@@ -1,0 +1,36 @@
+{
+  "dbms": "duckdb",
+  "feature_type": "operator",
+  "total_drafts": 105,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 105,
+  "invalid_features": 0,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 105,
+    "no_description_claims": 81,
+    "no_valid_syntax": 0,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 9,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 52
+  },
+  "sample_clean_features": [],
+  "sample_warning_features": [
+    "duckdb.operator.!=_duckdb_stable_comparison_operators",
+    "duckdb.operator.!_duckdb_stable_comparison_operators",
+    "duckdb.operator.!_duckdb_stable_numeric",
+    "duckdb.operator.%_duckdb_stable_numeric",
+    "duckdb.operator.&_duckdb_stable_numeric",
+    "duckdb.operator.**_duckdb_stable_numeric",
+    "duckdb.operator.*_duckdb_stable_numeric",
+    "duckdb.operator.*_duckdb_stable_star",
+    "duckdb.operator.*_duckdb_stable_subqueries",
+    "duckdb.operator.+_duckdb_stable_interval"
+  ],
+  "sample_invalid_features": [],
+  "generated_at": "2026-08-06T19:01:17.824821+08:00"
+}

@@ -1,0 +1,131 @@
+{
+  "dbms": "sqlite",
+  "feature_type": "function",
+  "processed_pages": 13,
+  "skipped_pages": 0,
+  "total_sections": 137,
+  "total_blocks": 1760,
+  "section_sources": {
+    "fallback": 13,
+    "heading_tree": 124
+  },
+  "block_types": {
+    "list": 620,
+    "anchor": 158,
+    "heading": 124,
+    "paragraph": 549,
+    "signature": 79,
+    "definition_term": 17,
+    "definition_description": 96,
+    "note": 30,
+    "table": 4,
+    "table_row": 16,
+    "code": 67
+  },
+  "pages": [
+    {
+      "page_id": "sqlite_current_lang_corefunc",
+      "sections": 4,
+      "blocks": 180,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlite_current_lang_aggfunc",
+      "sections": 4,
+      "blocks": 103,
+      "anchors": 25,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlite_current_lang_datefunc",
+      "sections": 6,
+      "blocks": 140,
+      "anchors": 7,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlite_current_lang_mathfunc",
+      "sections": 3,
+      "blocks": 104,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlite_current_json1",
+      "sections": 41,
+      "blocks": 391,
+      "anchors": 25,
+      "tables": 3,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlite_current_windowfunctions",
+      "sections": 13,
+      "blocks": 300,
+      "anchors": 78,
+      "tables": 1,
+      "code_blocks": 19
+    },
+    {
+      "page_id": "sqlite_current_simple_function_invocation",
+      "sections": 2,
+      "blocks": 17,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlite_current_aggregate_function_invocation",
+      "sections": 2,
+      "blocks": 17,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlite_current_function_arguments",
+      "sections": 2,
+      "blocks": 17,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlite_current_raise_function",
+      "sections": 2,
+      "blocks": 17,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlite_current_vtab",
+      "sections": 45,
+      "blocks": 358,
+      "anchors": 7,
+      "tables": 0,
+      "code_blocks": 44
+    },
+    {
+      "page_id": "sqlite_current_appfunc",
+      "sections": 11,
+      "blocks": 99,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "sqlite_current_window_function_invocation",
+      "sections": 2,
+      "blocks": 17,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    }
+  ]
+}

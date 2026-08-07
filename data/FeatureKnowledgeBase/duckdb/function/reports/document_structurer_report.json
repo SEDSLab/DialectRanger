@@ -1,0 +1,1921 @@
+{
+  "dbms": "duckdb",
+  "feature_type": "function",
+  "processed_pages": 237,
+  "skipped_pages": 5,
+  "total_sections": 6918,
+  "total_blocks": 62914,
+  "section_sources": {
+    "fallback": 253,
+    "heading_tree": 6665
+  },
+  "block_types": {
+    "anchor": 521,
+    "list": 2763,
+    "heading": 6665,
+    "paragraph": 5654,
+    "code": 5996,
+    "table": 6371,
+    "table_row": 29431,
+    "note": 111,
+    "signature": 5402
+  },
+  "pages": [
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 5,
+      "blocks": 30,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 5,
+      "blocks": 30,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 5,
+      "blocks": 30,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 5,
+      "blocks": 30,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 5,
+      "blocks": 30,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 5,
+      "blocks": 30,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 5,
+      "blocks": 30,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 5,
+      "blocks": 30,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "duckdb_stable_json_functions",
+      "sections": 5,
+      "blocks": 143,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 78
+    },
+    {
+      "page_id": "duckdb_stable_table_functions",
+      "sections": 101,
+      "blocks": 401,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 107
+    },
+    {
+      "page_id": "duckdb_stable_function",
+      "sections": 10,
+      "blocks": 93,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 45
+    },
+    {
+      "page_id": "duckdb_stable_aggregates",
+      "sections": 11,
+      "blocks": 399,
+      "anchors": 3,
+      "tables": 68,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 2,
+      "blocks": 59,
+      "anchors": 2,
+      "tables": 8,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_bitstring",
+      "sections": 4,
+      "blocks": 102,
+      "anchors": 2,
+      "tables": 16,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_blob",
+      "sections": 2,
+      "blocks": 116,
+      "anchors": 2,
+      "tables": 16,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_dateformat",
+      "sections": 5,
+      "blocks": 74,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 13
+    },
+    {
+      "page_id": "duckdb_stable_date",
+      "sections": 4,
+      "blocks": 153,
+      "anchors": 2,
+      "tables": 22,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_datepart",
+      "sections": 4,
+      "blocks": 209,
+      "anchors": 2,
+      "tables": 30,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_enum",
+      "sections": 3,
+      "blocks": 44,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_geometry",
+      "sections": 9,
+      "blocks": 58,
+      "anchors": 2,
+      "tables": 8,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_interval",
+      "sections": 3,
+      "blocks": 129,
+      "anchors": 2,
+      "tables": 19,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_lambda",
+      "sections": 14,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 37
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 23,
+      "blocks": 784,
+      "anchors": 2,
+      "tables": 86,
+      "code_blocks": 99
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 3,
+      "blocks": 99,
+      "anchors": 2,
+      "tables": 15,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_nested",
+      "sections": 30,
+      "blocks": 597,
+      "anchors": 2,
+      "tables": 67,
+      "code_blocks": 96
+    },
+    {
+      "page_id": "duckdb_stable_numeric",
+      "sections": 6,
+      "blocks": 384,
+      "anchors": 2,
+      "tables": 60,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_pattern_matching",
+      "sections": 8,
+      "blocks": 89,
+      "anchors": 5,
+      "tables": 5,
+      "code_blocks": 15
+    },
+    {
+      "page_id": "duckdb_stable_regular_expressions",
+      "sections": 8,
+      "blocks": 109,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 4,
+      "blocks": 97,
+      "anchors": 2,
+      "tables": 15,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_text",
+      "sections": 18,
+      "blocks": 848,
+      "anchors": 2,
+      "tables": 116,
+      "code_blocks": 29
+    },
+    {
+      "page_id": "duckdb_stable_time",
+      "sections": 4,
+      "blocks": 83,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_timestamp",
+      "sections": 4,
+      "blocks": 244,
+      "anchors": 2,
+      "tables": 39,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_timestamptz",
+      "sections": 14,
+      "blocks": 286,
+      "anchors": 2,
+      "tables": 42,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 2,
+      "blocks": 35,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_utility",
+      "sections": 3,
+      "blocks": 328,
+      "anchors": 2,
+      "tables": 54,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_window_functions",
+      "sections": 15,
+      "blocks": 218,
+      "anchors": 3,
+      "tables": 18,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "duckdb_stable_duckdb_table_functions",
+      "sections": 26,
+      "blocks": 341,
+      "anchors": 2,
+      "tables": 25,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_reference",
+      "sections": 7,
+      "blocks": 63,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "duckdb_stable_functions",
+      "sections": 534,
+      "blocks": 1225,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 227
+    },
+    {
+      "page_id": "duckdb_stable_functions",
+      "sections": 534,
+      "blocks": 1225,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 227
+    },
+    {
+      "page_id": "duckdb_stable_functions",
+      "sections": 534,
+      "blocks": 1225,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 227
+    },
+    {
+      "page_id": "duckdb_stable_text",
+      "sections": 18,
+      "blocks": 848,
+      "anchors": 2,
+      "tables": 116,
+      "code_blocks": 29
+    },
+    {
+      "page_id": "duckdb_stable_json_functions",
+      "sections": 5,
+      "blocks": 143,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 78
+    },
+    {
+      "page_id": "duckdb_stable_table_functions",
+      "sections": 101,
+      "blocks": 401,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 107
+    },
+    {
+      "page_id": "duckdb_stable_function",
+      "sections": 10,
+      "blocks": 93,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 45
+    },
+    {
+      "page_id": "duckdb_stable_aggregates",
+      "sections": 11,
+      "blocks": 399,
+      "anchors": 3,
+      "tables": 68,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 2,
+      "blocks": 59,
+      "anchors": 2,
+      "tables": 8,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_bitstring",
+      "sections": 4,
+      "blocks": 102,
+      "anchors": 2,
+      "tables": 16,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_blob",
+      "sections": 2,
+      "blocks": 116,
+      "anchors": 2,
+      "tables": 16,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_dateformat",
+      "sections": 5,
+      "blocks": 74,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 13
+    },
+    {
+      "page_id": "duckdb_stable_date",
+      "sections": 4,
+      "blocks": 153,
+      "anchors": 2,
+      "tables": 22,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_datepart",
+      "sections": 4,
+      "blocks": 209,
+      "anchors": 2,
+      "tables": 30,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_enum",
+      "sections": 3,
+      "blocks": 44,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_interval",
+      "sections": 3,
+      "blocks": 129,
+      "anchors": 2,
+      "tables": 19,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_lambda",
+      "sections": 14,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 37
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 23,
+      "blocks": 784,
+      "anchors": 2,
+      "tables": 86,
+      "code_blocks": 99
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 3,
+      "blocks": 99,
+      "anchors": 2,
+      "tables": 15,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_nested",
+      "sections": 30,
+      "blocks": 597,
+      "anchors": 2,
+      "tables": 67,
+      "code_blocks": 96
+    },
+    {
+      "page_id": "duckdb_stable_numeric",
+      "sections": 6,
+      "blocks": 384,
+      "anchors": 2,
+      "tables": 60,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_pattern_matching",
+      "sections": 8,
+      "blocks": 89,
+      "anchors": 5,
+      "tables": 5,
+      "code_blocks": 15
+    },
+    {
+      "page_id": "duckdb_stable_regular_expressions",
+      "sections": 8,
+      "blocks": 109,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 4,
+      "blocks": 97,
+      "anchors": 2,
+      "tables": 15,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_text",
+      "sections": 18,
+      "blocks": 848,
+      "anchors": 2,
+      "tables": 116,
+      "code_blocks": 29
+    },
+    {
+      "page_id": "duckdb_stable_time",
+      "sections": 4,
+      "blocks": 83,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_timestamp",
+      "sections": 4,
+      "blocks": 244,
+      "anchors": 2,
+      "tables": 39,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_timestamptz",
+      "sections": 14,
+      "blocks": 286,
+      "anchors": 2,
+      "tables": 42,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 2,
+      "blocks": 35,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_utility",
+      "sections": 3,
+      "blocks": 328,
+      "anchors": 2,
+      "tables": 54,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_window_functions",
+      "sections": 15,
+      "blocks": 218,
+      "anchors": 3,
+      "tables": 18,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "duckdb_stable_duckdb_table_functions",
+      "sections": 26,
+      "blocks": 341,
+      "anchors": 2,
+      "tables": 25,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_functions",
+      "sections": 534,
+      "blocks": 1225,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 227
+    },
+    {
+      "page_id": "duckdb_stable_text",
+      "sections": 18,
+      "blocks": 848,
+      "anchors": 2,
+      "tables": 116,
+      "code_blocks": 29
+    },
+    {
+      "page_id": "duckdb_stable_json_functions",
+      "sections": 5,
+      "blocks": 143,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 78
+    },
+    {
+      "page_id": "duckdb_stable_table_functions",
+      "sections": 101,
+      "blocks": 401,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 107
+    },
+    {
+      "page_id": "duckdb_stable_function",
+      "sections": 10,
+      "blocks": 93,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 45
+    },
+    {
+      "page_id": "duckdb_stable_aggregates",
+      "sections": 11,
+      "blocks": 399,
+      "anchors": 3,
+      "tables": 68,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 2,
+      "blocks": 59,
+      "anchors": 2,
+      "tables": 8,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_bitstring",
+      "sections": 4,
+      "blocks": 102,
+      "anchors": 2,
+      "tables": 16,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_blob",
+      "sections": 2,
+      "blocks": 116,
+      "anchors": 2,
+      "tables": 16,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_dateformat",
+      "sections": 5,
+      "blocks": 74,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 13
+    },
+    {
+      "page_id": "duckdb_stable_date",
+      "sections": 4,
+      "blocks": 153,
+      "anchors": 2,
+      "tables": 22,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_datepart",
+      "sections": 4,
+      "blocks": 209,
+      "anchors": 2,
+      "tables": 30,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_enum",
+      "sections": 3,
+      "blocks": 44,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_interval",
+      "sections": 3,
+      "blocks": 129,
+      "anchors": 2,
+      "tables": 19,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_lambda",
+      "sections": 14,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 37
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 23,
+      "blocks": 784,
+      "anchors": 2,
+      "tables": 86,
+      "code_blocks": 99
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 3,
+      "blocks": 99,
+      "anchors": 2,
+      "tables": 15,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_nested",
+      "sections": 30,
+      "blocks": 597,
+      "anchors": 2,
+      "tables": 67,
+      "code_blocks": 96
+    },
+    {
+      "page_id": "duckdb_stable_numeric",
+      "sections": 6,
+      "blocks": 384,
+      "anchors": 2,
+      "tables": 60,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_pattern_matching",
+      "sections": 8,
+      "blocks": 89,
+      "anchors": 5,
+      "tables": 5,
+      "code_blocks": 15
+    },
+    {
+      "page_id": "duckdb_stable_regular_expressions",
+      "sections": 8,
+      "blocks": 109,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 4,
+      "blocks": 97,
+      "anchors": 2,
+      "tables": 15,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_text",
+      "sections": 18,
+      "blocks": 848,
+      "anchors": 2,
+      "tables": 116,
+      "code_blocks": 29
+    },
+    {
+      "page_id": "duckdb_stable_time",
+      "sections": 4,
+      "blocks": 83,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_timestamp",
+      "sections": 4,
+      "blocks": 244,
+      "anchors": 2,
+      "tables": 39,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_timestamptz",
+      "sections": 14,
+      "blocks": 286,
+      "anchors": 2,
+      "tables": 42,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 2,
+      "blocks": 35,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_utility",
+      "sections": 3,
+      "blocks": 328,
+      "anchors": 2,
+      "tables": 54,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_window_functions",
+      "sections": 15,
+      "blocks": 218,
+      "anchors": 3,
+      "tables": 18,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "duckdb_stable_duckdb_table_functions",
+      "sections": 26,
+      "blocks": 341,
+      "anchors": 2,
+      "tables": 25,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_functions",
+      "sections": 534,
+      "blocks": 1225,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 227
+    },
+    {
+      "page_id": "duckdb_stable_text",
+      "sections": 18,
+      "blocks": 848,
+      "anchors": 2,
+      "tables": 116,
+      "code_blocks": 29
+    },
+    {
+      "page_id": "duckdb_stable_json_functions",
+      "sections": 5,
+      "blocks": 143,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 78
+    },
+    {
+      "page_id": "duckdb_stable_table_functions",
+      "sections": 101,
+      "blocks": 401,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 107
+    },
+    {
+      "page_id": "duckdb_stable_function",
+      "sections": 10,
+      "blocks": 93,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 45
+    },
+    {
+      "page_id": "duckdb_stable_aggregates",
+      "sections": 11,
+      "blocks": 399,
+      "anchors": 3,
+      "tables": 68,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 2,
+      "blocks": 59,
+      "anchors": 2,
+      "tables": 8,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_bitstring",
+      "sections": 4,
+      "blocks": 102,
+      "anchors": 2,
+      "tables": 16,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_blob",
+      "sections": 2,
+      "blocks": 116,
+      "anchors": 2,
+      "tables": 16,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_dateformat",
+      "sections": 5,
+      "blocks": 74,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 13
+    },
+    {
+      "page_id": "duckdb_stable_date",
+      "sections": 4,
+      "blocks": 153,
+      "anchors": 2,
+      "tables": 22,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_datepart",
+      "sections": 4,
+      "blocks": 209,
+      "anchors": 2,
+      "tables": 30,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_enum",
+      "sections": 3,
+      "blocks": 44,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_interval",
+      "sections": 3,
+      "blocks": 129,
+      "anchors": 2,
+      "tables": 19,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_lambda",
+      "sections": 14,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 37
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 23,
+      "blocks": 784,
+      "anchors": 2,
+      "tables": 86,
+      "code_blocks": 99
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 3,
+      "blocks": 99,
+      "anchors": 2,
+      "tables": 15,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_nested",
+      "sections": 30,
+      "blocks": 597,
+      "anchors": 2,
+      "tables": 67,
+      "code_blocks": 96
+    },
+    {
+      "page_id": "duckdb_stable_numeric",
+      "sections": 6,
+      "blocks": 384,
+      "anchors": 2,
+      "tables": 60,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_pattern_matching",
+      "sections": 8,
+      "blocks": 89,
+      "anchors": 5,
+      "tables": 5,
+      "code_blocks": 15
+    },
+    {
+      "page_id": "duckdb_stable_regular_expressions",
+      "sections": 8,
+      "blocks": 109,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 4,
+      "blocks": 97,
+      "anchors": 2,
+      "tables": 15,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_char",
+      "sections": 18,
+      "blocks": 634,
+      "anchors": 2,
+      "tables": 90,
+      "code_blocks": 27
+    },
+    {
+      "page_id": "duckdb_stable_time",
+      "sections": 4,
+      "blocks": 83,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_timestamp",
+      "sections": 4,
+      "blocks": 244,
+      "anchors": 2,
+      "tables": 39,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_timestamptz",
+      "sections": 14,
+      "blocks": 286,
+      "anchors": 2,
+      "tables": 42,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 2,
+      "blocks": 35,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_utility",
+      "sections": 3,
+      "blocks": 328,
+      "anchors": 2,
+      "tables": 54,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_window_functions",
+      "sections": 15,
+      "blocks": 218,
+      "anchors": 3,
+      "tables": 18,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "duckdb_stable_duckdb_table_functions",
+      "sections": 26,
+      "blocks": 341,
+      "anchors": 2,
+      "tables": 25,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_functions",
+      "sections": 534,
+      "blocks": 1225,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 227
+    },
+    {
+      "page_id": "duckdb_stable_char",
+      "sections": 18,
+      "blocks": 634,
+      "anchors": 2,
+      "tables": 90,
+      "code_blocks": 27
+    },
+    {
+      "page_id": "duckdb_stable_json_functions",
+      "sections": 5,
+      "blocks": 143,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 78
+    },
+    {
+      "page_id": "duckdb_stable_table_functions",
+      "sections": 101,
+      "blocks": 401,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 107
+    },
+    {
+      "page_id": "duckdb_stable_function",
+      "sections": 10,
+      "blocks": 93,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 45
+    },
+    {
+      "page_id": "duckdb_stable_aggregates",
+      "sections": 11,
+      "blocks": 399,
+      "anchors": 3,
+      "tables": 68,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 2,
+      "blocks": 59,
+      "anchors": 2,
+      "tables": 8,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_bitstring",
+      "sections": 4,
+      "blocks": 102,
+      "anchors": 2,
+      "tables": 16,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_blob",
+      "sections": 2,
+      "blocks": 116,
+      "anchors": 2,
+      "tables": 16,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_dateformat",
+      "sections": 5,
+      "blocks": 74,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 13
+    },
+    {
+      "page_id": "duckdb_stable_date",
+      "sections": 4,
+      "blocks": 153,
+      "anchors": 2,
+      "tables": 22,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_datepart",
+      "sections": 4,
+      "blocks": 209,
+      "anchors": 2,
+      "tables": 30,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_enum",
+      "sections": 3,
+      "blocks": 44,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_interval",
+      "sections": 3,
+      "blocks": 129,
+      "anchors": 2,
+      "tables": 19,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_lambda",
+      "sections": 14,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 37
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 23,
+      "blocks": 784,
+      "anchors": 2,
+      "tables": 86,
+      "code_blocks": 99
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 3,
+      "blocks": 99,
+      "anchors": 2,
+      "tables": 15,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_nested",
+      "sections": 30,
+      "blocks": 597,
+      "anchors": 2,
+      "tables": 67,
+      "code_blocks": 96
+    },
+    {
+      "page_id": "duckdb_stable_numeric",
+      "sections": 6,
+      "blocks": 384,
+      "anchors": 2,
+      "tables": 60,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_pattern_matching",
+      "sections": 8,
+      "blocks": 89,
+      "anchors": 5,
+      "tables": 5,
+      "code_blocks": 15
+    },
+    {
+      "page_id": "duckdb_stable_regular_expressions",
+      "sections": 8,
+      "blocks": 109,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 4,
+      "blocks": 97,
+      "anchors": 2,
+      "tables": 15,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_char",
+      "sections": 18,
+      "blocks": 634,
+      "anchors": 2,
+      "tables": 90,
+      "code_blocks": 27
+    },
+    {
+      "page_id": "duckdb_stable_time",
+      "sections": 4,
+      "blocks": 83,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_timestamp",
+      "sections": 4,
+      "blocks": 244,
+      "anchors": 2,
+      "tables": 39,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_timestamptz",
+      "sections": 14,
+      "blocks": 286,
+      "anchors": 2,
+      "tables": 42,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 2,
+      "blocks": 35,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_utility",
+      "sections": 3,
+      "blocks": 328,
+      "anchors": 2,
+      "tables": 54,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_window_functions",
+      "sections": 15,
+      "blocks": 218,
+      "anchors": 3,
+      "tables": 18,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "duckdb_stable_duckdb_table_functions",
+      "sections": 26,
+      "blocks": 341,
+      "anchors": 2,
+      "tables": 25,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_functions",
+      "sections": 534,
+      "blocks": 1225,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 227
+    },
+    {
+      "page_id": "duckdb_stable_char",
+      "sections": 18,
+      "blocks": 634,
+      "anchors": 2,
+      "tables": 90,
+      "code_blocks": 27
+    },
+    {
+      "page_id": "duckdb_stable_table_functions",
+      "sections": 101,
+      "blocks": 401,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 107
+    },
+    {
+      "page_id": "duckdb_stable_function",
+      "sections": 10,
+      "blocks": 93,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 45
+    },
+    {
+      "page_id": "duckdb_stable_aggregates",
+      "sections": 11,
+      "blocks": 399,
+      "anchors": 3,
+      "tables": 68,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 2,
+      "blocks": 59,
+      "anchors": 2,
+      "tables": 8,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_bitstring",
+      "sections": 4,
+      "blocks": 102,
+      "anchors": 2,
+      "tables": 16,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_blob",
+      "sections": 2,
+      "blocks": 116,
+      "anchors": 2,
+      "tables": 16,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_dateformat",
+      "sections": 5,
+      "blocks": 74,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 13
+    },
+    {
+      "page_id": "duckdb_stable_date",
+      "sections": 4,
+      "blocks": 153,
+      "anchors": 2,
+      "tables": 22,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_datepart",
+      "sections": 4,
+      "blocks": 209,
+      "anchors": 2,
+      "tables": 30,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_enum",
+      "sections": 3,
+      "blocks": 44,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_interval",
+      "sections": 3,
+      "blocks": 129,
+      "anchors": 2,
+      "tables": 19,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_lambda",
+      "sections": 14,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 37
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 23,
+      "blocks": 784,
+      "anchors": 2,
+      "tables": 86,
+      "code_blocks": 99
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 3,
+      "blocks": 99,
+      "anchors": 2,
+      "tables": 15,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_nested",
+      "sections": 30,
+      "blocks": 597,
+      "anchors": 2,
+      "tables": 67,
+      "code_blocks": 96
+    },
+    {
+      "page_id": "duckdb_stable_numeric",
+      "sections": 6,
+      "blocks": 384,
+      "anchors": 2,
+      "tables": 60,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_pattern_matching",
+      "sections": 8,
+      "blocks": 89,
+      "anchors": 5,
+      "tables": 5,
+      "code_blocks": 15
+    },
+    {
+      "page_id": "duckdb_stable_regular_expressions",
+      "sections": 8,
+      "blocks": 109,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 4,
+      "blocks": 97,
+      "anchors": 2,
+      "tables": 15,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_char",
+      "sections": 18,
+      "blocks": 634,
+      "anchors": 2,
+      "tables": 90,
+      "code_blocks": 27
+    },
+    {
+      "page_id": "duckdb_stable_time",
+      "sections": 4,
+      "blocks": 83,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_timestamp",
+      "sections": 4,
+      "blocks": 244,
+      "anchors": 2,
+      "tables": 39,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_timestamptz",
+      "sections": 14,
+      "blocks": 286,
+      "anchors": 2,
+      "tables": 42,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 2,
+      "blocks": 35,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_utility",
+      "sections": 3,
+      "blocks": 328,
+      "anchors": 2,
+      "tables": 54,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_window_functions",
+      "sections": 15,
+      "blocks": 218,
+      "anchors": 3,
+      "tables": 18,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "duckdb_stable_duckdb_table_functions",
+      "sections": 26,
+      "blocks": 341,
+      "anchors": 2,
+      "tables": 25,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_char",
+      "sections": 18,
+      "blocks": 634,
+      "anchors": 2,
+      "tables": 90,
+      "code_blocks": 27
+    },
+    {
+      "page_id": "duckdb_stable_table_functions",
+      "sections": 101,
+      "blocks": 401,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 107
+    },
+    {
+      "page_id": "duckdb_stable_function",
+      "sections": 10,
+      "blocks": 93,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 45
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 2,
+      "blocks": 59,
+      "anchors": 2,
+      "tables": 8,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_bitstring",
+      "sections": 4,
+      "blocks": 102,
+      "anchors": 2,
+      "tables": 16,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_blob",
+      "sections": 2,
+      "blocks": 116,
+      "anchors": 2,
+      "tables": 16,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_dateformat",
+      "sections": 5,
+      "blocks": 74,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 13
+    },
+    {
+      "page_id": "duckdb_stable_date",
+      "sections": 4,
+      "blocks": 153,
+      "anchors": 2,
+      "tables": 22,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_datepart",
+      "sections": 4,
+      "blocks": 209,
+      "anchors": 2,
+      "tables": 30,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_enum",
+      "sections": 3,
+      "blocks": 44,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_interval",
+      "sections": 3,
+      "blocks": 129,
+      "anchors": 2,
+      "tables": 19,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_lambda",
+      "sections": 14,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 37
+    },
+    {
+      "page_id": "duckdb_stable_nested",
+      "sections": 30,
+      "blocks": 597,
+      "anchors": 2,
+      "tables": 67,
+      "code_blocks": 96
+    },
+    {
+      "page_id": "duckdb_stable_numeric",
+      "sections": 6,
+      "blocks": 384,
+      "anchors": 2,
+      "tables": 60,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_pattern_matching",
+      "sections": 8,
+      "blocks": 89,
+      "anchors": 5,
+      "tables": 5,
+      "code_blocks": 15
+    },
+    {
+      "page_id": "duckdb_stable_regular_expressions",
+      "sections": 8,
+      "blocks": 109,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_char",
+      "sections": 18,
+      "blocks": 634,
+      "anchors": 2,
+      "tables": 90,
+      "code_blocks": 27
+    },
+    {
+      "page_id": "duckdb_stable_time",
+      "sections": 4,
+      "blocks": 83,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_timestamp",
+      "sections": 4,
+      "blocks": 244,
+      "anchors": 2,
+      "tables": 39,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_timestamptz",
+      "sections": 14,
+      "blocks": 286,
+      "anchors": 2,
+      "tables": 42,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "duckdb_stable_utility",
+      "sections": 3,
+      "blocks": 328,
+      "anchors": 2,
+      "tables": 54,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_aggregates",
+      "sections": 11,
+      "blocks": 399,
+      "anchors": 3,
+      "tables": 68,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_duckdb_table_functions",
+      "sections": 26,
+      "blocks": 341,
+      "anchors": 2,
+      "tables": 25,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_window_functions",
+      "sections": 15,
+      "blocks": 218,
+      "anchors": 3,
+      "tables": 18,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "duckdb_stable_lambda",
+      "sections": 14,
+      "blocks": 123,
+      "anchors": 2,
+      "tables": 4,
+      "code_blocks": 37
+    },
+    {
+      "page_id": "duckdb_stable_duckdb_table_functions",
+      "sections": 26,
+      "blocks": 341,
+      "anchors": 2,
+      "tables": 25,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "duckdb_stable_array",
+      "sections": 2,
+      "blocks": 59,
+      "anchors": 2,
+      "tables": 8,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_list",
+      "sections": 23,
+      "blocks": 784,
+      "anchors": 2,
+      "tables": 86,
+      "code_blocks": 99
+    },
+    {
+      "page_id": "duckdb_stable_bitstring",
+      "sections": 4,
+      "blocks": 102,
+      "anchors": 2,
+      "tables": 16,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_blob",
+      "sections": 2,
+      "blocks": 116,
+      "anchors": 2,
+      "tables": 16,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_date",
+      "sections": 4,
+      "blocks": 153,
+      "anchors": 2,
+      "tables": 22,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_enum",
+      "sections": 3,
+      "blocks": 44,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_geometry",
+      "sections": 9,
+      "blocks": 58,
+      "anchors": 2,
+      "tables": 8,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_datepart",
+      "sections": 4,
+      "blocks": 209,
+      "anchors": 2,
+      "tables": 30,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_interval",
+      "sections": 3,
+      "blocks": 129,
+      "anchors": 2,
+      "tables": 19,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_aggregates",
+      "sections": 11,
+      "blocks": 399,
+      "anchors": 3,
+      "tables": 68,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_map",
+      "sections": 3,
+      "blocks": 99,
+      "anchors": 2,
+      "tables": 15,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_utility",
+      "sections": 3,
+      "blocks": 328,
+      "anchors": 2,
+      "tables": 54,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_numeric",
+      "sections": 6,
+      "blocks": 384,
+      "anchors": 2,
+      "tables": 60,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_struct",
+      "sections": 4,
+      "blocks": 97,
+      "anchors": 2,
+      "tables": 15,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_pattern_matching",
+      "sections": 8,
+      "blocks": 89,
+      "anchors": 5,
+      "tables": 5,
+      "code_blocks": 15
+    },
+    {
+      "page_id": "duckdb_stable_timestamp",
+      "sections": 4,
+      "blocks": 244,
+      "anchors": 2,
+      "tables": 39,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_union",
+      "sections": 2,
+      "blocks": 35,
+      "anchors": 2,
+      "tables": 5,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_function",
+      "sections": 10,
+      "blocks": 93,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 45
+    },
+    {
+      "page_id": "duckdb_stable_dateformat",
+      "sections": 5,
+      "blocks": 74,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 13
+    },
+    {
+      "page_id": "duckdb_stable_functions",
+      "sections": 534,
+      "blocks": 1225,
+      "anchors": 2,
+      "tables": 6,
+      "code_blocks": 227
+    },
+    {
+      "page_id": "duckdb_stable_regular_expressions",
+      "sections": 8,
+      "blocks": 109,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_timestamptz",
+      "sections": 14,
+      "blocks": 286,
+      "anchors": 2,
+      "tables": 42,
+      "code_blocks": 12
+    }
+  ]
+}

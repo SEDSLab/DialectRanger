@@ -1,0 +1,58 @@
+{
+  "dbms": "clickhouse",
+  "feature_type": "function",
+  "total_drafts": 1289,
+  "clean_validated_features": 20,
+  "validated_with_warnings": 1255,
+  "invalid_features": 14,
+  "validation_summary": {
+    "schema_invalid": 14,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 25,
+    "no_description_claims": 1267,
+    "no_valid_syntax": 14,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 7,
+    "alias_like_feature": 22
+  },
+  "sample_clean_features": [
+    "clickhouse.function.array",
+    "clickhouse.function.arraytopk",
+    "clickhouse.function.date",
+    "clickhouse.function.decimal128",
+    "clickhouse.function.decimal256",
+    "clickhouse.function.decimal32",
+    "clickhouse.function.decimal64",
+    "clickhouse.function.empty",
+    "clickhouse.function.f",
+    "clickhouse.function.formatdatetime"
+  ],
+  "sample_warning_features": [
+    "clickhouse.function.abs",
+    "clickhouse.function.accuratecast",
+    "clickhouse.function.accuratecastordefault",
+    "clickhouse.function.accuratecastornull",
+    "clickhouse.function.acos",
+    "clickhouse.function.acosh",
+    "clickhouse.function.adddate",
+    "clickhouse.function.adddays",
+    "clickhouse.function.addhours",
+    "clickhouse.function.addinterval"
+  ],
+  "sample_invalid_features": [
+    "clickhouse.function.age",
+    "clickhouse.function.bech32decode",
+    "clickhouse.function.datetime64",
+    "clickhouse.function.detectlanguageunknown",
+    "clickhouse.function.dictgetkeys",
+    "clickhouse.function.dictgetordefault",
+    "clickhouse.function.dictgetornull",
+    "clickhouse.function.dicthas",
+    "clickhouse.function.fixedstring",
+    "clickhouse.function.queryfactorial"
+  ],
+  "generated_at": "2026-08-06T19:47:40.731166+08:00"
+}

@@ -1,0 +1,42 @@
+{
+  "dbms": "trino",
+  "feature_type": "function",
+  "total_drafts": 465,
+  "clean_validated_features": 3,
+  "validated_with_warnings": 461,
+  "invalid_features": 1,
+  "validation_summary": {
+    "schema_invalid": 1,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 434,
+    "no_description_claims": 455,
+    "no_valid_syntax": 1,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 414
+  },
+  "sample_clean_features": [
+    "trino.function.classify",
+    "trino.function.json_object",
+    "trino.function.map"
+  ],
+  "sample_warning_features": [
+    "trino.function.abs",
+    "trino.function.acos",
+    "trino.function.ai_extract",
+    "trino.function.all",
+    "trino.function.all_match",
+    "trino.function.any",
+    "trino.function.any_match",
+    "trino.function.any_value",
+    "trino.function.approx_distinct",
+    "trino.function.approx_most_frequent"
+  ],
+  "sample_invalid_features": [
+    "trino.function.f"
+  ],
+  "generated_at": "2026-08-06T19:59:05.795388+08:00"
+}

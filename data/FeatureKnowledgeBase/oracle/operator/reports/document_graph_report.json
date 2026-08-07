@@ -1,0 +1,62 @@
+{
+  "dbms": "oracle",
+  "feature_type": "operator",
+  "nodes": {
+    "page": 33,
+    "section": 88,
+    "block": 1483,
+    "feature_candidate": 21
+  },
+  "edges": {
+    "page_contains_section": 88,
+    "section_contains_block": 1483,
+    "section_previous": 55,
+    "section_next": 55,
+    "feature_documented_in_section": 21,
+    "total": 1702
+  },
+  "noise": {
+    "noise_nodes": 0,
+    "noise_sections": 0,
+    "noise_blocks": 0,
+    "eligible_nodes": 1604
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "oracle.operator.!=",
+      "target": "oracle_26_about_sql_conditions_s0003"
+    },
+    {
+      "source": "oracle.operator.*",
+      "target": "oracle_26_about_sql_operators_s0004"
+    },
+    {
+      "source": "oracle.operator.+",
+      "target": "oracle_26_about_sql_operators_s0004"
+    },
+    {
+      "source": "oracle.operator.--",
+      "target": "oracle_26_logical_conditions_s0002"
+    },
+    {
+      "source": "oracle.operator./",
+      "target": "oracle_26_about_sql_operators_s0004"
+    },
+    {
+      "source": "oracle.operator.<=",
+      "target": "oracle_26_about_sql_conditions_s0003"
+    },
+    {
+      "source": "oracle.operator.<",
+      "target": "oracle_26_about_sql_conditions_s0003"
+    },
+    {
+      "source": "oracle.operator.=",
+      "target": "oracle_26_about_sql_conditions_s0003"
+    }
+  ],
+  "generated_at": "2026-08-06T19:50:58.621118+08:00"
+}

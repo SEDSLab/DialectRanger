@@ -1,0 +1,51 @@
+> For the complete documentation index, see [llms.txt](https://mariadb.com/docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://mariadb.com/docs/server/reference/sql-structure/operators/logical-operators.md).
+
+# Logical Operators
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/7gPMXNHL1INvNDnWsjsz" %}
+[&&](/docs/server/reference/sql-structure/operators/logical-operators/and.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Evaluate logical AND with AND or &&, returning 1 when all operands are non-zero and not NULL, 0 when any operand is 0, and NULL otherwise.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/IDPY3OWBtg0RSrG4oYHv" %}
+[!](/docs/server/reference/sql-structure/operators/logical-operators/not.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Negate an operand with logical NOT or !, returning 1 for 0, 0 for non-zero values, and NULL for NULL, with precedence affected by the HIGH\_NOT\_PRECEDENCE SQL\_MODE.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/MzUPJvF7PoBmX3cP8hJL" %}
+[||](/docs/server/reference/sql-structure/operators/logical-operators/or.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Evaluate logical OR with OR or ||, returning 1 when any operand is non-zero and handling NULL operands per SQL logic; || concatenates strings under PIPES\_AS\_CONCAT.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/wmLGmcQaunuQWUfTJz7M" %}
+[XOR](/docs/server/reference/sql-structure/operators/logical-operators/xor.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Evaluate exclusive OR with XOR, returning NULL if either operand is NULL and otherwise 1 when an odd number of operands is non-zero.
+{% endcolumn %}
+{% endcolumns %}

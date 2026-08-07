@@ -1,0 +1,62 @@
+{
+  "dbms": "sqlite",
+  "feature_type": "datatype",
+  "nodes": {
+    "page": 1,
+    "section": 21,
+    "block": 139,
+    "feature_candidate": 9
+  },
+  "edges": {
+    "page_contains_section": 21,
+    "section_contains_block": 139,
+    "section_previous": 20,
+    "section_next": 20,
+    "feature_documented_in_section": 13,
+    "total": 213
+  },
+  "noise": {
+    "noise_nodes": 2,
+    "noise_sections": 0,
+    "noise_blocks": 2,
+    "eligible_nodes": 159
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "sqlite.datatype.blob",
+      "target": "sqlite_current_datatype3_s0003"
+    },
+    {
+      "source": "sqlite.datatype.blob",
+      "target": "sqlite_current_datatype3_s0006"
+    },
+    {
+      "source": "sqlite.datatype.date",
+      "target": "sqlite_current_datatype3_s0005"
+    },
+    {
+      "source": "sqlite.datatype.decimal",
+      "target": "sqlite_current_datatype3_s0006"
+    },
+    {
+      "source": "sqlite.datatype.decimal",
+      "target": "sqlite_current_datatype3_s0017"
+    },
+    {
+      "source": "sqlite.datatype.integer",
+      "target": "sqlite_current_datatype3_s0003"
+    },
+    {
+      "source": "sqlite.datatype.integer",
+      "target": "sqlite_current_datatype3_s0006"
+    },
+    {
+      "source": "sqlite.datatype.null",
+      "target": "sqlite_current_datatype3_s0003"
+    }
+  ],
+  "generated_at": "2026-08-06T19:08:17.488820+08:00"
+}

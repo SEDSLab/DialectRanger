@@ -1,0 +1,118 @@
+{"feature_id": "clickhouse.operator.!=_all_clickhouse_current_index", "name": "!= ALL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.!=_all_clickhouse_current_operators", "name": "!= ALL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.!=_any_clickhouse_current_index", "name": "!= ANY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.!=_any_clickhouse_current_operators", "name": "!= ANY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.!=_clickhouse_current_index", "name": "!=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.!=_clickhouse_current_operators", "name": "!=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.%_clickhouse_current_index", "name": "%", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.%_clickhouse_current_operators", "name": "%", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.()_clickhouse_current_exists", "name": "()", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.()_clickhouse_current_index", "name": "()", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.()_clickhouse_current_operators", "name": "()", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.*_clickhouse_current_index", "name": "*", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.*_clickhouse_current_operators", "name": "*", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.+_clickhouse_current_index", "name": "+", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.+_clickhouse_current_operators", "name": "+", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.->_clickhouse_current_index", "name": "->", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.->_clickhouse_current_operators", "name": "->", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.-_clickhouse_current_in", "name": "-", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.-_clickhouse_current_index", "name": "-", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.-_clickhouse_current_operators", "name": "-", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.._clickhouse_current_distributed_ddl", "name": ".", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.._clickhouse_current_in", "name": ".", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.._clickhouse_current_index", "name": ".", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.._clickhouse_current_operators", "name": ".", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator./_clickhouse_current_in", "name": "/", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator./_clickhouse_current_index", "name": "/", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator./_clickhouse_current_operators", "name": "/", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.<=>_clickhouse_current_index", "name": "<=>", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.<=>_clickhouse_current_operators", "name": "<=>", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.<=_clickhouse_current_index", "name": "<=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.<=_clickhouse_current_operators", "name": "<=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.<>_clickhouse_current_index", "name": "<>", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.<>_clickhouse_current_operators", "name": "<>", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.<_clickhouse_current_index", "name": "<", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.<_clickhouse_current_operators", "name": "<", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.==_clickhouse_current_index", "name": "==", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.==_clickhouse_current_operators", "name": "==", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.=_all_clickhouse_current_index", "name": "= ALL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.=_all_clickhouse_current_operators", "name": "= ALL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.=_any_clickhouse_current_index", "name": "= ANY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.=_any_clickhouse_current_operators", "name": "= ANY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.=_clickhouse_current_in", "name": "=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.=_clickhouse_current_index", "name": "=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.=_clickhouse_current_operators", "name": "=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.>=_clickhouse_current_index", "name": ">=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.>=_clickhouse_current_operators", "name": ">=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.>_clickhouse_current_index", "name": ">", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.>_clickhouse_current_operators", "name": ">", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.all_clickhouse_current_distributed_ddl", "name": "ALL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.all_clickhouse_current_index", "name": "ALL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.all_clickhouse_current_operators", "name": "ALL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.and_clickhouse_current_in", "name": "AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.and_clickhouse_current_index", "name": "AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.and_clickhouse_current_operators", "name": "AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.at_local_clickhouse_current_index", "name": "AT LOCAL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.at_local_clickhouse_current_operators", "name": "AT LOCAL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.at_time_zone_clickhouse_current_index", "name": "AT TIME ZONE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.at_time_zone_clickhouse_current_operators", "name": "AT TIME ZONE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.between_clickhouse_current_index", "name": "BETWEEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.between_clickhouse_current_operators", "name": "BETWEEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.case_clickhouse_current_index", "name": "CASE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.case_clickhouse_current_operators", "name": "CASE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.exists_clickhouse_current_exists", "name": "EXISTS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.extract_clickhouse_current_index", "name": "EXTRACT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.extract_clickhouse_current_operators", "name": "EXTRACT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.ilike_clickhouse_current_index", "name": "ILIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.ilike_clickhouse_current_operators", "name": "ILIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.in_clickhouse_current_exists", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.in_clickhouse_current_in", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.in_clickhouse_current_in_functions", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.in_clickhouse_current_index", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.in_clickhouse_current_operators", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.interval_clickhouse_current_index", "name": "INTERVAL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.interval_clickhouse_current_operators", "name": "INTERVAL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.is_false_clickhouse_current_index", "name": "IS FALSE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.is_false_clickhouse_current_operators", "name": "IS FALSE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.is_not_distinct_from_clickhouse_current_index", "name": "IS NOT DISTINCT FROM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.is_not_distinct_from_clickhouse_current_operators", "name": "IS NOT DISTINCT FROM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.is_not_false_clickhouse_current_index", "name": "IS NOT FALSE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.is_not_false_clickhouse_current_operators", "name": "IS NOT FALSE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.is_not_null_clickhouse_current_index", "name": "IS NOT NULL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.is_not_null_clickhouse_current_operators", "name": "IS NOT NULL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.is_not_true_clickhouse_current_index", "name": "IS NOT TRUE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.is_not_true_clickhouse_current_operators", "name": "IS NOT TRUE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.is_not_unknown_clickhouse_current_index", "name": "IS NOT UNKNOWN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.is_not_unknown_clickhouse_current_operators", "name": "IS NOT UNKNOWN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.is_null_clickhouse_current_index", "name": "IS NULL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.is_null_clickhouse_current_operators", "name": "IS NULL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.is_true_clickhouse_current_index", "name": "IS TRUE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.is_true_clickhouse_current_operators", "name": "IS TRUE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.is_unknown_clickhouse_current_index", "name": "IS UNKNOWN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.is_unknown_clickhouse_current_operators", "name": "IS UNKNOWN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.like_clickhouse_current_index", "name": "LIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.like_clickhouse_current_operators", "name": "LIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.not_between_clickhouse_current_index", "name": "NOT BETWEEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.not_between_clickhouse_current_operators", "name": "NOT BETWEEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.not_clickhouse_current_exists", "name": "NOT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.not_clickhouse_current_index", "name": "NOT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.not_clickhouse_current_operators", "name": "NOT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.not_exists_clickhouse_current_distributed_ddl", "name": "NOT EXISTS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.not_ilike_clickhouse_current_index", "name": "NOT ILIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.not_ilike_clickhouse_current_operators", "name": "NOT ILIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.not_in_clickhouse_current_in", "name": "NOT IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.not_in_clickhouse_current_index", "name": "NOT IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.not_in_clickhouse_current_operators", "name": "NOT IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.not_like_clickhouse_current_index", "name": "NOT LIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.not_like_clickhouse_current_operators", "name": "NOT LIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.or_clickhouse_current_index", "name": "OR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.or_clickhouse_current_operators", "name": "OR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.overlay_clickhouse_current_index", "name": "OVERLAY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.overlay_clickhouse_current_operators", "name": "OVERLAY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.regexp_clickhouse_current_index", "name": "REGEXP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.regexp_clickhouse_current_operators", "name": "REGEXP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.some_clickhouse_current_in", "name": "SOME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.some_clickhouse_current_index", "name": "SOME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.some_clickhouse_current_operators", "name": "SOME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "clickhouse.operator.||_clickhouse_current_index", "name": "||", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "clickhouse.operator.||_clickhouse_current_operators", "name": "||", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}

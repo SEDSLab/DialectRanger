@@ -1,0 +1,13 @@
+{
+  "dbms": "sqlserver",
+  "feature_type": "operator",
+  "candidate_features": 26,
+  "candidate_groups": 23,
+  "feature_drafts": 23,
+  "known_operator_coverage": {
+    "total": 0,
+    "covered": 0,
+    "missing": [],
+    "coverage_ratio": 1.0
+  }
+}

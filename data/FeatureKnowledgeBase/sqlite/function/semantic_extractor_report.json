@@ -1,0 +1,22 @@
+{
+  "dbms": "sqlite",
+  "feature_type": "function",
+  "mode": "shadow",
+  "backend": "mock",
+  "total_features": 81,
+  "semantic_drafts": 81,
+  "status_counts": {
+    "extracted": 36,
+    "partial": 0,
+    "insufficient_context": 45,
+    "no_context": 0,
+    "skipped": 0,
+    "validation_failed": 0
+  },
+  "description_claims": 55,
+  "constraints": 85,
+  "example_roles": 12,
+  "invalid_evidence_refs": 0,
+  "merge_into_kb": false,
+  "generated_at": "2026-08-06T19:08:08.331054+08:00"
+}

@@ -1,0 +1,29 @@
+{"feature_id": "oracle.operator.!=_oracle_26_about_sql_conditions", "name": "!=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.*_oracle_26_about_sql_operators", "name": "*", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.+_oracle_26_about_sql_operators", "name": "+", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.--_oracle_26_logical_conditions", "name": "--", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.operator./_oracle_26_about_sql_operators", "name": "/", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.<=_oracle_26_about_sql_conditions", "name": "<=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.<_oracle_26_about_sql_conditions", "name": "<", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.=_oracle_26_about_sql_conditions", "name": "=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.=_oracle_26_comparison_conditions", "name": "=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.>=_oracle_26_about_sql_conditions", "name": ">=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.>_oracle_26_about_sql_conditions", "name": ">", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.and_oracle_26_about_sql_conditions", "name": "AND", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.and_oracle_26_logical_conditions", "name": "AND", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.between_oracle_26_about_sql_conditions", "name": "BETWEEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "oracle.operator.between_oracle_26_between_condition", "name": "BETWEEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.operator.exists_oracle_26_exists_condition", "name": "EXISTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.in_oracle_26_in_condition", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.operator.in_oracle_26_set_operators", "name": "IN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.is_oracle_26_about_sql_conditions", "name": "IS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.operator.is_oracle_26_floating_point_conditions", "name": "IS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.is_oracle_26_null_conditions", "name": "IS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.like_oracle_26_pattern_matching_conditions", "name": "LIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "oracle.operator.not_between_oracle_26_between_condition", "name": "NOT BETWEEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.operator.not_in_oracle_26_in_condition", "name": "NOT IN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.not_oracle_26_about_sql_conditions", "name": "NOT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.not_oracle_26_logical_conditions", "name": "NOT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.or_oracle_26_about_sql_conditions", "name": "OR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.or_oracle_26_logical_conditions", "name": "OR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.operator.regexp_oracle_26_pattern_matching_conditions", "name": "REGEXP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}

@@ -1,0 +1,22 @@
+{
+  "dbms": "oracle",
+  "feature_type": "function",
+  "mode": "shadow",
+  "backend": "mock",
+  "total_features": 318,
+  "semantic_drafts": 318,
+  "status_counts": {
+    "extracted": 295,
+    "partial": 12,
+    "insufficient_context": 11,
+    "no_context": 0,
+    "skipped": 0,
+    "validation_failed": 0
+  },
+  "description_claims": 641,
+  "constraints": 442,
+  "example_roles": 2,
+  "invalid_evidence_refs": 0,
+  "merge_into_kb": false,
+  "generated_at": "2026-08-07T14:41:03.426767+08:00"
+}

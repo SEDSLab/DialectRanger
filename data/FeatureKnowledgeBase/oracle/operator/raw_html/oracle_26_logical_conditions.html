@@ -1,0 +1,339 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="reference">
+      <meta name="DC.Title" content="Logical Conditions">
+      <meta name="DC.subject" content="logical conditions, conditions, logical">
+      <meta name="keywords" content="logical conditions, conditions, logical">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-C5E48AF2-3FF9-401D-A104-CDB5FC19E65F">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Logical Conditions</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="Floating-Point-Conditions.html" title="Previous" type="text/html">
+      <link rel="next" href="Model-Conditions.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Logical Conditions","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="Floating-Point-Conditions.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="Model-Conditions.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-C5E48AF2-3FF9-401D-A104-CDB5FC19E65F" name="GUID-C5E48AF2-3FF9-401D-A104-CDB5FC19E65F"></a><a id="SQLRF52117"></a><a id="SQLRF52118"></a><a id="SQLRF52119"></a><a id="SQLRF52120"></a><a id="SQLRF52116"></a>
+         
+         <h2 id="SQLRF-GUID-C5E48AF2-3FF9-401D-A104-CDB5FC19E65F" class="sect2">Logical Conditions</h2>
+         <div class="ind">
+            <div>
+               <div class="section">
+                  <p>A logical condition combines the results of two component conditions to produce a single result based on them or to invert the result of a single condition. <a href="Logical-Conditions.html#GUID-C5E48AF2-3FF9-401D-A104-CDB5FC19E65F__BABDGHHB" title="The first column lists the logical conditions, the second column describes what it does, and the third column provides examples.">Table 6-4</a> lists logical conditions.
+                  </p>
+               </div>
+               <div class="tblformal" id="GUID-C5E48AF2-3FF9-401D-A104-CDB5FC19E65F__BABDGHHB">
+                  <p class="titleintable">Table 6-4 Logical Conditions <code class="codeph"></code></p>
+                  <table cellpadding="4" cellspacing="0" class="Formal" title="Logical Conditions " summary="The first column lists the logical conditions, the second column describes what it does, and the third column provides examples." width="100%" frame="hsides" border="1" rules="rows">
+                     <thead>
+                        <tr align="left" valign="top">
+                           <th align="left" valign="bottom" width="16%" id="d109128e140">Type of Condition</th>
+                           <th align="left" valign="bottom" width="37%" id="d109128e143">Operation</th>
+                           <th align="left" valign="bottom" width="47%" id="d109128e146">Examples</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr align="left" valign="top">
+                           <td align="left" valign="top" width="16%" id="d109128e151" headers="d109128e140 "><pre class="oac_no_warn" dir="ltr">NOT </pre></td>
+                           <td align="left" valign="top" width="37%" headers="d109128e151 d109128e143 ">
+                              <p>Returns <code class="codeph">TRUE</code> if the following condition is <code class="codeph">FALSE</code>. Returns <code class="codeph">FALSE</code> if it is <code class="codeph">TRUE</code>. If it is <code class="codeph">UNKNOWN</code>, then it remains <code class="codeph">UNKNOWN</code>.
+                              </p>
+                           </td>
+                           <td align="left" valign="top" width="47%" headers="d109128e151 d109128e146 "><pre class="oac_no_warn" dir="ltr">SELECT *
+  FROM employees
+  WHERE NOT (job_id IS NULL)
+  ORDER BY employee_id;
+SELECT *
+  FROM employees
+  WHERE NOT 
+  (salary BETWEEN 1000 AND 2000)
+  ORDER BY employee_id;</pre></td>
+                        </tr>
+                        <tr align="left" valign="top">
+                           <td align="left" valign="top" width="16%" id="d109128e180" headers="d109128e140 "><pre class="oac_no_warn" dir="ltr">AND </pre></td>
+                           <td align="left" valign="top" width="37%" headers="d109128e180 d109128e143 ">
+                              <p>Returns <code class="codeph">TRUE</code> if both component conditions are <code class="codeph">TRUE</code>. Returns <code class="codeph">FALSE</code> if either is <code class="codeph">FALSE</code>. Otherwise returns <code class="codeph">UNKNOWN</code>.
+                              </p>
+                           </td>
+                           <td align="left" valign="top" width="47%" headers="d109128e180 d109128e146 "><pre class="oac_no_warn" dir="ltr">SELECT *
+  FROM employees
+  WHERE job_id = 'PU_CLERK'
+  AND department_id = 30
+  ORDER BY employee_id;</pre></td>
+                        </tr>
+                        <tr align="left" valign="top">
+                           <td align="left" valign="top" width="16%" id="d109128e205" headers="d109128e140 "><pre class="oac_no_warn" dir="ltr">OR </pre></td>
+                           <td align="left" valign="top" width="37%" headers="d109128e205 d109128e143 ">
+                              <p>Returns <code class="codeph">TRUE</code> if either component condition is <code class="codeph">TRUE</code>. Returns <code class="codeph">FALSE</code> if both are <code class="codeph">FALSE</code>. Otherwise returns <code class="codeph">UNKNOWN</code>.
+                              </p>
+                           </td>
+                           <td align="left" valign="top" width="47%" headers="d109128e205 d109128e146 "><pre class="oac_no_warn" dir="ltr">SELECT *
+  FROM employees
+  WHERE job_id = 'PU_CLERK'
+  OR department_id = 10
+  ORDER BY employee_id;</pre></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class="section">
+                  <p><a id="d109128e231" class="indexterm-anchor"></a><a href="Logical-Conditions.html#GUID-C5E48AF2-3FF9-401D-A104-CDB5FC19E65F__G1068986" title="This table is a truth matrix for NOT conditions.">Table 6-5</a> shows the result of applying the <code class="codeph">NOT</code> condition to an expression.
+                  </p>
+               </div>
+               <div class="tblformal" id="GUID-C5E48AF2-3FF9-401D-A104-CDB5FC19E65F__G1068986">
+                  <p class="titleintable">Table 6-5  NOT Truth Table</p>
+                  <table cellpadding="4" cellspacing="0" class="Formal" title=" NOT Truth Table" summary="This table is a truth matrix for NOT conditions." width="100%" frame="hsides" border="1" rules="rows">
+                     <thead>
+                        <tr align="left" valign="top">
+                           <th align="left" valign="bottom" width="25%" id="d109128e253">--</th>
+                           <th align="left" valign="bottom" width="25%" id="d109128e256">TRUE</th>
+                           <th align="left" valign="bottom" width="25%" id="d109128e259">FALSE</th>
+                           <th align="left" valign="bottom" width="25%" id="d109128e262">UNKNOWN</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr align="left" valign="top">
+                           <td align="left" valign="top" width="25%" id="d109128e267" headers="d109128e253 ">
+                              <p><span class="bold"><tt>NOT</tt></span></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e267 d109128e256 ">
+                              <p><code class="codeph">FALSE</code></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e267 d109128e259 ">
+                              <p><code class="codeph">TRUE</code></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e267 d109128e262 ">
+                              <p><code class="codeph">UNKNOWN</code></p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class="section">
+                  <p><a id="d109128e286" class="indexterm-anchor"></a><a href="Logical-Conditions.html#GUID-C5E48AF2-3FF9-401D-A104-CDB5FC19E65F__G1068810" title="This table is a truth matrix for AND conditions.">Table 6-6</a> shows the results of combining the <code class="codeph">AND</code> condition to two expressions.
+                  </p>
+               </div>
+               <div class="tblformal" id="GUID-C5E48AF2-3FF9-401D-A104-CDB5FC19E65F__G1068810">
+                  <p class="titleintable">Table 6-6  AND Truth Table</p>
+                  <table cellpadding="4" cellspacing="0" class="Formal" title=" AND Truth Table" summary="This table is a truth matrix for AND conditions." width="100%" frame="hsides" border="1" rules="rows">
+                     <thead>
+                        <tr align="left" valign="top">
+                           <th align="left" valign="bottom" width="25%" id="d109128e308">AND</th>
+                           <th align="left" valign="bottom" width="25%" id="d109128e311">TRUE</th>
+                           <th align="left" valign="bottom" width="25%" id="d109128e314">FALSE</th>
+                           <th align="left" valign="bottom" width="25%" id="d109128e317">UNKNOWN</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr align="left" valign="top">
+                           <td align="left" valign="top" width="25%" id="d109128e322" headers="d109128e308 ">
+                              <p><span class="bold"><tt>TRUE</tt></span></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e322 d109128e311 ">
+                              <p><code class="codeph">TRUE</code></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e322 d109128e314 ">
+                              <p><code class="codeph">FALSE</code></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e322 d109128e317 ">
+                              <p><code class="codeph">UNKNOWN</code></p>
+                           </td>
+                        </tr>
+                        <tr align="left" valign="top">
+                           <td align="left" valign="top" width="25%" id="d109128e340" headers="d109128e308 ">
+                              <p><span class="bold"><tt>FALSE</tt></span></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e340 d109128e311 ">
+                              <p><code class="codeph">FALSE</code></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e340 d109128e314 ">
+                              <p><code class="codeph">FALSE</code></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e340 d109128e317 ">
+                              <p><code class="codeph">FALSE</code></p>
+                           </td>
+                        </tr>
+                        <tr align="left" valign="top">
+                           <td align="left" valign="top" width="25%" id="d109128e358" headers="d109128e308 ">
+                              <p><span class="bold"><tt>UNKNOWN</tt></span></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e358 d109128e311 ">
+                              <p><code class="codeph">UNKNOWN</code></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e358 d109128e314 ">
+                              <p><code class="codeph">FALSE</code></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e358 d109128e317 ">
+                              <p><code class="codeph">UNKNOWN</code></p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class="section">
+                  <p>For example, in the <code class="codeph">WHERE</code> clause of the following <code class="codeph">SELECT</code> statement, the <code class="codeph">AND</code> logical condition is used to ensure that only those hired before 2004 and earning more than $2500 a month are returned:
+                  </p><pre class="oac_no_warn" dir="ltr">SELECT * FROM employees
+WHERE hire_date &lt; TO_DATE('01-JAN-2004', 'DD-MON-YYYY')
+  AND salary &gt; 2500
+  ORDER BY employee_id;
+</pre><p><a id="d109128e390" class="indexterm-anchor"></a><a href="Logical-Conditions.html#GUID-C5E48AF2-3FF9-401D-A104-CDB5FC19E65F__G1068834" title="This table is a truth matrix for OR conditions.">Table 6-7</a> shows the results of applying <code class="codeph">OR</code> to two expressions.
+                  </p>
+               </div>
+               <div class="tblformal" id="GUID-C5E48AF2-3FF9-401D-A104-CDB5FC19E65F__G1068834">
+                  <p class="titleintable">Table 6-7  OR Truth Table</p>
+                  <table cellpadding="4" cellspacing="0" class="Formal" title=" OR Truth Table" summary="This table is a truth matrix for OR conditions." width="100%" frame="hsides" border="1" rules="rows">
+                     <thead>
+                        <tr align="left" valign="top">
+                           <th align="left" valign="bottom" width="25%" id="d109128e412">OR</th>
+                           <th align="left" valign="bottom" width="25%" id="d109128e415">TRUE</th>
+                           <th align="left" valign="bottom" width="25%" id="d109128e418">FALSE</th>
+                           <th align="left" valign="bottom" width="25%" id="d109128e421">UNKNOWN</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr align="left" valign="top">
+                           <td align="left" valign="top" width="25%" id="d109128e426" headers="d109128e412 ">
+                              <p><span class="bold"><tt>TRUE</tt></span></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e426 d109128e415 ">
+                              <p><code class="codeph">TRUE</code></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e426 d109128e418 ">
+                              <p><code class="codeph">TRUE</code></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e426 d109128e421 ">
+                              <p><code class="codeph">TRUE</code></p>
+                           </td>
+                        </tr>
+                        <tr align="left" valign="top">
+                           <td align="left" valign="top" width="25%" id="d109128e444" headers="d109128e412 ">
+                              <p><span class="bold"><tt>FALSE</tt></span></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e444 d109128e415 ">
+                              <p><code class="codeph">TRUE</code></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e444 d109128e418 ">
+                              <p><code class="codeph">FALSE</code></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e444 d109128e421 ">
+                              <p><code class="codeph">UNKNOWN</code></p>
+                           </td>
+                        </tr>
+                        <tr align="left" valign="top">
+                           <td align="left" valign="top" width="25%" id="d109128e462" headers="d109128e412 ">
+                              <p><span class="bold"><tt>UNKNOWN</tt></span></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e462 d109128e415 ">
+                              <p><code class="codeph">TRUE</code></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e462 d109128e418 ">
+                              <p><code class="codeph">UNKNOWN</code></p>
+                           </td>
+                           <td align="left" valign="top" width="25%" headers="d109128e462 d109128e421 ">
+                              <p><code class="codeph">UNKNOWN</code></p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class="section">
+                  <p>For example, the following query returns employees who have a 40% commission rate or a salary greater than $20,000:</p><pre class="oac_no_warn" dir="ltr">SELECT employee_id FROM employees
+   WHERE commission_pct = .4 OR salary &gt; 20000
+   ORDER BY employee_id;</pre></div>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

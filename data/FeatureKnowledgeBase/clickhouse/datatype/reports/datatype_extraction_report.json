@@ -1,0 +1,13 @@
+{
+  "dbms": "clickhouse",
+  "feature_type": "datatype",
+  "candidate_features": 208,
+  "candidate_groups": 41,
+  "feature_drafts": 41,
+  "known_type_coverage": {
+    "total": 0,
+    "covered": 0,
+    "missing": [],
+    "coverage_ratio": 1.0
+  }
+}

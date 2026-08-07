@@ -1,0 +1,62 @@
+{
+  "dbms": "mysql",
+  "feature_type": "datatype",
+  "nodes": {
+    "page": 39,
+    "section": 65,
+    "block": 1892,
+    "feature_candidate": 43
+  },
+  "edges": {
+    "page_contains_section": 65,
+    "section_contains_block": 1892,
+    "section_previous": 26,
+    "section_next": 26,
+    "feature_documented_in_section": 178,
+    "total": 2187
+  },
+  "noise": {
+    "noise_nodes": 0,
+    "noise_sections": 0,
+    "noise_blocks": 0,
+    "eligible_nodes": 1996
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "mysql.datatype.bigint",
+      "target": "mysql_8_0_numeric_type_syntax_s0001"
+    },
+    {
+      "source": "mysql.datatype.bigint",
+      "target": "mysql_8_0_integer_types_s0001"
+    },
+    {
+      "source": "mysql.datatype.bigint",
+      "target": "mysql_8_0_storage_requirements_s0004"
+    },
+    {
+      "source": "mysql.datatype.bigint",
+      "target": "mysql_8_0_choosing_types_s0001"
+    },
+    {
+      "source": "mysql.datatype.binary",
+      "target": "mysql_8_0_string_type_syntax_s0001"
+    },
+    {
+      "source": "mysql.datatype.binary",
+      "target": "mysql_8_0_binary_varbinary_s0001"
+    },
+    {
+      "source": "mysql.datatype.binary",
+      "target": "mysql_8_0_windows_select_server_s0001"
+    },
+    {
+      "source": "mysql.datatype.binary",
+      "target": "mysql_8_0_optimize_character_s0001"
+    }
+  ],
+  "generated_at": "2026-08-06T18:46:58.625489+08:00"
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="reference">
+      <meta name="DC.Title" content="CREATE OPERATOR">
+      <meta name="DC.subject" content="CREATE OPERATOR statement, operators, user-defined, binding to a function">
+      <meta name="keywords" content="CREATE OPERATOR statement, operators, user-defined, binding to a function">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>CREATE OPERATOR</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="create-mle-module.html" title="Previous" type="text/html">
+      <link rel="next" href="CREATE-OUTLINE.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"CREATE OPERATOR","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="create-mle-module.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="CREATE-OUTLINE.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F" name="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F"></a><a id="SQLRF54228"></a><a id="SQLRF54229"></a><a id="SQLRF54230"></a><a id="SQLRF54231"></a><a id="SQLRF54232"></a><a id="SQLRF54233"></a><a id="SQLRF54234"></a><a id="SQLRF54235"></a><a id="SQLRF54236"></a><a id="SQLRF54237"></a><a id="SQLRF54238"></a><a id="SQLRF54239"></a><a id="SQLRF54240"></a><a id="SQLRF54241"></a><a id="SQLRF54242"></a><a id="SQLRF54243"></a><a id="SQLRF54244"></a><a id="SQLRF54245"></a><a id="SQLRF54246"></a><a id="SQLRF54247"></a><a id="SQLRF54248"></a><a id="SQLRF01304"></a>
+         
+         <h2 id="SQLRF-GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F" class="sect2">CREATE OPERATOR </h2>
+         <div class="ind">
+            <div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-7E83AE0B-772C-43FC-A518-7A83C9EEB720">Purpose </p>
+                  <p><a id="d404224e145" class="indexterm-anchor"></a>Use the <code class="codeph">CREATE</code> <code class="codeph">OPERATOR</code> statement to create a new operator and define its bindings.
+                  </p>
+                  <p>Operators can be referenced by indextypes and by SQL queries and DML statements. The operators, in turn, reference functions, packages, types, and other user-defined objects. </p>
+                  <div class="infoboxnotealso" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-AFB6B1EE-32AA-43A8-99B4-F26313CE5B53">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADDCI2100" target="_blank"><span class="italic">Oracle Database Data Cartridge Developer's Guide</span></a> and <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=CNCPT1859" target="_blank"><span class="italic">Oracle Database Concepts</span></a> for a discussion of these dependencies and of operators in general
+                     </p>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-E46D2003-FAE7-470C-9D7F-DD1393339CA4">Prerequisites </p>
+                  <p>To create an operator in your own schema, you must have the <code class="codeph">CREATE</code> <code class="codeph">OPERATOR</code> system privilege. To create an operator in another schema, you must have the <code class="codeph">CREATE</code> <code class="codeph">ANY</code> <code class="codeph">OPERATOR</code> system privilege. In either case, you must also have the <code class="codeph">EXECUTE</code> object privilege on the functions and operators referenced.
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-411C08C3-38D2-4663-A51B-3A845A3344CE">Syntax</p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-631DD52B-3430-4A16-930B-A73BADBC9EF7"><span class="italic">create_operator</span>::=
+                  </p>
+                  <div class="figure" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-276D4CCE-22D6-4E6C-8871-37ABFFFCAA72"><img src="img/create_operator.gif" alt="Description of create_operator.eps follows" title="Description of create_operator.eps follows" longdesc="img_text/create_operator.html"><br><a href="img_text/create_operator.html">Description of the illustration create_operator.eps</a></div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-71DBA513-90B8-40EF-8C1C-ABEC1BE467A3"><span class="italic">binding_clause</span>::=
+                  </p><a id="d404224e212" class="indexterm-anchor"></a><div class="figure" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-238120C4-1085-47A0-BFFC-448C4201AB2A"><img src="img/binding_clause.gif" alt="Description of binding_clause.eps follows" title="Description of binding_clause.eps follows" longdesc="img_text/binding_clause.html"><br><a href="img_text/binding_clause.html">Description of the illustration binding_clause.eps</a></div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-2704B525-6250-4A08-A718-F95A169B1FF0"><span class="italic">implementation_clause</span>::=
+                  </p><a id="d404224e222" class="indexterm-anchor"></a><div class="figure" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-AA013FDB-F466-43A7-809D-D2EFE2486D4D"><img src="img/implementation_clause.gif" alt="Description of implementation_clause.eps follows" title="Description of implementation_clause.eps follows" longdesc="img_text/implementation_clause.html"><br><a href="img_text/implementation_clause.html">Description of the illustration implementation_clause.eps</a></div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-84BAC3AE-769A-451B-BF3A-2690FA884236"><span class="italic">context_clause</span>::=
+                  </p>
+                  <div class="figure" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-008B5218-D13C-4327-9A55-84632977695D"><img src="img/context_clause.gif" alt="Description of context_clause.eps follows" title="Description of context_clause.eps follows" longdesc="img_text/context_clause.html"><br><a href="img_text/context_clause.html">Description of the illustration context_clause.eps</a></div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-8BA18F7F-A231-4530-9089-90D2ED2E4DBE"><span class="italic">using_function_clause</span>::=
+                  </p>
+                  <div class="figure" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-4D33BAF7-5178-4276-B7EE-A92A7604234E"><img src="img/using_function_clause.gif" alt="Description of using_function_clause.eps follows" title="Description of using_function_clause.eps follows" longdesc="img_text/using_function_clause.html"><br><a href="img_text/using_function_clause.html">Description of the illustration using_function_clause.eps</a></div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-A3EA3C1D-3693-4A9F-B263-70ABDD2BCCF4">Semantics</p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-11BBC691-E1C5-4022-91FC-C57384D8E56A">OR REPLACE</p>
+                  <p>Specify <code class="codeph">OR</code> <code class="codeph">REPLACE</code> to replace the definition of the operator schema object.
+                  </p>
+                  <p><span class="bold">Restriction on Replacing an Operator</span></p>
+                  <p>You can replace the definition only if the operator has no dependent objects, such as indextypes supporting the operator.</p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__TITLE_LXT_TXF_GVB">IF NOT EXISTS</p>
+                  <p>Specifying <code class="codeph">IF NOT EXISTS</code> has the following effects: 
+                  </p>
+                  <ul style="list-style-type: disc;" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__UL_OCN_5XF_GVB">
+                     <li>
+                        <p>If the operator does not exist, a new operator is created at the end of the statement.</p>
+                     </li>
+                     <li>
+                        <p>If the operator exists, this is the operator you have at the end of the statement. A new one is not created because the older one is detected.</p>
+                     </li>
+                  </ul>
+                  <p>You can have <span class="italic">one</span> of <code class="codeph">OR REPLACE</code> or <code class="codeph">IF NOT EXISTS</code> in a statement at a time. Using both <code class="codeph">OR REPLACE</code> with <code class="codeph">IF NOT EXISTS</code> in the very same statement results in the following error: <code class="codeph">ORA-11541: REPLACE and IF NOT EXISTS cannot coexist in the same DDL statement</code>. 
+                  </p>
+                  <p>Using <code class="codeph">IF EXISTS</code> with <code class="codeph">CREATE</code> results in <code class="codeph">ORA-11543: Incorrect IF NOT EXISTS clause for CREATE statement</code>. 
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-8256773F-F8FF-4774-86DC-7A1F59D2723D"><span class="italic">schema</span></p>
+                  <p>Specify the schema containing the operator. If you omit <span class="italic"><code class="codeph">schema</code></span>, then the database creates the operator in your own schema.
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-7D1DD99C-0E9B-4513-9031-7D937959B62B"><span class="italic">operator</span></p>
+                  <p>Specify the name of the operator to be created. The name must satisfy the requirements listed in <span class="q">"<a href="Database-Object-Names-and-Qualifiers.html#GUID-75337742-67FD-4EC0-985F-741C93D918DA">Database Object Naming Rules</a>"</span>.
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-5781A737-A1F6-4A1C-B763-12EC98EE2499"><span class="italic">binding_clause</span></p>
+                  <p>Use the <span class="italic"><code class="codeph">binding_clause</code></span> to specify one or more parameter data types (<span class="italic"><code class="codeph">parameter_type</code></span>) for binding the operator to a function. The signature of each bindingâthe sequence of the data types of the arguments to the corresponding functionâmust be unique according to the rules of overloading. 
+                  </p>
+                  <p>The <span class="italic"><code class="codeph">parameter_type</code></span> can itself be an object type. If it is, then you can optionally qualify it with its schema.
+                  </p>
+                  <p><span class="bold">Restriction on Binding Operators</span></p>
+                  <p>You cannot specify a <span class="italic"><code class="codeph">parameter_type</code></span> of <code class="codeph">REF</code>, <code class="codeph">LONG</code>, or <code class="codeph">LONG</code> <code class="codeph">RAW</code>.
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-8E6456FC-73AA-403C-BF14-14C50653248A">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=LNPLS00807" target="_blank"><span class="italic">Oracle Database PL/SQL Language Reference</span></a> for more information about overloading
+                     </p>
+                  </div>
+                  <p><span class="bold">RETURN Clause</span> 
+                  </p>
+                  <p>Specify the return data type for the binding.</p>
+                  <p>The <span class="italic"><code class="codeph">return_type</code></span> can itself be an object type. If so, then you can optionally qualify it with its schema.
+                  </p>
+                  <p><span class="bold">Restriction on Binding Return Data Type</span></p>
+                  <p>You cannot specify a <span class="italic"><code class="codeph">return_type</code></span> of <code class="codeph">REF</code>, <code class="codeph">LONG</code>, or <code class="codeph">LONG</code> <code class="codeph">RAW</code>.
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-6F4FCF00-9727-4664-883C-C50B814FA601">SHARING</p>
+                  <p>Use the sharing clause if you want to create the object in an application root in the context of an application maintenance. This type of object is called an application common object and it can be shared with the application PDBs that belong to the application root. </p>
+                  <p>You can specify how the object is shared using one of the following sharing attributes:</p>
+                  <ul style="list-style-type: disc;" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__UL_CNF_KKG_CRB">
+                     <li>
+                        <p><code class="codeph">METADATA</code> - A metadata link shares the metadata, but its data is unique to each container. This type of object is referred to as a metadata-linked application common object. 
+                        </p>
+                     </li>
+                     <li>
+                        <p><code class="codeph">NONE</code> - The object is not shared and can only be accessed in the application root.
+                        </p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="section" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__I2160229">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-1B58907E-C2C8-4361-B80B-D980266A8BAE"><span class="italic">implementation_clause</span></p>
+                  <p><a id="d404224e436" class="indexterm-anchor"></a><a id="d404224e442" class="indexterm-anchor"></a>Use this clause to describe the implementation of the binding.
+                  </p>
+                  <p><span class="bold">ANCILLARY TO Clause</span></p>
+                  <p>Use the <code class="codeph">ANCILLARY</code> <code class="codeph">TO</code> clause to indicate that the operator binding is ancillary to the specified primary operator binding (<span class="italic"><code class="codeph">primary_operator</code></span>). If you specify this clause, then do not specify a previous binding with just one number parameter.
+                  </p>
+                  <p id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__I2152088"><span class="bold"><span class="italic">context_clause</span></span> <a id="d404224e467" class="indexterm-anchor"></a><a id="d404224e473" class="indexterm-anchor"></a></p>
+                  <p>Use the <span class="italic"><code class="codeph">context_clause</code></span> to describe the functional implementation of a binding that is not ancillary to a primary operator binding.
+                  </p>
+                  <p><span class="bold">WITH INDEX CONTEXT, SCAN CONTEXT</span></p>
+                  <p>Use this clause to indicate that the functional evaluation of the operator uses the index and a scan context that is specified by the implementation type.</p>
+                  <p><span class="bold">COMPUTE ANCILLARY DATA</span></p>
+                  <p>Specify <code class="codeph">COMPUTE</code> <code class="codeph">ANCILLARY</code> <code class="codeph">DATA</code> to indicate that the operator binding computes ancillary data. 
+                  </p>
+                  <p><span class="bold">WITH COLUMN CONTEXT</span></p>
+                  <p>Specify <code class="codeph">WITH</code> <code class="codeph">COLUMN</code> <code class="codeph">CONTEXT</code> to indicate that Oracle Database should pass the column information to the functional implementation for the operator.
+                  </p>
+                  <p>If you specify this clause, then the signature of the function implemented must include one extra <code class="codeph">ODCIFuncCallInfo</code> structure. 
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-F842A6B5-BBED-4BE1-9D67-3858D69A63F3">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADDCI024" target="_blank"><span class="italic">Oracle Database Data Cartridge Developer's Guide</span></a> for instructions on using the <code class="codeph">ODCIFuncCallInfo</code> routine
+                     </p>
+                  </div>
+               </div>
+               <div class="section" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__I2152100">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-1AC7A0F4-0DE0-4FCB-BA11-C68202612356"><span class="italic">using_function_clause</span></p>
+                  <p>The <span class="italic"><code class="codeph">using_function_clause</code></span> lets you specify the function that provides the implementation for the binding. The <span class="italic"><code class="codeph">function_name</code></span> can be a standalone function, packaged function, type method, or a synonym for any of these.
+                  </p>
+                  <p>If the function is subsequently dropped, then the database marks all dependent objects <code class="codeph">INVALID</code>, including the operator. However, if you then subsequently issue an <code class="codeph">ALTER</code> <code class="codeph">OPERATOR</code> ... <code class="codeph">DROP</code> <code class="codeph">BINDING</code> statement to drop the binding, then subsequent queries and DML will revalidate the dependent objects.
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__GUID-AF0FEE29-D54D-4C46-B3C8-1738B6FB8318">Examples</p>
+                  <p id="GUID-62676C58-6F57-4572-8C09-7984A8E3EE9F__I2099937"><span class="bold">Creating User-Defined Operators: Example</span></p>
+                  <p>This example creates a very simple functional implementation of equality and then creates an operator that uses the function. For a more complete set of examples, see <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADDCI2100" target="_blank"><span class="italic">Oracle Database Data Cartridge Developer's Guide</span></a>.
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE FUNCTION eq_f(a VARCHAR2, b VARCHAR2) RETURN NUMBER AS
+BEGIN
+   IF a = b THEN RETURN 1;
+   ELSE RETURN 0;
+   END IF;
+END;
+/
+
+CREATE OPERATOR eq_op
+   BINDING (VARCHAR2, VARCHAR2) 
+   RETURN NUMBER 
+   USING eq_f; </pre></div>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

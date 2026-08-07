@@ -1,0 +1,31 @@
+{
+  "dbms": "sqlite",
+  "feature_type": "function",
+  "total_pages": 13,
+  "total_sections": 137,
+  "total_blocks": 1760,
+  "candidate_features": 175,
+  "candidate_groups": 81,
+  "feature_drafts": 81,
+  "total_drafts": 81,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 80,
+  "invalid_features": 1,
+  "total_validated_features": 80,
+  "total_kb_features": 80,
+  "total_review_items": 81,
+  "validation_summary": {
+    "schema_invalid": 1,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 72,
+    "no_description_claims": 75,
+    "no_valid_syntax": 1,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 66
+  },
+  "generated_at": "2026-08-06T19:08:08.374923+08:00"
+}

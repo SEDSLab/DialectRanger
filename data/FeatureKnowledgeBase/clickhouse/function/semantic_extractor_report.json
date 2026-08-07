@@ -1,0 +1,22 @@
+{
+  "dbms": "clickhouse",
+  "feature_type": "function",
+  "mode": "shadow",
+  "backend": "mock",
+  "total_features": 1289,
+  "semantic_drafts": 1289,
+  "status_counts": {
+    "extracted": 21,
+    "partial": 1244,
+    "insufficient_context": 24,
+    "no_context": 0,
+    "skipped": 0,
+    "validation_failed": 0
+  },
+  "description_claims": 29,
+  "constraints": 0,
+  "example_roles": 1931,
+  "invalid_evidence_refs": 0,
+  "merge_into_kb": false,
+  "generated_at": "2026-08-06T19:47:40.358057+08:00"
+}

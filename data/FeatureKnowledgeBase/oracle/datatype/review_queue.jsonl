@@ -1,0 +1,30 @@
+{"feature_id": "oracle.datatype.anydata", "name": "anydata", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.anydataset", "name": "anydataset", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.anytype", "name": "anytype", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.bfile", "name": "bfile", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.binary_double", "name": "binary_double", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.binary_float", "name": "binary_float", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.blob", "name": "blob", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.boolean", "name": "boolean", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.char", "name": "char", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.clob", "name": "clob", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.date", "name": "date", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.float", "name": "float", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.interval day to second", "name": "interval day to second", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.interval year to month", "name": "interval year to month", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.json", "name": "json", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.long", "name": "long", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.long raw", "name": "long raw", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.nchar", "name": "nchar", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.nclob", "name": "nclob", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.number", "name": "number", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.nvarchar2", "name": "nvarchar2", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.raw", "name": "raw", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.rowid", "name": "rowid", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.timestamp", "name": "timestamp", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.timestamp with local time zone", "name": "timestamp with local time zone", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.timestamp with time zone", "name": "timestamp with time zone", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.urowid", "name": "urowid", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.varchar2", "name": "varchar2", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.vector", "name": "vector", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.datatype.xmltype", "name": "xmltype", "status": "needs_review", "reason": ["missing_examples"], "details": []}

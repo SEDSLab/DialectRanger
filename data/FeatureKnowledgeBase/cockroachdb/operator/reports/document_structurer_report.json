@@ -1,0 +1,28 @@
+{
+  "dbms": "cockroachdb",
+  "feature_type": "operator",
+  "processed_pages": 1,
+  "skipped_pages": 0,
+  "total_sections": 39,
+  "total_blocks": 2695,
+  "section_sources": {
+    "fallback": 1,
+    "heading_tree": 38
+  },
+  "block_types": {
+    "anchor": 5,
+    "heading": 38,
+    "table": 76,
+    "table_row": 2576
+  },
+  "pages": [
+    {
+      "page_id": "cockroachdb_stable_functions_and_operators",
+      "sections": 39,
+      "blocks": 2695,
+      "anchors": 5,
+      "tables": 76,
+      "code_blocks": 0
+    }
+  ]
+}

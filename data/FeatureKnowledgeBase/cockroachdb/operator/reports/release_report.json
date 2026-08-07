@@ -1,0 +1,31 @@
+{
+  "dbms": "cockroachdb",
+  "feature_type": "operator",
+  "total_pages": 1,
+  "total_sections": 39,
+  "total_blocks": 2695,
+  "candidate_features": 88,
+  "candidate_groups": 58,
+  "feature_drafts": 58,
+  "total_drafts": 58,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 58,
+  "invalid_features": 0,
+  "total_validated_features": 58,
+  "total_kb_features": 58,
+  "total_review_items": 58,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 58,
+    "no_description_claims": 17,
+    "no_valid_syntax": 0,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 50,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 15
+  },
+  "generated_at": "2026-08-06T19:12:45.604559+08:00"
+}

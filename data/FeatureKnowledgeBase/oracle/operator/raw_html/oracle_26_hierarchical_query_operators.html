@@ -1,0 +1,148 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="reference">
+      <meta name="DC.Title" content="Hierarchical Query Operators">
+      <meta name="DC.subject" content="hierarchical queries, operators in, operators, PRIOR, PRIOR operator, CONNECT_BY_ROOT, CONNECT_BY_ROOT operator">
+      <meta name="keywords" content="hierarchical queries, operators in, operators, PRIOR, PRIOR operator, CONNECT_BY_ROOT, CONNECT_BY_ROOT operator">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-4CC13EEB-846A-4254-93FC-E91E678BD302">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Hierarchical Query Operators</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="Concatenation-Operator.html" title="Previous" type="text/html">
+      <link rel="next" href="Set-Operators.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Hierarchical Query Operators","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="Concatenation-Operator.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="Set-Operators.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-4CC13EEB-846A-4254-93FC-E91E678BD302" name="GUID-4CC13EEB-846A-4254-93FC-E91E678BD302"></a><a id="SQLRF51161"></a>
+         
+         <h2 id="SQLRF-GUID-4CC13EEB-846A-4254-93FC-E91E678BD302" class="sect2">Hierarchical Query Operators</h2>
+         <div class="ind">
+            <div>
+               <div class="section">
+                  <p>Two operators, <code class="codeph">PRIOR</code> and <code class="codeph">CONNECT_BY_ROOT</code>, are valid only in hierarchical queries.
+                  </p>
+               </div>
+            </div><a id="SQLRF51162"></a><div class="props_rev_3"><a id="GUID-95F6A554-C6FE-42CD-88A6-7A1C162ED964" name="GUID-95F6A554-C6FE-42CD-88A6-7A1C162ED964"></a><h3 id="SQLRF-GUID-95F6A554-C6FE-42CD-88A6-7A1C162ED964" class="sect3">PRIOR </h3>
+               <div>
+                  <div class="section">
+                     <p>In a hierarchical query, one expression in the <code class="codeph">CONNECT</code> <code class="codeph">BY</code> <span class="italic"><code class="codeph">condition</code></span> must be qualified by the <code class="codeph">PRIOR</code> operator. If the <code class="codeph">CONNECT</code> <code class="codeph">BY</code> <span class="italic"><code class="codeph">condition</code></span> is compound, then only one condition requires the <code class="codeph">PRIOR</code> operator, although you can have multiple <code class="codeph">PRIOR</code> conditions. <code class="codeph">PRIOR</code> evaluates the immediately following expression for the parent row of the current row in a hierarchical query. 
+                     </p>
+                     <p><code class="codeph">PRIOR</code> is most commonly used when comparing column values with the equality operator. (The <code class="codeph">PRIOR</code> keyword can be on either side of the operator.) <code class="codeph">PRIOR</code> causes Oracle to use the value of the parent row in the column. Operators other than the equal sign (=) are theoretically possible in <code class="codeph">CONNECT</code> <code class="codeph">BY</code> clauses. However, the conditions created by these other operators can result in an infinite loop through the possible combinations. In this case Oracle detects the loop at run time and returns an error. Refer to <a href="Hierarchical-Queries.html#GUID-0118DF1D-B9A9-41EB-8556-C6E7D6A5A84E">Hierarchical Queries</a> for more information on this operator, including examples.
+                     </p>
+                  </div>
+               </div>
+            </div><a id="SQLRF51163"></a><a id="SQLRF0031"></a><div class="props_rev_3"><a id="GUID-875C8985-4AEF-4DF1-BA23-3CDF5BCBCD8E" name="GUID-875C8985-4AEF-4DF1-BA23-3CDF5BCBCD8E"></a><h3 id="SQLRF-GUID-875C8985-4AEF-4DF1-BA23-3CDF5BCBCD8E" class="sect3">CONNECT_BY_ROOT </h3>
+               <div>
+                  <div class="section">
+                     <p><code class="codeph">CONNECT_BY_ROOT</code> is a unary operator that is valid only in hierarchical queries. When you qualify a column with this operator, Oracle returns the column value using data from the root row. This operator extends the functionality of the <code class="codeph">CONNECT</code> <code class="codeph">BY</code> [<code class="codeph">PRIOR</code>] condition of hierarchical queries. 
+                     </p>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-875C8985-4AEF-4DF1-BA23-3CDF5BCBCD8E__GUID-2E839272-CDCB-46B6-9B79-95E44CA9A55F">Restriction on CONNECT_BY_ROOT</p>
+                  </div>
+                  <div class="section">
+                     <p>You cannot specify this operator in the <code class="codeph">START</code> <code class="codeph">WITH</code> condition or the <code class="codeph">CONNECT</code> <code class="codeph">BY</code> condition.
+                     </p>
+                     <div class="infoboxnotealso" id="GUID-875C8985-4AEF-4DF1-BA23-3CDF5BCBCD8E__GUID-DC385353-1439-40DA-A15E-A2D4A37604BC">
+                        <p class="notep1">See Also:</p>
+                        <p><a href="Hierarchical-Queries.html#GUID-E3D35EF7-33C3-4D88-81B3-00030C47AE56__I2069380">CONNECT_BY_ROOT Examples</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

@@ -1,0 +1,180 @@
+{
+  "dbms": "postgresql",
+  "feature_type": "datatype",
+  "processed_pages": 19,
+  "skipped_pages": 0,
+  "total_sections": 81,
+  "total_blocks": 1462,
+  "section_sources": {
+    "fallback": 19,
+    "heading_tree": 62
+  },
+  "block_types": {
+    "anchor": 240,
+    "heading": 62,
+    "paragraph": 373,
+    "definition_term": 60,
+    "definition_description": 12,
+    "table": 37,
+    "table_row": 403,
+    "note": 19,
+    "list": 46,
+    "code": 168,
+    "signature": 40,
+    "warning": 2
+  },
+  "pages": [
+    {
+      "page_id": "postgresql_current_datatype",
+      "sections": 2,
+      "blocks": 89,
+      "anchors": 4,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "postgresql_current_datatype_pseudo",
+      "sections": 2,
+      "blocks": 60,
+      "anchors": 27,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "postgresql_current_functions_formatting",
+      "sections": 2,
+      "blocks": 296,
+      "anchors": 8,
+      "tables": 6,
+      "code_blocks": 70
+    },
+    {
+      "page_id": "postgresql_current_datatype_numeric",
+      "sections": 6,
+      "blocks": 117,
+      "anchors": 34,
+      "tables": 1,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "postgresql_current_datatype_money",
+      "sections": 2,
+      "blocks": 15,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "postgresql_current_datatype_character",
+      "sections": 2,
+      "blocks": 40,
+      "anchors": 12,
+      "tables": 3,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "postgresql_current_datatype_binary",
+      "sections": 4,
+      "blocks": 39,
+      "anchors": 7,
+      "tables": 2,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "postgresql_current_datatype_datetime",
+      "sections": 11,
+      "blocks": 259,
+      "anchors": 44,
+      "tables": 10,
+      "code_blocks": 23
+    },
+    {
+      "page_id": "postgresql_current_datatype_boolean",
+      "sections": 2,
+      "blocks": 31,
+      "anchors": 6,
+      "tables": 3,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "postgresql_current_datatype_enum",
+      "sections": 6,
+      "blocks": 31,
+      "anchors": 7,
+      "tables": 0,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "postgresql_current_datatype_geometric",
+      "sections": 9,
+      "blocks": 80,
+      "anchors": 18,
+      "tables": 1,
+      "code_blocks": 8
+    },
+    {
+      "page_id": "postgresql_current_datatype_net_types",
+      "sections": 7,
+      "blocks": 86,
+      "anchors": 15,
+      "tables": 4,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "postgresql_current_datatype_bit",
+      "sections": 2,
+      "blocks": 11,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "postgresql_current_datatype_textsearch",
+      "sections": 4,
+      "blocks": 46,
+      "anchors": 7,
+      "tables": 0,
+      "code_blocks": 13
+    },
+    {
+      "page_id": "postgresql_current_datatype_uuid",
+      "sections": 2,
+      "blocks": 11,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "postgresql_current_datatype_xml",
+      "sections": 5,
+      "blocks": 39,
+      "anchors": 5,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "postgresql_current_datatype_json",
+      "sections": 9,
+      "blocks": 149,
+      "anchors": 18,
+      "tables": 3,
+      "code_blocks": 24
+    },
+    {
+      "page_id": "postgresql_current_datatype_oid",
+      "sections": 2,
+      "blocks": 58,
+      "anchors": 19,
+      "tables": 1,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "postgresql_current_datatype_pg_lsn",
+      "sections": 2,
+      "blocks": 5,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    }
+  ]
+}

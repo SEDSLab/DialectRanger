@@ -1,0 +1,13 @@
+{
+  "dbms": "sqlite",
+  "feature_type": "datatype",
+  "candidate_features": 34,
+  "candidate_groups": 9,
+  "feature_drafts": 9,
+  "known_type_coverage": {
+    "total": 0,
+    "covered": 0,
+    "missing": [],
+    "coverage_ratio": 1.0
+  }
+}

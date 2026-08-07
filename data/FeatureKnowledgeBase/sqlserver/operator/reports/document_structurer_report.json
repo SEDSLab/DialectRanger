@@ -1,0 +1,152 @@
+{
+  "dbms": "sqlserver",
+  "feature_type": "operator",
+  "processed_pages": 16,
+  "skipped_pages": 0,
+  "total_sections": 122,
+  "total_blocks": 726,
+  "section_sources": {
+    "fallback": 16,
+    "heading_tree": 106
+  },
+  "block_types": {
+    "anchor": 192,
+    "paragraph": 205,
+    "signature": 2,
+    "list": 81,
+    "heading": 106,
+    "code": 56,
+    "table": 10,
+    "table_row": 74
+  },
+  "pages": [
+    {
+      "page_id": "sqlserver_current_operators_transact_sql",
+      "sections": 3,
+      "blocks": 32,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlserver_current_scope_resolution_operator_transact_sql",
+      "sections": 5,
+      "blocks": 25,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "sqlserver_current_assignment_operator_transact_sql",
+      "sections": 4,
+      "blocks": 24,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "sqlserver_current_arithmetic_operators_transact_sql",
+      "sections": 4,
+      "blocks": 32,
+      "anchors": 12,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlserver_current_bitwise_operators_transact_sql",
+      "sections": 4,
+      "blocks": 52,
+      "anchors": 12,
+      "tables": 2,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlserver_current_comparison_operators_transact_sql",
+      "sections": 5,
+      "blocks": 38,
+      "anchors": 12,
+      "tables": 1,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "sqlserver_current_compound_operators_transact_sql",
+      "sections": 10,
+      "blocks": 45,
+      "anchors": 12,
+      "tables": 1,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "sqlserver_current_logical_operators_transact_sql",
+      "sections": 4,
+      "blocks": 33,
+      "anchors": 12,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlserver_current_relational_operators_transact_sql",
+      "sections": 5,
+      "blocks": 32,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlserver_current_set_operators_except_and_intersect_transact_sql",
+      "sections": 8,
+      "blocks": 64,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 8
+    },
+    {
+      "page_id": "sqlserver_current_set_operators_union_transact_sql",
+      "sections": 16,
+      "blocks": 66,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "sqlserver_current_string_operators_transact_sql",
+      "sections": 4,
+      "blocks": 31,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlserver_current_unary_operators_positive",
+      "sections": 12,
+      "blocks": 51,
+      "anchors": 12,
+      "tables": 1,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "sqlserver_current_unary_operators_negative",
+      "sections": 15,
+      "blocks": 68,
+      "anchors": 12,
+      "tables": 1,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "sqlserver_current_operator_precedence_transact_sql",
+      "sections": 4,
+      "blocks": 53,
+      "anchors": 12,
+      "tables": 2,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "sqlserver_current_string_concatenation_transact_sql",
+      "sections": 19,
+      "blocks": 80,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 12
+    }
+  ]
+}

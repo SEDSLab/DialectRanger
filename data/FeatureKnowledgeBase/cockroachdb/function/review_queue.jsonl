@@ -1,0 +1,702 @@
+{"feature_id": "cockroachdb.function._pg_expandarray", "name": "_PG_EXPANDARRAY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function._pg_numeric_precision", "name": "_PG_NUMERIC_PRECISION", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function._pg_numeric_precision_radix", "name": "_PG_NUMERIC_PRECISION_RADIX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function._pg_numeric_scale", "name": "_PG_NUMERIC_SCALE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function._st_contains", "name": "_ST_CONTAINS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function._st_containsproperly", "name": "_ST_CONTAINSPROPERLY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function._st_coveredby", "name": "_ST_COVEREDBY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function._st_covers", "name": "_ST_COVERS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function._st_crosses", "name": "_ST_CROSSES", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function._st_dfullywithin", "name": "_ST_DFULLYWITHIN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function._st_dfullywithinexclusive", "name": "_ST_DFULLYWITHINEXCLUSIVE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function._st_dwithin", "name": "_ST_DWITHIN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function._st_dwithinexclusive", "name": "_ST_DWITHINEXCLUSIVE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function._st_equals", "name": "_ST_EQUALS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function._st_intersects", "name": "_ST_INTERSECTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function._st_overlaps", "name": "_ST_OVERLAPS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function._st_touches", "name": "_ST_TOUCHES", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function._st_within", "name": "_ST_WITHIN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.abbrev", "name": "ABBREV", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.abs", "name": "ABS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.acldefault", "name": "ACLDEFAULT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.aclexplode", "name": "ACLEXPLODE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.acos", "name": "ACOS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.acosd", "name": "ACOSD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.acosh", "name": "ACOSH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.addgeometrycolumn", "name": "ADDGEOMETRYCOLUMN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.age", "name": "AGE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.annotate_type", "name": "ANNOTATE_TYPE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.array", "name": "ARRAY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.array_agg", "name": "ARRAY_AGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.array_append", "name": "ARRAY_APPEND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.array_cat", "name": "ARRAY_CAT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.array_cat_agg", "name": "ARRAY_CAT_AGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.array_length", "name": "ARRAY_LENGTH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.array_lower", "name": "ARRAY_LOWER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.array_position", "name": "ARRAY_POSITION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.array_positions", "name": "ARRAY_POSITIONS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.array_prepend", "name": "ARRAY_PREPEND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.array_remove", "name": "ARRAY_REMOVE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.array_replace", "name": "ARRAY_REPLACE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.array_to_json", "name": "ARRAY_TO_JSON", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.array_to_string", "name": "ARRAY_TO_STRING", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.array_upper", "name": "ARRAY_UPPER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.ascii", "name": "ASCII", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.asin", "name": "ASIN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.asind", "name": "ASIND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.asinh", "name": "ASINH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.atan", "name": "ATAN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.atan2", "name": "ATAN2", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.atan2d", "name": "ATAN2D", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.atand", "name": "ATAND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.atanh", "name": "ATANH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.avg", "name": "AVG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.bit_and", "name": "BIT_AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.bit_count", "name": "BIT_COUNT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.bit_length", "name": "BIT_LENGTH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.bit_or", "name": "BIT_OR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.bitmask_and", "name": "BITMASK_AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.bitmask_or", "name": "BITMASK_OR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.bitmask_xor", "name": "BITMASK_XOR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.bool_and", "name": "BOOL_AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.bool_or", "name": "BOOL_OR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.broadcast", "name": "BROADCAST", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.btrim", "name": "BTRIM", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.cardinality", "name": "CARDINALITY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.cbrt", "name": "CBRT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.ceil", "name": "CEIL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.ceiling", "name": "CEILING", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.char_length", "name": "CHAR_LENGTH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.character_length", "name": "CHARACTER_LENGTH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.chr", "name": "CHR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.clock_timestamp", "name": "CLOCK_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.cluster_logical_timestamp", "name": "CLUSTER_LOGICAL_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.coalesce", "name": "COALESCE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.col_description", "name": "COL_DESCRIPTION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.compress", "name": "COMPRESS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.concat", "name": "CONCAT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.concat_agg", "name": "CONCAT_AGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.concat_ws", "name": "CONCAT_WS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.convert_from", "name": "CONVERT_FROM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.convert_to", "name": "CONVERT_TO", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.corr", "name": "CORR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.cos", "name": "COS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.cosd", "name": "COSD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.cosh", "name": "COSH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.cosine_distance", "name": "COSINE_DISTANCE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.cot", "name": "COT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.cotd", "name": "COTD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.count", "name": "COUNT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.count_rows", "name": "COUNT_ROWS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.covar_pop", "name": "COVAR_POP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.covar_samp", "name": "COVAR_SAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.crc32c", "name": "CRC32C", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.crc32ieee", "name": "CRC32IEEE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.crdb_datums_to_bytes", "name": "CRDB_DATUMS_TO_BYTES", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.crdb_delete_statement_hints", "name": "CRDB_DELETE_STATEMENT_HINTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.crdb_enable_statement_hints", "name": "CRDB_ENABLE_STATEMENT_HINTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.crdb_rewrite_inline_hints", "name": "CRDB_REWRITE_INLINE_HINTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.crdb_set_session_variable_hint", "name": "CRDB_SET_SESSION_VARIABLE_HINT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.crypt", "name": "CRYPT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.cume_dist", "name": "CUME_DIST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.current_database", "name": "CURRENT_DATABASE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.current_schema", "name": "CURRENT_SCHEMA", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.current_schemas", "name": "CURRENT_SCHEMAS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.current_setting", "name": "CURRENT_SETTING", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.current_user", "name": "CURRENT_USER", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.currval", "name": "CURRVAL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.daitch_mokotoff", "name": "DAITCH_MOKOTOFF", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.date_part", "name": "DATE_PART", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.date_trunc", "name": "DATE_TRUNC", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.decode", "name": "DECODE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.decompress", "name": "DECOMPRESS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.decrypt", "name": "DECRYPT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.decrypt_iv", "name": "DECRYPT_IV", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.default_to_database_primary_region", "name": "DEFAULT_TO_DATABASE_PRIMARY_REGION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.degrees", "name": "DEGREES", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.dense_rank", "name": "DENSE_RANK", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.difference", "name": "DIFFERENCE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.digest", "name": "DIGEST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.div", "name": "DIV", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.dmetaphone", "name": "DMETAPHONE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.dmetaphone_alt", "name": "DMETAPHONE_ALT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.encode", "name": "ENCODE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.encrypt", "name": "ENCRYPT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.encrypt_iv", "name": "ENCRYPT_IV", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.enum_first", "name": "ENUM_FIRST", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.enum_last", "name": "ENUM_LAST", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.enum_range", "name": "ENUM_RANGE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.every", "name": "EVERY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.exp", "name": "EXP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.experimental_follower_read_timestamp", "name": "EXPERIMENTAL_FOLLOWER_READ_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.experimental_strftime", "name": "EXPERIMENTAL_STRFTIME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.experimental_strptime", "name": "EXPERIMENTAL_STRPTIME", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.experimental_uuid_v4", "name": "EXPERIMENTAL_UUID_V4", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.extract", "name": "EXTRACT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.extract_duration", "name": "EXTRACT_DURATION", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.family", "name": "FAMILY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.first_value", "name": "FIRST_VALUE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.floor", "name": "FLOOR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.fnv32", "name": "FNV32", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.fnv32a", "name": "FNV32A", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.fnv64", "name": "FNV64", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.fnv64a", "name": "FNV64A", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.follower_read_timestamp", "name": "FOLLOWER_READ_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.format", "name": "FORMAT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.format_type", "name": "FORMAT_TYPE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.from_ip", "name": "FROM_IP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.from_uuid", "name": "FROM_UUID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.gateway_region", "name": "GATEWAY_REGION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.gen_random_bytes", "name": "GEN_RANDOM_BYTES", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.gen_random_ulid", "name": "GEN_RANDOM_ULID", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.gen_random_uuid", "name": "GEN_RANDOM_UUID", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.gen_salt", "name": "GEN_SALT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.generate_series", "name": "GENERATE_SERIES", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.generate_subscripts", "name": "GENERATE_SUBSCRIPTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.geometrytype", "name": "GEOMETRYTYPE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.geomfromewkb", "name": "GEOMFROMEWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.geomfromewkt", "name": "GEOMFROMEWKT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.get_bit", "name": "GET_BIT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.get_byte", "name": "GET_BYTE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.getdatabaseencoding", "name": "GETDATABASEENCODING", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.greatest", "name": "GREATEST", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.has_any_column_privilege", "name": "HAS_ANY_COLUMN_PRIVILEGE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.has_column_privilege", "name": "HAS_COLUMN_PRIVILEGE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.has_database_privilege", "name": "HAS_DATABASE_PRIVILEGE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.has_foreign_data_wrapper_privilege", "name": "HAS_FOREIGN_DATA_WRAPPER_PRIVILEGE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.has_function_privilege", "name": "HAS_FUNCTION_PRIVILEGE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.has_language_privilege", "name": "HAS_LANGUAGE_PRIVILEGE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.has_schema_privilege", "name": "HAS_SCHEMA_PRIVILEGE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.has_sequence_privilege", "name": "HAS_SEQUENCE_PRIVILEGE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.has_server_privilege", "name": "HAS_SERVER_PRIVILEGE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.has_system_privilege", "name": "HAS_SYSTEM_PRIVILEGE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.has_table_privilege", "name": "HAS_TABLE_PRIVILEGE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.has_tablespace_privilege", "name": "HAS_TABLESPACE_PRIVILEGE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.has_type_privilege", "name": "HAS_TYPE_PRIVILEGE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.hlc_to_timestamp", "name": "HLC_TO_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.hmac", "name": "HMAC", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.host", "name": "HOST", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.hostmask", "name": "HOSTMASK", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.if", "name": "IF", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.ifnull", "name": "IFNULL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.ilike_escape", "name": "ILIKE_ESCAPE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.index", "name": "INDEX", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.inet_contained_by_or_equals", "name": "INET_CONTAINED_BY_OR_EQUALS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.inet_contains_or_equals", "name": "INET_CONTAINS_OR_EQUALS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.inet_same_family", "name": "INET_SAME_FAMILY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.initcap", "name": "INITCAP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.inner_product", "name": "INNER_PRODUCT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.isnan", "name": "ISNAN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.json_agg", "name": "JSON_AGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.json_array_elements", "name": "JSON_ARRAY_ELEMENTS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.json_array_elements_text", "name": "JSON_ARRAY_ELEMENTS_TEXT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.json_array_length", "name": "JSON_ARRAY_LENGTH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.json_build_array", "name": "JSON_BUILD_ARRAY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.json_build_object", "name": "JSON_BUILD_OBJECT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.json_each", "name": "JSON_EACH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.json_each_text", "name": "JSON_EACH_TEXT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.json_extract_path", "name": "JSON_EXTRACT_PATH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.json_extract_path_text", "name": "JSON_EXTRACT_PATH_TEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.json_object", "name": "JSON_OBJECT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.json_object_agg", "name": "JSON_OBJECT_AGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.json_object_keys", "name": "JSON_OBJECT_KEYS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.json_populate_record", "name": "JSON_POPULATE_RECORD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.json_populate_recordset", "name": "JSON_POPULATE_RECORDSET", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.json_remove_path", "name": "JSON_REMOVE_PATH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.json_set", "name": "JSON_SET", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.json_strip_nulls", "name": "JSON_STRIP_NULLS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.json_to_record", "name": "JSON_TO_RECORD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.json_to_recordset", "name": "JSON_TO_RECORDSET", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.json_typeof", "name": "JSON_TYPEOF", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.json_valid", "name": "JSON_VALID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_agg", "name": "JSONB_AGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_array_elements", "name": "JSONB_ARRAY_ELEMENTS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_array_elements_text", "name": "JSONB_ARRAY_ELEMENTS_TEXT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_array_length", "name": "JSONB_ARRAY_LENGTH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_array_to_string_array", "name": "JSONB_ARRAY_TO_STRING_ARRAY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_build_array", "name": "JSONB_BUILD_ARRAY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_build_object", "name": "JSONB_BUILD_OBJECT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_each", "name": "JSONB_EACH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_each_text", "name": "JSONB_EACH_TEXT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_exists_any", "name": "JSONB_EXISTS_ANY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_extract_path", "name": "JSONB_EXTRACT_PATH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_extract_path_text", "name": "JSONB_EXTRACT_PATH_TEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_insert", "name": "JSONB_INSERT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_object", "name": "JSONB_OBJECT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_object_agg", "name": "JSONB_OBJECT_AGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_object_keys", "name": "JSONB_OBJECT_KEYS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_path_exists", "name": "JSONB_PATH_EXISTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_path_match", "name": "JSONB_PATH_MATCH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_path_query", "name": "JSONB_PATH_QUERY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_path_query_array", "name": "JSONB_PATH_QUERY_ARRAY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_path_query_first", "name": "JSONB_PATH_QUERY_FIRST", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_populate_record", "name": "JSONB_POPULATE_RECORD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_populate_recordset", "name": "JSONB_POPULATE_RECORDSET", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_pretty", "name": "JSONB_PRETTY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_set", "name": "JSONB_SET", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_strip_nulls", "name": "JSONB_STRIP_NULLS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_to_record", "name": "JSONB_TO_RECORD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_to_recordset", "name": "JSONB_TO_RECORDSET", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.jsonb_typeof", "name": "JSONB_TYPEOF", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.l1_distance", "name": "L1_DISTANCE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.l2_distance", "name": "L2_DISTANCE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.lag", "name": "LAG", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.last_value", "name": "LAST_VALUE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.lastval", "name": "LASTVAL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.lca", "name": "LCA", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.lead", "name": "LEAD", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.least", "name": "LEAST", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.left", "name": "LEFT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.length", "name": "LENGTH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.levenshtein", "name": "LEVENSHTEIN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.levenshtein_less_equal", "name": "LEVENSHTEIN_LESS_EQUAL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.like_escape", "name": "LIKE_ESCAPE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.ln", "name": "LN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.localtime", "name": "LOCALTIME", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.localtimestamp", "name": "LOCALTIMESTAMP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.log", "name": "LOG", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.lower", "name": "LOWER", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.lpad", "name": "LPAD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.ltree2text", "name": "LTREE2TEXT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.ltrim", "name": "LTRIM", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.make_date", "name": "MAKE_DATE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.make_timestamp", "name": "MAKE_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.make_timestamptz", "name": "MAKE_TIMESTAMPTZ", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.makeaclitem", "name": "MAKEACLITEM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.masklen", "name": "MASKLEN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.max", "name": "MAX", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.md5", "name": "MD5", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.metaphone", "name": "METAPHONE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.min", "name": "MIN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.mod", "name": "MOD", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.nameconcatoid", "name": "NAMECONCATOID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.netmask", "name": "NETMASK", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.nextval", "name": "NEXTVAL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.nlevel", "name": "NLEVEL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.not_ilike_escape", "name": "NOT_ILIKE_ESCAPE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.not_like_escape", "name": "NOT_LIKE_ESCAPE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.not_similar_to_escape", "name": "NOT_SIMILAR_TO_ESCAPE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.now", "name": "NOW", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.nth_value", "name": "NTH_VALUE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.ntile", "name": "NTILE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.nullif", "name": "NULLIF", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.num_nonnulls", "name": "NUM_NONNULLS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.num_nulls", "name": "NUM_NULLS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.obj_description", "name": "OBJ_DESCRIPTION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.octet_length", "name": "OCTET_LENGTH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.oidvectortypes", "name": "OIDVECTORTYPES", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.overlaps", "name": "OVERLAPS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.overlay", "name": "OVERLAY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.parse_date", "name": "PARSE_DATE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.parse_ident", "name": "PARSE_IDENT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.parse_interval", "name": "PARSE_INTERVAL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.parse_time", "name": "PARSE_TIME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.parse_timestamp", "name": "PARSE_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.parse_timetz", "name": "PARSE_TIMETZ", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.percent_rank", "name": "PERCENT_RANK", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.percentile_cont", "name": "PERCENTILE_CONT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.percentile_disc", "name": "PERCENTILE_DISC", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_backend_pid", "name": "PG_BACKEND_PID", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_collation_for", "name": "PG_COLLATION_FOR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.pg_column_is_updatable", "name": "PG_COLUMN_IS_UPDATABLE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_column_size", "name": "PG_COLUMN_SIZE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.pg_function_is_visible", "name": "PG_FUNCTION_IS_VISIBLE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_get_constraintdef", "name": "PG_GET_CONSTRAINTDEF", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_get_function_arg_default", "name": "PG_GET_FUNCTION_ARG_DEFAULT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.pg_get_function_arguments", "name": "PG_GET_FUNCTION_ARGUMENTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_get_function_identity_arguments", "name": "PG_GET_FUNCTION_IDENTITY_ARGUMENTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_get_function_result", "name": "PG_GET_FUNCTION_RESULT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_get_functiondef", "name": "PG_GET_FUNCTIONDEF", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_get_indexdef", "name": "PG_GET_INDEXDEF", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.pg_get_keywords", "name": "PG_GET_KEYWORDS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.pg_get_serial_sequence", "name": "PG_GET_SERIAL_SEQUENCE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_get_triggerdef", "name": "PG_GET_TRIGGERDEF", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_get_viewdef", "name": "PG_GET_VIEWDEF", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_has_role", "name": "PG_HAS_ROLE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_is_other_temp_schema", "name": "PG_IS_OTHER_TEMP_SCHEMA", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_my_temp_schema", "name": "PG_MY_TEMP_SCHEMA", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_options_to_table", "name": "PG_OPTIONS_TO_TABLE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.pg_relation_is_updatable", "name": "PG_RELATION_IS_UPDATABLE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_sequence_last_value", "name": "PG_SEQUENCE_LAST_VALUE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_sleep", "name": "PG_SLEEP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.pg_table_is_visible", "name": "PG_TABLE_IS_VISIBLE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_trigger_depth", "name": "PG_TRIGGER_DEPTH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pg_type_is_visible", "name": "PG_TYPE_IS_VISIBLE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.phraseto_tsquery", "name": "PHRASETO_TSQUERY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.pi", "name": "PI", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.plainto_tsquery", "name": "PLAINTO_TSQUERY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.position", "name": "POSITION", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "cockroachdb.function.postgis_addbbox", "name": "POSTGIS_ADDBBOX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.postgis_dropbbox", "name": "POSTGIS_DROPBBOX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.postgis_extensions_upgrade", "name": "POSTGIS_EXTENSIONS_UPGRADE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.postgis_full_version", "name": "POSTGIS_FULL_VERSION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.postgis_geos_version", "name": "POSTGIS_GEOS_VERSION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.postgis_getbbox", "name": "POSTGIS_GETBBOX", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.postgis_hasbbox", "name": "POSTGIS_HASBBOX", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.postgis_lib_build_date", "name": "POSTGIS_LIB_BUILD_DATE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.postgis_lib_version", "name": "POSTGIS_LIB_VERSION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.postgis_liblwgeom_version", "name": "POSTGIS_LIBLWGEOM_VERSION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.postgis_libxml_version", "name": "POSTGIS_LIBXML_VERSION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.postgis_proj_version", "name": "POSTGIS_PROJ_VERSION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.postgis_scripts_build_date", "name": "POSTGIS_SCRIPTS_BUILD_DATE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.postgis_scripts_installed", "name": "POSTGIS_SCRIPTS_INSTALLED", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.postgis_scripts_released", "name": "POSTGIS_SCRIPTS_RELEASED", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.postgis_version", "name": "POSTGIS_VERSION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.postgis_wagyu_version", "name": "POSTGIS_WAGYU_VERSION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.pow", "name": "POW", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.power", "name": "POWER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.prettify_statement", "name": "PRETTIFY_STATEMENT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.quote_ident", "name": "QUOTE_IDENT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.quote_literal", "name": "QUOTE_LITERAL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.quote_nullable", "name": "QUOTE_NULLABLE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.radians", "name": "RADIANS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.random", "name": "RANDOM", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.rank", "name": "RANK", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.regexp_extract", "name": "REGEXP_EXTRACT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.regexp_replace", "name": "REGEXP_REPLACE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.regexp_split_to_array", "name": "REGEXP_SPLIT_TO_ARRAY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.regexp_split_to_table", "name": "REGEXP_SPLIT_TO_TABLE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.regr_avgx", "name": "REGR_AVGX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.regr_avgy", "name": "REGR_AVGY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.regr_count", "name": "REGR_COUNT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.regr_intercept", "name": "REGR_INTERCEPT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.regr_r2", "name": "REGR_R2", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.regr_slope", "name": "REGR_SLOPE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.regr_sxx", "name": "REGR_SXX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.regr_sxy", "name": "REGR_SXY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.regr_syy", "name": "REGR_SYY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.rehome_row", "name": "REHOME_ROW", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.repeat", "name": "REPEAT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.replace", "name": "REPLACE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.reverse", "name": "REVERSE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.right", "name": "RIGHT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.round", "name": "ROUND", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.row", "name": "ROW", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.row_number", "name": "ROW_NUMBER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.row_to_json", "name": "ROW_TO_JSON", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.rpad", "name": "RPAD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.rtrim", "name": "RTRIM", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.session_user", "name": "SESSION_USER", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.set_bit", "name": "SET_BIT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.set_byte", "name": "SET_BYTE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.set_config", "name": "SET_CONFIG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.set_masklen", "name": "SET_MASKLEN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.setseed", "name": "SETSEED", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.setval", "name": "SETVAL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.sha1", "name": "SHA1", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.sha224", "name": "SHA224", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.sha256", "name": "SHA256", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.sha384", "name": "SHA384", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.sha512", "name": "SHA512", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.shobj_description", "name": "SHOBJ_DESCRIPTION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.show_trgm", "name": "SHOW_TRGM", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.sign", "name": "SIGN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.similar_escape", "name": "SIMILAR_ESCAPE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.similar_to_escape", "name": "SIMILAR_TO_ESCAPE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.similarity", "name": "SIMILARITY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.sin", "name": "SIN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.sind", "name": "SIND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.sinh", "name": "SINH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.soundex", "name": "SOUNDEX", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.split_part", "name": "SPLIT_PART", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.sqrdiff", "name": "SQRDIFF", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.sqrt", "name": "SQRT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_3dlength", "name": "ST_3DLENGTH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_addmeasure", "name": "ST_ADDMEASURE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_addpoint", "name": "ST_ADDPOINT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_affine", "name": "ST_AFFINE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_angle", "name": "ST_ANGLE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_area", "name": "ST_AREA", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_area2d", "name": "ST_AREA2D", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_asbinary", "name": "ST_ASBINARY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_asencodedpolyline", "name": "ST_ASENCODEDPOLYLINE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_asewkb", "name": "ST_ASEWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_asewkt", "name": "ST_ASEWKT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_asgeojson", "name": "ST_ASGEOJSON", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_ashexewkb", "name": "ST_ASHEXEWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_ashexwkb", "name": "ST_ASHEXWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_askml", "name": "ST_ASKML", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_asmvt", "name": "ST_ASMVT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_asmvtgeom", "name": "ST_ASMVTGEOM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_astext", "name": "ST_ASTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_astwkb", "name": "ST_ASTWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_azimuth", "name": "ST_AZIMUTH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_bdpolyfromtext", "name": "ST_BDPOLYFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_boundary", "name": "ST_BOUNDARY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_box2dfromgeohash", "name": "ST_BOX2DFROMGEOHASH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_buffer", "name": "ST_BUFFER", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_centroid", "name": "ST_CENTROID", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_clipbybox2d", "name": "ST_CLIPBYBOX2D", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_closestpoint", "name": "ST_CLOSESTPOINT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_collect", "name": "ST_COLLECT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_collectionextract", "name": "ST_COLLECTIONEXTRACT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_collectionhomogenize", "name": "ST_COLLECTIONHOMOGENIZE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_combinebbox", "name": "ST_COMBINEBBOX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_contains", "name": "ST_CONTAINS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_containsproperly", "name": "ST_CONTAINSPROPERLY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_convexhull", "name": "ST_CONVEXHULL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_coorddim", "name": "ST_COORDDIM", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_coveredby", "name": "ST_COVEREDBY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_covers", "name": "ST_COVERS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_crosses", "name": "ST_CROSSES", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_dfullywithin", "name": "ST_DFULLYWITHIN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_dfullywithinexclusive", "name": "ST_DFULLYWITHINEXCLUSIVE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_difference", "name": "ST_DIFFERENCE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_dimension", "name": "ST_DIMENSION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_disjoint", "name": "ST_DISJOINT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_distance", "name": "ST_DISTANCE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_distancesphere", "name": "ST_DISTANCESPHERE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_distancespheroid", "name": "ST_DISTANCESPHEROID", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_dwithin", "name": "ST_DWITHIN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_dwithinexclusive", "name": "ST_DWITHINEXCLUSIVE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_endpoint", "name": "ST_ENDPOINT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_envelope", "name": "ST_ENVELOPE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_equals", "name": "ST_EQUALS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_estimatedextent", "name": "ST_ESTIMATEDEXTENT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_expand", "name": "ST_EXPAND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_extent", "name": "ST_EXTENT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_exteriorring", "name": "ST_EXTERIORRING", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_flipcoordinates", "name": "ST_FLIPCOORDINATES", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_force2d", "name": "ST_FORCE2D", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_force3d", "name": "ST_FORCE3D", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_force3dm", "name": "ST_FORCE3DM", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_force3dz", "name": "ST_FORCE3DZ", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_force4d", "name": "ST_FORCE4D", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_forcecollection", "name": "ST_FORCECOLLECTION", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_forcepolygonccw", "name": "ST_FORCEPOLYGONCCW", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_forcepolygoncw", "name": "ST_FORCEPOLYGONCW", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_frechetdistance", "name": "ST_FRECHETDISTANCE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_generatepoints", "name": "ST_GENERATEPOINTS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_geogfromewkb", "name": "ST_GEOGFROMEWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_geogfromewkt", "name": "ST_GEOGFROMEWKT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_geogfromgeojson", "name": "ST_GEOGFROMGEOJSON", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_geogfromtext", "name": "ST_GEOGFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_geogfromwkb", "name": "ST_GEOGFROMWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_geographyfromtext", "name": "ST_GEOGRAPHYFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_geohash", "name": "ST_GEOHASH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_geomcollfromtext", "name": "ST_GEOMCOLLFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_geomcollfromwkb", "name": "ST_GEOMCOLLFROMWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_geometryfromtext", "name": "ST_GEOMETRYFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_geometryn", "name": "ST_GEOMETRYN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_geometrytype", "name": "ST_GEOMETRYTYPE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_geomfromewkb", "name": "ST_GEOMFROMEWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_geomfromewkt", "name": "ST_GEOMFROMEWKT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_geomfromgeohash", "name": "ST_GEOMFROMGEOHASH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_geomfromgeojson", "name": "ST_GEOMFROMGEOJSON", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_geomfromtext", "name": "ST_GEOMFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_geomfromwkb", "name": "ST_GEOMFROMWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_hasarc", "name": "ST_HASARC", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_hausdorffdistance", "name": "ST_HAUSDORFFDISTANCE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_interiorringn", "name": "ST_INTERIORRINGN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_intersection", "name": "ST_INTERSECTION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_intersects", "name": "ST_INTERSECTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_isclosed", "name": "ST_ISCLOSED", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_iscollection", "name": "ST_ISCOLLECTION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_isempty", "name": "ST_ISEMPTY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_ispolygonccw", "name": "ST_ISPOLYGONCCW", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_ispolygoncw", "name": "ST_ISPOLYGONCW", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_isring", "name": "ST_ISRING", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_issimple", "name": "ST_ISSIMPLE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_isvalid", "name": "ST_ISVALID", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_isvalidreason", "name": "ST_ISVALIDREASON", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_isvalidtrajectory", "name": "ST_ISVALIDTRAJECTORY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_length", "name": "ST_LENGTH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_length2d", "name": "ST_LENGTH2D", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_linecrossingdirection", "name": "ST_LINECROSSINGDIRECTION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_linefromencodedpolyline", "name": "ST_LINEFROMENCODEDPOLYLINE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_linefrommultipoint", "name": "ST_LINEFROMMULTIPOINT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_linefromtext", "name": "ST_LINEFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_linefromwkb", "name": "ST_LINEFROMWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_lineinterpolatepoint", "name": "ST_LINEINTERPOLATEPOINT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_lineinterpolatepoints", "name": "ST_LINEINTERPOLATEPOINTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_linelocatepoint", "name": "ST_LINELOCATEPOINT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_linemerge", "name": "ST_LINEMERGE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_linestringfromtext", "name": "ST_LINESTRINGFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_linestringfromwkb", "name": "ST_LINESTRINGFROMWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_linesubstring", "name": "ST_LINESUBSTRING", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_longestline", "name": "ST_LONGESTLINE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_m", "name": "ST_M", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_makebox2d", "name": "ST_MAKEBOX2D", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_makeenvelope", "name": "ST_MAKEENVELOPE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_makeline", "name": "ST_MAKELINE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_makepoint", "name": "ST_MAKEPOINT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_makepointm", "name": "ST_MAKEPOINTM", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_makepolygon", "name": "ST_MAKEPOLYGON", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_makevalid", "name": "ST_MAKEVALID", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_maxdistance", "name": "ST_MAXDISTANCE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_memcollect", "name": "ST_MEMCOLLECT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_memsize", "name": "ST_MEMSIZE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_memunion", "name": "ST_MEMUNION", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_minimumboundingcircle", "name": "ST_MINIMUMBOUNDINGCIRCLE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_minimumboundingradius", "name": "ST_MINIMUMBOUNDINGRADIUS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_minimumclearance", "name": "ST_MINIMUMCLEARANCE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_minimumclearanceline", "name": "ST_MINIMUMCLEARANCELINE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_mlinefromtext", "name": "ST_MLINEFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_mlinefromwkb", "name": "ST_MLINEFROMWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_mpointfromtext", "name": "ST_MPOINTFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_mpointfromwkb", "name": "ST_MPOINTFROMWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_mpolyfromtext", "name": "ST_MPOLYFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_mpolyfromwkb", "name": "ST_MPOLYFROMWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_multi", "name": "ST_MULTI", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_multilinefromtext", "name": "ST_MULTILINEFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_multilinefromwkb", "name": "ST_MULTILINEFROMWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_multilinestringfromtext", "name": "ST_MULTILINESTRINGFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_multilinestringfromwkb", "name": "ST_MULTILINESTRINGFROMWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_multipointfromtext", "name": "ST_MULTIPOINTFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_multipointfromwkb", "name": "ST_MULTIPOINTFROMWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_multipolyfromtext", "name": "ST_MULTIPOLYFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_multipolyfromwkb", "name": "ST_MULTIPOLYFROMWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_multipolygonfromtext", "name": "ST_MULTIPOLYGONFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_multipolygonfromwkb", "name": "ST_MULTIPOLYGONFROMWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_ndims", "name": "ST_NDIMS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_node", "name": "ST_NODE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_normalize", "name": "ST_NORMALIZE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_npoints", "name": "ST_NPOINTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_nrings", "name": "ST_NRINGS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_numgeometries", "name": "ST_NUMGEOMETRIES", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_numinteriorring", "name": "ST_NUMINTERIORRING", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_numinteriorrings", "name": "ST_NUMINTERIORRINGS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_numpoints", "name": "ST_NUMPOINTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_orderingequals", "name": "ST_ORDERINGEQUALS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_orientedenvelope", "name": "ST_ORIENTEDENVELOPE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_overlaps", "name": "ST_OVERLAPS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_perimeter", "name": "ST_PERIMETER", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_perimeter2d", "name": "ST_PERIMETER2D", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_point", "name": "ST_POINT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_pointfromgeohash", "name": "ST_POINTFROMGEOHASH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_pointfromtext", "name": "ST_POINTFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_pointfromwkb", "name": "ST_POINTFROMWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_pointinsidecircle", "name": "ST_POINTINSIDECIRCLE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_pointn", "name": "ST_POINTN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_pointonsurface", "name": "ST_POINTONSURFACE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_points", "name": "ST_POINTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_polyfromtext", "name": "ST_POLYFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_polyfromwkb", "name": "ST_POLYFROMWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_polygon", "name": "ST_POLYGON", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_polygonfromtext", "name": "ST_POLYGONFROMTEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_polygonfromwkb", "name": "ST_POLYGONFROMWKB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_project", "name": "ST_PROJECT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_relate", "name": "ST_RELATE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_relatematch", "name": "ST_RELATEMATCH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_removepoint", "name": "ST_REMOVEPOINT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_removerepeatedpoints", "name": "ST_REMOVEREPEATEDPOINTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_reverse", "name": "ST_REVERSE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_rotate", "name": "ST_ROTATE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_rotatex", "name": "ST_ROTATEX", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_rotatey", "name": "ST_ROTATEY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_rotatez", "name": "ST_ROTATEZ", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_s2covering", "name": "ST_S2COVERING", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_scale", "name": "ST_SCALE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_segmentize", "name": "ST_SEGMENTIZE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_setpoint", "name": "ST_SETPOINT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_setsrid", "name": "ST_SETSRID", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_sharedpaths", "name": "ST_SHAREDPATHS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_shiftlongitude", "name": "ST_SHIFTLONGITUDE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_shortestline", "name": "ST_SHORTESTLINE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_simplify", "name": "ST_SIMPLIFY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_simplifypreservetopology", "name": "ST_SIMPLIFYPRESERVETOPOLOGY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_snap", "name": "ST_SNAP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_snaptogrid", "name": "ST_SNAPTOGRID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_srid", "name": "ST_SRID", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_startpoint", "name": "ST_STARTPOINT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_subdivide", "name": "ST_SUBDIVIDE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_summary", "name": "ST_SUMMARY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_swapordinates", "name": "ST_SWAPORDINATES", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_symdifference", "name": "ST_SYMDIFFERENCE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_symmetricdifference", "name": "ST_SYMMETRICDIFFERENCE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_tileenvelope", "name": "ST_TILEENVELOPE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_touches", "name": "ST_TOUCHES", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_transform", "name": "ST_TRANSFORM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_translate", "name": "ST_TRANSLATE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_transscale", "name": "ST_TRANSSCALE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_unaryunion", "name": "ST_UNARYUNION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_union", "name": "ST_UNION", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.st_voronoilines", "name": "ST_VORONOILINES", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_voronoipolygons", "name": "ST_VORONOIPOLYGONS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_within", "name": "ST_WITHIN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_wkbtosql", "name": "ST_WKBTOSQL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_wkttosql", "name": "ST_WKTTOSQL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_x", "name": "ST_X", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_xmax", "name": "ST_XMAX", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_xmin", "name": "ST_XMIN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_y", "name": "ST_Y", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_ymax", "name": "ST_YMAX", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_ymin", "name": "ST_YMIN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_z", "name": "ST_Z", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.st_zmflag", "name": "ST_ZMFLAG", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.statement_timestamp", "name": "STATEMENT_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.stddev", "name": "STDDEV", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.stddev_pop", "name": "STDDEV_POP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.stddev_samp", "name": "STDDEV_SAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.strftime", "name": "STRFTIME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.string_agg", "name": "STRING_AGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.string_to_array", "name": "STRING_TO_ARRAY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.strpos", "name": "STRPOS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.strptime", "name": "STRPTIME", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.subltree", "name": "SUBLTREE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.subpath", "name": "SUBPATH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.substr", "name": "SUBSTR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.substring", "name": "SUBSTRING", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.substring_index", "name": "SUBSTRING_INDEX", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.sum", "name": "SUM", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.sum_int", "name": "SUM_INT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.tan", "name": "TAN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.tand", "name": "TAND", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.tanh", "name": "TANH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.text2ltree", "name": "TEXT2LTREE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.timeofday", "name": "TIMEOFDAY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.timezone", "name": "TIMEZONE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.to_char", "name": "TO_CHAR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.to_char_with_style", "name": "TO_CHAR_WITH_STYLE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.to_date", "name": "TO_DATE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.to_english", "name": "TO_ENGLISH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.to_hex", "name": "TO_HEX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.to_ip", "name": "TO_IP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.to_json", "name": "TO_JSON", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.to_jsonb", "name": "TO_JSONB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.to_number", "name": "TO_NUMBER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.to_regclass", "name": "TO_REGCLASS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.to_regnamespace", "name": "TO_REGNAMESPACE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.to_regproc", "name": "TO_REGPROC", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.to_regprocedure", "name": "TO_REGPROCEDURE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.to_regrole", "name": "TO_REGROLE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.to_regtype", "name": "TO_REGTYPE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.to_timestamp", "name": "TO_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.to_tsquery", "name": "TO_TSQUERY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.to_tsvector", "name": "TO_TSVECTOR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.to_uuid", "name": "TO_UUID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.transaction_timestamp", "name": "TRANSACTION_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.translate", "name": "TRANSLATE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.trim", "name": "TRIM", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "cockroachdb.function.trunc", "name": "TRUNC", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.ts_parse", "name": "TS_PARSE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.ts_rank", "name": "TS_RANK", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.ulid_to_uuid", "name": "ULID_TO_UUID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.unaccent", "name": "UNACCENT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.unique_rowid", "name": "UNIQUE_ROWID", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.unnest", "name": "UNNEST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.unordered_unique_rowid", "name": "UNORDERED_UNIQUE_ROWID", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.upper", "name": "UPPER", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.uuid_generate_v1", "name": "UUID_GENERATE_V1", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.uuid_generate_v1mc", "name": "UUID_GENERATE_V1MC", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.uuid_generate_v3", "name": "UUID_GENERATE_V3", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.uuid_generate_v4", "name": "UUID_GENERATE_V4", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.uuid_generate_v5", "name": "UUID_GENERATE_V5", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.uuid_nil", "name": "UUID_NIL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.uuid_ns_dns", "name": "UUID_NS_DNS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.uuid_ns_oid", "name": "UUID_NS_OID", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.uuid_ns_url", "name": "UUID_NS_URL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.uuid_ns_x500", "name": "UUID_NS_X500", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.uuid_to_ulid", "name": "UUID_TO_ULID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.uuid_v4", "name": "UUID_V4", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.var_pop", "name": "VAR_POP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.var_samp", "name": "VAR_SAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.variance", "name": "VARIANCE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.vector_dims", "name": "VECTOR_DIMS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.vector_norm", "name": "VECTOR_NORM", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.version", "name": "VERSION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.width_bucket", "name": "WIDTH_BUCKET", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "cockroachdb.function.with_max_staleness", "name": "WITH_MAX_STALENESS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.with_min_timestamp", "name": "WITH_MIN_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.workload_index_recs", "name": "WORKLOAD_INDEX_RECS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "cockroachdb.function.xor_agg", "name": "XOR_AGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}

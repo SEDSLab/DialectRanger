@@ -1,0 +1,58 @@
+{
+  "dbms": "sqlserver",
+  "feature_type": "function",
+  "total_drafts": 192,
+  "clean_validated_features": 108,
+  "validated_with_warnings": 48,
+  "invalid_features": 36,
+  "validation_summary": {
+    "schema_invalid": 36,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 38,
+    "no_description_claims": 29,
+    "no_valid_syntax": 36,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 2,
+    "large_evidence_block": 0,
+    "long_examples": 18,
+    "alias_like_feature": 2
+  },
+  "sample_clean_features": [
+    "sqlserver.function.abs",
+    "sqlserver.function.acos",
+    "sqlserver.function.ascii",
+    "sqlserver.function.asin",
+    "sqlserver.function.atan",
+    "sqlserver.function.bit_count",
+    "sqlserver.function.bit_length",
+    "sqlserver.function.ceiling",
+    "sqlserver.function.certencoded",
+    "sqlserver.function.char"
+  ],
+  "sample_warning_features": [
+    "sqlserver.function.app_name",
+    "sqlserver.function.atn2",
+    "sqlserver.function.bit",
+    "sqlserver.function.category",
+    "sqlserver.function.century",
+    "sqlserver.function.change_tracking_min_valid_version",
+    "sqlserver.function.changetable",
+    "sqlserver.function.check",
+    "sqlserver.function.convert",
+    "sqlserver.function.curdate"
+  ],
+  "sample_invalid_features": [
+    "sqlserver.function.applock_mode",
+    "sqlserver.function.applock_test",
+    "sqlserver.function.assemblyproperty",
+    "sqlserver.function.certprivatekey",
+    "sqlserver.function.col_length",
+    "sqlserver.function.current_user",
+    "sqlserver.function.cursor_status",
+    "sqlserver.function.date",
+    "sqlserver.function.filegroup_id",
+    "sqlserver.function.fn_syscollector_get_execution_details"
+  ],
+  "generated_at": "2026-08-06T19:56:09.909212+08:00"
+}

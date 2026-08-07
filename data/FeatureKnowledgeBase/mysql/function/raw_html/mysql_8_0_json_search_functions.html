@@ -1,0 +1,2127 @@
+<!DOCTYPE html>
+<html lang="en" class="svg no-js">
+<head>
+    <meta charset="utf-8" />
+    <!--[if IE ]>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Language" content="en">
+
+    <title>MySQL :: MySQL 8.0 Reference Manual :: 14.17.3 Functions That Search JSON Values</title>
+    <link rel="stylesheet" media="all" href="https://labs.mysql.com/common/css/main-20250803.min.css" />
+            <link rel="stylesheet" media="all" href="https://labs.mysql.com/common/css/docs-20250803.min.css" />
+    
+    
+    <link rel="stylesheet" media="print" href="https://labs.mysql.com/common/css/print-20250803.min.css" />
+
+    
+    
+    
+    
+            <link rel="contents" href="index.html" title="MySQL 8.0 Reference Manual" />
+<link rel="start" href="index.html" title="MySQL 8.0 Reference Manual" />
+<link rel="prev" href="json-creation-functions.html" title="14.17.2 Functions That Create JSON Values" />
+<link rel="next" href="json-modification-functions.html?ff=nopfpls" title="14.17.4 Functions That Modify JSON Values" />
+<link rel="up" href="json-functions.html" title="14.17 JSON Functions" />
+
+    
+    <link rel="shortcut icon" href="https://labs.mysql.com/common/themes/sakila/favicon.ico" />
+    <script async="async" type="text/javascript" src='https://consent.truste.com/notice?domain=oracle.com&c=teconsent&js=bb&noticeType=bb&text=true&cdn=1&pcookie&gtm=1' crossorigin></script>
+    <script src="https://www.oracle.com/assets/truste-oraclelib.js"></script>
+    <script>(function(H){ H.className=H.className.replace(/\bno-js\b/,'js') })(document.documentElement)</script>
+    <script src="https://labs.mysql.com/common/js/site-20250121.min.js"></script>
+
+    
+    
+    <!--[if lt IE 9]>
+        <script src="https://labs.mysql.com/common/js/polyfills/html5shiv-printshiv-3.7.2.min.js"></script>
+        <script src="https://labs.mysql.com/common/js/polyfills/respond-1.4.2.min.js"></script>
+    <![endif]-->
+        <!--[if IE 9]>
+        <style>#docs-sidebar-toc { box-sizing: content-box; }</style>
+    <![endif]-->
+        
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="E6BB6-B37B4-898B7-F97BA-BBCDB",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"E6BB6-B37B4-898B7-F97BA-BBCDB";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="tx7bjbfykvyok2tumxsa-f-726eafb36-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1983233","ak.ai":parseInt("802521",10),"ak.ol":"0","ak.cr":0,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"174260a6","ak.r":34657,"ak.a2":n,"ak.m":"dscx","ak.n":"essl","ak.cport":46021,"ak.gh":"23.32.20.179","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1786013156","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==g/6Olcr059uza8r+gzvH9PrHzNjjmembfE/A1IBTK4wsQ+zEa6df+e0211UFHRHLOF7iUIwWql03Ul8+HgXHLqc0Dgochcxba8okbJo85GgHeLwiekt4O/JnCcma1bZ8OQvhVIpewGXUoGQXIbXWnCJ0wvApLES6DmKbOBvDw8ID3Djv+jYRZj38FW4b9b5PS3je4IIRXvFIKwMywRTi+hDKY/Z3STLETDkyTefO4/25bND2hq/AVB6pxVHZ5dehyKSSeSeV0LxMstdNRD0dAocsbzOTQVT8ZBD2Q5ouIZ2ZDBFHl651VWoQZV0yo0fx3BR+FBr8IPcNV+/k388GrwPt1qItwNRjiyHXmFnjpRXvLkOXfUC99yWV8yshElR4c3zvI4TGJR3MRsn857u1pkUZ/vKdW6n0EtPHGFI3bMs=","ak.pv":"21","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body class="no-sidebar full-page dev">
+<a class="skip-main" href="#main">Skip to Main Content</a>
+<div class="page-wrapper">
+    <header>
+
+                        <a href="https://dev.mysql.com/" aria-label="MySQL Home" title="MySQL" id="l1-home-link"></a>
+        
+        <div id="l1-nav-container">
+            <div id="l1-line1">
+                <div id="l1-lhs">
+                    <div id="l1-slogan">
+                        The world's most popular open source database
+                    </div>
+                    <div id="l1-search-box">
+                        <form id="l1-search-form" method="get" action="https://search.oracle.com/mysql">
+                        <input type="hidden" name="app" value="mysql" />
+                        <input id="l1-search-input" type="search" class="icon-search" placeholder="Search" aria-label="Search" name="q" />
+                        </form>
+                    </div>
+                    <div id="l1-auth-links">
+                        <nav aria-label="Contact/Login Navigation" role="navigation">
+                            <a href="https://www.mysql.com/about/contact/"><b>Contact MySQL</b></a>
+                            <span id="l1-contact-separator">&nbsp;|&nbsp;</span>
+                            <span id="l1-contact-separator-br"><br /></span>
+                                                             <a href="https://dev.mysql.com/auth/login/?dest=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F8.0%2Fen%2Fjson-search-functions.html">Login</a> &nbsp;|&nbsp;
+                                 <a href="https://dev.mysql.com/auth/register/">Register</a>
+                                                    </nav>
+                    </div>
+                </div>
+            </div>
+            <div id="l1-line2">
+                <nav aria-label="Primary Navigation" role="navigation">
+                    <ul id="l1-nav">
+                        <li>
+                            <a href="https://www.mysql.com/"><!-- <span class="icon-sakila"></span>  -->MySQL.com</a>
+                        </li><li>
+                            <a href="https://www.mysql.com/downloads/"><!-- <span class="icon-download-thin"></span>  -->Downloads</a>
+                        </li><li class="active">
+                            <a href="/doc/"><!-- <span class="icon-books"></span>  -->Documentation</a>
+                        </li><li>
+                            <a href="/"><!-- <span class="icon-code"></span>  -->Developer Zone</a>
+                        </li>                    </ul>
+                </nav>
+                <div class="social-icons">
+                    <nav aria-label="Social Navigation" role="navigation">
+                        <a aria-label="Join us on Facebook" title="Join us on Facebook" href="http://www.facebook.com/mysql"><span class="icon-facebook"></span></a>
+                        <a aria-label="Follow us on X" title="Follow us on X" href="https://x.com/mysql"><span class="icon-x-twitter"></span></a>
+                        <a aria-label="Follow us on LinkedIn" title="Follow us on LinkedIn" href="https://www.linkedin.com/company/mysql"><span class="icon-linkedin"></span></a>
+                        <a aria-label="Visit our YouTube channel" title="Visit our YouTube channel" href="http://www.youtube.com/mysqlchannel"><span class="icon-youtube"></span></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="sub-header">
+            <div id="l2-nav-container">
+                <div id="l2-nav-toggle">
+                    <span class="icon-three-bars"></span>
+                </div>
+                                                                                        <a class="button nav-button-3" href="/"><span class="icon-code"></span> Developer Zone</a>
+                                                                                                                                    <a class="button nav-button-2" href="https://www.mysql.com/downloads/"><span class="icon-download-thin"></span> Downloads</a>
+                                                                                                <a class="button nav-button-1" href="https://www.mysql.com/"><span class="icon-sakila"></span> MySQL.com</a>
+                                                                        <div id="l2-search-toggle">
+                    <span class="icon-search"></span>
+                </div>
+                <div id="l2-site-icon">
+                                                                                                                                                                                                    <span class="icon-books"></span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
+                <div id="l1-section-title">
+                    <span id="l1-section-label">
+                        <a href="/doc/">Documentation</a>
+                    </span>
+                </div>
+                <nav aria-label="Secondary Navigation" role="navigation">
+                    
+
+<ul id="l2-nav">
+            	<li class="active"><a class="active " href="/doc/refman/en/">MySQL Server</a>
+    			</li>
+	        	<li class=""><a  href="/doc/index-enterprise.html">MySQL Enterprise</a>
+    			</li>
+	        	<li class=""><a  href="/doc/workbench/en/">Workbench</a>
+    			</li>
+	        	<li class=""><a  href="/doc/mysql-shell/en/mysql-innodb-cluster.html">InnoDB Cluster</a>
+    			</li>
+	        	<li class=""><a  href="/doc/index-cluster.html">MySQL NDB Cluster</a>
+    			</li>
+	        	<li class=""><a  href="/doc/index-connectors.html">Connectors</a>
+    			</li>
+	        	<li class=" last"><a  href="/doc/index-other.html">More</a>
+    			</li>
+	                        <li class="other-section"><a href="https://www.mysql.com/">MySQL.com</a></li>
+                            <li class="other-section"><a href="https://www.mysql.com/downloads/">Downloads</a></li>
+                                        <li class="other-section"><a href="/">Developer Zone</a></li>
+            </ul>
+                </nav>
+            </div>
+            <div id="l3-search-container"></div>
+            <div id="top-orange"><span id="section-nav">Section Menu: &nbsp; </span></div>
+        </div>
+    </header>
+        <div id="page">
+                        <div role="main" id="main" tabindex="-1">
+
+            
+                
+            
+<div>
+    <div id="docs-sidebar-toc" class="">
+    <div id="docs-toc-inner">
+        <div class="docs-sidebar-header" id="docs-nav-header">
+            <a class="docs-show-hide-nav" id="docs-hide-nav" href="" title="Hide Sidebar" aria-label="Hide Sidebar"><span class="icon-arrow-small-left"></span></a>
+            <div class="docs-nav-links">
+                                    
+    <a href="json-creation-functions.html"
+        aria-label="Previous" title="Previous: Functions That Create JSON Values"><span
+        class="icon-chevron-left"></span></a>
+<a href="index.html" aria-label="Start" title="Start"><span class="icon-book-open"></span></a>
+        <a aria-label="Up" href="json-functions.html" title="Up: JSON Functions"><span class="icon-chevron-up"></span></a>
+    <a href="json-modification-functions.html" aria-label="Next"
+        title="Next: Functions That Modify JSON Values"><span
+        class="icon-chevron-right"></span></a>
+                            </div>
+        </div>
+                    
+<div id="docs-sidebar-search-container">
+    <div id="docs-sidebar-search-box">
+        <form method="get" action="/doc/search/">
+            <input type="hidden" name="d" id="d" value="201" />
+            <input type="hidden" name="p" id="p" value="1" />
+            <input type="text" name="q" id="q" title="Search this Manual"
+                value="Search this Manual"
+                style="color: #bbb;"
+                onfocus="if(this.value == 'Search this Manual') {this.value='';this.style.color='#555';}"
+                onblur="if(this.value == '') {this.value='Search this Manual';this.style.color='#bbb';}" />
+
+            <button class="docs-sidebar-search-btn" aria-label="Search" title="Search" type="submit">
+                <span class="icon-search"></span>
+            </button>
+        </form>
+    </div>
+</div>
+                <div class="docs-sidebar-nav">
+            <a class="docs-icon-home" href="/doc/"><span class="icon-home"></span>Documentation Home</a><hr />
+            <div class="docs-sidebar-mtitle">MySQL 8.0 Reference Manual</div>
+            <nav class="doctoc" id="doc-201">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="preface.html">Preface and Legal Notices</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="introduction.html">General Information</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="installing.html">Installing MySQL</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="upgrading.html">Upgrading MySQL</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="downgrading.html">Downgrading MySQL</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="tutorial.html">Tutorial</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="programs.html">MySQL Programs</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="server-administration.html">MySQL Server Administration</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="security.html">Security</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="backup-and-recovery.html">Backup and Recovery</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="optimization.html">Optimization</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="language-structure.html">Language Structure</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="charset.html">Character Sets, Collations, Unicode</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="data-types.html">Data Types</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-down"></span></a></div><div class="docs-sidebar-nav-link"><a href="functions.html">Functions and Operators</a></div></div>                        <div class="docs-submenu">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="built-in-function-reference.html">Built-In Function and Operator Reference</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="loadable-function-reference.html">Loadable Function Reference</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="type-conversion.html">Type Conversion in Expression Evaluation</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="non-typed-operators.html">Operators</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="operator-precedence.html">Operator Precedence</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="comparison-operators.html">Comparison Functions and Operators</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="logical-operators.html">Logical Operators</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="assignment-operators.html">Assignment Operators</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="flow-control-functions.html">Flow Control Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="numeric-functions.html">Numeric Functions and Operators</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="arithmetic-functions.html">Arithmetic Operators</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="mathematical-functions.html">Mathematical Functions</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="date-and-time-functions.html">Date and Time Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="string-functions.html">String Functions and Operators</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="string-comparison-functions.html">String Comparison Functions and Operators</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="regexp.html">Regular Expressions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="string-functions-charset.html">Character Set and Collation of Function Results</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="fulltext-search.html">Full-Text Search Functions</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fulltext-natural-language.html">Natural Language Full-Text Searches</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fulltext-boolean.html">Boolean Full-Text Searches</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fulltext-query-expansion.html">Full-Text Searches with Query Expansion</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fulltext-stopwords.html">Full-Text Stopwords</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fulltext-restrictions.html">Full-Text Restrictions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fulltext-fine-tuning.html">Fine-Tuning MySQL Full-Text Search</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="full-text-adding-collation.html">Adding a User-Defined Collation for Full-Text Indexing</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fulltext-search-ngram.html">ngram Full-Text Parser</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fulltext-search-mecab.html">MeCab Full-Text Parser Plugin</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="cast-functions.html">Cast Functions and Operators</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="xml-functions.html">XML Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="bit-functions.html">Bit Functions and Operators</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="encryption-functions.html">Encryption and Compression Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="locking-functions.html">Locking Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="information-functions.html">Information Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="spatial-analysis-functions.html">Spatial Analysis Functions</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-function-reference.html">Spatial Function Reference</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-function-argument-handling.html">Argument Handling by Spatial Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-wkt-functions.html">Functions That Create Geometry Values from WKT Values</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-wkb-functions.html">Functions That Create Geometry Values from WKB Values</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-mysql-specific-functions.html">MySQL-Specific Functions That Create Geometry Values</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-format-conversion-functions.html">Geometry Format Conversion Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="gis-property-functions.html">Geometry Property Functions</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-general-property-functions.html">General Geometry Property Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-point-property-functions.html">Point Property Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-linestring-property-functions.html">LineString and MultiLineString Property Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-polygon-property-functions.html">Polygon and MultiPolygon Property Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-geometrycollection-property-functions.html">GeometryCollection Property Functions</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-operator-functions.html">Spatial Operator Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="spatial-relation-functions.html">Functions That Test Spatial Relations Between Geometry Objects</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-relation-functions-object-shapes.html">Spatial Relation Functions That Use Object Shapes</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-relation-functions-mbr.html">Spatial Relation Functions That Use Minimum Bounding Rectangles</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-geohash-functions.html">Spatial Geohash Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-geojson-functions.html">Spatial GeoJSON Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-aggregate-functions.html">Spatial Aggregate Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-convenience-functions.html">Spatial Convenience Functions</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-down"></span></a></div><div class="docs-sidebar-nav-link"><a href="json-functions.html">JSON Functions</a></div></div>                        <div class="docs-submenu">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="json-function-reference.html">JSON Function Reference</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="json-creation-functions.html">Functions That Create JSON Values</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link current"><a href="json-search-functions.html">Functions That Search JSON Values</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="json-modification-functions.html">Functions That Modify JSON Values</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="json-attribute-functions.html">Functions That Return JSON Value Attributes</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="json-table-functions.html">JSON Table Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="json-validation-functions.html">JSON Schema Validation Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="json-utility-functions.html">JSON Utility Functions</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="replication-functions.html">Replication Functions</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="group-replication-functions.html">Group Replication Functions</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="group-replication-functions-for-new-primary.html">Function which Configures Group Replication Primary</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="group-replication-functions-for-mode.html">Functions which Configure the Group Replication Mode</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="group-replication-functions-for-maximum-consensus.html">Functions to Inspect and Configure the Maximum Consensus Instances of a
+          Group</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="group-replication-functions-for-communication-protocol.html">Functions to Inspect and Set the Group Replication Communication
+Protocol Version</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="group-replication-functions-for-member-actions.html">Functions to Set and Reset Group Replication Member Actions</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gtid-functions.html">Functions Used with Global Transaction Identifiers (GTIDs)</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="replication-functions-async-failover.html">Asynchronous Replication Channel Failover Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="replication-functions-synchronization.html">Position-Based Synchronization Functions</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="aggregate-functions-and-modifiers.html">Aggregate Functions</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="aggregate-functions.html">Aggregate Function Descriptions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="group-by-modifiers.html">GROUP BY Modifiers</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="group-by-handling.html">MySQL Handling of GROUP BY</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="group-by-functional-dependence.html">Detection of Functional Dependence</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="window-functions.html">Window Functions</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="window-function-descriptions.html">Window Function Descriptions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="window-functions-usage.html">Window Function Concepts and Syntax</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="window-functions-frames.html">Window Function Frame Specification</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="window-functions-named-windows.html">Named Windows</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="window-function-restrictions.html">Window Function Restrictions</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="performance-schema-functions.html">Performance Schema Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="internal-functions.html">Internal Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="miscellaneous-functions.html">Miscellaneous Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="precision-math.html">Precision Math</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="precision-math-numbers.html">Types of Numeric Values</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="precision-math-decimal-characteristics.html">DECIMAL Data Type Characteristics</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="precision-math-expressions.html">Expression Handling</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="precision-math-rounding.html">Rounding Behavior</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="precision-math-examples.html">Precision Math Examples</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="sql-statements.html">SQL Statements</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="data-dictionary.html">MySQL Data Dictionary</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="innodb-storage-engine.html">The InnoDB Storage Engine</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="storage-engines.html">Alternative Storage Engines</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="replication.html">Replication</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="group-replication.html">Group Replication</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="mysql-shell-userguide.html">MySQL Shell</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="document-store.html">Using MySQL as a Document Store</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="mysql-innodb-cluster-introduction.html">InnoDB Cluster</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="mysql-innodb-replicaset-introduction.html">InnoDB ReplicaSet</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="mysql-cluster.html">MySQL NDB Cluster 8.0</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="partitioning.html">Partitioning</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="stored-objects.html">Stored Objects</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="information-schema.html">INFORMATION_SCHEMA Tables</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="performance-schema.html">MySQL Performance Schema</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="sys-schema.html">MySQL sys Schema</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="connectors-apis.html">Connectors and APIs</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="mysql-enterprise.html">MySQL Enterprise Edition</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="workbench.html">MySQL Workbench</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="mysql-oci-marketplace.html">MySQL on OCI Marketplace</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="faqs.html">MySQL 8.0 Frequently Asked Questions</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="error-handling.html">Error Messages and Common Problems</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="indexes.html">Indexes</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="glossary.html">MySQL Glossary</a></div></div>                    </li>
+        </ul>
+                            </nav>
+        </div>
+
+        
+<a class="docs-sidebar-section" href=""><span class="icon-related"></span>
+    <span class="text">Related Documentation</span></a>
+<div class="docs-sidebar-accordian open">
+    <div class="text">
+        <a href="/doc/relnotes/mysql/8.0/en/">MySQL 8.0 Release Notes</a><br />
+        <a href="/doc/dev/mysql-server/latest/">MySQL 8.0 Source Code Documentation</a><br />
+        </div>
+</div>
+
+    <a class="docs-sidebar-section" href=""><span class="icon-download-thin"></span>
+        <span class="text">
+            Download
+                            this Manual
+                    </span>
+    </a>
+    <div class="docs-sidebar-accordian open">
+        <div class="text">
+                                    <a href="https://downloads.mysql.com/docs/refman-8.0-en.pdf">PDF (US Ltr)</a>
+            - 43.2Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.a4.pdf">PDF (A4)</a>
+            - 43.3Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.man-gpl.tar.gz">Man Pages (TGZ)</a>
+            - 295.2Kb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.man-gpl.zip">Man Pages (Zip)</a>
+            - 400.4Kb<br />
+                                                <a href="https://downloads.mysql.com/docs/mysql-8.0.info.gz">Info (Gzip)</a>
+            - 4.3Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/mysql-8.0.info.zip">Info (Zip)</a>
+            - 4.3Mb<br />
+                                </div>
+    </div>
+
+<a class="docs-sidebar-section" href=""><span class="icon-book"></span>
+    <span class="text">Excerpts from this Manual</span></a>
+<div class="docs-sidebar-accordian">
+    <div class="text">
+                <a href="/doc/mysql-g11n-excerpt/8.0/en/">MySQL Globalization</a><br />
+                <a href="/doc/mysql-infoschema-excerpt/8.0/en/">MySQL Information Schema</a><br />
+                <a href="/doc/mysql-installation-excerpt/8.0/en/">MySQL Installation Guide</a><br />
+                <a href="/doc/mysql-security-excerpt/8.0/en/">Security in MySQL</a><br />
+                <a href="/doc/mysql-startstop-excerpt/8.0/en/">Starting and Stopping MySQL</a><br />
+                <a href="/doc/mysql-linuxunix-excerpt/8.0/en/">MySQL and Linux/Unix</a><br />
+                <a href="/doc/mysql-windows-excerpt/8.0/en/">MySQL and Windows</a><br />
+                <a href="/doc/mysql-macos-excerpt/8.0/en/">MySQL and macOS</a><br />
+                <a href="/doc/mysql-solaris-excerpt/8.0/en/">MySQL and Solaris</a><br />
+                <a href="/doc/mysql-sourcebuild-excerpt/8.0/en/">Building MySQL from Source</a><br />
+                <a href="/doc/mysql-reslimits-excerpt/8.0/en/">MySQL Restrictions and Limitations</a><br />
+                <a href="/doc/mysql-partitioning-excerpt/8.0/en/">MySQL Partitioning</a><br />
+                <a href="/doc/mysql-tutorial-excerpt/8.0/en/">MySQL Tutorial</a><br />
+                <a href="/doc/mysql-perfschema-excerpt/8.0/en/">MySQL Performance Schema</a><br />
+                <a href="/doc/mysql-replication-excerpt/8.0/en/">MySQL Replication</a><br />
+                <a href="/doc/mysql-repo-excerpt/8.0/en/">Using the MySQL Yum Repository</a><br />
+                <a href="/doc/mysql-cluster-excerpt/8.0/en/">MySQL NDB Cluster 8.0</a><br />
+            </div>
+</div>
+
+        <br /><span id="wkr"><br /></span>
+    </div>
+    </div>
+
+    <div id="docs-main" class="has-toc">
+    <div id="docs-main-inner">
+
+                <div class="right" id="docs-version-nav">
+            <a href="" id="docs-version-nav-toggle">version 8.0
+            <span class="icon-chevron-down"></span></a>
+            <div id="docs-version-list">
+                                                        <a                         href="/doc/refman/26.7/en/json-search-functions.html">
+                        26.7
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.7/en/json-search-functions.html">
+                        9.7
+                                                &nbsp;current
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.6/en/json-search-functions.html">
+                        9.6
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.5/en/json-search-functions.html">
+                        9.5
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.4/en/json-search-functions.html">
+                        9.4
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.3/en/json-search-functions.html">
+                        9.3
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.2/en/json-search-functions.html">
+                        9.2
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.1/en/json-search-functions.html">
+                        9.1
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/8.4/en/json-search-functions.html">
+                        8.4
+                                            </a><br />
+                                                                                                                <a                         href="/doc/refman/5.7/en/json-search-functions.html">
+                        5.7
+                                            </a><br />
+                                                                        <div id="docs-version-nav-lang">
+                                                                                                                                                    <a                                     href="/doc/refman/8.0/ja/json-search-functions.html">
+                                    8.0&nbsp;
+                                                                            Japanese
+                                                                    </a><br />
+                                                                                            </div>
+                            </div>
+        </div>
+        
+        <div id="docs-show-nav" class="left hidden" style="margin-right: 15px;">
+            <a class="docs-show-hide-nav" href="" aria-label="Show Sidebar"
+                title="Show Sidebar"><span class="icon-arrow-small-right"></span></a>
+        </div>
+
+                        <div id="docs-breadcrumbs">
+            <a href="/doc/refman/8.0/en/">MySQL 8.0 Reference Manual</a> &nbsp;/&nbsp;
+                            <span id="breadcrumbs-link"><a href="" id="show-breadcrumbs">...</a> &nbsp;/&nbsp;</span>
+                <span class="hidden" id="hidden-breadcrumbs">
+                                                        <a href="functions.html">Functions and Operators</a> &nbsp;/&nbsp;
+                                                            <a href="json-functions.html">JSON Functions</a> &nbsp;/&nbsp;
+                                                                                        </span>
+                                        Functions That Search JSON Values
+                                    </div>
+        
+        <div id="docs-body">
+        
+<div class="section">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="json-search-functions"></a>14.17.3 Functions That Search JSON Values</h3>
+
+</div>
+
+</div>
+
+</div>
+<p>
+      The functions in this section perform search or comparison
+      operations on JSON values to extract data from them, report
+      whether data exists at a location within them, or report the path
+      to data within them. The <a class="link" href="json-search-functions.html#operator_member-of"><code class="literal">MEMBER OF()</code></a>
+      operator is also documented herein.
+</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><a name="function_json-contains"></a><p>
+          <a class="link" href="json-search-functions.html#function_json-contains"><code class="literal">JSON_CONTAINS(<em class="replaceable"><code>target</code></em>,
+          <em class="replaceable"><code>candidate</code></em>[,
+          <em class="replaceable"><code>path</code></em>])</code></a>
+        </p><a class="indexterm" name="id242505"></a><p>
+          Indicates by returning 1 or 0 whether a given
+          <em class="replaceable"><code>candidate</code></em> JSON document is
+          contained within a <em class="replaceable"><code>target</code></em> JSON
+          document, or—if a <em class="replaceable"><code>path</code></em>
+          argument was supplied—whether the candidate is found at
+          a specific path within the target. Returns
+          <code class="literal">NULL</code> if any argument is
+          <code class="literal">NULL</code>, or if the path argument does not
+          identify a section of the target document. An error occurs if
+          <em class="replaceable"><code>target</code></em> or
+          <em class="replaceable"><code>candidate</code></em> is not a valid JSON
+          document, or if the <em class="replaceable"><code>path</code></em> argument
+          is not a valid path expression or contains a
+          <code class="literal">*</code> or <code class="literal">**</code> wildcard.
+        </p><p>
+          To check only whether any data exists at the path, use
+          <a class="link" href="json-search-functions.html#function_json-contains-path"><code class="literal">JSON_CONTAINS_PATH()</code></a> instead.
+        </p><p>
+          The following rules define containment:
+</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
+              A candidate scalar is contained in a target scalar if and
+              only if they are comparable and are equal. Two scalar
+              values are comparable if they have the same
+              <a class="link" href="json-attribute-functions.html#function_json-type"><code class="literal">JSON_TYPE()</code></a> types, with the
+              exception that values of types <code class="literal">INTEGER</code>
+              and <code class="literal">DECIMAL</code> are also comparable to each
+              other.
+            </p></li><li class="listitem"><p>
+              A candidate array is contained in a target array if and
+              only if every element in the candidate is contained in
+              some element of the target.
+            </p></li><li class="listitem"><p>
+              A candidate nonarray is contained in a target array if and
+              only if the candidate is contained in some element of the
+              target.
+            </p></li><li class="listitem"><p>
+              A candidate object is contained in a target object if and
+              only if for each key in the candidate there is a key with
+              the same name in the target and the value associated with
+              the candidate key is contained in the value associated
+              with the target key.
+</p></li></ul>
+</div>
+<p>
+          Otherwise, the candidate value is not contained in the target
+          document.
+        </p><p>
+          Starting with MySQL 8.0.17, queries using
+          <code class="literal">JSON_CONTAINS()</code> on
+          <a class="link" href="innodb-storage-engine.html" title="Chapter 17 The InnoDB Storage Engine"><code class="literal">InnoDB</code></a> tables can be optimized
+          using multi-valued indexes; see
+          <a class="xref" href="create-index.html#create-index-multi-valued" title="Multi-Valued Indexes">Multi-Valued Indexes</a>, for more
+          information.
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SET @j = '{"a": 1, "b": 2, "c": {"d": 4}}';
+mysql&gt; SET @j2 = '1';
+mysql&gt; SELECT JSON_CONTAINS(@j, @j2, '$.a');
++-------------------------------+
+| JSON_CONTAINS(@j, @j2, '$.a') |
++-------------------------------+
+|                             1 |
++-------------------------------+
+mysql&gt; SELECT JSON_CONTAINS(@j, @j2, '$.b');
++-------------------------------+
+| JSON_CONTAINS(@j, @j2, '$.b') |
++-------------------------------+
+|                             0 |
++-------------------------------+
+
+mysql&gt; SET @j2 = '{"d": 4}';
+mysql&gt; SELECT JSON_CONTAINS(@j, @j2, '$.a');
++-------------------------------+
+| JSON_CONTAINS(@j, @j2, '$.a') |
++-------------------------------+
+|                             0 |
++-------------------------------+
+mysql&gt; SELECT JSON_CONTAINS(@j, @j2, '$.c');
++-------------------------------+
+| JSON_CONTAINS(@j, @j2, '$.c') |
++-------------------------------+
+|                             1 |
++-------------------------------+</code></pre></li><li class="listitem"><a name="function_json-contains-path"></a><p>
+          <a class="link" href="json-search-functions.html#function_json-contains-path"><code class="literal">JSON_CONTAINS_PATH(<em class="replaceable"><code>json_doc</code></em>,
+          <em class="replaceable"><code>one_or_all</code></em>,
+          <em class="replaceable"><code>path</code></em>[,
+          <em class="replaceable"><code>path</code></em>] ...)</code></a>
+        </p><a class="indexterm" name="id242565"></a><p>
+          Returns 0 or 1 to indicate whether a JSON document contains
+          data at a given path or paths. Returns <code class="literal">NULL</code>
+          if any argument is <code class="literal">NULL</code>. An error occurs if
+          the <em class="replaceable"><code>json_doc</code></em> argument is not a
+          valid JSON document, any <em class="replaceable"><code>path</code></em>
+          argument is not a valid path expression, or
+          <em class="replaceable"><code>one_or_all</code></em> is not
+          <code class="literal">'one'</code> or <code class="literal">'all'</code>.
+        </p><p>
+          To check for a specific value at a path, use
+          <a class="link" href="json-search-functions.html#function_json-contains"><code class="literal">JSON_CONTAINS()</code></a> instead.
+        </p><p>
+          The return value is 0 if no specified path exists within the
+          document. Otherwise, the return value depends on the
+          <em class="replaceable"><code>one_or_all</code></em> argument:
+</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
+              <code class="literal">'one'</code>: 1 if at least one path exists
+              within the document, 0 otherwise.
+            </p></li><li class="listitem"><p>
+              <code class="literal">'all'</code>: 1 if all paths exist within the
+              document, 0 otherwise.
+</p></li></ul>
+</div>
+<pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SET @j = '{"a": 1, "b": 2, "c": {"d": 4}}';
+mysql&gt; SELECT JSON_CONTAINS_PATH(@j, 'one', '$.a', '$.e');
++---------------------------------------------+
+| JSON_CONTAINS_PATH(@j, 'one', '$.a', '$.e') |
++---------------------------------------------+
+|                                           1 |
++---------------------------------------------+
+mysql&gt; SELECT JSON_CONTAINS_PATH(@j, 'all', '$.a', '$.e');
++---------------------------------------------+
+| JSON_CONTAINS_PATH(@j, 'all', '$.a', '$.e') |
++---------------------------------------------+
+|                                           0 |
++---------------------------------------------+
+mysql&gt; SELECT JSON_CONTAINS_PATH(@j, 'one', '$.c.d');
++----------------------------------------+
+| JSON_CONTAINS_PATH(@j, 'one', '$.c.d') |
++----------------------------------------+
+|                                      1 |
++----------------------------------------+
+mysql&gt; SELECT JSON_CONTAINS_PATH(@j, 'one', '$.a.d');
++----------------------------------------+
+| JSON_CONTAINS_PATH(@j, 'one', '$.a.d') |
++----------------------------------------+
+|                                      0 |
++----------------------------------------+</code></pre></li><li class="listitem"><a name="function_json-extract"></a><p>
+          <a class="link" href="json-search-functions.html#function_json-extract"><code class="literal">JSON_EXTRACT(<em class="replaceable"><code>json_doc</code></em>,
+          <em class="replaceable"><code>path</code></em>[,
+          <em class="replaceable"><code>path</code></em>] ...)</code></a>
+        </p><a class="indexterm" name="id242608"></a><p>
+          Returns data from a JSON document, selected from the parts of
+          the document matched by the <em class="replaceable"><code>path</code></em>
+          arguments. Returns <code class="literal">NULL</code> if any argument is
+          <code class="literal">NULL</code> or no paths locate a value in the
+          document. An error occurs if the
+          <em class="replaceable"><code>json_doc</code></em> argument is not a valid
+          JSON document or any <em class="replaceable"><code>path</code></em> argument
+          is not a valid path expression.
+        </p><p>
+          The return value consists of all values matched by the
+          <em class="replaceable"><code>path</code></em> arguments. If it is possible
+          that those arguments could return multiple values, the matched
+          values are autowrapped as an array, in the order corresponding
+          to the paths that produced them. Otherwise, the return value
+          is the single matched value.
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT JSON_EXTRACT('[10, 20, [30, 40]]', '$[1]');
++--------------------------------------------+
+| JSON_EXTRACT('[10, 20, [30, 40]]', '$[1]') |
++--------------------------------------------+
+| 20                                         |
++--------------------------------------------+
+mysql&gt; SELECT JSON_EXTRACT('[10, 20, [30, 40]]', '$[1]', '$[0]');
++----------------------------------------------------+
+| JSON_EXTRACT('[10, 20, [30, 40]]', '$[1]', '$[0]') |
++----------------------------------------------------+
+| [20, 10]                                           |
++----------------------------------------------------+
+mysql&gt; SELECT JSON_EXTRACT('[10, 20, [30, 40]]', '$[2][*]');
++-----------------------------------------------+
+| JSON_EXTRACT('[10, 20, [30, 40]]', '$[2][*]') |
++-----------------------------------------------+
+| [30, 40]                                      |
++-----------------------------------------------+</code></pre><p>
+          MySQL supports the
+          <a class="link" href="json-search-functions.html#operator_json-column-path"><code class="literal">-&gt;</code></a>
+          operator as shorthand for this function as used with 2
+          arguments where the left hand side is a
+          <a class="link" href="json.html" title="13.5 The JSON Data Type"><code class="literal">JSON</code></a> column identifier (not an
+          expression) and the right hand side is the JSON path to be
+          matched within the column.
+        </p></li><li class="listitem"><a name="operator_json-column-path"></a><p>
+          <a class="link" href="json-search-functions.html#operator_json-column-path"><code class="literal"><em class="replaceable"><code>column</code></em>-&gt;<em class="replaceable"><code>path</code></em></code></a>
+        </p><a class="indexterm" name="id242641"></a><p>
+          The
+          <a class="link" href="json-search-functions.html#operator_json-column-path"><code class="literal">-&gt;</code></a>
+          operator serves as an alias for the
+          <a class="link" href="json-search-functions.html#function_json-extract"><code class="literal">JSON_EXTRACT()</code></a> function when
+          used with two arguments, a column identifier on the left and a
+          JSON path (a string literal) on the right that is evaluated
+          against the JSON document (the column value). You can use such
+          expressions in place of column references wherever they occur
+          in SQL statements.
+        </p><p>
+          The two <a class="link" href="select.html" title="15.2.13 SELECT Statement"><code class="literal">SELECT</code></a> statements shown
+          here produce the same output:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT c, JSON_EXTRACT(c, "$.id"), g
+     &gt; FROM jemp
+     &gt; WHERE JSON_EXTRACT(c, "$.id") &gt; 1
+     &gt; ORDER BY JSON_EXTRACT(c, "$.name");
++-------------------------------+-----------+------+
+| c                             | c-&gt;"$.id" | g    |
++-------------------------------+-----------+------+
+| {"id": "3", "name": "Barney"} | "3"       |    3 |
+| {"id": "4", "name": "Betty"}  | "4"       |    4 |
+| {"id": "2", "name": "Wilma"}  | "2"       |    2 |
++-------------------------------+-----------+------+
+3 rows in set (0.00 sec)
+
+mysql&gt; SELECT c, c-&gt;"$.id", g
+     &gt; FROM jemp
+     &gt; WHERE c-&gt;"$.id" &gt; 1
+     &gt; ORDER BY c-&gt;"$.name";
++-------------------------------+-----------+------+
+| c                             | c-&gt;"$.id" | g    |
++-------------------------------+-----------+------+
+| {"id": "3", "name": "Barney"} | "3"       |    3 |
+| {"id": "4", "name": "Betty"}  | "4"       |    4 |
+| {"id": "2", "name": "Wilma"}  | "2"       |    2 |
++-------------------------------+-----------+------+
+3 rows in set (0.00 sec)</code></pre><p>
+          This functionality is not limited to
+          <code class="literal">SELECT</code>, as shown here:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; ALTER TABLE jemp ADD COLUMN n INT;
+Query OK, 0 rows affected (0.68 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql&gt; UPDATE jemp SET n=1 WHERE c-&gt;"$.id" = "4";
+Query OK, 1 row affected (0.04 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql&gt; SELECT c, c-&gt;"$.id", g, n
+     &gt; FROM jemp
+     &gt; WHERE JSON_EXTRACT(c, "$.id") &gt; 1
+     &gt; ORDER BY c-&gt;"$.name";
++-------------------------------+-----------+------+------+
+| c                             | c-&gt;"$.id" | g    | n    |
++-------------------------------+-----------+------+------+
+| {"id": "3", "name": "Barney"} | "3"       |    3 | NULL |
+| {"id": "4", "name": "Betty"}  | "4"       |    4 |    1 |
+| {"id": "2", "name": "Wilma"}  | "2"       |    2 | NULL |
++-------------------------------+-----------+------+------+
+3 rows in set (0.00 sec)
+
+mysql&gt; DELETE FROM jemp WHERE c-&gt;"$.id" = "4";
+Query OK, 1 row affected (0.04 sec)
+
+mysql&gt; SELECT c, c-&gt;"$.id", g, n
+     &gt; FROM jemp
+     &gt; WHERE JSON_EXTRACT(c, "$.id") &gt; 1
+     &gt; ORDER BY c-&gt;"$.name";
++-------------------------------+-----------+------+------+
+| c                             | c-&gt;"$.id" | g    | n    |
++-------------------------------+-----------+------+------+
+| {"id": "3", "name": "Barney"} | "3"       |    3 | NULL |
+| {"id": "2", "name": "Wilma"}  | "2"       |    2 | NULL |
++-------------------------------+-----------+------+------+
+2 rows in set (0.00 sec)</code></pre><p>
+          (See <a class="xref" href="create-table-secondary-indexes.html#json-column-indirect-index" title="Indexing a Generated Column to Provide a JSON Column Index">Indexing a Generated Column to Provide a JSON Column Index</a>, for the
+          statements used to create and populate the table just shown.)
+        </p><p>
+          This also works with JSON array values, as shown here:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; CREATE TABLE tj10 (a JSON, b INT);
+Query OK, 0 rows affected (0.26 sec)
+
+mysql&gt; INSERT INTO tj10
+     &gt; VALUES ("[3,10,5,17,44]", 33), ("[3,10,5,17,[22,44,66]]", 0);
+Query OK, 1 row affected (0.04 sec)
+
+mysql&gt; SELECT a-&gt;"$[4]" FROM tj10;
++--------------+
+| a-&gt;"$[4]"    |
++--------------+
+| 44           |
+| [22, 44, 66] |
++--------------+
+2 rows in set (0.00 sec)
+
+mysql&gt; SELECT * FROM tj10 WHERE a-&gt;"$[0]" = 3;
++------------------------------+------+
+| a                            | b    |
++------------------------------+------+
+| [3, 10, 5, 17, 44]           |   33 |
+| [3, 10, 5, 17, [22, 44, 66]] |    0 |
++------------------------------+------+
+2 rows in set (0.00 sec)</code></pre><p>
+          Nested arrays are supported. An expression using
+          <code class="literal">-&gt;</code> evaluates as <code class="literal">NULL</code>
+          if no matching key is found in the target JSON document, as
+          shown here:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT * FROM tj10 WHERE a-&gt;"$[4][1]" IS NOT NULL;
++------------------------------+------+
+| a                            | b    |
++------------------------------+------+
+| [3, 10, 5, 17, [22, 44, 66]] |    0 |
++------------------------------+------+
+
+mysql&gt; SELECT a-&gt;"$[4][1]" FROM tj10;
++--------------+
+| a-&gt;"$[4][1]" |
++--------------+
+| NULL         |
+| 44           |
++--------------+
+2 rows in set (0.00 sec)</code></pre><p>
+          This is the same behavior as seen in such cases when using
+          <code class="literal">JSON_EXTRACT()</code>:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT JSON_EXTRACT(a, "$[4][1]") FROM tj10;
++----------------------------+
+| JSON_EXTRACT(a, "$[4][1]") |
++----------------------------+
+| NULL                       |
+| 44                         |
++----------------------------+
+2 rows in set (0.00 sec)</code></pre></li><li class="listitem"><a name="operator_json-inline-path"></a><p>
+          <a class="link" href="json-search-functions.html#operator_json-inline-path"><code class="literal"><em class="replaceable"><code>column</code></em>-&gt;&gt;<em class="replaceable"><code>path</code></em></code></a>
+        </p><a class="indexterm" name="id242707"></a><p>
+          This is an improved, unquoting extraction operator. Whereas
+          the <code class="literal">-&gt;</code> operator simply extracts a value,
+          the <code class="literal">-&gt;&gt;</code> operator in addition unquotes
+          the extracted result. In other words, given a
+          <a class="link" href="json.html" title="13.5 The JSON Data Type"><code class="literal">JSON</code></a> column value
+          <em class="replaceable"><code>column</code></em> and a path expression
+          <em class="replaceable"><code>path</code></em> (a string literal), the
+          following three expressions return the same value:
+</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
+              <a class="link" href="json-modification-functions.html#function_json-unquote"><code class="literal">JSON_UNQUOTE(</code></a>
+              <a class="link" href="json-search-functions.html#function_json-extract"><code class="literal">JSON_EXTRACT(<em class="replaceable"><code>column</code></em>,
+              <em class="replaceable"><code>path</code></em>) )</code></a>
+            </p></li><li class="listitem"><p>
+              <code class="literal">JSON_UNQUOTE(<em class="replaceable"><code>column</code></em></code>
+              <a class="link" href="json-search-functions.html#operator_json-column-path"><code class="literal">-&gt;</code></a>
+              <code class="literal"><em class="replaceable"><code>path</code></em>)</code>
+            </p></li><li class="listitem"><p>
+              <code class="literal"><em class="replaceable"><code>column</code></em>-&gt;&gt;<em class="replaceable"><code>path</code></em></code>
+</p></li></ul>
+</div>
+<p>
+          The <code class="literal">-&gt;&gt;</code> operator can be used wherever
+          <code class="literal">JSON_UNQUOTE(JSON_EXTRACT())</code> would be
+          allowed. This includes (but is not limited to)
+          <code class="literal">SELECT</code> lists, <code class="literal">WHERE</code> and
+          <code class="literal">HAVING</code> clauses, and <code class="literal">ORDER
+          BY</code> and <code class="literal">GROUP BY</code> clauses.
+        </p><p>
+          The next few statements demonstrate some
+          <code class="literal">-&gt;&gt;</code> operator equivalences with other
+          expressions in the <a class="link" href="mysql.html" title="6.5.1 mysql — The MySQL Command-Line Client"><span class="command"><strong>mysql</strong></span></a> client:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT * FROM jemp WHERE g &gt; 2;
++-------------------------------+------+
+| c                             | g    |
++-------------------------------+------+
+| {"id": "3", "name": "Barney"} |    3 |
+| {"id": "4", "name": "Betty"}  |    4 |
++-------------------------------+------+
+2 rows in set (0.01 sec)
+
+mysql&gt; SELECT c-&gt;'$.name' AS name
+    -&gt;     FROM jemp WHERE g &gt; 2;
++----------+
+| name     |
++----------+
+| "Barney" |
+| "Betty"  |
++----------+
+2 rows in set (0.00 sec)
+
+mysql&gt; SELECT JSON_UNQUOTE(c-&gt;'$.name') AS name
+    -&gt;     FROM jemp WHERE g &gt; 2;
++--------+
+| name   |
++--------+
+| Barney |
+| Betty  |
++--------+
+2 rows in set (0.00 sec)
+
+mysql&gt; SELECT c-&gt;&gt;'$.name' AS name
+    -&gt;     FROM jemp WHERE g &gt; 2;
++--------+
+| name   |
++--------+
+| Barney |
+| Betty  |
++--------+
+2 rows in set (0.00 sec)</code></pre><p>
+          See <a class="xref" href="create-table-secondary-indexes.html#json-column-indirect-index" title="Indexing a Generated Column to Provide a JSON Column Index">Indexing a Generated Column to Provide a JSON Column Index</a>, for the SQL
+          statements used to create and populate the
+          <code class="literal">jemp</code> table in the set of examples just
+          shown.
+        </p><p>
+          This operator can also be used with JSON arrays, as shown
+          here:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; CREATE TABLE tj10 (a JSON, b INT);
+Query OK, 0 rows affected (0.26 sec)
+
+mysql&gt; INSERT INTO tj10 VALUES
+    -&gt;     ('[3,10,5,"x",44]', 33),
+    -&gt;     ('[3,10,5,17,[22,"y",66]]', 0);
+Query OK, 2 rows affected (0.04 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+mysql&gt; SELECT a-&gt;"$[3]", a-&gt;"$[4][1]" FROM tj10;
++-----------+--------------+
+| a-&gt;"$[3]" | a-&gt;"$[4][1]" |
++-----------+--------------+
+| "x"       | NULL         |
+| 17        | "y"          |
++-----------+--------------+
+2 rows in set (0.00 sec)
+
+mysql&gt; SELECT a-&gt;&gt;"$[3]", a-&gt;&gt;"$[4][1]" FROM tj10;
++------------+---------------+
+| a-&gt;&gt;"$[3]" | a-&gt;&gt;"$[4][1]" |
++------------+---------------+
+| x          | NULL          |
+| 17         | y             |
++------------+---------------+
+2 rows in set (0.00 sec)</code></pre><p>
+          As with
+          <a class="link" href="json-search-functions.html#operator_json-column-path"><code class="literal">-&gt;</code></a>,
+          the <code class="literal">-&gt;&gt;</code> operator is always expanded
+          in the output of <a class="link" href="explain.html" title="15.8.2 EXPLAIN Statement"><code class="literal">EXPLAIN</code></a>, as
+          the following example demonstrates:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; EXPLAIN SELECT c-&gt;&gt;'$.name' AS name
+    -&gt;     FROM jemp WHERE g &gt; 2\G
+*************************** 1. row ***************************
+           id: 1
+  select_type: SIMPLE
+        table: jemp
+   partitions: NULL
+         type: range
+possible_keys: i
+          key: i
+      key_len: 5
+          ref: NULL
+         rows: 2
+     filtered: 100.00
+        Extra: Using where
+1 row in set, 1 warning (0.00 sec)
+
+mysql&gt; SHOW WARNINGS\G
+*************************** 1. row ***************************
+  Level: Note
+   Code: 1003
+Message: /* select#1 */ select
+json_unquote(json_extract(`jtest`.`jemp`.`c`,'$.name')) AS `name` from
+`jtest`.`jemp` where (`jtest`.`jemp`.`g` &gt; 2)
+1 row in set (0.00 sec)</code></pre><p>
+          This is similar to how MySQL expands the
+          <a class="link" href="json-search-functions.html#operator_json-column-path"><code class="literal">-&gt;</code></a>
+          operator in the same circumstances.
+        </p></li><li class="listitem"><a name="function_json-keys"></a><p>
+          <a class="link" href="json-search-functions.html#function_json-keys"><code class="literal">JSON_KEYS(<em class="replaceable"><code>json_doc</code></em>[,
+          <em class="replaceable"><code>path</code></em>])</code></a>
+        </p><a class="indexterm" name="id242796"></a><p>
+          Returns the keys from the top-level value of a JSON object as
+          a JSON array, or, if a <em class="replaceable"><code>path</code></em>
+          argument is given, the top-level keys from the selected path.
+          Returns <code class="literal">NULL</code> if any argument is
+          <code class="literal">NULL</code>, the
+          <em class="replaceable"><code>json_doc</code></em> argument is not an object,
+          or <em class="replaceable"><code>path</code></em>, if given, does not locate
+          an object. An error occurs if the
+          <em class="replaceable"><code>json_doc</code></em> argument is not a valid
+          JSON document or the <em class="replaceable"><code>path</code></em> argument
+          is not a valid path expression or contains a
+          <code class="literal">*</code> or <code class="literal">**</code> wildcard.
+        </p><p>
+          The result array is empty if the selected object is empty. If
+          the top-level value has nested subobjects, the return value
+          does not include keys from those subobjects.
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT JSON_KEYS('{"a": 1, "b": {"c": 30}}');
++---------------------------------------+
+| JSON_KEYS('{"a": 1, "b": {"c": 30}}') |
++---------------------------------------+
+| ["a", "b"]                            |
++---------------------------------------+
+mysql&gt; SELECT JSON_KEYS('{"a": 1, "b": {"c": 30}}', '$.b');
++----------------------------------------------+
+| JSON_KEYS('{"a": 1, "b": {"c": 30}}', '$.b') |
++----------------------------------------------+
+| ["c"]                                        |
++----------------------------------------------+</code></pre></li><li class="listitem"><a name="function_json-overlaps"></a><p>
+          <a class="link" href="json-search-functions.html#function_json-overlaps"><code class="literal">JSON_OVERLAPS(<em class="replaceable"><code>json_doc1</code></em>,
+          <em class="replaceable"><code>json_doc2</code></em>)</code></a>
+        </p><a class="indexterm" name="id242826"></a><p>
+          Compares two JSON documents. Returns true (1) if the two
+          document have any key-value pairs or array elements in common.
+          If both arguments are scalars, the function performs a simple
+          equality test. If either argument is <code class="literal">NULL</code>,
+          the function returns <code class="literal">NULL</code>.
+        </p><p>
+          This function serves as counterpart to
+          <a class="link" href="json-search-functions.html#function_json-contains"><code class="literal">JSON_CONTAINS()</code></a>, which requires
+          all elements of the array searched for to be present in the
+          array searched in. Thus, <code class="literal">JSON_CONTAINS()</code>
+          performs an <code class="literal">AND</code> operation on search keys,
+          while <code class="literal">JSON_OVERLAPS()</code> performs an
+          <code class="literal">OR</code> operation.
+        </p><p>
+          Queries on JSON columns of <a class="link" href="innodb-storage-engine.html" title="Chapter 17 The InnoDB Storage Engine"><code class="literal">InnoDB</code></a>
+          tables using <code class="literal">JSON_OVERLAPS()</code> in the
+          <code class="literal">WHERE</code> clause can be optimized using
+          multi-valued indexes.
+          <a class="xref" href="create-index.html#create-index-multi-valued" title="Multi-Valued Indexes">Multi-Valued Indexes</a>, provides detailed
+          information and examples.
+        </p><p>
+          When comparing two arrays, <code class="literal">JSON_OVERLAPS()</code>
+          returns true if they share one or more array elements in
+          common, and false if they do not:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT JSON_OVERLAPS("[1,3,5,7]", "[2,5,7]");
++---------------------------------------+
+| JSON_OVERLAPS("[1,3,5,7]", "[2,5,7]") |
++---------------------------------------+
+|                                     1 |
++---------------------------------------+
+1 row in set (0.00 sec)
+
+mysql&gt; SELECT JSON_OVERLAPS("[1,3,5,7]", "[2,6,7]");
++---------------------------------------+
+| JSON_OVERLAPS("[1,3,5,7]", "[2,6,7]") |
++---------------------------------------+
+|                                     1 |
++---------------------------------------+
+1 row in set (0.00 sec)
+
+mysql&gt; SELECT JSON_OVERLAPS("[1,3,5,7]", "[2,6,8]");
++---------------------------------------+
+| JSON_OVERLAPS("[1,3,5,7]", "[2,6,8]") |
++---------------------------------------+
+|                                     0 |
++---------------------------------------+
+1 row in set (0.00 sec)</code></pre><p>
+          Partial matches are treated as no match, as shown here:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT JSON_OVERLAPS('[[1,2],[3,4],5]', '[1,[2,3],[4,5]]');
++-----------------------------------------------------+
+| JSON_OVERLAPS('[[1,2],[3,4],5]', '[1,[2,3],[4,5]]') |
++-----------------------------------------------------+
+|                                                   0 |
++-----------------------------------------------------+
+1 row in set (0.00 sec)</code></pre><p>
+          When comparing objects, the result is true if they have at
+          least one key-value pair in common.
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT JSON_OVERLAPS('{"a":1,"b":10,"d":10}', '{"c":1,"e":10,"f":1,"d":10}');
++-----------------------------------------------------------------------+
+| JSON_OVERLAPS('{"a":1,"b":10,"d":10}', '{"c":1,"e":10,"f":1,"d":10}') |
++-----------------------------------------------------------------------+
+|                                                                     1 |
++-----------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
+mysql&gt; SELECT JSON_OVERLAPS('{"a":1,"b":10,"d":10}', '{"a":5,"e":10,"f":1,"d":20}');
++-----------------------------------------------------------------------+
+| JSON_OVERLAPS('{"a":1,"b":10,"d":10}', '{"a":5,"e":10,"f":1,"d":20}') |
++-----------------------------------------------------------------------+
+|                                                                     0 |
++-----------------------------------------------------------------------+
+1 row in set (0.00 sec)</code></pre><p>
+          If two scalars are used as the arguments to the function,
+          <code class="literal">JSON_OVERLAPS()</code> performs a simple test for
+          equality:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT JSON_OVERLAPS('5', '5');
++-------------------------+
+| JSON_OVERLAPS('5', '5') |
++-------------------------+
+|                       1 |
++-------------------------+
+1 row in set (0.00 sec)
+
+mysql&gt; SELECT JSON_OVERLAPS('5', '6');
++-------------------------+
+| JSON_OVERLAPS('5', '6') |
++-------------------------+
+|                       0 |
++-------------------------+
+1 row in set (0.00 sec)</code></pre><p>
+          When comparing a scalar with an array,
+          <code class="literal">JSON_OVERLAPS()</code> attempts to treat the
+          scalar as an array element. In this example, the second
+          argument <code class="literal">6</code> is interpreted as
+          <code class="literal">[6]</code>, as shown here:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT JSON_OVERLAPS('[4,5,6,7]', '6');
++---------------------------------+
+| JSON_OVERLAPS('[4,5,6,7]', '6') |
++---------------------------------+
+|                               1 |
++---------------------------------+
+1 row in set (0.00 sec)</code></pre><p>
+          The function does not perform type conversions:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT JSON_OVERLAPS('[4,5,"6",7]', '6');
++-----------------------------------+
+| JSON_OVERLAPS('[4,5,"6",7]', '6') |
++-----------------------------------+
+|                                 0 |
++-----------------------------------+
+1 row in set (0.00 sec)
+
+mysql&gt; SELECT JSON_OVERLAPS('[4,5,6,7]', '"6"');
++-----------------------------------+
+| JSON_OVERLAPS('[4,5,6,7]', '"6"') |
++-----------------------------------+
+|                                 0 |
++-----------------------------------+
+1 row in set (0.00 sec)</code></pre><p>
+          <code class="literal">JSON_OVERLAPS()</code> was added in MySQL 8.0.17.
+        </p></li><li class="listitem"><a name="function_json-search"></a><p>
+          <a class="link" href="json-search-functions.html#function_json-search"><code class="literal">JSON_SEARCH(<em class="replaceable"><code>json_doc</code></em>,
+          <em class="replaceable"><code>one_or_all</code></em>,
+          <em class="replaceable"><code>search_str</code></em>[,
+          <em class="replaceable"><code>escape_char</code></em>[,
+          <em class="replaceable"><code>path</code></em>] ...])</code></a>
+        </p><a class="indexterm" name="id242891"></a><p>
+          Returns the path to the given string within a JSON document.
+          Returns <code class="literal">NULL</code> if any of the
+          <em class="replaceable"><code>json_doc</code></em>,
+          <em class="replaceable"><code>search_str</code></em>, or
+          <em class="replaceable"><code>path</code></em> arguments are
+          <code class="literal">NULL</code>; no <em class="replaceable"><code>path</code></em>
+          exists within the document; or
+          <em class="replaceable"><code>search_str</code></em> is not found. An error
+          occurs if the <em class="replaceable"><code>json_doc</code></em> argument is
+          not a valid JSON document, any <em class="replaceable"><code>path</code></em>
+          argument is not a valid path expression,
+          <em class="replaceable"><code>one_or_all</code></em> is not
+          <code class="literal">'one'</code> or <code class="literal">'all'</code>, or
+          <em class="replaceable"><code>escape_char</code></em> is not a constant
+          expression.
+        </p><p>
+          The <em class="replaceable"><code>one_or_all</code></em> argument affects the
+          search as follows:
+</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
+              <code class="literal">'one'</code>: The search terminates after the
+              first match and returns one path string. It is undefined
+              which match is considered first.
+            </p></li><li class="listitem"><p>
+              <code class="literal">'all'</code>: The search returns all matching
+              path strings such that no duplicate paths are included. If
+              there are multiple strings, they are autowrapped as an
+              array. The order of the array elements is undefined.
+</p></li></ul>
+</div>
+<p>
+          Within the <em class="replaceable"><code>search_str</code></em> search string
+          argument, the <code class="literal">%</code> and <code class="literal">_</code>
+          characters work as for the <a class="link" href="string-comparison-functions.html#operator_like"><code class="literal">LIKE</code></a>
+          operator: <code class="literal">%</code> matches any number of
+          characters (including zero characters), and
+          <code class="literal">_</code> matches exactly one character.
+        </p><p>
+          To specify a literal <code class="literal">%</code> or
+          <code class="literal">_</code> character in the search string, precede
+          it by the escape character. The default is
+          <code class="literal">\</code> if the
+          <em class="replaceable"><code>escape_char</code></em> argument is missing or
+          <code class="literal">NULL</code>. Otherwise,
+          <em class="replaceable"><code>escape_char</code></em> must be a constant that
+          is empty or one character.
+        </p><p>
+          For more information about matching and escape character
+          behavior, see the description of
+          <a class="link" href="string-comparison-functions.html#operator_like"><code class="literal">LIKE</code></a> in
+          <a class="xref" href="string-comparison-functions.html" title="14.8.1 String Comparison Functions and Operators">Section 14.8.1, “String Comparison Functions and Operators”</a>. For escape
+          character handling, a difference from the
+          <a class="link" href="string-comparison-functions.html#operator_like"><code class="literal">LIKE</code></a> behavior is that the escape
+          character for <a class="link" href="json-search-functions.html#function_json-search"><code class="literal">JSON_SEARCH()</code></a>
+          must evaluate to a constant at compile time, not just at
+          execution time. For example, if
+          <a class="link" href="json-search-functions.html#function_json-search"><code class="literal">JSON_SEARCH()</code></a> is used in a
+          prepared statement and the
+          <em class="replaceable"><code>escape_char</code></em> argument is supplied
+          using a <code class="literal">?</code> parameter, the parameter value
+          might be constant at execution time, but is not at compile
+          time.
+        </p><p>
+          <em class="replaceable"><code>search_str</code></em> and
+          <em class="replaceable"><code>path</code></em> are always interpreted as
+          utf8mb4 strings, regardless of their actual encoding. This is
+          a known issue which is fixed in MySQL 8.0.24 (
+
+
+
+          Bug #32449181).
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SET @j = '["abc", [{"k": "10"}, "def"], {"x":"abc"}, {"y":"bcd"}]';
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'one', 'abc');
++-------------------------------+
+| JSON_SEARCH(@j, 'one', 'abc') |
++-------------------------------+
+| "$[0]"                        |
++-------------------------------+
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'all', 'abc');
++-------------------------------+
+| JSON_SEARCH(@j, 'all', 'abc') |
++-------------------------------+
+| ["$[0]", "$[2].x"]            |
++-------------------------------+
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'all', 'ghi');
++-------------------------------+
+| JSON_SEARCH(@j, 'all', 'ghi') |
++-------------------------------+
+| NULL                          |
++-------------------------------+
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'all', '10');
++------------------------------+
+| JSON_SEARCH(@j, 'all', '10') |
++------------------------------+
+| "$[1][0].k"                  |
++------------------------------+
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'all', '10', NULL, '$');
++-----------------------------------------+
+| JSON_SEARCH(@j, 'all', '10', NULL, '$') |
++-----------------------------------------+
+| "$[1][0].k"                             |
++-----------------------------------------+
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'all', '10', NULL, '$[*]');
++--------------------------------------------+
+| JSON_SEARCH(@j, 'all', '10', NULL, '$[*]') |
++--------------------------------------------+
+| "$[1][0].k"                                |
++--------------------------------------------+
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'all', '10', NULL, '$**.k');
++---------------------------------------------+
+| JSON_SEARCH(@j, 'all', '10', NULL, '$**.k') |
++---------------------------------------------+
+| "$[1][0].k"                                 |
++---------------------------------------------+
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'all', '10', NULL, '$[*][0].k');
++-------------------------------------------------+
+| JSON_SEARCH(@j, 'all', '10', NULL, '$[*][0].k') |
++-------------------------------------------------+
+| "$[1][0].k"                                     |
++-------------------------------------------------+
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'all', '10', NULL, '$[1]');
++--------------------------------------------+
+| JSON_SEARCH(@j, 'all', '10', NULL, '$[1]') |
++--------------------------------------------+
+| "$[1][0].k"                                |
++--------------------------------------------+
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'all', '10', NULL, '$[1][0]');
++-----------------------------------------------+
+| JSON_SEARCH(@j, 'all', '10', NULL, '$[1][0]') |
++-----------------------------------------------+
+| "$[1][0].k"                                   |
++-----------------------------------------------+
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'all', 'abc', NULL, '$[2]');
++---------------------------------------------+
+| JSON_SEARCH(@j, 'all', 'abc', NULL, '$[2]') |
++---------------------------------------------+
+| "$[2].x"                                    |
++---------------------------------------------+
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'all', '%a%');
++-------------------------------+
+| JSON_SEARCH(@j, 'all', '%a%') |
++-------------------------------+
+| ["$[0]", "$[2].x"]            |
++-------------------------------+
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'all', '%b%');
++-------------------------------+
+| JSON_SEARCH(@j, 'all', '%b%') |
++-------------------------------+
+| ["$[0]", "$[2].x", "$[3].y"]  |
++-------------------------------+
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'all', '%b%', NULL, '$[0]');
++---------------------------------------------+
+| JSON_SEARCH(@j, 'all', '%b%', NULL, '$[0]') |
++---------------------------------------------+
+| "$[0]"                                      |
++---------------------------------------------+
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'all', '%b%', NULL, '$[2]');
++---------------------------------------------+
+| JSON_SEARCH(@j, 'all', '%b%', NULL, '$[2]') |
++---------------------------------------------+
+| "$[2].x"                                    |
++---------------------------------------------+
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'all', '%b%', NULL, '$[1]');
++---------------------------------------------+
+| JSON_SEARCH(@j, 'all', '%b%', NULL, '$[1]') |
++---------------------------------------------+
+| NULL                                        |
++---------------------------------------------+
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'all', '%b%', '', '$[1]');
++-------------------------------------------+
+| JSON_SEARCH(@j, 'all', '%b%', '', '$[1]') |
++-------------------------------------------+
+| NULL                                      |
++-------------------------------------------+
+
+mysql&gt; SELECT JSON_SEARCH(@j, 'all', '%b%', '', '$[3]');
++-------------------------------------------+
+| JSON_SEARCH(@j, 'all', '%b%', '', '$[3]') |
++-------------------------------------------+
+| "$[3].y"                                  |
++-------------------------------------------+</code></pre><p>
+          For more information about the JSON path syntax supported by
+          MySQL, including rules governing the wildcard operators
+          <code class="literal">*</code> and <code class="literal">**</code>, see
+          <a class="xref" href="json.html#json-path-syntax" title="JSON Path Syntax">JSON Path Syntax</a>.
+        </p></li><li class="listitem"><a name="function_json-value"></a><p>
+          <a class="link" href="json-search-functions.html#function_json-value"><code class="literal">JSON_VALUE(<em class="replaceable"><code>json_doc</code></em>,
+          <em class="replaceable"><code>path</code></em>)</code></a>
+        </p><a class="indexterm" name="id242984"></a><p>
+          Extracts a value from a JSON document at the path given in the
+          specified document, and returns the extracted value,
+          optionally converting it to a desired type. The complete
+          syntax is shown here:
+        </p><pre class="programlisting copytoclipboard language-clike"><code class="language-clike">JSON_VALUE(<em class="replaceable">json_doc</em>, <em class="replaceable">path</em> [RETURNING <em class="replaceable">type</em>] [<em class="replaceable">on_empty</em>] [<em class="replaceable">on_error</em>])
+
+<em class="replaceable">on_empty</em>:
+    {NULL | ERROR | DEFAULT <em class="replaceable">value</em>} ON EMPTY
+
+<em class="replaceable">on_error</em>:
+    {NULL | ERROR | DEFAULT <em class="replaceable">value</em>} ON ERROR</code></pre><p>
+          <em class="replaceable"><code>json_doc</code></em> is a valid JSON document.
+          If this is <code class="literal">NULL</code>, the function returns
+          <code class="literal">NULL</code>.
+        </p><p>
+          <em class="replaceable"><code>path</code></em> is a JSON path pointing to a
+          location in the document. This must be a string literal value.
+        </p><p>
+          <em class="replaceable"><code>type</code></em> is one of the following data
+          types:
+</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
+              <a class="link" href="floating-point-types.html" title="13.1.4 Floating-Point Types (Approximate Value) - FLOAT, DOUBLE"><code class="literal">FLOAT</code></a>
+            </p></li><li class="listitem"><p>
+              <a class="link" href="floating-point-types.html" title="13.1.4 Floating-Point Types (Approximate Value) - FLOAT, DOUBLE"><code class="literal">DOUBLE</code></a>
+            </p></li><li class="listitem"><p>
+              <a class="link" href="fixed-point-types.html" title="13.1.3 Fixed-Point Types (Exact Value) - DECIMAL, NUMERIC"><code class="literal">DECIMAL</code></a>
+            </p></li><li class="listitem"><p>
+              <code class="literal">SIGNED</code>
+            </p></li><li class="listitem"><p>
+              <code class="literal">UNSIGNED</code>
+            </p></li><li class="listitem"><p>
+              <a class="link" href="datetime.html" title="13.2.2 The DATE, DATETIME, and TIMESTAMP Types"><code class="literal">DATE</code></a>
+            </p></li><li class="listitem"><p>
+              <a class="link" href="time.html" title="13.2.3 The TIME Type"><code class="literal">TIME</code></a>
+            </p></li><li class="listitem"><p>
+              <a class="link" href="datetime.html" title="13.2.2 The DATE, DATETIME, and TIMESTAMP Types"><code class="literal">DATETIME</code></a>
+            </p></li><li class="listitem"><p>
+              <a class="link" href="year.html" title="13.2.4 The YEAR Type"><code class="literal">YEAR</code></a> (MySQL 8.0.22 and
+              later)
+            </p><p>
+              <code class="literal">YEAR</code> values of one or two digits are
+              not supported.
+            </p></li><li class="listitem"><p>
+              <a class="link" href="char.html" title="13.3.2 The CHAR and VARCHAR Types"><code class="literal">CHAR</code></a>
+            </p></li><li class="listitem"><p>
+              <a class="link" href="json.html" title="13.5 The JSON Data Type"><code class="literal">JSON</code></a>
+</p></li></ul>
+</div>
+<p>
+          The types just listed are the same as the (non-array) types
+          supported by the <a class="link" href="cast-functions.html#function_cast"><code class="literal">CAST()</code></a>
+          function.
+        </p><p>
+          If not specified by a <code class="literal">RETURNING</code> clause, the
+          <code class="literal">JSON_VALUE()</code> function's return type is
+          <a class="link" href="char.html" title="13.3.2 The CHAR and VARCHAR Types"><code class="literal">VARCHAR(512)</code></a>. When no character
+          set is specified for the return type,
+          <code class="literal">JSON_VALUE()</code> uses
+          <code class="literal">utf8mb4</code> with the binary collation, which is
+          case-sensitive; if <code class="literal">utf8mb4</code> is specified as
+          the character set for the result, the server uses the default
+          collation for this character set, which is not case-sensitive.
+        </p><p>
+          When the data at the specified path consists of or resolves to
+          a JSON null literal, the function returns SQL
+          <code class="literal">NULL</code>.
+        </p><p>
+          <em class="replaceable"><code>on_empty</code></em>, if specified, determines
+          how <code class="literal">JSON_VALUE()</code> behaves when no data is
+          found at the path given; this clause takes one of the
+          following values:
+</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
+              <code class="literal">NULL ON EMPTY</code>: The function returns
+              <code class="literal">NULL</code>; this is the default <code class="literal">ON
+              EMPTY</code> behavior.
+            </p></li><li class="listitem"><p>
+              <code class="literal">DEFAULT <em class="replaceable"><code>value</code></em> ON
+              EMPTY</code>: the provided
+              <em class="replaceable"><code>value</code></em> is returned. The
+              value's type must match that of the return type.
+            </p></li><li class="listitem"><p>
+              <code class="literal">ERROR ON EMPTY</code>: The function throws an
+              error.
+</p></li></ul>
+</div>
+<p>
+          If used, <em class="replaceable"><code>on_error</code></em> takes one of the
+          following values with the corresponding outcome when an error
+          occurs, as listed here:
+</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
+              <code class="literal">NULL ON ERROR</code>:
+              <code class="literal">JSON_VALUE()</code> returns
+              <code class="literal">NULL</code>; this is the default behavior if
+              no <code class="literal">ON ERROR</code> clause is used.
+            </p></li><li class="listitem"><p>
+              <code class="literal">DEFAULT <em class="replaceable"><code>value</code></em> ON
+              ERROR</code>: This is the value returned; its value
+              must match that of the return type.
+            </p></li><li class="listitem"><p>
+              <code class="literal">ERROR ON ERROR</code>: An error is thrown.
+</p></li></ul>
+</div>
+<p>
+          <code class="literal">ON EMPTY</code>, if used, must precede any
+          <code class="literal">ON ERROR</code> clause. Specifying them in the
+          wrong order results in a syntax error.
+        </p><p><b>Error handling. </b>
+            In general, errors are handled by
+            <code class="literal">JSON_VALUE()</code> as follows:
+</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
+              All JSON input (document and path) is checked for
+              validity. If any of it is not valid, an SQL error is
+              thrown without triggering the <code class="literal">ON ERROR</code>
+              clause.
+            </p></li><li class="listitem"><p>
+              <code class="literal">ON ERROR</code> is triggered whenever any of
+              the following events occur:
+</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" style="list-style-type: square; "><li class="listitem"><p>
+                  Attempting to extract an object or an array, such as
+                  that resulting from a path that resolves to multiple
+                  locations within the JSON document
+                </p></li><li class="listitem"><p>
+                  Conversion errors, such as attempting to convert
+                  <code class="literal">'asdf'</code> to an
+                  <code class="literal">UNSIGNED</code> value
+                </p></li><li class="listitem"><p>
+                  Truncation of values
+</p></li></ul>
+</div>
+</li><li class="listitem"><p>
+              A conversion error always triggers a warning even if
+              <code class="literal">NULL ON ERROR</code> or <code class="literal">DEFAULT ...
+              ON ERROR</code> is specified.
+            </p></li><li class="listitem"><p>
+              The <code class="literal">ON EMPTY</code> clause is triggered when
+              the source JSON document (<em class="replaceable"><code>expr</code></em>)
+              contains no data at the specified location
+              (<em class="replaceable"><code>path</code></em>).
+</p></li></ul>
+</div>
+<p>
+          <code class="literal">JSON_VALUE()</code> was introduced in MySQL
+          8.0.21.
+        </p><p><b>Examples. </b>
+            Two simple examples are shown here:
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT JSON_VALUE('{"fname": "Joe", "lname": "Palmer"}', '$.fname');
++--------------------------------------------------------------+
+| JSON_VALUE('{"fname": "Joe", "lname": "Palmer"}', '$.fname') |
++--------------------------------------------------------------+
+| Joe                                                          |
++--------------------------------------------------------------+
+
+mysql&gt; SELECT JSON_VALUE('{"item": "shoes", "price": "49.95"}', '$.price'
+    -&gt; RETURNING DECIMAL(4,2)) AS price;
++-------+
+| price |
++-------+
+| 49.95 |
++-------+</code></pre><p>
+          Except in cases where <code class="literal">JSON_VALUE()</code> returns
+          <code class="literal">NULL</code>, the statement <code class="literal">SELECT
+          JSON_VALUE(<em class="replaceable"><code>json_doc</code></em>,
+          <em class="replaceable"><code>path</code></em> RETURNING
+          <em class="replaceable"><code>type</code></em>)</code> is equivalent to
+          the following statement:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">SELECT CAST(
+    JSON_UNQUOTE( JSON_EXTRACT(<em class="replaceable">json_doc</em>, <em class="replaceable">path</em>) )
+    AS <em class="replaceable">type</em>
+);</code></pre><p>
+          <code class="literal">JSON_VALUE()</code> simplifies creating indexes on
+          JSON columns by making it unnecessary in many cases to create
+          a generated column and then an index on the generated column.
+          You can do this when creating a table <code class="literal">t1</code>
+          that has a <a class="link" href="json.html" title="13.5 The JSON Data Type"><code class="literal">JSON</code></a> column by
+          creating an index on an expression that uses
+          <code class="literal">JSON_VALUE()</code> operating on that column (with
+          a path that matches a value in that column), as shown here:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">CREATE TABLE t1(
+    j JSON,
+    INDEX i1 ( (JSON_VALUE(j, '$.id' RETURNING UNSIGNED)) )
+);</code></pre><p>
+          The following <a class="link" href="explain.html" title="15.8.2 EXPLAIN Statement"><code class="literal">EXPLAIN</code></a> output
+          shows that a query against <code class="literal">t1</code> employing the
+          index expression in the <code class="literal">WHERE</code> clause uses
+          the index thus created:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; EXPLAIN SELECT * FROM t1
+    -&gt;     WHERE JSON_VALUE(j, '$.id' RETURNING UNSIGNED) = 123\G
+*************************** 1. row ***************************
+           id: 1
+  select_type: SIMPLE
+        table: t1
+   partitions: NULL
+         type: ref
+possible_keys: i1
+          key: i1
+      key_len: 9
+          ref: const
+         rows: 1
+     filtered: 100.00
+        Extra: NULL</code></pre><p>
+          This achieves much the same effect as creating a table
+          <code class="literal">t2</code> with an index on a generated column (see
+          <a class="xref" href="create-table-secondary-indexes.html#json-column-indirect-index" title="Indexing a Generated Column to Provide a JSON Column Index">Indexing a Generated Column to Provide a JSON Column Index</a>), like this one:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">CREATE TABLE t2 (
+    j JSON,
+    g INT GENERATED ALWAYS AS (j-&gt;"$.id"),
+    INDEX i1 (g)
+);</code></pre><p>
+          The <a class="link" href="explain.html" title="15.8.2 EXPLAIN Statement"><code class="literal">EXPLAIN</code></a> output for a query
+          against this table, referencing the generated column, shows
+          that the index is used in the same way as for the previous
+          query against table <code class="literal">t1</code>:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; EXPLAIN SELECT * FROM t2 WHERE g  = 123\G
+*************************** 1. row ***************************
+           id: 1
+  select_type: SIMPLE
+        table: t2
+   partitions: NULL
+         type: ref
+possible_keys: i1
+          key: i1
+      key_len: 5
+          ref: const
+         rows: 1
+     filtered: 100.00
+        Extra: NULL</code></pre><p>
+          For information about using indexes on generated columns for
+          indirect indexing of <a class="link" href="json.html" title="13.5 The JSON Data Type"><code class="literal">JSON</code></a>
+          columns, see <a class="xref" href="create-table-secondary-indexes.html#json-column-indirect-index" title="Indexing a Generated Column to Provide a JSON Column Index">Indexing a Generated Column to Provide a JSON Column Index</a>.
+        </p></li><li class="listitem"><a name="operator_member-of"></a><p>
+          <a class="link" href="json-search-functions.html#operator_member-of"><code class="literal"><em class="replaceable"><code>value</code></em>
+          MEMBER OF(<em class="replaceable"><code>json_array</code></em>)</code></a>
+        </p><a class="indexterm" name="id243191"></a><p>
+          Returns true (1) if <em class="replaceable"><code>value</code></em> is an
+          element of <em class="replaceable"><code>json_array</code></em>, otherwise
+          returns false (0). <em class="replaceable"><code>value</code></em> must be a
+          scalar or a JSON document; if it is a scalar, the operator
+          attempts to treat it as an element of a JSON array. If
+          <em class="replaceable"><code>value</code></em> or
+          <em class="replaceable"><code>json_array</code></em> is
+          <em class="replaceable"><code>NULL</code></em>, the function returns
+          <em class="replaceable"><code>NULL</code></em>.
+        </p><p>
+          Queries using <code class="literal">MEMBER OF()</code> on JSON columns
+          of <a class="link" href="innodb-storage-engine.html" title="Chapter 17 The InnoDB Storage Engine"><code class="literal">InnoDB</code></a> tables in the
+          <code class="literal">WHERE</code> clause can be optimized using
+          multi-valued indexes. See
+          <a class="xref" href="create-index.html#create-index-multi-valued" title="Multi-Valued Indexes">Multi-Valued Indexes</a>, for detailed
+          information and examples.
+        </p><p>
+          Simple scalars are treated as array values, as shown here:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT 17 MEMBER OF('[23, "abc", 17, "ab", 10]');
++-------------------------------------------+
+| 17 MEMBER OF('[23, "abc", 17, "ab", 10]') |
++-------------------------------------------+
+|                                         1 |
++-------------------------------------------+
+1 row in set (0.00 sec)
+
+mysql&gt; SELECT 'ab' MEMBER OF('[23, "abc", 17, "ab", 10]');
++---------------------------------------------+
+| 'ab' MEMBER OF('[23, "abc", 17, "ab", 10]') |
++---------------------------------------------+
+|                                           1 |
++---------------------------------------------+
+1 row in set (0.00 sec)</code></pre><p>
+          Partial matches of array element values do not match:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT 7 MEMBER OF('[23, "abc", 17, "ab", 10]');
++------------------------------------------+
+| 7 MEMBER OF('[23, "abc", 17, "ab", 10]') |
++------------------------------------------+
+|                                        0 |
++------------------------------------------+
+1 row in set (0.00 sec)</code></pre><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT 'a' MEMBER OF('[23, "abc", 17, "ab", 10]');
++--------------------------------------------+
+| 'a' MEMBER OF('[23, "abc", 17, "ab", 10]') |
++--------------------------------------------+
+|                                          0 |
++--------------------------------------------+
+1 row in set (0.00 sec)</code></pre><p>
+          Conversions to and from string types are not performed:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT
+    -&gt; 17 MEMBER OF('[23, "abc", "17", "ab", 10]'),
+    -&gt; "17" MEMBER OF('[23, "abc", 17, "ab", 10]')\G
+*************************** 1. row ***************************
+17 MEMBER OF('[23, "abc", "17", "ab", 10]'): 0
+"17" MEMBER OF('[23, "abc", 17, "ab", 10]'): 0
+1 row in set (0.00 sec)</code></pre><p>
+          To use this operator with a value which is itself an array, it
+          is necessary to cast it explicitly as a JSON array. You can do
+          this with <a class="link" href="cast-functions.html#function_cast"><code class="literal">CAST(... AS JSON)</code></a>:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT CAST('[4,5]' AS JSON) MEMBER OF('[[3,4],[4,5]]');
++--------------------------------------------------+
+| CAST('[4,5]' AS JSON) MEMBER OF('[[3,4],[4,5]]') |
++--------------------------------------------------+
+|                                                1 |
++--------------------------------------------------+
+1 row in set (0.00 sec)</code></pre><p>
+          It is also possible to perform the necessary cast using the
+          <a class="link" href="json-creation-functions.html#function_json-array"><code class="literal">JSON_ARRAY()</code></a> function, like
+          this:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT JSON_ARRAY(4,5) MEMBER OF('[[3,4],[4,5]]');
++--------------------------------------------+
+| JSON_ARRAY(4,5) MEMBER OF('[[3,4],[4,5]]') |
++--------------------------------------------+
+|                                          1 |
++--------------------------------------------+
+1 row in set (0.00 sec)</code></pre><p>
+          Any JSON objects used as values to be tested or which appear
+          in the target array must be coerced to the correct type using
+          <code class="literal">CAST(... AS JSON)</code> or
+          <a class="link" href="json-creation-functions.html#function_json-object"><code class="literal">JSON_OBJECT()</code></a>. In addition, a
+          target array containing JSON objects must itself be cast using
+          <code class="literal">JSON_ARRAY</code>. This is demonstrated in the
+          following sequence of statements:
+        </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SET @a = CAST('{"a":1}' AS JSON);
+Query OK, 0 rows affected (0.00 sec)
+
+mysql&gt; SET @b = JSON_OBJECT("b", 2);
+Query OK, 0 rows affected (0.00 sec)
+
+mysql&gt; SET @c = JSON_ARRAY(17, @b, "abc", @a, 23);
+Query OK, 0 rows affected (0.00 sec)
+
+mysql&gt; SELECT @a MEMBER OF(@c), @b MEMBER OF(@c);
++------------------+------------------+
+| @a MEMBER OF(@c) | @b MEMBER OF(@c) |
++------------------+------------------+
+|                1 |                1 |
++------------------+------------------+
+1 row in set (0.00 sec)</code></pre><p>
+          The <code class="literal">MEMBER OF()</code> operator was added in MySQL
+          8.0.17.
+</p></li></ul>
+</div>
+
+</div>
+<br />
+        </div>
+
+                <div id="docs-in-page-nav-container">
+            <div id="docs-in-page-nav">
+                
+    <a href="json-creation-functions.html"
+        aria-label="Previous" title="Previous: Functions That Create JSON Values"><span
+        class="icon-chevron-left"></span> PREV</a> &nbsp;
+<a href="index.html" aria-label="Start" title="Start"> HOME</a> &nbsp;
+        <a aria-label="Up" href="json-functions.html" title="Up: JSON Functions"> UP</a> &nbsp;
+    <a href="json-modification-functions.html" aria-label="Next"
+        title="Next: Functions That Modify JSON Values">NEXT <span
+        class="icon-chevron-right"></span></a>
+            </div>
+        </div>
+        
+         <div id="docs-body-extra">
+             
+<a class="docs-sidebar-section" href=""><span class="icon-related"></span>
+    <span class="text">Related Documentation</span></a>
+<div class="docs-sidebar-accordian">
+    <div class="text">
+        <a href="/doc/relnotes/mysql/8.0/en/">MySQL 8.0 Release Notes</a><br />
+        <a href="/doc/dev/mysql-server/latest/">MySQL 8.0 Source Code Documentation</a><br />
+        </div>
+</div>
+
+    <a class="docs-sidebar-section" href=""><span class="icon-download-thin"></span>
+        <span class="text">
+            Download
+                            this Manual
+                    </span>
+    </a>
+    <div class="docs-sidebar-accordian">
+        <div class="text">
+                                    <a href="https://downloads.mysql.com/docs/refman-8.0-en.pdf">PDF (US Ltr)</a>
+            - 43.2Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.a4.pdf">PDF (A4)</a>
+            - 43.3Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.man-gpl.tar.gz">Man Pages (TGZ)</a>
+            - 295.2Kb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.man-gpl.zip">Man Pages (Zip)</a>
+            - 400.4Kb<br />
+                                                <a href="https://downloads.mysql.com/docs/mysql-8.0.info.gz">Info (Gzip)</a>
+            - 4.3Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/mysql-8.0.info.zip">Info (Zip)</a>
+            - 4.3Mb<br />
+                                </div>
+    </div>
+
+<a class="docs-sidebar-section" href=""><span class="icon-book"></span>
+    <span class="text">Excerpts from this Manual</span></a>
+<div class="docs-sidebar-accordian">
+    <div class="text">
+                <a href="/doc/mysql-g11n-excerpt/8.0/en/">MySQL Globalization</a><br />
+                <a href="/doc/mysql-infoschema-excerpt/8.0/en/">MySQL Information Schema</a><br />
+                <a href="/doc/mysql-installation-excerpt/8.0/en/">MySQL Installation Guide</a><br />
+                <a href="/doc/mysql-security-excerpt/8.0/en/">Security in MySQL</a><br />
+                <a href="/doc/mysql-startstop-excerpt/8.0/en/">Starting and Stopping MySQL</a><br />
+                <a href="/doc/mysql-linuxunix-excerpt/8.0/en/">MySQL and Linux/Unix</a><br />
+                <a href="/doc/mysql-windows-excerpt/8.0/en/">MySQL and Windows</a><br />
+                <a href="/doc/mysql-macos-excerpt/8.0/en/">MySQL and macOS</a><br />
+                <a href="/doc/mysql-solaris-excerpt/8.0/en/">MySQL and Solaris</a><br />
+                <a href="/doc/mysql-sourcebuild-excerpt/8.0/en/">Building MySQL from Source</a><br />
+                <a href="/doc/mysql-reslimits-excerpt/8.0/en/">MySQL Restrictions and Limitations</a><br />
+                <a href="/doc/mysql-partitioning-excerpt/8.0/en/">MySQL Partitioning</a><br />
+                <a href="/doc/mysql-tutorial-excerpt/8.0/en/">MySQL Tutorial</a><br />
+                <a href="/doc/mysql-perfschema-excerpt/8.0/en/">MySQL Performance Schema</a><br />
+                <a href="/doc/mysql-replication-excerpt/8.0/en/">MySQL Replication</a><br />
+                <a href="/doc/mysql-repo-excerpt/8.0/en/">Using the MySQL Yum Repository</a><br />
+                <a href="/doc/mysql-cluster-excerpt/8.0/en/">MySQL NDB Cluster 8.0</a><br />
+            </div>
+</div>
+         </div>
+     </div>
+     </div>
+
+</div>
+
+<script>
+$(function() {
+    var doc = new $.doc({ 'mobile': $.browser.mobile, 'docId': 1, 'highlight': true });
+});
+</script>
+    
+
+            
+        </div>
+    </div>
+
+    <footer class="collapsed">
+        <div id="footer-bottom">
+                                    <div id="footer-collapse">
+                <a href="" id="expand-footer"
+                    aria-label="Expand Footer"
+                    title="Expand Footer"><span
+                    class="icon-plus-square"></span></a>
+            </div>
+                        <div class="footer-contact">
+                <div id="footer-contact-icon" style="display: none;">
+                    <span class="icon-call-phone"></span>
+                </div>
+                <div id="footer-contact-numbers" style="display: none;">
+                    <strong>Contact MySQL Sales</strong><br/>
+                    USA/Canada: +1-866-221-0634 &nbsp;
+                    (<a href="https://www.mysql.com/about/contact/phone/" class="darker-blue">More Countries &raquo;</a>)
+                </div>
+                <div id="footer-contact-copyright" style="display: inline-block;">
+                    <a href="http://www.oracle.com/" aria-label="Oracle" title="Oracle"><span class="oracle-logo"></span></a>
+                    &nbsp; <a href="https://www.oracle.com/legal/copyright.html">&copy; 2026 Oracle</a>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a aria-label="Join us on Facebook" title="Join us on Facebook" href="http://www.facebook.com/mysql"><span class="icon-facebook-square"></span></a>
+                <a aria-label="Follow us on X" title="Follow us on X" href="https://x.com/mysql"><span class="icon-x-twitter-square"></span></a>
+                <a aria-label="Follow us on LinkedIn" title="Follow us on LinkedIn" href="https://www.linkedin.com/company/mysql"><span class="icon-linkedin-square"></span></a>
+                <a aria-label="Visit our YouTube channel" title="Visit our YouTube channel" href="http://www.youtube.com/mysqlchannel"><span class="icon-youtube-square"></span></a>
+            </div>
+            <br class="clear" />
+        </div>
+        <div id="footer-links">
+
+            <div id="site-footer-links">
+                <div id="footer-nav"></div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://www.mysql.com/products/">Products</a></li>
+                        <li><a href="https://www.mysql.com/products/heatwave/">MySQL HeatWave</a></li>
+                        <li><a href="https://www.mysql.com/products/enterprise/">MySQL Enterprise Edition</a></li>
+                        <li><a href="https://www.mysql.com/products/standard/">MySQL Standard Edition</a></li>
+                        <li><a href="https://www.mysql.com/products/classic/">MySQL Classic Edition</a></li>
+                        <li><a href="https://www.mysql.com/products/cluster/">MySQL Cluster CGE</a></li>
+                        <li><a href="https://www.mysql.com/oem/">MySQL Embedded (OEM/ISV)</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://www.mysql.com/services/">Services</a></li>
+                        <li><a href="https://www.mysql.com/training/">Training</a></li>
+                        <li><a href="https://www.mysql.com/certification/">Certification</a></li>
+                        <li><a href="https://www.mysql.com/support/">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://www.mysql.com/downloads/">Downloads</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/mysql/">MySQL Community Server</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/cluster/">MySQL NDB Cluster</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/shell/">MySQL Shell</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/router/">MySQL Router</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://dev.mysql.com/doc/">Documentation</a></li>
+                        <li><a href="https://dev.mysql.com/doc/refman/en/">MySQL Reference Manual</a></li>
+                        <li><a href="https://dev.mysql.com/doc/workbench/en/">MySQL Workbench</a></li>
+                        <li><a href="https://dev.mysql.com/doc/index-cluster.html">MySQL NDB Cluster</a></li>
+                        <li><a href="https://dev.mysql.com/doc/index-connectors.html">MySQL Connectors</a></li>
+                        <li><a href="https://dev.mysql.com/doc/#topic">Topic Guides</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://www.mysql.com/about/">About MySQL</a></li>
+                        <li><a href="https://www.mysql.com/about/contact/">Contact Us</a></li>
+                        <li><a href="https://blogs.oracle.com/mysql/">Blogs</a></li>
+                                                                        <li><a href="https://www.mysql.com/buy-mysql/">How to Buy</a></li>
+                        <li><a href="https://www.mysql.com/partners/">Partners</a></li>
+                        <li><a href="https://www.mysql.com/about/jobs/">Job Opportunities</a></li>
+                        <li><a href="https://www.mysql.com/sitemap.html">Site Map</a></li>
+                    </ul>
+                </div>
+
+                            </div>
+
+            <div id="footer-logo">
+                <a href="http://www.oracle.com/" aria-label="Oracle" title="Oracle"><span class="oracle-logo"></span></a>
+                &nbsp; <a href="https://www.oracle.com/legal/copyright.html">&copy; 2026 Oracle</a>
+                <div class="footer-legal-links">
+                    <a href="https://www.oracle.com/legal/privacy/">Privacy</a> /
+                    <a href="https://www.oracle.com/legal/privacy/privacy-choices.html">Do Not Sell My Info</a> |
+                    <a href="https://www.oracle.com/us/legal/terms/index.html">Terms of Use</a> |
+                    <a href="https://www.oracle.com/us/legal/third-party-trademarks/index.html">Trademark Policy</a> |
+                    <div id="teconsent"></div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</div>
+
+            <script>
+    if ((oracle.truste.api.getGdprConsentDecision().consentDecision) &&
+            (oracle.truste.api.getGdprConsentDecision().consentDecision.indexOf(0) != -1 ||
+             oracle.truste.api.getGdprConsentDecision().consentDecision.indexOf(2) != -1) )
+    {
+        document.write('<script src="https://labs.mysql.com/common/js/metrics/ora_mysql.js"><\/script>');
+        document.write('<script type="text/javascript" async src="//c.oracleinfinity.io/acs/account/wh3g12c3gg/js/mysql/odc.js?_ora.context=analytics:production"><\/script>');
+    }
+    </script>
+
+        
+    
+</body>
+</html>

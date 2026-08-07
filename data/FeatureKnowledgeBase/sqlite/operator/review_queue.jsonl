@@ -1,0 +1,41 @@
+{"feature_id": "sqlite.operator.!=_sqlite_current_lang_expr", "name": "!=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.%_sqlite_current_lang_expr", "name": "%", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.&_sqlite_current_lang_expr", "name": "&", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlite.operator.*_sqlite_current_lang_expr", "name": "*", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.+_sqlite_current_lang_expr", "name": "+", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.->>_sqlite_current_lang_expr", "name": "->>", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.->_sqlite_current_lang_expr", "name": "->", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.-_sqlite_current_lang_expr", "name": "-", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator./_sqlite_current_lang_expr", "name": "/", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.<<_sqlite_current_lang_expr", "name": "<<", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.<=_sqlite_current_lang_expr", "name": "<=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.<>_sqlite_current_lang_expr", "name": "<>", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.<_sqlite_current_lang_expr", "name": "<", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.==_sqlite_current_lang_expr", "name": "==", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.=_sqlite_current_lang_expr", "name": "=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.>=_sqlite_current_lang_expr", "name": ">=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.>>_sqlite_current_lang_expr", "name": ">>", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.>_sqlite_current_lang_expr", "name": ">", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.and_sqlite_current_lang_expr", "name": "AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.between_sqlite_current_lang_expr", "name": "BETWEEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "sqlite.operator.collate_sqlite_current_lang_expr", "name": "COLLATE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.escape_sqlite_current_lang_expr", "name": "ESCAPE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.exists_sqlite_current_lang_expr", "name": "EXISTS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "sqlite.operator.glob_sqlite_current_lang_expr", "name": "GLOB", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.in_sqlite_current_lang_expr", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.is_distinct_from_sqlite_current_lang_expr", "name": "IS DISTINCT FROM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.is_not_distinct_from_sqlite_current_lang_expr", "name": "IS NOT DISTINCT FROM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.is_not_sqlite_current_lang_expr", "name": "IS NOT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.is_sqlite_current_lang_expr", "name": "IS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.isnull_sqlite_current_lang_expr", "name": "ISNULL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.like_sqlite_current_lang_expr", "name": "LIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.match_sqlite_current_lang_expr", "name": "MATCH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.not_in_sqlite_current_lang_expr", "name": "NOT IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "sqlite.operator.not_null_sqlite_current_lang_expr", "name": "NOT NULL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.not_sqlite_current_lang_expr", "name": "NOT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.notnull_sqlite_current_lang_expr", "name": "NOTNULL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.or_sqlite_current_lang_expr", "name": "OR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.regexp_sqlite_current_lang_expr", "name": "REGEXP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.|_sqlite_current_lang_expr", "name": "|", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.||_sqlite_current_lang_expr", "name": "||", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.operator.~_sqlite_current_lang_expr", "name": "~", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}

@@ -1,0 +1,299 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="reference">
+      <meta name="DC.Title" content="Data Quality Operators">
+      <meta name="DC.subject" content="data quality operators, FUZZY_MATCH operator, FUZZY_MATCH, PHONIC_CODE operator, PHONIC_CODE">
+      <meta name="keywords" content="data quality operators, FUZZY_MATCH operator, FUZZY_MATCH, PHONIC_CODE operator, PHONIC_CODE">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-30540D17-AC84-45F5-A511-75D95F7B0229">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Data Quality Operators</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="User-Defined-Operators.html" title="Previous" type="text/html">
+      <link rel="next" href="graph_table-operator.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Data Quality Operators","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="User-Defined-Operators.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="graph_table-operator.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-30540D17-AC84-45F5-A511-75D95F7B0229" name="GUID-30540D17-AC84-45F5-A511-75D95F7B0229"></a>
+         
+         <h2 id="SQLRF-GUID-30540D17-AC84-45F5-A511-75D95F7B0229" class="sect2">Data Quality Operators</h2>
+         <div class="ind">
+            <div>
+               <div class="section">
+                  <p>You can expand data quality capabilities within Oracle Database with string matching operators <code class="codeph">PHONIC_ENCODE</code> and <code class="codeph">FUZZY_MATCH</code>. 
+                  </p>
+                  <p>These operators can help you find near duplicate rows by matching strings that sounds alike or have small differences in spelling, for example: </p>
+                  <ul style="list-style-type: disc;" id="GUID-30540D17-AC84-45F5-A511-75D95F7B0229__UL_N1T_KGD_B5B">
+                     <li>
+                        <p> "Chris" and "Kris", in strings that sound alike</p>
+                     </li>
+                     <li>
+                        <p> "kitten" and "sitten", in strings that have small differences in spelling</p>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="sect2"><a id="GUID-C13A179C-1F82-4522-98AA-E21C6504755E" name="GUID-C13A179C-1F82-4522-98AA-E21C6504755E"></a><h3 id="SQLRF-GUID-C13A179C-1F82-4522-98AA-E21C6504755E" class="sect3">FUZZY_MATCH</h3>
+               <div>
+                  <div class="section">
+                     <p><code class="codeph">FUZZY_MATCH</code> takes the algorithm to be used as the first argument, the strings to be processed as the second and third arguments, and some optional arguments that control the quality of the desired output.
+                     </p>
+                     <div class="figure" id="GUID-C13A179C-1F82-4522-98AA-E21C6504755E__FIG_PYV_M5W_15B"><br><div class="imageleft"><img class="imageleft" id="GUID-C13A179C-1F82-4522-98AA-E21C6504755E__IMAGE_WRH_1XW_15B" src="img/fuzzy_match.gif" alt="Description of fuzzy_match.eps follows" title="Description of fuzzy_match.eps follows" longdesc="img_text/fuzzy_match.html"><br><a href="img_text/fuzzy_match.html">Description of the illustration fuzzy_match.eps</a></div><br></div>
+                     <p>The <code class="codeph">UTL_MATCH</code> package evaluates byte by byte, while <code class="codeph">FUZZY_MATCH</code> evaluates character by character. Therefore <code class="codeph">UTL_MATCH</code> only works for comparison between single-byte strings while <code class="codeph">FUZZY_MATCH</code> handles multi-byte charactersets.
+                     </p>
+                     <p>When the <code class="codeph">UNSCALED</code> option is specified, <code class="codeph">FUZZY_MATCH</code> returns a measure in characters for the following algorithms: <code class="codeph">LEVENSHTEIN</code> , <code class="codeph">DAMERAU_LEVENSHTEIN</code> , <code class="codeph">BIGRAM</code> , <code class="codeph">TRIGRAM</code> , <code class="codeph">LONGEST_COMMON_SUBSTRING</code> .
+                     </p>
+                     <p><span class="bold">Arguments</span></p>
+                     <p>The supported algorithms are:</p>
+                     <ul style="list-style-type: disc;" id="GUID-C13A179C-1F82-4522-98AA-E21C6504755E__UL_XHX_ZXW_15B">
+                        <li>
+                           <p><code class="codeph">LEVENSHTEIN</code> corresponds to <code class="codeph">UTL_MATCH.EDIT_DISTANCE</code> or <code class="codeph">UTL_MATCH.EDIT_SIMILARITY</code> and gives a measure of character edit distance or similarity. 
+                           </p>
+                        </li>
+                        <li>
+                           <p><code class="codeph">DAMERAU_LEVENSHTEIN</code> distance differs from the classical <code class="codeph">LEVENSHTEIN</code> distance by including transpositions among its allowable operations in addition to the three classical single-character edit operations (insertions, deletions and substitutions).
+                           </p>
+                        </li>
+                        <li>
+                           <p><code class="codeph">JARO_WINKLER</code> corresponds to <code class="codeph">UTL_MATCH.JARO_WINKLER</code> (a percentage between 0-1) or <code class="codeph">UTL_MATCH.JARO_WINKLER_SIMILARITY</code> (the same but scaled from 0-100).
+                           </p>
+                        </li>
+                        <li>
+                           <p><code class="codeph">BIGRAM</code> and <code class="codeph">TRIGRAM</code>  are instances of the N-gram matching technique, which counts the number of common contiguous sub-strings (grams) between the two strings. 
+                           </p>
+                        </li>
+                        <li>
+                           <p><code class="codeph">WHOLE_WORD_MATCH</code> corresponds to Word Match Percentage or Count comparison in Oracle Enterprise Data Quality. It calculates the <code class="codeph">LEVENSHTEIN</code> or edit distance of two phrases with words (instead of letters) as matching units. 
+                           </p>
+                        </li>
+                        <li>
+                           <p><code class="codeph">LONGEST_COMMON_SUBSTRING</code> finds the longest common substring between the two strings. 
+                           </p>
+                        </li>
+                     </ul>
+                     <p>Both <span class="italic"><code class="codeph">str</code></span> arguments can be any of the datatypes <code class="codeph">CHAR</code>, <code class="codeph">VARCHAR2</code>, <code class="codeph">NCHAR</code>, <code class="codeph">NVARCHAR2</code>.
+                     </p>
+                     <p><span class="bold">UNSCALED</span></p>
+                     <p>The keyword <code class="codeph">UNSCALED</code> is optional. If you specify <code class="codeph">UNSCALED</code> the return is one of :
+                     </p>
+                     <ul style="list-style-type: disc;" id="GUID-C13A179C-1F82-4522-98AA-E21C6504755E__UL_MLJ_QZW_15B">
+                        <li>
+                           <p><code class="codeph">LEVENSHTEIN</code> or edit distance
+                           </p>
+                        </li>
+                        <li>
+                           <p><code class="codeph">JARO_WINKLER</code> value in percentage
+                           </p>
+                        </li>
+                        <li>
+                           <p>N-grams, the number of common substrings</p>
+                        </li>
+                        <li>
+                           <p>LCS, the length of the longest common substring </p>
+                        </li>
+                     </ul>
+                     <p><span class="bold">RELATE_TO_SHORTER</span></p>
+                     <p>The keyword <code class="codeph">RELATE_TO_SHORTER</code> is optional. If you specify <code class="codeph">RELATE_TO_SHORTER</code>, then the similarity measure is scaled by the length of the shorter input string. If you do not specify <code class="codeph">RELATE_TO_SHORTER</code>, then the default behavior is that the longer string length is used as the denominator.
+                     </p>
+                     <p><span class="bold">EDIT_TOLERANCE</span></p>
+                     <p>The keyword <code class="codeph">EDIT_TOLERANCE</code> is optional. You can only specify <code class="codeph">EDIT_TOLERANCE</code> with the <code class="codeph">WHOLE_WORD_MATCH</code> algorithm. If you specify <code class="codeph">EDIT_TOLERANCE</code>, the character error tolerance is the maximum percentage of the number of characters in a word that you allow to be different, while still considering each word as the same. 
+                     </p>
+                     <p><span class="bold">Returns</span></p>
+                     <p>The operator returns <code class="codeph">NUMBER</code>. By default, it is a similarity score normalized to be a percentage between 0-100.
+                     </p>
+                     <p><span class="bold">Examples</span></p><pre class="oac_no_warn" dir="ltr">SQL&gt; select fuzzy_match(LEVENSHTEIN, 'Mohamed Tarik', 'Mo Tariq') from dual;
+
+FUZZY_MATCH(LEVENSHTEIN,'MOHAMEDTARIK','MOTARIQ')
+-------------------------------------------------
+                                               54
+
+1 row selected.</pre><pre class="oac_no_warn" dir="ltr">SQL&gt; select fuzzy_match(LEVENSHTEIN, 'Mohamed Tarik', 'Mo Tariq', unscaled) from dual;
+
+FUZZY_MATCH(LEVENSHTEIN,'MOHAMEDTARIK','MOTARIQ',UNSCALED)
+----------------------------------------------------------
+                                                         6
+
+1 row selected.
+
+</pre><pre class="oac_no_warn" dir="ltr">SQL&gt; select fuzzy_match(DAMERAU_LEVENSHTEIN, 'Mohamed Tarik', 'Mo Tariq', relate_to_shorter) from dual;
+
+FUZZY_MATCH(DAMERAU_LEVENSHTEIN,'MOHAMEDTARIK','MOTARIQ',RELATE_TO_SHORTER)
+---------------------------------------------------------------------------
+                                                                         25
+
+1 row selected.</pre><pre class="oac_no_warn" dir="ltr">SQL&gt; select fuzzy_match(BIGRAM, 'Mohamed Tarik', 'Mo Tariq', unscaled) from dual;
+
+FUZZY_MATCH(BIGRAM,'MOHAMEDTARIK','MOTARIQ',UNSCALED)
+-----------------------------------------------------
+                                                    5
+
+1 row selected.</pre><pre class="oac_no_warn" dir="ltr">SQL&gt; select fuzzy_match(LONGEST_COMMON_SUBSTRING, 'Mohamed Tarik', 'Mo Tariq', unscaled) from dual;
+
+FUZZY_MATCH(LONGEST_COMMON_SUBSTRING,'MOHAMEDTARIK','MOTARIQ',UNSCALED)
+-----------------------------------------------------------------------
+                                                                      5
+
+1 row selected.</pre><pre class="oac_no_warn" dir="ltr">SQL&gt; select fuzzy_match(WHOLE_WORD_MATCH,  'Mohamed Tarik', 'Mo Tariq') from dual;
+
+FUZZY_MATCH(WHOLE_WORD_MATCH,'MOHAMEDTARIK','MOTARIQ')
+------------------------------------------------------
+                                                     0
+
+1 row selected</pre><pre class="oac_no_warn" dir="ltr">SQL&gt; select fuzzy_match(WHOLE_WORD_MATCH, 'Pawan Kumar Goel', 'Pavan Kumar G', EDIT_TOLERANCE 60) from dual;
+
+FUZZY_MATCH(WHOLE_WORD_MATCH,'PAWANKUMARGOEL','PAVANKUMARG',EDIT_TOLERANCE60)
+-----------------------------------------------------------------------------
+                                                                           67
+
+1 row selected.</pre></div>
+               </div>
+            </div>
+            <div class="sect2"><a id="GUID-4D870366-C06F-4E63-BE15-609C1F2A96D3" name="GUID-4D870366-C06F-4E63-BE15-609C1F2A96D3"></a><h3 id="SQLRF-GUID-4D870366-C06F-4E63-BE15-609C1F2A96D3" class="sect3">PHONIC_ENCODE</h3>
+               <div>
+                  <div class="section">
+                     <p><code class="codeph">PHONIC_ENCODE</code> takes the algorithm to be used as the first argument, the string to be processed as the second argument, and an optional <code class="codeph">max_code_len</code> argument that controls the length of the desired output. <code class="codeph">max_code_len</code> must be an integer between 1 and 12. 
+                     </p>
+                     <div class="figure" id="GUID-4D870366-C06F-4E63-BE15-609C1F2A96D3__FIG_R2V_N5W_15B"><br><div class="imageleft"><img class="imageleft" id="GUID-4D870366-C06F-4E63-BE15-609C1F2A96D3__IMAGE_GCZ_WWW_15B" src="img/phonic_encode.gif" alt="Description of phonic_encode.eps follows" title="Description of phonic_encode.eps follows" longdesc="img_text/phonic_encode.html"><br><a href="img_text/phonic_encode.html">Description of the illustration phonic_encode.eps</a></div><br></div>
+                     <p><span class="bold">Arguments</span></p>
+                     <p><code class="codeph">DOUBLE_METAPHONE</code> returns the primary code. <code class="codeph">DOUBLE_METAPHONE_ALT</code> returns the alternative code if present. If the alternative code is not present, it returns the primary code.
+                     </p>
+                     <p><span class="italic"><code class="codeph">str</code></span> can be any of the datatypes <code class="codeph">CHAR</code>, <code class="codeph">VARCHAR2</code>, <code class="codeph">NCHAR</code>, <code class="codeph">NVARCHAR2</code>.
+                     </p>
+                     <p>The optional argument <span class="italic"><code class="codeph">max_code_len</code></span> must be an integer. It allows codes longer than the default 4 characters to be returned for the original Metaphone algorithm.
+                     </p>
+                     <p><span class="bold">Returns</span></p>
+                     <p>The operator returns <code class="codeph">VARCHAR2</code>.
+                     </p>
+                     <p><span class="bold">Examples</span></p><pre class="oac_no_warn" dir="ltr">SQL&gt; select phonic_encode(DOUBLE_METAPHONE,     'smith') c1,
+  2         phonic_encode(DOUBLE_METAPHONE_ALT, 'smith') c2 from dual;
+
+C1            C2
+------------- -------------
+SM0           XMT
+
+1 row selected.</pre><pre class="oac_no_warn" dir="ltr">SQL&gt; select phonic_encode(DOUBLE_METAPHONE,     'Schmidt') c1,
+  2         phonic_encode(DOUBLE_METAPHONE_ALT, 'Schmidt') c2 from dual;
+
+C1            C2
+------------- -------------
+XMT           SMT
+
+1 row selected.</pre><pre class="oac_no_warn" dir="ltr">SQL&gt; select phonic_encode(DOUBLE_METAPHONE,     'phone') c1,
+  2         phonic_encode(DOUBLE_METAPHONE_ALT, 'phone') c2 from dual;
+
+C1            C2
+------------- -------------
+FN            FN
+
+1 row selected.</pre><pre class="oac_no_warn" dir="ltr">SQL&gt; select phonic_encode(DOUBLE_METAPHONE,     'George') c1,
+  2         phonic_encode(DOUBLE_METAPHONE_ALT, 'George') c2 from dual;
+
+C1            C2
+------------- -------------
+JRJ           KRK
+
+1 row selected.</pre><pre class="oac_no_warn" dir="ltr">SQL&gt; -- PNNT / PKNNT
+SQL&gt; select phonic_encode(DOUBLE_METAPHONE,     'poignant') c1,
+  2         phonic_encode(DOUBLE_METAPHONE_ALT, 'poignant') c2,
+  3         phonic_encode(DOUBLE_METAPHONE_ALT, 'poignant', 10) c3 from dual;
+
+C1            C2            C3
+------------- ------------- -------------
+PNNT          PKNN          PKNNT</pre></div>
+               </div>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

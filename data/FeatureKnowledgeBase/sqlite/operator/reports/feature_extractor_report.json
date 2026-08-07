@@ -1,0 +1,7 @@
+{
+  "dbms": "sqlite",
+  "feature_type": "operator",
+  "candidates": 61,
+  "groups": 41,
+  "drafts": 41
+}

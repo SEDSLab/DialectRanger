@@ -1,0 +1,57 @@
+{"feature_id": "postgresql.datatype.any", "name": "any", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.anyarray", "name": "anyarray", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "postgresql.datatype.anyelement", "name": "anyelement", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "postgresql.datatype.anyenum", "name": "anyenum", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "postgresql.datatype.anynonarray", "name": "anynonarray", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "postgresql.datatype.anyrange", "name": "anyrange", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "postgresql.datatype.array", "name": "array", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.bigint", "name": "bigint", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.bigserial", "name": "bigserial", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.bit", "name": "bit", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "postgresql.datatype.bit varying", "name": "bit varying", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.boolean", "name": "boolean", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.box", "name": "box", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.bytea", "name": "bytea", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.char", "name": "char", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.character", "name": "character", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.character varying", "name": "character varying", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.cidr", "name": "cidr", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.circle", "name": "circle", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.date", "name": "date", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.decimal", "name": "decimal", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.domain", "name": "domain", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.double precision", "name": "double precision", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.inet", "name": "inet", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.int4", "name": "int4", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.integer", "name": "integer", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.interval", "name": "interval", "status": "invalid", "reason": ["no_valid_syntax", "missing_examples", "syntax[0] missing evidence_refs — removed", "no_description_claims"], "details": []}
+{"feature_id": "postgresql.datatype.json", "name": "json", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.jsonb", "name": "jsonb", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.line", "name": "line", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.lseg", "name": "lseg", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.macaddr", "name": "macaddr", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.macaddr8", "name": "macaddr8", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.money", "name": "money", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.numeric", "name": "numeric", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.oid", "name": "oid", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.path", "name": "path", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.pg_lsn", "name": "pg_lsn", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.point", "name": "point", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.polygon", "name": "polygon", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.range", "name": "range", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "postgresql.datatype.real", "name": "real", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.serial", "name": "serial", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.smallint", "name": "smallint", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.smallserial", "name": "smallserial", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.text", "name": "text", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.time", "name": "time", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.time with time zone", "name": "time with time zone", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.timestamp", "name": "timestamp", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.timestamp with time zone", "name": "timestamp with time zone", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.timestamp without time zone", "name": "timestamp without time zone", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.timestamptz", "name": "timestamptz", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.tsquery", "name": "tsquery", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.tsvector", "name": "tsvector", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.uuid", "name": "uuid", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.varchar", "name": "varchar", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "postgresql.datatype.xml", "name": "xml", "status": "needs_review", "reason": ["missing_examples"], "details": []}

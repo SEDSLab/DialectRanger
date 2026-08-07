@@ -1,0 +1,104 @@
+{
+  "dbms": "sqlserver",
+  "feature_type": "function",
+  "nodes": {
+    "page": 221,
+    "section": 2597,
+    "block": 13864,
+    "feature_candidate": 196
+  },
+  "edges": {
+    "page_contains_section": 2597,
+    "section_contains_block": 13864,
+    "section_previous": 2378,
+    "section_next": 2378,
+    "feature_documented_in_section": 205,
+    "see_also_links_to_feature": 97,
+    "total": 21519
+  },
+  "noise": {
+    "noise_nodes": 19,
+    "noise_sections": 2,
+    "noise_blocks": 17,
+    "eligible_nodes": 16819
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [
+    {
+      "source": "sqlserver_current_text_and_image_functions_textptr_transact_sql_s0012",
+      "target": "sqlserver.function.datalength",
+      "matched_name": "DATALENGTH"
+    },
+    {
+      "source": "sqlserver_current_text_and_image_functions_textptr_transact_sql_s0012",
+      "target": "sqlserver.function.patindex",
+      "matched_name": "PATINDEX"
+    },
+    {
+      "source": "sqlserver_current_cast_and_convert_transact_sql_s0041",
+      "target": "sqlserver.function.format",
+      "matched_name": "FORMAT"
+    },
+    {
+      "source": "sqlserver_current_cast_and_convert_transact_sql_s0041",
+      "target": "sqlserver.function.str",
+      "matched_name": "STR"
+    },
+    {
+      "source": "sqlserver_current_datepart_transact_sql_s0016",
+      "target": "sqlserver.function.datetrunc",
+      "matched_name": "DATETRUNC"
+    },
+    {
+      "source": "sqlserver_current_datediff_big_transact_sql_s0011",
+      "target": "sqlserver.function.datediff",
+      "matched_name": "DATEDIFF"
+    },
+    {
+      "source": "sqlserver_current_edge_id_from_parts_transact_sql_s0009",
+      "target": "sqlserver.function.openrowset",
+      "matched_name": "OPENROWSET"
+    },
+    {
+      "source": "sqlserver_current_edge_id_from_parts_transact_sql_s0009",
+      "target": "sqlserver.function.node_id_from_parts",
+      "matched_name": "NODE_ID_FROM_PARTS"
+    }
+  ],
+  "sample_feature_documented_edges": [
+    {
+      "source": "sqlserver.function.ascii",
+      "target": "sqlserver_current_ascii_transact_sql_s0001"
+    },
+    {
+      "source": "sqlserver.function.format",
+      "target": "sqlserver_current_format_transact_sql_s0001"
+    },
+    {
+      "source": "sqlserver.function.left_shift",
+      "target": "sqlserver_current_left_shift_transact_sql_s0001"
+    },
+    {
+      "source": "sqlserver.function.right_shift",
+      "target": "sqlserver_current_right_shift_transact_sql_s0001"
+    },
+    {
+      "source": "sqlserver.function.bit_count",
+      "target": "sqlserver_current_bit_count_transact_sql_s0001"
+    },
+    {
+      "source": "sqlserver.function.get_bit",
+      "target": "sqlserver_current_get_bit_transact_sql_s0001"
+    },
+    {
+      "source": "sqlserver.function.set_bit",
+      "target": "sqlserver_current_set_bit_transact_sql_s0001"
+    },
+    {
+      "source": "sqlserver.function.serverproperty",
+      "target": "sqlserver_current_serverproperty_transact_sql_s0001"
+    }
+  ],
+  "generated_at": "2026-08-06T19:56:08.092216+08:00"
+}

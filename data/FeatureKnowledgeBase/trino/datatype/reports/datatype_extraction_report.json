@@ -1,0 +1,13 @@
+{
+  "dbms": "trino",
+  "feature_type": "datatype",
+  "candidate_features": 72,
+  "candidate_groups": 27,
+  "feature_drafts": 27,
+  "known_type_coverage": {
+    "total": 0,
+    "covered": 0,
+    "missing": [],
+    "coverage_ratio": 1.0
+  }
+}

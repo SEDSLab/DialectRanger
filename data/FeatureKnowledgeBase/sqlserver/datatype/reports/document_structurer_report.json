@@ -1,0 +1,314 @@
+{
+  "dbms": "sqlserver",
+  "feature_type": "datatype",
+  "processed_pages": 36,
+  "skipped_pages": 0,
+  "total_sections": 432,
+  "total_blocks": 3112,
+  "section_sources": {
+    "fallback": 36,
+    "heading_tree": 396
+  },
+  "block_types": {
+    "anchor": 433,
+    "paragraph": 827,
+    "heading": 396,
+    "list": 418,
+    "table": 84,
+    "table_row": 602,
+    "note": 34,
+    "code": 293,
+    "signature": 19,
+    "warning": 6
+  },
+  "pages": [
+    {
+      "page_id": "sqlserver_current_data_types_transact_sql",
+      "sections": 12,
+      "blocks": 97,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlserver_current_date_and_time_data_types_and_functions_transact_sql",
+      "sections": 16,
+      "blocks": 103,
+      "anchors": 12,
+      "tables": 10,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlserver_current_data_type_conversion_database_engine",
+      "sections": 7,
+      "blocks": 99,
+      "anchors": 12,
+      "tables": 2,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "sqlserver_current_data_type_precedence_transact_sql",
+      "sections": 4,
+      "blocks": 55,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlserver_current_precision_scale_and_length_transact_sql",
+      "sections": 6,
+      "blocks": 61,
+      "anchors": 12,
+      "tables": 1,
+      "code_blocks": 7
+    },
+    {
+      "page_id": "sqlserver_current_data_type_synonyms_transact_sql",
+      "sections": 4,
+      "blocks": 48,
+      "anchors": 12,
+      "tables": 1,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "sqlserver_current_create_table_azure_sql_data_warehouse",
+      "sections": 58,
+      "blocks": 336,
+      "anchors": 12,
+      "tables": 11,
+      "code_blocks": 24
+    },
+    {
+      "page_id": "sqlserver_current_int_bigint_smallint_and_tinyint_transact_sql",
+      "sections": 8,
+      "blocks": 52,
+      "anchors": 12,
+      "tables": 1,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "sqlserver_current_bit_transact_sql",
+      "sections": 4,
+      "blocks": 33,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlserver_current_decimal_and_numeric_transact_sql",
+      "sections": 10,
+      "blocks": 59,
+      "anchors": 12,
+      "tables": 2,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "sqlserver_current_money_and_smallmoney_transact_sql",
+      "sections": 6,
+      "blocks": 79,
+      "anchors": 12,
+      "tables": 2,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "sqlserver_current_float_and_real_transact_sql",
+      "sections": 7,
+      "blocks": 48,
+      "anchors": 12,
+      "tables": 2,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlserver_current_date_transact_sql",
+      "sections": 21,
+      "blocks": 197,
+      "anchors": 12,
+      "tables": 4,
+      "code_blocks": 46
+    },
+    {
+      "page_id": "sqlserver_current_time_transact_sql",
+      "sections": 14,
+      "blocks": 153,
+      "anchors": 12,
+      "tables": 10,
+      "code_blocks": 13
+    },
+    {
+      "page_id": "sqlserver_current_datetime2_transact_sql",
+      "sections": 12,
+      "blocks": 113,
+      "anchors": 12,
+      "tables": 6,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "sqlserver_current_datetimeoffset_transact_sql",
+      "sections": 14,
+      "blocks": 145,
+      "anchors": 12,
+      "tables": 6,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "sqlserver_current_datetime_transact_sql",
+      "sections": 15,
+      "blocks": 177,
+      "anchors": 12,
+      "tables": 9,
+      "code_blocks": 29
+    },
+    {
+      "page_id": "sqlserver_current_smalldatetime_transact_sql",
+      "sections": 10,
+      "blocks": 85,
+      "anchors": 12,
+      "tables": 3,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "sqlserver_current_char_and_varchar_transact_sql",
+      "sections": 14,
+      "blocks": 77,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 7
+    },
+    {
+      "page_id": "sqlserver_current_ntext_text_and_image_transact_sql",
+      "sections": 9,
+      "blocks": 45,
+      "anchors": 12,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlserver_current_nchar_and_nvarchar_transact_sql",
+      "sections": 9,
+      "blocks": 52,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlserver_current_binary_and_varbinary_transact_sql",
+      "sections": 9,
+      "blocks": 56,
+      "anchors": 12,
+      "tables": 1,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "sqlserver_current_cursor_transact_sql",
+      "sections": 4,
+      "blocks": 31,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlserver_current_hierarchyid_data_type_method_reference",
+      "sections": 10,
+      "blocks": 67,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "sqlserver_current_json_data_type",
+      "sections": 14,
+      "blocks": 88,
+      "anchors": 12,
+      "tables": 1,
+      "code_blocks": 7
+    },
+    {
+      "page_id": "sqlserver_current_vector_data_type",
+      "sections": 24,
+      "blocks": 123,
+      "anchors": 13,
+      "tables": 0,
+      "code_blocks": 24
+    },
+    {
+      "page_id": "sqlserver_current_rowversion_transact_sql",
+      "sections": 4,
+      "blocks": 41,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "sqlserver_current_sql_variant_transact_sql",
+      "sections": 11,
+      "blocks": 93,
+      "anchors": 12,
+      "tables": 1,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "sqlserver_current_table_transact_sql",
+      "sections": 13,
+      "blocks": 73,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 7
+    },
+    {
+      "page_id": "sqlserver_current_uniqueidentifier_transact_sql",
+      "sections": 7,
+      "blocks": 40,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "sqlserver_current_date_and_time_data_types_and_functions_transact_sql",
+      "sections": 16,
+      "blocks": 103,
+      "anchors": 12,
+      "tables": 10,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "sqlserver_current_getdescendant_database_engine",
+      "sections": 13,
+      "blocks": 62,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 7
+    },
+    {
+      "page_id": "sqlserver_current_tostring_database_engine",
+      "sections": 10,
+      "blocks": 44,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 8
+    },
+    {
+      "page_id": "sqlserver_current_read_database_engine",
+      "sections": 9,
+      "blocks": 33,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "sqlserver_current_write_database_engine",
+      "sections": 8,
+      "blocks": 31,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "sqlserver_current_vector_data_type_half_precision_float",
+      "sections": 20,
+      "blocks": 113,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 35
+    }
+  ]
+}

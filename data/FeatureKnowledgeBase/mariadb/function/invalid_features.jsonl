@@ -1,0 +1,5 @@
+{"feature_id": "mariadb.function.json_table", "name": "json_table", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "mariadb.function.percentile_cont", "name": "percentile_cont", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "mariadb.function.spider_bg_direct_sql", "name": "spider_bg_direct_sql", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "mariadb.function.spider_direct_sql", "name": "spider_direct_sql", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "mariadb.function.weight_string", "name": "weight_string", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}

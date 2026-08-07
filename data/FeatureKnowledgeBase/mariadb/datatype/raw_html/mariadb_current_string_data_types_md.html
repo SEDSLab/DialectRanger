@@ -1,0 +1,543 @@
+> For the complete documentation index, see [llms.txt](https://mariadb.com/docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://mariadb.com/docs/server/reference/data-types/string-data-types.md).
+
+# String Data Types
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/bXtsYn8vqCKJB69Pb58p" %}
+[BLOB and TEXT Data Types](/docs/server/reference/data-types/string-data-types/blob-and-text-data-types.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Overview of large object types. This page compares BLOB (binary) and TEXT (character) types, explaining their storage and usage differences.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/zX23viFzHayYHUhOLVBu" %}
+[BINARY](/docs/server/reference/data-types/string-data-types/binary.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Fixed-length binary string type. This type stores a fixed number of bytes, padding with zero bytes if the data is shorter.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/XITpxP2qZHwlZS92PiMZ" %}
+[BLOB](/docs/server/reference/data-types/string-data-types/blob.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Variable-length binary large object. BLOB columns can store binary data up to 65,535 bytes, suitable for images or other non-text files.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/pyTXulSvT8y5hbqF3KZN" %}
+[CHAR](/docs/server/reference/data-types/string-data-types/char.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Fixed-length character string type. CHAR columns store strings of a specified length (0 to 255), padding with spaces if necessary.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/Wb7Oigq7nErWm8D5MeHZ" %}
+[CHARACTER](/docs/server/reference/data-types/string-data-types/character.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Fixed-length character string type. CHARACTER columns store strings of a specified length (0 to 255), padding with spaces if necessary.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/wavwgwAfGsgSI25SDBoU" %}
+[CHAR BYTE](/docs/server/reference/data-types/string-data-types/char-byte.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Fixed-length binary string type. This type stores a fixed number of bytes, padding with zero bytes if the data is shorter.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/brqTDaJHb1s9QM5bj7Yg" %}
+[CHAR VARYING](/docs/server/reference/data-types/string-data-types/char-varying.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+CHAR VARYING is a synonym for the VARCHAR string data type.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/hZFksPXpnLppD3K8hDEo" %}
+[CLOB](/docs/server/reference/data-types/string-data-types/clob.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+In Oracle mode, CLOB is an alias for the LONGTEXT data type used to store large text objects.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/IZFsQYXje76VjAILC5YJ" %}
+[ENUM](/docs/server/reference/data-types/string-data-types/enum.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Complete ENUM type reference: ENUM('v1','v2') syntax, CHARACTER SET/COLLATE options, NULL/empty string defaults, and numeric index sorting guidelines.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/wYjz5TuwDjOv1Y5HwJqQ" %}
+[INET4](/docs/server/reference/data-types/string-data-types/inet4.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+IPv4 address data type. Stores IPv4 addresses as 4-byte binary strings for efficient storage and retrieval.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/t0EnkVD7lPOITZUKC6r1" %}
+[INET6](/docs/server/reference/data-types/string-data-types/inet6.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+IPv6 address data type. Stores IPv6 addresses as 16-byte binary strings, also supporting IPv4 addresses via mapping.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/PTe7ELeJtXyk3vp6zNca" %}
+[JSON Data Type](/docs/server/reference/data-types/string-data-types/json.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Complete JSON Data Type data type guide for MariaDB. Complete reference for syntax, valid values, storage requirements, and range limits for production use.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/TNULB7QCSMiaYFCOjq30" %}
+[LONG and LONG VARCHAR](/docs/server/reference/data-types/string-data-types/long-and-long-varchar.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+LONG and LONG VARCHAR are compatibility synonyms for the MEDIUMTEXT string data type.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/7NK2w9UiBMeitpLJCzhW" %}
+[LONG CHAR VARYING](/docs/server/reference/data-types/string-data-types/long-char-varying.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+LONG CHAR VARYING is a compatibility synonym for the MEDIUMTEXT string data type.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/Va4wvOTayfTaghYEFoUS" %}
+[LONG CHARACTER VARYING](/docs/server/reference/data-types/string-data-types/long-character-varying.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+LONG CHARACTER VARYING is a compatibility synonym for the MEDIUMTEXT string data type.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/ZGlMMCL345Kmw4yxwkib" %}
+[LONG VARBINARY](/docs/server/reference/data-types/string-data-types/long-varbinary.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+LONG VARBINARY is a compatibility synonym for the MEDIUMBLOB binary data type.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/nyNCmMPXMTmZD5rzY1wU" %}
+[LONG VARCHAR](/docs/server/reference/data-types/string-data-types/long-varchar.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+LONG VARCHAR is a compatibility synonym for the MEDIUMTEXT string data type.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/mm5FvOColWN7zasaUuen" %}
+[LONG VARCHARACTER](/docs/server/reference/data-types/string-data-types/long-varcharacter.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+LONG VARCHARACTER is a compatibility synonym for the MEDIUMTEXT string data type.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/xe0ToPfDfvgwmMKm9uw6" %}
+[LONGBLOB](/docs/server/reference/data-types/string-data-types/longblob.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Very large binary object. A LONGBLOB column can store up to 4GB of binary data.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/FVR37bS43nlJOVkOlYaz" %}
+[LONGTEXT](/docs/server/reference/data-types/string-data-types/longtext.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Complete LONGTEXT type reference: 4GB (2^32-1) storage limit, CHARACTER SET/COLLATE syntax, max\_allowed\_packet constraints, and JSON/CLOB aliases.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/kuEhvlE52AubbvvIJZnv" %}
+[MEDIUMBLOB](/docs/server/reference/data-types/string-data-types/mediumblob.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Medium-sized binary object. A MEDIUMBLOB column can store up to 16MB of binary data.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/Ljq1SlBkOq39iXrZ18Tr" %}
+[MEDIUMTEXT](/docs/server/reference/data-types/string-data-types/mediumtext.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Medium-sized character string. A MEDIUMTEXT column can store up to 16MB of text data.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/uI97g20d2zpc7kiPA4rV" %}
+[NATIONAL CHAR](/docs/server/reference/data-types/string-data-types/national-char.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+NATIONAL CHAR is a synonym for the CHAR data type that uses the predefined utf8mb3 character set.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/qUZbb6phh2H2SH6L7kQf" %}
+[NATIONAL CHAR VARYING](/docs/server/reference/data-types/string-data-types/national-char-varying.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+NATIONAL CHAR VARYING is a synonym for VARCHAR that uses the predefined utf8 character set.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/8SeMB8bpRJzojnJLDTMk" %}
+[NATIONAL CHARACTER VARYING](/docs/server/reference/data-types/string-data-types/national-character-varying.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+NATIONAL CHARACTER VARYING is a synonym for VARCHAR using the predefined utf8 character set.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/XOzthrFW9w42Z12U5sKX" %}
+[NATIONAL CHARACTER](/docs/server/reference/data-types/string-data-types/national-character.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+NATIONAL CHARACTER is a synonym for the CHAR data type using the predefined utf8 character set.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/WYO8vU8UYIbNVLNKRdHg" %}
+[NATIONAL VARCHAR](/docs/server/reference/data-types/string-data-types/national-varchar.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+NATIONAL VARCHAR is a synonym for the VARCHAR data type using the predefined utf8 character set.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/N04Rb2UBqvRtUzmcTViq" %}
+[NATIONAL VARCHARACTER](/docs/server/reference/data-types/string-data-types/national-varcharacter.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+NATIONAL VARCHARACTER is a synonym for VARCHAR using the predefined utf8 character set.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/eNpCr4kyA4DnAG5Mo5NV" %}
+[NCHAR](/docs/server/reference/data-types/string-data-types/nchar.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+NCHAR is a synonym for the fixed-length CHAR string data type using the utf8mb3 character set.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/vuSbUIxvkkjDtQ9GmLww" %}
+[NCHAR VARCHAR](/docs/server/reference/data-types/string-data-types/nchar-varchar.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+NCHAR VARCHAR is a synonym for the VARCHAR string data type using the utf8 character set.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/u6Jv4WGNuxqzmjdrALTp" %}
+[NCHAR VARCHARACTER](/docs/server/reference/data-types/string-data-types/nchar-varcharacter.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+NCHAR VARCHARACTER is a synonym for VARCHAR using the utf8 character set.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/47yQwwPUDNI8nXd5zmGs" %}
+[NCHAR VARYING](/docs/server/reference/data-types/string-data-types/nchar-varying.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+NCHAR VARYING is a synonym for the VARCHAR string data type using the utf8 character set.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/VR46tR9QQoHeA2iBBlm0" %}
+[RAW](/docs/server/reference/data-types/string-data-types/raw.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+In Oracle mode, RAW is a variable-length binary data type synonymous with VARBINARY.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/sYtFbfMxEqCEtJJYHTwb" %}
+[ROW](/docs/server/reference/data-types/string-data-types/row.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+ROW is a data type used in stored programs to store a complete row of data from a cursor or table.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/JKixHyHX5PjMO1kHRRQ5" %}
+[SET Data Type](/docs/server/reference/data-types/string-data-types/set-data-type.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+String object with zero or more values from a predefined list. A SET column can store multiple values selected from a list of permitted strings.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/aLwKPtK9QvaJCnikFa3T" %}
+[TEXT](/docs/server/reference/data-types/string-data-types/text.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Complete TEXT type reference: TEXT(M) syntax, 65,535 byte maximum, 2-byte length prefix, DEFAULT value support, and indexing constraints rules.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/oOTdmUstLLoxljDBaSJR" %}
+[TINYBLOB](/docs/server/reference/data-types/string-data-types/tinyblob.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Very small binary object. A TINYBLOB column can store up to 255 bytes of binary data.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/r16mh5QQwc3Z5mqifpb7" %}
+[TINYTEXT](/docs/server/reference/data-types/string-data-types/tinytext.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Very small character string. A TINYTEXT column can store up to 255 characters.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/FqxxPzru8smuwQvqsuUw" %}
+[UUID Data Type](/docs/server/reference/data-types/string-data-types/uuid-data-type.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Official UUID data type reference: 128-bit storage optimization, CAST from CHAR/VARCHAR/BINARY types, RFC4122 string format, and UUIDv6/v7 support.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/Hxmk5EWP2WkqsLbzvlSO" %}
+[VARBINARY](/docs/server/reference/data-types/string-data-types/varbinary.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Variable-length binary string type. VARBINARY columns store binary strings of variable length up to a specified maximum.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/6T4WaR8lzJsTSvIaZDIB" %}
+[VARCHAR](/docs/server/reference/data-types/string-data-types/varchar.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Complete VARCHAR reference: VARCHAR(M) syntax, length limits (0-65532 per row), CHARACTER SET/COLLATE options, indexing rules, and trailing spaces.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/WImRJ0YUHcVObRocstVF" %}
+[VARCHAR2](/docs/server/reference/data-types/string-data-types/varchar2.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Variable-length character string type. VARCHAR2 columns store strings of variable length up to a specified maximum (up to 65,535).
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/MxCccEX01xee2OiJFICd" %}
+[VARCHARACTER](/docs/server/reference/data-types/string-data-types/varcharacter.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Variable-length character string type. VARCHARACTER columns store strings of variable length up to a specified maximum (up to 65,535).
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/IvQjJRPiMf2EHmGfev6x" %}
+[XMLTYPE](/docs/server/reference/data-types/string-data-types/xmltype.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+The XMLTYPE data type, available from MariaDB 12.3, for storing XML data.
+{% endcolumn %}
+{% endcolumns %}
+
+{% columns %}
+{% column %}
+{% content-ref url="/pages/3fPKibGVGLRZCiej6OXV" %}
+[Character Sets and Collations](/docs/server/reference/data-types/string-data-types/character-sets.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column %}
+Learn about character sets in MariaDB Server. This section details how different character sets and collations impact string storage, comparison, and sorting within your database.
+{% endcolumn %}
+{% endcolumns %}

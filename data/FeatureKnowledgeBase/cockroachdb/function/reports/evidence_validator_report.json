@@ -1,0 +1,39 @@
+{
+  "dbms": "cockroachdb",
+  "feature_type": "function",
+  "total_drafts": 702,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 700,
+  "invalid_features": 2,
+  "validation_summary": {
+    "schema_invalid": 2,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 702,
+    "no_description_claims": 257,
+    "no_valid_syntax": 2,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 257
+  },
+  "sample_clean_features": [],
+  "sample_warning_features": [
+    "cockroachdb.function._pg_expandarray",
+    "cockroachdb.function._pg_numeric_precision",
+    "cockroachdb.function._pg_numeric_precision_radix",
+    "cockroachdb.function._pg_numeric_scale",
+    "cockroachdb.function._st_contains",
+    "cockroachdb.function._st_containsproperly",
+    "cockroachdb.function._st_coveredby",
+    "cockroachdb.function._st_covers",
+    "cockroachdb.function._st_crosses",
+    "cockroachdb.function._st_dfullywithin"
+  ],
+  "sample_invalid_features": [
+    "cockroachdb.function.position",
+    "cockroachdb.function.trim"
+  ],
+  "generated_at": "2026-08-06T19:12:35.879335+08:00"
+}

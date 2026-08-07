@@ -1,0 +1,767 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="reference">
+      <meta name="DC.Title" content="Single-Row Functions">
+      <meta name="DC.subject" content="single-row functions, SQL functions, numeric functions, number functions, calendar functions, character functions, returning character values, returning number values, character set functions, collation functions, datetime functions, date functions, general comparison functions, comparison functions, conversion, functions, conversion functions, large object functions, collection functions, hierarchical functions, oracle machine learning for SQL functions, oracle machine learning for SQL functions, XML, XML functions, encoding functions, decoding functions, encoding and decoding functions, NULL-related functions, environment functions, identifier functions, environment and identifier functions, domain functions, Vector Functions, Single-Row Functions">
+      <meta name="keywords" content="single-row functions, SQL functions, numeric functions, number functions, calendar functions, character functions, returning character values, returning number values, character set functions, collation functions, datetime functions, date functions, general comparison functions, comparison functions, conversion, functions, conversion functions, large object functions, collection functions, hierarchical functions, oracle machine learning for SQL functions, oracle machine learning for SQL functions, XML, XML functions, encoding functions, decoding functions, encoding and decoding functions, NULL-related functions, environment functions, identifier functions, environment and identifier functions, domain functions, Vector Functions, Single-Row Functions">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-B93F789D-B486-49FF-B0CD-0C6181C5D85C">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Single-Row Functions</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="OLAP-Functions.html" title="Previous" type="text/html">
+      <link rel="next" href="ABS.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Single-Row Functions","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="OLAP-Functions.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="ABS.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-B93F789D-B486-49FF-B0CD-0C6181C5D85C" name="GUID-B93F789D-B486-49FF-B0CD-0C6181C5D85C"></a><a id="SQLRF51178"></a>
+         
+         <h2 id="SQLRF-GUID-B93F789D-B486-49FF-B0CD-0C6181C5D85C" class="sect2">Single-Row Functions </h2>
+         <div class="ind">
+            <div>
+               <div class="section">
+                  <p>Single-row functions return a single result row for every row of a queried table or view. These functions can appear in select lists, <code class="codeph">WHERE</code> clauses, <code class="codeph">START</code> <code class="codeph">WITH</code> and <code class="codeph">CONNECT</code> <code class="codeph">BY</code> clauses, and <code class="codeph">HAVING</code> clauses. 
+                  </p>
+               </div>
+            </div><a id="SQLRF20031"></a><div class="props_rev_3"><a id="GUID-AC0E8A99-5097-4147-8295-C88EAC5AA362" name="GUID-AC0E8A99-5097-4147-8295-C88EAC5AA362"></a><h3 id="SQLRF-GUID-AC0E8A99-5097-4147-8295-C88EAC5AA362" class="sect3">Numeric Functions </h3>
+               <div>
+                  <div class="section">
+                     <p>Numeric functions accept numeric input and return numeric values. Most numeric functions return <code class="codeph">NUMBER</code> values that are accurate to 38 decimal digits. The transcendental functions <code class="codeph">COS</code>, <code class="codeph">COSH</code>, <code class="codeph">EXP</code>, <code class="codeph">LN</code>, <code class="codeph">LOG</code>, <code class="codeph">SIN</code>, <code class="codeph">SINH</code>, <code class="codeph">SQRT</code>, <code class="codeph">TAN</code>, and <code class="codeph">TANH</code> are accurate to 36 decimal digits. The transcendental functions <code class="codeph">ACOS</code>, <code class="codeph">ASIN</code>, <code class="codeph">ATAN</code>, and <code class="codeph">ATAN2</code> are accurate to 30 decimal digits. The numeric functions are:
+                     </p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="ABS.html#GUID-D8D3489A-44EA-4FEC-A6F0-B5E312FFC231">ABS</a></li>
+                        <li><a href="ACOS.html#GUID-B4C70DD5-B908-4130-975A-6CFD5C1AC1F9">ACOS</a></li>
+                        <li><a href="ASIN.html#GUID-809ACB4E-9FDA-4943-B234-DDB32522A523">ASIN</a></li>
+                        <li><a href="ATAN.html#GUID-12E8F1AA-54D0-4A19-8648-27094946C588">ATAN</a></li>
+                        <li><a href="ATAN2.html#GUID-D34E671B-F3C0-4390-A2D8-ABB702B4B5D3">ATAN2</a></li>
+                        <li><a href="BITAND.html#GUID-EADBED75-6AC5-4FBE-991A-E3B4D260F73B">BITAND</a></li>
+                        <li><a href="CEIL.html#GUID-6DCC9AFB-9B80-4C27-AF63-5AA3B1E43660">CEIL (number)</a></li>
+                        <li><a href="COS.html#GUID-C008F067-C6DC-4C13-9B7F-5A385415363A">COS</a></li>
+                        <li><a href="COSH.html#GUID-A48CD625-5238-4259-9A1F-0FDBFD19841E">COSH</a></li>
+                        <li><a href="EXP.html#GUID-414FB4AE-03B5-41AD-AE33-E3755EFED0A0">EXP</a></li>
+                        <li><a href="FLOOR.html#GUID-67F61AC7-C097-4397-A122-213157BF584F">FLOOR (number)</a></li>
+                        <li><a href="LN.html#GUID-DCC9EDAA-D308-4145-8E05-8D06A5EF5F6F">LN</a></li>
+                        <li><a href="LOG.html#GUID-3739F356-A4A0-4D0D-A4EB-9725ACA05CD1">LOG</a></li>
+                        <li><a href="MOD.html#GUID-E12A3928-2C50-45B0-B8C3-82432C751B8C">MOD</a></li>
+                        <li><a href="NANVL.html#GUID-3C094646-2A70-41F5-984C-9BC0FB31494A">NANVL</a></li>
+                        <li><a href="POWER.html#GUID-D280B322-D2C3-46D0-8076-C88F16CBEDC2">POWER</a></li>
+                        <li><a href="REMAINDER.html#GUID-430D4C4A-5779-4EBB-90C5-4D7CA7E73556">REMAINDER</a></li>
+                        <li><a href="ROUND-number.html#GUID-849F6C45-0D72-4464-9C0F-8B6822BA85E1">ROUND (number)</a></li>
+                        <li><a href="SIGN.html#GUID-08B75521-B5F5-4658-A005-4B4441C82945">SIGN</a></li>
+                        <li><a href="SIN.html#GUID-2AF4895F-5D23-4165-89D5-B1D404ED99BF">SIN</a></li>
+                        <li><a href="SINH.html#GUID-1EB8626B-4D84-4EAD-BD23-1A97F186FD4A">SINH</a></li>
+                        <li><a href="SQRT.html#GUID-E28C0B65-AAD8-4077-A82E-2FB4CD261CCA">SQRT</a></li>
+                        <li><a href="TAN.html#GUID-473E2008-5951-4FC8-A356-14D3D085B8AA">TAN</a></li>
+                        <li><a href="TANH.html#GUID-8DD0B75F-1BDB-4E41-8C6D-FB5B2908AF80">TANH</a></li>
+                        <li><a href="TRUNC-number.html#GUID-911AE7FE-E04A-471D-8B0E-9C50EBEFE07D">TRUNC (number)</a></li>
+                        <li><a href="WIDTH_BUCKET.html#GUID-5E9058E5-A91F-45ED-A90D-E21355D19A88">WIDTH_BUCKET</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="sect2"><a id="GUID-C27DB967-BA88-4033-85E3-49F22C27ACD9" name="GUID-C27DB967-BA88-4033-85E3-49F22C27ACD9"></a><h3 id="SQLRF-GUID-C27DB967-BA88-4033-85E3-49F22C27ACD9" class="sect3">Calendar Functions</h3>
+               <div>
+                  <div class="section">
+                     <p>Calendar functions accept a <code class="codeph">DATE</code> expression, or any expression that may be implicitly converted to <code class="codeph">DATE</code> as input. They return a formatted string representing the date, with default formats explicitly defined for each function. The calendar functions are: 
+                     </p>
+                  </div>
+                  <div class="section">
+                     <p><span class="bold">Formatted Text Functions</span></p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="calendar.html#GUID-D7BC24DF-02AC-4DFE-83D5-8AB126DDB216">CALENDAR</a></li>
+                        <li><a href="fiscal.html#GUID-D125AC73-1BB8-4D27-854D-E9F6BAC647BA">FISCAL</a></li>
+                        <li><a href="retail.html#GUID-C5F26E1B-3E27-4320-A6BA-E5CE98500E04">RETAIL</a></li>
+                     </ul>
+                  </div>
+                  <div class="section">
+                     <p><span class="bold">Start/End Date Functions</span></p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="calendar_start_end.html#GUID-D229D49F-E9C7-4435-8A9F-B22037C79A9A">CALENDAR_START_END</a></li>
+                        <li><a href="fiscal_start_end.html#GUID-387BA2A3-A2C9-4EB5-9FEC-F862B27DB01C">FISCAL_START_END</a></li>
+                        <li><a href="retail_start_end.html#GUID-98363296-917D-4662-86FB-371237A6681D">RETAIL_START_END</a></li>
+                     </ul>
+                  </div>
+                  <div class="section">
+                     <p><span class="bold">X of Y Functions</span></p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="calendar_x_of_y.html#GUID-40D7074F-DB0A-4828-8BF1-432D73D20C0C">CALENDAR_X_OF_Y</a></li>
+                        <li><a href="fiscal_x_of_y.html#GUID-5CAD894A-0E98-4ED7-89A2-ED81F7A3328F">FISCAL_X_OF_Y</a></li>
+                        <li><a href="retail_x_of_y.html#GUID-B363A138-9CC1-40AC-B7EB-F72026123A66">RETAIL_X_OF_Y</a></li>
+                     </ul>
+                  </div>
+                  <div class="section">
+                     <p><span class="bold">Add X Periods Functions</span></p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="calendar_add_x_periods.html#GUID-A04972BD-DAC8-4AF5-B2F9-04701F45B716">CALENDAR_ADD_X_PERIODS</a></li>
+                        <li><a href="fiscal_add_x_periods.html#GUID-8527E3C5-F545-4E53-9941-C408B5487509">FISCAL_ADD_X_PERIODS</a></li>
+                        <li><a href="retail_add_x_periods.html#GUID-BEAB7FBC-D52F-4865-82E0-1DFBA2D541F7">RETAIL_ADD_X_PERIODS</a></li>
+                     </ul>
+                  </div>
+                  <div class="section">
+                     <p><span class="bold">Calendar Since Function</span></p>
+                     <p><a href="calendar_since.html#GUID-57321AA3-B40F-486B-8528-045DFF363855">CALENDAR_SINCE</a></p>
+                  </div>
+                  <div class="section">
+                     <p><span class="bold">Retail Day Exists Function</span></p>
+                     <p><a href="retail_day_exists.html#GUID-F39B1201-7A6B-421B-8139-47E22DD31D0A">RETAIL_DAY_EXISTS</a></p>
+                  </div>
+               </div>
+            </div><a id="SQLRF20032"></a><div class="props_rev_3"><a id="GUID-06062705-1EC8-44ED-89B8-0F0573B74EA2" name="GUID-06062705-1EC8-44ED-89B8-0F0573B74EA2"></a><h3 id="SQLRF-GUID-06062705-1EC8-44ED-89B8-0F0573B74EA2" class="sect3">Character Functions Returning Character Values </h3>
+               <div>
+                  <div class="section">
+                     <p>Character functions that return character values return values of the following data types unless otherwise documented:</p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p>If the input argument is <code class="codeph">CHAR</code> or <code class="codeph">VARCHAR2</code>, then the value returned is <code class="codeph">VARCHAR2</code>.
+                           </p>
+                        </li>
+                        <li>
+                           <p>If the input argument is <code class="codeph">NCHAR</code> or <code class="codeph">NVARCHAR2</code>, then the value returned is <code class="codeph">NVARCHAR2</code>.
+                           </p>
+                        </li>
+                     </ul>
+                     <p>The length of the value returned by the function is limited by the maximum length of the data type returned.</p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p>For functions that return <code class="codeph">CHAR</code> or <code class="codeph">VARCHAR2</code>, if the length of the return value exceeds the limit, then Oracle Database truncates it and returns the result without an error message.
+                           </p>
+                        </li>
+                        <li>
+                           <p>For functions that return <code class="codeph">CLOB</code> values, if the length of the return values exceeds the limit, then Oracle raises an error and returns no data.
+                           </p>
+                        </li>
+                     </ul>
+                     <p>The character functions that return character values are:</p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="CHR.html#GUID-35FEE007-D49C-4562-A904-041186AC8928">CHR</a></li>
+                        <li><a href="CONCAT.html#GUID-D8723EA5-C93A-45C3-83FB-1F3D2A4CEAF2">CONCAT</a></li>
+                        <li><a href="INITCAP.html#GUID-9FE9E0EE-D6B6-4C2C-BDEF-4FF4E1314560">INITCAP</a></li>
+                        <li><a href="LOWER.html#GUID-C8682D4C-9BED-48AC-B73A-1D70BF307F48">LOWER</a></li>
+                        <li><a href="LPAD.html#GUID-0C27B59A-A6CF-43D3-BF4B-07A3D0F2CE20">LPAD</a></li>
+                        <li><a href="LTRIM.html#GUID-81B3D53C-0BBC-4485-B057-C8012CD6E40F">LTRIM</a></li>
+                        <li><a href="NCHR.html#GUID-3A1BDD54-6C0B-4067-99C5-A439C0F8D561">NCHR</a></li>
+                        <li><a href="NLS_INITCAP.html#GUID-42C1581B-B5AA-4D4C-A489-BC5B38A754FD">NLS_INITCAP</a></li>
+                        <li><a href="NLS_LOWER.html#GUID-96944213-377E-461C-9F02-2DC4EC2B1649">NLS_LOWER</a></li>
+                        <li><a href="NLS_UPPER.html#GUID-91D6302F-4DE2-49FA-8837-D46D3FD58DF8">NLS_UPPER</a></li>
+                        <li><a href="NLSSORT.html#GUID-781C6FE8-0924-4617-AECB-EE40DE45096D">NLSSORT</a></li>
+                        <li><a href="REGEXP_REPLACE.html#GUID-EA80A33C-441A-4692-A959-273B5A224490">REGEXP_REPLACE</a></li>
+                        <li><a href="REGEXP_SUBSTR.html#GUID-2903904D-455F-4839-A8B2-1731EF4BD099">REGEXP_SUBSTR</a></li>
+                        <li><a href="REPLACE.html#GUID-1A79BDDF-2D3B-4AD4-98E7-985B2E59DA6B">REPLACE</a></li>
+                        <li><a href="RPAD.html#GUID-064CFCAE-5902-49F9-800E-0AF311AEF595">RPAD</a></li>
+                        <li><a href="RTRIM.html#GUID-95A7DAFB-F7AB-48F4-BE24-64B3C7A840AA">RTRIM</a></li>
+                        <li><a href="SOUNDEX.html#GUID-9C43625B-70CA-4B43-AE22-5EC2A02192F8">SOUNDEX</a></li>
+                        <li><a href="SUBSTR.html#GUID-C8A20B57-C647-4649-A379-8651AA97187E">SUBSTR</a></li>
+                        <li><a href="TRANSLATE.html#GUID-80F85ACB-092C-4CC7-91F6-B3A585E3A690">TRANSLATE</a></li>
+                        <li><a href="TRANSLATE-USING.html#GUID-EC8DE4D2-4F24-456D-A2E7-AD8F82E3A148">TRANSLATE ... USING</a></li>
+                        <li><a href="TRIM.html#GUID-00D5C77C-19B1-4894-828F-066746235B03">TRIM</a></li>
+                        <li><a href="UPPER.html#GUID-0518FB26-7FE5-43B9-AB31-9352F9F6029C">UPPER</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div><a id="SQLRF51180"></a><div class="props_rev_3"><a id="GUID-07B646B7-FCED-4682-B160-B94A3E1272B0" name="GUID-07B646B7-FCED-4682-B160-B94A3E1272B0"></a><h3 id="SQLRF-GUID-07B646B7-FCED-4682-B160-B94A3E1272B0" class="sect3">Character Functions Returning Number Values </h3>
+               <div>
+                  <div class="section">
+                     <p>Character functions that return number values can take as their argument any character data type. The character functions that return number values are:</p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="ASCII.html#GUID-871D4171-FF70-475E-BC82-9B8F46239A5D">ASCII</a></li>
+                        <li><a href="INSTR.html#GUID-47E3A7C4-ED72-458D-A1FA-25A9AD3BE113">INSTR</a></li>
+                        <li><a href="LENGTH.html#GUID-8F97F652-5AE8-4457-AFD7-7A6F25551E0C">LENGTH</a></li>
+                        <li><a href="REGEXP_COUNT.html#GUID-5148AF2E-9CED-497D-A78D-3A7847A45276">REGEXP_COUNT</a></li>
+                        <li><a href="REGEXP_INSTR.html#GUID-D21B53A1-83E2-4722-9BBB-638470715DD6">REGEXP_INSTR</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div><a id="SQLRF51179"></a><div class="props_rev_3"><a id="GUID-6D1746FB-E1A3-4377-8C76-1DEDFF561370" name="GUID-6D1746FB-E1A3-4377-8C76-1DEDFF561370"></a><h3 id="SQLRF-GUID-6D1746FB-E1A3-4377-8C76-1DEDFF561370" class="sect3">Character Set Functions </h3>
+               <div>
+                  <div class="section">
+                     <p>The character set functions return information about the character set. The character set functions are:</p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="NLS_CHARSET_DECL_LEN.html#GUID-5F0939C0-4AFB-4CEA-9899-BDE85B9B2F11">NLS_CHARSET_DECL_LEN</a></li>
+                        <li><a href="NLS_CHARSET_ID.html#GUID-733B03A0-CD66-4645-A323-401A176499E3">NLS_CHARSET_ID</a></li>
+                        <li><a href="NLS_CHARSET_NAME.html#GUID-5DCFB255-92AD-4E94-9344-73B7918C106C">NLS_CHARSET_NAME</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="props_rev_3"><a id="GUID-C6D2C400-F4F1-4D8D-861D-63814E3F6024" name="GUID-C6D2C400-F4F1-4D8D-861D-63814E3F6024"></a><h3 id="SQLRF-GUID-C6D2C400-F4F1-4D8D-861D-63814E3F6024" class="sect3">Collation Functions </h3>
+               <div>
+                  <div class="section">
+                     <p>The collation functions return information about collation settings. The collation functions are:</p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="COLLATION.html#GUID-70A694BA-C1A0-4F5A-9492-58A5943D9BDD">COLLATION</a></li>
+                        <li><a href="NLS_COLLATION_ID.html#GUID-69EA3869-28E3-4CF8-9678-CD4F9878EE99">NLS_COLLATION_ID</a></li>
+                        <li><a href="NLS_COLLATION_NAME.html#GUID-24848987-2A02-4B09-A690-D3C87308FB3A">NLS_COLLATION_NAME</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div><a id="SQLRF20033"></a><div class="props_rev_3"><a id="GUID-5652DBC2-41C7-4F07-BEDD-DAF620E35F3C" name="GUID-5652DBC2-41C7-4F07-BEDD-DAF620E35F3C"></a><h3 id="SQLRF-GUID-5652DBC2-41C7-4F07-BEDD-DAF620E35F3C" class="sect3">Datetime Functions </h3>
+               <div>
+                  <div class="section">
+                     <p>Datetime functions operate on date (<code class="codeph">DATE</code>), timestamp (<code class="codeph">TIMESTAMP</code>, <code class="codeph">TIMESTAMP</code> <code class="codeph">WITH</code> <code class="codeph">TIME</code> <code class="codeph">ZONE</code>, and <code class="codeph">TIMESTAMP</code> <code class="codeph">WITH</code> <code class="codeph">LOCAL</code> <code class="codeph">TIME</code> <code class="codeph">ZONE</code>), and interval (<code class="codeph">INTERVAL</code> <code class="codeph">DAY</code> <code class="codeph">TO</code> <code class="codeph">SECOND</code>, <code class="codeph">INTERVAL</code> <code class="codeph">YEAR</code> <code class="codeph">TO</code> <code class="codeph">MONTH</code>) values. 
+                     </p>
+                     <p>Some of the datetime functions were designed for the Oracle <code class="codeph">DATE</code> data type (<code class="codeph">ADD_MONTHS</code>, <code class="codeph">CURRENT_DATE</code>, <code class="codeph">LAST_DAY</code>, <code class="codeph">NEW_TIME</code>, and <code class="codeph">NEXT_DAY</code>). If you provide a timestamp value as their argument, then Oracle Database internally converts the input type to a <code class="codeph">DATE</code> value and returns a <code class="codeph">DATE</code> value. The exceptions are the <code class="codeph">MONTHS_BETWEEN</code> function, which returns a number, and the <code class="codeph">ROUND</code> and <code class="codeph">TRUNC</code> functions, which do not accept timestamp or interval values at all. 
+                     </p>
+                     <p>The remaining datetime functions were designed to accept any of the three types of data (date, timestamp, and interval) and to return a value of one of these types.</p>
+                     <p>All of the datetime functions that return current system datetime information, such as <code class="codeph">SYSDATE</code>, <code class="codeph">SYSTIMESTAMP</code>, <code class="codeph">CURRENT_TIMESTAMP</code>, and so forth, are evaluated once for each SQL statement, regardless how many times they are referenced in that statement. 
+                     </p>
+                     <p>The datetime functions are:</p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="ADD_MONTHS.html#GUID-B8C74443-DF32-4B7C-857F-28D557381543">ADD_MONTHS</a></li>
+                        <li><a href="ceil-datetime.html#GUID-666629BE-AA15-4EA6-86A0-DF321AEFF3C0">CEIL (datetime)</a></li>
+                        <li><a href="CURRENT_DATE.html#GUID-96795097-D6F0-4288-90E7-9D7C49B4F6E5">CURRENT_DATE</a></li>
+                        <li><a href="CURRENT_TIMESTAMP.html#GUID-CBD42B84-869D-45C7-9FFC-001DD7712097">CURRENT_TIMESTAMP</a></li>
+                        <li><a href="DBTIMEZONE.html#GUID-F2368F72-7065-462F-80B9-E115F5A48025">DBTIMEZONE</a></li>
+                        <li><a href="EXTRACT-datetime.html#GUID-36E52BF8-945D-437D-9A3C-6860CABD210E">EXTRACT (datetime)</a></li>
+                        <li><a href="floor-datetime.html#GUID-3EB4F1BA-9D18-437C-96BA-D3B0282DDE97">FLOOR (datetime)</a></li>
+                        <li><a href="FROM_TZ.html#GUID-84384FF7-6462-480C-BC40-60087016857B">FROM_TZ</a></li>
+                        <li><a href="LAST_DAY.html#GUID-296C7C02-7FB9-4AAC-8927-6A79320CE0C6">LAST_DAY</a></li>
+                        <li><a href="LOCALTIMESTAMP.html#GUID-3C3D1F29-5F53-41F2-B2D6-A3767DFB22CA">LOCALTIMESTAMP</a></li>
+                        <li><a href="MONTHS_BETWEEN.html#GUID-E4A1AEC0-F5A0-4703-9CC8-4087EB889952">MONTHS_BETWEEN</a></li>
+                        <li><a href="NEW_TIME.html#GUID-1D1CC7DE-CA2A-4BEC-B404-89FD19EE36AC">NEW_TIME</a></li>
+                        <li><a href="NEXT_DAY.html#GUID-01B2CC7A-1A64-4A74-918E-26158C9096F6">NEXT_DAY</a></li>
+                        <li><a href="NUMTODSINTERVAL.html#GUID-5A7392A8-7976-4465-8839-A65EFF1A80B6">NUMTODSINTERVAL</a></li>
+                        <li><a href="NUMTOYMINTERVAL.html#GUID-B98B21AA-44F7-4A9D-A646-6775A1D5F46D">NUMTOYMINTERVAL</a></li>
+                        <li><a href="ORA_DST_AFFECTED.html#GUID-EE288E4B-DE55-4104-813C-11E28F7B474A">ORA_DST_AFFECTED</a></li>
+                        <li><a href="ORA_DST_CONVERT.html#GUID-3A991FB0-0E98-48F5-902F-55C6FCA8DA13">ORA_DST_CONVERT</a></li>
+                        <li><a href="ORA_DST_ERROR.html#GUID-02FAF3EC-D90A-42FB-A212-513314AD774A">ORA_DST_ERROR</a></li>
+                        <li><a href="ROUND-date.html#GUID-C6D342D0-6068-4986-A759-70EF4599EC41">ROUND (datetime)</a></li>
+                        <li><a href="SESSIONTIMEZONE.html#GUID-2A243878-C1C5-4B7C-81DE-D8B024796EAB">SESSIONTIMEZONE</a></li>
+                        <li><a href="SYS_EXTRACT_UTC.html#GUID-C540A8C8-72B1-46AF-A9AA-18D011763AD8">SYS_EXTRACT_UTC</a></li>
+                        <li><a href="SYSDATE.html#GUID-807F8FC5-D72D-4F4D-B66D-B0FE1A8FA7D2">SYSDATE</a></li>
+                        <li><a href="SYSTIMESTAMP.html#GUID-FCED18CE-A875-4D5D-9178-3DE4FA956516">SYSTIMESTAMP</a></li>
+                        <li><a href="TO_CHAR-datetime.html#GUID-0C3EEFD1-AE3D-452D-BF23-2FC95664E78F">TO_CHAR (datetime)</a></li>
+                        <li><a href="TO_DSINTERVAL.html#GUID-DEBB41BD-9438-4558-A53E-428CE93C05D3">TO_DSINTERVAL</a></li>
+                        <li><a href="TO_TIMESTAMP.html#GUID-57E09334-E3CC-4CA2-809E-F0909458BCFA">TO_TIMESTAMP</a></li>
+                        <li><a href="TO_TIMESTAMP_TZ.html#GUID-3999303B-89CA-4AA3-9817-458F36ADC9DC">TO_TIMESTAMP_TZ</a></li>
+                        <li><a href="TO_YMINTERVAL.html#GUID-5DEBA096-7AC3-4B18-A4BE-D36FC9BDB450">TO_YMINTERVAL</a></li>
+                        <li><a href="TRUNC-date.html#GUID-BC82227A-2698-4EC8-8C1A-ABECC64B0E79">TRUNC (datetime)</a></li>
+                        <li><a href="TZ_OFFSET.html#GUID-D2007072-34C2-4971-BD2B-64D93A3D7A31">TZ_OFFSET</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div><a id="SQLRF51181"></a><div class="props_rev_3"><a id="GUID-D16F7FB3-48D9-4354-A58A-357515D402DC" name="GUID-D16F7FB3-48D9-4354-A58A-357515D402DC"></a><h3 id="SQLRF-GUID-D16F7FB3-48D9-4354-A58A-357515D402DC" class="sect3">General Comparison Functions </h3>
+               <div>
+                  <div class="section">
+                     <p>The general comparison functions determine the greatest and or least value from a set of values. The general comparison functions are:</p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="GREATEST.html#GUID-06B88B22-8466-44B6-93C7-50B222122ECE">GREATEST</a></li>
+                        <li><a href="LEAST.html#GUID-0198D71B-051A-41D9-8E9C-599E24692556">LEAST</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div><a id="SQLRF20034"></a><div class="props_rev_3"><a id="GUID-0E5115DD-F906-4F04-BB70-DF62DD4BBF91" name="GUID-0E5115DD-F906-4F04-BB70-DF62DD4BBF91"></a><h3 id="SQLRF-GUID-0E5115DD-F906-4F04-BB70-DF62DD4BBF91" class="sect3">Conversion Functions </h3>
+               <div>
+                  <div class="section">
+                     <p>Conversion functions convert a value from one data type to another. Generally, the form of the function names follows the convention <span class="italic"><code class="codeph">datatype</code></span> <code class="codeph">TO</code> <span class="italic"><code class="codeph">datatype</code></span>. The first data type is the input data type. The second data type is the output data type. The SQL conversion functions are:
+                     </p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="ASCIISTR.html#GUID-B6128485-4E86-4851-860F-AC03981E2388">ASCIISTR</a></li>
+                        <li><a href="BIN_TO_NUM.html#GUID-BF061402-D7F0-4557-B7D4-1CEE6E80F3B2">BIN_TO_NUM</a></li>
+                        <li><a href="CAST.html#GUID-5A70235E-1209-4281-8521-B94497AAEF75">CAST</a></li>
+                        <li><a href="CHARTOROWID.html#GUID-F9C63933-F680-465D-AB22-6B8B882B5CF7">CHARTOROWID</a></li>
+                        <li><a href="COMPOSE.html#GUID-A16E7D53-E7F8-46A6-B3F8-BA322D129019">COMPOSE</a></li>
+                        <li><a href="CONVERT.html#GUID-C8BA0657-61C8-4964-A4CB-9292390853F6">CONVERT</a></li>
+                        <li><a href="DECOMPOSE.html#GUID-3E772756-F12C-4827-99A5-F7CF4F11A25A">DECOMPOSE</a></li>
+                        <li><a href="HEXTORAW.html#GUID-8571556F-C219-4814-A854-9F01581FFBDF">HEXTORAW</a></li>
+                        <li><a href="NUMTODSINTERVAL.html#GUID-5A7392A8-7976-4465-8839-A65EFF1A80B6">NUMTODSINTERVAL</a></li>
+                        <li><a href="NUMTOYMINTERVAL.html#GUID-B98B21AA-44F7-4A9D-A646-6775A1D5F46D">NUMTOYMINTERVAL</a></li>
+                        <li><a href="RAWTOHEX.html#GUID-F86E3B5B-7FEE-47FD-A0C2-2FC55DC21C9E">RAWTOHEX</a></li>
+                        <li><a href="RAWTONHEX.html#GUID-5657B113-24CE-4DC6-BD11-63135B7DB009">RAWTONHEX</a></li>
+                        <li><a href="ROWIDTOCHAR.html#GUID-67998E5B-376A-45B5-B20B-1A87E5D370C1">ROWIDTOCHAR</a></li>
+                        <li><a href="ROWIDTONCHAR.html#GUID-3178A4DA-2534-4A93-A819-7C14208AE9B5">ROWIDTONCHAR</a></li>
+                        <li><a href="SCN_TO_TIMESTAMP.html#GUID-BCB0C8EE-0E03-4A61-A41A-69975FAC1803">SCN_TO_TIMESTAMP</a></li>
+                        <li><a href="TIMESTAMP_TO_SCN.html#GUID-58796E1A-9943-4966-96E6-78B636BD2859">TIMESTAMP_TO_SCN</a></li>
+                        <li><a href="TO_BINARY_DOUBLE.html#GUID-0BA2E065-8006-426C-A3CB-1F6B0C8F283C">TO_BINARY_DOUBLE</a></li>
+                        <li><a href="TO_BINARY_FLOAT.html#GUID-66A51BE2-BE4A-4B99-9C37-73B110452D27">TO_BINARY_FLOAT</a></li>
+                        <li><a href="TO_BLOB-bfile.html#GUID-232A1599-53C9-464B-904F-4DBA336B4EBC">TO_BLOB (bfile)</a></li>
+                        <li><a href="TO_BLOB-raw.html#GUID-C4308DB1-5BFE-48F0-99E5-9E03B80B4585">TO_BLOB (raw)</a></li>
+                        <li><a href="TO_CHAR-bfile-blob.html#GUID-F12F3C5A-8E3C-4FE1-BD7D-4AC0B79EA5A5">TO_CHAR (bfile|blob)</a></li>
+                        <li><a href="TO_CHAR-character.html#GUID-EC078E16-11FE-4ABE-AE05-DA9AC1B4BEBC">TO_CHAR (character)</a></li>
+                        <li><a href="TO_CHAR-datetime.html#GUID-0C3EEFD1-AE3D-452D-BF23-2FC95664E78F">TO_CHAR (datetime)</a></li>
+                        <li><a href="TO_CHAR-number.html#GUID-00DA076D-2468-41AB-A3AC-CC78DBA0D9CB">TO_CHAR (number)</a></li>
+                        <li><a href="TO_CLOB-bfile-blob.html#GUID-FD7D58FE-B97C-4B75-85A9-5F82FB1DE96A">TO_CLOB (bfile|blob)</a></li>
+                        <li><a href="TO_CLOB-character.html#GUID-82E2FAD3-B0C8-4A06-A882-26211EE0524C">TO_CLOB (character)</a></li>
+                        <li><a href="TO_DATE.html#GUID-D226FA7C-F7AD-41A0-BB1D-BD8EF9440118">TO_DATE</a></li>
+                        <li><a href="TO_DSINTERVAL.html#GUID-DEBB41BD-9438-4558-A53E-428CE93C05D3">TO_DSINTERVAL</a></li>
+                        <li><a href="TO_LOB.html#GUID-35810313-029E-4CB8-8C27-DF432FA3C253">TO_LOB</a></li>
+                        <li><a href="TO_MULTI_BYTE.html#GUID-58A9F91A-5B1E-4C14-8F48-046F176E2F4A">TO_MULTI_BYTE</a></li>
+                        <li><a href="TO_NCHAR-character.html#GUID-539E9F5C-CB47-4BCE-B468-C34CF6BABDC5">TO_NCHAR (character)</a></li>
+                        <li><a href="TO_NCHAR-datetime.html#GUID-C40DBBC2-B9F2-49D8-8775-DDA99FF41EAC">TO_NCHAR (datetime)</a></li>
+                        <li><a href="TO_NCHAR-number.html#GUID-B0FA1B2F-3285-46C4-96DA-3C7AED48987C">TO_NCHAR (number)</a></li>
+                        <li><a href="TO_NCLOB.html#GUID-56CEB237-8515-4030-A5D5-016CBC5FA6BB">TO_NCLOB</a></li>
+                        <li><a href="TO_NUMBER.html#GUID-D4807212-AFD7-48A7-9AED-BEC3E8809866">TO_NUMBER</a></li>
+                        <li><a href="TO_SINGLE_BYTE.html#GUID-36364630-C62C-46C5-B29B-EFE3DFB5AA6D">TO_SINGLE_BYTE</a></li>
+                        <li><a href="TO_TIMESTAMP.html#GUID-57E09334-E3CC-4CA2-809E-F0909458BCFA">TO_TIMESTAMP</a></li>
+                        <li><a href="TO_TIMESTAMP_TZ.html#GUID-3999303B-89CA-4AA3-9817-458F36ADC9DC">TO_TIMESTAMP_TZ</a></li>
+                        <li><a href="TO_YMINTERVAL.html#GUID-5DEBA096-7AC3-4B18-A4BE-D36FC9BDB450">TO_YMINTERVAL</a></li>
+                        <li><a href="TREAT.html#GUID-037C0CD3-C256-4A02-80E0-C6F15147C5BF">TREAT</a></li>
+                        <li><a href="UNISTR.html#GUID-AAF757DB-6E5D-4548-9E36-6B36BB0BD83E">UNISTR</a></li>
+                        <li><a href="VALIDATE_CONVERSION.html#GUID-DC485EEB-CB6D-42EF-97AA-4487884CB2CD">VALIDATE_CONVERSION</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div><a id="SQLRF51182"></a><div class="props_rev_3"><a id="GUID-292D5A19-3B8C-43C4-AD26-66952698EF7A" name="GUID-292D5A19-3B8C-43C4-AD26-66952698EF7A"></a><h3 id="SQLRF-GUID-292D5A19-3B8C-43C4-AD26-66952698EF7A" class="sect3">Large Object Functions </h3>
+               <div>
+                  <div class="section">
+                     <p>The large object functions operate on LOBs. The large object functions are:</p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="BFILENAME.html#GUID-1F767077-7C26-4962-9833-1433F1749621">BFILENAME</a></li>
+                        <li><a href="EMPTY_BLOB-EMPTY_CLOB.html#GUID-551B5A7C-A03B-4B2E-80EF-DAA8574CF160">EMPTY_BLOB, EMPTY_CLOB</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div><a id="SQLRF51183"></a><div class="props_rev_3"><a id="GUID-57E0EC6A-4C7A-48B5-95E1-F47F2FF66993" name="GUID-57E0EC6A-4C7A-48B5-95E1-F47F2FF66993"></a><h3 id="SQLRF-GUID-57E0EC6A-4C7A-48B5-95E1-F47F2FF66993" class="sect3">Collection Functions </h3>
+               <div>
+                  <div class="section">
+                     <p>The collection functions operate on nested tables and varrays. The SQL collection functions are:</p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="CARDINALITY.html#GUID-11F978F8-1DD9-4D82-9FCF-2FC633D1C100">CARDINALITY</a></li>
+                        <li><a href="COLLECT.html#GUID-A0A74602-2A97-449B-A3EC-847D38D3DA90">COLLECT</a></li>
+                        <li><a href="POWERMULTISET.html#GUID-34F3B1D1-4089-4A5B-AA2C-9C69A5C36E6D">POWERMULTISET</a></li>
+                        <li><a href="POWERMULTISET_BY_CARDINALITY.html#GUID-57423B5C-CD16-4B3C-A796-AAA0910EF261">POWERMULTISET_BY_CARDINALITY</a></li>
+                        <li><a href="SET.html#GUID-533164AC-B4F0-4FCE-ADA4-85C925CB8D14">SET</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div><a id="SQLRF51184"></a><div class="props_rev_3"><a id="GUID-B3E664DC-2675-4AC7-885B-B9AB287CF76F" name="GUID-B3E664DC-2675-4AC7-885B-B9AB287CF76F"></a><h3 id="SQLRF-GUID-B3E664DC-2675-4AC7-885B-B9AB287CF76F" class="sect3">Hierarchical Functions </h3>
+               <div>
+                  <div class="section">
+                     <p>Hierarchical functions applies hierarchical path information to a result set. The hierarchical function is:</p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="SYS_CONNECT_BY_PATH.html#GUID-D25A0F86-B559-4090-9164-7A2C84D1E11E">SYS_CONNECT_BY_PATH</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div><a id="SQLRF20030"></a><div class="props_rev_3"><a id="GUID-E64F8D20-C7E2-482A-914F-2781D0AA4E64" name="GUID-E64F8D20-C7E2-482A-914F-2781D0AA4E64"></a><h3 id="SQLRF-GUID-E64F8D20-C7E2-482A-914F-2781D0AA4E64" class="sect3">Oracle Machine Learning for SQL Functions </h3>
+               <div>
+                  <div class="section">
+                     
+                     <p>The Oracle Machine Learning for SQL functions use analytics to score
+                data. The functions can apply a mining model schema object to the data, or they can
+                dynamically mine the data by executing an analytic clause. The OML4SQL functions can
+                be applied to models built using the native algorithms of Oracle, as well as those
+                built using R through the extensibility mechanism.</p>
+                     <p>The Oracle
+                Machine Learning for SQL functions are:</p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="CLUSTER_DETAILS.html#GUID-6E47A5A7-B73A-4D79-BAA5-BB7E3C173D0F">CLUSTER_DETAILS</a></li>
+                        <li><a href="CLUSTER_DISTANCE.html#GUID-21E611E3-2F15-4DF1-B648-9A36E8D5CE4D">CLUSTER_DISTANCE</a></li>
+                        <li><a href="CLUSTER_ID.html#GUID-1B0D0954-5A57-409C-9E84-F3EE12712040">CLUSTER_ID</a></li>
+                        <li><a href="CLUSTER_PROBABILITY.html#GUID-999A15BA-FEDD-4FA6-8F1B-C847C2FE51CD">CLUSTER_PROBABILITY</a></li>
+                        <li><a href="CLUSTER_SET.html#GUID-7B44CB7A-4783-4FE0-80D8-26AE88D6B060">CLUSTER_SET</a></li>
+                        <li><a href="FEATURE_COMPARE.html#GUID-3D4E179F-F5D2-4FCF-AB42-4D0C8CC7D514">FEATURE_COMPARE</a></li>
+                        <li><a href="FEATURE_DETAILS.html#GUID-A42F313B-22C1-4CAC-BA3F-C418178D743F">FEATURE_DETAILS</a></li>
+                        <li><a href="FEATURE_ID.html#GUID-BA187F80-5F51-49F6-BB69-64422FB9FD90">FEATURE_ID</a></li>
+                        <li><a href="FEATURE_SET.html#GUID-55582346-F1D6-447E-851A-D4912982EB28">FEATURE_SET</a></li>
+                        <li><a href="FEATURE_VALUE.html#GUID-EC0E44D0-BE01-49F8-9E5A-72B500119877">FEATURE_VALUE</a></li>
+                        <li><a href="ORA_DM_PARTITION_NAME.html#GUID-F9ADE9AD-C306-42D1-8274-3F73C2FBAC19">ORA_DM_PARTITION_NAME</a></li>
+                        <li><a href="PREDICTION.html#GUID-DA66A1C3-BFB2-43A1-A3FF-93D4A3DAB9C6">PREDICTION</a></li>
+                        <li><a href="PREDICTION_BOUNDS.html#GUID-C9478C25-8D31-4A39-99B8-AB66A6614795">PREDICTION_BOUNDS</a></li>
+                        <li><a href="PREDICTION_COST.html#GUID-2E58222D-FB7E-4CA2-BCAA-C932FCDEE890">PREDICTION_COST</a></li>
+                        <li><a href="PREDICTION_DETAILS.html#GUID-D7261A56-E729-4882-B48D-CDD343C53810">PREDICTION_DETAILS</a></li>
+                        <li><a href="PREDICTION_PROBABILITY.html#GUID-0F309771-40A3-4E23-9A96-CD134C80F584">PREDICTION_PROBABILITY</a></li>
+                        <li><a href="PREDICTION_SET.html#GUID-25AE84A7-C733-4BC5-8C57-2E5574C49AFC">PREDICTION_SET</a></li>
+                        <li><a href="vector_embedding.html#GUID-5ED78260-6D21-4B6B-86E0-A1E70EFA11CA" title="Use VECTOR_EMBEDDING to generate a single vector embedding for different data types using embedding or feature extraction machine learning models.">VECTOR_EMBEDDING</a></li>
+                     </ul>
+                     <div class="infoboxnotealso" id="GUID-E64F8D20-C7E2-482A-914F-2781D0AA4E64__GUID-AB564ED6-4C97-429E-858B-2B6BB4E5D016">
+                        <p class="notep1">See Also:</p>
+                        <ul style="list-style-type: disc;">
+                           <li>
+                              <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=DMCON" target="_blank"><span><cite>Oracle Machine Learning
+                                        for SQL Concepts</cite></span></a> to learn about Oracle Machine
+                            Learning for SQL
+                              </p>
+                           </li>
+                           <li>
+                              <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=DMPRG004" target="_blank"><span><cite>Oracle Machine Learning
+                                        for SQL Userâs Guide</cite></span></a> for information about
+                        scoring
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div><a id="SQLRF51185"></a><div class="props_rev_3"><a id="GUID-C64CC0DE-0D7C-42C8-B078-92A2984AD953" name="GUID-C64CC0DE-0D7C-42C8-B078-92A2984AD953"></a><h3 id="SQLRF-GUID-C64CC0DE-0D7C-42C8-B078-92A2984AD953" class="sect3">XML Functions </h3>
+               <div>
+                  <div class="section">
+                     <p>The XML functions operate on or return XML documents or fragments. These functions use arguments that are not defined as part of the ANSI/ISO/IEC SQL Standard but are defined as part of the World Wide Web Consortium (W3C) standards. The processing and operations that the functions perform are defined by the relevant W3C standards. The table below provides a link to the appropriate section of the W3C standard for the rules and guidelines that apply to each of these XML-related arguments. A SQL statement that uses one of these XML functions, where any of the arguments does not conform to the relevant W3C syntax, will result in an error. Of special note is the fact that not every character that is allowed in the value of a database column is considered legal in XML.</p>
+                  </div>
+                  <div class="tblformal" id="GUID-C64CC0DE-0D7C-42C8-B078-92A2984AD953__GUID-7700D97B-825A-4D33-B8ED-A355FA2FE434">
+                     <table cellpadding="4" cellspacing="0" class="Formal" title summary="Column 1 lists the syntax elements of XML functions as they appear in this book. Column 2 contains links to the W3C standard section that defines each syntax element." width="100%" frame="hsides" border="1" rules="rows">
+                        <thead>
+                           <tr align="left" valign="top">
+                              <th align="left" valign="bottom" width="26%" id="d121280e2679">Syntax Element</th>
+                              <th align="left" valign="bottom" width="74%" id="d121280e2682">W3C Standard URL</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" width="26%" id="d121280e2687" headers="d121280e2679 ">
+                                 <p><span class="italic"><code class="codeph">value_expr</code></span></p>
+                              </td>
+                              <td align="left" valign="top" width="74%" headers="d121280e2687 d121280e2682 ">
+                                 <p><a href="http://www.w3.org/TR/2006/REC-xml-20060816" target="_blank"><code class="codeph">http://www.w3.org/TR/2006/REC-xml-20060816</code></a></p>
+                              </td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" width="26%" id="d121280e2699" headers="d121280e2679 ">
+                                 <p><span class="italic"><code class="codeph">Xpath_string</code></span></p>
+                              </td>
+                              <td align="left" valign="top" width="74%" headers="d121280e2699 d121280e2682 ">
+                                 <p><a href="http://www.w3.org/TR/1999/REC-xpath-19991116" target="_blank"><code class="codeph">http://www.w3.org/TR/1999/REC-xpath-19991116</code></a></p>
+                              </td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" width="26%" id="d121280e2711" headers="d121280e2679 ">
+                                 <p><span class="italic"><code class="codeph">XQuery_string</code></span></p>
+                              </td>
+                              <td align="left" valign="top" width="74%" headers="d121280e2711 d121280e2682 ">
+                                 <p><a href="http://www.w3.org/TR/2007/REC-xquery-semantics-20070123/" target="_blank"><code class="codeph">http://www.w3.org/TR/2007/REC-xquery-semantics-20070123/</code></a></p>
+                                 <p><a href="http://www.w3.org/TR/xquery-update-10/" target="_blank"><code class="codeph">http://www.w3.org/TR/xquery-update-10/</code></a></p>
+                              </td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" width="26%" id="d121280e2728" headers="d121280e2679 ">
+                                 <p><span class="italic"><code class="codeph">namespace_string</code></span></p>
+                              </td>
+                              <td align="left" valign="top" width="74%" headers="d121280e2728 d121280e2682 ">
+                                 <p><a href="http://www.w3.org/TR/2006/REC-xml-names-20060816/" target="_blank"><code class="codeph">http://www.w3.org/TR/2006/REC-xml-names-20060816/</code></a></p>
+                              </td>
+                           </tr>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" width="26%" id="d121280e2740" headers="d121280e2679 ">
+                                 <p><span class="italic"><code class="codeph">identifier</code></span></p>
+                              </td>
+                              <td align="left" valign="top" width="74%" headers="d121280e2740 d121280e2682 ">
+                                 <p><a href="http://www.w3.org/TR/2006/REC-xml-20060816/#NT-Nmtoken" target="_blank"><code class="codeph">http://www.w3.org/TR/2006/REC-xml-20060816/#NT-Nmtoken</code></a></p>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class="section">
+                     <p>For more information about selecting and querying XML data using these functions, including information on formatting output, refer to <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADXDB0400" target="_blank"><span><cite>Oracle XML&nbsp;DB Developerâs
+                                        Guide</cite></span></a></p>
+                     <p>The SQL XML functions are:</p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="DEPTH.html#GUID-C0107BE4-0003-4329-9CCE-D0671B3F3538">DEPTH</a></li>
+                        <li><a href="EXISTSNODE.html#GUID-71731B1A-99E5-4B82-8243-DEEE6704796F">EXISTSNODE</a></li>
+                        <li><a href="EXTRACT-XML.html#GUID-593295AA-4F46-4D75-B8DC-E7BCEDB1D4D7">EXTRACT (XML)</a></li>
+                        <li><a href="EXTRACTVALUE.html#GUID-20AB974B-7544-4F44-B539-787FB6145680">EXTRACTVALUE</a></li>
+                        <li><a href="PATH.html#GUID-91937F98-7718-4F39-9225-1E0229F11F0D">PATH</a></li>
+                        <li><a href="SYS_DBURIGEN.html#GUID-ABA33BEB-F7B7-477B-9FF2-028D62768797">SYS_DBURIGEN</a></li>
+                        <li><a href="SYS_XMLAGG.html#GUID-BEDD241D-360A-46A2-AEBF-C8B70E465D75">SYS_XMLAGG</a></li>
+                        <li><a href="SYS_XMLGEN.html#GUID-1AC25984-F4AB-468E-BF53-561275AD44E8">SYS_XMLGEN</a></li>
+                        <li><a href="XMLAGG.html#GUID-BCD1D755-5E26-4F73-BA22-521C30D275DA">XMLAGG</a></li>
+                        <li><a href="XMLCAST.html#GUID-06563B93-1247-4F0C-B6BE-42DB3B1DB069">XMLCAST</a></li>
+                        <li><a href="XMLCDATA.html#GUID-FB517A52-6F1A-4D8D-B632-F91EFA606691">XMLCDATA</a></li>
+                        <li><a href="XMLCOLATTVAL.html#GUID-AE3B6441-74D8-4033-900B-A578A79E5F0A">XMLCOLATTVAL</a></li>
+                        <li><a href="XMLCOMMENT.html#GUID-AECB7BCC-C60F-4E0C-BD9A-E52D8F1599C4">XMLCOMMENT</a></li>
+                        <li><a href="XMLCONCAT.html#GUID-CEEEF777-4C7D-41E4-9F69-69DE6D1B07C2">XMLCONCAT</a></li>
+                        <li><a href="XMLDIFF.html#GUID-B7746C15-27FD-4CAF-87EA-49C0DFA1E935">XMLDIFF</a></li>
+                        <li><a href="XMLELEMENT.html#GUID-DEA75423-00EA-4034-A246-4A774ADC988E">XMLELEMENT</a></li>
+                        <li><a href="XMLEXISTS.html#GUID-3D0D90DB-3D4F-4685-AFF6-72B6250624B9">XMLEXISTS</a></li>
+                        <li><a href="XMLFOREST.html#GUID-68E5C67E-CE97-4BF8-B7FF-2365E062C363">XMLFOREST</a></li>
+                        <li><a href="XMLISVALID.html#GUID-012BB50C-30E4-46BA-8199-A8480453F79E">XMLISVALID</a></li>
+                        <li><a href="XMLPARSE.html#GUID-39A93E58-F06E-4633-A7BF-6CF27A53D9B6">XMLPARSE</a></li>
+                        <li><a href="XMLPATCH.html#GUID-C52DA494-2840-475B-871F-1EA071299894">XMLPATCH</a></li>
+                        <li><a href="XMLPI.html#GUID-142604E3-7999-4803-9DF5-28BDC0701571">XMLPI</a></li>
+                        <li><a href="XMLQUERY.html#GUID-9E8D3220-2CF5-4C63-BDC2-0526D57B9CDB">XMLQUERY</a></li>
+                        <li><a href="XMLSEQUENCE.html#GUID-BE0837A9-7D85-4621-8C22-1FECAD17E569">XMLSEQUENCE</a></li>
+                        <li><a href="XMLSERIALIZE.html#GUID-F2D5ECE7-3838-4DD5-BE8F-2AEE7890AA1C">XMLSERIALIZE</a></li>
+                        <li><a href="XMLTABLE.html#GUID-C4A32C58-33E5-4CF1-A1FE-039550D3ECFA">XMLTABLE</a></li>
+                        <li><a href="XMLTRANSFORM.html#GUID-3B74EED2-E79F-4333-8C0B-02989DF5EEAA">XMLTRANSFORM</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div><a id="SQLRF56667"></a><div class="props_rev_3"><a id="GUID-C13171B3-C070-4137-AC71-7A30BD26F380" name="GUID-C13171B3-C070-4137-AC71-7A30BD26F380"></a><h3 id="SQLRF-GUID-C13171B3-C070-4137-AC71-7A30BD26F380" class="sect3">JSON Functions</h3>
+               <div>
+                  <div class="section">
+                     <p>JavaScript Object Notation (JSON) functions allow you to query and generate JSON data.</p>
+                     <p>The following SQL/JSON functions allow you to query JSON data:</p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="JSON_QUERY.html#GUID-6D396EC4-D2AA-43D2-8F5D-08D646A4A2D9">JSON_QUERY</a></li>
+                        <li><a href="JSON_TABLE.html#GUID-3C8E63B5-0B94-4E86-A2D3-3D4831B67C62">JSON_TABLE</a></li>
+                        <li><a href="JSON_VALUE.html#GUID-C7F19D36-1E75-4CB2-AE67-ADFBAD23CBC2">JSON_VALUE</a></li>
+                     </ul>
+                     <p>The following SQL/JSON functions allow you to generate JSON data:</p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="JSON_ARRAY.html#GUID-46CDB3AF-5795-455B-85A8-764528CEC43B">JSON_ARRAY</a></li>
+                        <li><a href="JSON_ARRAYAGG.html#GUID-6D56077D-78DE-4CC0-9498-225DDC42E054">JSON_ARRAYAGG</a></li>
+                        <li><a href="JSON_OBJECT.html#GUID-1EF347AE-7FDA-4B41-AFE0-DD5A49E8B370">JSON_OBJECT</a></li>
+                        <li><a href="JSON_OBJECTAGG.html#GUID-09422D4A-936C-4D38-9991-C64101283D98">JSON_OBJECTAGG</a></li>
+                        <li><a href="json-type-constructor.html#GUID-2B598841-A327-4610-91B9-602F480A8314">JSON Type Constructor</a></li>
+                        <li><a href="json_scalar.html#GUID-F05BD523-F827-4A5F-9A82-8CBC2DB04E2E">JSON_SCALAR</a></li>
+                        <li><a href="JSON_SERIALIZE.html#GUID-01B769C6-A7B3-4136-977F-63CA05963D21">JSON_SERIALIZE</a></li>
+                        <li><a href="JSON_TRANSFORM.html#GUID-DD2A821B-C688-4310-81B5-5F45090B9366">JSON_TRANSFORM</a></li>
+                     </ul>
+                     <p>The following Oracle SQL function creates a JSON data guide:</p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="JSON_DATAGUIDE.html#GUID-4CF32887-0F46-4925-8381-AE2B74343933">JSON_DATAGUIDE</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div><a id="SQLRF51186"></a><div class="props_rev_3"><a id="GUID-CDCB89CB-CCE4-4AAB-84DC-A63725A733EF" name="GUID-CDCB89CB-CCE4-4AAB-84DC-A63725A733EF"></a><h3 id="SQLRF-GUID-CDCB89CB-CCE4-4AAB-84DC-A63725A733EF" class="sect3">Encoding and Decoding Functions </h3>
+               <div>
+                  <div class="section">
+                     <p>The encoding and decoding functions let you inspect and decode data in the database. The encoding and decoding functions are:</p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="DECODE.html#GUID-39341D91-3442-4730-BD34-D3CF5D4701CE">DECODE</a></li>
+                        <li><a href="DUMP.html#GUID-A05793C9-B35D-4BA7-B68C-E3693BCF47A5">DUMP</a></li>
+                        <li><a href="ORA_HASH.html#GUID-0349AFF5-0268-43CE-8118-4F96D752FDE6">ORA_HASH</a></li>
+                        <li><a href="STANDARD_HASH.html#GUID-4A68DACE-CFCF-443B-8651-B6CEAA7C4FD7">STANDARD_HASH</a></li>
+                        <li><a href="VSIZE.html#GUID-CDDB2A17-9398-4AF8-96FB-4297DDA2665B">VSIZE</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div><a id="SQLRF30049"></a><div class="props_rev_3"><a id="GUID-C4201DFA-90C5-46DA-B528-0B6D4E8C647A" name="GUID-C4201DFA-90C5-46DA-B528-0B6D4E8C647A"></a><h3 id="SQLRF-GUID-C4201DFA-90C5-46DA-B528-0B6D4E8C647A" class="sect3">NULL-Related Functions </h3>
+               <div>
+                  <div class="section">
+                     <p>The <code class="codeph">NULL</code>-related functions facilitate null handling. The <code class="codeph">NULL</code>-related functions are:
+                     </p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="COALESCE.html#GUID-3F9007A7-C0CA-4707-9CBA-1DBF2CDE0C87">COALESCE</a></li>
+                        <li><a href="LNNVL.html#GUID-FBCCE9B1-614E-45FA-8EE1-DFAA4F936867">LNNVL</a></li>
+                        <li><a href="NANVL.html#GUID-3C094646-2A70-41F5-984C-9BC0FB31494A">NANVL</a></li>
+                        <li><a href="NULLIF.html#GUID-445FC268-7FFA-4850-98C9-D53D88AB2405">NULLIF</a></li>
+                        <li><a href="NVL.html#GUID-3AB61E54-9201-4D6A-B48A-79F4C4A034B2">NVL</a></li>
+                        <li><a href="NVL2.html#GUID-414D6E81-9627-4163-8AC2-BD24E57742AE">NVL2</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div><a id="SQLRF51187"></a><div class="props_rev_3"><a id="GUID-82B2A2E3-A7DD-46EC-9260-8EC320DA518E" name="GUID-82B2A2E3-A7DD-46EC-9260-8EC320DA518E"></a><h3 id="SQLRF-GUID-82B2A2E3-A7DD-46EC-9260-8EC320DA518E" class="sect3">Environment and Identifier Functions </h3>
+               <div>
+                  <div class="section">
+                     <p>The environment and identifier functions provide information about the instance and session. The environment and identifier functions are:</p>
+                     <ul class="simple" style="list-style-type: none;padding-left:0;">
+                        <li><a href="CON_DBID_TO_ID.html#GUID-9F38A14F-8E6A-4A4A-96D5-52E4480A8926">CON_DBID_TO_ID</a></li>
+                        <li><a href="CON_GUID_TO_ID.html#GUID-F93F257F-BB58-427D-9E19-A22E43DB288F">CON_GUID_TO_ID</a></li>
+                        <li><a href="CON_NAME_TO_ID.html#GUID-714E0914-5018-4E32-AB1E-134FDD0B28FE">CON_NAME_TO_ID</a></li>
+                        <li><a href="CON_UID_TO_ID.html#GUID-14BE69F3-8519-4676-90CD-374152981901">CON_UID_TO_ID</a></li>
+                        <li><a href="ORA_INVOKING_USER.html#GUID-FAE7B186-C40D-48BB-A2C9-AB7EE3878BF1">ORA_INVOKING_USER</a></li>
+                        <li><a href="ORA_INVOKING_USERID.html#GUID-91F09A40-96CD-4759-8EDF-4C54219E8E83">ORA_INVOKING_USERID</a></li>
+                        <li><a href="SYS_CONTEXT.html#GUID-B9934A5D-D97B-4E51-B01B-80C76A5BD086">SYS_CONTEXT</a></li>
+                        <li><a href="SYS_GUID.html#GUID-761E36B4-32DA-497D-8829-3D4653381F9B">SYS_GUID</a></li>
+                        <li><a href="SYS_TYPEID.html#GUID-4E3D45A1-7433-495D-9062-88505A1496E0">SYS_TYPEID</a></li>
+                        <li><a href="UID.html#GUID-DFDC8E24-B911-4C42-B4B1-853E964D3644">UID</a></li>
+                        <li><a href="USER.html#GUID-AD0B927B-EFD4-4246-89B4-2D55AB3AF531">USER</a></li>
+                        <li><a href="USERENV.html#GUID-AC3C8AEF-A988-41C4-9242-69B54E5941D2">USERENV</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="sect2"><a id="GUID-AEF8F898-493F-4BE8-86E6-06241BB78AB0" name="GUID-AEF8F898-493F-4BE8-86E6-06241BB78AB0"></a><h3 id="SQLRF-GUID-AEF8F898-493F-4BE8-86E6-06241BB78AB0" class="sect3">Domain Functions</h3>
+               <div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-AEF8F898-493F-4BE8-86E6-06241BB78AB0__GUID-753C46D2-8BE0-411E-8981-5954BE9A687E">Purpose</p>
+                     <p>Use the following domain functions to work with usecase domains more efficiently: </p>
+                     <ul style="list-style-type: disc;" id="GUID-AEF8F898-493F-4BE8-86E6-06241BB78AB0__UL_QMC_JZJ_FXB">
+                        <li>
+                           <p><a href="domain_display.html#GUID-BF1D853F-5BA8-4E9E-B8EB-BF7502F11D20">DOMAIN_DISPLAY</a></p>
+                        </li>
+                        <li>
+                           <p><a href="domain_order.html#GUID-FC34F669-0BCA-4F8A-B911-4ACAA1F8F11D">DOMAIN_ORDER</a></p>
+                        </li>
+                        <li>
+                           <p><a href="domain_name.html#GUID-BFF71A4E-8FF2-407A-8661-C0A24D4E5487">DOMAIN_NAME</a></p>
+                        </li>
+                        <li>
+                           <p><a href="domain_check.html#GUID-599390A5-1B96-4465-82CE-DBC2345A018B">DOMAIN_CHECK</a></p>
+                        </li>
+                        <li>
+                           <p><a href="domain_check_type.html#GUID-9ED35142-A66C-4511-9DE1-B8BB4350DE41">DOMAIN_CHECK_TYPE</a></p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="sect2"><a id="GUID-C0C477F1-8210-4CA9-A5FA-0A340C409892" name="GUID-C0C477F1-8210-4CA9-A5FA-0A340C409892"></a><h3 id="SQLRF-GUID-C0C477F1-8210-4CA9-A5FA-0A340C409892" class="sect3">Vector Functions</h3>
+               <div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-C0C477F1-8210-4CA9-A5FA-0A340C409892__GUID-1F00F831-2EE9-4891-B9A3-0A04A142D124">Purpose</p>
+                  </div>
+                  <div class="section">
+                     <p>You can use the following vector functions in Oracle AI Vector Search to create and manipulate vectors:</p>
+                     <p><span class="bold">Vector Distance Functions</span></p>
+                     <ul style="list-style-type: disc;" id="GUID-C0C477F1-8210-4CA9-A5FA-0A340C409892__UL_SMR_YTJ_CBC">
+                        <li>
+                           <p><a href="vector_distance.html#GUID-BA4BCFB2-D905-43DC-87B0-E53522CF07B7" title="VECTOR_DISTANCE is the main function that you can use to calculate the distance between two vectors.">VECTOR_DISTANCE</a></p>
+                        </li>
+                        <li>
+                           <p><a href="vector_distance.html#GUID-604A5B68-10AF-48F3-A84F-ED0B90624059" title="L1_DISTANCE is a shorthand version of the VECTOR_DISTANCE function that calculates the distance between two vectors. It takes two vectors as input and returns the distance between them as a BINARY_DOUBLE.">L1_DISTANCE</a></p>
+                        </li>
+                        <li>
+                           <p><a href="vector_distance.html#GUID-2FD8BC27-7614-471F-A4F5-3ED52130A05A" title="L2_DISTANCE is a shorthand version of the VECTOR_DISTANCE function that calculates the distance between two vectors. It takes two vectors as input and returns the distance between them as a BINARY_DOUBLE.">L2_DISTANCE</a></p>
+                        </li>
+                        <li>
+                           <p><a href="vector_distance.html#GUID-2128DC1D-612A-444F-87D8-3D249CD8F12D" title="COSINE_DISTANCE is a shorthand version of the VECTOR_DISTANCE function that calculates the distance between two vectors. It takes two vectors as input and returns the distance between them as a BINARY_DOUBLE.">COSINE_DISTANCE</a></p>
+                        </li>
+                        <li>
+                           <p><a href="vector_distance.html#GUID-6AE745CF-93E7-4192-8F80-7B9853DF5B72" title="INNER_PRODUCT calculates the inner product of two vectors. It takes two vectors as input and returns the inner product as a BINARY_DOUBLE. INNER_PRODUCT(<expr1&gt;, <expr2&gt;) is equivalent to -1 * VECTOR_DISTANCE(<expr1&gt;, <expr2&gt;, DOT).">INNER_PRODUCT</a></p>
+                        </li>
+                     </ul>
+                     <p><span class="bold">Vector Constructors</span></p>
+                     <ul style="list-style-type: disc;" id="GUID-C0C477F1-8210-4CA9-A5FA-0A340C409892__UL_K32_QDC_V1C">
+                        <li>
+                           <p><a href="to_vector.html#GUID-2CCAB607-A28B-43F7-A71D-9800C0B9A380" title="TO_VECTOR is a constructor that takes a string of type VARCHAR2, CLOB, BLOB, or JSON as input, converts it to a vector, and returns a vector as output. TO_VECTOR also takes another vector as input, adjusts its format, and returns the adjusted vector as output. TO_VECTOR is synonymous with VECTOR.">TO_VECTOR</a></p>
+                        </li>
+                        <li>
+                           <p><a href="vector.html#GUID-8A63005B-5512-4D20-954C-7A9DA877FE4B" title="VECTOR is synonymous with TO_VECTOR.">VECTOR</a></p>
+                        </li>
+                     </ul>
+                     <p><span class="bold">Vector Serializers</span></p>
+                     <ul style="list-style-type: disc;" id="GUID-C0C477F1-8210-4CA9-A5FA-0A340C409892__UL_PZP_L5J_CBC">
+                        <li>
+                           <p><a href="from_vector.html#GUID-AA60B3CB-FCB7-4944-9E06-976C272855B1" title="FROM_VECTOR takes a vector as input and returns a string of type VARCHAR2 or CLOB as output.">FROM_VECTOR</a></p>
+                        </li>
+                        <li>
+                           <p><a href="vector_serialize.html#GUID-9E3FFB34-F924-4C02-B35D-30B9FA1DA1A3" title="VECTOR_SERIALIZE is synonymous with FROM_VECTOR.">VECTOR_SERIALIZE</a></p>
+                        </li>
+                     </ul>
+                     <p><span class="bold">Other Common Vector Functions</span></p>
+                     <ul style="list-style-type: disc;" id="GUID-C0C477F1-8210-4CA9-A5FA-0A340C409892__UL_D1M_H5J_CBC">
+                        <li>
+                           <p><a href="vector_chunks.html#GUID-5927E2FA-6419-4744-A7CB-3E62DBB027AD" title="Use VECTOR_CHUNKS to split plain text into smaller chunks to generate vector embeddings that can be used with vector indexes or hybrid vector indexes.">VECTOR_CHUNKS</a></p>
+                        </li>
+                        <li>
+                           <p><a href="vector_dims.html#GUID-010349D7-190D-430B-A798-ACC486E1036A" title="VECTOR_DIMS returns the number of dimensions of a vector as a NUMBER. VECTOR_DIMS is synonymous with VECTOR_DIMENSION_COUNT.">VECTOR_DIMS</a></p>
+                        </li>
+                        <li>
+                           <p><a href="vector_dimension_count.html#GUID-C3D937E0-7F9F-4C21-A214-0CFA31472E67" title="VECTOR_DIMENSION_COUNT returns the number of dimensions of a vector as a NUMBER.">VECTOR_DIMENSION_COUNT</a></p>
+                        </li>
+                        <li>
+                           <p><a href="vector_dimension_format.html#GUID-354ACE80-7120-4D45-B2B0-AB1D86E3D37D" title="VECTOR_DIMENSION_FORMAT returns the storage format of the vector. It returns a VARCHAR2, which can be one of the following values: INT8, FLOAT32, FLOAT64, or BINARY.">VECTOR_DIMENSION_FORMAT</a></p>
+                        </li>
+                        <li>
+                           <p><a href="vector_embedding.html#GUID-5ED78260-6D21-4B6B-86E0-A1E70EFA11CA" title="Use VECTOR_EMBEDDING to generate a single vector embedding for different data types using embedding or feature extraction machine learning models.">VECTOR_EMBEDDING</a></p>
+                        </li>
+                        <li>
+                           <p><a href="vector_norm.html#GUID-41554068-9EB8-49E8-A771-4E666674DDA8" title="VECTOR_NORM returns the Euclidean norm of a vector (SQRT(SUM((xi-yi)2))) as a BINARY_DOUBLE. This value is also called magnitude or size and represents the Euclidean distance between the vector and the origin.">VECTOR_NORM</a></p>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="section">
+                     <div class="infoboxnotealso" id="GUID-C0C477F1-8210-4CA9-A5FA-0A340C409892__GUID-B11C385C-20C3-4E40-B986-BB644FCDC398">
+                        <p class="notep1">See Also:</p>
+                        <p><span class="italic"><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=VECSE-GUID-746EAA47-9ADA-4A77-82BB-64E8EF5309BE" target="_blank">AI Vector Search User's Guide</a></span></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="sect2"><a id="GUID-97F3185F-B39A-492A-AD01-8CBCD4713AC9" name="GUID-97F3185F-B39A-492A-AD01-8CBCD4713AC9"></a><h3 id="SQLRF-GUID-97F3185F-B39A-492A-AD01-8CBCD4713AC9" class="sect3">UUID Functions</h3>
+               <div>
+                  <div class="section">
+                     <p>Use the UUID (Universally Unique Identifier) functions to generate UUIDs and operate on them.  </p>
+                     <ul style="list-style-type: disc;" id="GUID-97F3185F-B39A-492A-AD01-8CBCD4713AC9__UL_JSN_F1C_QFC">
+                        <li>
+                           <p><a href="uuid.html#GUID-2A0ECCC2-3DA1-442F-AC9D-A6FE643F381D">UUID</a></p>
+                        </li>
+                        <li>
+                           <p><a href="is_uuid.html#GUID-01803FC5-A637-498C-932C-DEB909115D97">IS_UUID</a></p>
+                        </li>
+                        <li>
+                           <p><a href="uuid_to_raw.html#GUID-B752F910-3319-46C1-AD8E-F29CDEF6D9E5">UUID_TO_RAW</a></p>
+                        </li>
+                        <li>
+                           <p><a href="raw_to_uuid.html#GUID-F5948759-F523-47F6-B7E9-96A99154CA51">RAW_TO_UUID</a></p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

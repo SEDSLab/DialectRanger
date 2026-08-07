@@ -1,0 +1,13 @@
+{
+  "dbms": "mysql",
+  "feature_type": "datatype",
+  "candidate_features": 251,
+  "candidate_groups": 43,
+  "feature_drafts": 43,
+  "known_type_coverage": {
+    "total": 43,
+    "covered": 43,
+    "missing": [],
+    "coverage_ratio": 1.0
+  }
+}

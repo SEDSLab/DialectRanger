@@ -1,0 +1,168 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="reference">
+      <meta name="DC.Title" content="BETWEEN Condition">
+      <meta name="DC.subject" content="conditions, BETWEEN, BETWEEN condition, range conditions, range, interval conditions, interval">
+      <meta name="keywords" content="conditions, BETWEEN, BETWEEN condition, range conditions, range, interval conditions, interval">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-868A7C9D-EDF9-44E7-91B5-C3F69E503CCB">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>BETWEEN Condition</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="Compound-Conditions.html" title="Previous" type="text/html">
+      <link rel="next" href="EXISTS-Condition.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"BETWEEN Condition","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="Compound-Conditions.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="EXISTS-Condition.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-868A7C9D-EDF9-44E7-91B5-C3F69E503CCB" name="GUID-868A7C9D-EDF9-44E7-91B5-C3F69E503CCB"></a><a id="SQLRF52165"></a><a id="SQLRF52166"></a><a id="SQLRF52164"></a>
+         
+         <h2 id="SQLRF-GUID-868A7C9D-EDF9-44E7-91B5-C3F69E503CCB" class="sect2">BETWEEN Condition </h2>
+         <div class="ind">
+            <div>
+               <div class="section">
+                  <p>A <code class="codeph">BETWEEN</code> condition determines whether the value of one expression is in an interval defined by two other expressions.
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-868A7C9D-EDF9-44E7-91B5-C3F69E503CCB__GUID-35AB420F-4FB1-4083-88B1-7E3DB33F7D70"><span class="italic">between_condition</span>::=
+                  </p>
+               </div>
+               <div class="section">
+                  <div class="figure" id="GUID-868A7C9D-EDF9-44E7-91B5-C3F69E503CCB__GUID-3ADDD5F6-A0DB-456D-89D0-9736E804997D"><img src="img/between_condition.gif" alt="Description of between_condition.eps follows" title="Description of between_condition.eps follows" longdesc="img_text/between_condition.html"><br><a href="img_text/between_condition.html">Description of the illustration between_condition.eps</a></div>
+                  <p>All three expressions must be numeric, character, or datetime expressions. In SQL, it is possible that <span class="italic"><code class="codeph">expr1</code></span> will be evaluated more than once. If the <code class="codeph">BETWEEN</code> expression appears in PL/SQL, <span class="italic"><code class="codeph">expr1</code></span> is guaranteed to be evaluated only once. If the expressions are not all the same data type, then Oracle Database implicitly converts the expressions to a common data type. If it cannot do so, then it returns an error.
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-868A7C9D-EDF9-44E7-91B5-C3F69E503CCB__GUID-A3BCE6D5-0C14-4F70-877C-9EE53296AAC6">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="Data-Type-Comparison-Rules.html#GUID-98BE3A78-6E33-4181-B5CB-D96FD9DC1694">Implicit Data Conversion</a> for more information on SQL data type conversion
+                     </p>
+                  </div>
+                  <p>The value of </p><pre class="oac_no_warn" dir="ltr">expr1 NOT BETWEEN expr2 AND expr3
+</pre><p>is the value of the expression</p><pre class="oac_no_warn" dir="ltr">NOT (expr1 BETWEEN expr2 AND expr3)
+</pre><p>And the value of </p><pre class="oac_no_warn" dir="ltr">expr1 BETWEEN expr2 AND expr3
+</pre><p>is the value of the boolean expression: </p><pre class="oac_no_warn" dir="ltr">expr2 &lt;= expr1 AND expr1 &lt;= expr3
+</pre><p>If <span class="italic"><code class="codeph">expr3</code></span> &lt; <span class="italic"><code class="codeph">expr2</code></span>, then the interval is empty. If <span class="italic"><code class="codeph">expr1</code></span> is <code class="codeph">NULL</code>, then the result is <code class="codeph">NULL</code>. If <span class="italic"><code class="codeph">expr1</code></span> is not <code class="codeph">NULL</code>, then the value is <code class="codeph">FALSE</code> in the ordinary case and <code class="codeph">TRUE</code> when the keyword <code class="codeph">NOT</code> is used.
+                  </p>
+                  <p>The boolean operator <code class="codeph">AND</code> may produce unexpected results. Specifically, in the expression <code class="codeph">x AND y</code>, the condition <code class="codeph">x IS NULL</code> is not sufficient to determine the value of the expression. The second operand still must be evaluated. The result is <code class="codeph">FALSE</code> if the second operand has the value <code class="codeph">FALSE</code> and <code class="codeph">NULL</code> otherwise. See <a href="Logical-Conditions.html#GUID-C5E48AF2-3FF9-401D-A104-CDB5FC19E65F">Logical Conditions</a> for more information on <code class="codeph">AND</code>.
+                  </p>
+               </div>
+               <div class="tblformal" id="GUID-868A7C9D-EDF9-44E7-91B5-C3F69E503CCB__GUID-6967B83D-67C7-4ED2-83D4-C39CBC038125">
+                  <p class="titleintable">Table 6-10 BETWEEN Condition</p>
+                  <table cellpadding="4" cellspacing="0" class="Formal" title="BETWEEN Condition" summary="The first column shows the range conditions, the second describes them, and the third provides an example." width="100%" frame="hsides" border="1" rules="rows">
+                     <thead>
+                        <tr align="left" valign="top">
+                           <th align="left" valign="bottom" width="16%" id="d115583e255">Type of Condition</th>
+                           <th align="left" valign="bottom" width="38%" id="d115583e258">Operation</th>
+                           <th align="left" valign="bottom" width="47%" id="d115583e261">Example</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr align="left" valign="top">
+                           <td align="left" valign="top" width="16%" id="d115583e266" headers="d115583e255 "><pre class="oac_no_warn" dir="ltr">[NOT] BETWEEN x AND y</pre></td>
+                           <td align="left" valign="top" width="38%" headers="d115583e266 d115583e258 ">
+                              <p>[<code class="codeph">NOT</code>] (<span class="italic"><code class="codeph">expr2</code></span> less than or equal to <span class="italic"><code class="codeph">expr1</code></span> <code class="codeph">AND</code> <span class="italic"><code class="codeph">expr1</code></span>  less than or equal to <span class="italic"><code class="codeph">expr3</code></span>)
+                              </p>
+                           </td>
+                           <td align="left" valign="top" width="47%" headers="d115583e266 d115583e261 "><pre class="oac_no_warn" dir="ltr">SELECT * FROM employees
+  WHERE salary
+  BETWEEN 2000 AND 3000
+  ORDER BY employee_id;</pre></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

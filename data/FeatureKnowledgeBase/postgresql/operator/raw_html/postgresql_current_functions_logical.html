@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>PostgreSQL: Documentation: 18: 9.1. Logical Operators</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8" />
+   
+  <meta name="theme-color" content="#336791"/>
+  <meta name="copyright" content="The PostgreSQL Global Development Group" />
+  <meta property="og:url" content="https://www.postgresql.org/docs/18/functions-logical.html" />
+  <meta property="og:type" content="article" />
+
+  <meta property="article:published_time" content="2026-05-14T13:09:46" />
+  <meta property="og:image" content="https://www.postgresql.org/media/img/about/press/elephant.png" />
+  <meta property="og:title" content="9.1. Logical Operators" />
+  <meta property="og:description" content="9.1.&amp;nbsp;Logical Operators # The usual logical operators are available: boolean AND boolean → boolean boolean OR boolean → boolean NOT …" />
+  <meta property="og:site_name" content="PostgreSQL Documentation" />
+  <link href="/media/css/fontawesome.css?73aab745" rel="stylesheet">
+  <link rel="stylesheet" href="/media/css/bootstrap-4.4.1.min.css">
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  <link rel="stylesheet" type="text/css" href="/dyncss/base.css?73aab745">
+
+  <script src="/media/js/theme.js?73aab745"></script>
+
+  
+
+
+  <link rel="canonical" href="https://www.postgresql.org/docs/current/functions-logical.html" />
+
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-md-center">
+        <div class="col">
+          <!-- Header -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand p-0" href="/">
+              <img class="logo" src="/media/img/about/press/elephant.png" alt="PostgreSQL Elephant Logo">
+            </a>
+            <input type="checkbox" id="navbar-toggler" aria-controls="pgNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <label for="navbar-toggler" id="navbar-toggler-label" class="navbar-toggler" tabindex="0"><span class="navbar-toggler-icon"></span></label>
+            <div class="navbar-collapse" id="pgNavbar">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item p-2"><a href="/" title="Home">Home</a></li>
+                <li class="nav-item p-2"><a href="/about/" title="About">About</a></li>
+                <li class="nav-item p-2"><a href="/download/" title="Download">Download</a></li>
+                <li class="nav-item p-2"><a href="/docs/" title="Documentation">Documentation</a></li>
+                <li class="nav-item p-2"><a href="/community/" title="Community">Community</a></li>
+                <li class="nav-item p-2"><a href="/developer/" title="Developers">Developers</a></li>
+                <li class="nav-item p-2"><a href="/support/" title="Support">Support</a></li>
+                <li class="nav-item p-2"><a href="/about/donate/" title="Donate">Donate</a></li>
+                <li class="nav-item p-2"><a href="/account/" title="Your account">Your account</a></li>
+              </ul>
+              <form role="search" method="get" action="/search/">
+                <div class="input-group">
+                  <input id="q" name="q" type="text" size="20" maxlength="255" accesskey="s"  class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+              <form id="form-theme" class="form-inline d-none">
+                <button id="btn-theme" class="btn btn-default ml-1" type="button"></button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row justify-content-center pg-shout-box">
+        <div class="col text-white text-center">July 16, 2026: <a href="/about/news/postgresql-19-beta-2-released-3350/">PostgreSQL 19 Beta 2 Released!</a>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="container-fluid margin">
+      <div class="row">
+        <div id="pgContentWrap" class="col-11">
+          <div class="row">
+            <div class="col-md-6 mb-2">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <a href="/docs/" title="Documentation">Documentation</a> &rarr; <a href="/docs/18/index.html">PostgreSQL 18</a>
+                  </div>
+                </div>
+              </div>
+              
+                <div class="row">
+                  <div class="col">
+                    Supported Versions:
+                      
+                        
+                        
+                          <a href="/docs/current/functions-logical.html" title="PostgreSQL 18 - 9.1. Logical Operators" class="docs-version-selected">Current</a>
+                          (<a href="/docs/18/functions-logical.html" title="PostgreSQL 18 - 9.1. Logical Operators" class="docs-version-selected">18</a>)
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/17/functions-logical.html" title="PostgreSQL 17 - 9.1. Logical Operators" >17</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/16/functions-logical.html" title="PostgreSQL 16 - 9.1. Logical Operators" >16</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/15/functions-logical.html" title="PostgreSQL 15 - 9.1. Logical Operators" >15</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/14/functions-logical.html" title="PostgreSQL 14 - 9.1. Logical Operators" >14</a>
+                        
+                      
+                  </div>
+                </div>
+              
+              
+                <div class="row">
+                  <div class="col">
+                    Development Versions:
+                    
+                      
+                      <a href="/docs/19/functions-logical.html" title="PostgreSQL 19 - 9.1. Logical Operators"  rel="nofollow">19</a>
+                    
+                       / 
+                      <a href="/docs/devel/functions-logical.html" title="PostgreSQL devel - 9.1. Logical Operators"  rel="nofollow">devel</a>
+                    
+                  </div>
+                </div>
+              
+              
+                <div class="row">
+                  <div class="col-12">
+                    Unsupported versions:
+                    
+                      
+                      <a href="/docs/13/functions-logical.html" title="PostgreSQL 13 - 9.1. Logical Operators"  rel="nofollow">13</a>
+                    
+                       / 
+                      <a href="/docs/12/functions-logical.html" title="PostgreSQL 12 - 9.1. Logical Operators"  rel="nofollow">12</a>
+                    
+                       / 
+                      <a href="/docs/11/functions-logical.html" title="PostgreSQL 11 - 9.1. Logical Operators"  rel="nofollow">11</a>
+                    
+                       / 
+                      <a href="/docs/10/functions-logical.html" title="PostgreSQL 10 - 9.1. Logical Operators"  rel="nofollow">10</a>
+                    
+                       / 
+                      <a href="/docs/9.6/functions-logical.html" title="PostgreSQL 9.6 - 9.1. Logical Operators"  rel="nofollow">9.6</a>
+                    
+                       / 
+                      <a href="/docs/9.5/functions-logical.html" title="PostgreSQL 9.5 - 9.1. Logical Operators"  rel="nofollow">9.5</a>
+                    
+                       / 
+                      <a href="/docs/9.4/functions-logical.html" title="PostgreSQL 9.4 - 9.1. Logical Operators"  rel="nofollow">9.4</a>
+                    
+                       / 
+                      <a href="/docs/9.3/functions-logical.html" title="PostgreSQL 9.3 - 9.1. Logical Operators"  rel="nofollow">9.3</a>
+                    
+                       / 
+                      <a href="/docs/9.2/functions-logical.html" title="PostgreSQL 9.2 - 9.1. Logical Operators"  rel="nofollow">9.2</a>
+                    
+                       / 
+                      <a href="/docs/9.1/functions-logical.html" title="PostgreSQL 9.1 - 9.1. Logical Operators"  rel="nofollow">9.1</a>
+                    
+                       / 
+                      <a href="/docs/9.0/functions-logical.html" title="PostgreSQL 9.0 - 9.1. Logical Operators"  rel="nofollow">9.0</a>
+                    
+                       / 
+                      <a href="/docs/8.4/functions-logical.html" title="PostgreSQL 8.4 - 9.1. Logical Operators"  rel="nofollow">8.4</a>
+                    
+                       / 
+                      <a href="/docs/8.3/functions-logical.html" title="PostgreSQL 8.3 - 9.1. Logical Operators"  rel="nofollow">8.3</a>
+                    
+                       / 
+                      <a href="/docs/8.2/functions-logical.html" title="PostgreSQL 8.2 - 9.1. Logical Operators"  rel="nofollow">8.2</a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+            <div class="col-md-6 col-lg-5 offset-lg-1">
+              <form id="docSearchForm" role="search" method="get" action="/search/">
+                <input type="hidden" name="u" value="/docs/18/" />
+                <div class="input-group">
+                  <input type="text" id="q" name="q" class="form-control" placeholder="Search the documentation for..."/>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+            </div>
+          </div>
+
+          <div id="docContent">
+            <div class="navheader">
+  <table width="100%" summary="Navigation header">
+    <tr>
+      <th colspan="5" align="center">9.1.&nbsp;Logical Operators</th>
+    </tr>
+    <tr>
+      <td width="10%" align="left"><a accesskey="p" href="functions.html" title="Chapter&nbsp;9.&nbsp;Functions and Operators">Prev</a>&nbsp;</td>
+      <td width="10%" align="left"><a accesskey="u" href="functions.html" title="Chapter&nbsp;9.&nbsp;Functions and Operators">Up</a></td>
+      <th width="60%" align="center">Chapter&nbsp;9.&nbsp;Functions and Operators</th>
+      <td width="10%" align="right"><a accesskey="h" href="index.html" title="PostgreSQL 18.4 Documentation">Home</a></td>
+      <td width="10%" align="right">&nbsp;<a accesskey="n" href="functions-comparison.html" title="9.2.&nbsp;Comparison Functions and Operators">Next</a></td>
+    </tr>
+  </table>
+  <hr />
+</div>
+<div class="sect1" id="FUNCTIONS-LOGICAL">
+  <div class="titlepage">
+    <div>
+      <div>
+        <h2 class="title" style="clear: both">9.1.&nbsp;Logical Operators <a href="#FUNCTIONS-LOGICAL" class="id_link">#</a></h2>
+      </div>
+    </div>
+  </div><a id="id-1.5.8.7.2" class="indexterm" name="id-1.5.8.7.2"></a><a id="id-1.5.8.7.3" class="indexterm" name="id-1.5.8.7.3"></a>
+  <p>The usual logical operators are available: <a id="id-1.5.8.7.4.1" class="indexterm" name="id-1.5.8.7.4.1"></a> <a id="id-1.5.8.7.4.2" class="indexterm" name="id-1.5.8.7.4.2"></a> <a id="id-1.5.8.7.4.3" class="indexterm" name="id-1.5.8.7.4.3"></a> <a id="id-1.5.8.7.4.4" class="indexterm" name="id-1.5.8.7.4.4"></a> <a id="id-1.5.8.7.4.5" class="indexterm" name="id-1.5.8.7.4.5"></a> <a id="id-1.5.8.7.4.6" class="indexterm" name="id-1.5.8.7.4.6"></a></p>
+  <pre class="synopsis">
+<code class="type">boolean</code> <code class="literal">AND</code> <code class="type">boolean</code> → <code class="returnvalue">boolean</code>
+<code class="type">boolean</code> <code class="literal">OR</code> <code class="type">boolean</code> → <code class="returnvalue">boolean</code>
+<code class="literal">NOT</code> <code class="type">boolean</code> → <code class="returnvalue">boolean</code>
+</pre>
+  <p><acronym class="acronym">SQL</acronym> uses a three-valued logic system with true, false, and <code class="literal">null</code>, which represents <span class="quote">“<span class="quote">unknown</span>”</span>. Observe the following truth tables:</p>
+  <div class="informaltable">
+    <table class="informaltable" border="1">
+      <colgroup>
+        <col />
+        <col />
+        <col />
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th><em class="replaceable"><code>a</code></em></th>
+          <th><em class="replaceable"><code>b</code></em></th>
+          <th><em class="replaceable"><code>a</code></em> AND <em class="replaceable"><code>b</code></em></th>
+          <th><em class="replaceable"><code>a</code></em> OR <em class="replaceable"><code>b</code></em></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>TRUE</td>
+          <td>TRUE</td>
+          <td>TRUE</td>
+          <td>TRUE</td>
+        </tr>
+        <tr>
+          <td>TRUE</td>
+          <td>FALSE</td>
+          <td>FALSE</td>
+          <td>TRUE</td>
+        </tr>
+        <tr>
+          <td>TRUE</td>
+          <td>NULL</td>
+          <td>NULL</td>
+          <td>TRUE</td>
+        </tr>
+        <tr>
+          <td>FALSE</td>
+          <td>FALSE</td>
+          <td>FALSE</td>
+          <td>FALSE</td>
+        </tr>
+        <tr>
+          <td>FALSE</td>
+          <td>NULL</td>
+          <td>FALSE</td>
+          <td>NULL</td>
+        </tr>
+        <tr>
+          <td>NULL</td>
+          <td>NULL</td>
+          <td>NULL</td>
+          <td>NULL</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="informaltable">
+    <table class="informaltable" border="1">
+      <colgroup>
+        <col />
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th><em class="replaceable"><code>a</code></em></th>
+          <th>NOT <em class="replaceable"><code>a</code></em></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>TRUE</td>
+          <td>FALSE</td>
+        </tr>
+        <tr>
+          <td>FALSE</td>
+          <td>TRUE</td>
+        </tr>
+        <tr>
+          <td>NULL</td>
+          <td>NULL</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The operators <code class="literal">AND</code> and <code class="literal">OR</code> are commutative, that is, you can switch the left and right operands without affecting the result. (However, it is not guaranteed that the left operand is evaluated before the right operand. See <a class="xref" href="sql-expressions.html#SYNTAX-EXPRESS-EVAL" title="4.2.14.&nbsp;Expression Evaluation Rules">Section&nbsp;4.2.14</a> for more information about the order of evaluation of subexpressions.)</p>
+</div>
+<div class="navfooter">
+  <hr />
+  <table width="100%" summary="Navigation footer">
+    <tr>
+      <td width="40%" align="left"><a accesskey="p" href="functions.html" title="Chapter&nbsp;9.&nbsp;Functions and Operators">Prev</a>&nbsp;</td>
+      <td width="20%" align="center"><a accesskey="u" href="functions.html" title="Chapter&nbsp;9.&nbsp;Functions and Operators">Up</a></td>
+      <td width="40%" align="right">&nbsp;<a accesskey="n" href="functions-comparison.html" title="9.2.&nbsp;Comparison Functions and Operators">Next</a></td>
+    </tr>
+    <tr>
+      <td width="40%" align="left" valign="top">Chapter&nbsp;9.&nbsp;Functions and Operators&nbsp;</td>
+      <td width="20%" align="center"><a accesskey="h" href="index.html" title="PostgreSQL 18.4 Documentation">Home</a></td>
+      <td width="40%" align="right" valign="top">&nbsp;9.2.&nbsp;Comparison Functions and Operators</td>
+    </tr>
+  </table>
+</div>
+
+          </div>
+          
+            <div id="docComments">
+              <h2>Submit correction</h2>
+              <p>
+              If you see anything in the documentation that is not correct, does not match
+              your experience with the particular feature or requires further clarification,
+              please use
+              <a href="/account/comments/new/18/functions-logical.html/" rel="nofollow">this form</a>
+              to report a documentation issue.
+              </p>
+            </div>
+          
+        </div> <!-- pgContentWrap -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <!-- Copyright -->
+      <div class="container">
+        <a href="/about/policies/">Policies</a> |
+        <a href="/about/policies/coc/">Code of Conduct</a> |
+        <a href="/about/">About PostgreSQL</a> |
+        <a href="/about/contact/">Contact</a><br/>
+        <p>Copyright &copy; 1996-2026 The PostgreSQL Global Development Group</p>
+      </div>
+    </footer>
+    <script src="/media/js/main.js?73aab745"></script>
+
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "dbms": "oracle",
+  "feature_type": "datatype",
+  "total_pages": 2,
+  "total_sections": 63,
+  "total_blocks": 2235,
+  "candidate_features": 158,
+  "candidate_groups": 30,
+  "feature_drafts": 30,
+  "total_drafts": 30,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 30,
+  "invalid_features": 0,
+  "total_validated_features": 30,
+  "total_kb_features": 30,
+  "total_review_items": 30,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 30,
+    "no_description_claims": 0,
+    "no_valid_syntax": 0,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 0
+  },
+  "generated_at": "2026-08-06T19:51:02.109165+08:00"
+}

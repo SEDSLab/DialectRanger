@@ -1,0 +1,441 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="reference">
+      <meta name="DC.Title" content="Pattern-matching Conditions">
+      <meta name="DC.subject" content="pattern-matching conditions, conditions, pattern matching, LIKE conditions, LIKE, REGEXP_LIKE condition, REGEXP_LIKE">
+      <meta name="keywords" content="pattern-matching conditions, conditions, pattern matching, LIKE conditions, LIKE, REGEXP_LIKE condition, REGEXP_LIKE">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-3FA7F5AB-AC64-4200-8F90-294101428C26">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Pattern-matching Conditions</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="Multiset-Conditions.html" title="Previous" type="text/html">
+      <link rel="next" href="Null-Conditions.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Pattern-matching Conditions","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="Multiset-Conditions.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="Null-Conditions.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-3FA7F5AB-AC64-4200-8F90-294101428C26" name="GUID-3FA7F5AB-AC64-4200-8F90-294101428C26"></a><a id="SQLRF52141"></a>
+         
+         <h2 id="SQLRF-GUID-3FA7F5AB-AC64-4200-8F90-294101428C26" class="sect2">Pattern-matching Conditions </h2>
+         <div class="ind">
+            <div>
+               <div class="section">
+                  <p>The pattern-matching conditions compare character data.</p>
+               </div>
+            </div><a id="SQLRF52143"></a><a id="SQLRF52144"></a><a id="SQLRF52145"></a><a id="SQLRF52146"></a><a id="SQLRF52147"></a><a id="SQLRF52148"></a><a id="SQLRF52149"></a><a id="SQLRF52142"></a><div class="props_rev_3"><a id="GUID-0779657B-06A8-441F-90C5-044B47862A0A" name="GUID-0779657B-06A8-441F-90C5-044B47862A0A"></a><h3 id="SQLRF-GUID-0779657B-06A8-441F-90C5-044B47862A0A" class="sect3">LIKE Condition </h3>
+               <div>
+                  <div class="section">
+                     <p>The <code class="codeph">LIKE</code> conditions specify a test involving pattern matching. Whereas the equality operator (=) exactly matches one character value to another, the <code class="codeph">LIKE</code> conditions match a portion of one character value to another by searching the first value for the pattern specified by the second. <code class="codeph">LIKE</code> calculates strings using characters as defined by the input character set. <code class="codeph">LIKEC</code> uses Unicode complete characters. <code class="codeph">LIKE2</code> uses UCS2 code points. <code class="codeph">LIKE4</code> uses UCS4 code points.
+                     </p>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-0779657B-06A8-441F-90C5-044B47862A0A__GUID-BEE948BD-A89B-448D-A425-F17CEBBDA1CD"><span class="italic">like_condition</span>::=
+                     </p>
+                  </div>
+                  <div class="section">
+                     <div class="figure" id="GUID-0779657B-06A8-441F-90C5-044B47862A0A__GUID-ED9570AB-D17D-492E-853E-79F45F5FA23A"><img src="img/like_condition.gif" alt="Description of like_condition.eps follows" title="Description of like_condition.eps follows" longdesc="img_text/like_condition.html"><br><a href="img_text/like_condition.html">Description of the illustration like_condition.eps</a></div>
+                     <p>In this syntax:</p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p><span class="italic"><code class="codeph">char1</code></span> is a character expression, such as a character column, called the <span class="bold">search value</span>.
+                           </p>
+                        </li>
+                        <li>
+                           <p><span class="italic"><code class="codeph">char2</code></span> is a character expression, usually a literal, called the <span class="bold">pattern</span>.
+                           </p>
+                        </li>
+                        <li>
+                           <p><span class="italic"><code class="codeph">esc_char</code></span> is a character expression, usually a literal, called the <span class="bold">escape character</span>.
+                           </p>
+                        </li>
+                     </ul>
+                     <p>The <code class="codeph">LIKE</code> condition is the best choice in almost all situations. Use the following guidelines to determine whether any of the variations would be helpful in your environment:
+                     </p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p>Use <code class="codeph">LIKE2</code> to process strings using UCS-2 semantics. <code class="codeph">LIKE2</code> treats a Unicode supplementary character as two characters.
+                           </p>
+                        </li>
+                        <li>
+                           <p>Use <code class="codeph">LIKE4</code> to process strings using UCS-4 semantics. <code class="codeph">LIKE4</code> treats a Unicode supplementary character as one character.
+                           </p>
+                        </li>
+                        <li>
+                           <p>Use <code class="codeph">LIKEC</code> to process strings using Unicode complete character semantics. <code class="codeph">LIKEC</code> treats a composite character as one character. 
+                           </p>
+                        </li>
+                     </ul>
+                     <p>For more on character length see the following:</p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=NLSPG435" target="_blank"><span class="italic">Oracle Database Globalization Support Guide</span></a></p>
+                        </li>
+                        <li>
+                           <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADLOB45586" target="_blank"><span class="italic">Oracle Database SecureFiles and Large Objects Developer's Guide</span></a></p>
+                        </li>
+                     </ul>
+                     <p>If <span class="italic"><code class="codeph">esc_char</code></span> is not specified, then there is no default escape character. If any of <span class="italic"><code class="codeph">char1</code></span>, <span class="italic"><code class="codeph">char2</code></span>, or <span class="italic"><code class="codeph">esc_char</code></span> is null, then the result is unknown. Otherwise, the escape character, if specified, must be a character string of length 1.
+                     </p>
+                     <p>All of the character expressions (<span class="italic"><code class="codeph">char1</code></span>, <span class="italic"><code class="codeph">char2</code></span>, and <span class="italic"><code class="codeph">esc_char</code></span>) can be of any of the data types <code class="codeph">CHAR</code>, <code class="codeph">VARCHAR2</code>, <code class="codeph">NCHAR</code>, or <code class="codeph">NVARCHAR2</code>. If they differ, then Oracle converts all of them to the data type of <span class="italic"><code class="codeph">char1</code></span>. 
+                     </p>
+                     <p>The pattern can contain special pattern-matching characters:</p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p>An underscore (_) in the pattern matches exactly one character (as opposed to one byte in a multibyte character set) in the value.</p>
+                        </li>
+                        <li>
+                           <p>A percent sign (%) in the pattern can match zero or more characters (as opposed to bytes in a multibyte character set) in the value. The pattern '%' cannot match a null. </p>
+                        </li>
+                     </ul>
+                     <p>You can include the actual characters <code class="codeph">%</code> or <code class="codeph">_</code> in the pattern by using the <code class="codeph">ESCAPE</code> clause, which identifies the escape character. If the escape character precedes the character <code class="codeph">%</code> or <code class="codeph">_</code> in the pattern, then Oracle interprets this character literally in the pattern rather than as a special pattern-matching character. You can also search for the escape character itself by repeating it. For example, if @ is the escape character, then you can use @@ to search for @.
+                     </p>
+                     <div class="infoboxnote" id="GUID-0779657B-06A8-441F-90C5-044B47862A0A__GUID-D5E9A6A0-62C1-42E3-89AD-35A1BA416CD9">
+                        <p class="notep1">Note:</p>
+                        <p>Only ASCII-equivalent underscore (_) and percent (%) characters are recognized as pattern-matching characters. Their full-width variants, present in East Asian character sets and in Unicode, are treated as normal characters.</p>
+                     </div>
+                     <p><a href="Pattern-matching-Conditions.html#GUID-0779657B-06A8-441F-90C5-044B47862A0A__CJADEBJE" title="The first column lists the LIKE conditions, the second column describes their operation, and the third provides an example.">Table 6-8</a> describes the <code class="codeph">LIKE</code> conditions.
+                     </p>
+                  </div>
+                  <div class="tblformal" id="GUID-0779657B-06A8-441F-90C5-044B47862A0A__CJADEBJE">
+                     <p class="titleintable">Table 6-8 LIKE Condition <code class="codeph"></code></p>
+                     <table cellpadding="4" cellspacing="0" class="Formal" title="LIKE Condition " summary="The first column lists the LIKE conditions, the second column describes their operation, and the third provides an example." width="100%" frame="hsides" border="1" rules="rows">
+                        <thead>
+                           <tr align="left" valign="top">
+                              <th align="left" valign="bottom" width="16%" id="d111438e453">Type of Condition</th>
+                              <th align="left" valign="bottom" width="44%" id="d111438e456">Operation</th>
+                              <th align="left" valign="bottom" width="40%" id="d111438e459">Example</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr align="left" valign="top">
+                              <td align="left" valign="top" width="16%" id="d111438e464" headers="d111438e453 "><pre class="oac_no_warn" dir="ltr">x [NOT] LIKE y 
+[ESCAPE 'z'] </pre></td>
+                              <td align="left" valign="top" width="44%" headers="d111438e464 d111438e456 ">
+                                 <p><code class="codeph">TRUE</code> if <span class="italic"><code class="codeph">x</code></span> does [not] match the pattern <span class="italic"><code class="codeph">y</code></span>. Within <span class="italic"><code class="codeph">y</code></span>, the character <code class="codeph">%</code> matches any string of zero or more characters except null. The character <code class="codeph">_</code> matches any single character. Any character can follow <code class="codeph">ESCAPE</code> except percent (%) and underbar (_). A wildcard character is treated as a literal if preceded by the escape character.
+                                 </p>
+                              </td>
+                              <td align="left" valign="top" width="40%" headers="d111438e464 d111438e459 "><pre class="oac_no_warn" dir="ltr">SELECT last_name 
+   FROM employees
+   WHERE last_name 
+   LIKE '%A\_B%' ESCAPE '\'
+   ORDER BY last_name; </pre></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class="section">
+                     <p>To process the <code class="codeph">LIKE</code> conditions, Oracle divides the pattern into subpatterns consisting of one or two characters each. The two-character subpatterns begin with the escape character and the other character is %, or _, or the escape character.
+                     </p>
+                     <p>Let P<sub>1</sub>, P<sub>2</sub>, ..., P<sub>n</sub> be these subpatterns. The like condition is true if there is a way to partition the search value into substrings S<sub>1</sub>, S<sub>2</sub>, ..., S<sub>n</sub> so that for all <span class="italic">i</span> between 1 and <span class="italic">n</span>:
+                     </p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p>If P<sub>i</sub> is _, then S<sub>i</sub> is a single character.
+                           </p>
+                        </li>
+                        <li>
+                           <p>If P<sub>i</sub> is %, then S<sub>i</sub> is any string.
+                           </p>
+                        </li>
+                        <li>
+                           <p>If P<sub>i</sub> is two characters beginning with an escape character, then S<sub>i</sub> is the second character of P<sub>i</sub>.
+                           </p>
+                        </li>
+                        <li>
+                           <p>Otherwise, P<sub>i</sub> = S<sub>i</sub>.
+                           </p>
+                        </li>
+                     </ul>
+                     <p>With the <code class="codeph">LIKE</code> conditions, you can compare a value to a pattern rather than to a constant. The pattern must appear after the <code class="codeph">LIKE</code> keyword. For example, you can issue the following query to find the salaries of all employees with names beginning with <code class="codeph">R</code>:
+                     </p><pre class="oac_no_warn" dir="ltr">SELECT salary 
+    FROM employees
+    WHERE last_name LIKE 'R%'
+    ORDER BY salary;
+</pre><p>The following query uses the = operator, rather than the <code class="codeph">LIKE</code> condition, to find the salaries of all employees with the name 'R%':
+                     </p><pre class="oac_no_warn" dir="ltr">SELECT salary 
+    FROM employees 
+    WHERE last_name = 'R%'
+    ORDER BY salary;
+</pre><p>The following query finds the salaries of all employees with the name 'SM%'. Oracle interprets 'SM%' as a text literal, rather than as a pattern, because it precedes the <code class="codeph">LIKE</code> keyword:
+                     </p><pre class="oac_no_warn" dir="ltr">SELECT salary 
+    FROM employees 
+    WHERE 'SM%' LIKE last_name
+    ORDER BY salary;</pre></div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-0779657B-06A8-441F-90C5-044B47862A0A__GUID-303C217A-E739-4176-BCCB-F8B112946616">Collation and Case Sensitivity</p>
+                     <p>The <code class="codeph">LIKE</code> condition is collation-sensitive. Oracle Database compares the subpattern Pi to the substring Si in the processing algorithm above using the collation determined from the derived collations of <span class="italic"><code class="codeph">char1</code></span> and <span class="italic"><code class="codeph">char2</code></span>. If this collation is case-insensitive, the pattern-matching is case-insensitive as well.
+                     </p>
+                     <div class="infoboxnotealso" id="GUID-0779657B-06A8-441F-90C5-044B47862A0A__GUID-5717A9F0-B935-4223-B025-847F3C08B2A3">
+                        <p class="notep1">See Also:</p>
+                        <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=NLSPG0051" target="_blank"><span><cite>Oracle AI Database
+                                        Globalization Support Guide</cite></span></a> for more information on case- and accent-insensitive collations and on collation determination rules for the <code class="codeph">LIKE</code> condition
+                        </p>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-0779657B-06A8-441F-90C5-044B47862A0A__GUID-3B6C4103-8A85-4D51-9D5D-2C21D2315F95"><span class="bold">Pattern Matching on Indexed Columns</span></p>
+                  </div>
+                  <div class="section">
+                     <p>When you use <code class="codeph">LIKE</code> to search an indexed column for a pattern, Oracle can use the index to improve performance of a query if the leading character in the pattern is not <code class="codeph">%</code> or <code class="codeph">_</code>. In this case, Oracle can scan the index by this leading character. If the first character in the pattern is <code class="codeph">%</code> or <code class="codeph">_</code>, then the index cannot improve performance because Oracle cannot scan the index. 
+                     </p>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-0779657B-06A8-441F-90C5-044B47862A0A__GUID-4DD75727-7D3E-454C-9CDA-C94991C122B2">LIKE Condition: General Examples</p>
+                  </div>
+                  <div class="section">
+                     <p>This condition is true for all <code class="codeph">last_name</code> values beginning with <code class="codeph">Ma</code>: 
+                     </p><pre class="oac_no_warn" dir="ltr">last_name LIKE 'Ma%' 
+</pre><p>All of these <code class="codeph">last_name</code> values make the condition true: 
+                     </p><pre class="oac_no_warn" dir="ltr">Mallin, Markle, Marlow, Marvins, Mavris, Matos 
+</pre><p>Case is significant, so <code class="codeph">last_name</code> values beginning with <code class="codeph">MA</code>, <code class="codeph">ma</code>, and <code class="codeph">mA</code> make the condition false. 
+                     </p>
+                     <p>Consider this condition: </p><pre class="oac_no_warn" dir="ltr">last_name LIKE 'SMITH_' 
+</pre><p>This condition is true for these <code class="codeph">last_name</code> values: 
+                     </p><pre class="oac_no_warn" dir="ltr">SMITHE, SMITHY, SMITHS 
+</pre><p>This condition is false for <code class="codeph">SMITH</code> because the special underscore character (<code class="codeph">_</code>) must match exactly one character of the <code class="codeph">last_name</code> value. 
+                     </p>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-0779657B-06A8-441F-90C5-044B47862A0A__GUID-E90BEB37-ECFE-4C78-86ED-FACA8A2533CB"><span class="bold">ESCAPE Clause Example</span></p>
+                  </div>
+                  <div class="section">
+                     <p>The following example searches for employees with the pattern <code class="codeph">A_B</code> in their name:
+                     </p><pre class="oac_no_warn" dir="ltr">SELECT last_name 
+    FROM employees
+    WHERE last_name LIKE '%A\_B%' ESCAPE '\'
+    ORDER BY last_name;
+</pre><p>The <code class="codeph">ESCAPE</code> clause identifies the backslash (\) as the escape character. In the pattern, the escape character precedes the underscore (_). This causes Oracle to interpret the underscore literally, rather than as a special pattern matching character. 
+                     </p>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-0779657B-06A8-441F-90C5-044B47862A0A__GUID-7CEEA725-ECAE-4EF8-995C-8012E5C67269"><span class="bold">Patterns Without % Example</span></p>
+                  </div>
+                  <div class="section">
+                     <p>If a pattern does not contain the <code class="codeph">%</code> character, then the condition can be true only if both operands have the same length. Consider the definition of this table and the values inserted into it:
+                     </p><pre class="oac_no_warn" dir="ltr">CREATE TABLE ducks (f CHAR(6), v VARCHAR2(6));
+INSERT INTO ducks VALUES ('DUCK', 'DUCK');
+SELECT '*'||f||'*' "char",
+   '*'||v||'*' "varchar"
+   FROM ducks;
+
+char     varchar
+-------- --------
+*DUCK  * *DUCK*
+</pre><p>Because Oracle blank-pads <code class="codeph">CHAR</code> values, the value of <code class="codeph">f</code> is blank-padded to 6 bytes. <code class="codeph">v</code> is not blank-padded and has length 4. 
+                     </p>
+                  </div>
+               </div>
+            </div><a id="SQLRF52150"></a><a id="SQLRF52151"></a><a id="SQLRF00501"></a><div class="props_rev_3"><a id="GUID-D2124F3A-C6E4-4CCA-A40E-2FFCABFD8E19" name="GUID-D2124F3A-C6E4-4CCA-A40E-2FFCABFD8E19"></a><h3 id="SQLRF-GUID-D2124F3A-C6E4-4CCA-A40E-2FFCABFD8E19" class="sect3">REGEXP_LIKE Condition </h3>
+               <div>
+                  <div class="section">
+                     <p><code class="codeph">REGEXP_LIKE</code> is similar to the <code class="codeph">LIKE</code> condition, except <code class="codeph">REGEXP_LIKE</code> performs regular expression matching instead of the simple pattern matching performed by <code class="codeph">LIKE</code>. This condition evaluates strings using characters as defined by the input character set.
+                     </p>
+                     <p>This condition complies with the POSIX regular expression standard and the Unicode Regular Expression Guidelines. For more information, refer to <a href="Oracle-Regular-Expression-Support.html#GUID-969230D6-FC1A-4C75-BF2A-6B1BE909DED6">Oracle Regular Expression Support</a>.
+                     </p>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-D2124F3A-C6E4-4CCA-A40E-2FFCABFD8E19__GUID-5B25E63E-F83A-4E27-A094-A4F0EAEFBD09"><span class="italic">regexp_like_condition</span>::=
+                     </p>
+                  </div>
+                  <div class="section">
+                     <div class="figure" id="GUID-D2124F3A-C6E4-4CCA-A40E-2FFCABFD8E19__GUID-5B1E001C-299A-4204-895C-9ADAB259CDDD"><img src="img/regexp_like_condition.gif" alt="Description of regexp_like_condition.eps follows" title="Description of regexp_like_condition.eps follows" longdesc="img_text/regexp_like_condition.html"><br><a href="img_text/regexp_like_condition.html">Description of the illustration regexp_like_condition.eps</a></div>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p><span class="italic"><code class="codeph">source_char</code></span> is a character expression that serves as the search value. It is commonly a character column and can be of any of the data types <code class="codeph">CHAR</code>, <code class="codeph">VARCHAR2</code>, <code class="codeph">NCHAR</code>, <code class="codeph">NVARCHAR2</code>, <code class="codeph">CLOB</code>, or <code class="codeph">NCLOB</code>.
+                           </p>
+                        </li>
+                        <li>
+                           <p><span class="italic"><code class="codeph">pattern</code></span> is the <span class="bold">regular expression</span>. It is usually a text literal and can be of any of the data types <code class="codeph">CHAR</code>, <code class="codeph">VARCHAR2</code>, <code class="codeph">NCHAR</code>, or <code class="codeph">NVARCHAR2</code>. It can contain up to 512 bytes. If the data type of <span class="italic"><code class="codeph">pattern</code></span> is different from the data type of <span class="italic"><code class="codeph">source_char</code></span>, Oracle converts <span class="italic"><code class="codeph">pattern</code></span> to the data type of <span class="italic"><code class="codeph">source_char</code></span>. For a listing of the operators you can specify in <span class="italic"><code class="codeph">pattern</code></span>, refer to <a href="Oracle-Regular-Expression-Support.html#GUID-969230D6-FC1A-4C75-BF2A-6B1BE909DED6">Oracle Regular Expression Support</a>.
+                           </p>
+                        </li>
+                        <li>
+                           <p><span class="italic"><code class="codeph">match_param</code></span> is a character expression of the data type <code class="codeph">VARCHAR2</code> or <code class="codeph">CHAR</code> that lets you change the default matching behavior of the condition.
+                           </p>
+                           <p>The value of <span class="italic"><code class="codeph">match_param</code></span> can include one or more of the following characters:
+                           </p>
+                           <ul style="list-style-type: disc;">
+                              <li>
+                                 <p><code class="codeph">'i'</code> specifies case-insensitive matching, even if the determined collation of the condition is case-sensitive.
+                                 </p>
+                              </li>
+                              <li>
+                                 <p><code class="codeph">'c'</code> specifies case-sensitive and accent-sensitive matching, even if the determined collation of the condition is case-insensitive or accent-insensitive. 
+                                 </p>
+                              </li>
+                              <li>
+                                 <p><code class="codeph">'n'</code> allows the period (.), which is the match-any-character wildcard character, to match the newline character. If you omit this parameter, then the period does not match the newline character.
+                                 </p>
+                              </li>
+                              <li>
+                                 <p><code class="codeph">'m'</code> treats the source string as multiple lines. Oracle interprets <code class="codeph"> ^</code> and <code class="codeph">$</code> as the start and end, respectively, of any line anywhere in the source string, rather than only at the start or end of the entire source string. If you omit this parameter, then Oracle treats the source string as a single line.
+                                 </p>
+                              </li>
+                              <li>
+                                 <p><code class="codeph">'x'</code> ignores whitespace characters. By default, whitespace characters match themselves.
+                                 </p>
+                              </li>
+                           </ul>
+                           <p>If the value of <span class="italic"><code class="codeph">match_param</code></span> contains multiple contradictory characters, then Oracle uses the last character. For example, if you specify <code class="codeph">'ic'</code>, then Oracle uses case-sensitive and accent-sensitive matching. If the value contains a character other than those shown above, then Oracle returns an error.
+                           </p>
+                           <p>If you omit <span class="italic"><code class="codeph">match_param</code></span>, then:
+                           </p>
+                           <ul style="list-style-type: disc;">
+                              <li>
+                                 <p>The default case and accent sensitivity are determined by the determined collation of the <code class="codeph">REGEXP_LIKE</code> condition.
+                                 </p>
+                              </li>
+                              <li>
+                                 <p>A period (.) does not match the newline character.</p>
+                              </li>
+                              <li>
+                                 <p>The source string is treated as a single line.</p>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                     <p>Similar to the <code class="codeph">LIKE</code> condition, the <code class="codeph">REGEXP_LIKE</code> condition is collation-sensitive.
+                     </p>
+                     <div class="infoboxnotealso" id="GUID-D2124F3A-C6E4-4CCA-A40E-2FFCABFD8E19__GUID-A9C4F0CD-5C25-4F8B-8F4F-62F5060E5FE3">
+                        <p class="notep1">See Also:</p>
+                        <ul style="list-style-type: disc;">
+                           <li>
+                              <p><a href="Pattern-matching-Conditions.html#GUID-0779657B-06A8-441F-90C5-044B47862A0A">LIKE Condition</a></p>
+                           </li>
+                           <li>
+                              <p><a href="REGEXP_INSTR.html#GUID-D21B53A1-83E2-4722-9BBB-638470715DD6">REGEXP_INSTR</a> , <a href="REGEXP_REPLACE.html#GUID-EA80A33C-441A-4692-A959-273B5A224490">REGEXP_REPLACE</a>, and <a href="REGEXP_SUBSTR.html#GUID-2903904D-455F-4839-A8B2-1731EF4BD099">REGEXP_SUBSTR</a> for functions that provide regular expression support
+                              </p>
+                           </li>
+                           <li>Appendix C in <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=NLSPG-GUID-AFCE41ED-775B-4A00-AF38-C436776AE0C5" target="_blank"><span><cite>Oracle AI Database
+                                        Globalization Support Guide</cite></span></a> for the collation determination rules for the <code class="codeph">REGEXP_LIKE</code> condition
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-D2124F3A-C6E4-4CCA-A40E-2FFCABFD8E19__GUID-5D1957E0-A047-43DC-A3A8-19AD7DB45B5B">Examples</p>
+                  </div>
+                  <div class="section">
+                     <p>The following query returns the first and last names for those employees with a first name of Steven or Stephen (where <code class="codeph">first_name</code> begins with <code class="codeph">Ste</code> and ends with <code class="codeph">en</code> and in between is either <code class="codeph">v</code> or <code class="codeph">ph)</code>:
+                     </p><pre class="oac_no_warn" dir="ltr">SELECT first_name, last_name
+FROM employees
+WHERE REGEXP_LIKE (first_name, '^Ste(v|ph)en$')
+ORDER BY first_name, last_name;
+
+FIRST_NAME           LAST_NAME
+-------------------- -------------------------
+Steven               King
+Steven               Markle
+Stephen              Stiles
+</pre><p>The following query returns the last name for those employees with a double vowel in their last name (where <code class="codeph">last_name</code> contains two adjacent occurrences of either <code class="codeph">a</code>, <code class="codeph">e</code>, <code class="codeph">i</code>, <code class="codeph">o</code>, or <code class="codeph">u</code>, regardless of case):
+                     </p><pre class="oac_no_warn" dir="ltr">SELECT last_name
+FROM employees
+WHERE REGEXP_LIKE (last_name, '([aeiou])\1', 'i')
+ORDER BY last_name;
+
+LAST_NAME
+-------------------------
+De Haan
+Greenberg
+Khoo
+Gee
+Greene
+Lee
+Bloom
+Feeney</pre></div>
+               </div>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

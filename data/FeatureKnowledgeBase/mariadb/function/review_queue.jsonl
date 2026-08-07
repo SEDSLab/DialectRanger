@@ -1,0 +1,177 @@
+{"feature_id": "mariadb.function.acos", "name": "acos", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.add_months", "name": "add_months", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "mariadb.function.aes_decrypt", "name": "aes_decrypt", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.against", "name": "against", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.asin", "name": "asin", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.atan", "name": "atan", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.atan2", "name": "atan2", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.backslash", "name": "backslash", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.bit_count", "name": "bit_count", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.bit_length", "name": "bit_length", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.ceil", "name": "ceil", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.ceiling", "name": "ceiling", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.char", "name": "char", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "mariadb.function.character_length", "name": "character_length", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.charset", "name": "charset", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.coercibility", "name": "coercibility", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "mariadb.function.column_add", "name": "column_add", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.column_check", "name": "column_check", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.column_create", "name": "column_create", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.column_delete", "name": "column_delete", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.column_exists", "name": "column_exists", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.column_json", "name": "column_json", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.column_list", "name": "column_list", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.connection_id", "name": "connection_id", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.convert", "name": "convert", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.cr", "name": "cr", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "mariadb.function.crlf", "name": "crlf", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "mariadb.function.cume_dist", "name": "cume_dist", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "mariadb.function.current_role", "name": "current_role", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.curtime", "name": "curtime", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.date_format", "name": "date_format", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.date_sub", "name": "date_sub", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.day", "name": "day", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.dayname", "name": "dayname", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.dayofmonth", "name": "dayofmonth", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.dayofweek", "name": "dayofweek", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.dayofyear", "name": "dayofyear", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.decode", "name": "decode", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.decode_histogram", "name": "decode_histogram", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.des_decrypt", "name": "des_decrypt", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.des_encrypt", "name": "des_encrypt", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.encode", "name": "encode", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.exp", "name": "exp", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.extended", "name": "extended", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "mariadb.function.extract", "name": "extract", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "mariadb.function.find_in_set", "name": "find_in_set", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.floor", "name": "floor", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.format_bytes", "name": "format_bytes", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "mariadb.function.format_path", "name": "format_path", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.format_pico_time", "name": "format_pico_time", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.format_statement", "name": "format_statement", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.format_time", "name": "format_time", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.from_base64", "name": "from_base64", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.from_days", "name": "from_days", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.from_unixtime", "name": "from_unixtime", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "mariadb.function.get_format", "name": "get_format", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.get_lock", "name": "get_lock", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.group_concat", "name": "group_concat", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.inet6_ntoa", "name": "inet6_ntoa", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.inet_aton", "name": "inet_aton", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.inet_ntoa", "name": "inet_ntoa", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.insert", "name": "insert", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.is_free_lock", "name": "is_free_lock", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.is_ipv6", "name": "is_ipv6", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.is_used_lock", "name": "is_used_lock", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.json_array_append", "name": "json_array_append", "status": "needs_review", "reason": ["no_description_claims", "long_example"], "details": []}
+{"feature_id": "mariadb.function.json_array_insert", "name": "json_array_insert", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_array_intersect", "name": "json_array_intersect", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_compact", "name": "json_compact", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_contains", "name": "json_contains", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_contains_path", "name": "json_contains_path", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_depth", "name": "json_depth", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_equals", "name": "json_equals", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_exists", "name": "json_exists", "status": "needs_review", "reason": ["no_description_claims", "long_example"], "details": []}
+{"feature_id": "mariadb.function.json_extract", "name": "json_extract", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_keys", "name": "json_keys", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_length", "name": "json_length", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_loose", "name": "json_loose", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_merge", "name": "json_merge", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_normalize", "name": "json_normalize", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_object", "name": "json_object", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_object_filter_keys", "name": "json_object_filter_keys", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.json_object_to_array", "name": "json_object_to_array", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_pretty", "name": "json_pretty", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.json_query", "name": "json_query", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_quote", "name": "json_quote", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_remove", "name": "json_remove", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_schema_valid", "name": "json_schema_valid", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "mariadb.function.json_search", "name": "json_search", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_table", "name": "json_table", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "mariadb.function.json_type", "name": "json_type", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.json_unquote", "name": "json_unquote", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "mariadb.function.json_value", "name": "json_value", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.last_day", "name": "last_day", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.lastval", "name": "lastval", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.lcase", "name": "lcase", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.lf", "name": "lf", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "mariadb.function.ln", "name": "ln", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.localtime", "name": "localtime", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.localtimestamp", "name": "localtimestamp", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.log10", "name": "log10", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.log2", "name": "log2", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.make_set", "name": "make_set", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.makedate", "name": "makedate", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.maketime", "name": "maketime", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.master_gtid_wait", "name": "master_gtid_wait", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.master_pos_wait", "name": "master_pos_wait", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.match", "name": "match", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.microsecond", "name": "microsecond", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "mariadb.function.monthname", "name": "monthname", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.natural_sort_key", "name": "natural_sort_key", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.newline", "name": "newline", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "mariadb.function.nextval", "name": "nextval", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.ntile", "name": "ntile", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "mariadb.function.nullif", "name": "nullif", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.nvl", "name": "nvl", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.old_password", "name": "old_password", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.over", "name": "over", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.percent_rank", "name": "percent_rank", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "mariadb.function.percentile_cont", "name": "percentile_cont", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "mariadb.function.period_add", "name": "period_add", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.period_diff", "name": "period_diff", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.position", "name": "position", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.power", "name": "power", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.ps_is_instrument_default_enabled", "name": "ps_is_instrument_default_enabled", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "mariadb.function.ps_is_instrument_default_timed", "name": "ps_is_instrument_default_timed", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "mariadb.function.ps_thread_trx_info", "name": "ps_thread_trx_info", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.rank", "name": "rank", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "mariadb.function.regexp_instr", "name": "regexp_instr", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.row_count", "name": "row_count", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.schema", "name": "schema", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.sec_to_time", "name": "sec_to_time", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.session_user", "name": "session_user", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.setval", "name": "setval", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.sha", "name": "sha", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.sha1", "name": "sha1", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.sha2", "name": "sha2", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.spider_bg_direct_sql", "name": "spider_bg_direct_sql", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "mariadb.function.spider_copy_tables", "name": "spider_copy_tables", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.spider_direct_sql", "name": "spider_direct_sql", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "mariadb.function.spider_flush_table_mon_cache", "name": "spider_flush_table_mon_cache", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.sqrt", "name": "sqrt", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.st_collect", "name": "st_collect", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.st_geohash", "name": "st_geohash", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.st_latfromgeohash", "name": "st_latfromgeohash", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.st_longfromgeohash", "name": "st_longfromgeohash", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.st_pointfromgeohash", "name": "st_pointfromgeohash", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.st_simplify", "name": "st_simplify", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.st_validate", "name": "st_validate", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.std", "name": "std", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.stddev", "name": "stddev", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.substr", "name": "substr", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.substring", "name": "substring", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.system_user", "name": "system_user", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.time_format", "name": "time_format", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.timestampadd", "name": "timestampadd", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.to_char", "name": "to_char", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.to_days", "name": "to_days", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.to_number", "name": "to_number", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.to_seconds", "name": "to_seconds", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.trim_oracle", "name": "trim_oracle", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.ucase", "name": "ucase", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.unix_timestamp", "name": "unix_timestamp", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "mariadb.function.updatexml", "name": "updatexml", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.utc_date", "name": "utc_date", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.utc_time", "name": "utc_time", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.utc_timestamp", "name": "utc_timestamp", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.uuid_short", "name": "uuid_short", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.var_samp", "name": "var_samp", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.week", "name": "week", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.weight_string", "name": "weight_string", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "mariadb.function.wsrep_last_seen_gtid", "name": "wsrep_last_seen_gtid", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.wsrep_last_written_gtid", "name": "wsrep_last_written_gtid", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mariadb.function.wsrep_sync_wait_upto_gtid", "name": "wsrep_sync_wait_upto_gtid", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.xxh3", "name": "xxh3", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.xxh32", "name": "xxh32", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mariadb.function.yearweek", "name": "yearweek", "status": "needs_review", "reason": ["no_description_claims"], "details": []}

@@ -1,0 +1,84 @@
+{
+  "dbms": "sqlserver",
+  "feature_type": "datatype",
+  "nodes": {
+    "page": 36,
+    "section": 432,
+    "block": 3112,
+    "feature_candidate": 52
+  },
+  "edges": {
+    "page_contains_section": 432,
+    "section_contains_block": 3112,
+    "section_previous": 397,
+    "section_next": 397,
+    "feature_documented_in_section": 372,
+    "see_also_links_to_feature": 4,
+    "total": 4714
+  },
+  "noise": {
+    "noise_nodes": 0,
+    "noise_sections": 0,
+    "noise_blocks": 0,
+    "eligible_nodes": 3596
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [
+    {
+      "source": "sqlserver_current_cursor_transact_sql_s0003",
+      "target": "sqlserver.function.cursor",
+      "matched_name": "CURSOR"
+    },
+    {
+      "source": "sqlserver_current_rowversion_transact_sql_s0003",
+      "target": "sqlserver.function.table",
+      "matched_name": "TABLE"
+    },
+    {
+      "source": "sqlserver_current_table_transact_sql_s0012",
+      "target": "sqlserver.function.table",
+      "matched_name": "TABLE"
+    },
+    {
+      "source": "sqlserver_current_uniqueidentifier_transact_sql_s0006",
+      "target": "sqlserver.function.table",
+      "matched_name": "TABLE"
+    }
+  ],
+  "sample_feature_documented_edges": [
+    {
+      "source": "sqlserver.function.bit",
+      "target": "sqlserver_current_bit_transact_sql_s0001"
+    },
+    {
+      "source": "sqlserver.function.date",
+      "target": "sqlserver_current_date_transact_sql_s0001"
+    },
+    {
+      "source": "sqlserver.function.time",
+      "target": "sqlserver_current_time_transact_sql_s0001"
+    },
+    {
+      "source": "sqlserver.function.datetime2",
+      "target": "sqlserver_current_datetime2_transact_sql_s0001"
+    },
+    {
+      "source": "sqlserver.function.datetimeoffset",
+      "target": "sqlserver_current_datetimeoffset_transact_sql_s0001"
+    },
+    {
+      "source": "sqlserver.function.datetime",
+      "target": "sqlserver_current_datetime_transact_sql_s0001"
+    },
+    {
+      "source": "sqlserver.function.smalldatetime",
+      "target": "sqlserver_current_smalldatetime_transact_sql_s0001"
+    },
+    {
+      "source": "sqlserver.function.cursor",
+      "target": "sqlserver_current_cursor_transact_sql_s0001"
+    }
+  ],
+  "generated_at": "2026-08-06T19:56:52.138042+08:00"
+}

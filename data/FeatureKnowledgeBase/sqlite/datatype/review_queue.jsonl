@@ -1,0 +1,9 @@
+{"feature_id": "sqlite.datatype.blob", "name": "blob", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlite.datatype.boolean", "name": "boolean", "status": "invalid", "reason": ["no_valid_syntax", "missing_examples", "syntax[0] missing evidence_refs — removed", "no_description_claims"], "details": []}
+{"feature_id": "sqlite.datatype.date", "name": "date", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlite.datatype.decimal", "name": "decimal", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlite.datatype.integer", "name": "integer", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlite.datatype.null", "name": "null", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlite.datatype.numeric", "name": "numeric", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "sqlite.datatype.real", "name": "REAL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlite.datatype.text", "name": "text", "status": "needs_review", "reason": ["missing_examples"], "details": []}

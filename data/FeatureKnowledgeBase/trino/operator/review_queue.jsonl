@@ -1,0 +1,26 @@
+{"feature_id": "trino.operator.!=_trino_current_comparison", "name": "!=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator.%%_trino_current_datetime", "name": "%%", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator.%_trino_current_math", "name": "%", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator.*_trino_current_math", "name": "*", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator.+_trino_current_datetime", "name": "+", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator.+_trino_current_math", "name": "+", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator.-_trino_current_datetime", "name": "-", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator.-_trino_current_math", "name": "-", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator./_trino_current_math", "name": "/", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator.<=_trino_current_comparison", "name": "<=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator.<>_trino_current_comparison", "name": "<>", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator.<_trino_current_comparison", "name": "<", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator.=_trino_current_comparison", "name": "=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator.>=_trino_current_comparison", "name": ">=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator.>_trino_current_comparison", "name": ">", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator.and_trino_current_logical", "name": "AND", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator.between_trino_current_comparison", "name": "BETWEEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "trino.operator.between_trino_current_conditional", "name": "BETWEEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.operator.in_trino_current_comparison", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.operator.is_trino_current_conditional", "name": "IS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator.like_trino_current_comparison", "name": "LIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.operator.not_between_trino_current_comparison", "name": "NOT BETWEEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "trino.operator.not_in_trino_current_comparison", "name": "NOT IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.operator.not_like_trino_current_comparison", "name": "NOT LIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.operator.not_trino_current_logical", "name": "NOT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.operator.or_trino_current_logical", "name": "OR", "status": "needs_review", "reason": ["missing_examples"], "details": []}

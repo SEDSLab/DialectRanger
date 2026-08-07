@@ -1,0 +1,99 @@
+{
+  "dbms": "mysql",
+  "feature_type": "operator",
+  "nodes": {
+    "page": 12,
+    "section": 81,
+    "block": 2563,
+    "feature_candidate": 115
+  },
+  "edges": {
+    "page_contains_section": 81,
+    "section_contains_block": 2563,
+    "section_previous": 69,
+    "section_next": 69,
+    "feature_documented_in_section": 116,
+    "alias_candidate": 7,
+    "total": 2905
+  },
+  "noise": {
+    "noise_nodes": 0,
+    "noise_sections": 0,
+    "noise_blocks": 0,
+    "eligible_nodes": 2725
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [
+    {
+      "source": "mysql.function.lcase",
+      "target": "mysql.function.lower",
+      "reason": "known_alias_pattern"
+    },
+    {
+      "source": "mysql.function.ucase",
+      "target": "mysql.function.upper",
+      "reason": "known_alias_pattern"
+    },
+    {
+      "source": "mysql.function.character_length",
+      "target": "mysql.function.char_length",
+      "reason": "known_alias_pattern"
+    },
+    {
+      "source": "mysql.function.substr",
+      "target": "mysql.function.substring",
+      "reason": "known_alias_pattern"
+    },
+    {
+      "source": "mysql.function.mid",
+      "target": "mysql.function.substring",
+      "reason": "known_alias_pattern"
+    },
+    {
+      "source": "mysql.function.octet_length",
+      "target": "mysql.function.length",
+      "reason": "known_alias_pattern"
+    },
+    {
+      "source": "mysql.function.position",
+      "target": "mysql.function.locate",
+      "reason": "known_alias_pattern"
+    }
+  ],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "mysql.function.coalesce",
+      "target": "mysql_8_0_comparison_operators_s0002"
+    },
+    {
+      "source": "mysql.function.greatest",
+      "target": "mysql_8_0_comparison_operators_s0003"
+    },
+    {
+      "source": "mysql.function.interval",
+      "target": "mysql_8_0_comparison_operators_s0004"
+    },
+    {
+      "source": "mysql.function.isnull",
+      "target": "mysql_8_0_comparison_operators_s0005"
+    },
+    {
+      "source": "mysql.function.least",
+      "target": "mysql_8_0_comparison_operators_s0006"
+    },
+    {
+      "source": "mysql.function.ascii",
+      "target": "mysql_8_0_string_functions_s0002"
+    },
+    {
+      "source": "mysql.function.bin",
+      "target": "mysql_8_0_string_functions_s0003"
+    },
+    {
+      "source": "mysql.function.bit_length",
+      "target": "mysql_8_0_string_functions_s0004"
+    }
+  ],
+  "generated_at": "2026-08-06T18:46:32.220266+08:00"
+}

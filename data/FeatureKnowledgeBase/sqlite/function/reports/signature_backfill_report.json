@@ -1,0 +1,710 @@
+{
+  "signature_backfill_enabled": true,
+  "metadata_backfill_enabled": true,
+  "residual_invalid_handling_enabled": true,
+  "features_backfilled": 9,
+  "formal_signatures_added": 0,
+  "weak_signatures_added": 11,
+  "rejected_example_like_signatures": 0,
+  "source_metadata_backfilled": 81,
+  "examples_backfilled": 9,
+  "description_claims_backfilled": 6,
+  "backfilled_features": [
+    {
+      "feature_id": "sqlite.function.cume_dist",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlite.function.dense_rank",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlite.function.first_value",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlite.function.last_value",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlite.function.nth_value",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlite.function.ntile",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlite.function.percent_rank",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlite.function.rank",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlite.function.row_number",
+      "added_syntax": [],
+      "evidence_refs": []
+    }
+  ],
+  "backfilled_examples": [
+    {
+      "feature_id": "sqlite.function.cume_dist",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlite_current_windowfunctions_s0010_b0031"
+      ]
+    },
+    {
+      "feature_id": "sqlite.function.dense_rank",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlite_current_windowfunctions_s0010_b0031"
+      ]
+    },
+    {
+      "feature_id": "sqlite.function.first_value",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlite_current_windowfunctions_s0010_b0035"
+      ]
+    },
+    {
+      "feature_id": "sqlite.function.last_value",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlite_current_windowfunctions_s0010_b0035"
+      ]
+    },
+    {
+      "feature_id": "sqlite.function.nth_value",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlite_current_windowfunctions_s0010_b0035"
+      ]
+    },
+    {
+      "feature_id": "sqlite.function.ntile",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlite_current_windowfunctions_s0010_b0033"
+      ]
+    },
+    {
+      "feature_id": "sqlite.function.percent_rank",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlite_current_windowfunctions_s0010_b0031"
+      ]
+    },
+    {
+      "feature_id": "sqlite.function.rank",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlite_current_windowfunctions_s0002_b0059",
+        "sqlite_current_windowfunctions_s0010_b0031"
+      ]
+    },
+    {
+      "feature_id": "sqlite.function.row_number",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlite_current_windowfunctions_s0002_b0056",
+        "sqlite_current_windowfunctions_s0002_b0059",
+        "sqlite_current_windowfunctions_s0010_b0031"
+      ]
+    }
+  ],
+  "weak_table_row_features_added": 71,
+  "non_function_noise_kept_invalid": 1,
+  "residual_features_kept_invalid": [
+    {
+      "feature_id": "sqlite.function.json_extract",
+      "reason": "non_function_noise"
+    }
+  ],
+  "generated_at": "2026-08-06T19:08:08.148284+08:00",
+  "residual_features_added_to_kb": [
+    {
+      "feature_id": "sqlite.function.abs",
+      "added_syntax": [
+        "abs(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.acos",
+      "added_syntax": [
+        "acos(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.acosh",
+      "added_syntax": [
+        "acosh(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.asin",
+      "added_syntax": [
+        "asin(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.asinh",
+      "added_syntax": [
+        "asinh(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.atan",
+      "added_syntax": [
+        "atan(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.atan2",
+      "added_syntax": [
+        "atan2(Y,X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.atanh",
+      "added_syntax": [
+        "atanh(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.avg",
+      "added_syntax": [
+        "avg(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.changes",
+      "added_syntax": [
+        "changes()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.char",
+      "added_syntax": [
+        "char(X1,X2,...,XN)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.coalesce",
+      "added_syntax": [
+        "coalesce(X,Y,...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.concat",
+      "added_syntax": [
+        "concat(X,...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.concat_ws",
+      "added_syntax": [
+        "concat_ws(SEP,X,...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.cos",
+      "added_syntax": [
+        "cos(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.cosh",
+      "added_syntax": [
+        "cosh(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.degrees",
+      "added_syntax": [
+        "degrees(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.exp",
+      "added_syntax": [
+        "exp(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.floor",
+      "added_syntax": [
+        "floor(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.format",
+      "added_syntax": [
+        "format(FORMAT,...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.glob",
+      "added_syntax": [
+        "glob(X,Y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.hex",
+      "added_syntax": [
+        "hex(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.ifnull",
+      "added_syntax": [
+        "ifnull(X,Y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.instr",
+      "added_syntax": [
+        "instr(X,Y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.json_insert",
+      "added_syntax": [
+        "json_insert()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.json_replace",
+      "added_syntax": [
+        "json_replace()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.json_set",
+      "added_syntax": [
+        "json_set()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.last_insert_rowid",
+      "added_syntax": [
+        "last_insert_rowid()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.length",
+      "added_syntax": [
+        "length(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.likelihood",
+      "added_syntax": [
+        "likelihood(X,Y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.likely",
+      "added_syntax": [
+        "likely(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.ln",
+      "added_syntax": [
+        "ln(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.log2",
+      "added_syntax": [
+        "log2(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.lower",
+      "added_syntax": [
+        "lower(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.max",
+      "added_syntax": [
+        "max(X,Y,...)",
+        "max(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.median",
+      "added_syntax": [
+        "median(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.min",
+      "added_syntax": [
+        "min(X,Y,...)",
+        "min(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.mod",
+      "added_syntax": [
+        "mod(X,Y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.nullif",
+      "added_syntax": [
+        "nullif(X,Y)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.octet_length",
+      "added_syntax": [
+        "octet_length(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.percentile",
+      "added_syntax": [
+        "percentile(Y,P)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.percentile_cont",
+      "added_syntax": [
+        "percentile_cont(Y,P)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.percentile_disc",
+      "added_syntax": [
+        "percentile_disc(Y,P)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.pi",
+      "added_syntax": [
+        "pi()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.printf",
+      "added_syntax": [
+        "printf(FORMAT,...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.quote",
+      "added_syntax": [
+        "quote(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.radians",
+      "added_syntax": [
+        "radians(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.random",
+      "added_syntax": [
+        "random()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.randomblob",
+      "added_syntax": [
+        "randomblob(N)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.replace",
+      "added_syntax": [
+        "replace(X,Y,Z)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.sign",
+      "added_syntax": [
+        "sign(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.sin",
+      "added_syntax": [
+        "sin(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.sinh",
+      "added_syntax": [
+        "sinh(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.soundex",
+      "added_syntax": [
+        "soundex(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.sqlite_compileoption_get",
+      "added_syntax": [
+        "sqlite_compileoption_get(N)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.sqlite_compileoption_used",
+      "added_syntax": [
+        "sqlite_compileoption_used(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.sqlite_offset",
+      "added_syntax": [
+        "sqlite_offset(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.sqlite_source_id",
+      "added_syntax": [
+        "sqlite_source_id()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.sqlite_version",
+      "added_syntax": [
+        "sqlite_version()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.sqrt",
+      "added_syntax": [
+        "sqrt(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.tan",
+      "added_syntax": [
+        "tan(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.tanh",
+      "added_syntax": [
+        "tanh(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.total_changes",
+      "added_syntax": [
+        "total_changes()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.trunc",
+      "added_syntax": [
+        "trunc(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.typeof",
+      "added_syntax": [
+        "typeof(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.unicode",
+      "added_syntax": [
+        "unicode(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.unistr",
+      "added_syntax": [
+        "unistr(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.unistr_quote",
+      "added_syntax": [
+        "unistr_quote(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.unlikely",
+      "added_syntax": [
+        "unlikely(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.upper",
+      "added_syntax": [
+        "upper(X)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlite.function.zeroblob",
+      "added_syntax": [
+        "zeroblob(N)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    }
+  ],
+  "residual_features_rejected": [],
+  "residual_features_attempted": 72
+}

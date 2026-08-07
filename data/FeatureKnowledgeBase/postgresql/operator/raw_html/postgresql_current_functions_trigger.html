@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>PostgreSQL: Documentation: 18: 9.29. Trigger Functions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8" />
+   
+  <meta name="theme-color" content="#336791"/>
+  <meta name="copyright" content="The PostgreSQL Global Development Group" />
+  <meta property="og:url" content="https://www.postgresql.org/docs/18/functions-trigger.html" />
+  <meta property="og:type" content="article" />
+
+  <meta property="article:published_time" content="2026-05-14T13:09:46" />
+  <meta property="og:image" content="https://www.postgresql.org/media/img/about/press/elephant.png" />
+  <meta property="og:title" content="9.29. Trigger Functions" />
+  <meta property="og:description" content="9.29.&amp;nbsp;Trigger Functions # While many uses of triggers involve user-written trigger functions, PostgreSQL provides a few built-in trigger functions that …" />
+  <meta property="og:site_name" content="PostgreSQL Documentation" />
+  <link href="/media/css/fontawesome.css?73aab745" rel="stylesheet">
+  <link rel="stylesheet" href="/media/css/bootstrap-4.4.1.min.css">
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  <link rel="stylesheet" type="text/css" href="/dyncss/base.css?73aab745">
+
+  <script src="/media/js/theme.js?73aab745"></script>
+
+  
+
+
+  <link rel="canonical" href="https://www.postgresql.org/docs/current/functions-trigger.html" />
+
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-md-center">
+        <div class="col">
+          <!-- Header -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand p-0" href="/">
+              <img class="logo" src="/media/img/about/press/elephant.png" alt="PostgreSQL Elephant Logo">
+            </a>
+            <input type="checkbox" id="navbar-toggler" aria-controls="pgNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <label for="navbar-toggler" id="navbar-toggler-label" class="navbar-toggler" tabindex="0"><span class="navbar-toggler-icon"></span></label>
+            <div class="navbar-collapse" id="pgNavbar">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item p-2"><a href="/" title="Home">Home</a></li>
+                <li class="nav-item p-2"><a href="/about/" title="About">About</a></li>
+                <li class="nav-item p-2"><a href="/download/" title="Download">Download</a></li>
+                <li class="nav-item p-2"><a href="/docs/" title="Documentation">Documentation</a></li>
+                <li class="nav-item p-2"><a href="/community/" title="Community">Community</a></li>
+                <li class="nav-item p-2"><a href="/developer/" title="Developers">Developers</a></li>
+                <li class="nav-item p-2"><a href="/support/" title="Support">Support</a></li>
+                <li class="nav-item p-2"><a href="/about/donate/" title="Donate">Donate</a></li>
+                <li class="nav-item p-2"><a href="/account/" title="Your account">Your account</a></li>
+              </ul>
+              <form role="search" method="get" action="/search/">
+                <div class="input-group">
+                  <input id="q" name="q" type="text" size="20" maxlength="255" accesskey="s"  class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+              <form id="form-theme" class="form-inline d-none">
+                <button id="btn-theme" class="btn btn-default ml-1" type="button"></button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row justify-content-center pg-shout-box">
+        <div class="col text-white text-center">July 16, 2026: <a href="/about/news/postgresql-19-beta-2-released-3350/">PostgreSQL 19 Beta 2 Released!</a>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="container-fluid margin">
+      <div class="row">
+        <div id="pgContentWrap" class="col-11">
+          <div class="row">
+            <div class="col-md-6 mb-2">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <a href="/docs/" title="Documentation">Documentation</a> &rarr; <a href="/docs/18/index.html">PostgreSQL 18</a>
+                  </div>
+                </div>
+              </div>
+              
+                <div class="row">
+                  <div class="col">
+                    Supported Versions:
+                      
+                        
+                        
+                          <a href="/docs/current/functions-trigger.html" title="PostgreSQL 18 - 9.29. Trigger Functions" class="docs-version-selected">Current</a>
+                          (<a href="/docs/18/functions-trigger.html" title="PostgreSQL 18 - 9.29. Trigger Functions" class="docs-version-selected">18</a>)
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/17/functions-trigger.html" title="PostgreSQL 17 - 9.29. Trigger Functions" >17</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/16/functions-trigger.html" title="PostgreSQL 16 - 9.29. Trigger Functions" >16</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/15/functions-trigger.html" title="PostgreSQL 15 - 9.29. Trigger Functions" >15</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/14/functions-trigger.html" title="PostgreSQL 14 - 9.29. Trigger Functions" >14</a>
+                        
+                      
+                  </div>
+                </div>
+              
+              
+                <div class="row">
+                  <div class="col">
+                    Development Versions:
+                    
+                      
+                      <a href="/docs/19/functions-trigger.html" title="PostgreSQL 19 - 9.29. Trigger Functions"  rel="nofollow">19</a>
+                    
+                       / 
+                      <a href="/docs/devel/functions-trigger.html" title="PostgreSQL devel - 9.29. Trigger Functions"  rel="nofollow">devel</a>
+                    
+                  </div>
+                </div>
+              
+              
+                <div class="row">
+                  <div class="col-12">
+                    Unsupported versions:
+                    
+                      
+                      <a href="/docs/13/functions-trigger.html" title="PostgreSQL 13 - 9.29. Trigger Functions"  rel="nofollow">13</a>
+                    
+                       / 
+                      <a href="/docs/12/functions-trigger.html" title="PostgreSQL 12 - 9.29. Trigger Functions"  rel="nofollow">12</a>
+                    
+                       / 
+                      <a href="/docs/11/functions-trigger.html" title="PostgreSQL 11 - 9.29. Trigger Functions"  rel="nofollow">11</a>
+                    
+                       / 
+                      <a href="/docs/10/functions-trigger.html" title="PostgreSQL 10 - 9.29. Trigger Functions"  rel="nofollow">10</a>
+                    
+                       / 
+                      <a href="/docs/9.6/functions-trigger.html" title="PostgreSQL 9.6 - 9.29. Trigger Functions"  rel="nofollow">9.6</a>
+                    
+                       / 
+                      <a href="/docs/9.5/functions-trigger.html" title="PostgreSQL 9.5 - 9.29. Trigger Functions"  rel="nofollow">9.5</a>
+                    
+                       / 
+                      <a href="/docs/9.4/functions-trigger.html" title="PostgreSQL 9.4 - 9.29. Trigger Functions"  rel="nofollow">9.4</a>
+                    
+                       / 
+                      <a href="/docs/9.3/functions-trigger.html" title="PostgreSQL 9.3 - 9.29. Trigger Functions"  rel="nofollow">9.3</a>
+                    
+                       / 
+                      <a href="/docs/9.2/functions-trigger.html" title="PostgreSQL 9.2 - 9.29. Trigger Functions"  rel="nofollow">9.2</a>
+                    
+                       / 
+                      <a href="/docs/9.1/functions-trigger.html" title="PostgreSQL 9.1 - 9.29. Trigger Functions"  rel="nofollow">9.1</a>
+                    
+                       / 
+                      <a href="/docs/9.0/functions-trigger.html" title="PostgreSQL 9.0 - 9.29. Trigger Functions"  rel="nofollow">9.0</a>
+                    
+                       / 
+                      <a href="/docs/8.4/functions-trigger.html" title="PostgreSQL 8.4 - 9.29. Trigger Functions"  rel="nofollow">8.4</a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+            <div class="col-md-6 col-lg-5 offset-lg-1">
+              <form id="docSearchForm" role="search" method="get" action="/search/">
+                <input type="hidden" name="u" value="/docs/18/" />
+                <div class="input-group">
+                  <input type="text" id="q" name="q" class="form-control" placeholder="Search the documentation for..."/>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+            </div>
+          </div>
+
+          <div id="docContent">
+            <div class="navheader">
+  <table width="100%" summary="Navigation header">
+    <tr>
+      <th colspan="5" align="center">9.29.&nbsp;Trigger Functions</th>
+    </tr>
+    <tr>
+      <td width="10%" align="left"><a accesskey="p" href="functions-admin.html" title="9.28.&nbsp;System Administration Functions">Prev</a>&nbsp;</td>
+      <td width="10%" align="left"><a accesskey="u" href="functions.html" title="Chapter&nbsp;9.&nbsp;Functions and Operators">Up</a></td>
+      <th width="60%" align="center">Chapter&nbsp;9.&nbsp;Functions and Operators</th>
+      <td width="10%" align="right"><a accesskey="h" href="index.html" title="PostgreSQL 18.4 Documentation">Home</a></td>
+      <td width="10%" align="right">&nbsp;<a accesskey="n" href="functions-event-triggers.html" title="9.30.&nbsp;Event Trigger Functions">Next</a></td>
+    </tr>
+  </table>
+  <hr />
+</div>
+<div class="sect1" id="FUNCTIONS-TRIGGER">
+  <div class="titlepage">
+    <div>
+      <div>
+        <h2 class="title" style="clear: both">9.29.&nbsp;Trigger Functions <a href="#FUNCTIONS-TRIGGER" class="id_link">#</a></h2>
+      </div>
+    </div>
+  </div>
+  <p>While many uses of triggers involve user-written trigger functions, <span class="productname">PostgreSQL</span> provides a few built-in trigger functions that can be used directly in user-defined triggers. These are summarized in <a class="xref" href="functions-trigger.html#BUILTIN-TRIGGERS-TABLE" title="Table&nbsp;9.110.&nbsp;Built-In Trigger Functions">Table&nbsp;9.110</a>. (Additional built-in trigger functions exist, which implement foreign key constraints and deferred index constraints. Those are not documented here since users need not use them directly.)</p>
+  <p>For more information about creating triggers, see <a class="xref" href="sql-createtrigger.html" title="CREATE TRIGGER"><span class="refentrytitle">CREATE TRIGGER</span></a>.</p>
+  <div class="table" id="BUILTIN-TRIGGERS-TABLE">
+    <p class="title"><strong>Table&nbsp;9.110.&nbsp;Built-In Trigger Functions</strong></p>
+    <div class="table-contents">
+      <table class="table" summary="Built-In Trigger Functions" border="1">
+        <colgroup>
+          <col />
+        </colgroup>
+        <thead>
+          <tr>
+            <th class="func_table_entry">
+              <p class="func_signature">Function</p>
+              <p>Description</p>
+              <p>Example Usage</p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="func_table_entry">
+              <p class="func_signature"><a id="id-1.5.8.35.4.2.2.1.1.1.1" class="indexterm" name="id-1.5.8.35.4.2.2.1.1.1.1"></a> <code class="function">suppress_redundant_updates_trigger</code> ( ) → <code class="returnvalue">trigger</code></p>
+              <p>Suppresses do-nothing update operations. See below for details.</p>
+              <p><code class="literal">CREATE TRIGGER ... suppress_redundant_updates_trigger()</code></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="func_table_entry">
+              <p class="func_signature"><a id="id-1.5.8.35.4.2.2.2.1.1.1" class="indexterm" name="id-1.5.8.35.4.2.2.2.1.1.1"></a> <code class="function">tsvector_update_trigger</code> ( ) → <code class="returnvalue">trigger</code></p>
+              <p>Automatically updates a <code class="type">tsvector</code> column from associated plain-text document column(s). The text search configuration to use is specified by name as a trigger argument. See <a class="xref" href="textsearch-features.html#TEXTSEARCH-UPDATE-TRIGGERS" title="12.4.3.&nbsp;Triggers for Automatic Updates">Section&nbsp;12.4.3</a> for details.</p>
+              <p><code class="literal">CREATE TRIGGER ... tsvector_update_trigger(tsvcol, 'pg_catalog.swedish', title, body)</code></p>
+            </td>
+          </tr>
+          <tr>
+            <td class="func_table_entry">
+              <p class="func_signature"><a id="id-1.5.8.35.4.2.2.3.1.1.1" class="indexterm" name="id-1.5.8.35.4.2.2.3.1.1.1"></a> <code class="function">tsvector_update_trigger_column</code> ( ) → <code class="returnvalue">trigger</code></p>
+              <p>Automatically updates a <code class="type">tsvector</code> column from associated plain-text document column(s). The text search configuration to use is taken from a <code class="type">regconfig</code> column of the table. See <a class="xref" href="textsearch-features.html#TEXTSEARCH-UPDATE-TRIGGERS" title="12.4.3.&nbsp;Triggers for Automatic Updates">Section&nbsp;12.4.3</a> for details.</p>
+              <p><code class="literal">CREATE TRIGGER ... tsvector_update_trigger_column(tsvcol, tsconfigcol, title, body)</code></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div><br class="table-break" />
+  <p>The <code class="function">suppress_redundant_updates_trigger</code> function, when applied as a row-level <code class="literal">BEFORE UPDATE</code> trigger, will prevent any update that does not actually change the data in the row from taking place. This overrides the normal behavior which always performs a physical row update regardless of whether or not the data has changed. (This normal behavior makes updates run faster, since no checking is required, and is also useful in certain cases.)</p>
+  <p>Ideally, you should avoid running updates that don't actually change the data in the record. Redundant updates can cost considerable unnecessary time, especially if there are lots of indexes to alter, and space in dead rows that will eventually have to be vacuumed. However, detecting such situations in client code is not always easy, or even possible, and writing expressions to detect them can be error-prone. An alternative is to use <code class="function">suppress_redundant_updates_trigger</code>, which will skip updates that don't change the data. You should use this with care, however. The trigger takes a small but non-trivial time for each record, so if most of the records affected by updates do actually change, use of this trigger will make updates run slower on average.</p>
+  <p>The <code class="function">suppress_redundant_updates_trigger</code> function can be added to a table like this:</p>
+  <pre class="programlisting">
+CREATE TRIGGER z_min_update
+BEFORE UPDATE ON tablename
+FOR EACH ROW EXECUTE FUNCTION suppress_redundant_updates_trigger();
+</pre>
+  <p>In most cases, you need to fire this trigger last for each row, so that it does not override other triggers that might wish to alter the row. Bearing in mind that triggers fire in name order, you would therefore choose a trigger name that comes after the name of any other trigger you might have on the table. (Hence the <span class="quote">“<span class="quote">z</span>”</span> prefix in the example.)</p>
+</div>
+<div class="navfooter">
+  <hr />
+  <table width="100%" summary="Navigation footer">
+    <tr>
+      <td width="40%" align="left"><a accesskey="p" href="functions-admin.html" title="9.28.&nbsp;System Administration Functions">Prev</a>&nbsp;</td>
+      <td width="20%" align="center"><a accesskey="u" href="functions.html" title="Chapter&nbsp;9.&nbsp;Functions and Operators">Up</a></td>
+      <td width="40%" align="right">&nbsp;<a accesskey="n" href="functions-event-triggers.html" title="9.30.&nbsp;Event Trigger Functions">Next</a></td>
+    </tr>
+    <tr>
+      <td width="40%" align="left" valign="top">9.28.&nbsp;System Administration Functions&nbsp;</td>
+      <td width="20%" align="center"><a accesskey="h" href="index.html" title="PostgreSQL 18.4 Documentation">Home</a></td>
+      <td width="40%" align="right" valign="top">&nbsp;9.30.&nbsp;Event Trigger Functions</td>
+    </tr>
+  </table>
+</div>
+
+          </div>
+          
+            <div id="docComments">
+              <h2>Submit correction</h2>
+              <p>
+              If you see anything in the documentation that is not correct, does not match
+              your experience with the particular feature or requires further clarification,
+              please use
+              <a href="/account/comments/new/18/functions-trigger.html/" rel="nofollow">this form</a>
+              to report a documentation issue.
+              </p>
+            </div>
+          
+        </div> <!-- pgContentWrap -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <!-- Copyright -->
+      <div class="container">
+        <a href="/about/policies/">Policies</a> |
+        <a href="/about/policies/coc/">Code of Conduct</a> |
+        <a href="/about/">About PostgreSQL</a> |
+        <a href="/about/contact/">Contact</a><br/>
+        <p>Copyright &copy; 1996-2026 The PostgreSQL Global Development Group</p>
+      </div>
+    </footer>
+    <script src="/media/js/main.js?73aab745"></script>
+
+  </body>
+</html>

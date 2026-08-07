@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>PostgreSQL: Documentation: 18: 9.30. Event Trigger Functions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8" />
+   
+  <meta name="theme-color" content="#336791"/>
+  <meta name="copyright" content="The PostgreSQL Global Development Group" />
+  <meta property="og:url" content="https://www.postgresql.org/docs/18/functions-event-triggers.html" />
+  <meta property="og:type" content="article" />
+
+  <meta property="article:published_time" content="2026-05-14T13:09:46" />
+  <meta property="og:image" content="https://www.postgresql.org/media/img/about/press/elephant.png" />
+  <meta property="og:title" content="9.30. Event Trigger Functions" />
+  <meta property="og:description" content="9.30.&amp;nbsp;Event Trigger Functions # 9.30.1. Capturing Changes at Command End 9.30.2. Processing Objects Dropped by a DDL Command 9.30.3. Handling …" />
+  <meta property="og:site_name" content="PostgreSQL Documentation" />
+  <link href="/media/css/fontawesome.css?73aab745" rel="stylesheet">
+  <link rel="stylesheet" href="/media/css/bootstrap-4.4.1.min.css">
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  <link rel="stylesheet" type="text/css" href="/dyncss/base.css?73aab745">
+
+  <script src="/media/js/theme.js?73aab745"></script>
+
+  
+
+
+  <link rel="canonical" href="https://www.postgresql.org/docs/current/functions-event-triggers.html" />
+
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-md-center">
+        <div class="col">
+          <!-- Header -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand p-0" href="/">
+              <img class="logo" src="/media/img/about/press/elephant.png" alt="PostgreSQL Elephant Logo">
+            </a>
+            <input type="checkbox" id="navbar-toggler" aria-controls="pgNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <label for="navbar-toggler" id="navbar-toggler-label" class="navbar-toggler" tabindex="0"><span class="navbar-toggler-icon"></span></label>
+            <div class="navbar-collapse" id="pgNavbar">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item p-2"><a href="/" title="Home">Home</a></li>
+                <li class="nav-item p-2"><a href="/about/" title="About">About</a></li>
+                <li class="nav-item p-2"><a href="/download/" title="Download">Download</a></li>
+                <li class="nav-item p-2"><a href="/docs/" title="Documentation">Documentation</a></li>
+                <li class="nav-item p-2"><a href="/community/" title="Community">Community</a></li>
+                <li class="nav-item p-2"><a href="/developer/" title="Developers">Developers</a></li>
+                <li class="nav-item p-2"><a href="/support/" title="Support">Support</a></li>
+                <li class="nav-item p-2"><a href="/about/donate/" title="Donate">Donate</a></li>
+                <li class="nav-item p-2"><a href="/account/" title="Your account">Your account</a></li>
+              </ul>
+              <form role="search" method="get" action="/search/">
+                <div class="input-group">
+                  <input id="q" name="q" type="text" size="20" maxlength="255" accesskey="s"  class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+              <form id="form-theme" class="form-inline d-none">
+                <button id="btn-theme" class="btn btn-default ml-1" type="button"></button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row justify-content-center pg-shout-box">
+        <div class="col text-white text-center">July 16, 2026: <a href="/about/news/postgresql-19-beta-2-released-3350/">PostgreSQL 19 Beta 2 Released!</a>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="container-fluid margin">
+      <div class="row">
+        <div id="pgContentWrap" class="col-11">
+          <div class="row">
+            <div class="col-md-6 mb-2">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <a href="/docs/" title="Documentation">Documentation</a> &rarr; <a href="/docs/18/index.html">PostgreSQL 18</a>
+                  </div>
+                </div>
+              </div>
+              
+                <div class="row">
+                  <div class="col">
+                    Supported Versions:
+                      
+                        
+                        
+                          <a href="/docs/current/functions-event-triggers.html" title="PostgreSQL 18 - 9.30. Event Trigger Functions" class="docs-version-selected">Current</a>
+                          (<a href="/docs/18/functions-event-triggers.html" title="PostgreSQL 18 - 9.30. Event Trigger Functions" class="docs-version-selected">18</a>)
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/17/functions-event-triggers.html" title="PostgreSQL 17 - 9.30. Event Trigger Functions" >17</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/16/functions-event-triggers.html" title="PostgreSQL 16 - 9.30. Event Trigger Functions" >16</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/15/functions-event-triggers.html" title="PostgreSQL 15 - 9.30. Event Trigger Functions" >15</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/14/functions-event-triggers.html" title="PostgreSQL 14 - 9.30. Event Trigger Functions" >14</a>
+                        
+                      
+                  </div>
+                </div>
+              
+              
+                <div class="row">
+                  <div class="col">
+                    Development Versions:
+                    
+                      
+                      <a href="/docs/19/functions-event-triggers.html" title="PostgreSQL 19 - 9.30. Event Trigger Functions"  rel="nofollow">19</a>
+                    
+                       / 
+                      <a href="/docs/devel/functions-event-triggers.html" title="PostgreSQL devel - 9.30. Event Trigger Functions"  rel="nofollow">devel</a>
+                    
+                  </div>
+                </div>
+              
+              
+                <div class="row">
+                  <div class="col-12">
+                    Unsupported versions:
+                    
+                      
+                      <a href="/docs/13/functions-event-triggers.html" title="PostgreSQL 13 - 9.30. Event Trigger Functions"  rel="nofollow">13</a>
+                    
+                       / 
+                      <a href="/docs/12/functions-event-triggers.html" title="PostgreSQL 12 - 9.30. Event Trigger Functions"  rel="nofollow">12</a>
+                    
+                       / 
+                      <a href="/docs/11/functions-event-triggers.html" title="PostgreSQL 11 - 9.30. Event Trigger Functions"  rel="nofollow">11</a>
+                    
+                       / 
+                      <a href="/docs/10/functions-event-triggers.html" title="PostgreSQL 10 - 9.30. Event Trigger Functions"  rel="nofollow">10</a>
+                    
+                       / 
+                      <a href="/docs/9.6/functions-event-triggers.html" title="PostgreSQL 9.6 - 9.30. Event Trigger Functions"  rel="nofollow">9.6</a>
+                    
+                       / 
+                      <a href="/docs/9.5/functions-event-triggers.html" title="PostgreSQL 9.5 - 9.30. Event Trigger Functions"  rel="nofollow">9.5</a>
+                    
+                       / 
+                      <a href="/docs/9.4/functions-event-triggers.html" title="PostgreSQL 9.4 - 9.30. Event Trigger Functions"  rel="nofollow">9.4</a>
+                    
+                       / 
+                      <a href="/docs/9.3/functions-event-triggers.html" title="PostgreSQL 9.3 - 9.30. Event Trigger Functions"  rel="nofollow">9.3</a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+            <div class="col-md-6 col-lg-5 offset-lg-1">
+              <form id="docSearchForm" role="search" method="get" action="/search/">
+                <input type="hidden" name="u" value="/docs/18/" />
+                <div class="input-group">
+                  <input type="text" id="q" name="q" class="form-control" placeholder="Search the documentation for..."/>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+            </div>
+          </div>
+
+          <div id="docContent">
+            <div class="navheader">
+  <table width="100%" summary="Navigation header">
+    <tr>
+      <th colspan="5" align="center">9.30.&nbsp;Event Trigger Functions</th>
+    </tr>
+    <tr>
+      <td width="10%" align="left"><a accesskey="p" href="functions-trigger.html" title="9.29.&nbsp;Trigger Functions">Prev</a>&nbsp;</td>
+      <td width="10%" align="left"><a accesskey="u" href="functions.html" title="Chapter&nbsp;9.&nbsp;Functions and Operators">Up</a></td>
+      <th width="60%" align="center">Chapter&nbsp;9.&nbsp;Functions and Operators</th>
+      <td width="10%" align="right"><a accesskey="h" href="index.html" title="PostgreSQL 18.4 Documentation">Home</a></td>
+      <td width="10%" align="right">&nbsp;<a accesskey="n" href="functions-statistics.html" title="9.31.&nbsp;Statistics Information Functions">Next</a></td>
+    </tr>
+  </table>
+  <hr />
+</div>
+<div class="sect1" id="FUNCTIONS-EVENT-TRIGGERS">
+  <div class="titlepage">
+    <div>
+      <div>
+        <h2 class="title" style="clear: both">9.30.&nbsp;Event Trigger Functions <a href="#FUNCTIONS-EVENT-TRIGGERS" class="id_link">#</a></h2>
+      </div>
+    </div>
+  </div>
+  <div class="toc">
+    <dl class="toc">
+      <dt><span class="sect2"><a href="functions-event-triggers.html#PG-EVENT-TRIGGER-DDL-COMMAND-END-FUNCTIONS">9.30.1. Capturing Changes at Command End</a></span></dt>
+      <dt><span class="sect2"><a href="functions-event-triggers.html#PG-EVENT-TRIGGER-SQL-DROP-FUNCTIONS">9.30.2. Processing Objects Dropped by a DDL Command</a></span></dt>
+      <dt><span class="sect2"><a href="functions-event-triggers.html#PG-EVENT-TRIGGER-TABLE-REWRITE-FUNCTIONS">9.30.3. Handling a Table Rewrite Event</a></span></dt>
+    </dl>
+  </div>
+  <p><span class="productname">PostgreSQL</span> provides these helper functions to retrieve information from event triggers.</p>
+  <p>For more information about event triggers, see <a class="xref" href="event-triggers.html" title="Chapter&nbsp;38.&nbsp;Event Triggers">Chapter&nbsp;38</a>.</p>
+  <div class="sect2" id="PG-EVENT-TRIGGER-DDL-COMMAND-END-FUNCTIONS">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h3 class="title">9.30.1.&nbsp;Capturing Changes at Command End <a href="#PG-EVENT-TRIGGER-DDL-COMMAND-END-FUNCTIONS" class="id_link">#</a></h3>
+        </div>
+      </div>
+    </div><a id="id-1.5.8.36.4.2" class="indexterm" name="id-1.5.8.36.4.2"></a>
+    <pre class="synopsis">
+<code class="function">pg_event_trigger_ddl_commands</code> () → <code class="returnvalue">setof record</code>
+</pre>
+    <p><code class="function">pg_event_trigger_ddl_commands</code> returns a list of <acronym class="acronym">DDL</acronym> commands executed by each user action, when invoked in a function attached to a <code class="literal">ddl_command_end</code> event trigger. If called in any other context, an error is raised. <code class="function">pg_event_trigger_ddl_commands</code> returns one row for each base command executed; some commands that are a single SQL sentence may return more than one row. This function returns the following columns:</p>
+    <div class="informaltable">
+      <table class="informaltable" border="1">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code class="literal">classid</code></td>
+            <td><code class="type">oid</code></td>
+            <td>OID of catalog the object belongs in</td>
+          </tr>
+          <tr>
+            <td><code class="literal">objid</code></td>
+            <td><code class="type">oid</code></td>
+            <td>OID of the object itself</td>
+          </tr>
+          <tr>
+            <td><code class="literal">objsubid</code></td>
+            <td><code class="type">integer</code></td>
+            <td>Sub-object ID (e.g., attribute number for a column)</td>
+          </tr>
+          <tr>
+            <td><code class="literal">command_tag</code></td>
+            <td><code class="type">text</code></td>
+            <td>Command tag</td>
+          </tr>
+          <tr>
+            <td><code class="literal">object_type</code></td>
+            <td><code class="type">text</code></td>
+            <td>Type of the object</td>
+          </tr>
+          <tr>
+            <td><code class="literal">schema_name</code></td>
+            <td><code class="type">text</code></td>
+            <td>Name of the schema the object belongs in, if any; otherwise <code class="literal">NULL</code>. No quoting is applied.</td>
+          </tr>
+          <tr>
+            <td><code class="literal">object_identity</code></td>
+            <td><code class="type">text</code></td>
+            <td>Text rendering of the object identity, schema-qualified. Each identifier included in the identity is quoted if necessary.</td>
+          </tr>
+          <tr>
+            <td><code class="literal">in_extension</code></td>
+            <td><code class="type">boolean</code></td>
+            <td>True if the command is part of an extension script</td>
+          </tr>
+          <tr>
+            <td><code class="literal">command</code></td>
+            <td><code class="type">pg_ddl_command</code></td>
+            <td>A complete representation of the command, in internal format. This cannot be output directly, but it can be passed to other functions to obtain different pieces of information about the command.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="sect2" id="PG-EVENT-TRIGGER-SQL-DROP-FUNCTIONS">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h3 class="title">9.30.2.&nbsp;Processing Objects Dropped by a DDL Command <a href="#PG-EVENT-TRIGGER-SQL-DROP-FUNCTIONS" class="id_link">#</a></h3>
+        </div>
+      </div>
+    </div><a id="id-1.5.8.36.5.2" class="indexterm" name="id-1.5.8.36.5.2"></a>
+    <pre class="synopsis">
+<code class="function">pg_event_trigger_dropped_objects</code> () → <code class="returnvalue">setof record</code>
+</pre>
+    <p><code class="function">pg_event_trigger_dropped_objects</code> returns a list of all objects dropped by the command in whose <code class="literal">sql_drop</code> event it is called. If called in any other context, an error is raised. This function returns the following columns:</p>
+    <div class="informaltable">
+      <table class="informaltable" border="1">
+        <colgroup>
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code class="literal">classid</code></td>
+            <td><code class="type">oid</code></td>
+            <td>OID of catalog the object belonged in</td>
+          </tr>
+          <tr>
+            <td><code class="literal">objid</code></td>
+            <td><code class="type">oid</code></td>
+            <td>OID of the object itself</td>
+          </tr>
+          <tr>
+            <td><code class="literal">objsubid</code></td>
+            <td><code class="type">integer</code></td>
+            <td>Sub-object ID (e.g., attribute number for a column)</td>
+          </tr>
+          <tr>
+            <td><code class="literal">original</code></td>
+            <td><code class="type">boolean</code></td>
+            <td>True if this was one of the root object(s) of the deletion</td>
+          </tr>
+          <tr>
+            <td><code class="literal">normal</code></td>
+            <td><code class="type">boolean</code></td>
+            <td>True if there was a normal dependency relationship in the dependency graph leading to this object</td>
+          </tr>
+          <tr>
+            <td><code class="literal">is_temporary</code></td>
+            <td><code class="type">boolean</code></td>
+            <td>True if this was a temporary object</td>
+          </tr>
+          <tr>
+            <td><code class="literal">object_type</code></td>
+            <td><code class="type">text</code></td>
+            <td>Type of the object</td>
+          </tr>
+          <tr>
+            <td><code class="literal">schema_name</code></td>
+            <td><code class="type">text</code></td>
+            <td>Name of the schema the object belonged in, if any; otherwise <code class="literal">NULL</code>. No quoting is applied.</td>
+          </tr>
+          <tr>
+            <td><code class="literal">object_name</code></td>
+            <td><code class="type">text</code></td>
+            <td>Name of the object, if the combination of schema and name can be used as a unique identifier for the object; otherwise <code class="literal">NULL</code>. No quoting is applied, and name is never schema-qualified.</td>
+          </tr>
+          <tr>
+            <td><code class="literal">object_identity</code></td>
+            <td><code class="type">text</code></td>
+            <td>Text rendering of the object identity, schema-qualified. Each identifier included in the identity is quoted if necessary.</td>
+          </tr>
+          <tr>
+            <td><code class="literal">address_names</code></td>
+            <td><code class="type">text[]</code></td>
+            <td>An array that, together with <code class="literal">object_type</code> and <code class="literal">address_args</code>, can be used by the <code class="function">pg_get_object_address</code> function to recreate the object address in a remote server containing an identically named object of the same kind.</td>
+          </tr>
+          <tr>
+            <td><code class="literal">address_args</code></td>
+            <td><code class="type">text[]</code></td>
+            <td>Complement for <code class="literal">address_names</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The <code class="function">pg_event_trigger_dropped_objects</code> function can be used in an event trigger like this:</p>
+    <pre class="programlisting">
+CREATE FUNCTION test_event_trigger_for_drops()
+        RETURNS event_trigger LANGUAGE plpgsql AS $$
+DECLARE
+    obj record;
+BEGIN
+    FOR obj IN SELECT * FROM pg_event_trigger_dropped_objects()
+    LOOP
+        RAISE NOTICE '% dropped object: % %.% %',
+                     tg_tag,
+                     obj.object_type,
+                     obj.schema_name,
+                     obj.object_name,
+                     obj.object_identity;
+    END LOOP;
+END;
+$$;
+CREATE EVENT TRIGGER test_event_trigger_for_drops
+   ON sql_drop
+   EXECUTE FUNCTION test_event_trigger_for_drops();
+</pre>
+  </div>
+  <div class="sect2" id="PG-EVENT-TRIGGER-TABLE-REWRITE-FUNCTIONS">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h3 class="title">9.30.3.&nbsp;Handling a Table Rewrite Event <a href="#PG-EVENT-TRIGGER-TABLE-REWRITE-FUNCTIONS" class="id_link">#</a></h3>
+        </div>
+      </div>
+    </div>
+    <p>The functions shown in <a class="xref" href="functions-event-triggers.html#FUNCTIONS-EVENT-TRIGGER-TABLE-REWRITE" title="Table&nbsp;9.111.&nbsp;Table Rewrite Information Functions">Table&nbsp;9.111</a> provide information about a table for which a <code class="literal">table_rewrite</code> event has just been called. If called in any other context, an error is raised.</p>
+    <div class="table" id="FUNCTIONS-EVENT-TRIGGER-TABLE-REWRITE">
+      <p class="title"><strong>Table&nbsp;9.111.&nbsp;Table Rewrite Information Functions</strong></p>
+      <div class="table-contents">
+        <table class="table" summary="Table Rewrite Information Functions" border="1">
+          <colgroup>
+            <col />
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="func_table_entry">
+                <p class="func_signature">Function</p>
+                <p>Description</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="func_table_entry">
+                <p class="func_signature"><a id="id-1.5.8.36.6.3.2.2.1.1.1.1" class="indexterm" name="id-1.5.8.36.6.3.2.2.1.1.1.1"></a> <code class="function">pg_event_trigger_table_rewrite_oid</code> () → <code class="returnvalue">oid</code></p>
+                <p>Returns the OID of the table about to be rewritten.</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="func_table_entry">
+                <p class="func_signature"><a id="id-1.5.8.36.6.3.2.2.2.1.1.1" class="indexterm" name="id-1.5.8.36.6.3.2.2.2.1.1.1"></a> <code class="function">pg_event_trigger_table_rewrite_reason</code> () → <code class="returnvalue">integer</code></p>
+                <p>Returns a code explaining the reason(s) for rewriting. The value is a bitmap built from the following values: <code class="literal">1</code> (the table has changed its persistence), <code class="literal">2</code> (default value of a column has changed), <code class="literal">4</code> (a column has a new data type) and <code class="literal">8</code> (the table access method has changed).</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div><br class="table-break" />
+    <p>These functions can be used in an event trigger like this:</p>
+    <pre class="programlisting">
+CREATE FUNCTION test_event_trigger_table_rewrite_oid()
+ RETURNS event_trigger
+ LANGUAGE plpgsql AS
+$$
+BEGIN
+  RAISE NOTICE 'rewriting table % for reason %',
+                pg_event_trigger_table_rewrite_oid()::regclass,
+                pg_event_trigger_table_rewrite_reason();
+END;
+$$;
+
+CREATE EVENT TRIGGER test_table_rewrite_oid
+                  ON table_rewrite
+   EXECUTE FUNCTION test_event_trigger_table_rewrite_oid();
+</pre>
+  </div>
+</div>
+<div class="navfooter">
+  <hr />
+  <table width="100%" summary="Navigation footer">
+    <tr>
+      <td width="40%" align="left"><a accesskey="p" href="functions-trigger.html" title="9.29.&nbsp;Trigger Functions">Prev</a>&nbsp;</td>
+      <td width="20%" align="center"><a accesskey="u" href="functions.html" title="Chapter&nbsp;9.&nbsp;Functions and Operators">Up</a></td>
+      <td width="40%" align="right">&nbsp;<a accesskey="n" href="functions-statistics.html" title="9.31.&nbsp;Statistics Information Functions">Next</a></td>
+    </tr>
+    <tr>
+      <td width="40%" align="left" valign="top">9.29.&nbsp;Trigger Functions&nbsp;</td>
+      <td width="20%" align="center"><a accesskey="h" href="index.html" title="PostgreSQL 18.4 Documentation">Home</a></td>
+      <td width="40%" align="right" valign="top">&nbsp;9.31.&nbsp;Statistics Information Functions</td>
+    </tr>
+  </table>
+</div>
+
+          </div>
+          
+            <div id="docComments">
+              <h2>Submit correction</h2>
+              <p>
+              If you see anything in the documentation that is not correct, does not match
+              your experience with the particular feature or requires further clarification,
+              please use
+              <a href="/account/comments/new/18/functions-event-triggers.html/" rel="nofollow">this form</a>
+              to report a documentation issue.
+              </p>
+            </div>
+          
+        </div> <!-- pgContentWrap -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <!-- Copyright -->
+      <div class="container">
+        <a href="/about/policies/">Policies</a> |
+        <a href="/about/policies/coc/">Code of Conduct</a> |
+        <a href="/about/">About PostgreSQL</a> |
+        <a href="/about/contact/">Contact</a><br/>
+        <p>Copyright &copy; 1996-2026 The PostgreSQL Global Development Group</p>
+      </div>
+    </footer>
+    <script src="/media/js/main.js?73aab745"></script>
+
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "dbms": "mysql",
+  "feature_type": "operator",
+  "candidate_features": 113,
+  "candidate_groups": 108,
+  "feature_drafts": 108,
+  "known_operator_coverage": {
+    "total": 38,
+    "covered": 38,
+    "missing": [],
+    "coverage_ratio": 1.0
+  }
+}

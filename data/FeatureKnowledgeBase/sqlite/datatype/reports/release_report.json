@@ -1,0 +1,31 @@
+{
+  "dbms": "sqlite",
+  "feature_type": "datatype",
+  "total_pages": 1,
+  "total_sections": 21,
+  "total_blocks": 139,
+  "candidate_features": 34,
+  "candidate_groups": 9,
+  "feature_drafts": 9,
+  "total_drafts": 9,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 8,
+  "invalid_features": 1,
+  "total_validated_features": 8,
+  "total_kb_features": 8,
+  "total_review_items": 9,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 9,
+    "no_description_claims": 2,
+    "no_valid_syntax": 1,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 0
+  },
+  "generated_at": "2026-08-06T19:08:17.534702+08:00"
+}

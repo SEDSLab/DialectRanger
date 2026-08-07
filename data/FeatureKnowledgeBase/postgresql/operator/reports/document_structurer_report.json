@@ -1,0 +1,284 @@
+{
+  "dbms": "postgresql",
+  "feature_type": "operator",
+  "processed_pages": 32,
+  "skipped_pages": 0,
+  "total_sections": 143,
+  "total_blocks": 3024,
+  "section_sources": {
+    "fallback": 32,
+    "heading_tree": 111
+  },
+  "block_types": {
+    "anchor": 341,
+    "heading": 111,
+    "paragraph": 628,
+    "table": 109,
+    "table_row": 1279,
+    "note": 34,
+    "code": 242,
+    "definition_term": 116,
+    "signature": 50,
+    "definition_description": 41,
+    "warning": 5,
+    "list": 68
+  },
+  "pages": [
+    {
+      "page_id": "postgresql_current_functions_comparison",
+      "sections": 2,
+      "blocks": 69,
+      "anchors": 5,
+      "tables": 3,
+      "code_blocks": 7
+    },
+    {
+      "page_id": "postgresql_current_functions_math",
+      "sections": 2,
+      "blocks": 107,
+      "anchors": 6,
+      "tables": 5,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "postgresql_current_functions_string",
+      "sections": 3,
+      "blocks": 85,
+      "anchors": 4,
+      "tables": 1,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "postgresql_current_functions_binarystring",
+      "sections": 2,
+      "blocks": 50,
+      "anchors": 4,
+      "tables": 2,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "postgresql_current_functions_bitstring",
+      "sections": 2,
+      "blocks": 32,
+      "anchors": 4,
+      "tables": 2,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "postgresql_current_functions_datetime",
+      "sections": 8,
+      "blocks": 235,
+      "anchors": 24,
+      "tables": 4,
+      "code_blocks": 15
+    },
+    {
+      "page_id": "postgresql_current_functions_geometry",
+      "sections": 2,
+      "blocks": 87,
+      "anchors": 4,
+      "tables": 3,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "postgresql_current_functions_net",
+      "sections": 2,
+      "blocks": 47,
+      "anchors": 4,
+      "tables": 3,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "postgresql_current_functions_textsearch",
+      "sections": 2,
+      "blocks": 64,
+      "anchors": 6,
+      "tables": 3,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "postgresql_current_functions_json",
+      "sections": 3,
+      "blocks": 103,
+      "anchors": 8,
+      "tables": 4,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "postgresql_current_functions_array",
+      "sections": 2,
+      "blocks": 42,
+      "anchors": 3,
+      "tables": 2,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "postgresql_current_functions_range",
+      "sections": 2,
+      "blocks": 85,
+      "anchors": 5,
+      "tables": 4,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "postgresql_current_functions_info",
+      "sections": 14,
+      "blocks": 379,
+      "anchors": 40,
+      "tables": 24,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "postgresql_current_functions",
+      "sections": 2,
+      "blocks": 54,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "postgresql_current_functions_logical",
+      "sections": 2,
+      "blocks": 21,
+      "anchors": 3,
+      "tables": 2,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "postgresql_current_functions_matching",
+      "sections": 13,
+      "blocks": 354,
+      "anchors": 43,
+      "tables": 9,
+      "code_blocks": 37
+    },
+    {
+      "page_id": "postgresql_current_functions_formatting",
+      "sections": 2,
+      "blocks": 296,
+      "anchors": 8,
+      "tables": 6,
+      "code_blocks": 70
+    },
+    {
+      "page_id": "postgresql_current_functions_enum",
+      "sections": 2,
+      "blocks": 13,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "postgresql_current_functions_uuid",
+      "sections": 2,
+      "blocks": 25,
+      "anchors": 9,
+      "tables": 2,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "postgresql_current_functions_xml",
+      "sections": 21,
+      "blocks": 205,
+      "anchors": 42,
+      "tables": 0,
+      "code_blocks": 48
+    },
+    {
+      "page_id": "postgresql_current_functions_sequence",
+      "sections": 2,
+      "blocks": 14,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "postgresql_current_functions_conditional",
+      "sections": 6,
+      "blocks": 55,
+      "anchors": 13,
+      "tables": 0,
+      "code_blocks": 7
+    },
+    {
+      "page_id": "postgresql_current_functions_aggregate",
+      "sections": 2,
+      "blocks": 98,
+      "anchors": 12,
+      "tables": 5,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "postgresql_current_functions_window",
+      "sections": 2,
+      "blocks": 25,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "postgresql_current_functions_merge_support",
+      "sections": 2,
+      "blocks": 12,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "postgresql_current_functions_subquery",
+      "sections": 8,
+      "blocks": 68,
+      "anchors": 15,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "postgresql_current_functions_comparisons",
+      "sections": 8,
+      "blocks": 60,
+      "anchors": 18,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "postgresql_current_functions_srf",
+      "sections": 2,
+      "blocks": 23,
+      "anchors": 5,
+      "tables": 2,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "postgresql_current_functions_admin",
+      "sections": 12,
+      "blocks": 245,
+      "anchors": 31,
+      "tables": 15,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "postgresql_current_functions_trigger",
+      "sections": 2,
+      "blocks": 16,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "postgresql_current_functions_event_triggers",
+      "sections": 4,
+      "blocks": 35,
+      "anchors": 5,
+      "tables": 2,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "postgresql_current_functions_statistics",
+      "sections": 3,
+      "blocks": 20,
+      "anchors": 4,
+      "tables": 1,
+      "code_blocks": 2
+    }
+  ]
+}

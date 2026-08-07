@@ -1,0 +1,71 @@
+> For the complete documentation index, see [llms.txt](https://mariadb.com/docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/bit_and.md).
+
+# BIT\_AND
+
+## Syntax
+
+```bnf
+BIT_AND(expr) [over_clause]
+```
+
+## Description
+
+Returns the bitwise AND of all bits in *expr*. The calculation is performed with 64-bit ([BIGINT](/docs/server/reference/data-types/numeric-data-types/bigint.md)) precision. It is an [aggregate function](/docs/server/reference/sql-functions/aggregate-functions.md), and so can be used with the [GROUP BY](/docs/server/reference/sql-statements/data-manipulation/selecting-data/group-by.md) clause.
+
+If no rows match, `BIT_AND` will return a value with all bits set to 1. NULL values have no effect on the result unless all results are NULL, which is treated as no match.
+
+`BIT_AND` can be used as a [window function](/docs/server/reference/sql-functions/special-functions/window-functions.md) with the addition of the *over\_clause*.
+
+## Examples
+
+```sql
+CREATE TABLE vals (x INT);
+
+INSERT INTO vals VALUES(111),(110),(100);
+
+SELECT BIT_AND(x), BIT_OR(x), BIT_XOR(x) FROM vals;
++------------+-----------+------------+
+| BIT_AND(x) | BIT_OR(x) | BIT_XOR(x) |
++------------+-----------+------------+
+|        100 |       111 |        101 |
++------------+-----------+------------+
+```
+
+As an [aggregate function](/docs/server/reference/sql-functions/aggregate-functions.md):
+
+```sql
+CREATE TABLE vals2 (category VARCHAR(1), x INT);
+
+INSERT INTO vals2 VALUES
+  ('a',111),('a',110),('a',100),
+  ('b','000'),('b',001),('b',011);
+
+SELECT category, BIT_AND(x), BIT_OR(x), BIT_XOR(x) 
+  FROM vals GROUP BY category;
++----------+------------+-----------+------------+
+| category | BIT_AND(x) | BIT_OR(x) | BIT_XOR(x) |
++----------+------------+-----------+------------+
+| a        |        100 |       111 |        101 |
+| b        |          0 |        11 |         10 |
++----------+------------+-----------+------------+
+```
+
+No match:
+
+```sql
+SELECT BIT_AND(NULL);
++----------------------+
+| BIT_AND(NULL)        |
++----------------------+
+| 18446744073709551615 |
++----------------------+
+```
+
+## See Also
+
+* [BIT\_OR](/docs/server/reference/sql-functions/aggregate-functions/bit_or.md)
+* [BIT\_XOR](/docs/server/reference/sql-functions/aggregate-functions/bit_xor.md)
+
+<sub>*This page is licensed: GPLv2, originally from*</sub> [<sub>*fill\_help\_tables.sql*</sub>](https://github.com/MariaDB/server/blob/main/scripts/fill_help_tables.sql)
+
+{% @marketo/form formId="4316" %}

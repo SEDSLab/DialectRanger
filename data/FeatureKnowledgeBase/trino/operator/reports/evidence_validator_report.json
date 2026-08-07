@@ -1,0 +1,36 @@
+{
+  "dbms": "trino",
+  "feature_type": "operator",
+  "total_drafts": 26,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 26,
+  "invalid_features": 0,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 26,
+    "no_description_claims": 7,
+    "no_valid_syntax": 0,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 5
+  },
+  "sample_clean_features": [],
+  "sample_warning_features": [
+    "trino.operator.!=_trino_current_comparison",
+    "trino.operator.%%_trino_current_datetime",
+    "trino.operator.%_trino_current_math",
+    "trino.operator.*_trino_current_math",
+    "trino.operator.+_trino_current_datetime",
+    "trino.operator.+_trino_current_math",
+    "trino.operator.-_trino_current_datetime",
+    "trino.operator.-_trino_current_math",
+    "trino.operator./_trino_current_math",
+    "trino.operator.<=_trino_current_comparison"
+  ],
+  "sample_invalid_features": [],
+  "generated_at": "2026-08-06T19:59:14.058710+08:00"
+}

@@ -1,0 +1,7 @@
+{
+  "dbms": "sqlserver",
+  "feature_type": "operator",
+  "candidates": 26,
+  "groups": 23,
+  "drafts": 23
+}

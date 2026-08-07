@@ -1,0 +1,1613 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="reference">
+      <meta name="DC.Title" content="CREATE INDEX">
+      <meta name="DC.subject" content="CREATE INDEX statement, CLUSTER clause, of CREATE INDEX, clusters, cluster indexes, indexes, on clusters, on nested table storage tables, on partitioned tables, on index-organized tables, on table columns, on scalar typed object attributes, columns, basing an index on, nested tables, indexing columns of, function-based, creating, function-based indexes, functions, defining an index on, partial indexes, full indexes, partial, full, locally partitioned, locally partitioned indexes, partitioned indexes, LOCAL clause, globally partitioned, globally partitioned indexes, on range-partitioned tables, on hash-partitioned tables, on composite-partitioned tables, domain, domain indexes, based on indextypes, indextypes, indexes based on, INDEXTYPE clause, bitmap join, join, bitmap, examples">
+      <meta name="keywords" content="CREATE INDEX statement, CLUSTER clause, of CREATE INDEX, clusters, cluster indexes, indexes, on clusters, on nested table storage tables, on partitioned tables, on index-organized tables, on table columns, on scalar typed object attributes, columns, basing an index on, nested tables, indexing columns of, function-based, creating, function-based indexes, functions, defining an index on, partial indexes, full indexes, partial, full, locally partitioned, locally partitioned indexes, partitioned indexes, LOCAL clause, globally partitioned, globally partitioned indexes, on range-partitioned tables, on hash-partitioned tables, on composite-partitioned tables, domain, domain indexes, based on indextypes, indextypes, indexes based on, INDEXTYPE clause, bitmap join, join, bitmap, examples">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>CREATE INDEX</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="create-iceberg-table.html" title="Previous" type="text/html">
+      <link rel="next" href="CREATE-INDEXTYPE.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"CREATE INDEX","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="create-iceberg-table.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="CREATE-INDEXTYPE.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE" name="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE"></a><a id="SQLRF53951"></a><a id="SQLRF53952"></a><a id="SQLRF53953"></a><a id="SQLRF53954"></a><a id="SQLRF53955"></a><a id="SQLRF53956"></a><a id="SQLRF53957"></a><a id="SQLRF53958"></a><a id="SQLRF53959"></a><a id="SQLRF53960"></a><a id="SQLRF56863"></a><a id="SQLRF56864"></a><a id="SQLRF55867"></a><a id="SQLRF53961"></a><a id="SQLRF53962"></a><a id="SQLRF53963"></a><a id="SQLRF53964"></a><a id="SQLRF53965"></a><a id="SQLRF53966"></a><a id="SQLRF53967"></a><a id="SQLRF53968"></a><a id="SQLRF53969"></a><a id="SQLRF53970"></a><a id="SQLRF53971"></a><a id="SQLRF53972"></a><a id="SQLRF53973"></a><a id="SQLRF53974"></a><a id="SQLRF53975"></a><a id="SQLRF53976"></a><a id="SQLRF53977"></a><a id="SQLRF53978"></a><a id="SQLRF53979"></a><a id="SQLRF53980"></a><a id="SQLRF53981"></a><a id="SQLRF53982"></a><a id="SQLRF53983"></a><a id="SQLRF53984"></a><a id="SQLRF53985"></a><a id="SQLRF53986"></a><a id="SQLRF53987"></a><a id="SQLRF53988"></a><a id="SQLRF53989"></a><a id="SQLRF53990"></a><a id="SQLRF56300"></a><a id="SQLRF53991"></a><a id="SQLRF53992"></a><a id="SQLRF53993"></a><a id="SQLRF01212"></a><a id="SQLRF53994"></a><a id="SQLRF53995"></a><a id="SQLRF20021"></a><a id="SQLRF53996"></a><a id="SQLRF53997"></a><a id="SQLRF53998"></a><a id="SQLRF53999"></a><a id="SQLRF56994"></a><a id="SQLRF56996"></a><a id="SQLRF56997"></a><a id="SQLRF56182"></a><a id="SQLRF56183"></a><a id="SQLRF54002"></a><a id="SQLRF54003"></a><a id="SQLRF54004"></a><a id="SQLRF54005"></a><a id="SQLRF54006"></a><a id="SQLRF54007"></a><a id="SQLRF54008"></a><a id="SQLRF54009"></a><a id="SQLRF54010"></a><a id="SQLRF54011"></a><a id="SQLRF54012"></a><a id="SQLRF54013"></a><a id="SQLRF54014"></a><a id="SQLRF54015"></a><a id="SQLRF54016"></a><a id="SQLRF54017"></a><a id="SQLRF54018"></a><a id="SQLRF54019"></a><a id="SQLRF54020"></a><a id="SQLRF54021"></a><a id="SQLRF54022"></a><a id="SQLRF54023"></a><a id="SQLRF54024"></a><a id="SQLRF54026"></a><a id="SQLRF54027"></a><a id="SQLRF54028"></a><a id="SQLRF54029"></a><a id="SQLRF54030"></a><a id="SQLRF54031"></a><a id="SQLRF54032"></a><a id="SQLRF54033"></a><a id="SQLRF54034"></a><a id="SQLRF54035"></a><a id="SQLRF54036"></a><a id="SQLRF54037"></a><a id="SQLRF54038"></a><a id="SQLRF54039"></a><a id="SQLRF54040"></a><a id="SQLRF54041"></a><a id="SQLRF54042"></a><a id="SQLRF54043"></a><a id="SQLRF54044"></a><a id="SQLRF54045"></a><a id="SQLRF54046"></a><a id="SQLRF54047"></a><a id="SQLRF30015"></a><a id="SQLRF54048"></a><a id="SQLRF54049"></a><a id="SQLRF54050"></a><a id="SQLRF54051"></a><a id="SQLRF54052"></a><a id="SQLRF54053"></a><a id="SQLRF54054"></a><a id="SQLRF54055"></a><a id="SQLRF54056"></a><a id="SQLRF54057"></a><a id="SQLRF01209"></a>
+         
+         <h2 id="SQLRF-GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE" class="sect2">CREATE INDEX </h2>
+         <div class="ind">
+            <div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-3A69C326-5A6A-410C-861C-DF4B0FB2E181">Purpose </p>
+                  <p><a id="d383015e373" class="indexterm-anchor"></a>Use the <code class="codeph">CREATE</code> <code class="codeph">INDEX</code> statement to create an index on:
+                  </p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>One or more columns of a table, a partitioned table, an index-organized table, or a cluster</p>
+                     </li>
+                     <li>
+                        <p>One or more scalar typed object attributes of a table or a cluster</p>
+                     </li>
+                     <li>
+                        <p>A nested table storage table for indexing a nested table column</p>
+                     </li>
+                  </ul>
+                  <p><a id="d383015e395" class="indexterm-anchor"></a><a id="d383015e399" class="indexterm-anchor"></a><a id="d383015e403" class="indexterm-anchor"></a><a id="d383015e405" class="indexterm-anchor"></a><a id="d383015e407" class="indexterm-anchor"></a>An <span class="bold">index</span> is a schema object that contains an entry for each value that appears in the indexed column(s) of the table or cluster and provides direct, fast access to rows. The maximum size of a single index entry is dependent on the block size of the database.
+                  </p>
+                  <p>Oracle Database supports several types of index:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p><span class="bold">Normal indexes.</span> (By default, Oracle Database creates B-tree indexes.)
+                        </p>
+                     </li>
+                     <li>
+                        <p><span class="bold">Bitmap indexes</span>, which store rowids associated with a key value as a bitmap.
+                        </p>
+                     </li>
+                     <li>
+                        <p><span class="bold">Partitioned indexes</span>, which consist of partitions containing an entry for each value that appears in the indexed column(s) of the table. 
+                        </p>
+                     </li>
+                     <li>
+                        <p><span class="bold">Function-based indexes</span>, which are based on expressions. They enable you to construct queries that evaluate the value returned by an expression, which in turn may include  built-in or user-defined functions. 
+                        </p>
+                     </li>
+                     <li>
+                        <p><a id="d383015e440" class="indexterm-anchor"></a><a id="d383015e444" class="indexterm-anchor"></a><a id="d383015e446" class="indexterm-anchor"></a><span class="bold">Domain indexes</span>, which are instances of an application-specific index of type <span class="italic"><code class="codeph">indextype</code></span>.
+                        </p>
+                     </li>
+                  </ul>
+                  <div class="infoboxnote" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-5407C3B7-753B-4447-9BA8-9EFC6C1B843E">
+                     <p class="notep1">Note:</p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=CNCPT811" target="_blank"><span class="italic">Oracle Database Concepts</span></a> for a discussion of indexes
+                           </p>
+                        </li>
+                        <li>
+                           <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=REFRN0043" target="_blank"><span class="italic">Oracle Database Reference</span></a> for more information about the limits related to index size
+                           </p>
+                        </li>
+                        <li>
+                           <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=REFRN-GUID-5238D586-B068-46F7-9D8F-E4C174E5D5B2" target="_blank"> <span class="italic">Oracle Database Reference</span></a> for information on how index creation inherits compression attributes
+                           </p>
+                        </li>
+                        <li>
+                           <p><a href="ALTER-INDEX.html#GUID-D8F648E7-8C07-4C89-BB71-862512536558">ALTER INDEX</a> and <a href="DROP-INDEX.html#GUID-F60F75DF-2866-4F93-BB7F-8FCE64BF67B6">DROP INDEX</a></p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2084975">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-27FA90C4-09F6-4A93-8485-76D579373066">Prerequisites </p>
+                  <p>To create an index in your own schema, one of the following conditions must be true: </p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>The table or cluster to be indexed must be in your own schema. </p>
+                     </li>
+                     <li>
+                        <p>You must have the <code class="codeph">INDEX</code> object privilege on the table to be indexed. 
+                        </p>
+                     </li>
+                     <li>
+                        <p>You must have the <code class="codeph">CREATE</code> <code class="codeph">ANY</code> <code class="codeph">INDEX</code> system privilege. 
+                        </p>
+                     </li>
+                  </ul>
+                  <p>To create an index in another schema, you must have the <code class="codeph">CREATE</code> <code class="codeph">ANY</code> <code class="codeph">INDEX</code> system privilege. Also, the owner of the schema to contain the index must have either the <code class="codeph">UNLIMITED</code> <code class="codeph">TABLESPACE</code> system privilege or space quota on the tablespaces to contain the index or index partitions. 
+                  </p>
+                  <p>To create a function-based index, in addition to the prerequisites for creating a conventional index, if the index is based on user-defined functions, then those functions must be marked <code class="codeph">DETERMINISTIC</code>. A function-based index is executed with the credentials of the index owner, so the index owner must have the <code class="codeph">EXECUTE</code> object privilege on the function.
+                  </p>
+                  <p>To create a domain index in your own schema, in addition to the prerequisites for creating a conventional index, you must also have the <code class="codeph">EXECUTE</code> object privilege on the indextype. If you are creating a domain index in another user's schema, then the index owner also must have the <code class="codeph">EXECUTE</code> object privilege on the indextype and its underlying implementation type. Before creating a domain index, you should first define the indextype. 
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-A623FDE3-6E09-4DEC-ABF7-E5A5B57AE647">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="CREATE-INDEXTYPE.html#GUID-4A7BD0EC-B3E5-4D1D-95C5-C8B52D01D8CE">CREATE INDEXTYPE</a></p>
+                  </div>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2171607">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-6C02AF27-D1C0-4B7D-8843-41681745BD8B">Syntax</p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2125762">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-9E6648AD-33BA-4D0F-9507-1AF32A1B2C4F"><span class="italic">create_index</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-C31F02C3-AE11-44B7-BAE3-D904CF1F38B3"><img src="img/create_index.gif" alt="Description of create_index.eps follows" title="Description of create_index.eps follows" longdesc="img_text/create_index.html"><br><a href="img_text/create_index.html">Description of the illustration create_index.eps</a></div>
+                  <p>(<span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BGEHEIHF">cluster_index_clause::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BGEGIIHH">table_index_clause::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BGEFEGEH">bitmap_join_index_clause::=</a></span>)
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-1F45221B-597D-424E-B629-8F6F0FAEE72C"><span class="italic">index_ilm_clause</span> ::=
+                  </p><br><div class="imageleft"><img class="imageleft" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__IMAGE_DPC_XGH_3KB" src="img/index_ilm_clause.gif" alt="Description of index_ilm_clause.eps follows" title="Description of index_ilm_clause.eps follows" longdesc="img_text/index_ilm_clause.html"><br><a href="img_text/index_ilm_clause.html">Description of the illustration index_ilm_clause.eps</a></div><br></div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-81202150-F52B-4C4F-A22B-B9C0220B6604"><span class="italic">policy_clause</span> ::=
+                  </p><br><div class="imageleft"><img class="imageleft" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__IMAGE_DGM_QHH_3KB" src="img/policy_clause.gif" alt="Description of policy_clause.eps follows" title="Description of policy_clause.eps follows" longdesc="img_text/policy_clause.html"><br><a href="img_text/policy_clause.html">Description of the illustration policy_clause.eps</a></div><br></div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-94B9CD07-A1FA-4BA4-B696-6EB1305ECA30"><span class="italic">tiering_clause</span> ::=
+                  </p><br><div class="imageleft"><img class="imageleft" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__IMAGE_BDT_YHH_3KB" src="img/tiering_clause.gif" alt="Description of tiering_clause.eps follows" title="Description of tiering_clause.eps follows" longdesc="img_text/tiering_clause.html"><br><a href="img_text/tiering_clause.html">Description of the illustration tiering_clause.eps</a></div><br></div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-ED4CA30F-D15D-41B5-8641-3A76BD1E2F5F"><span class="italic">condition_clause</span> ::=
+                  </p><br><div class="imageleft"><img class="imageleft" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__IMAGE_YM3_D3H_3KB" src="img/condition_clause.gif" alt="Description of condition_clause.eps follows" title="Description of condition_clause.eps follows" longdesc="img_text/condition_clause.html"><br><a href="img_text/condition_clause.html">Description of the illustration condition_clause.eps</a></div><br></div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-93C53584-CF44-40EB-93AB-25ED90D1982B"><span class="italic">tracking_statistics_clause</span> ::=
+                  </p><br><div class="imageleft"><img class="imageleft" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__IMAGE_TGP_G3H_3KB" src="img/tracking_statistics_clause.gif" alt="Description of tracking_statistics_clause.eps follows" title="Description of tracking_statistics_clause.eps follows" longdesc="img_text/tracking_statistics_clause.html"><br><a href="img_text/tracking_statistics_clause.html">Description of the illustration tracking_statistics_clause.eps</a></div><br></div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BGEHEIHF">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-1CE649E8-E2B4-4E20-8D2F-0A847BFB4AC7"><span class="italic">cluster_index_clause</span>::=
+                  </p><a id="d383015e617" class="indexterm-anchor"></a><div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-011BDF52-3388-449F-AD19-1D2030EB09C3"><img src="img/cluster_index_clause.gif" alt="Description of cluster_index_clause.eps follows" title="Description of cluster_index_clause.eps follows" longdesc="img_text/cluster_index_clause.html"><br><a href="img_text/cluster_index_clause.html">Description of the illustration cluster_index_clause.eps</a></div>
+                  <p>(<span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2182500">index_attributes::=</a></span>)
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BGEGIIHH">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-0BFFC1DC-A680-446F-95E4-2D53A34154B4"><span class="italic">table_index_clause</span>::=
+                  </p><a id="d383015e635" class="indexterm-anchor"></a><div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-03107259-DCC8-44BE-A7C7-11D12652AFD2"><img src="img/table_index_clause.gif" alt="Description of table_index_clause.eps follows" title="Description of table_index_clause.eps follows" longdesc="img_text/table_index_clause.html"><br><a href="img_text/table_index_clause.html">Description of the illustration table_index_clause.eps</a></div>
+                  <p>(<span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2138869">index_properties::=</a></span>)
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BGEFEGEH">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-5CB3B501-5323-4D71-9C96-C954747D0A5B"><span class="italic">bitmap_join_index_clause</span>::=
+                  </p><a id="d383015e654" class="indexterm-anchor"></a><div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-6D407F02-79F0-4ACE-8F3C-A49995D5347E"><img src="img/bitmap_join_index_clause.gif" alt="Description of bitmap_join_index_clause.eps follows" title="Description of bitmap_join_index_clause.eps follows" longdesc="img_text/bitmap_join_index_clause.html"><br><a href="img_text/bitmap_join_index_clause.html">Description of the illustration bitmap_join_index_clause.eps</a></div>
+                  <p>(<span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2125897">local_partitioned_index::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2182500">index_attributes::=</a></span>)
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-96C331C6-3638-41B3-BF84-1D102F309C49"><span class="italic">index_expr</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-380EF213-6BA2-4009-BBFE-0416B7454786"><img src="img/index_expr.gif" alt="Description of index_expr.eps follows" title="Description of index_expr.eps follows" longdesc="img_text/index_expr.html"><br><a href="img_text/index_expr.html">Description of the illustration index_expr.eps</a></div>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2138869">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-50ACC259-D584-4826-8AD8-660899708FB4"><span class="italic">index_properties</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-767E8F0D-E34E-472B-8C88-438AF5897F31"><img src="img/index_properties.gif" alt="Description of index_properties.eps follows" title="Description of index_properties.eps follows" longdesc="img_text/index_properties.html"><br><a href="img_text/index_properties.html">Description of the illustration index_properties.eps</a></div>
+                  <p>(<span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2126415">global_partitioned_index::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2125897">local_partitioned_index::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2182500">index_attributes::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2126404">domain_index_clause::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BABJAGJE">XMLIndex_clause::=</a></span>)
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2182500">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-0A6CB289-E726-488C-9098-DAADFD785B97"><span class="italic">index_attributes</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-C3EA5264-CC89-4F27-850C-9C2232E6A829"><img src="img/index_attributes.gif" alt="Description of index_attributes.eps follows" title="Description of index_attributes.eps follows" longdesc="img_text/index_attributes.html"><br><a href="img_text/index_attributes.html">Description of the illustration index_attributes.eps</a></div>
+                  <p>(<span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127508">physical_attributes_clause::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2182589">logging_clause::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127535">index_compression::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BGEJJFGA">partial_index_clause::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127546">parallel_clause::=</a></span>, <span class="italic"><a href="annotations_clause.html#GUID-1AC16117-BBB6-4435-8794-2B99F8F68052">annotations_clause</a></span>)
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127508">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-8DE078DC-492A-4D62-AA88-B2270D868951"><span class="italic">physical_attributes_clause</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-25F9735C-08B3-4BB3-87B0-A849A2745578"><img src="img/physical_attributes_clause.gif" alt="Description of physical_attributes_clause.eps follows" title="Description of physical_attributes_clause.eps follows" longdesc="img_text/physical_attributes_clause.html"><br><a href="img_text/physical_attributes_clause.html">Description of the illustration physical_attributes_clause.eps</a></div>
+                  <p>(<span class="italic"><a href="storage_clause.html#GUID-C5A67610-3160-41E9-8D48-03206BD5ED15__CJACEJGB">storage_clause::=</a></span>)
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2182589">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-9F6B4ADE-E1B1-47CA-9F18-DD75032696FD"><span class="italic">logging_clause</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-560FD83D-6301-4F89-884E-8C54CB7CB848"><img src="img/logging_clause.gif" alt="Description of logging_clause.eps follows" title="Description of logging_clause.eps follows" longdesc="img_text/logging_clause.html"><br><a href="img_text/logging_clause.html">Description of the illustration logging_clause.eps</a></div>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127535">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-5155D1D1-624B-4C4C-96E2-C6D3277A4E0A"><span class="italic">index_compression</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-1A4B1FDA-2F64-4B75-8AC4-13299C77AA34"><img src="img/index_compression.gif" alt="Description of index_compression.eps follows" title="Description of index_compression.eps follows" longdesc="img_text/index_compression.html"><br><a href="img_text/index_compression.html">Description of the illustration index_compression.eps</a></div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-5DAFC5C4-395D-49F6-B5D8-6E1D66905B96"><span class="italic">prefix_compression</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-8B730529-4E3E-4C76-BEA3-E0AA5D9D7FC0"><img src="img/prefix_compression.gif" alt="Description of prefix_compression.eps follows" title="Description of prefix_compression.eps follows" longdesc="img_text/prefix_compression.html"><br><a href="img_text/prefix_compression.html">Description of the illustration prefix_compression.eps</a></div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-688EB9E3-DD3D-4D9D-A299-5691AC730C42"><span class="italic">advanced_index_compression</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-330A07DE-6C53-47E8-9B33-1D2F67501010"><img src="img/advanced_index_compression.gif" alt="Description of advanced_index_compression.eps follows" title="Description of advanced_index_compression.eps follows" longdesc="img_text/advanced_index_compression.html"><br><a href="img_text/advanced_index_compression.html">Description of the illustration advanced_index_compression.eps</a></div>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BGEJJFGA">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-E67A9F83-6A67-440C-BB05-7DA55C05F903"><span class="italic">partial_index_clause</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-40F6F6A2-4DFB-489F-8A75-8FD886397FBE"><img src="img/partial_index_clause.gif" alt="Description of partial_index_clause.eps follows" title="Description of partial_index_clause.eps follows" longdesc="img_text/partial_index_clause.html"><br><a href="img_text/partial_index_clause.html">Description of the illustration partial_index_clause.eps</a></div>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2126404">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-002AC8B9-5840-4A25-B611-8592652591CC"><span class="italic">domain_index_clause</span>::=
+                  </p><a id="d383015e803" class="indexterm-anchor"></a><a id="d383015e807" class="indexterm-anchor"></a><div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-B715B9F4-0510-414F-ABE2-79B5FCC4CE31"><img src="img/domain_index_clause.gif" alt="Description of domain_index_clause.eps follows" title="Description of domain_index_clause.eps follows" longdesc="img_text/domain_index_clause.html"><br><a href="img_text/domain_index_clause.html">Description of the illustration domain_index_clause.eps</a></div>
+                  <p>(<span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127546">parallel_clause::=</a></span>)
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-7EE2F4DB-90F3-4CFD-A856-A87C7BA8CFFE"><span class="italic">local_domain_index_clause</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-587D85BE-6754-4F81-BE6E-179BE0EA53C5"><img src="img/local_domain_index_clause.gif" alt="Description of local_domain_index_clause.eps follows" title="Description of local_domain_index_clause.eps follows" longdesc="img_text/local_domain_index_clause.html"><br><a href="img_text/local_domain_index_clause.html">Description of the illustration local_domain_index_clause.eps</a></div>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BABJAGJE">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-2F9329CE-A1FB-403E-8368-964E81D77437"><span class="italic">XMLIndex_clause</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-518EE1F0-6367-49B1-BD96-809E2DDFFB65"><img src="img/xmlindex_clause.gif" alt="Description of xmlindex_clause.eps follows" title="Description of xmlindex_clause.eps follows" longdesc="img_text/xmlindex_clause.html"><br><a href="img_text/xmlindex_clause.html">Description of the illustration xmlindex_clause.eps</a></div>
+                  <p>( The <span class="italic"><code class="codeph">XMLIndex_parameters_clause</code></span> is documented in <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADXDB0500" target="_blank"><span class="italic">Oracle XML DB Developer's Guide</span></a>.)
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-0BAAE0AA-4065-4ED4-AD04-68CF88B61C29"><span class="italic">local_XMLIndex_clause</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-FBB2F799-FD5D-4040-A606-6AEDE2413E0E"><img src="img/local_xmlindex_clause.gif" alt="Description of local_xmlindex_clause.eps follows" title="Description of local_xmlindex_clause.eps follows" longdesc="img_text/local_xmlindex_clause.html"><br><a href="img_text/local_xmlindex_clause.html">Description of the illustration local_xmlindex_clause.eps</a></div>
+                  <p>(The <span class="italic"><code class="codeph">XMLIndex_parameters_clause</code></span> is documented in <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADXDB0500" target="_blank"><span class="italic">Oracle XML DB Developer's Guide</span></a>.)
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-23237E28-829C-4A34-9D03-3CE85A7F8E32"><span class="italic">annotations_clause</span>::=
+                  </p>
+                  <p>For the full syntax and semantics of the <span class="italic"><code class="codeph">annotations_clause </code></span>see <span class="italic"><a href="annotations_clause.html#GUID-1AC16117-BBB6-4435-8794-2B99F8F68052">annotations_clause</a></span>.
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2126415">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-484CD74F-1408-4ADF-9BB2-05FEF1776156"><span class="italic">global_partitioned_index</span>::=
+                  </p><a id="d383015e887" class="indexterm-anchor"></a><a id="d383015e891" class="indexterm-anchor"></a><div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-F1286A1E-E247-4D15-829C-2B8CB31F20A0"><img src="img/global_partitioned_index.gif" alt="Description of global_partitioned_index.eps follows" title="Description of global_partitioned_index.eps follows" longdesc="img_text/global_partitioned_index.html"><br><a href="img_text/global_partitioned_index.html">Description of the illustration global_partitioned_index.eps</a></div>
+                  <p>(<span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127580">index_partitioning_clause::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2169764">individual_hash_partitions::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2169779">hash_partitions_by_quantity::=</a></span>)
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2169764">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-F751027B-7104-40A8-B994-5E3A0E3EA2BB"><span class="italic">individual_hash_partitions</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-1D9ED880-E2B5-4382-A9E1-39238FD22839"><img src="img/individual_hash_partitions.gif" alt="Description of individual_hash_partitions.eps follows" title="Description of individual_hash_partitions.eps follows" longdesc="img_text/individual_hash_partitions.html"><br><a href="img_text/individual_hash_partitions.html">Description of the illustration individual_hash_partitions.eps</a></div>
+                  <p>(<span class="italic"><code class="codeph">read_only_clause</code></span> and <span class="italic"><code class="codeph">indexing_clause</code></span>: not supported in <span class="italic"><code class="codeph">table_index_clause</code></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2169800">partitioning_storage_clause::=</a></span>)
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2169800">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-29C4CAF5-DA94-4AC9-8F75-2D689D51E5C8"><span class="italic">partitioning_storage_clause</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-CC5FBE48-44AD-4617-AA98-12DA1586829F"><img src="img/partitioning_storage_clause.gif" alt="Description of partitioning_storage_clause.eps follows" title="Description of partitioning_storage_clause.eps follows" longdesc="img_text/partitioning_storage_clause.html"><br><a href="img_text/partitioning_storage_clause.html">Description of the illustration partitioning_storage_clause.eps</a></div>
+                  <p>(<code class="codeph">TABLESPACE</code> <code class="codeph">SET</code>, <span class="italic"><code class="codeph">table_compression</code></span>, <span class="italic"><code class="codeph">inmemory_clause</code></span>, and <span class="italic"><code class="codeph">ilm_clause</code></span> not supported with <code class="codeph">CREATE</code> <code class="codeph">INDEX</code>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127535">index_compression::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__CACCFEEE">LOB_partitioning_storage::=</a></span>)
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__CACCFEEE">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-AF1AB334-3BEA-4514-8D90-DDBCC8221AC2"><span class="italic">LOB_partitioning_storage</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-7254C6B0-5F37-4510-9021-9DAEFEE1400C"><img src="img/lob_partitioning_storage.gif" alt="Description of lob_partitioning_storage.eps follows" title="Description of lob_partitioning_storage.eps follows" longdesc="img_text/lob_partitioning_storage.html"><br><a href="img_text/lob_partitioning_storage.html">Description of the illustration lob_partitioning_storage.eps</a></div>
+                  <p>(<code class="codeph">TABLESPACE</code> <code class="codeph">SET</code>: not supported with <code class="codeph">CREATE</code> <code class="codeph">INDEX</code>)
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2169779">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-D9A01E4D-2CED-42C4-BE93-DD14CA49C44B"><span class="italic">hash_partitions_by_quantity</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-6CCB1035-777E-4502-84D2-39721951C91C"><img src="img/hash_partitions_by_quantity.gif" alt="Description of hash_partitions_by_quantity.eps follows" title="Description of hash_partitions_by_quantity.eps follows" longdesc="img_text/hash_partitions_by_quantity.html"><br><a href="img_text/hash_partitions_by_quantity.html">Description of the illustration hash_partitions_by_quantity.eps</a></div>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127580">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-DBF15AFC-75E4-4A14-8786-B1C9CC559271"><span class="italic">index_partitioning_clause</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-619D0949-2925-425E-9CFF-A9733E050FF2"><img src="img/index_partitioning_clause.gif" alt="Description of index_partitioning_clause.eps follows" title="Description of index_partitioning_clause.eps follows" longdesc="img_text/index_partitioning_clause.html"><br><a href="img_text/index_partitioning_clause.html">Description of the illustration index_partitioning_clause.eps</a></div>
+                  <p>(<span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127592">segment_attributes_clause::=</a></span>)
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2125897">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-89B84CDE-422F-4D90-9666-75FB1FFF483F"><span class="italic">local_partitioned_index</span>::=
+                  </p><a id="d383015e1030" class="indexterm-anchor"></a><a id="d383015e1034" class="indexterm-anchor"></a><div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-9407C7C2-A175-4D1E-A8D8-41AE26BABE0E"><img src="img/local_partitioned_index.gif" alt="Description of local_partitioned_index.eps follows" title="Description of local_partitioned_index.eps follows" longdesc="img_text/local_partitioned_index.html"><br><a href="img_text/local_partitioned_index.html">Description of the illustration local_partitioned_index.eps</a></div>
+                  <p>(<span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127604">on_range_partitioned_table::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127615">on_list_partitioned_table::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127630">on_hash_partitioned_table::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127641">on_comp_partitioned_table::=</a></span>)
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127604">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-0851C2FD-358C-47B6-A716-A4BD106BE4CC"><span class="italic">on_range_partitioned_table</span>::=
+                  </p><a id="d383015e1065" class="indexterm-anchor"></a><div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-5E59B423-6490-48E9-864E-43EBB4D22D5E"><img src="img/on_range_partitioned_table.gif" alt="Description of on_range_partitioned_table.eps follows" title="Description of on_range_partitioned_table.eps follows" longdesc="img_text/on_range_partitioned_table.html"><br><a href="img_text/on_range_partitioned_table.html">Description of the illustration on_range_partitioned_table.eps</a></div>
+                  <p>(<span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127592">segment_attributes_clause::=</a></span>)
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127615">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-324E0D83-3632-42A9-858B-E9D0F536EFD1"><span class="italic">on_list_partitioned_table</span>::=
+                  </p><a id="d383015e1083" class="indexterm-anchor"></a><div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-D21BD4E1-60FA-46AC-A3EC-BEAF36C99AB7"><img src="img/on_list_partitioned_table.gif" alt="Description of on_list_partitioned_table.eps follows" title="Description of on_list_partitioned_table.eps follows" longdesc="img_text/on_list_partitioned_table.html"><br><a href="img_text/on_list_partitioned_table.html">Description of the illustration on_list_partitioned_table.eps</a></div>
+                  <p>(<span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127592">segment_attributes_clause::=</a></span>)
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127592">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-4E2C286D-2EC9-4E04-8216-580219A50F54"><span class="italic">segment_attributes_clause</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-65E5ACF0-0DE2-4298-8E4D-FB23C3163F7F"><img src="img/segment_attributes_clause.gif" alt="Description of segment_attributes_clause.eps follows" title="Description of segment_attributes_clause.eps follows" longdesc="img_text/segment_attributes_clause.html"><br><a href="img_text/segment_attributes_clause.html">Description of the illustration segment_attributes_clause.eps</a></div>
+                  <p>(<span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127508">physical_attributes_clause::=</a></span>, <code class="codeph">TABLESPACE</code> <code class="codeph">SET</code>: not supported with <code class="codeph">CREATE</code> <code class="codeph">INDEX</code>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2182589">logging_clause::=</a></span></p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127630">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-DEFC92B9-A9FE-406D-A941-B8FEF587AB38"><span class="italic">on_hash_partitioned_table</span>::=
+                  </p><a id="d383015e1133" class="indexterm-anchor"></a><div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-DFF1299A-E9BA-4381-8062-A573E9931A0B"><img src="img/on_hash_partitioned_table.gif" alt="Description of on_hash_partitioned_table.eps follows" title="Description of on_hash_partitioned_table.eps follows" longdesc="img_text/on_hash_partitioned_table.html"><br><a href="img_text/on_hash_partitioned_table.html">Description of the illustration on_hash_partitioned_table.eps</a></div>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127641">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-94D34600-9A7E-456A-8F6A-CB79AA2CE6D5"><span class="italic">on_comp_partitioned_table</span>::=
+                  </p><a id="d383015e1147" class="indexterm-anchor"></a><div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-15CDA498-E907-4E3A-89DF-DEE364C78489"><img src="img/on_comp_partitioned_table.gif" alt="Description of on_comp_partitioned_table.eps follows" title="Description of on_comp_partitioned_table.eps follows" longdesc="img_text/on_comp_partitioned_table.html"><br><a href="img_text/on_comp_partitioned_table.html">Description of the illustration on_comp_partitioned_table.eps</a></div>
+                  <p>(<span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127592">segment_attributes_clause::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127535">index_compression::=</a></span>, <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127707">index_subpartition_clause::=</a></span>)
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127707">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-CF739410-9E25-4F41-854C-508C8586AF97"><span class="italic">index_subpartition_clause</span>::=
+                  </p><a id="d383015e1173" class="indexterm-anchor"></a><a id="d383015e1177" class="indexterm-anchor"></a><div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-00924FB3-E2A9-42E5-8E1A-27A0E7698C89"><img src="img/index_subpartition_clause.gif" alt="Description of index_subpartition_clause.eps follows" title="Description of index_subpartition_clause.eps follows" longdesc="img_text/index_subpartition_clause.html"><br><a href="img_text/index_subpartition_clause.html">Description of the illustration index_subpartition_clause.eps</a></div>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2127546">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-581556DD-2811-4484-8341-301954D96B23"><span class="italic">parallel_clause</span>::=
+                  </p>
+                  <div class="figure" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-58FF90CB-77A5-4A23-B877-0A9D35355841"><img src="img/parallel_clause.gif" alt="Description of parallel_clause.eps follows" title="Description of parallel_clause.eps follows" longdesc="img_text/parallel_clause.html"><br><a href="img_text/parallel_clause.html">Description of the illustration parallel_clause.eps</a></div>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2182635">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-E95BC160-39C0-4EE9-A757-3F556F02772F">Semantics</p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-A33FBEB3-D036-4EBA-B962-E9C9909BEBF7">UNIQUE</p>
+                  <p><a id="d383015e1197" class="indexterm-anchor"></a><a id="d383015e1201" class="indexterm-anchor"></a><a id="d383015e1203" class="indexterm-anchor"></a>Specify <code class="codeph">UNIQUE</code> to indicate that the value of the column (or columns) upon which the index is based must be unique.
+                  </p>
+                  <p><span class="bold">Restrictions on Unique Indexes</span></p>
+                  <p>Unique indexes are subject to the following restrictions:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>You cannot specify both <code class="codeph">UNIQUE</code> and <code class="codeph">BITMAP</code>.
+                        </p>
+                     </li>
+                     <li>
+                        <p>You cannot specify <code class="codeph">UNIQUE</code> for a domain index.
+                        </p>
+                     </li>
+                  </ul>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-F86CAC63-E538-4289-AA68-C95AF9F86754">
+                     <p class="notep1">See Also:</p>
+                     <p><span class="q">"<a href="constraint.html#GUID-1055EA97-BA6F-4764-A15F-1024FD5B6DFE__I1034458">Unique Constraints</a>"</span> for information on the conditions that satisfy a unique constraint
+                     </p>
+                  </div>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2077580">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-CC43361D-C7B3-4A9B-9ED5-4C289B6EE716">BITMAP</p>
+                  <p><a id="d383015e1242" class="indexterm-anchor"></a><a id="d383015e1246" class="indexterm-anchor"></a><a id="d383015e1248" class="indexterm-anchor"></a>Specify <code class="codeph">BITMAP</code> to indicate that <span class="italic"><code class="codeph">index</code></span> is to be created with a bitmap for each distinct key, rather than indexing each row separately. Bitmap indexes store the rowids associated with a key value as a bitmap. Each bit in the bitmap corresponds to a possible rowid. If the bit is set, then it means that the row with the corresponding rowid contains the key value. The internal representation of bitmaps is best suited for applications with low levels of concurrent transactions, such as data warehousing. 
+                  </p>
+                  <div class="infoboxnote" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-D9837691-29DF-4822-8EFA-21521C32C0D0">
+                     <p class="notep1">Note:</p>
+                     <p>Oracle does not index table rows in which all key columns are null except in the case of bitmap indexes. Therefore, if you want an index on all rows of a table, then you must either specify <code class="codeph">NOT</code> <code class="codeph">NULL</code> constraints for the index key columns or create a bitmap index.
+                     </p>
+                  </div>
+                  <p><span class="bold">Restrictions on Bitmap Indexes</span></p>
+                  <p>Bitmap indexes are subject to the following restrictions:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>You cannot specify <code class="codeph">BITMAP</code> when creating a global partitioned index.
+                        </p>
+                     </li>
+                     <li>
+                        <p>You cannot create a bitmap secondary index on an index-organized table unless the index-organized table has a mapping table associated with it.</p>
+                     </li>
+                     <li>
+                        <p>You cannot specify both <code class="codeph">UNIQUE</code> and <code class="codeph">BITMAP</code>.
+                        </p>
+                     </li>
+                     <li>
+                        <p>You cannot specify <code class="codeph">BITMAP</code> for a domain index.
+                        </p>
+                     </li>
+                     <li>
+                        <p>A bitmap index can have a maximum of 30 columns.</p>
+                     </li>
+                  </ul>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-F9B25DE3-3C03-495C-93F1-A68D15ADE069">
+                     <p class="notep1">See Also:</p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=CNCPT811" target="_blank"><span class="italic">Oracle Database Concepts</span></a> and <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=TGSQL850" target="_blank"><span class="italic">Oracle Database SQL Tuning Guide</span></a> for more information about using bitmap indexes
+                           </p>
+                        </li>
+                        <li>
+                           <p><a href="CREATE-TABLE.html#GUID-F9CE0CC3-13AE-4744-A43C-EAC7A71AAAB6">CREATE TABLE</a> for information on mapping tables
+                           </p>
+                        </li>
+                        <li>
+                           <p><span class="q">"<a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2129648">Bitmap Index Examples</a>"</span></p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-1F93CFDD-A2C6-42C8-8C4F-2652D8912EDD"><span class="bold">MULTIVALUE</span></p>
+                  <p>Use the <code class="codeph">MULTIVALUE</code> keyword to create a multivalue index on JSON data using simple dot-notation syntax to specify the path to the indexed data.  
+                  </p>
+                  <p><span class="bold">Example</span></p>
+                  <p>The multivalue index created here indexes the values of top-level field <code class="codeph">credit_score</code>. If the <code class="codeph">credit_score</code> value targeted by a query is an array, then the index can be picked up for any array elements that are numbers. If the value is a scalar, then the index can be picked up if the scalar is a number.
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE MULTIVALUE INDEX mvi_1 ON mytable t
+      (t.jcol.credit_score.numberOnly());</pre><div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-333D88A0-55F5-46FA-BDFF-5C145B96E17F">
+                     <p class="notep1">See Also:</p>
+                     <ul style="list-style-type: disc;" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__UL_V52_DRY_ZMB">
+                        <li>
+                           <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADJSN-GUID-8A1B098E-D4FE-436E-A715-D8B465655C0D" target="_blank">Indexes for JSON Data</a></p>
+                        </li>
+                        <li>
+                           <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADJSN-GUID-7249417B-A337-4854-8040-192D5CEFD576" target="_blank">Simple Dot-Notation Access to JSON Data</a></p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-9F542E6F-CC27-40D6-BC54-487C44E68844">IF NOT EXISTS</p>
+                  <p>Specifying <code class="codeph">IF NOT EXISTS</code> has the following effects:
+                  </p>
+                  <ul style="list-style-type: disc;" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__UL_WPP_3N2_GVB">
+                     <li>
+                        <p> If the index does not exist, a new index is created at the end of the statement.</p>
+                     </li>
+                     <li>
+                        <p>If the index exists, this is the index you have at the end of the statement. A new one is not created because the older index is detected.</p>
+                     </li>
+                  </ul>
+                  <p>Using <code class="codeph">IF EXISTS</code> with <code class="codeph">CREATE INDEX</code> results in <code class="codeph">ORA-11543: Incorrect IF NOT EXISTS clause for CREATE statement</code>.
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-002B1112-523E-4F23-BA46-FD5F6FE04582"><span class="italic">schema</span></p>
+                  <p>Specify the schema to contain the index. If you omit <span class="italic"><code class="codeph">schema</code></span>, then Oracle Database creates the index in your own schema. 
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-7AB8C1E3-A600-4AE0-91AC-B0F53A076C9B"><span class="italic">index_name</span></p>
+                  <p>Specify the name of the index to be created. The name must satisfy the requirements listed in <a href="Database-Object-Names-and-Qualifiers.html#GUID-75337742-67FD-4EC0-985F-741C93D918DA">Database Object Naming Rules</a>.
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-462E8F41-D147-4130-B035-2D9EF846CC24">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2105550">Creating an Index: Example</a> and <a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2113966">Creating an Index on an XMLType Table: Example</a></p>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-CA215A12-3FB9-413E-B322-3BFE5A7E2087"><span class="italic">index_ilm_clause</span></p>
+                  <p>With Oracle Database Release 20c you can use the <span class="italic"><code class="codeph">index_ilm_clause</code></span> to add or delete an ILM policy to an index.
+                  </p>
+                  <p> You can also add an ILM policy to an index after you create it with the <code class="codeph">ALTER INDEX</code> statement.
+                  </p>
+                  <p>When you create an index with an ILM policy, you can add only one new policy. To add more policies to an index, or to modify existing policies on the index you must use the <code class="codeph">ALTER INDEX</code> statement.
+                  </p>
+                  <p>You cannot modify an ILM policy at the index partition level. The index level modification will be cascaded to all partitions. </p>
+                  <p><span class="bold">Examples</span></p><pre class="oac_no_warn" dir="ltr">CREATE INDEX [schema.]empno_idx ILM_POLICY</pre><p><span class="bold">Restrictions</span></p>
+                  <p>You cannot add an ILM policy on cluster indexes and IOTs.</p>
+                  <p>You cannot add an ILM policy on domain indexes and bitmap indexes.</p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-114BE558-83F5-4CA6-8DD5-897E177657AD"><span class="italic">policy_clause</span></p>
+                  <p>The <code class="codeph">OPTIMIZE</code> index policy chooses the appropriate action if the policy condtion is met.
+                  </p>
+                  <p>You can create ILM policies on objects in the same schema.  </p>
+                  <p>If you want to move the ILM policy to a different tablespace, you must ensure that you have the necessary permissions for all the tablespaces mentioned in the ILM policy.</p>
+                  <p>You must also ensure that you have the necessary storage on the target tablespaces for storage tiering jobs. </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-EDC59A91-DA91-4FEC-8C6D-41B208D45A7B"><span class="italic">cluster_index_clause</span></p>
+                  <p>Use the <span class="italic"><code class="codeph">cluster_index_clause</code></span> to identify the cluster for which a cluster index is to be created. If you do not qualify cluster with <span class="italic"><code class="codeph">schema</code></span>, then Oracle Database assumes the cluster is in your current schema. You cannot create a cluster index for a hash cluster. 
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-CABACEE9-FEA5-446C-B972-46D026CA01CF">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="CREATE-CLUSTER.html#GUID-4DBC701F-AFC3-486D-AA32-B5CB1D6946F7">CREATE CLUSTER</a> and <span class="q">"<a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2129513">Creating a Cluster Index: Example</a>"</span></p>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-CBA10D7E-9A93-4EBD-B82B-618361EBEDE0"><span class="italic">table_index_clause </span></p>
+                  <p>Specify the table on which you are defining the index. If you do not qualify <span class="italic"><code class="codeph">table</code></span> with <span class="italic"><code class="codeph">schema</code></span>, then Oracle Database assumes the table is contained in your own schema. 
+                  </p>
+                  <p>You create an index on a nested table column by creating the index on the nested table storage table. Include the <code class="codeph">NESTED_TABLE_ID</code> pseudocolumn of the storage table to create a <code class="codeph">UNIQUE</code> index, which effectively ensures that the rows of a nested table value are distinct.
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-8D05857F-95A8-45F7-9475-91A4A05804BB">
+                     <p class="notep1">See Also:</p>
+                     <p><span class="q">"<a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2129697">Indexes on Nested Tables: Example</a>"</span></p>
+                  </div>
+                  <p>You can perform DDL operations (such as <code class="codeph">ALTER</code> <code class="codeph">TABLE</code>, <code class="codeph">DROP</code> <code class="codeph">TABLE</code>, <code class="codeph">CREATE</code> <code class="codeph">INDEX</code>) on a temporary table only when no session is bound to it. A session becomes bound to a temporary table by performing an <code class="codeph">INSERT</code> operation on the table. A session becomes unbound to the temporary table by issuing a <code class="codeph">TRUNCATE</code> statement or at session termination, or, for a transaction-specific temporary table, by issuing a <code class="codeph">COMMIT</code> or <code class="codeph">ROLLBACK</code> statement.
+                  </p>
+                  <p><span class="bold">Restrictions on the</span> <span class="bold"><span class="italic">table_index_clause</span></span></p>
+                  <p>This clause is subject to the following restrictions:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>If <span class="italic"><code class="codeph">index</code></span> is locally partitioned, then <span class="italic"><code class="codeph">table</code></span> must be partitioned.
+                        </p>
+                     </li>
+                     <li>
+                        <p>If <span class="italic"><code class="codeph">table</code></span> is index-organized, then this statement creates a secondary index. The index contains the index key and the logical rowid of the index-organized table. The logical rowid excludes columns that are also part of the index key. You cannot specify <code class="codeph">REVERSE</code> for this secondary index, and the combined size of the index key and the logical rowid should be less than the block size.
+                        </p>
+                     </li>
+                     <li>
+                        <p>If <span class="italic"><code class="codeph">table</code></span> is a temporary table, then <span class="italic"><code class="codeph">index</code></span> will also be temporary with the same scope (session or transaction) as <span class="italic"><code class="codeph">table</code></span>. The following restrictions apply to indexes on temporary tables:
+                        </p>
+                        <ul style="list-style-type: disc;">
+                           <li>
+                              <p>The only part of <span class="italic"><code class="codeph">index_properties</code></span> you can specify is <span class="italic"><code class="codeph">index_attributes</code></span>.
+                              </p>
+                           </li>
+                           <li>
+                              <p>Within <span class="italic"><code class="codeph">index_attributes</code></span>, you cannot specify the <span class="italic"><code class="codeph">physical_attributes_clause</code></span>, the <span class="italic"><code class="codeph">parallel_clause</code></span>, the <span class="italic"><code class="codeph">logging_clause</code></span>, or <code class="codeph">TABLESPACE</code>.
+                              </p>
+                           </li>
+                           <li>
+                              <p>You cannot create a domain index or a partitioned index on a temporary table.</p>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <p>You cannot create an index on an external table.</p>
+                     </li>
+                  </ul>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-489BC329-7A5D-4721-BA27-EACAF6A06FF8">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="CREATE-TABLE.html#GUID-F9CE0CC3-13AE-4744-A43C-EAC7A71AAAB6">CREATE TABLE</a> and <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=CNCPT211" target="_blank"><span class="italic">Oracle Database Concepts</span></a> for more information on temporary tables
+                     </p>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-6039F92A-F0DF-4138-AE99-99F3007D621C"><span class="italic">t_alias</span></p>
+                  <p>Specify a correlation name (alias) for the table upon which you are building the index.</p>
+                  <div class="infoboxnote" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-96A69C0A-BD85-4D6A-BD1B-42C720B0C02E">
+                     <p class="notep1">Note:</p>
+                     <p>This alias is required if the <span class="italic"><code class="codeph">index_expr</code></span> references any object type attributes or object type methods. See <span class="q">"<a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2063357">Creating a Function-based Index on a Type Method: Example</a>"</span> and <span class="q">"<a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2089060">Indexing on Substitutable Columns: Examples</a>"</span>.
+                     </p>
+                  </div>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2062718">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-457FE8CD-B45C-4669-80E2-50DB96D13A28"><span class="italic">index_expr</span></p>
+                  <p>For <span class="italic"><code class="codeph">index_expr</code></span>, specify the column or column expression upon which the index is based.
+                  </p>
+                  <p>You can create multiple indexes on the same set of columns, column expressions, or both if the following conditions are met:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>The indexes are of different types, use different partitioning, or have different uniqueness properties.</p>
+                     </li>
+                     <li>
+                        <p>Only one of the indexes is <code class="codeph">VISIBLE</code> at any given time.
+                        </p>
+                     </li>
+                  </ul>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-B7021E8C-DBB2-4788-B0DA-935A642AA14E">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADMIN13845" target="_blank"><span class="italic">Oracle Database Administrator's Guide</span></a> for more information on creating multiple indexes
+                     </p>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-C1C5B553-9F49-4434-955E-A65E4C1DCAB5"></p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-22B6E25F-986C-4FB7-83F4-CC774B1314EB"><span class="italic">column </span></p>
+                  <p>Specify the name of one or more columns in the table. A bitmap index can have a maximum of 30 columns. Other indexes can have as many as 32 columns. These columns define the <span class="bold">index</span> <span class="bold">key</span>.
+                  </p>
+                  <p>If a unique index is local nonprefixed (see <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2135151">local_partitioned_index</a></span>), then the index key must contain the partitioning key. 
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-5F312CFB-413B-4514-A99E-25A7380C2CFF">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=VLDBG004" target="_blank"><span class="italic">Oracle Database VLDB and Partitioning Guide</span></a> for information on prefixed and nonprefixed indexes
+                     </p>
+                  </div>
+                  <p>You can create an index on a scalar object attribute column or on the system-defined <code class="codeph">NESTED_TABLE_ID</code> column of the nested table storage table. If you specify an object attribute column, then the column name must be qualified with the table name. If you specify a nested table column attribute, then it must be qualified with the outermost table name, the containing column name, and all intermediate attribute names leading to the nested table column attribute.
+                  </p>
+                  <p>When you create an index on a column or expression with a declared or derived named collation other than <code class="codeph">BINARY</code>, or a declared or derived pseudo-collation <code class="codeph">USING_NLS_SORT_CI</code> or <code class="codeph">USING_NLS_SORT_AI</code>, the database creates a functional index on the function <code class="codeph">NLSSORT</code>. See <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=NLSPG-GUID-7BEA5143-69C0-4496-AA3E-0EA89C22B833" target="_blank"><span class="italic">Oracle Database Globalization Support Guide</span></a> for more information.
+                  </p>
+                  <p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BGECBJDG"><span class="bold">Creating an Index on an Extended Data Type Column</span></p>
+                  <p>If <span class="italic"><code class="codeph">column</code></span> is an extended data type column, then you may receive a "maximum key length exceeded" error when attempting to create the index. The maximum key length for an index varies depending on the database block size and some additional index metadata stored in a block. For example, for databases that use the Oracle standard 8K block size, the maximum key length is approximately 6400 bytes.
+                  </p>
+                  <p>To work around this situation, you must shorten the length of the values you want to index, using one of the following methods:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>Create a function-based index to shorten the values stored in the extended data type column as part of the expression used for the index definition.</p>
+                     </li>
+                     <li>
+                        <p>Create a virtual column to shorten the values stored in the extended data type column as part of the expression used for the virtual column definition and build a normal index on the virtual column. Using a virtual column also enables you to leverage functionality for regular columns, such as collecting statistics and using constraint and triggers.</p>
+                     </li>
+                  </ul>
+                  <p>For both methods you can use either the <code class="codeph">SUBSTR</code> or <code class="codeph">STANDARD_HASH</code> function to shorten the values of the extended data type column to build an index. These methods have the following advantages and disadvantages:
+                  </p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>Use the <code class="codeph">SUBSTR</code> function to return a substring, or prefix, of <span class="italic"><code class="codeph">column</code></span> that is an acceptable length for the index key. This type of index can be used for equality, IN-list, and range predicates on the original column without the need to specify the <code class="codeph">SUBSTR</code> column as part of the predicate. Refer to <a href="SUBSTR.html#GUID-C8A20B57-C647-4649-A379-8651AA97187E">SUBSTR</a> for more information.
+                        </p>
+                     </li>
+                     <li>
+                        <p>Using the <code class="codeph">STANDARD_HASH</code> function is likely to create an index that is more compact than the substring-based index and may result in fewer unnecessary index accesses. This type of index can be used for equality and IN-list predicates on the original column without the need to specify the <code class="codeph">STANDARD_HASH</code> column as part of the predicate. Refer to <a href="STANDARD_HASH.html#GUID-4A68DACE-CFCF-443B-8651-B6CEAA7C4FD7">STANDARD_HASH</a> for more information.
+                        </p>
+                     </li>
+                  </ul>
+                  <p>The following example shows how to create a function-based index on an extended data type column:</p><pre class="oac_no_warn" dir="ltr">CREATE INDEX <span class="italic">index</span> ON <span class="italic">table</span> (SUBSTR(<span class="italic">column</span>, 1, <span class="italic">n</span>));
+</pre><p>For n, specify a prefix length that is large enough to differentiate between values in <span class="italic"><code class="codeph">column</code></span>.
+                  </p>
+                  <p>The following example shows how to create a virtual column for an extended data type column, and then create an index on the virtual column:</p><pre class="oac_no_warn" dir="ltr">ALTER TABLE <span class="italic">table</span> ADD (<span class="italic">new_hash_column</span> AS (STANDARD_HASH(<span class="italic">column</span>)));
+CREATE INDEX <span class="italic">index</span> ON <span class="italic">table</span> (<span class="italic">new_hash_column</span>);</pre><div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-36EB136B-5A55-49B0-82BF-EFC9749B998F">
+                     <p class="notep1">See Also:</p>
+                     <p><span class="q">"<a href="Data-Types.html#GUID-8EFA29E9-E8D8-40A6-A43E-954908C954A4">Extended Data Types</a>"</span> for more information on extended data types
+                     </p>
+                  </div>
+                  <p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BGEBJEBB"><span class="bold">Restrictions on Index Columns</span></p>
+                  <p>The following restrictions apply to index columns:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>You cannot create an index on columns or attributes whose type is user-defined, <code class="codeph">LONG</code>, <code class="codeph">LONG</code> <code class="codeph">RAW</code>, LOB, or <code class="codeph">REF</code>, except that Oracle Database supports an index on <code class="codeph">REF</code> type columns or attributes that have been defined with a <code class="codeph">SCOPE</code> clause.
+                        </p>
+                     </li>
+                     <li>
+                        <p>Only normal (B-tree) indexes can be created on encrypted columns, and they can only be used for equality searches.</p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2100962">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-21355774-3B8F-4208-BB4A-CE8FED179286"><span class="italic">column_expression</span></p>
+                  <p>Specify an expression built from columns of <span class="italic"><code class="codeph">table</code></span>, constants, SQL functions, and user-defined functions. When you specify <span class="italic"><code class="codeph">column_expression</code></span>, you create a <span class="bold">function-based index</span>. 
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-2C287F5F-0D93-45A9-8FB3-05E7269570FC">
+                     <p class="notep1">See Also:</p>
+                     <p><span class="q">"<a href="Column-Expressions.html#GUID-B16B2D82-5D4B-485B-AE20-160EC0C7137A">Column Expressions</a>"</span>, <span class="q">"<a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2078649">Notes on Function-based Indexes</a>"</span>, <span class="q">"<a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2078657">Restrictions on Function-based Indexes</a>"</span>, and <span class="q">"<a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2092987">Function-Based Index Examples</a>"</span></p>
+                  </div>
+                  <p>Name resolution of the function is based on the schema of the index creator. User-defined functions used in <span class="italic"><code class="codeph">column_expression</code></span> are fully name resolved during the <code class="codeph">CREATE</code> <code class="codeph">INDEX</code> operation.
+                  </p>
+                  <p>After creating a function-based index, collect statistics on both the index and its base table using the <code class="codeph">DBMS_STATS</code> package. Such statistics will enable Oracle Database to correctly decide when to use the index.
+                  </p>
+                  <p>Function-based unique indexes can be useful in defining a conditional unique constraint on a column or combination of columns. Refer to <span class="q">"<a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BGEHDECJ">Using a Function-based Index to Define Conditional Uniqueness: Example</a>"</span> for an example.
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-6422CC1A-E691-4597-A720-901ADD98CBF2">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ARPLS059" target="_blank"><span class="italic">Oracle Database PL/SQL Packages and Types Reference </span></a>for more information on the <code class="codeph">DBMS_STATS</code> package
+                     </p>
+                  </div>
+                  <p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2078649"><span class="bold">Notes on Function-based Indexes</span></p>
+                  <p>The following notes apply to function-based indexes:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>When you subsequently query a table that uses a function-based index, Oracle Database will not use the index unless the query filters out nulls. However, Oracle Database will use a function-based index in a query even if the columns specified in the <code class="codeph">WHERE</code> clause are in a different order than their order in the <span class="italic"><code class="codeph">column_expression</code></span> that defined the function-based index. 
+                        </p>
+                        <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-A9472E05-6D5B-49F2-A924-CD2DE95AA894">
+                           <p class="notep1">See Also:</p>
+                           <p><span class="q">"<a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2092987">Function-Based Index Examples</a>"</span></p>
+                        </div>
+                     </li>
+                     <li>
+                        <p>If the function on which the index is based becomes invalid or is dropped, then Oracle Database marks the index <code class="codeph">DISABLED</code>. Queries on a <code class="codeph">DISABLED</code> index fail if the optimizer chooses to use the index. DML operations on a <code class="codeph">DISABLED</code> index fail unless the index is also marked <code class="codeph">UNUSABLE</code> <span class="bold">and</span> the parameter <code class="codeph">SKIP_UNUSABLE_INDEXES</code> is set to <code class="codeph">true</code>. Refer to <a href="ALTER-SESSION.html#GUID-27186B28-7EFC-4998-B1ED-2B905CC0211B">ALTER SESSION</a> for more information on this parameter.
+                        </p>
+                     </li>
+                     <li>
+                        <p>If a public synonym for a function, package, or type is used in <span class="italic"><code class="codeph">column_expression</code></span>, and later an actual object with the same name is created in the table owner's schema, then Oracle Database disables the function-based index. When you subsequently enable the function-based index using <code class="codeph">ALTER</code> <code class="codeph">INDEX</code> ... <code class="codeph">ENABLE</code> or <code class="codeph">ALTER</code> <code class="codeph">INDEX</code> ... <code class="codeph">REBUILD</code>, the function, package, or type used in the <span class="italic"><code class="codeph">column_expression</code></span> continues to resolve to the function, package, or type to which the public synonym originally pointed. It will not resolve to the new function, package, or type.
+                        </p>
+                     </li>
+                     <li>
+                        <p>If the definition of a function-based index generates internal conversion to character data, then use caution when changing NLS parameter settings. Function-based indexes use the current database settings for NLS parameters. If you reset these parameters at the session level, then queries using the function-based index may return incorrect results. Two exceptions are the collation parameters (<code class="codeph">NLS_SORT</code> and <code class="codeph">NLS_COMP</code>). Oracle Database handles the conversions correctly even if these have been reset at the session level.
+                        </p>
+                     </li>
+                     <li>
+                        <p>Oracle Database cannot convert data in all cases, even when conversion is explicitly requested. For example, an attempt to convert the string <code class="codeph">'105 lbs'</code> from <code class="codeph">VARCHAR2</code> to <code class="codeph">NUMBER</code> using the <code class="codeph">TO_NUMBER</code> function fails with an error. Therefore, if <span class="italic"><code class="codeph">column_expression</code></span> contains a data conversion function such as <code class="codeph">TO_NUMBER</code> or <code class="codeph">TO_DATE</code>, and if a subsequent <code class="codeph">INSERT</code> or <code class="codeph">UPDATE</code> statement includes data that the conversion function cannot convert, then the index will cause the <code class="codeph">INSERT</code> or <code class="codeph">UPDATE</code> statement to fail.
+                        </p>
+                     </li>
+                     <li>
+                        <p>If <span class="italic"><code class="codeph">column_expression</code></span> contains a datetime format model, then the function-based index expression defining the column may contain format elements that are different from those specified. For example, define a function-based index using the <code class="codeph">yyyy</code> datetime format element:
+                        </p><pre class="oac_no_warn" dir="ltr">CREATE INDEX cust_eff_ix ON customers
+  (NVL(cust_eff_to, TO_DATE('9000-01-01 00:00:00', '<span class="bold">yyyy</span>-mm-dd hh24:mi:ss')));
+</pre><p>Query the <code class="codeph">ALL_IND_EXPRESSIONS</code> view to see that the function-based index expression defining the column uses the <code class="codeph">syyyy</code> datetime format element:
+                        </p><pre class="oac_no_warn" dir="ltr">SELECT column_expression
+  FROM all_ind_expressions
+  WHERE index_name='CUST_EFF_IX';
+
+COLUMN_EXPRESSION
+------------------------------------------------------------------------------
+NVL("CUST_EFF_TO",TO_DATE(' 9000-01-01 00:00:00', '<span class="bold">syyyy</span>-mm-dd hh24:mi:ss'))</pre></li>
+                  </ul>
+                  <p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2078657"><span class="bold">Restrictions on Function-based Indexes</span></p>
+                  <p>Function-based indexes are subject to the following restrictions:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>The value returned by the function referenced in <span class="italic"><code class="codeph">column_expression</code></span> is subject to the same restrictions as are the index columns of a B-tree index. Refer to <span class="q">"<a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BGEBJEBB">Restrictions on Index Columns</a>"</span>.
+                        </p>
+                     </li>
+                     <li>
+                        <p>Any user-defined function referenced in <span class="italic"><code class="codeph">column_expression</code></span> must be declared as <code class="codeph">DETERMINISTIC</code>.
+                        </p>
+                     </li>
+                     <li>
+                        <p>For a function-based globally partitioned index, the <span class="italic"><code class="codeph">column_expression</code></span> cannot be the partitioning key.
+                        </p>
+                     </li>
+                     <li>
+                        <p>The <span class="italic"><code class="codeph">column_expression</code></span> can be any of the forms of expression described in <a href="Column-Expressions.html#GUID-B16B2D82-5D4B-485B-AE20-160EC0C7137A">Column Expressions</a>.
+                        </p>
+                     </li>
+                     <li>
+                        <p>All functions must be specified with parentheses, even if they have no parameters. Otherwise Oracle Database interprets them as column names.</p>
+                     </li>
+                     <li>
+                        <p>Any function you specify in <span class="italic"><code class="codeph">column_expression</code></span> must return a repeatable value. For example, you cannot specify the <code class="codeph">SYSDATE</code> or <code class="codeph">USER</code> function or the <code class="codeph">ROWNUM</code> pseudocolumn. 
+                        </p>
+                     </li>
+                  </ul>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-A3C666C5-52E5-49F2-A7D3-0B47B886D035">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="CREATE-FUNCTION.html#GUID-156AEDAC-ADD0-4E46-AA56-6D1F7CA63306">CREATE FUNCTION</a> and <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=LNPLS01322" target="_blank"><span class="italic">Oracle Database PL/SQL Language Reference</span></a></p>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-92F4F0FB-499A-4ED7-8630-B219F8A50B90">ASC | DESC</p>
+                  <p><a id="d383015e2178" class="indexterm-anchor"></a><a id="d383015e2182" class="indexterm-anchor"></a><a id="d383015e2186" class="indexterm-anchor"></a><a id="d383015e2192" class="indexterm-anchor"></a><a id="d383015e2198" class="indexterm-anchor"></a><a id="d383015e2202" class="indexterm-anchor"></a>Use <code class="codeph">ASC</code> or <code class="codeph">DESC</code> to indicate whether the index should be created in ascending or descending order. Indexes on character data are created in ascending or descending order of the character values in the database character set. 
+                  </p>
+                  <p>Oracle Database treats descending indexes as if they were function-based indexes. As with other function-based indexes, the database does not use descending indexes until you first analyze the index and the table on which the index is defined. See the <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2100962">column_expression</a></span> clause of this statement.
+                  </p>
+                  <p>Ascending unique indexes allow multiple <code class="codeph">NULL</code> values. However, in descending unique indexes, multiple <code class="codeph">NULL</code> values are treated as duplicate values and therefore are not permitted.
+                  </p>
+                  <p><span class="bold">Restriction on Ascending and Descending Indexes</span></p>
+                  <p>You cannot specify either of these clauses for a domain index. You cannot specify <code class="codeph">DESC</code> for a reverse index. Oracle Database ignores <code class="codeph">DESC</code> if <span class="italic"><code class="codeph">index</code></span> is bitmapped or if the <code class="codeph">COMPATIBLE</code> initialization parameter is set to a value less than 8.1.0.
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2075657">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-34B9D381-317D-4AE3-9A51-97384EC3F2EA"><span class="italic">index_attributes</span></p>
+                  <p>Specify the optional index attributes.</p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-8A917660-DBA0-4885-ACC1-B999DD274A4D"><span class="italic">physical_attributes_clause</span></p>
+                  <p><a id="d383015e2256" class="indexterm-anchor"></a><a id="d383015e2263" class="indexterm-anchor"></a><a id="d383015e2270" class="indexterm-anchor"></a><a id="d383015e2277" class="indexterm-anchor"></a>Use the <span class="italic"><code class="codeph">physical_attributes_clause</code></span> to establish values for physical and storage characteristics for the index. 
+                  </p>
+                  <p>If you omit this clause, then Oracle Database sets <code class="codeph">PCTFREE</code> to 10 and <code class="codeph">INITRANS</code> to 2.
+                  </p>
+                  <p><span class="bold">Restriction on Index Physical Attributes</span></p>
+                  <p>You cannot specify the <code class="codeph">PCTUSED</code> parameter for an index.
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-8FA41934-E996-42D9-8D11-4A62C469CDED">
+                     <p class="notep1">See Also:</p>
+                     <p><span class="italic"><a href="physical_attributes_clause.html#GUID-A15063A9-3237-43D3-B0AE-D01F6E80B393">physical_attributes_clause</a></span> and <span class="italic"><a href="physical_attributes_clause.html#GUID-A15063A9-3237-43D3-B0AE-D01F6E80B393__I1026834">storage_clause</a></span> for a complete description of these clauses
+                     </p>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-18A7E669-A2E4-40ED-A06D-34E420348D70">TABLESPACE</p>
+                  <p><a id="d383015e2319" class="indexterm-anchor"></a><a id="d383015e2323" class="indexterm-anchor"></a>For <span class="italic"><code class="codeph">tablespace</code></span>, specify the name of the tablespace to hold the index, index partition, or index subpartition. If you omit this clause, then Oracle Database creates the index in the default tablespace of the owner of the schema containing the index. 
+                  </p>
+                  <p>For a local index, you can specify the keyword <code class="codeph">DEFAULT</code> in place of <span class="italic"><code class="codeph">tablespace</code></span>. New partitions or subpartitions added to the local index will be created in the same tablespace(s) as the corresponding partitions or subpartitions of the underlying table.
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BABHDBHE">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-755BC035-D483-4C65-8107-DBADFCD81577"><span class="italic">index_compression</span></p>
+                  <p>The <span class="italic"><code class="codeph">index_compression</code></span> clauses let you enable or disable index compression for the index. Specify the <code class="codeph">COMPRESS</code> clause of <span class="italic"><code class="codeph">prefix_compression</code></span> to enable prefix compression for the index, specify the <code class="codeph">COMPRESS</code> <code class="codeph">ADVANCED</code> clause of <span class="italic"><code class="codeph">advanced_index_compression</code></span> to enable advanced index compression for the index, or specify the <code class="codeph">NOCOMPRESS</code> clause of either <span class="italic"><code class="codeph">prefix_compression</code></span> or <span class="italic"><code class="codeph">advanced_index_compression</code></span> to disable compression for the index. The default is <code class="codeph">NOCOMPRESS</code>.
+                  </p>
+                  <p>If you want to use compression for a partitioned index, then you must create the index with compression enabled at the index level. You can subsequently enable and disable the compression setting for individual partitions of such a partitioned index. You can also enable and disable compression when rebuilding individual partitions. You can modify an existing nonpartitioned index to enable or disable compression only when rebuilding the index.</p>
+                  <p><span class="bold"><span class="italic">prefix_compression</span></span> <a id="d383015e2390" class="indexterm-anchor"></a><a id="d383015e2394" class="indexterm-anchor"></a><a id="d383015e2398" class="indexterm-anchor"></a><a id="d383015e2402" class="indexterm-anchor"></a><a id="d383015e2406" class="indexterm-anchor"></a></p>
+                  <p>Specify <code class="codeph">COMPRESS</code> to enable <span class="bold">prefix</span> <span class="bold">compression</span>, also known as key compression, which eliminates repeated occurrence of key column values. Use <span class="italic"><code class="codeph">integer</code></span> to specify the prefix length (number of prefix columns to compress). You can specify prefix compression for indexes that are nonunique or unique indexes of at least two columns.
+                  </p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>For unique indexes, the range of valid prefix length values is from 1 to the number of key columns minus 1. The default prefix length is the number of key columns minus 1. </p>
+                     </li>
+                     <li>
+                        <p>For nonunique indexes, the range of valid prefix length values is from 1 to the number of key columns. The default prefix length is the number of key columns.</p>
+                     </li>
+                  </ul>
+                  <p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__CACIEEBC"><span class="italic"><span class="bold">advanced_index_compression</span></span></p>
+                  <p><a id="d383015e2437" class="indexterm-anchor"></a><a id="d383015e2441" class="indexterm-anchor"></a><a id="d383015e2445" class="indexterm-anchor"></a>Specify this clause to enable <span class="bold">advanced index compression</span>. Advanced index compression improves compression ratios significantly while still providing efficient access to indexes. Therefore, advanced index compression works well on all supported indexes, including those indexes that are not good candidates for prefix compression.
+                  </p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p><code class="codeph">COMPRESS</code> <code class="codeph">ADVANCED</code> <code class="codeph">LOW</code> - This level compresses the index less than the <code class="codeph">HIGH</code> level, but provides faster access to the index. You can specify this clause for indexes that are nonunique or unique indexes of at least two columns. Before enabling <code class="codeph">COMPRESS</code> <code class="codeph">ADVANCED</code> <code class="codeph">LOW</code>, the database must be at <code class="codeph">12</code>.<code class="codeph">1</code>.<code class="codeph">0</code> or higher compatibility level.
+                        </p>
+                     </li>
+                     <li>
+                        <p><code class="codeph">COMPRESS</code> <code class="codeph">ADVANCED</code> <code class="codeph">HIGH</code> - This level compresses the index more than the <code class="codeph">LOW</code> level, but provides slower access to the index. You can specify this clause for indexes that are nonunique or unique indexes of one or more columns. Before enabling <code class="codeph">COMPRESS</code> <code class="codeph">ADVANCED</code> <code class="codeph">HIGH</code>, the database must be at <code class="codeph">12</code>.<code class="codeph">2</code>.<code class="codeph">0</code> or higher compatibility level.
+                        </p>
+                     </li>
+                  </ul>
+                  <p>If you omit the <code class="codeph">LOW</code> and <code class="codeph">HIGH</code> keywords, then the default is <code class="codeph">HIGH</code>.
+                  </p>
+                  <p><span class="bold">Restrictions on Index Compression</span></p>
+                  <p>The following restrictions apply to index compression:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>You cannot specify prefix compression or advanced index compression for a bitmap index.</p>
+                     </li>
+                     <li>
+                        <p>You cannot specify advanced index compression for index-organized tables.</p>
+                     </li>
+                  </ul>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-D75820D2-E22D-4753-8CD5-2FF1683A2FD5">
+                     <p class="notep1">See Also:</p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=REFRN-GUID-5238D586-B068-46F7-9D8F-E4C174E5D5B2" target="_blank">DB_INDEX_COMPRESSION_INHERITANCE </a> for more on how index creation inherits compression attributes
+                           </p>
+                        </li>
+                        <li>
+                           <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADMIN14307" target="_blank"><span class="italic">Oracle Database Administrator's Guide</span></a> for more information on prefix compression and advanced index compression
+                           </p>
+                        </li>
+                        <li>
+                           <p><span class="q">"<a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2129467">Compressing an Index: Example</a>"</span></p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BGEBGEAH">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-454DE550-F7D5-47AE-A25D-66EB399E9ECD"><span class="italic">partial_index_clause</span></p>
+                  <p>You can specify this clause only when creating an index on a partitioned table. Specify <code class="codeph">INDEXING</code> <code class="codeph">FULL</code> to create a <span class="bold">full</span> <span class="bold">index</span>. Specify <code class="codeph">INDEXING</code> <code class="codeph">PARTIAL</code> to create a <span class="bold">partial</span> <span class="bold">index</span>. The default is <code class="codeph">INDEXING</code> <code class="codeph">FULL</code>.
+                  </p>
+                  <p>A full index includes all partitions in the underlying table, regardless of their indexing properties. A partial index includes only partitions in the underlying table with an indexing property of <code class="codeph">ON</code>.
+                  </p>
+                  <p>If a partial index is a local partitioned index, then index partitions that correspond with table partitions with an indexing property of <code class="codeph">ON</code> are marked <code class="codeph">USABLE</code>. Index partitions that correspond with table partitions with an indexing property of <code class="codeph">OFF</code> are marked <code class="codeph">UNUSABLE</code>.
+                  </p>
+                  <p>If the underlying table is a composite-partitioned table, then the preceding conditions for index partitions and table partitions apply instead to index subpartitions and table subpartitions.</p>
+                  <p><span class="bold">Restrictions on Partial Indexes</span></p>
+                  <p>Partial indexes are subject to the following restrictions:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>The underlying table of a partial index cannot be a nonpartitioned table.</p>
+                     </li>
+                     <li>
+                        <p>Unique indexes cannot be partial indexes. This applies to indexes created with the <code class="codeph">CREATE</code> <code class="codeph">UNIQUE</code> <code class="codeph">INDEX</code> statement and indexes that are implicitly created when you specify a unique constraint on one or more columns.
+                        </p>
+                     </li>
+                  </ul>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-CAEE79DD-203E-4EB9-91A6-05026A8FEEAA">
+                     <p class="notep1">See Also:</p>
+                     <p><code class="codeph">CREATE</code> <code class="codeph">TABLE</code> <span class="italic"><a href="CREATE-TABLE.html#GUID-F9CE0CC3-13AE-4744-A43C-EAC7A71AAAB6__CJAFJABE">indexing_clause</a></span> for information on the indexing property
+                     </p>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-FFBE6825-EA39-47EB-8D73-1A0F4DE59368">SORT | NOSORT</p>
+                  <p><a id="d383015e2659" class="indexterm-anchor"></a><a id="d383015e2663" class="indexterm-anchor"></a><a id="d383015e2665" class="indexterm-anchor"></a>By default, Oracle Database sorts indexes in ascending order when it creates the index. You can specify <code class="codeph">NOSORT</code> to indicate to the database that the rows are already stored in the database in ascending order, so that Oracle Database does not have to sort the rows when creating the index. If the rows of the indexed column or columns are not stored in ascending order, then the database returns an error. For greatest savings of sort time and space, use this clause immediately after the initial load of rows into a table. If you specify neither of these keywords, then <code class="codeph">SORT</code> is the default.
+                  </p>
+                  <p><span class="bold">Restrictions on NOSORT</span></p>
+                  <p>This parameter is subject to the following restrictions:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>You cannot specify <code class="codeph">REVERSE</code> with this clause. 
+                        </p>
+                     </li>
+                     <li>
+                        <p>You cannot use this clause to create a cluster index partitioned or bitmap index.</p>
+                     </li>
+                     <li>
+                        <p>You cannot specify this clause for a secondary index on an index-organized table.</p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-F2F6AE72-5AE2-4CE3-B454-6690E25666A7">REVERSE</p>
+                  <p><a id="d383015e2698" class="indexterm-anchor"></a><a id="d383015e2700" class="indexterm-anchor"></a><a id="d383015e2704" class="indexterm-anchor"></a>Specify <code class="codeph">REVERSE</code> to store the bytes of the index block in reverse order, excluding the rowid. 
+                  </p>
+                  <p><span class="bold">Restrictions on Reverse Indexes</span></p>
+                  <p>Reverse indexes are subject to the following restrictions:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>You cannot specify <code class="codeph">NOSORT</code> with this clause.
+                        </p>
+                     </li>
+                     <li>
+                        <p>You cannot reverse a bitmap index or an index on an index-organized table.</p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BABBCCAA">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-712976EB-4315-47BD-89F3-4F96DA59720C">VISIBLE | INVISIBLE</p>
+                  <p><a id="d383015e2731" class="indexterm-anchor"></a>Use this clause to specify whether the index is visible or invisible to the optimizer. An invisible index is maintained by DML operations, but it is not be used by the optimizer during queries unless you explicitly set the parameter <code class="codeph">OPTIMIZER_USE_INVISIBLE_INDEXES</code> to <code class="codeph">TRUE</code> at the session or system level. 
+                  </p>
+                  <p>To determine whether an existing index is visible or invisible to the optimizer, you can query the <code class="codeph">VISIBILITY</code> column of the <code class="codeph">USER_</code>, <code class="codeph">DBA_</code>, <code class="codeph">ALL_INDEXES</code> data dictionary views.
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-E0BF382D-0C6F-4DF7-A1F2-2F6E8CC9A299">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADMIN12317" target="_blank"><span class="italic">Oracle Database Administrator's Guide</span></a> for more information on this feature
+                     </p>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-38C60830-C64F-4F66-81C2-716D1B910437"><span class="italic">logging_clause</span></p>
+                  <p>Specify whether the creation of the index will be logged (<code class="codeph">LOGGING</code>) or not logged (<code class="codeph">NOLOGGING</code>) in the redo log file. This setting also determines whether subsequent Direct Loader (SQL*Loader) and direct-path <code class="codeph">INSERT</code> operations against the index are logged or not logged. <code class="codeph">LOGGING</code> is the default. 
+                  </p>
+                  <p>If <span class="italic"><code class="codeph">index</code></span> is nonpartitioned, then this clause specifies the logging attribute of the index. 
+                  </p>
+                  <p>If <span class="italic"><code class="codeph">index</code></span> is partitioned, then this clause determines: 
+                  </p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>The default value of all partitions specified in the <code class="codeph">CREATE</code> statement, unless you specify the <span class="italic"><code class="codeph">logging_clause</code></span> in the <code class="codeph">PARTITION</code> description clause
+                        </p>
+                     </li>
+                     <li>
+                        <p>The default value for the segments associated with the index partitions</p>
+                     </li>
+                     <li>
+                        <p>The default value for local index partitions or subpartitions added implicitly during subsequent <code class="codeph">ALTER</code> <code class="codeph">TABLE</code> ... <code class="codeph">ADD</code> <code class="codeph">PARTITION</code> operations
+                        </p>
+                     </li>
+                  </ul>
+                  <p>The logging attribute of the index is independent of that of its base table.</p>
+                  <p>If you omit this clause, then the logging attribute is that of the tablespace in which it resides.</p>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-66CF999B-F2B0-4106-8E85-8E6A54E16A69">
+                     <p class="notep1">See Also:</p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p><span class="italic"><a href="logging_clause.html#GUID-C4212274-5595-4045-A599-F033772C496E">logging_clause</a></span> for a full description of this clause
+                           </p>
+                        </li>
+                        <li>
+                           <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=VLDBG010" target="_blank"><span class="italic">Oracle Database VLDB and Partitioning Guide</span></a> for more information about logging and parallel DML
+                           </p>
+                        </li>
+                        <li>
+                           <p><span class="q">"<a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2129491">Creating an Index in NOLOGGING Mode: Example</a>"</span></p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-041E5429-065B-43D5-AC7F-66810140842C">ONLINE</p>
+                  <p><a id="d383015e2854" class="indexterm-anchor"></a><a id="d383015e2858" class="indexterm-anchor"></a><a id="d383015e2860" class="indexterm-anchor"></a><a id="d383015e2864" class="indexterm-anchor"></a>Specify <code class="codeph">ONLINE</code> to indicate that DML operations on the table will be allowed during creation of the index. 
+                  </p>
+                  <p><span class="bold">Restrictions on Online Index Building</span></p>
+                  <p>Online index building is subject to the following restrictions:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>Parallel DML is not supported during online index building. If you specify <code class="codeph">ONLINE</code> and then issue parallel DML statements, then Oracle Database returns an error.
+                        </p>
+                     </li>
+                     <li>
+                        <p>You can specify <code class="codeph">ONLINE</code> for a bitmap index or a cluster index as long as you set <code class="codeph">COMPATIBLE</code> to 10 or higher.
+                        </p>
+                     </li>
+                     <li>
+                        <p>You cannot specify <code class="codeph">ONLINE</code> for a conventional index on a <code class="codeph">UROWID</code> column.
+                        </p>
+                     </li>
+                     <li>
+                        <p>For a nonunique secondary index on an index-organized table, the number of index key columns plus the number of primary key columns that are included in the logical rowid in the index-organized table cannot exceed 32. The logical rowid excludes columns that are part of the index key.</p>
+                     </li>
+                  </ul>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-833F2680-4C76-4427-9166-14486E4DB032">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=CNCPT811" target="_blank"><span class="italic">Oracle Database Concepts</span></a> for a description of online index building and rebuilding 
+                     </p>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-A5F3666F-7631-45A6-B4B9-8E4F2B910926"><span class="italic">parallel_clause </span></p>
+                  <p><a id="d383015e2919" class="indexterm-anchor"></a><a id="d383015e2923" class="indexterm-anchor"></a>Specify the <span class="italic"><code class="codeph">parallel_clause</code></span> if you want creation of the index to be parallelized.
+                  </p>
+                  <p>For complete information on this clause, refer to <span class="italic"><a href="CREATE-TABLE.html#GUID-F9CE0CC3-13AE-4744-A43C-EAC7A71AAAB6__I2159323">parallel_clause</a></span> in the documentation on <code class="codeph">CREATE</code> <code class="codeph">TABLE</code>.
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-9A69DCB6-B110-4C8A-9305-161464755651">Index Partitioning Clauses</p>
+                  <p><a id="d383015e2948" class="indexterm-anchor"></a><a id="d383015e2952" class="indexterm-anchor"></a><a id="d383015e2956" class="indexterm-anchor"></a>Use the <span class="italic"><code class="codeph">global_partitioned_index</code></span> clause and the <span class="italic"><code class="codeph">local_partitioned_index</code></span> clauses to partition <span class="italic"><code class="codeph">index</code></span>.
+                  </p>
+                  <p>The storage of partitioned database entities in tablespaces of different block sizes is subject to several restrictions. Refer to <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=VLDBG00306" target="_blank"><span class="italic">Oracle Database VLDB and Partitioning Guide</span></a> for a discussion of these restrictions.
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-6E787E96-E8DD-4820-8838-E6B4BCFCDD75">
+                     <p class="notep1">See Also:</p>
+                     <p><span class="q">"<a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2129599">Partitioned Index Examples</a>"</span> 
+                     </p>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-C3C2F48C-E4C3-4079-93DC-2C2F29CFF908"><span class="italic">annotations_clause</span></p>
+                  <p>For the full semantics of the annotations clause see <span class="italic"><a href="annotations_clause.html#GUID-1AC16117-BBB6-4435-8794-2B99F8F68052">annotations_clause</a></span>.
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2150212">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-87B4B53D-A02E-40A3-9C33-C3E0C574B3C3"><span class="italic">global_partitioned_index</span></p>
+                  <p><a id="d383015e3001" class="indexterm-anchor"></a><a id="d383015e3005" class="indexterm-anchor"></a><a id="d383015e3007" class="indexterm-anchor"></a><a id="d383015e3011" class="indexterm-anchor"></a><a id="d383015e3017" class="indexterm-anchor"></a><a id="d383015e3021" class="indexterm-anchor"></a>The <span class="italic"><code class="codeph">global_partitioned_index</code></span> clause lets you specify that the partitioning of the index is user defined and is not equipartitioned with the underlying table. By default, nonpartitioned indexes are global indexes. 
+                  </p>
+                  <p>You can partition a global index by range or by hash. In both cases, you can specify up to 32 columns as partitioning key columns. The partitioning column list must specify a left prefix of the index column list. If the index is defined on columns <code class="codeph">a</code>, <code class="codeph">b</code>, and <code class="codeph">c</code>, then for the columns you can specify <code class="codeph">(a</code>, <code class="codeph">b</code>, <code class="codeph">c)</code>, or (<code class="codeph">a</code>, <code class="codeph">b)</code>, or (<code class="codeph">a</code>, <code class="codeph">c)</code>, but you cannot specify (<code class="codeph">b</code>, <code class="codeph">c)</code> or <code class="codeph">(c)</code> or (<code class="codeph">b</code>, <code class="codeph">a</code>). If you specify a partition name, then it must conform to the rules for naming schema objects and their parts as described in <span class="q">"<a href="Database-Object-Names-and-Qualifiers.html#GUID-75337742-67FD-4EC0-985F-741C93D918DA">Database Object Naming Rules</a>"</span>. If you omit the partition names, then Oracle Database assigns names of the form <code class="codeph">SYS_P</code><span class="italic"><code class="codeph">n</code></span>.
+                  </p>
+                  <p><span class="bold">GLOBAL PARTITION BY RANGE</span></p>
+                  <p>Use this clause to create a range-partitioned global index. Oracle Database will partition the global index on the ranges of values from the table columns you specify in the column list. </p>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-1D568618-F6ED-422E-B301-7C44D1B2AA6A">
+                     <p class="notep1">See Also:</p>
+                     <p><span class="q">"<a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2105538">Creating a Range-Partitioned Global Index: Example</a>"</span></p>
+                  </div>
+                  <p><span class="bold">GLOBAL PARTITION BY HASH</span></p>
+                  <p>Use this clause to create a hash-partitioned global index. Oracle Database assigns rows to the partitions using a hash function on values in the partitioning key columns.</p>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-7C7925A2-4468-4FE4-85D1-DC18D1FA2A5B">
+                     <p class="notep1">See Also:</p>
+                     <p>The <code class="codeph">CREATE</code> <code class="codeph">TABLE</code> clause <span class="italic"><a href="CREATE-TABLE.html#GUID-F9CE0CC3-13AE-4744-A43C-EAC7A71AAAB6__BABIHJGG">hash_partitions</a></span> for information on the two methods of hash partitioning and <span class="q">"<a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2169259">Creating a Hash-Partitioned Global Index: Example</a>"</span></p>
+                  </div>
+                  <p><span class="bold">Restrictions on Global Partitioned Indexes</span></p>
+                  <p>Global partitioned indexes are subject to the following restrictions:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>The partitioning key column list cannot contain the <code class="codeph">ROWID</code> pseudocolumn or a column of type <code class="codeph">ROWID</code>.
+                        </p>
+                     </li>
+                     <li>
+                        <p>The only property you can specify for hash partitions is tablespace storage. Therefore, you cannot specify LOB or varray storage clauses in the <span class="italic"><code class="codeph">partitioning_storage_clause</code></span> of <span class="italic"><code class="codeph">individual_hash_partitions</code></span>.
+                        </p>
+                     </li>
+                     <li>
+                        <p>You cannot specify the <code class="codeph">OVERFLOW</code> clause of <span class="italic"><code class="codeph">hash_partitions_by_quantity</code></span>, as that clause is valid only for index-organized table partitions.
+                        </p>
+                     </li>
+                     <li>
+                        <p>In the <span class="italic"><code class="codeph">partitioning_storage_clause</code></span>, you cannot specify <span class="italic"><code class="codeph">table_compression</code></span> or the <span class="italic"><code class="codeph">inmemory_clause</code></span>, but you can specify <span class="italic"><code class="codeph">index_compression</code></span>.
+                        </p>
+                     </li>
+                  </ul>
+                  <div class="infoboxnote" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-739AF0D5-F0A9-491D-BD47-ED3BC1BD3838">
+                     <p class="notep1">Note:</p>
+                     <p>If your enterprise has or will have databases using different character sets, then use caution when partitioning on character columns. The sort sequence of characters is not identical in all character sets. </p>
+                  </div>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-8435F4D8-2CB9-4EA3-9027-44E4444EFAB5">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=NLSPG014" target="_blank"><span class="italic">Oracle Database Globalization Support Guide</span></a> for more information on character set support
+                     </p>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-5211AEDB-1FA3-450A-A46F-E6B2EF1B6477"><span class="italic">index_partitioning_clause</span></p>
+                  <p><a id="d383015e3192" class="indexterm-anchor"></a>Use this clause to describe the individual index partitions. The number of repetitions of this clause determines the number of partitions. If you omit <span class="italic"><code class="codeph">partition</code></span>, then Oracle Database generates a name with the form <code class="codeph">SYS_P</code><span class="italic"><code class="codeph">n</code></span>.
+                  </p>
+                  <p><a id="d383015e3208" class="indexterm-anchor"></a>For <code class="codeph">VALUES</code> <code class="codeph">LESS</code> <code class="codeph">THAN</code> (<span class="italic"><code class="codeph">value_list</code></span>), specify the noninclusive upper bound for the current partition in a global index. The value list is a comma-delimited, ordered list of literal values corresponding to the column list in the <span class="italic"><code class="codeph">global_partitioned_index</code></span> clause. Always specify <code class="codeph">MAXVALUE</code> as the value of the last partition. 
+                  </p>
+                  <div class="infoboxnote" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-A9ABB606-30A9-4EE9-86BD-EB1B5DE0CBA5">
+                     <p class="notep1">Note:</p>
+                     <p>If the index is partitioned on a <code class="codeph">DATE</code> column, and if the date format does not specify the first two digits of the year, then you must use the <code class="codeph">TO_DATE</code> function with a 4-character format mask for the year. The date format is determined implicitly by <code class="codeph">NLS_TERRITORY</code> or explicitly by <code class="codeph">NLS_DATE_FORMAT</code>. Refer to <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=NLSPG003" target="_blank"><span class="italic">Oracle Database Globalization Support Guide </span></a>for more information on these initialization parameters.
+                     </p>
+                  </div>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-6D66062F-6DCB-4A4F-AF79-ED3CB63CB51B">
+                     <p class="notep1">See Also:</p>
+                     <p><span class="q">"<a href="CREATE-TABLE.html#GUID-F9CE0CC3-13AE-4744-A43C-EAC7A71AAAB6__I2093664">Range Partitioning Example</a>"</span></p>
+                  </div>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2135151">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-D7EDB371-33A6-43F8-B6B4-63BFAF1E01E7"><span class="italic">local_partitioned_index </span></p>
+                  <p>The <span class="italic"><code class="codeph">local_partitioned_index</code></span> clauses let you specify that the index is partitioned on the same columns, with the same number of partitions and the same partition bounds as <span class="italic"><code class="codeph">table</code></span>. For composite-partitioned tables, this clause lets you specify that the index is subpartitioned on the same columns, with the same number of subpartitions and the same subpartition bounds as <span class="italic"><code class="codeph">table</code></span>. Oracle Database automatically maintains local index partitioning as the underlying table is repartitioned.
+                  </p>
+                  <p>If you specify only the keyword <code class="codeph">LOCAL</code> and do not specify a subclause, then Oracle Database creates each index partition in the same tablespace as its corresponding table partition and assigns it the same name as its corresponding table partition. If <span class="italic"><code class="codeph">table</code></span> is a composite-partitioned table, then Oracle Database creates each index subpartition in the same tablespace as its corresponding table subpartition and assigns it the same name as its corresponding table subpartition.
+                  </p>
+                  <p>If you specify a partition name, then it must conform to the rules for naming schema objects and their parts as described in <span class="q">"<a href="Database-Object-Names-and-Qualifiers.html#GUID-75337742-67FD-4EC0-985F-741C93D918DA">Database Object Naming Rules</a>"</span>. If you omit a partition name, then Oracle Database generates a name that is consistent with the corresponding table partition. If the name conflicts with an existing index partition name, then the database uses the form <code class="codeph">SYS_P</code><span class="italic"><code class="codeph">n</code></span>.
+                  </p>
+                  <p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2135160"><span class="bold"><span class="italic">on_range_partitioned_table </span></span></p>
+                  <p>This clause lets you specify the names and attributes of index partitions on a range-partitioned table. If you specify this clause, then the number of <code class="codeph">PARTITION</code> clauses must be equal to the number of table partitions, and in the same order.
+                  </p>
+                  <p>You cannot specify prefix compression for an index partition unless you have specified prefix compression for the index.</p>
+                  <p>For more information on the <code class="codeph">USABLE</code> and <code class="codeph">UNUSABLE</code> clauses, refer to <a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BABCHJDH">USABLE | UNUSABLE</a>.
+                  </p>
+                  <p><span class="bold"><span class="italic">on_list_partitioned_table</span></span></p>
+                  <p>The <span class="italic"><code class="codeph">on_list_partitioned_table</code></span> clause is identical to <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2135160">on_range_partitioned_table</a></span>.
+                  </p>
+                  <p><span class="bold"><span class="italic">on_hash_partitioned_table </span></span></p>
+                  <p>This clause lets you specify names and tablespace storage for index partitions on a hash-partitioned table. </p>
+                  <p>If you specify any <code class="codeph">PARTITION</code> clauses, then the number of these clauses must be equal to the number of table partitions. You can optionally specify tablespace storage for one or more individual partitions. If you do not specify tablespace storage either here or in the <code class="codeph">STORE</code> <code class="codeph">IN</code> clause, then the database stores each index partition in the same tablespace as the corresponding table partition.
+                  </p>
+                  <p>The <code class="codeph">STORE</code> <code class="codeph">IN</code> clause lets you specify one or more tablespaces across which Oracle Database will distribute all the index hash partitions. The number of tablespaces need not equal the number of index partitions. If the number of index partitions is greater than the number of tablespaces, then the database cycles through the names of the tablespaces. 
+                  </p>
+                  <p>For more information on the <code class="codeph">USABLE</code> and <code class="codeph">UNUSABLE</code> clauses, refer to <a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BABCHJDH">USABLE | UNUSABLE</a>.
+                  </p>
+                  <p><span class="bold"><span class="italic">on_comp_partitioned_table </span></span></p>
+                  <p>This clause lets you specify the name and attributes of index partitions on a composite-partitioned table. </p>
+                  <p>The <code class="codeph">STORE</code> <code class="codeph">IN</code> clause is valid only for range-hash or list-hash composite-partitioned tables. It lets you specify one or more default tablespaces across which Oracle Database will distribute all index hash subpartitions for all partitions. You can override this storage by specifying different default tablespace storage for the subpartitions of an individual partition in the second <code class="codeph">STORE</code> <code class="codeph">IN</code> clause in the <span class="italic"><code class="codeph">index_subpartition_clause</code></span>.
+                  </p>
+                  <p>For range-range, range-list, and list-list composite-partitioned tables, you can specify default attributes for the range or list subpartitions in the <code class="codeph">PARTITION</code> clause. You can override this storage by specifying different attributes for the range or list subpartitions of an individual partition in the <code class="codeph">SUBPARTITION</code> clause of the <span class="italic"><code class="codeph">index_subpartition_clause</code></span>. 
+                  </p>
+                  <p>You cannot specify prefix compression for an index partition unless you have specified prefix compression for the index.</p>
+                  <p>For more information on the <code class="codeph">USABLE</code> and <code class="codeph">UNUSABLE</code> clauses, refer to <a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BABCHJDH">USABLE | UNUSABLE</a>.
+                  </p>
+                  <p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2146961"><span class="bold"><span class="italic">index_subpartition_clause</span></span></p>
+                  <p>This clause lets you specify names and tablespace storage for index subpartitions in a composite-partitioned table. </p>
+                  <p>The <code class="codeph">STORE</code> <code class="codeph">IN</code> clause is valid only for hash subpartitions of a range-hash and list-hash composite-partitioned table. It lets you specify one or more tablespaces across which Oracle Database will distribute all the index hash subpartitions. The <code class="codeph">SUBPARTITION</code> clause is valid for all subpartition types. 
+                  </p>
+                  <p>If you specify any <code class="codeph">SUBPARTITION</code> clauses, then the number of those clauses must be equal to the number of table subpartitions. If you specify a subpartition name, then it must conform to the rules for naming schema objects and their parts as described in <span class="q">"<a href="Database-Object-Names-and-Qualifiers.html#GUID-75337742-67FD-4EC0-985F-741C93D918DA">Database Object Naming Rules</a>"</span>. If you omit <span class="italic"><code class="codeph">subpartition</code></span>, then the database generates a name that is consistent with the corresponding table subpartition. If the name conflicts with an existing index subpartition name, then the database uses the form <code class="codeph">SYS_SUBP</code><span class="italic"><code class="codeph">n</code></span>. 
+                  </p>
+                  <p>The number of tablespaces need not equal the number of index subpartitions. If the number of index subpartitions is greater than the number of tablespaces, then the database cycles through the names of the tablespaces. </p>
+                  <p>If you do not specify tablespace storage for subpartitions either in the <span class="italic"><code class="codeph">on_comp_partitioned_table</code></span> clause or in the <span class="italic"><code class="codeph">index_subpartition_clause</code></span>, then Oracle Database uses the tablespace specified for <span class="italic"><code class="codeph">index</code></span>. If you also do not specify tablespace storage for <span class="italic"><code class="codeph">index</code></span>, then the database stores the subpartition in the same tablespace as the corresponding table subpartition.
+                  </p>
+                  <p>For more information on the <code class="codeph">USABLE</code> and <code class="codeph">UNUSABLE</code> clauses, refer to <code class="codeph">CREATE</code> <code class="codeph">INDEX</code> ... <a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BABCHJDH">USABLE | UNUSABLE</a>.
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-7A1DC553-9646-4E5A-93B4-91392D18E913"><span class="italic">domain_index_clause </span></p>
+                  <p>Use the <span class="italic"><code class="codeph">domain_index_clause</code></span> to indicate that <span class="italic"><code class="codeph">index</code></span> is a domain index, which is an instance of an application-specific index of type <span class="italic"><code class="codeph">indextype</code></span>. 
+                  </p>
+                  <p><a id="d383015e3513" class="indexterm-anchor"></a>Creating a domain index requires a number of preceding operations. You must first create an implementation type for an indextype. You must also create a functional implementation and then create an operator that uses the function. Next you create an indextype, which associates the implementation type with the operator. Finally, you create the domain index using this clause. Refer to <a href="Extended-Examples.html#GUID-8FE85432-DF49-4C26-9785-1F1363FBE8B1">Extended Examples</a>, which contains an example of creating a simple domain index, including all of these operations.
+                  </p>
+                  <p><span class="bold"><span class="italic">index_expr</span></span></p>
+                  <p>In the <span class="italic"><code class="codeph">index_expr</code></span> (in <span class="italic"><code class="codeph">table_index_clause</code></span>), specify the table columns or object attributes on which the index is defined. You can define multiple domain indexes on a single column only if the underlying indextypes are different and the indextypes support a disjoint set of user-defined operators.
+                  </p>
+                  <p><span class="bold">Restrictions on Domain Indexes</span></p>
+                  <p>Domain indexes are subject to the following restrictions:</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>The <span class="italic"><code class="codeph">index_expr</code></span> (in <span class="italic"><code class="codeph">table_index_clause</code></span>) can specify only a single column, and the column cannot be of data type <code class="codeph">REF</code>, varray, nested table, <code class="codeph">LONG</code>, or <code class="codeph">LONG</code> <code class="codeph">RAW</code>.
+                        </p>
+                     </li>
+                     <li>
+                        <p>You cannot create a bitmap or unique domain index.</p>
+                     </li>
+                     <li>
+                        <p>You cannot create a domain index on a temporary table.</p>
+                     </li>
+                     <li>
+                        <p>You can create local domain indexes on only range-, list-, hash-, and interval-partitioned tables, with one exception: You cannot create a local domain index on an automatic list-partitioned table.</p>
+                     </li>
+                     <li>
+                        <p>Domain indexes can be created only on table columns declared with collation <code class="codeph">BINARY</code>, <code class="codeph">USING_NLS_COMP</code>, <code class="codeph">USING_NLS_SORT</code>, or <code class="codeph">USING_NLS_SORT_CS</code>. See <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=NLSPG-GUID-7BEA5143-69C0-4496-AA3E-0EA89C22B833" target="_blank"><span class="italic">Oracle Database Globalization Support Guide</span></a> for more information.
+                        </p>
+                     </li>
+                  </ul>
+                  <p><span class="bold"><span class="italic">indextype</span></span></p>
+                  <p>For <span class="italic"><code class="codeph">indextype</code></span>, specify the name of the indextype. This name should be a valid schema object that has already been created. 
+                  </p>
+                  <p><a id="d383015e3605" class="indexterm-anchor"></a>If you have installed Oracle Text, then you can use various built-in indextypes to create Oracle Text domain indexes. For more information on Oracle Text and the indexes it uses, refer to <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=CCREF0105" target="_blank"><span class="italic">Oracle Text Reference</span></a>.
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-B02AA0B5-8F83-481F-BC97-CD830109ADFD">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="CREATE-INDEXTYPE.html#GUID-4A7BD0EC-B3E5-4D1D-95C5-C8B52D01D8CE">CREATE INDEXTYPE</a></p>
+                  </div>
+                  <p><span class="bold"><span class="italic">local_domain_index_clause</span></span><a id="d383015e3624" class="indexterm-anchor"></a><a id="d383015e3628" class="indexterm-anchor"></a></p>
+                  <p>Use this clause to specify that the index is a local index on a partitioned table.</p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>The <code class="codeph">PARTITIONS</code> clause lets you specify names for the index partitions. The number of partitions you specify must match the number of partitions in the base table. If you omit this clause, then the database creates the partitions with system-generated names of the form <code class="codeph">SYS_P</code><span class="italic"><code class="codeph">n</code></span>.
+                        </p>
+                     </li>
+                     <li>
+                        <p>The <code class="codeph">PARAMETERS</code> clause lets you specify the parameter string specific to an individual partition. If you omit this clause, then the parameter string associated with the index is also associated with the partition.
+                        </p>
+                     </li>
+                  </ul>
+                  <p><span class="bold"><span class="italic">parallel_clause</span></span> <a id="d383015e3658" class="indexterm-anchor"></a></p>
+                  <p>Use the <span class="italic"><code class="codeph">parallel_clause</code></span> to parallelize creation of the domain index. For a nonpartitioned domain index, Oracle Database passes the explicit or default degree of parallelism to the <code class="codeph">ODCIIndexCreate</code> cartridge routine, which in turn establishes parallelism for the index. For local domain indexes, this clause causes the index partitions to be created in parallel.
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-F14DFB82-3F91-4CBB-82D1-81BF4F0BC5A5">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADDCI270" target="_blank"><span class="italic">Oracle Database Data Cartridge Developer's Guide</span></a> for complete information on the Oracle Data Cartridge Interface (ODCI) routines
+                     </p>
+                  </div>
+                  <p><span class="bold">PARAMETERS</span></p>
+                  <p><a id="d383015e3682" class="indexterm-anchor"></a>In the <code class="codeph">PARAMETERS</code> clause, specify the parameter string that is passed uninterpreted to the appropriate ODCI indextype routine. The maximum length of the parameter string is 1000 characters.
+                  </p>
+                  <p>When you specify this clause at the top level of the syntax, the parameters become the default parameters for the index partitions. If you specify this clause as part of the <span class="italic"><code class="codeph">local_domain_index_clause</code></span>, then you override any default parameters with parameters for the individual partition.
+                  </p>
+                  <p>After the domain index is created, Oracle Database invokes the appropriate ODCI routine. If the routine does not return successfully, then the domain index is marked <code class="codeph">FAILED</code>. The only operations supported on an failed domain index are <code class="codeph">DROP</code> <code class="codeph">INDEX</code> and (for non-local indexes) <code class="codeph">REBUILD</code> <code class="codeph">INDEX</code>.
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-CD9A60CA-19F7-4882-853C-9FD7F392A9A9">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADDCI270" target="_blank"><span class="italic">Oracle Database Data Cartridge Developer's Guide</span></a> for information on the Oracle Data Cartridge Interface (ODCI) routines
+                     </p>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-9F6E4369-6EB4-4A73-BF25-EBB1A21B993B"><span class="italic">XMLIndex_clause</span></p>
+                  <p><a id="d383015e3726" class="indexterm-anchor"></a>The <span class="italic"><code class="codeph">XMLIndex_clause</code></span> lets you define an <code class="codeph">XMLIndex</code> index, typically on a column contain XML data. An <code class="codeph">XMLIndex</code> index is a type of domain index designed specifically for the domain of XML data.
+                  </p>
+                  <p><span class="bold"><span class="italic">XMLIndex_parameters_clause</span></span></p>
+                  <p><a id="d383015e3746" class="indexterm-anchor"></a>This clause lets you specify information about the path table and about the secondary indexes corresponding to the components of <code class="codeph">XMLIndex</code>. This clause also lets you specify information about the structured component of the index. The maximum length of the parameter string is 1000 characters.
+                  </p>
+                  <p>When you specify this clause at the top level of the syntax, the parameters become the parameters of the index and the default parameters for the index partitions. If you specify this clause as part of the <span class="italic"><code class="codeph">local_xmlindex_clause</code></span> clause, then you override any default parameters with parameters for the individual partition.
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-2C1690F0-147A-46BC-BD95-2A9BD84E3B80">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADXDB0500" target="_blank"><span class="italic">Oracle XML DB Developer's Guide</span></a> for the syntax and semantics of the <span class="italic"><code class="codeph">XMLIndex_parameters_clause</code></span>, as well as detailed information about the use of <code class="codeph">XMLIndex</code></p>
+                  </div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-F53B3046-300A-43EC-B735-66E97B8F0469"><span class="italic">bitmap_join_index_clause </span></p>
+                  <p>Use the <span class="italic"><code class="codeph">bitmap_join_index_clause</code></span> to define a <span class="bold">bitmap join index</span>. A bitmap join index is defined on a single table. For an index key made up of dimension table columns, it stores the fact table rowids corresponding to that key. In a data warehousing environment, the table on which the index is defined is commonly referred to as a <span class="bold">fact table</span>, and the tables with which this table is joined are commonly referred to as <span class="bold">dimension tables</span>. However, a star schema is not a requirement for creating a join index.
+                  </p>
+                  <p><span class="bold">ON</span></p>
+                  <p>In the <code class="codeph">ON</code> clause, first specify the fact table, and then inside the parentheses specify the columns of the dimension tables on which the index is defined.
+                  </p>
+                  <p><span class="bold">FROM</span></p>
+                  <p>In the <code class="codeph">FROM</code> clause, specify the joined tables.
+                  </p>
+                  <p><span class="bold">WHERE</span></p>
+                  <p>In the <code class="codeph">WHERE</code> clause, specify the join condition.
+                  </p>
+                  <p>If the underlying fact table is partitioned, then you must also specify one of the <span class="italic"><code class="codeph">local_partitioned_index</code></span> clauses (see <span class="italic"><a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2135151">local_partitioned_index</a></span>).
+                  </p>
+                  <p><span class="bold">Restrictions on Bitmap Join Indexes</span></p>
+                  <p>In addition to the restrictions on bitmap indexes in general (see <a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2077580">BITMAP</a>), the following restrictions apply to bitmap join indexes:
+                  </p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>You cannot create a bitmap join index on a temporary table.</p>
+                     </li>
+                     <li>
+                        <p>No table may appear twice in the <code class="codeph">FROM</code> clause.
+                        </p>
+                     </li>
+                     <li>
+                        <p>You cannot create a function-based join index.</p>
+                     </li>
+                     <li>
+                        <p>The dimension table columns must be either primary key columns or have unique constraints.</p>
+                     </li>
+                     <li>
+                        <p>If a dimension table has a composite primary key, then each column in the primary key must be part of the join.</p>
+                     </li>
+                     <li>
+                        <p>You cannot specify the <span class="italic"><code class="codeph">local_partitioned_index</code></span> clause unless the fact table is partitioned.
+                        </p>
+                     </li>
+                     <li>
+                        <p>A bitmap join index definition can only reference columns with collation <code class="codeph">BINARY</code>, <code class="codeph">USING_NLS_COMP</code>, <code class="codeph">USING_NLS_SORT</code>, or <code class="codeph">USING_NLS_SORT_CS</code>. For any of these collations, index keys are collated and the join condition is evaluated using the <code class="codeph">BINARY</code> collation. See <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=NLSPG-GUID-7BEA5143-69C0-4496-AA3E-0EA89C22B833" target="_blank"><span class="italic">Oracle Database Globalization Support Guide</span></a> for more information.
+                        </p>
+                     </li>
+                  </ul>
+                  <div class="infoboxnote" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-B4A8E1BA-01B5-4657-95D8-ECC2A3B9C5CA">
+                     <p class="notep1">Note:</p>
+                     <p><span class="italic">Oracle Database Data Warehousing Guide</span> for information on fact and <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=DWHSG010" target="_blank">dimension tables</a> and on using <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=DWHSG9041" target="_blank">bitmap indexes</a> in a data warehousing environment
+                     </p>
+                  </div>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BABCHJDH">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-FCADB16C-A38D-4BC3-ABBE-1D7B5F4413D0">USABLE | UNUSABLE</p>
+                  <p><a id="d383015e3902" class="indexterm-anchor"></a>You can specify the <code class="codeph">USABLE</code> and <code class="codeph">UNUSABLE</code> keywords:
+                  </p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>For an index, in the <code class="codeph">CREATE</code> <code class="codeph">INDEX</code> statement
+                        </p>
+                     </li>
+                     <li>
+                        <p>For an index partition, in the <span class="italic"><code class="codeph">on_range_partitioned_table</code></span>, <span class="italic"><code class="codeph">on_list_partitioned_table</code></span>, <span class="italic"><code class="codeph">on_hash_partitioned_table</code></span>, and <span class="italic"><code class="codeph">on_comp_partitioned_table</code></span> clauses
+                        </p>
+                     </li>
+                     <li>
+                        <p>For an index subpartition, in the <span class="italic"><code class="codeph">index_subpartition_clause</code></span></p>
+                     </li>
+                  </ul>
+                  <p>For nonpartitioned indexes, specify <code class="codeph">UNUSABLE</code> to create an index in an unusable state. An unusable index must be rebuilt, or dropped and re-created, before it can be used. Specify <code class="codeph">USABLE</code> to create an index in a usable state. <code class="codeph">USABLE</code> is the default.
+                  </p>
+                  <p>For partitioned indexes, specify <code class="codeph">USABLE</code> or <code class="codeph">UNUSABLE</code> as follows:
+                  </p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>If you specify <code class="codeph">UNUSABLE</code> for the index, then all index partitions are marked <code class="codeph">UNUSABLE</code>.
+                        </p>
+                     </li>
+                     <li>
+                        <p>If you specify <code class="codeph">USABLE</code> for the index, then all index partitions are marked <code class="codeph">USABLE</code>.
+                        </p>
+                     </li>
+                     <li>
+                        <p>If you do not specify <code class="codeph">USABLE</code> or <code class="codeph">UNUSABLE</code> for the index, then all index partitions are marked <code class="codeph">USABLE</code>. The exception is a local partial index. If you specify the <code class="codeph">LOCAL</code> and <code class="codeph">INDEXING</code> <code class="codeph">PARTIAL</code> clauses, and do not specify <code class="codeph">USABLE</code> or <code class="codeph">UNUSABLE</code>, then each index partition is marked <code class="codeph">USABLE</code> if the indexing property of its corresponding table partition is <code class="codeph">ON</code>, or <code class="codeph">UNUSABLE</code> if the indexing property of its corresponding table partition is <code class="codeph">OFF</code>.
+                        </p>
+                     </li>
+                  </ul>
+                  <p>You can override the preceding conditions by specifying <code class="codeph">USABLE</code> or <code class="codeph">UNUSABLE</code> for a specific index partition.
+                  </p>
+                  <p>If the underlying table is a composite-partitioned table, then the preceding conditions for index partitions and table partitions apply instead to index subpartitions and table subpartitions.</p>
+                  <p>After you create a partitioned index, you can choose to rebuild specific index partitions or subpartitions to make them <code class="codeph">USABLE</code>. Doing so can be useful if you want to maintain indexes only on some index partitions or subpartitionsâfor example, if you want to enable index access for new partitions but not for old partitions.
+                  </p>
+                  <p>When an index, or some partitions or subpartitions of an index, are created <code class="codeph">UNUSABLE</code>, no segment is allocated for the unusable object. The unusable index or index partition consumes no space in the database.
+                  </p>
+                  <p>If an index, or some partitions or subpartitions of the index, are marked <code class="codeph">UNUSABLE</code>, then the index will be considered as an access path by the optimizer only under the following circumstances: the optimizer must know at compile time which partitions are to be accessed, and all of those partitions to be accessed must be marked <code class="codeph">USABLE</code>. Therefore, the query cannot contain any bind variables.
+                  </p>
+                  <p><span class="bold">Restrictions on USABLE | UNUSABLE</span></p>
+                  <p>The following restrictions apply when marking an index <code class="codeph">USABLE</code> or <code class="codeph">UNUSABLE</code>:
+                  </p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>You cannot specify this clause for an index on a temporary table.</p>
+                     </li>
+                     <li>
+                        <p>Unusable indexes or index partitions will still have a segment under the following conditions:</p>
+                        <ul style="list-style-type: disc;">
+                           <li>
+                              <p>The index (or index partition) is owned by <code class="codeph">SYS</code>, <code class="codeph">SYSTEM</code>, <code class="codeph">PUBLIC</code>, <code class="codeph">OUTLN</code>, or <code class="codeph">XDB</code></p>
+                           </li>
+                           <li>
+                              <p>The index (or index partition) is stored in dictionary-managed tablespaces</p>
+                           </li>
+                           <li>
+                              <p>The global partitioned or nonpartitioned index on a partitioned table becomes unusable due to a partition maintenance operation</p>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__DEFERREDIMMEDIATEINVALIDATION-55459ECA">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-53D35F48-88F9-46F6-9330-F32EF7AF55EF">{ DEFERRED | IMMEDIATE } INVALIDATION</p>
+                  <p>This clause lets you control when the database invalidates dependent cursors while creating the index. It has the same semantics here as for the <code class="codeph">ALTER</code> <code class="codeph">INDEX</code> statement. Refer to <a href="ALTER-INDEX.html#GUID-D8F648E7-8C07-4C89-BB71-862512536558__DEFERREDIMMEDIATEINVALIDATION-42A7C77E">{ DEFERRED | IMMEDIATE } INVALIDATION</a> in the documentation on <code class="codeph">ALTER</code> <code class="codeph">INDEX</code> for the full semantics of this clause.
+                  </p>
+               </div>
+               <div class="section" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2077034">
+                  <p class="subhead1" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-A1E6A2D3-A798-4154-960E-F4476C4D30ED">Examples </p>
+                  <p><span class="bold">General Index Examples</span></p>
+                  <p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2105550"><span class="bold">Creating an Index: Example</span></p>
+                  <p>The following statement shows how the sample index <code class="codeph">ord_customer_ix</code> on the <code class="codeph">customer_id</code> column of the sample table <code class="codeph">oe.orders</code> was created:
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE INDEX ord_customer_ix
+   ON orders (customer_id);</pre><p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2129467"><span class="bold">Compressing an Index: Example</span></p>
+                  <p>To create the <code class="codeph">ord_customer_ix_demo</code> index with the <code class="codeph">COMPRESS</code> clause, you might issue the following statement:
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE INDEX ord_customer_ix_demo 
+   ON orders (customer_id, sales_rep_id)
+   COMPRESS 1;
+</pre><p>The index will compress repeated occurrences of <code class="codeph">customer_id</code> column values.
+                  </p>
+                  <p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2129491"><span class="bold">Creating an Index in NOLOGGING Mode: Example</span></p>
+                  <p>If the sample table <code class="codeph">orders</code> had been created using a fast parallel load (so all rows were already sorted), then you could issue the following statement to quickly create an index.
+                  </p><pre class="oac_no_warn" dir="ltr">/* Unless you first sort the table oe.orders, this example fails
+   because you cannot specify NOSORT unless the base table is
+   already sorted.
+*/
+CREATE INDEX ord_customer_ix_demo
+   ON orders (order_mode)
+   NOSORT
+   NOLOGGING;</pre><p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2129513"><span class="bold">Creating a Cluster Index: Example</span></p>
+                  <p>To create an index for the <code class="codeph">personnel</code> cluster, which was created in <span class="q">"<a href="CREATE-CLUSTER.html#GUID-4DBC701F-AFC3-486D-AA32-B5CB1D6946F7__I2105033">Creating a Cluster: Example</a>"</span>, issue the following statement:
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE INDEX idx_personnel ON CLUSTER personnel; 
+</pre><p>No index columns are specified, because cluster indexes are automatically built on all the columns of the cluster key. For cluster indexes, all rows are indexed. </p>
+                  <p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2113966"><span class="bold">Creating an Index on an XMLType Table: Example</span><a id="d383015e4189" class="indexterm-anchor"></a><a id="d383015e4193" class="indexterm-anchor"></a></p>
+                  <p>The following example creates an index on the area element of the <code class="codeph">xwarehouses</code> table (created in <span class="q">"<a href="CREATE-TABLE.html#GUID-F9CE0CC3-13AE-4744-A43C-EAC7A71AAAB6__I2130736">XMLType Table Examples</a>"</span>):
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE INDEX area_index ON xwarehouses e 
+   (EXTRACTVALUE(VALUE(e),'/Warehouse/Area'));
+</pre><p>Such an index would greatly improve the performance of queries that select from the table based on, for example, the square footage of a warehouse, as shown in this statement:</p><pre class="oac_no_warn" dir="ltr">SELECT e.getClobVal() AS warehouse
+   FROM xwarehouses e
+   WHERE EXISTSNODE(VALUE(e),'/Warehouse[Area&gt;50000]') = 1;</pre><div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-B5DFF8EF-24FA-46DD-B0FA-C51AC03BBCA8">
+                     <p class="notep1">See Also:</p>
+                     <p><a href="EXISTSNODE.html#GUID-71731B1A-99E5-4B82-8243-DEEE6704796F">EXISTSNODE</a> and <a href="VALUE.html#GUID-BEB129A5-525F-4EEF-A79C-261954056234">VALUE</a></p>
+                  </div>
+                  <p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2092987"><span class="bold">Function-Based Index Examples</span></p>
+                  <p>The following examples show how to create and use function-based indexes.</p>
+                  <p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2105548"><span class="bold">Creating a Function-Based Index: Example</span></p>
+                  <p>The following statement creates a function-based index on the <code class="codeph">employees</code> table based on an uppercase evaluation of the <code class="codeph">last_name</code> column:
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE INDEX upper_ix ON employees (UPPER(last_name)); 
+</pre><p>See the <span class="q">"<a href="CREATE-INDEX.html#GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2084975">Prerequisites</a>"</span> for the privileges and parameter settings required when creating function-based indexes.
+                  </p>
+                  <p>To increase the likelihood that Oracle Database will use the index rather than performing a full table scan, be sure that the value returned by the function is not null in subsequent queries. For example, this statement will use the index, unless some other condition exists that prevents the optimizer from doing so:</p><pre class="oac_no_warn" dir="ltr">SELECT first_name, last_name 
+   FROM employees WHERE UPPER(last_name) IS NOT NULL
+   ORDER BY UPPER(last_name);
+</pre><p>Without the <code class="codeph">WHERE</code> clause, Oracle Database may perform a full table scan.
+                  </p>
+                  <p>In the next statements showing index creation and subsequent query, Oracle Database will use index <code class="codeph">income_ix</code> even though the columns are in reverse order in the query:
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE INDEX income_ix 
+   ON employees(salary + (salary*commission_pct));
+
+SELECT first_name||' '||last_name "Name"
+   FROM employees 
+   WHERE (salary*commission_pct) + salary &gt; 15000
+   ORDER BY employee_id;</pre><p><span class="bold">Creating a Function-Based Index on a LOB Column: Example</span></p>
+                  <p>The following statement uses the <code class="codeph">text_length</code> function to create a function-based index on a LOB column in the sample <code class="codeph">pm</code> schema. See <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=LNPLS01382" target="_blank"><span class="italic">Oracle Database PL/SQL Language Reference</span></a> for the example that creates this function. The example selects rows from the sample table <code class="codeph">print_media</code> where that <code class="codeph">CLOB</code> column has fewer than 1000 characters.
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE INDEX src_idx ON print_media(text_length(ad_sourcetext));
+
+SELECT product_id FROM print_media 
+   WHERE text_length(ad_sourcetext) &lt; 1000
+   ORDER BY product_id;
+
+PRODUCT_ID
+----------
+      2056
+      2268
+      3060
+      3106</pre><p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2063357"><span class="bold">Creating a Function-based Index on a Type Method: Example</span></p>
+                  <p>This example entails an object type <code class="codeph">rectangle</code> containing two number attributes: <code class="codeph">length</code> and <code class="codeph">width</code>. The <code class="codeph">area()</code> method computes the area of the rectangle. 
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE TYPE rectangle AS OBJECT  
+( length   NUMBER, 
+  width    NUMBER, 
+  MEMBER FUNCTION area RETURN NUMBER DETERMINISTIC 
+); 
+ 
+CREATE OR REPLACE TYPE BODY rectangle AS 
+  MEMBER FUNCTION area RETURN NUMBER IS 
+  <span class="italic">BEGIN </span>
+<span class="italic">   RETURN (length*width); </span>
+<span class="italic">  END; </span>
+END; 
+</pre><p>Now, if you create a table <code class="codeph">rect_tab</code> of type <code class="codeph">rectangle</code>, you can create a function-based index on the <code class="codeph">area()</code> method as follows: 
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE TABLE rect_tab OF rectangle; 
+CREATE INDEX area_idx ON rect_tab x (x.area()); 
+</pre><p>You can use this index efficiently to evaluate a query of the form: </p><pre class="oac_no_warn" dir="ltr">SELECT * FROM rect_tab x WHERE x.area() &gt; 100; </pre><p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__BGEHDECJ"><span class="bold">Using a Function-based Index to Define Conditional Uniqueness: Example</span> <a id="d383015e4334" class="indexterm-anchor"></a></p>
+                  <p>The following statement creates a unique function-based index on the <code class="codeph">oe.orders</code> table that prevents a customer from taking advantage of promotion ID 2 ("blowout sale") more than once:
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE UNIQUE INDEX promo_ix ON orders
+   (CASE WHEN promotion_id =2 THEN customer_id ELSE NULL END,
+    CASE WHEN promotion_id = 2 THEN promotion_id ELSE NULL END);
+
+INSERT INTO orders (order_id, order_date, customer_id, order_total, promotion_id)
+   VALUES (2459, systimestamp, 106, 251, 2);
+1 row created.
+
+INSERT INTO orders (order_id, order_date, customer_id, order_total, promotion_id)
+   VALUES (2460, systimestamp+1, 106, 110, 2);
+insert into orders (order_id, order_date, customer_id, order_total, promotion_id)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (OE.PROMO_IX) violated
+</pre><p>The objective is to remove from the index any rows where the <code class="codeph">promotion_id</code> is not equal to 2. Oracle Database does not store in the index any rows where all the keys are <code class="codeph">NULL</code>. Therefore, in this example, both <code class="codeph">customer_id</code> and <code class="codeph">promotion_id</code> are mapped to <code class="codeph">NULL</code> unless promotion_id is equal to 2. The result is that the index constraint is violated only if promotion_id is equal to 2 for two rows with the same <code class="codeph">customer_id</code> value.
+                  </p>
+                  <p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2129599"><span class="bold">Partitioned Index Examples</span></p>
+                  <p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2105538"><span class="bold">Creating a Range-Partitioned Global Index: Example</span></p>
+                  <p>The following statement creates a global prefixed index <code class="codeph">cost_ix</code> on the sample table <code class="codeph">sh.sales</code> with three partitions that divide the range of costs into three groups:
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE INDEX cost_ix ON sales (amount_sold)
+   GLOBAL PARTITION BY RANGE (amount_sold)
+      (PARTITION p1 VALUES LESS THAN (1000),
+       PARTITION p2 VALUES LESS THAN (2500),
+       PARTITION p3 VALUES LESS THAN (MAXVALUE));</pre><p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2169259"><span class="bold">Creating a Hash-Partitioned Global Index: Example</span></p>
+                  <p>The following statement creates a hash-partitioned global index <code class="codeph">cust_last_name_ix</code> on the sample table <code class="codeph">sh.customers</code> with four partitions:
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE INDEX cust_last_name_ix ON customers (cust_last_name)
+  GLOBAL PARTITION BY HASH (cust_last_name)
+  PARTITIONS 4;</pre><p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2105539"><span class="bold">Creating an Index on a Hash-Partitioned Table: Example</span></p>
+                  <p>The following statement creates a local index on the <code class="codeph">category_id</code> column of the <code class="codeph">hash_products</code> partitioned table (which was created in <span class="q">"<a href="CREATE-TABLE.html#GUID-F9CE0CC3-13AE-4744-A43C-EAC7A71AAAB6__I2118202">Hash Partitioning Example</a>"</span>). The <code class="codeph">STORE</code> <code class="codeph">IN</code> clause immediately following <code class="codeph">LOCAL</code> indicates that <code class="codeph">hash_products</code> is hash partitioned. Oracle Database will distribute the hash partitions between the <code class="codeph">tbs1</code> and <code class="codeph">tbs2</code> tablespaces:
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE INDEX prod_idx ON hash_products(category_id) LOCAL
+   STORE IN (tbs_01, tbs_02);
+</pre><p>The creator of the index must have quota on the tablespaces specified. See <a href="CREATE-TABLESPACE.html#GUID-51F07BF5-EFAF-4910-9040-C473B86A8BF9">CREATE TABLESPACE</a> for examples that create tablespaces <code class="codeph">tbs_01</code> and <code class="codeph">tbs_02</code>.
+                  </p>
+                  <p><span class="bold">Creating an Index on a Composite-Partitioned Table: Example</span></p>
+                  <p>The following statement creates a local index on the <code class="codeph">composite_sales</code> table, which was created in <span class="q">"<a href="CREATE-TABLE.html#GUID-F9CE0CC3-13AE-4744-A43C-EAC7A71AAAB6__I2101488">Composite-Partitioned Table Examples</a>"</span>. The <code class="codeph">STORAGE</code> clause specifies default storage attributes for the index. However, this default is overridden for the five subpartitions of partitions <code class="codeph">q3_2000</code> and <code class="codeph">q4_2000</code>, because separate <code class="codeph">TABLESPACE</code> storage is specified.
+                  </p>
+                  <p>The creator of the index must have quota on the tablespaces specified. See <a href="CREATE-TABLESPACE.html#GUID-51F07BF5-EFAF-4910-9040-C473B86A8BF9">CREATE TABLESPACE</a> for examples that create tablespaces <code class="codeph">tbs_02</code> and <code class="codeph">tbs_03</code>.
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE INDEX sales_ix ON composite_sales(time_id, prod_id)
+   STORAGE (INITIAL 1M)
+   LOCAL
+   (PARTITION q1_1998,
+    PARTITION q2_1998,
+    PARTITION q3_1998,
+    PARTITION q4_1998,
+    PARTITION q1_1999,
+    PARTITION q2_1999,
+    PARTITION q3_1999,
+    PARTITION q4_1999,
+    PARTITION q1_2000,
+    PARTITION q2_2000
+      (SUBPARTITION pq2001, SUBPARTITION pq2002, 
+       SUBPARTITION pq2003, SUBPARTITION pq2004,
+       SUBPARTITION pq2005, SUBPARTITION pq2006, 
+       SUBPARTITION pq2007, SUBPARTITION pq2008),
+    PARTITION q3_2000
+      (SUBPARTITION c1 TABLESPACE tbs_02, 
+       SUBPARTITION c2 TABLESPACE tbs_02, 
+       SUBPARTITION c3 TABLESPACE tbs_02,
+       SUBPARTITION c4 TABLESPACE tbs_02,
+       SUBPARTITION c5 TABLESPACE tbs_02),
+    PARTITION q4_2000
+      (SUBPARTITION pq4001 TABLESPACE tbs_03, 
+       SUBPARTITION pq4002 TABLESPACE tbs_03,
+       SUBPARTITION pq4003 TABLESPACE tbs_03,
+       SUBPARTITION pq4004 TABLESPACE tbs_03)
+);</pre><p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2129648"><span class="bold">Bitmap Index Examples</span></p>
+                  <p>The following creates a bitmap index on the table <code class="codeph">oe.hash_products</code>, which was created in <span class="q">"<a href="CREATE-TABLE.html#GUID-F9CE0CC3-13AE-4744-A43C-EAC7A71AAAB6__I2118202">Hash Partitioning Example</a>"</span>:
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE BITMAP INDEX product_bm_ix 
+   ON hash_products(list_price)
+   LOCAL(PARTITION ix_p1 TABLESPACE tbs_01,
+         PARTITION ix_p2,
+         PARTITION ix_p3 TABLESPACE tbs_02,
+         PARTITION ix_p4 TABLESPACE tbs_03)
+   TABLESPACE tbs_04;
+</pre><p>Because <code class="codeph">hash_products</code> is a partitioned table, the bitmap join index must be locally partitioned. In this example, the user must have quota on tablespaces specified. See <a href="CREATE-TABLESPACE.html#GUID-51F07BF5-EFAF-4910-9040-C473B86A8BF9">CREATE TABLESPACE</a> for examples that create tablespaces <code class="codeph">tbs_01</code>, <code class="codeph">tbs_02</code>, <code class="codeph">tbs_03</code>, and <code class="codeph">tbs_04</code>.
+                  </p>
+                  <p>The next series of statements shows how one might create a bitmap join index on a fact table using a join with a dimension table. </p><pre class="oac_no_warn" dir="ltr">CREATE TABLE hash_products
+    ( product_id          NUMBER(6)
+    , product_name        VARCHAR2(50)
+    , product_description VARCHAR2(2000)
+    , category_id         NUMBER(2)
+    , weight_class        NUMBER(1)
+    , warranty_period     INTERVAL YEAR TO MONTH
+    , supplier_id         NUMBER(6)
+    , product_status      VARCHAR2(20)
+    , list_price          NUMBER(8,2)
+    , min_price           NUMBER(8,2)
+    , catalog_url         VARCHAR2(50)
+    , CONSTRAINT          pk_product_id PRIMARY KEY (product_id)
+    , CONSTRAINT          product_status_lov_demo
+                          CHECK (product_status in ('orderable'
+                                                  ,'planned'
+                                                  ,'under development'
+                                                  ,'obsolete')
+ ) )
+ PARTITION BY HASH (product_id)
+ PARTITIONS 5
+ STORE IN (example); 
+ 
+CREATE TABLE sales_quota
+    ( product_id          NUMBER(6)
+    , customer_name       VARCHAR2(50)  
+    , order_qty           NUMBER(6)
+  ,CONSTRAINT u_product_id UNIQUE(product_id)
+ ); 
+ 
+CREATE BITMAP INDEX product_bm_ix
+   ON hash_products(list_price)
+   FROM hash_products h, sales_quota s
+   WHERE h.product_id = s.product_id
+   LOCAL(PARTITION ix_p1 TABLESPACE example,
+         PARTITION ix_p2,
+         PARTITION ix_p3 TABLESPACE example,
+         PARTITION ix_p4,
+         PARTITION ix_p5 TABLESPACE example)
+   TABLESPACE example;</pre><p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2129697"><span class="bold">Indexes on Nested Tables: Example</span></p>
+                  <p>The sample table <code class="codeph">pm.print_media</code> contains a nested table column <code class="codeph">ad_textdocs_ntab</code>, which is stored in storage table <code class="codeph">textdocs_nestedtab</code>. The following example creates a unique index on storage table <code class="codeph">textdocs_nestedtab</code>:
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE UNIQUE INDEX nested_tab_ix
+      ON textdocs_nestedtab(NESTED_TABLE_ID, document_typ);
+</pre><p>Including pseudocolumn <code class="codeph">NESTED_TABLE_ID</code> ensures distinct rows in nested table column <code class="codeph">ad_textdocs_ntab</code>.
+                  </p>
+                  <p id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__I2089060"><span class="bold">Indexing on Substitutable Columns: Examples</span></p>
+                  <p>You can build an index on attributes of the declared type of a substitutable column. In addition, you can reference the subtype attributes by using the appropriate <code class="codeph">TREAT</code> function. The following example uses the table <code class="codeph">books</code>, which is created in <span class="q">"<a href="CREATE-TABLE.html#GUID-F9CE0CC3-13AE-4744-A43C-EAC7A71AAAB6__I2090577">Substitutable Table and Column Examples</a>"</span>. The statement creates an index on the <code class="codeph">salary</code> attribute of all employee authors in the <code class="codeph">books</code> table:
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE INDEX salary_i 
+   ON books (TREAT(author AS employee_t).salary);
+</pre><p>The target type in the argument of the <code class="codeph">TREAT</code> function must be the type that added the attribute being referenced. In the example, the target of <code class="codeph">TREAT</code> is <code class="codeph">employee_t</code>, which is the type that added the <code class="codeph">salary</code> attribute.
+                  </p>
+                  <p>If this condition is not satisfied, then Oracle Database interprets the <code class="codeph">TREAT</code> function as any functional expression and creates the index as a function-based index. For example, the following statement creates a function-based index on the <code class="codeph">salary</code> attribute of part-time employees, assigning nulls to instances of all other types in the type hierarchy.
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE INDEX salary_func_i ON persons p
+   (TREAT(VALUE(p) AS part_time_emp_t).salary);
+</pre><p>You can also build an index on the type-discriminant column underlying a substitutable column by using the <code class="codeph">SYS_TYPEID</code> function.
+                  </p>
+                  <div class="infoboxnote" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-ED1954B4-C4F9-41DF-9BF5-5B826A77319B">
+                     <p class="notep1">Note:</p>
+                     <p>Oracle Database uses the type-discriminant column to evaluate queries that involve the <code class="codeph">IS</code> <code class="codeph">OF</code> <span class="italic"><code class="codeph">type</code></span> condition. The cardinality of the typeid column is normally low, so Oracle recommends that you build a bitmap index in this situation.
+                     </p>
+                  </div>
+                  <p>The following statement creates a bitmap index on the typeid of the author column of the books table:</p><pre class="oac_no_warn" dir="ltr">CREATE BITMAP INDEX typeid_i ON books (SYS_TYPEID(author));</pre><div class="infoboxnotealso" id="GUID-1F89BBC0-825F-4215-AF71-7588E31D8BFE__GUID-2A687EF2-88E8-4629-B5B0-C7BC345D7451">
+                     <p class="notep1">See Also:</p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=LNPLS01383" target="_blank"><span class="italic">Oracle Database PL/SQL Language Reference</span></a> to see the creation of the type hierarchy underlying the <code class="codeph">books</code> table
+                           </p>
+                        </li>
+                        <li>
+                           <p>the functions <a href="TREAT.html#GUID-037C0CD3-C256-4A02-80E0-C6F15147C5BF">TREAT</a> and <a href="SYS_TYPEID.html#GUID-4E3D45A1-7433-495D-9062-88505A1496E0">SYS_TYPEID</a> and the condition <span class="q">"<a href="IS-OF-type-Condition.html#GUID-7254E4C7-0194-4C1F-A3B2-2CFB0AD907CD">IS OF type Condition</a>"</span></p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

@@ -1,0 +1,44 @@
+> For the complete documentation index, see [llms.txt](https://mariadb.com/docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/div.md).
+
+# DIV
+
+## Syntax
+
+```bnf
+DIV
+```
+
+## Description
+
+Integer division. Similar to [FLOOR()](/docs/server/reference/sql-functions/numeric-functions/floor.md), but is safe with [BIGINT](/docs/server/reference/data-types/numeric-data-types/bigint.md) values. Incorrect results may occur for non-integer operands that exceed the `BIGINT` range.
+
+If the `ERROR_ON_DIVISION_BY_ZERO` [SQL\_MODE](/docs/server/server-management/variables-and-modes/sql_mode.md) is used, a division by zero produces an error. Otherwise, it returns `NULL`.
+
+The remainder of a division can be obtained using the [MOD](/docs/server/reference/sql-functions/numeric-functions/mod.md) operator.
+
+## Examples
+
+```sql
+SELECT 300 DIV 7;
++-----------+
+| 300 DIV 7 |
++-----------+
+|        42 |
++-----------+
+
+SELECT 300 DIV 0;
++-----------+
+| 300 DIV 0 |
++-----------+
+|      NULL |
++-----------+
+```
+
+## See Also
+
+* [Division operator](/docs/server/reference/sql-structure/operators/arithmetic-operators/division-operator.md)
+* [Operator Precedence](/docs/server/reference/sql-structure/operators/operator-precedence.md)
+
+<sub>*This page is licensed: GPLv2, originally from*</sub> [<sub>*fill\_help\_tables.sql*</sub>](https://github.com/MariaDB/server/blob/main/scripts/fill_help_tables.sql)
+
+{% @marketo/form formId="4316" %}

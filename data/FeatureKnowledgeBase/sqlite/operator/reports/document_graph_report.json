@@ -1,0 +1,62 @@
+{
+  "dbms": "sqlite",
+  "feature_type": "operator",
+  "nodes": {
+    "page": 4,
+    "section": 22,
+    "block": 230,
+    "feature_candidate": 41
+  },
+  "edges": {
+    "page_contains_section": 22,
+    "section_contains_block": 230,
+    "section_previous": 18,
+    "section_next": 18,
+    "feature_documented_in_section": 61,
+    "total": 349
+  },
+  "noise": {
+    "noise_nodes": 9,
+    "noise_sections": 0,
+    "noise_blocks": 9,
+    "eligible_nodes": 247
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "sqlite.operator.!=",
+      "target": "sqlite_current_lang_expr_s0003"
+    },
+    {
+      "source": "sqlite.operator.%",
+      "target": "sqlite_current_lang_expr_s0003"
+    },
+    {
+      "source": "sqlite.operator.&",
+      "target": "sqlite_current_lang_expr_s0003"
+    },
+    {
+      "source": "sqlite.operator.*",
+      "target": "sqlite_current_lang_expr_s0003"
+    },
+    {
+      "source": "sqlite.operator.+",
+      "target": "sqlite_current_lang_expr_s0003"
+    },
+    {
+      "source": "sqlite.operator.->>",
+      "target": "sqlite_current_lang_expr_s0003"
+    },
+    {
+      "source": "sqlite.operator.->",
+      "target": "sqlite_current_lang_expr_s0003"
+    },
+    {
+      "source": "sqlite.operator.-",
+      "target": "sqlite_current_lang_expr_s0003"
+    }
+  ],
+  "generated_at": "2026-08-06T19:08:15.694340+08:00"
+}

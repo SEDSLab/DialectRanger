@@ -1,0 +1,22 @@
+{
+  "dbms": "cockroachdb",
+  "feature_type": "function",
+  "mode": "shadow",
+  "backend": "mock",
+  "total_features": 702,
+  "semantic_drafts": 702,
+  "status_counts": {
+    "extracted": 0,
+    "partial": 445,
+    "insufficient_context": 257,
+    "no_context": 0,
+    "skipped": 0,
+    "validation_failed": 0
+  },
+  "description_claims": 701,
+  "constraints": 0,
+  "example_roles": 0,
+  "invalid_evidence_refs": 0,
+  "merge_into_kb": false,
+  "generated_at": "2026-08-06T19:12:35.749687+08:00"
+}

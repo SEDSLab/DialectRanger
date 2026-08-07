@@ -1,0 +1,74 @@
+{
+  "dbms": "mariadb",
+  "feature_type": "operator",
+  "nodes": {
+    "page": 84,
+    "section": 268,
+    "block": 1894,
+    "feature_candidate": 44
+  },
+  "edges": {
+    "page_contains_section": 268,
+    "section_contains_block": 1894,
+    "section_previous": 184,
+    "section_next": 184,
+    "feature_documented_in_section": 45,
+    "see_also_links_to_feature": 2,
+    "total": 2577
+  },
+  "noise": {
+    "noise_nodes": 174,
+    "noise_sections": 0,
+    "noise_blocks": 174,
+    "eligible_nodes": 2073
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [
+    {
+      "source": "mariadb_current_coalesce_s0004",
+      "target": "mariadb.function.not",
+      "matched_name": "NOT"
+    },
+    {
+      "source": "mariadb_current_is_null_s0005",
+      "target": "mariadb.function.not",
+      "matched_name": "NOT"
+    }
+  ],
+  "sample_feature_documented_edges": [
+    {
+      "source": "mariadb.function.not",
+      "target": "mariadb_current_parentheses_s0001"
+    },
+    {
+      "source": "mariadb.operator.!=",
+      "target": "mariadb_current_not_equal_md_s0001"
+    },
+    {
+      "source": "mariadb.operator.%",
+      "target": "mariadb_current_arithmetic_operators_md_s0001"
+    },
+    {
+      "source": "mariadb.operator.&",
+      "target": "mariadb_current_and_md_s0001"
+    },
+    {
+      "source": "mariadb.operator.*",
+      "target": "mariadb_current_addition_operator_md_s0001"
+    },
+    {
+      "source": "mariadb.operator.+",
+      "target": "mariadb_current_addition_operator_md_s0001"
+    },
+    {
+      "source": "mariadb.operator.-",
+      "target": "mariadb_current_arithmetic_operators_md_s0001"
+    },
+    {
+      "source": "mariadb.operator./",
+      "target": "mariadb_current_arithmetic_operators_md_s0001"
+    }
+  ],
+  "generated_at": "2026-08-06T20:03:19.246284+08:00"
+}

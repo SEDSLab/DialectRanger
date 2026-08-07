@@ -1,0 +1,105 @@
+{"feature_id": "duckdb.operator.!=_duckdb_stable_comparison_operators", "name": "!=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.!_duckdb_stable_comparison_operators", "name": "!", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.!_duckdb_stable_numeric", "name": "!", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.%_duckdb_stable_numeric", "name": "%", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.&_duckdb_stable_numeric", "name": "&", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.**_duckdb_stable_numeric", "name": "**", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.*_duckdb_stable_numeric", "name": "*", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.*_duckdb_stable_star", "name": "*", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.*_duckdb_stable_subqueries", "name": "*", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.+_duckdb_stable_interval", "name": "+", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.+_duckdb_stable_numeric", "name": "+", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.-_duckdb_stable_in", "name": "-", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.-_duckdb_stable_interval", "name": "-", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.-_duckdb_stable_numeric", "name": "-", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.//_duckdb_stable_numeric", "name": "//", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator./_duckdb_stable_numeric", "name": "/", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.<<_duckdb_stable_numeric", "name": "<<", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.<=_duckdb_stable_comparison_operators", "name": "<=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.<=_duckdb_stable_numeric", "name": "<=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.<=_duckdb_stable_subqueries", "name": "<=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.<>_duckdb_stable_comparison_operators", "name": "<>", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.<_duckdb_stable_comparison_operators", "name": "<", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.<_duckdb_stable_numeric", "name": "<", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.<_duckdb_stable_subqueries", "name": "<", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.==_duckdb_stable_comparison_operators", "name": "==", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.=_duckdb_stable_collations", "name": "=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.=_duckdb_stable_comparison_operators", "name": "=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.=_duckdb_stable_numeric", "name": "=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.=_duckdb_stable_star", "name": "=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.=_duckdb_stable_subqueries", "name": "=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.>=_duckdb_stable_comparison_operators", "name": ">=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.>=_duckdb_stable_subqueries", "name": ">=", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.>>_duckdb_stable_numeric", "name": ">>", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.>_duckdb_stable_comparison_operators", "name": ">", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.>_duckdb_stable_numeric", "name": ">", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.>_duckdb_stable_subqueries", "name": ">", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.^_duckdb_stable_numeric", "name": "^", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.and_duckdb_stable_collations", "name": "AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.and_duckdb_stable_comparison_operators", "name": "AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.and_duckdb_stable_in", "name": "AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.and_duckdb_stable_interval", "name": "AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.and_duckdb_stable_logical_operators", "name": "AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.and_duckdb_stable_numeric", "name": "AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.and_duckdb_stable_overview", "name": "AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.and_duckdb_stable_regular_expressions", "name": "AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.and_duckdb_stable_star", "name": "AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.and_duckdb_stable_subqueries", "name": "AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.between_duckdb_stable_comparison_operators", "name": "BETWEEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.glob_duckdb_stable_star", "name": "GLOB", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.in_duckdb_stable_collations", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.in_duckdb_stable_comparison_operators", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.in_duckdb_stable_in", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.in_duckdb_stable_numeric", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.in_duckdb_stable_overview", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.in_duckdb_stable_regular_expressions", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.in_duckdb_stable_star", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.in_duckdb_stable_subqueries", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.is_distinct_from_duckdb_stable_comparison_operators", "name": "IS DISTINCT FROM", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.is_duckdb_stable_comparison_operators", "name": "IS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.is_duckdb_stable_in", "name": "IS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.is_duckdb_stable_logical_operators", "name": "IS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.is_duckdb_stable_numeric", "name": "IS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.is_duckdb_stable_overview", "name": "IS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.is_duckdb_stable_regular_expressions", "name": "IS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.is_duckdb_stable_subqueries", "name": "IS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.is_not_distinct_from_duckdb_stable_comparison_operators", "name": "IS NOT DISTINCT FROM", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.is_not_null_duckdb_stable_comparison_operators", "name": "IS NOT NULL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.is_null_duckdb_stable_comparison_operators", "name": "IS NULL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.like_duckdb_stable_comparison_operators", "name": "LIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.like_duckdb_stable_regular_expressions", "name": "LIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.like_duckdb_stable_star", "name": "LIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.not_between_duckdb_stable_comparison_operators", "name": "NOT BETWEEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.not_duckdb_stable_cast", "name": "NOT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.not_duckdb_stable_collations", "name": "NOT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.not_duckdb_stable_comparison_operators", "name": "NOT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.not_duckdb_stable_in", "name": "NOT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.not_duckdb_stable_logical_operators", "name": "NOT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.not_duckdb_stable_numeric", "name": "NOT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.not_duckdb_stable_regular_expressions", "name": "NOT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.not_duckdb_stable_star", "name": "NOT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.not_duckdb_stable_subqueries", "name": "NOT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.not_duckdb_stable_try", "name": "NOT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.not_in_duckdb_stable_in", "name": "NOT IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.not_in_duckdb_stable_subqueries", "name": "NOT IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.not_similar_to_duckdb_stable_star", "name": "NOT SIMILAR TO", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.or_duckdb_stable_case", "name": "OR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.or_duckdb_stable_comparison_operators", "name": "OR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.or_duckdb_stable_in", "name": "OR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.or_duckdb_stable_logical_operators", "name": "OR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.or_duckdb_stable_numeric", "name": "OR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.or_duckdb_stable_regular_expressions", "name": "OR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.or_duckdb_stable_star", "name": "OR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.or_duckdb_stable_subqueries", "name": "OR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.regexp_duckdb_stable_regular_expressions", "name": "REGEXP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.similar_to_duckdb_stable_regular_expressions", "name": "SIMILAR TO", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.similar_to_duckdb_stable_star", "name": "SIMILAR TO", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.similar_to_duckdb_stable_subqueries", "name": "SIMILAR TO", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.|_duckdb_stable_comparison_operators", "name": "|", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.|_duckdb_stable_interval", "name": "|", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.|_duckdb_stable_logical_operators", "name": "|", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.|_duckdb_stable_numeric", "name": "|", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.operator.|_duckdb_stable_regular_expressions", "name": "|", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.|_duckdb_stable_star", "name": "|", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.operator.|_duckdb_stable_subqueries", "name": "|", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.operator.~_duckdb_stable_numeric", "name": "~", "status": "needs_review", "reason": ["missing_examples"], "details": []}

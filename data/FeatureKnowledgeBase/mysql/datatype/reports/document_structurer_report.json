@@ -1,0 +1,337 @@
+{
+  "dbms": "mysql",
+  "feature_type": "datatype",
+  "processed_pages": 39,
+  "skipped_pages": 0,
+  "total_sections": 65,
+  "total_blocks": 1892,
+  "section_sources": {
+    "heading_tree": 65
+  },
+  "block_types": {
+    "heading": 65,
+    "paragraph": 443,
+    "anchor": 292,
+    "list": 235,
+    "code": 694,
+    "table": 15,
+    "table_row": 108,
+    "signature": 28,
+    "warning": 2,
+    "note": 10
+  },
+  "pages": [
+    {
+      "page_id": "mysql_8_0_data_types",
+      "sections": 1,
+      "blocks": 30,
+      "anchors": 18,
+      "tables": 0,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "mysql_8_0_other_vendor_data_types",
+      "sections": 1,
+      "blocks": 27,
+      "anchors": 5,
+      "tables": 1,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mysql_8_0_type_conversion",
+      "sections": 1,
+      "blocks": 73,
+      "anchors": 4,
+      "tables": 0,
+      "code_blocks": 25
+    },
+    {
+      "page_id": "mysql_8_0_precision_math_numbers",
+      "sections": 1,
+      "blocks": 11,
+      "anchors": 4,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_precision_math_decimal_characteristics",
+      "sections": 1,
+      "blocks": 25,
+      "anchors": 0,
+      "tables": 1,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mysql_8_0_numeric_types",
+      "sections": 1,
+      "blocks": 9,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_numeric_type_syntax",
+      "sections": 1,
+      "blocks": 174,
+      "anchors": 46,
+      "tables": 0,
+      "code_blocks": 97
+    },
+    {
+      "page_id": "mysql_8_0_integer_types",
+      "sections": 1,
+      "blocks": 11,
+      "anchors": 1,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_fixed_point_types",
+      "sections": 1,
+      "blocks": 10,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mysql_8_0_floating_point_types",
+      "sections": 1,
+      "blocks": 7,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_bit_type",
+      "sections": 1,
+      "blocks": 5,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_numeric_type_attributes",
+      "sections": 1,
+      "blocks": 18,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_date_and_time_types",
+      "sections": 1,
+      "blocks": 50,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "mysql_8_0_date_and_time_type_syntax",
+      "sections": 1,
+      "blocks": 103,
+      "anchors": 13,
+      "tables": 0,
+      "code_blocks": 76
+    },
+    {
+      "page_id": "mysql_8_0_datetime",
+      "sections": 1,
+      "blocks": 41,
+      "anchors": 8,
+      "tables": 0,
+      "code_blocks": 16
+    },
+    {
+      "page_id": "mysql_8_0_time",
+      "sections": 1,
+      "blocks": 9,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_year",
+      "sections": 1,
+      "blocks": 41,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 26
+    },
+    {
+      "page_id": "mysql_8_0_date_and_time_type_conversion",
+      "sections": 1,
+      "blocks": 28,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 15
+    },
+    {
+      "page_id": "mysql_8_0_string_types",
+      "sections": 1,
+      "blocks": 12,
+      "anchors": 8,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_string_type_syntax",
+      "sections": 1,
+      "blocks": 214,
+      "anchors": 46,
+      "tables": 0,
+      "code_blocks": 139
+    },
+    {
+      "page_id": "mysql_8_0_char",
+      "sections": 1,
+      "blocks": 34,
+      "anchors": 8,
+      "tables": 1,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mysql_8_0_binary_varbinary",
+      "sections": 1,
+      "blocks": 17,
+      "anchors": 4,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mysql_8_0_blob",
+      "sections": 1,
+      "blocks": 51,
+      "anchors": 9,
+      "tables": 0,
+      "code_blocks": 22
+    },
+    {
+      "page_id": "mysql_8_0_enum",
+      "sections": 7,
+      "blocks": 87,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 27
+    },
+    {
+      "page_id": "mysql_8_0_set",
+      "sections": 1,
+      "blocks": 42,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 8
+    },
+    {
+      "page_id": "mysql_8_0_spatial_types",
+      "sections": 2,
+      "blocks": 39,
+      "anchors": 9,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_spatial_type_overview",
+      "sections": 1,
+      "blocks": 53,
+      "anchors": 18,
+      "tables": 0,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "mysql_8_0_json",
+      "sections": 10,
+      "blocks": 351,
+      "anchors": 32,
+      "tables": 1,
+      "code_blocks": 136
+    },
+    {
+      "page_id": "mysql_8_0_data_type_defaults",
+      "sections": 4,
+      "blocks": 69,
+      "anchors": 7,
+      "tables": 0,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "mysql_8_0_storage_requirements",
+      "sections": 8,
+      "blocks": 126,
+      "anchors": 24,
+      "tables": 6,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_choosing_types",
+      "sections": 1,
+      "blocks": 6,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_error_log_filtering",
+      "sections": 1,
+      "blocks": 10,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "mysql_8_0_innodb_monitor_types",
+      "sections": 1,
+      "blocks": 9,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mysql_8_0_mysql_cluster_ndbinfo_dict_obj_types",
+      "sections": 1,
+      "blocks": 8,
+      "anchors": 1,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mysql_8_0_windows_select_server",
+      "sections": 1,
+      "blocks": 12,
+      "anchors": 2,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_charset_collation_implementations",
+      "sections": 1,
+      "blocks": 46,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "mysql_8_0_optimize_data_types",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_optimize_character",
+      "sections": 1,
+      "blocks": 18,
+      "anchors": 1,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "mysql_8_0_optimize_blob",
+      "sections": 1,
+      "blocks": 15,
+      "anchors": 1,
+      "tables": 0,
+      "code_blocks": 6
+    }
+  ]
+}

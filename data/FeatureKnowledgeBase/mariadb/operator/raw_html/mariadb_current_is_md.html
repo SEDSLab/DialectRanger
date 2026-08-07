@@ -1,0 +1,47 @@
+> For the complete documentation index, see [llms.txt](https://mariadb.com/docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/is.md).
+
+# IS
+
+## Syntax
+
+```bnf
+IS boolean_value
+```
+
+## Description
+
+Tests a value against a boolean value, where `boolean_value` can be `TRUE`, `FALSE`, or `UNKNOWN`.
+
+There is an important difference between using `IS TRUE` or comparing a value with `TRUE` using `=`. When using `=`, only `1` equals to `TRUE`. But when using `IS TRUE`, all values which are logically true (like a number > 1) return `TRUE`.
+
+## Examples
+
+```sql
+SELECT 1 IS TRUE, 0 IS FALSE, NULL IS UNKNOWN;
++-----------+------------+-----------------+
+| 1 IS TRUE | 0 IS FALSE | NULL IS UNKNOWN |
++-----------+------------+-----------------+
+|         1 |          1 |               1 |
++-----------+------------+-----------------+
+```
+
+Difference between `=` and `IS TRUE`:
+
+```sql
+SELECT 2 = TRUE, 2 IS TRUE;
++----------+-----------+
+| 2 = TRUE | 2 IS TRUE |
++----------+-----------+
+|        0 |         1 |
++----------+-----------+
+```
+
+## See Also
+
+* [Boolean Literals](/docs/server/reference/sql-structure/sql-language-structure/sql-language-structure-boolean-literals.md)
+* [BOOLEAN Data Type](/docs/server/reference/data-types/numeric-data-types/boolean.md)
+* [Operator Precedence](/docs/server/reference/sql-structure/operators/operator-precedence.md)
+
+<sub>*This page is licensed: GPLv2, originally from*</sub> [<sub>*fill\_help\_tables.sql*</sub>](https://github.com/MariaDB/server/blob/main/scripts/fill_help_tables.sql)
+
+{% @marketo/form formId="4316" %}

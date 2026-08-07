@@ -1,0 +1,13 @@
+{
+  "dbms": "clickhouse",
+  "feature_type": "operator",
+  "candidate_features": 283,
+  "candidate_groups": 118,
+  "feature_drafts": 118,
+  "known_operator_coverage": {
+    "total": 0,
+    "covered": 0,
+    "missing": [],
+    "coverage_ratio": 1.0
+  }
+}

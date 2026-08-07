@@ -1,0 +1,7 @@
+{
+  "dbms": "trino",
+  "feature_type": "operator",
+  "candidates": 28,
+  "groups": 26,
+  "drafts": 26
+}

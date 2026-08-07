@@ -1,0 +1,1959 @@
+ <!DOCTYPE html>
+		<html
+			class="layout layout-holy-grail   show-table-of-contents conceptual show-breadcrumb default-focus"
+			lang="en-us"
+			dir="ltr"
+			data-authenticated="false"
+			data-auth-status-determined="false"
+			data-target="docs"
+			x-ms-format-detection="none"
+		>
+			
+		<head>
+			<title>CLR Table-Valued Functions - SQL Server | Microsoft Learn</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name="color-scheme" content="light dark" />
+
+			<meta name="description" content="A table-valued function returns a table. In SQL Server CLR integration, you can write table-valued functions in managed code." />
+			<link rel="canonical" href="https://learn.microsoft.com/en-us/sql/relational-databases/clr-integration-database-objects-user-defined-functions/clr-table-valued-functions?view=sql-server-ver17" /> 
+
+			<!-- Non-customizable open graph and sharing-related metadata -->
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:site" content="@MicrosoftLearn" />
+			<meta property="og:type" content="website" />
+			<meta property="og:image:alt" content="Microsoft Learn" />
+			<meta property="og:image" content="https://learn.microsoft.com/en-us/media/open-graph-image.png" />
+			<!-- Page specific open graph and sharing-related metadata -->
+			<meta property="og:title" content="CLR Table-Valued Functions - SQL Server" />
+			<meta property="og:url" content="https://learn.microsoft.com/en-us/sql/relational-databases/clr-integration-database-objects-user-defined-functions/clr-table-valued-functions?view=sql-server-ver17" />
+			<meta property="og:description" content="A table-valued function returns a table. In SQL Server CLR integration, you can write table-valued functions in managed code." />
+			<meta name="platform_id" content="0113c9c4-b88b-40d4-a75a-a1fd3a72cff6" /> <meta name="scope" content="sql" />
+			<meta name="locale" content="en-us" />
+			 
+			<meta name="uhfHeaderId" content="MSDocsHeader-DocsSQL" />
+
+			<meta name="page_type" content="conceptual" />
+
+			<!--page specific meta tags-->
+			
+
+			<!-- custom meta tags -->
+			
+		<meta name="toc_preview" content="true" />
+	
+		<meta name="feedback_system" content="Standard" />
+	
+		<meta name="feedback_product_url" content="https://feedback.azure.com/d365community/forum/04fe6ee0-3b25-ec11-b6e6-000d3a4f0da0" />
+	
+		<meta name="feedback_help_link_url" content="https://learn.microsoft.com/answers/tags/191/sql-server" />
+	
+		<meta name="feedback_help_link_type" content="get-help-at-qna" />
+	
+		<meta name="recommendations" content="true" />
+	
+		<meta name="breadcrumb_path" content="../../breadcrumb/toc.json" />
+	
+		<meta name="monikerRange" content="&gt;=sql-server-2017 || &gt;=sql-server-linux-2017" />
+	
+		<meta name="ms.update-cycle" content="1825-days" />
+	
+		<meta name="author" content="rwestMSFT" />
+	
+		<meta name="ms.author" content="randolphwest" />
+	
+		<meta name="ms.date" content="2024-12-27T00:00:00Z" />
+	
+		<meta name="ms.service" content="sql" />
+	
+		<meta name="ms.subservice" content="clr" />
+	
+		<meta name="ms.topic" content="reference" />
+	
+		<meta name="document_id" content="ea6b183c-245e-6fdd-93e4-783cd3fd43a0" />
+	
+		<meta name="document_version_independent_id" content="b831be65-ed90-24fc-8033-2172e98ef2e0" />
+	
+		<meta name="updated_at" content="2025-01-14T18:30:00Z" />
+	
+		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/sql-docs-pr/blob/live/docs/relational-databases/clr-integration-database-objects-user-defined-functions/clr-table-valued-functions.md" />
+	
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/sql-docs-pr/blob/7b1b06f7235c803ffbe0e98e6cb38b85543262ae/docs/relational-databases/clr-integration-database-objects-user-defined-functions/clr-table-valued-functions.md" />
+	
+		<meta name="git_commit_id" content="7b1b06f7235c803ffbe0e98e6cb38b85543262ae" />
+	
+		<meta name="monikers" content="sql-server-linux-2017" />
+	
+		<meta name="monikers" content="sql-server-linux-ver15" />
+	
+		<meta name="monikers" content="sql-server-linux-ver16" />
+	
+		<meta name="monikers" content="sql-server-linux-ver17" />
+	
+		<meta name="monikers" content="sql-server-2017" />
+	
+		<meta name="monikers" content="sql-server-ver15" />
+	
+		<meta name="monikers" content="sql-server-ver16" />
+	
+		<meta name="monikers" content="sql-server-ver17" />
+	
+		<meta name="default_moniker" content="sql-server-ver17" />
+	
+		<meta name="site_name" content="Docs" />
+	
+		<meta name="depot_name" content="SQL.sql-content" />
+	
+		<meta name="schema" content="Conceptual" />
+	
+		<meta name="toc_rel" content="../../toc.json" />
+	
+		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/SQL.sql-content/{branchName}{pdfName}" />
+	
+		<meta name="search.mshattr.devlang" content="tsql vb csharp" />
+	
+		<meta name="word_count" content="1822" />
+	
+		<meta name="config_moniker_range" content="=azuresqldb-current || =azuresqldb-mi-current || =azure-sqldw-latest || &gt;=aps-pdw-2016 || &gt;=sql-server-2017 || &gt;=sql-server-linux-2017 || =fabric || =fabric-sqldb" />
+	
+		<meta name="asset_id" content="relational-databases/clr-integration-database-objects-user-defined-functions/clr-table-valued-functions" />
+	
+		<meta name="moniker_range_name" content="24ac6c553e112076df60c2ee356379e3" />
+	
+		<meta name="item_type" content="Content" />
+	
+		<meta name="source_path" content="docs/relational-databases/clr-integration-database-objects-user-defined-functions/clr-table-valued-functions.md" />
+	
+		<meta name="previous_tlsh_hash" content="C07F6EC1EF586600EDC75B573569E55893E0C10BBB20BF74293F2B6190623DA30B19A8F5D70AF3C07331C15361A1F15F11EEB72BA47AB9A500F558688E9D2662C6CF3BAE8D" />
+	
+		<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/sql-docs/blob/live/docs/relational-databases/clr-integration-database-objects-user-defined-functions/clr-table-valued-functions.md" />
+	
+		<meta name="markdown_url" content="https://learn.microsoft.com/en-us/sql/relational-databases/clr-integration-database-objects-user-defined-functions/clr-table-valued-functions?view=sql-server-ver17&amp;accept=text/markdown" />
+	 
+		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/540ac133-a371-4dbb-8f94-28d6cc77a70b" data-source="generated" />
+	
+		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/60bfc045-f127-4841-9d00-ea35495a5800" data-source="generated" />
+	
+
+			<!-- Apply persisted/system theme before first paint to prevent wrong-theme flash when scripts are deferred. -->
+			<script id="theme-preference">
+				(function () {
+			try {
+				var stored = localStorage.getItem('theme');
+				var theme = /^(light|dark|high-contrast)$/.test(stored)
+					? stored
+					: matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+				document.documentElement.classList.add('theme-' + theme);
+			} catch (e) {}
+		})();;
+			</script>
+
+			<script id="atlas-layout-preferences">
+				(function () {
+			try {
+				var state = JSON.parse(localStorage.getItem('atlas-layout-preferences') || '{}');
+				var view = state["docs-layout-persistence"] || {};
+				var excludesKey = "";
+				var blocked = {};
+				if (excludesKey) {
+					var exclusions = JSON.parse(localStorage.getItem('atlas-layout-exclusions') || '{}');
+					if (Object.prototype.hasOwnProperty.call(exclusions, excludesKey)) {
+						var scoped = exclusions[excludesKey];
+						if (scoped) {
+							if (typeof scoped === 'object') blocked = scoped;
+						}
+					}
+				}
+				var html = document.documentElement;
+				for (var c in view) {
+					if (Object.prototype.hasOwnProperty.call(blocked, c)) continue;
+					if (view[c]) html.classList.add(c);
+					else html.classList.remove(c);
+				}
+			} catch (e) {}
+		})();;
+			</script>
+
+			<!-- assets and js globals -->
+			
+			<link rel="stylesheet" href="/static/assets/0.4.03503.8087-34604b98/styles/site.css" />
+			
+			<script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"></script>
+			<script async src="https://js.monitor.azure.com/scripts/c/ms.jsll-4.min.js"></script>
+			
+
+			<!-- msdocs global object -->
+			<script id="msdocs-script">
+		var msDocs = {
+  "environment": {
+    "accessLevel": "online",
+    "azurePortalHostname": "portal.azure.com",
+    "reviewFeatures": false,
+    "supportLevel": "production",
+    "systemContent": true,
+    "siteName": "learn",
+    "legacyHosting": false
+  },
+  "data": {
+    "contentLocale": "en-us",
+    "contentDir": "ltr",
+    "userLocale": "en-us",
+    "userDir": "ltr",
+    "pageTemplate": "Conceptual",
+    "layoutStateStorageKey": "docs-layout-persistence",
+    "brand": "",
+    "context": {},
+    "standardFeedback": true,
+    "showFeedbackReport": false,
+    "feedbackHelpLinkType": "get-help-at-qna",
+    "feedbackHelpLinkUrl": "https://learn.microsoft.com/answers/tags/191/sql-server",
+    "feedbackSystem": "Standard",
+    "feedbackGitHubRepo": "MicrosoftDocs/sql-docs",
+    "feedbackProductUrl": "https://feedback.azure.com/d365community/forum/04fe6ee0-3b25-ec11-b6e6-000d3a4f0da0",
+    "extendBreadcrumb": false,
+    "isEditDisplayable": true,
+    "isPrivateUnauthorized": false,
+    "hideViewSource": false,
+    "isPermissioned": false,
+    "hasRecommendations": false,
+    "contributors": [
+      {
+        "name": "rwestMSFT",
+        "url": "https://github.com/rwestMSFT"
+      },
+      {
+        "name": "rothja",
+        "url": "https://github.com/rothja"
+      },
+      {
+        "name": "v-chmccl",
+        "url": "https://github.com/v-chmccl"
+      },
+      {
+        "name": "atikmapari",
+        "url": "https://github.com/atikmapari"
+      },
+      {
+        "name": "jzabroski",
+        "url": "https://github.com/jzabroski"
+      },
+      {
+        "name": "MikeRayMSFT",
+        "url": "https://github.com/MikeRayMSFT"
+      },
+      {
+        "name": "TimShererWithAquent",
+        "url": "https://github.com/TimShererWithAquent"
+      },
+      {
+        "name": "nschonni",
+        "url": "https://github.com/nschonni"
+      },
+      {
+        "name": "craigg-msft",
+        "url": "https://github.com/craigg-msft"
+      },
+      {
+        "name": "CarlRabeler",
+        "url": "https://github.com/CarlRabeler"
+      }
+    ]
+  },
+  "functions": {}
+};;
+	</script>
+
+			<!-- base scripts, msdocs global should be before this -->
+			<script
+				src="/static/assets/0.4.03503.8087-34604b98/scripts/en-us/index-docs.js"
+				async
+			></script>
+			
+
+			<!-- json-ld -->
+			
+		</head>
+	
+			<body
+				id="body"
+				data-bi-name="body"
+				class="layout-body "
+				lang="en-us"
+				dir="ltr"
+			>
+				<header class="layout-body-header background-color-body-medium">
+		<div class="header-holder has-default-focus">
+			
+		<a
+			href="#main"
+			
+			style="z-index: 1070"
+			class="outline-color-text visually-hidden-until-focused position-fixed inner-focus focus-visible top-0 left-0 right-0 padding-xs text-align-center background-color-body"
+			
+		>
+			Skip to main content
+		</a>
+	
+		<a
+			href="#"
+			data-skip-to-ask-learn
+			style="z-index: 1070"
+			class="outline-color-text visually-hidden-until-focused position-fixed inner-focus focus-visible top-0 left-0 right-0 padding-xs text-align-center background-color-body"
+			hidden
+		>
+			Skip to Ask Learn chat experience
+		</a>
+	
+
+			<div hidden id="cookie-consent-holder" data-test-id="cookie-consent-container"></div>
+			<!-- Unsupported browser warning -->
+			<div
+				id="unsupported-browser"
+				style="background-color: white; color: black; padding: 16px; border-bottom: 1px solid grey;"
+				hidden
+			>
+				<div style="max-width: 800px; margin: 0 auto;">
+					<p style="font-size: 24px">This browser is no longer supported.</p>
+					<p style="font-size: 16px; margin-top: 16px;">
+						Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.
+					</p>
+					<div style="margin-top: 12px;">
+						<a
+							href="https://go.microsoft.com/fwlink/p/?LinkID=2092881 "
+							style="background-color: #0078d4; border: 1px solid #0078d4; color: white; padding: 6px 12px; border-radius: 2px; display: inline-block;"
+						>
+							Download Microsoft Edge
+						</a>
+						<a
+							href="https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge"
+							style="background-color: white; padding: 6px 12px; border: 1px solid #505050; color: #171717; border-radius: 2px; display: inline-block;"
+						>
+							More info about Internet Explorer and Microsoft Edge
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- site header -->
+			<div
+				id="ms--site-header"
+				data-test-id="site-header-wrapper"
+				itemscope="itemscope"
+				itemtype="http://schema.org/Organization"
+			>
+				<div
+					id="ms--mobile-nav"
+					class="site-header display-none-tablet padding-inline-none gap-none"
+					data-bi-name="mobile-header"
+					data-test-id="mobile-header"
+				></div>
+				<div
+					id="ms--primary-nav"
+					class="site-header display-none display-flex-tablet"
+					data-bi-name="L1-header"
+					data-test-id="primary-header"
+				></div>
+				<div
+					id="ms--secondary-nav"
+					class="site-header display-none display-flex-tablet"
+					data-bi-name="L2-header"
+					data-test-id="secondary-header"
+					
+				></div>
+			</div>
+			
+		<!-- banner -->
+		<div data-banner>
+			<div id="disclaimer-holder"></div>
+			
+		</div>
+		<!-- banner end -->
+	
+		</div>
+	</header>
+				 <section
+					id="layout-body-menu"
+					class="layout-body-menu border-right display-flex background-color-body-medium"
+					data-bi-name="menu"
+			  >
+					
+		<div
+			id="left-container"
+			class="left-container display-none padding-none display-block-tablet width-full display-none-until-layout-restored"
+			data-toc-container="true"
+		>
+			<div
+				id="ms--toc-content"
+				class="padding-left-sm padding-right-none padding-bottom-sm height-full"
+			>
+				<nav
+					id="affixed-left-container"
+					class="margin-top-xxs-tablet position-sticky display-flex flex-direction-column width-full"
+					aria-label="Primary"
+					data-bi-name="left-toc"
+					role="navigation"
+				>
+					<div
+						id="ms--collapsible-toc-header"
+						class="display-flex flex-direction-row-reverse justify-content-center align-items-center margin-bottom-xxs margin-right-xxs"
+					>
+						<button
+							type="button"
+							class="button button-clear inner-focus"
+							data-collapsible-toc-toggle
+							aria-expanded="true"
+							hidden
+							aria-controls="ms--toc-content"
+							aria-label="Table of contents"
+						>
+							<span class="icon icon-mirrored-rtl font-size-md" aria-hidden="true">
+								<span
+									class="docon docon-panel-left-contract display-none-layout-menu-collapsed"
+								></span>
+								<span
+									class="docon docon-panel-left-expand display-none display-inline-layout-menu-collapsed"
+								></span>
+							</span>
+						</button>
+						<div
+							id="ms--collapsible-toc-moniker-slot"
+							class="flex-grow-1 display-none-layout-menu-collapsed"
+						></div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	
+			  </section>
+
+				<main
+					id="main"
+					role="main"
+					class="layout-body-main "
+					data-bi-name="content"
+					lang="en-us"
+					dir="ltr"
+				>
+					
+			<div
+		id="ms--content-header"
+		class="content-header default-focus border-bottom-none"
+		data-bi-name="content-header"
+	>
+		<div class="content-header-controls margin-xxs margin-inline-sm-tablet">
+			<button
+				type="button"
+				class="contents-button button button-sm margin-right-xxs"
+				data-bi-name="contents-expand"
+				aria-haspopup="true"
+				data-contents-button
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-menu"></span></span>
+				<span class="contents-expand-title"> Table of contents </span>
+			</button>
+			<button
+				type="button"
+				class="ap-collapse-behavior ap-expanded button button-sm"
+				data-bi-name="ap-collapse"
+				aria-controls="action-panel"
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-exit-mode"></span></span>
+				<span>Exit editor mode</span>
+			</button>
+		</div>
+	</div>
+			<div
+				data-main-column
+				class="reading-width margin-inline-auto layout-padding padding-top-none padding-top-sm-tablet padding-bottom-sm"
+			>
+				<div>
+					
+		<div id="article-header" class="background-color-body margin-bottom-xs display-none-print">
+			<div class="display-flex align-items-center justify-content-space-between">
+				
+		<details
+			id="article-header-breadcrumbs-overflow-popover"
+			class="popover popover-left"
+			data-for="article-header-breadcrumbs"
+		>
+			<summary
+				class="button button-clear button-primary button-sm inner-focus"
+				aria-label="All breadcrumbs"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-more"></span>
+				</span>
+			</summary>
+			<div id="article-header-breadcrumbs-overflow" class="popover-content"></div>
+		</details>
+
+		<bread-crumbs
+			id="article-header-breadcrumbs"
+			role="group"
+			aria-label="Breadcrumbs"
+			data-test-id="article-header-breadcrumbs"
+			class="overflow-hidden flex-grow-1 margin-right-sm margin-right-md-tablet margin-right-lg-desktop margin-left-negative-xxs padding-left-xxs"
+		></bread-crumbs>
+	 
+		<div
+			id="article-header-page-actions"
+			class="opacity-none margin-left-auto display-flex flex-wrap-no-wrap align-items-stretch"
+		>
+			
+		<button
+			class="button button-sm border-none inner-focus display-none-tablet flex-shrink-0 "
+			data-bi-name="ask-learn-assistant-entry"
+			data-test-id="ask-learn-assistant-modal-entry-mobile"
+			data-ask-learn-modal-entry
+			
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-none display-inline-flex-tablet display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn "
+			data-bi-name="ask-learn-assistant-entry"
+			
+			data-test-id="ask-learn-assistant-modal-entry-tablet"
+			data-ask-learn-modal-entry
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn "
+			data-bi-name="ask-learn-assistant-entry"
+			
+			data-test-id="ask-learn-assistant-flyout-entry"
+			data-ask-learn-flyout-entry
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	 
+		<div class="language dropdown display-flex align-items-center">
+			<button
+				type="button"
+				class="dropdown-trigger button button-clear button-sm button-primary"
+				aria-expanded="false"
+				title="Language"
+				data-bi-name="language"
+			>
+				<span class="lang-title align-self-flex-start" dir="ltr">Language</span>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-chevron-down-light expanded-indicator"></span>
+				</span>
+			</button>
+			<div class="language-selector dropdown-menu padding-xxs">
+				<ul data-bi-name="language-links" dir="ltr">
+					
+			<li>
+				<button
+					type="button"
+					class="button button-clear button-sm button-block"
+					data-bi-name="lang-tsql"
+					aria-pressed="false"
+				>
+					tsql
+				</button>
+			</li>
+		
+			<li>
+				<button
+					type="button"
+					class="button button-clear button-sm button-block"
+					data-bi-name="lang-vb"
+					aria-pressed="false"
+				>
+					vb
+				</button>
+			</li>
+		
+			<li>
+				<button
+					type="button"
+					class="button button-clear button-sm button-block"
+					data-bi-name="lang-csharp"
+					aria-pressed="false"
+				>
+					csharp
+				</button>
+			</li>
+		
+				</ul>
+			</div>
+		</div>
+	
+
+			<details class="popover popover-right" id="article-header-page-actions-overflow">
+				<summary
+					class="justify-content-flex-start button button-clear button-sm button-primary inner-focus"
+					aria-label="More actions"
+					title="More actions"
+				>
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-more-vertical"></span>
+					</span>
+				</summary>
+				<div class="popover-content">
+					
+		<button
+			type="button"
+			id="ms--focus-mode-button"
+			data-focus-mode
+			data-bi-name="focus-mode-entry"
+			data-page-action-item="overflow-all"
+			data-popover-close
+			class="button button-clear button-sm button-block justify-content-flex-start text-align-left inner-focus display-none display-inline-flex-tablet"
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-glasses"></span>
+			</span>
+			<span>Reading mode</span>
+		</button>
+	 
+		<button
+			data-page-action-item="overflow-mobile"
+			type="button"
+			class="display-block-layout-menu-collapsed button-block button-sm inner-focus button button-clear display-none-tablet justify-content-flex-start text-align-left"
+			data-bi-name="contents-expand"
+			data-contents-button
+			data-popover-close
+		>
+			<span class="icon" aria-hidden="true"
+				><span class="docon docon-editor-list-bullet"></span
+			></span>
+			<span class="contents-expand-title">Table of contents</span>
+		</button>
+	 
+		<a
+			id="lang-link-overflow"
+			class="button-sm inner-focus button button-clear button-block justify-content-flex-start text-align-left"
+			data-bi-name="language-toggle"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-read-in-link
+			href="#"
+			hidden
+		>
+			<span class="icon" aria-hidden="true" data-read-in-link-icon>
+				<span class="docon docon-locale-globe"></span>
+			</span>
+			<span data-read-in-link-text>Read in English</span>
+		</a>
+	
+					
+		<button
+			type="button"
+			class="collection button button-clear button-sm button-block justify-content-flex-start text-align-left inner-focus"
+			data-list-type="collection"
+			data-bi-name="collection"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-popover-close
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-circle-addition"></span>
+			</span>
+			<span class="collection-status">Add</span>
+		</button>
+	 
+		<button
+			type="button"
+			class="collection button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+			data-list-type="plan"
+			data-bi-name="plan"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-popover-close
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-circle-addition"></span>
+			</span>
+			<span class="plan-status">Add to Plans</span>
+		</button>
+	 
+					
+		<a
+			data-contenteditbtn
+			class="button button-clear button-block button-sm inner-focus justify-content-flex-start text-align-left text-decoration-none"
+			data-bi-name="edit"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			
+			href="https://github.com/MicrosoftDocs/sql-docs/blob/live/docs/relational-databases/clr-integration-database-objects-user-defined-functions/clr-table-valued-functions.md"
+			data-original_content_git_url="https://github.com/MicrosoftDocs/sql-docs-pr/blob/live/docs/relational-databases/clr-integration-database-objects-user-defined-functions/clr-table-valued-functions.md"
+			data-original_content_git_url_template="{repo}/blob/{branch}/docs/relational-databases/clr-integration-database-objects-user-defined-functions/clr-table-valued-functions.md"
+			data-pr_repo=""
+			data-pr_branch=""
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-edit-outline"></span>
+			</span>
+			<span>Edit</span>
+		</a>
+	  
+		<hr class="margin-block-xxs" />
+		
+				<button
+					class="button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+					type="button"
+					data-bi-name="copy-markdown"
+					data-page-action-item="overflow-all"
+					data-copy-markdown
+					data-copy-state="idle"
+					data-check-hidden="true"
+				>
+					<span class="icon color-primary" aria-hidden="true">
+						<span data-show-when="idle" class="docon docon-code-lang"></span>
+						<span data-show-when="loading" class="loader" hidden></span>
+						<span data-show-when="success" class="docon docon-check-mark" hidden></span>
+					</span>
+					<span>Copy Markdown</span>
+				</button>
+		   
+				<button
+					class="button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+					type="button"
+					data-bi-name="print"
+					data-page-action-item="overflow-all"
+					data-popover-close
+					data-print-page
+					data-check-hidden="true"
+				>
+					<span class="icon color-primary" aria-hidden="true">
+						<span class="docon docon-print"></span>
+					</span>
+					<span>Print</span>
+				</button>
+		  
+	
+				</div>
+			</details>
+		</div>
+	
+			</div>
+		</div>
+	  
+		<!-- privateUnauthorizedTemplate is hidden by default -->
+		<div unauthorized-private-section data-bi-name="permission-content-unauthorized-private" hidden>
+			<hr class="hr margin-top-xs margin-bottom-sm" />
+			<div class="notification notification-info">
+				<div class="notification-content">
+					<p class="margin-top-none notification-title">
+						<span class="icon" aria-hidden="true"
+							><span class="docon docon-exclamation-circle-solid"></span
+						></span>
+						<span>Note</span>
+					</p>
+					<p class="margin-top-none authentication-determined not-authenticated">
+						Access to this page requires authorization. You can try <a class="docs-sign-in" href="#" data-bi-name="permission-content-sign-in">signing in</a> or <a  class="docs-change-directory" data-bi-name="permisson-content-change-directory">changing directories</a>.
+					</p>
+					<p class="margin-top-none authentication-determined authenticated">
+						Access to this page requires authorization. You can try <a class="docs-change-directory" data-bi-name="permisson-content-change-directory">changing directories</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	
+					<div class="content"><h1 id="clr-table-valued-functions">CLR table-valued functions</h1></div>
+					
+		<div
+			id="article-metadata"
+			data-bi-name="article-metadata"
+			data-test-id="article-metadata"
+			class="page-metadata-container display-flex gap-xxs justify-content-space-between align-items-center flex-wrap-wrap"
+		>
+			 
+				<div
+					id="user-feedback"
+					class="margin-block-xxs display-none display-none-print"
+					hidden
+					data-hide-on-archived
+				>
+					
+		<button
+			id="user-feedback-button"
+			data-test-id="conceptual-feedback-button"
+			class="button button-sm button-clear button-primary display-none"
+			type="button"
+			data-bi-name="user-feedback-button"
+			data-user-feedback-button
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-like"></span>
+			</span>
+			<span>Feedback</span>
+		</button>
+	
+				</div>
+		  
+		</div>
+	 
+		<div data-id="ai-summary" class="display-none-print">
+			<div id="ms--ai-summary-cta" class="margin-top-xs display-flex align-items-center">
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-sparkle-fill gradient-text-vivid"></span>
+				</span>
+				<button
+					id="ms--ai-summary"
+					type="button"
+					class="tag tag-sm tag-suggestion margin-left-xxs"
+					data-test-id="ai-summary-cta"
+					data-bi-name="ai-summary-cta"
+					data-an="ai-summary"
+				>
+					<span class="ai-summary-cta-text">
+						Summarize this article for me
+					</span>
+				</button>
+			</div>
+			<!-- Slot where the client will render the summary card after the user clicks the CTA -->
+			<div id="ms--ai-summary-header" class="margin-top-xs"></div>
+		</div>
+	 
+		<nav
+			id="center-doc-outline"
+			class="doc-outline display-none-desktop display-none-print margin-bottom-sm"
+			data-bi-name="intopic toc"
+			aria-label="In this article"
+		>
+			<h2 id="ms--in-this-article" class="title is-6 margin-block-xs">
+				In this article
+			</h2>
+		</nav>
+	
+					<div class="content"><p><strong>Applies to:</strong> <img src="../../includes/media/yes-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../../sql-server/sql-docs-navigation-guide?view=sql-server-ver17#applies-to" data-linktype="relative-path">SQL Server</a></p>
+<p>A table-valued function is a user-defined function that returns a table.</p>
+<p>SQL Server extends the functionality of table-valued functions by allowing you to define a table-valued function in any managed language. Data is returned from a table-valued function through an <code>IEnumerable</code> or <code>IEnumerator</code> object.</p>
+<p>For table-valued functions, the columns of the return table type can't include timestamp columns or non-Unicode string data type columns (such as <strong>char</strong>, <strong>varchar</strong>, and <strong>text</strong>). The <code>NOT NULL</code> constraint isn't supported.</p>
+<h2 id="differences-between-transact-sql-and-clr-table-valued-functions">Differences between Transact-SQL and CLR table-valued functions</h2>
+<p>Transact-SQL table-valued functions materialize the results of calling the function into an intermediate table. Since they use an intermediate table, they can support constraints and unique indexes over the results. These features can be useful when large results are returned.</p>
+<p>In contrast, common language runtime (CLR) table-valued functions represent a streaming alternative. There's no requirement that the entire set of results be materialized in a single table. The <code>IEnumerable</code> object returned by the managed function is directly called by the execution plan of the query that calls the table-valued function, and the results are consumed in an incremental manner. This streaming model ensures that results can be consumed immediately after the first row is available, instead of waiting for the entire table to be populated. It's also a better alternative if you have large numbers of rows returned, because they don't have to be materialized in memory as a whole. For example, a managed table-valued function could be used to parse a text file and return each line as a row.</p>
+<h2 id="implement-table-valued-functions">Implement table-valued functions</h2>
+<p>Implement table-valued functions as methods on a class in a .NET Framework assembly. Your table-valued function code must implement the <code>IEnumerable</code> interface. The <code>IEnumerable</code> interface is defined in the .NET Framework. Types representing arrays and collections in the .NET Framework already implement the <code>IEnumerable</code> interface. This makes it easy for writing table-valued functions that convert a collection or an array into a result set.</p>
+<h2 id="table-valued-parameters">Table-valued parameters</h2>
+<p>Table-valued parameters are user-defined table types that are passed into a procedure or function and provide an efficient way to pass multiple rows of data to the server. Table-valued parameters provide similar functionality to parameter arrays, but offer greater flexibility and closer integration with Transact-SQL. They also provide the potential for better performance.</p>
+<p>Table-valued parameters also help reduce the number of round trips to the server. Instead of sending multiple requests to the server, such as with a list of scalar parameters, data can be sent to the server as a table-valued parameter. A user-defined table type can't be passed as a table-valued parameter to, or be returned from, a managed stored procedure or function executing in the SQL Server process. For more information about table-valued parameters, see <a href="../tables/use-table-valued-parameters-database-engine?view=sql-server-ver17" data-linktype="relative-path">Use table-valued parameters (Database Engine)</a>.</p>
+<h2 id="output-parameters-and-table-valued-functions">Output parameters and table-valued functions</h2>
+<p>Information might be returned from table-valued functions using output parameters. The corresponding parameter in the implementation code table-valued function should use a pass-by-reference parameter as the argument. Visual Basic .NET doesn't support output parameters in the same way that C# does. You must specify the parameter by reference and apply the <code>&lt;Out()&gt;</code> attribute to represent an output parameter, as in the following example:</p>
+<pre><code class="lang-vb">Imports System.Runtime.InteropServices
+...
+Public Shared Sub FillRow ( &lt;Out()&gt; ByRef value As SqlInt32)
+</code></pre>
+<h3 id="define-a-table-valued-function-in-transact-sql">Define a table-valued function in Transact-SQL</h3>
+<p>The syntax for defining a CLR table-valued function is similar to that of a Transact-SQL table-valued function, with the addition of the <code>EXTERNAL NAME</code> clause. For example:</p>
+<pre><code class="lang-sql">CREATE FUNCTION GetEmpFirstLastNames()
+RETURNS TABLE (
+    FirstName NVARCHAR (4000),
+    LastName NVARCHAR (4000)
+)
+AS EXTERNAL NAME MyDotNETAssembly.[MyNamespace.MyClassname].GetEmpFirstLastNames;
+</code></pre>
+<p>Table-valued functions are used to represent data in relational form for further processing in queries such as:</p>
+<pre><code class="lang-sql">SELECT *
+FROM func();
+
+SELECT *
+FROM tbl
+     INNER JOIN func() AS f
+         ON tbl.col = f.col;
+
+SELECT *
+FROM tbl AS t
+CROSS APPLY func(t.col);
+</code></pre>
+<p>Table-valued functions can return a table when:</p>
+<ul>
+<li><p>Created from scalar input arguments. For example, a table-valued function that takes a comma-delimited string of numbers and pivots them into a table.</p>
+</li>
+<li><p>Generated from external data. For example, a table-valued function that reads the event log and exposes it as a table.</p>
+</li>
+</ul>
+<div class="NOTE">
+<p>Note</p>
+<p>A table-valued function can only perform data access through a Transact-SQL query in the <code>InitMethod</code> method, and not in the <code>FillRow</code> method. The <code>InitMethod</code> should be marked with the <code>SqlFunction.DataAccess.Read</code> attribute property if a Transact-SQL query is performed.</p>
+</div>
+<h2 id="a-sample-table-valued-function">A sample table-valued function</h2>
+<p>The following table-valued function returns information from the system event log. The function takes a single string argument containing the name of the event log to read.</p>
+<h3 id="sample-code">Sample code</h3>
+<div class="tabGroup" id="tabgroup_1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_1_csharp" role="tab" aria-controls="tabpanel_1_csharp" data-tab="csharp" tabindex="0" aria-selected="true" data-linktype="self-bookmark">C#</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_1_vb" role="tab" aria-controls="tabpanel_1_vb" data-tab="vb" tabindex="-1" data-linktype="self-bookmark">Visual Basic .NET</a>
+</li>
+</ul>
+<section id="tabpanel_1_csharp" role="tabpanel" data-tab="csharp">
+
+<pre><code class="lang-csharp">using System;
+using System.Data.Sql;
+using Microsoft.SqlServer.Server;
+using System.Collections;
+using System.Data.SqlTypes;
+using System.Diagnostics;
+
+public class TabularEventLog
+{
+    [SqlFunction(FillRowMethodName = "FillRow")]
+    public static IEnumerable InitMethod(String logname)
+    {
+        return new EventLog(logname).Entries;
+    }
+
+    public static void FillRow(Object obj, out SqlDateTime timeWritten, out SqlChars message, out SqlChars category, out long instanceId)
+    {
+        EventLogEntry eventLogEntry = (EventLogEntry)obj;
+        timeWritten = new SqlDateTime(eventLogEntry.TimeWritten);
+        message = new SqlChars(eventLogEntry.Message);
+        category = new SqlChars(eventLogEntry.Category);
+        instanceId = eventLogEntry.InstanceId;
+    }
+}
+</code></pre>
+</section>
+<section id="tabpanel_1_vb" role="tabpanel" data-tab="vb" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-vb">Imports System
+Imports System.Data.Sql
+Imports Microsoft.SqlServer.Server
+Imports System.Collections
+Imports System.Data.SqlTypes
+Imports System.Diagnostics
+Imports System.Runtime.InteropServices
+
+Public Class TabularEventLog
+    &lt;SqlFunction(FillRowMethodName:="FillRow")&gt; _
+    Public Shared Function InitMethod(ByVal logname As String) As IEnumerable
+        Return New EventLog(logname).Entries
+    End Function
+
+    Public Shared Sub FillRow(ByVal obj As Object, &lt;Out()&gt; ByRef timeWritten As SqlDateTime, &lt;Out()&gt; ByRef message As SqlChars, &lt;Out()&gt; ByRef category As SqlChars, &lt;Out()&gt; ByRef instanceId As Long)
+        Dim eventLogEnTry As EventLogEntry = CType(obj, EventLogEntry)
+        timeWritten = New SqlDateTime(eventLogEnTry.TimeWritten)
+        message = New SqlChars(eventLogEnTry.Message)
+        category = New SqlChars(eventLogEnTry.Category)
+        instanceId = eventLogEnTry.InstanceId
+    End Sub
+End Class
+</code></pre>
+</section>
+</div>
+<h4 id="declare-and-using-the-sample-table-valued-function">Declare and using the sample table-valued function</h4>
+<p>After the sample table-valued function is compiled, it can be declared in Transact-SQL like this:</p>
+<pre><code class="lang-sql">USE master;
+-- Replace SQL_Server_logon with your SQL Server user credentials.
+
+GRANT EXTERNAL ACCESS ASSEMBLY TO [SQL_Server_logon];
+
+-- Modify the following line to specify a different database.
+ALTER DATABASE master
+SET TRUSTWORTHY ON;
+
+-- Modify the next line to use the appropriate database.
+CREATE ASSEMBLY tvfEventLog
+    FROM 'D:\assemblies\tvfEventLog\tvfeventlog.dll'
+    WITH PERMISSION_SET = EXTERNAL_ACCESS;
+GO
+
+CREATE FUNCTION ReadEventLog
+(@logname NVARCHAR (100))
+RETURNS TABLE (
+    logTime DATETIME,
+    Message NVARCHAR (4000),
+    Category NVARCHAR (4000),
+    InstanceId BIGINT)
+AS EXTERNAL NAME tvfEventLog.TabularEventLog.InitMethod;
+GO
+</code></pre>
+<p>Visual C++ database objects compiled with <code>/clr:pure</code> aren't supported for execution on SQL Server. For example, such database objects include table-valued functions.</p>
+<p>To test the sample, try the following Transact-SQL code:</p>
+<pre><code class="lang-sql">-- Select the top 100 events,
+SELECT TOP 100 *
+FROM dbo.ReadEventLog(N'Security') AS T;
+GO
+
+-- Select the last 10 login events.
+SELECT TOP 10 T.logTime,
+              T.Message,
+              T.InstanceId
+FROM dbo.ReadEventLog(N'Security') AS T
+WHERE T.Category = N'Logon/Logoff';
+GO
+</code></pre>
+<h2 id="examples">Examples</h2>
+<p>The code samples in this article use the <code>AdventureWorks2025</code> or <code>AdventureWorksDW2025</code> sample database, which you can download from the <a href="https://go.microsoft.com/fwlink/?LinkID=85384" data-linktype="external">Microsoft SQL Server Samples and Community Projects</a> home page.</p>
+<h3 id="a-return-the-results-of-a-sql-server-query">A. Return the results of a SQL Server query</h3>
+<p>The following sample shows a table-valued function that queries a SQL Server database.</p>
+<p>Name your source code file FindInvalidEmails.cs or FindInvalidEmails.vb.</p>
+<div class="tabGroup" id="tabgroup_2">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_2_csharp" role="tab" aria-controls="tabpanel_2_csharp" data-tab="csharp" tabindex="0" aria-selected="true" data-linktype="self-bookmark">C#</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_2_vb" role="tab" aria-controls="tabpanel_2_vb" data-tab="vb" tabindex="-1" data-linktype="self-bookmark">Visual Basic .NET</a>
+</li>
+</ul>
+<section id="tabpanel_2_csharp" role="tabpanel" data-tab="csharp">
+
+<pre><code class="lang-csharp">using System;
+using System.Collections;
+using System.Data;
+using System.Data.SqlClient;
+using System.Data.SqlTypes;
+
+using Microsoft.SqlServer.Server;
+
+public partial class UserDefinedFunctions {
+   private class EmailResult {
+      public SqlInt32 CustomerId;
+      public SqlString EmailAddress;
+
+      public EmailResult(SqlInt32 customerId, SqlString emailAddress) {
+         CustomerId = customerId;
+         EmailAddress = emailAddress;
+      }
+   }
+
+   public static bool ValidateEmail(SqlString emailAddress) {
+      if (emailAddress.IsNull)
+         return false;
+
+      if (!emailAddress.Value.EndsWith("@adventure-works.com"))
+         return false;
+
+      // Validate the address. Put any more rules here.
+      return true;
+   }
+
+   [SqlFunction(
+       DataAccess = DataAccessKind.Read,
+       FillRowMethodName = "FindInvalidEmails_FillRow",
+       TableDefinition="CustomerId int, EmailAddress nvarchar(4000)")]
+   public static IEnumerable FindInvalidEmails(SqlDateTime modifiedSince) {
+      ArrayList resultCollection = new ArrayList();
+
+      using (SqlConnection connection = new SqlConnection("context connection=true")) {
+         connection.Open();
+
+         using (SqlCommand selectEmails = new SqlCommand(
+             "SELECT " +
+             "[CustomerID], [EmailAddress] " +
+             "FROM [AdventureWorksLT2022].[SalesLT].[Customer] " +
+             "WHERE [ModifiedDate] &gt;= @modifiedSince",
+             connection)) {
+            SqlParameter modifiedSinceParam = selectEmails.Parameters.Add(
+                "@modifiedSince",
+                SqlDbType.DateTime);
+            modifiedSinceParam.Value = modifiedSince;
+
+            using (SqlDataReader emailsReader = selectEmails.ExecuteReader()) {
+               while (emailsReader.Read()) {
+                  SqlString emailAddress = emailsReader.GetSqlString(1);
+                  if (ValidateEmail(emailAddress)) {
+                     resultCollection.Add(new EmailResult(
+                         emailsReader.GetSqlInt32(0),
+                         emailAddress));
+                  }
+               }
+            }
+         }
+      }
+
+      return resultCollection;
+   }
+
+   public static void FindInvalidEmails_FillRow(
+       object emailResultObj,
+       out SqlInt32 customerId,
+       out SqlString emailAddress) {
+      EmailResult emailResult = (EmailResult)emailResultObj;
+
+      customerId = emailResult.CustomerId;
+      emailAddress = emailResult.EmailAddress;
+   }
+};
+</code></pre>
+</section>
+<section id="tabpanel_2_vb" role="tabpanel" data-tab="vb" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-vb">Imports System.Collections
+Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Data.SqlTypes
+Imports Microsoft.SqlServer.Server
+
+Public Partial Class UserDefinedFunctions
+   Private Class EmailResult
+      Public CustomerId As SqlInt32
+      Public EmailAddress As SqlString
+
+      Public Sub New(customerId__1 As SqlInt32, emailAddress__2 As SqlString)
+         CustomerId = customerId__1
+         EmailAddress = emailAddress__2
+      End Sub
+   End Class
+
+   Public Shared Function ValidateEmail(emailAddress As SqlString) As Boolean
+      If emailAddress.IsNull Then
+         Return False
+      End If
+
+      If Not emailAddress.Value.EndsWith("@adventure-works.com") Then
+         Return False
+      End If
+
+      ' Validate the address. Put any more rules here.
+      Return True
+   End Function
+
+   &lt;SqlFunction(DataAccess := DataAccessKind.Read, FillRowMethodName := "FindInvalidEmails_FillRow", TableDefinition := "CustomerId int, EmailAddress nvarchar(4000)")&gt; _
+   Public Shared Function FindInvalidEmails(modifiedSince As SqlDateTime) As IEnumerable
+      Dim resultCollection As New ArrayList()
+
+      Using connection As New SqlConnection("context connection=true")
+         connection.Open()
+
+         Using selectEmails As New SqlCommand("SELECT " &amp; "[CustomerID], [EmailAddress] " &amp; "FROM [AdventureWorksLT2022].[SalesLT].[Customer] " &amp; "WHERE [ModifiedDate] &gt;= @modifiedSince", connection)
+            Dim modifiedSinceParam As SqlParameter = selectEmails.Parameters.Add("@modifiedSince", SqlDbType.DateTime)
+            modifiedSinceParam.Value = modifiedSince
+
+            Using emailsReader As SqlDataReader = selectEmails.ExecuteReader()
+               While emailsReader.Read()
+                  Dim emailAddress As SqlString = emailsReader.GetSqlString(1)
+                  If ValidateEmail(emailAddress) Then
+                     resultCollection.Add(New EmailResult(emailsReader.GetSqlInt32(0), emailAddress))
+                  End If
+               End While
+            End Using
+         End Using
+      End Using
+
+      Return resultCollection
+   End Function
+
+   Public Shared Sub FindInvalidEmails_FillRow(emailResultObj As Object, ByRef customerId As SqlInt32, ByRef emailAddress As SqlString)
+      Dim emailResult As EmailResult = DirectCast(emailResultObj, EmailResult)
+
+      customerId = emailResult.CustomerId
+      emailAddress = emailResult.EmailAddress
+   End Sub
+End Class
+
+Imports System.Collections
+Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Data.SqlTypes
+Imports Microsoft.SqlServer.Server
+
+Public Partial Class UserDefinedFunctions
+   Private Class EmailResult
+      Public CustomerId As SqlInt32
+      Public EmailAddress As SqlString
+
+      Public Sub New(customerId__1 As SqlInt32, emailAddress__2 As SqlString)
+         CustomerId = customerId__1
+         EmailAddress = emailAddress__2
+      End Sub
+   End Class
+
+   Public Shared Function ValidateEmail(emailAddress As SqlString) As Boolean
+      If emailAddress.IsNull Then
+         Return False
+      End If
+
+      If Not emailAddress.Value.EndsWith("@adventure-works.com") Then
+         Return False
+      End If
+
+      ' Validate the address. Put any more rules here.
+      Return True
+   End Function
+
+   &lt;SqlFunction(DataAccess := DataAccessKind.Read, FillRowMethodName := "FindInvalidEmails_FillRow", TableDefinition := "CustomerId int, EmailAddress nvarchar(4000)")&gt; _
+   Public Shared Function FindInvalidEmails(modifiedSince As SqlDateTime) As IEnumerable
+      Dim resultCollection As New ArrayList()
+
+      Using connection As New SqlConnection("context connection=true")
+         connection.Open()
+
+         Using selectEmails As New SqlCommand("SELECT " &amp; "[CustomerID], [EmailAddress] " &amp; "FROM [AdventureWorksLT2022].[SalesLT].[Customer] " &amp; "WHERE [ModifiedDate] &gt;= @modifiedSince", connection)
+            Dim modifiedSinceParam As SqlParameter = selectEmails.Parameters.Add("@modifiedSince", SqlDbType.DateTime)
+            modifiedSinceParam.Value = modifiedSince
+
+            Using emailsReader As SqlDataReader = selectEmails.ExecuteReader()
+               While emailsReader.Read()
+                  Dim emailAddress As SqlString = emailsReader.GetSqlString(1)
+                  If ValidateEmail(emailAddress) Then
+                     resultCollection.Add(New EmailResult(emailsReader.GetSqlInt32(0), emailAddress))
+                  End If
+               End While
+            End Using
+         End Using
+      End Using
+
+      Return resultCollection
+   End Function
+
+   Public Shared Sub FindInvalidEmails_FillRow(emailResultObj As Object, customerId As SqlInt32, emailAddress As SqlString)
+      Dim emailResult As EmailResult = DirectCast(emailResultObj, EmailResult)
+
+      customerId = emailResult.CustomerId
+      emailAddress = emailResult.EmailAddress
+   End Sub
+End Class
+</code></pre>
+</section>
+</div>
+
+<p>Compile the source code to a DLL and copy the DLL to the root directory of your C drive. Then, execute the following Transact-SQL query.</p>
+<pre><code class="lang-sql">USE AdventureWorksLT2022;
+GO
+
+IF EXISTS (SELECT name
+           FROM sysobjects
+           WHERE name = 'FindInvalidEmails')
+    DROP FUNCTION FindInvalidEmails;
+GO
+
+IF EXISTS (SELECT name
+           FROM sys.assemblies
+           WHERE name = 'MyClrCode')
+    DROP ASSEMBLY MyClrCode;
+GO
+
+CREATE ASSEMBLY MyClrCode
+    FROM 'C:\FindInvalidEmails.dll'
+    WITH PERMISSION_SET = SAFE;
+GO
+
+CREATE FUNCTION FindInvalidEmails
+(@ModifiedSince DATETIME)
+RETURNS TABLE (
+    CustomerId INT,
+    EmailAddress NVARCHAR (4000))
+AS EXTERNAL NAME MyClrCode.UserDefinedFunctions.[FindInvalidEmails];
+GO
+
+SELECT *
+FROM FindInvalidEmails('2000-01-01');
+GO
+</code></pre>
+</div>
+					
+		<div
+			id="ms--inline-notifications"
+			class="margin-block-xs"
+			data-bi-name="inline-notification"
+		></div>
+	 
+		<div
+			id="assertive-live-region"
+			role="alert"
+			aria-live="assertive"
+			class="visually-hidden"
+			aria-relevant="additions"
+			aria-atomic="true"
+		></div>
+		<div
+			id="polite-live-region"
+			role="status"
+			aria-live="polite"
+			class="visually-hidden"
+			aria-relevant="additions"
+			aria-atomic="true"
+		></div>
+	
+					
+		<!-- feedback section -->
+		<section
+			id="site-user-feedback-footer"
+			class="font-size-sm margin-top-md display-none-print display-none-desktop"
+			data-test-id="site-user-feedback-footer"
+			data-bi-name="site-feedback-section"
+		>
+			<hr class="hr" />
+			<h2 id="ms--feedback" class="title is-3">Feedback</h2>
+			<div class="display-flex flex-wrap-wrap align-items-center">
+				<p class="font-weight-semibold margin-xxs margin-left-none">
+					Was this page helpful?
+				</p>
+				<div class="buttons">
+					<button
+						class="thumb-rating-button like button button-primary button-sm"
+						data-test-id="footer-rating-yes"
+						data-binary-rating-response="rating-yes"
+						type="button"
+						title="This article is helpful"
+						data-bi-name="button-rating-yes"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-like"></span>
+						</span>
+						<span>Yes</span>
+					</button>
+					<button
+						class="thumb-rating-button dislike button button-primary button-sm"
+						id="standard-rating-no-button"
+						hidden
+						data-test-id="footer-rating-no"
+						data-binary-rating-response="rating-no"
+						type="button"
+						title="This article is not helpful"
+						data-bi-name="button-rating-no"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-dislike"></span>
+						</span>
+						<span>No</span>
+					</button>
+					<details
+						class="popover popover-top"
+						id="mobile-help-popover"
+						data-test-id="footer-feedback-popover"
+					>
+						<summary
+							class="thumb-rating-button dislike button button-primary button-sm"
+							data-test-id="details-footer-rating-no"
+							data-binary-rating-response="rating-no"
+							title="This article is not helpful"
+							data-bi-name="button-rating-no"
+							aria-pressed="false"
+							data-bi-an="feedback-unhelpful-popover"
+						>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-dislike"></span>
+							</span>
+							<span>No</span>
+						</summary>
+						<div
+							class="popover-content width-200 width-300-tablet"
+							role="dialog"
+							aria-labelledby="popover-heading"
+							aria-describedby="popover-description"
+						>
+							<p id="popover-heading" class="font-size-lg margin-bottom-xxs font-weight-semibold">
+								Need help with this topic?
+							</p>
+							<p id="popover-description" class="font-size-sm margin-bottom-xs">
+								Want to try using Ask Learn to clarify or guide you through this topic?
+							</p>
+							
+		<div class="buttons flex-direction-row flex-wrap justify-content-center gap-xxs">
+			<div>
+		<button
+			class="button button-sm border inner-focus display-none margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-test-id="ask-learn-assistant-modal-entry-mobile-feedback"
+			data-ask-learn-modal-entry-feedback
+			data-bi-an=feedback-unhelpful-popover
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-inline-flex display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-modal-entry-tablet-feedback"
+			data-ask-learn-modal-entry-feedback
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-flyout-entry-feedback"
+			data-ask-learn-flyout-entry-show-only
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	</div>
+			<button
+				type="button"
+				class="button button-sm margin-right-xxs"
+				data-help-option="suggest-fix"
+				data-bi-name="feedback-suggest"
+				data-bi-an="feedback-unhelpful-popover"
+				data-test-id="suggest-fix"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-feedback"></span>
+				</span>
+				<span> Suggest a fix? </span>
+			</button>
+		</div>
+	
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+		<!-- end feedback section -->
+	
+				</div>
+				
+		<div id="ms--additional-resources-mobile" class="display-none-print">
+			<hr class="hr" hidden />
+			<h2 id="ms--additional-resources-mobile-heading" class="title is-3" hidden>
+				Additional resources
+			</h2>
+			 
+		<section
+			id="right-rail-training-mobile"
+			class=""
+			data-bi-name="learning-resource-card"
+			hidden
+		></section>
+	 
+		<section
+			id="right-rail-events-mobile"
+			class=""
+			data-bi-name="events-card"
+			hidden
+		></section>
+	
+		</div>
+	 
+		<div
+			id="article-metadata-footer"
+			data-bi-name="article-metadata-footer"
+			data-test-id="article-metadata-footer"
+			class="page-metadata-container"
+		>
+			<hr class="hr" />
+			<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
+				<li class="visibility-hidden-visual-diff">
+			<span class="badge badge-sm text-wrap-pretty">
+				<span>Last updated on <local-time format="twoDigitNumeric"
+		datetime="2025-01-14T18:30:00.000Z"
+		data-article-date-source="calculated"
+		class="is-invisible"
+	>
+		2025-01-14
+	</local-time></span>
+			</span>
+		</li>
+			</ul>
+		</div>
+	
+			</div>
+			
+		<div
+			id="action-panel"
+			role="region"
+			aria-label="Action Panel"
+			class="action-panel"
+			tabindex="-1"
+		></div>
+	
+		
+				</main>
+				<aside
+					id="layout-body-aside"
+					class="layout-body-aside  "
+					data-bi-name="aside"
+					aria-label="Additional resources"
+			  >
+					
+		<div
+			id="ms--additional-resources"
+			class="right-container padding-sm display-none display-block-desktop height-full"
+			data-bi-name="pageactions"
+		>
+			<div id="affixed-right-container" data-bi-name="right-column">
+				
+		<nav
+			id="side-doc-outline"
+			class="doc-outline border-bottom padding-bottom-xs margin-bottom-xs scrollbar-width-thin"
+			data-bi-name="intopic toc"
+			aria-label="In this article"
+		>
+			<h3>In this article</h3>
+		</nav>
+	
+				<!-- Feedback -->
+				
+		<section
+			id="ms--site-user-feedback-right-rail"
+			class="font-size-sm display-none-print"
+			data-test-id="site-user-feedback-right-rail"
+			data-bi-name="site-feedback-right-rail"
+		>
+			<div class="display-flex flex-wrap-wrap align-items-center">
+				<p class="font-weight-semibold margin-xxs margin-left-none">
+					Was this page helpful?
+				</p>
+				<div class="display-flex flex-wrap-nowrap">
+					<button
+						class="thumb-rating-button like inner-focus"
+						data-test-id="right-rail-rating-yes"
+						data-binary-rating-response="rating-yes"
+						type="button"
+						title="This article is helpful"
+						aria-label="This article is helpful"
+						data-bi-name="button-rating-yes"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-like"></span>
+						</span>
+					</button>
+					<button
+						class="thumb-rating-button dislike inner-focus"
+						id="right-rail-no-button"
+						hidden
+						data-test-id="right-rail-rating-no"
+						data-binary-rating-response="rating-no"
+						type="button"
+						title="This article is not helpful"
+						aria-label="This article is not helpful"
+						data-bi-name="button-rating-no"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-dislike"></span>
+						</span>
+					</button>
+					<details class="popover popover-right" id="help-popover" data-test-id="feedback-popover">
+						<summary
+							tabindex="0"
+							class="thumb-rating-button dislike inner-focus"
+							data-test-id="details-right-rail-rating-no"
+							data-binary-rating-response="rating-no"
+							title="This article is not helpful"
+							aria-label="This article is not helpful"
+							data-bi-name="button-rating-no"
+							aria-pressed="false"
+							data-bi-an="feedback-unhelpful-popover"
+						>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-dislike"></span>
+							</span>
+						</summary>
+						<div
+							class="popover-content width-200 width-300-tablet"
+							role="dialog"
+							aria-labelledby="popover-heading-right-rail"
+							aria-describedby="popover-description-right-rail"
+						>
+							<p
+								id="popover-heading-right-rail"
+								class="font-size-lg margin-bottom-xxs font-weight-semibold"
+							>
+								Need help with this topic?
+							</p>
+							<p id="popover-description-right-rail" class="font-size-sm margin-bottom-xs">
+								Want to try using Ask Learn to clarify or guide you through this topic?
+							</p>
+							
+		<div class="buttons flex-direction-row flex-wrap justify-content-center gap-xxs">
+			<div>
+		<button
+			class="button button-sm border inner-focus display-none margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-test-id="ask-learn-assistant-modal-entry-mobile-feedback"
+			data-ask-learn-modal-entry-feedback
+			data-bi-an=feedback-unhelpful-popover
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-inline-flex display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-modal-entry-tablet-feedback"
+			data-ask-learn-modal-entry-feedback
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-flyout-entry-feedback"
+			data-ask-learn-flyout-entry-show-only
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	</div>
+			<button
+				type="button"
+				class="button button-sm margin-right-xxs"
+				data-help-option="suggest-fix"
+				data-bi-name="feedback-suggest"
+				data-bi-an="feedback-unhelpful-popover"
+				data-test-id="suggest-fix"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-feedback"></span>
+				</span>
+				<span> Suggest a fix? </span>
+			</button>
+		</div>
+	
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+	
+			</div>
+		</div>
+	
+			  </aside> <section
+					id="layout-body-flyout"
+					class="layout-body-flyout "
+					data-bi-name="flyout"
+			  >
+					 <div
+	class="height-full border-left background-color-body-medium"
+	id="ask-learn-flyout"
+></div>
+			  </section> <div class="layout-body-footer " data-bi-name="layout-footer">
+		<footer
+			id="footer"
+			data-test-id="footer"
+			data-bi-name="footer"
+			class="footer-layout padding-xs padding-sm-desktop has-default-focus border-top"
+			role="contentinfo"
+		>
+			<div class="display-flex gap-xs flex-wrap-wrap is-full-height padding-right-lg-desktop">
+				
+		<a
+			data-mscc-ic="false"
+			href="#"
+			data-bi-name="select-locale"
+			class="locale-selector-link flex-shrink-0 button button-sm button-clear external-link-indicator"
+			id=""
+			title=""
+			><span class="icon" aria-hidden="true"
+				><span class="docon docon-world"></span></span
+			><span class="local-selector-link-text">en-us</span></a
+		>
+	 <div class="ccpa-privacy-link" data-ccpa-privacy-link hidden>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://aka.ms/yourcaliforniaprivacychoices"
+			data-bi-name="your-privacy-choices"
+			class="button button-sm button-clear flex-shrink-0 external-link-indicator"
+			id=""
+			title=""
+			>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 30 14"
+			xml:space="preserve"
+			height="16"
+			width="43"
+			aria-hidden="true"
+			focusable="false"
+		>
+			<path
+				d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z"
+				style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"
+			></path>
+			<path
+				d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z"
+				style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"
+			></path>
+			<path
+				d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z"
+				style="fill:#fff"
+			></path>
+			<path
+				d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z"
+				style="fill:#06f"
+			></path>
+		</svg>
+	
+			<span>Your Privacy Choices</span></a
+		>
+	
+	</div>
+				<div class="flex-shrink-0">
+		<div class="dropdown has-caret-up">
+			<button
+				data-test-id="theme-selector-button"
+				class="dropdown-trigger button button-clear button-sm inner-focus theme-dropdown-trigger"
+				aria-controls="{{ themeMenuId }}"
+				aria-haspopup="true"
+				aria-expanded="false"
+				data-bi-name="theme"
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-sun"></span></span>
+				<span>Theme</span>
+				<span class="icon expanded-indicator" aria-hidden="true">
+					<span class="docon docon-chevron-down-light"></span>
+				</span>
+			</button>
+			<div class="dropdown-menu" id="{{ themeMenuId }}" role="menu">
+				<ul class="theme-selector padding-xxs" data-test-id="theme-dropdown-menu" role="none">
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="light"
+							tabindex="-1"
+						>
+							<span class="theme-light margin-right-xxs">
+								<span
+									class="theme-selector-icon border display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> Light </span>
+						</button>
+					</li>
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="dark"
+							tabindex="-1"
+						>
+							<span class="theme-dark margin-right-xxs">
+								<span
+									class="border theme-selector-icon display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> Dark </span>
+						</button>
+					</li>
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="high-contrast"
+							tabindex="-1"
+						>
+							<span class="theme-high-contrast margin-right-xxs">
+								<span
+									class="border theme-selector-icon display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> High contrast </span>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+			</div>
+			<ul class="links" data-bi-name="footerlinks">
+				<li class="manage-cookies-holder" hidden=""></li>
+				<li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/principles-for-ai-generated-content"
+			data-bi-name="aiDisclaimer"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>AI Disclaimer</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/previous-versions/"
+			data-bi-name="archivelink"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Previous Versions</a
+		>
+	
+	</li> <li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog"
+			data-bi-name="bloglink"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Blog</a
+		>
+	
+	</li> <li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/contribute"
+			data-bi-name="contributorGuide"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Contribute</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://go.microsoft.com/fwlink/?LinkId=521839"
+			data-bi-name="privacy"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Privacy</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://go.microsoft.com/fwlink/?linkid=2259814"
+			data-bi-name="consumer-health-privacy"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Consumer Health Privacy</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/legal/termsofuse"
+			data-bi-name="termsofuse"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Terms of Use</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://www.microsoft.com/legal/intellectualproperty/Trademarks/"
+			data-bi-name="trademarks"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Trademarks</a
+		>
+	
+	</li>
+				<li>&copy; Microsoft 2026</li>
+			</ul>
+		</footer>
+	</footer>
+			</body>
+		</html>

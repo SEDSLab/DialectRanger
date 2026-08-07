@@ -1,0 +1,694 @@
+{
+  "dbms": "mariadb",
+  "feature_type": "operator",
+  "processed_pages": 84,
+  "skipped_pages": 0,
+  "total_sections": 268,
+  "total_blocks": 1894,
+  "section_sources": {
+    "fallback": 100,
+    "heading_tree": 168
+  },
+  "block_types": {
+    "paragraph": 1470,
+    "list": 142,
+    "note": 2,
+    "heading": 168,
+    "code": 104,
+    "signature": 8
+  },
+  "pages": [
+    {
+      "page_id": "mariadb_current_operator_precedence",
+      "sections": 2,
+      "blocks": 43,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "mariadb_current_function_and_operator_reference",
+      "sections": 57,
+      "blocks": 1127,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_operators",
+      "sections": 1,
+      "blocks": 7,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_arithmetic_operators",
+      "sections": 1,
+      "blocks": 7,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_assignment_operators",
+      "sections": 1,
+      "blocks": 4,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_comparison_operators",
+      "sections": 2,
+      "blocks": 23,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_logical_operators",
+      "sections": 1,
+      "blocks": 6,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_operator_precedence_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_interval",
+      "sections": 3,
+      "blocks": 13,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "mariadb_current_not",
+      "sections": 4,
+      "blocks": 12,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_bitwise_not",
+      "sections": 4,
+      "blocks": 10,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_multiplication_operator",
+      "sections": 4,
+      "blocks": 14,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_division_operator",
+      "sections": 4,
+      "blocks": 19,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_modulo_operator",
+      "sections": 4,
+      "blocks": 11,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_subtraction_operator",
+      "sections": 4,
+      "blocks": 17,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_addition_operator",
+      "sections": 4,
+      "blocks": 16,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_shift_left",
+      "sections": 4,
+      "blocks": 11,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_shift_right",
+      "sections": 4,
+      "blocks": 11,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_in",
+      "sections": 4,
+      "blocks": 15,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_between_and",
+      "sections": 5,
+      "blocks": 17,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_equal",
+      "sections": 4,
+      "blocks": 15,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_null_safe_equal",
+      "sections": 4,
+      "blocks": 15,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_greater_than_or_equal",
+      "sections": 4,
+      "blocks": 13,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_greater_than",
+      "sections": 4,
+      "blocks": 12,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_less_than_or_equal",
+      "sections": 4,
+      "blocks": 13,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_less_than",
+      "sections": 4,
+      "blocks": 14,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_not_equal",
+      "sections": 4,
+      "blocks": 13,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_is",
+      "sections": 4,
+      "blocks": 16,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_and",
+      "sections": 4,
+      "blocks": 12,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_xor",
+      "sections": 4,
+      "blocks": 12,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_or",
+      "sections": 6,
+      "blocks": 18,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_assignment_operators_assignment_operator",
+      "sections": 4,
+      "blocks": 14,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_assignment_operator",
+      "sections": 4,
+      "blocks": 14,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_parentheses",
+      "sections": 3,
+      "blocks": 22,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_function_and_operator_reference_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_bitwise_and",
+      "sections": 4,
+      "blocks": 11,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_bitwise_xor",
+      "sections": 4,
+      "blocks": 10,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_bitwise_or",
+      "sections": 4,
+      "blocks": 11,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_binary_operator",
+      "sections": 5,
+      "blocks": 13,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_bit_count",
+      "sections": 3,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_case_operator",
+      "sections": 4,
+      "blocks": 15,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_coalesce",
+      "sections": 4,
+      "blocks": 27,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_greatest",
+      "sections": 3,
+      "blocks": 10,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_is_not",
+      "sections": 3,
+      "blocks": 10,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_is_not_null",
+      "sections": 4,
+      "blocks": 16,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_is_null",
+      "sections": 5,
+      "blocks": 19,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_isnull",
+      "sections": 3,
+      "blocks": 10,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_least",
+      "sections": 3,
+      "blocks": 16,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_not_between",
+      "sections": 3,
+      "blocks": 12,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_not_in",
+      "sections": 3,
+      "blocks": 11,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_bit_functions_and_operators",
+      "sections": 1,
+      "blocks": 11,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_operators_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_arithmetic_operators_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_assignment_operators_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_is_json",
+      "sections": 7,
+      "blocks": 57,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "mariadb_current_comparison_operators_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_logical_operators_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_interval_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_not_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_true_false",
+      "sections": 2,
+      "blocks": 7,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_bitwise_not_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_multiplication_operator_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_division_operator_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_modulo_operator_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_subtraction_operator_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_addition_operator_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_shift_left_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_shift_right_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_in_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_between_and_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_equal_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_null_safe_equal_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_greater_than_or_equal_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_greater_than_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_less_than_or_equal_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_less_than_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_not_equal_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_is_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_and_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_xor_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_or_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_assignment_operators_assignment_operator_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_assignment_operator_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_parentheses_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    }
+  ]
+}

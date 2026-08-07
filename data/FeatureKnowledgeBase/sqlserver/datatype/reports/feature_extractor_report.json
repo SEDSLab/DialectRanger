@@ -1,0 +1,7 @@
+{
+  "dbms": "sqlserver",
+  "feature_type": "datatype",
+  "candidates": 397,
+  "groups": 36,
+  "drafts": 36
+}

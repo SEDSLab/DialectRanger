@@ -1,0 +1,7 @@
+{
+  "dbms": "postgresql",
+  "feature_type": "operator",
+  "candidates": 212,
+  "groups": 173,
+  "drafts": 173
+}

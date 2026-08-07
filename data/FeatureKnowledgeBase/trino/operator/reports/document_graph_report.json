@@ -1,0 +1,62 @@
+{
+  "dbms": "trino",
+  "feature_type": "operator",
+  "nodes": {
+    "page": 10,
+    "section": 119,
+    "block": 2817,
+    "feature_candidate": 23
+  },
+  "edges": {
+    "page_contains_section": 119,
+    "section_contains_block": 2817,
+    "section_previous": 109,
+    "section_next": 109,
+    "feature_documented_in_section": 25,
+    "total": 3179
+  },
+  "noise": {
+    "noise_nodes": 2,
+    "noise_sections": 0,
+    "noise_blocks": 2,
+    "eligible_nodes": 2944
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "trino.operator.!=",
+      "target": "trino_current_comparison_s0002"
+    },
+    {
+      "source": "trino.operator.%%",
+      "target": "trino_current_datetime_s0009"
+    },
+    {
+      "source": "trino.operator.%",
+      "target": "trino_current_math_s0002"
+    },
+    {
+      "source": "trino.operator.*",
+      "target": "trino_current_math_s0002"
+    },
+    {
+      "source": "trino.operator.+",
+      "target": "trino_current_datetime_s0002"
+    },
+    {
+      "source": "trino.operator.-",
+      "target": "trino_current_datetime_s0002"
+    },
+    {
+      "source": "trino.operator./",
+      "target": "trino_current_math_s0002"
+    },
+    {
+      "source": "trino.operator.<=",
+      "target": "trino_current_comparison_s0002"
+    }
+  ],
+  "generated_at": "2026-08-06T19:59:13.922069+08:00"
+}

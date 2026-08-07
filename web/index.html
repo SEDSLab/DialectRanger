@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DialectRanger — Database Knowledge Base</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="header">
+  <div class="header-left">
+    <h1>DialectRanger</h1>
+    <span class="subtitle">Database Knowledge Base</span>
+  </div>
+  <div class="header-right">
+    <span id="header-total"></span>
+    <span class="sep">&middot;</span>
+    <span id="header-dbms"></span>
+    <a href="https://github.com" target="_blank" class="gh-link">GitHub &#8599;</a>
+  </div>
+</header>
+
+<nav id="top-tabs">
+  <button class="tab-btn active" data-tab="feature-kb">Feature Knowledge Base</button>
+  <button class="tab-btn" data-tab="bug-kb">Bug Knowledge Base</button>
+</nav>
+
+<div id="tab-feature-kb" class="tab-content active">
+<div id="layout">
+  <aside id="sidebar">
+    <div class="sidebar-title">DATABASE FEATURES</div>
+    <nav id="sidebar-nav"></nav>
+  </aside>
+
+  <main id="main">
+    <section id="pipeline">
+      <div class="pipeline-item"><span class="pip-icon">📄</span><span class="pip-num">01</span><span class="pip-title">Documentation</span><span class="pip-desc">Official DBMS Docs</span></div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-item"><span class="pip-icon">🔍</span><span class="pip-num">02</span><span class="pip-title">Discovery</span><span class="pip-desc">Locate Features</span></div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-item"><span class="pip-icon">⚙️</span><span class="pip-num">03</span><span class="pip-title">Extraction</span><span class="pip-desc">Rule + Profile</span></div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-item"><span class="pip-icon">✅</span><span class="pip-num">04</span><span class="pip-title">Validation</span><span class="pip-desc">Evidence Checking</span></div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-item"><span class="pip-icon">📚</span><span class="pip-num">05</span><span class="pip-title">Knowledge Base</span><span class="pip-desc">Structured Features</span></div>
+    </section>
+
+    <section id="stats-bar"></section>
+
+    <section id="search-area">
+      <input type="text" id="search-input" placeholder="Search features, syntax, description...">
+      <div id="filters">
+        <select id="filter-dbms"><option value="">All DBMS</option></select>
+        <select id="filter-type"><option value="">All Feature Types</option></select>
+      </div>
+    </section>
+
+    <section id="results-header"></section>
+    <section id="feature-list"></section>
+    <section id="empty-state" style="display:none">
+      <p>No features found</p>
+      <p class="hint">Try adjusting your search or filters.</p>
+    </section>
+  </main>
+</div>
+</div>
+
+<div id="tab-bug-kb" class="tab-content">
+  <div id="bug-empty">
+    <p style="font-size:18px;font-weight:600;color:var(--text);margin-bottom:8px">Bug Knowledge Base</p>
+    <p style="color:var(--text-secondary)">Coming soon — database behavior anomalies and edge cases across DBMS implementations.</p>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

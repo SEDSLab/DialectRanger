@@ -1,0 +1,13 @@
+{
+  "dbms": "cockroachdb",
+  "feature_type": "operator",
+  "candidate_features": 88,
+  "candidate_groups": 58,
+  "feature_drafts": 58,
+  "known_operator_coverage": {
+    "total": 0,
+    "covered": 0,
+    "missing": [],
+    "coverage_ratio": 1.0
+  }
+}

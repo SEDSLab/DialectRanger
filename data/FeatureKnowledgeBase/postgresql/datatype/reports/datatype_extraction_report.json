@@ -1,0 +1,20 @@
+{
+  "dbms": "postgresql",
+  "feature_type": "datatype",
+  "candidate_features": 237,
+  "candidate_groups": 57,
+  "feature_drafts": 57,
+  "known_type_coverage": {
+    "total": 63,
+    "covered": 57,
+    "missing": [
+      "bool",
+      "float4",
+      "float8",
+      "int2",
+      "int8",
+      "timetz"
+    ],
+    "coverage_ratio": 0.9048
+  }
+}

@@ -1,0 +1,38 @@
+> For the complete documentation index, see [llms.txt](https://mariadb.com/docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://mariadb.com/docs/server/reference/data-types/serial.md).
+
+# SERIAL
+
+## Overview
+
+This is an alias for `BIGINT UNSIGNED NOT NULL AUTO_INCREMENT UNIQUE`.
+
+## EXAMPLES
+
+```sql
+CREATE TABLE serial_example (
+  id SERIAL,
+  data VARCHAR(32)
+);
+```
+
+```sql
+SHOW CREATE TABLE serial_example\G
+```
+
+```sql
+*************************** 1. row ***************************
+       Table: serial_example
+Create Table: CREATE TABLE `serial_example` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `data` varchar(32) DEFAULT NULL,
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+```
+
+## EXTERNAL REFERENCES
+
+Additional information is available [here](/docs/server/reference/data-types/auto_increment.md).
+
+<sub>*This page is: Copyright © 2026 MariaDB. All rights reserved.*</sub>
+
+{% @marketo/form formId="4316" %}

@@ -1,0 +1,7 @@
+{
+  "dbms": "duckdb",
+  "feature_type": "datatype",
+  "candidates": 163,
+  "groups": 38,
+  "drafts": 38
+}

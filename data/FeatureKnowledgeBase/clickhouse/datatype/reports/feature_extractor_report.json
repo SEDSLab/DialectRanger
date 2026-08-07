@@ -1,0 +1,7 @@
+{
+  "dbms": "clickhouse",
+  "feature_type": "datatype",
+  "candidates": 208,
+  "groups": 41,
+  "drafts": 41
+}

@@ -1,0 +1,62 @@
+{
+  "dbms": "clickhouse",
+  "feature_type": "datatype",
+  "nodes": {
+    "page": 31,
+    "section": 165,
+    "block": 1781,
+    "feature_candidate": 51
+  },
+  "edges": {
+    "page_contains_section": 165,
+    "section_contains_block": 1781,
+    "section_previous": 135,
+    "section_next": 135,
+    "feature_documented_in_section": 211,
+    "total": 2427
+  },
+  "noise": {
+    "noise_nodes": 0,
+    "noise_sections": 0,
+    "noise_blocks": 0,
+    "eligible_nodes": 1987
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "clickhouse.function.datetime",
+      "target": "clickhouse_current_datetime_s0001"
+    },
+    {
+      "source": "clickhouse.function.datetime64",
+      "target": "clickhouse_current_datetime64_s0001"
+    },
+    {
+      "source": "clickhouse.function.time64",
+      "target": "clickhouse_current_time64_s0001"
+    },
+    {
+      "source": "clickhouse.function.nullable",
+      "target": "clickhouse_current_nullable_s0001"
+    },
+    {
+      "source": "clickhouse.function.tinyint",
+      "target": "clickhouse_current_int_uint_s0001"
+    },
+    {
+      "source": "clickhouse.function.float",
+      "target": "clickhouse_current_float_s0001"
+    },
+    {
+      "source": "clickhouse.function.varchar",
+      "target": "clickhouse_current_string_s0001"
+    },
+    {
+      "source": "clickhouse.function.map",
+      "target": "clickhouse_current_map_s0001"
+    }
+  ],
+  "generated_at": "2026-08-06T19:48:20.150133+08:00"
+}

@@ -1,0 +1,13 @@
+{
+  "dbms": "cockroachdb",
+  "feature_type": "datatype",
+  "candidate_features": 22,
+  "candidate_groups": 20,
+  "feature_drafts": 20,
+  "known_type_coverage": {
+    "total": 0,
+    "covered": 0,
+    "missing": [],
+    "coverage_ratio": 1.0
+  }
+}

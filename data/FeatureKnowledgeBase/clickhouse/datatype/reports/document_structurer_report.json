@@ -1,0 +1,272 @@
+{
+  "dbms": "clickhouse",
+  "feature_type": "datatype",
+  "processed_pages": 31,
+  "skipped_pages": 0,
+  "total_sections": 165,
+  "total_blocks": 1781,
+  "section_sources": {
+    "fallback": 32,
+    "heading_tree": 133
+  },
+  "block_types": {
+    "anchor": 187,
+    "code": 1061,
+    "paragraph": 31,
+    "list": 237,
+    "signature": 54,
+    "heading": 133,
+    "table": 11,
+    "table_row": 67
+  },
+  "pages": [
+    {
+      "page_id": "clickhouse_current_data_types",
+      "sections": 1,
+      "blocks": 9,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "clickhouse_current_date",
+      "sections": 1,
+      "blocks": 15,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "clickhouse_current_date32",
+      "sections": 1,
+      "blocks": 19,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "clickhouse_current_datetime",
+      "sections": 7,
+      "blocks": 106,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 72
+    },
+    {
+      "page_id": "clickhouse_current_datetime64",
+      "sections": 2,
+      "blocks": 84,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 60
+    },
+    {
+      "page_id": "clickhouse_current_interval",
+      "sections": 4,
+      "blocks": 67,
+      "anchors": 6,
+      "tables": 1,
+      "code_blocks": 33
+    },
+    {
+      "page_id": "clickhouse_current_time",
+      "sections": 5,
+      "blocks": 61,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 41
+    },
+    {
+      "page_id": "clickhouse_current_time64",
+      "sections": 4,
+      "blocks": 71,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 47
+    },
+    {
+      "page_id": "clickhouse_current_nullable",
+      "sections": 4,
+      "blocks": 37,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 23
+    },
+    {
+      "page_id": "clickhouse_current_boolean",
+      "sections": 1,
+      "blocks": 12,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "clickhouse_current_index",
+      "sections": 1,
+      "blocks": 7,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "clickhouse_current_int_uint",
+      "sections": 3,
+      "blocks": 43,
+      "anchors": 6,
+      "tables": 4,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "clickhouse_current_float",
+      "sections": 5,
+      "blocks": 81,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 52
+    },
+    {
+      "page_id": "clickhouse_current_string",
+      "sections": 2,
+      "blocks": 34,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 24
+    },
+    {
+      "page_id": "clickhouse_current_enum",
+      "sections": 4,
+      "blocks": 65,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 52
+    },
+    {
+      "page_id": "clickhouse_current_array",
+      "sections": 5,
+      "blocks": 32,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 19
+    },
+    {
+      "page_id": "clickhouse_current_tuple",
+      "sections": 6,
+      "blocks": 40,
+      "anchors": 6,
+      "tables": 1,
+      "code_blocks": 22
+    },
+    {
+      "page_id": "clickhouse_current_decimal",
+      "sections": 6,
+      "blocks": 48,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 16
+    },
+    {
+      "page_id": "clickhouse_current_map",
+      "sections": 13,
+      "blocks": 119,
+      "anchors": 6,
+      "tables": 4,
+      "code_blocks": 51
+    },
+    {
+      "page_id": "clickhouse_current_newjson",
+      "sections": 49,
+      "blocks": 393,
+      "anchors": 7,
+      "tables": 1,
+      "code_blocks": 253
+    },
+    {
+      "page_id": "clickhouse_current_fixedstring",
+      "sections": 2,
+      "blocks": 35,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 14
+    },
+    {
+      "page_id": "clickhouse_current_qbit",
+      "sections": 8,
+      "blocks": 130,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 101
+    },
+    {
+      "page_id": "clickhouse_current_special_data_types",
+      "sections": 1,
+      "blocks": 7,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "clickhouse_current_expression",
+      "sections": 1,
+      "blocks": 7,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "clickhouse_current_nothing",
+      "sections": 1,
+      "blocks": 12,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "clickhouse_current_set",
+      "sections": 1,
+      "blocks": 7,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "clickhouse_current_index",
+      "sections": 1,
+      "blocks": 7,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "clickhouse_current_lowcardinality",
+      "sections": 6,
+      "blocks": 32,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "clickhouse_current_uuid",
+      "sections": 4,
+      "blocks": 21,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "clickhouse_current_ipv4",
+      "sections": 3,
+      "blocks": 20,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "clickhouse_current_variant",
+      "sections": 13,
+      "blocks": 160,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 124
+    }
+  ]
+}

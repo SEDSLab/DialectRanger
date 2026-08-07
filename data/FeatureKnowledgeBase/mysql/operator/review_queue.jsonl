@@ -1,0 +1,108 @@
+{"feature_id": "mysql.operator.!=_mysql_8_0_comparison_operators", "name": "!=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.!=_mysql_8_0_non_typed_operators", "name": "!=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.!_mysql_8_0_logical_operators", "name": "!", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.!_mysql_8_0_non_typed_operators", "name": "!", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.%_mysql_8_0_arithmetic_functions", "name": "%", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.%_mysql_8_0_non_typed_operators", "name": "%", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.%_mysql_8_0_numeric_functions", "name": "%", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.&&_mysql_8_0_logical_operators", "name": "&&", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.&&_mysql_8_0_non_typed_operators", "name": "&&", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.&_mysql_8_0_bit_functions", "name": "&", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.&_mysql_8_0_non_typed_operators", "name": "&", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.*_mysql_8_0_arithmetic_functions", "name": "*", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.*_mysql_8_0_non_typed_operators", "name": "*", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.*_mysql_8_0_numeric_functions", "name": "*", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.+_mysql_8_0_arithmetic_functions", "name": "+", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.+_mysql_8_0_non_typed_operators", "name": "+", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.+_mysql_8_0_numeric_functions", "name": "+", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.->>_mysql_8_0_non_typed_operators", "name": "->>", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "mysql.operator.->_mysql_8_0_non_typed_operators", "name": "->", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "mysql.operator.-_mysql_8_0_arithmetic_functions", "name": "-", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.-_mysql_8_0_non_typed_operators", "name": "-", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.-_mysql_8_0_numeric_functions", "name": "-", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator./_mysql_8_0_arithmetic_functions", "name": "/", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator./_mysql_8_0_non_typed_operators", "name": "/", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator./_mysql_8_0_numeric_functions", "name": "/", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.:=_mysql_8_0_assignment_operators", "name": ":=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.:=_mysql_8_0_non_typed_operators", "name": ":=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.<<_mysql_8_0_bit_functions", "name": "<<", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.<<_mysql_8_0_non_typed_operators", "name": "<<", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.<=>_mysql_8_0_comparison_operators", "name": "<=>", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.<=>_mysql_8_0_non_typed_operators", "name": "<=>", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.<=_mysql_8_0_comparison_operators", "name": "<=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.<=_mysql_8_0_non_typed_operators", "name": "<=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.<>_mysql_8_0_comparison_operators", "name": "<>", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.<>_mysql_8_0_non_typed_operators", "name": "<>", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.<_mysql_8_0_comparison_operators", "name": "<", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.<_mysql_8_0_non_typed_operators", "name": "<", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.=_mysql_8_0_assignment_operators", "name": "=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.=_mysql_8_0_comparison_operators", "name": "=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.=_mysql_8_0_non_typed_operators", "name": "=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.>=_mysql_8_0_comparison_operators", "name": ">=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.>=_mysql_8_0_non_typed_operators", "name": ">=", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.>>_mysql_8_0_bit_functions", "name": ">>", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.>>_mysql_8_0_non_typed_operators", "name": ">>", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.>_mysql_8_0_comparison_operators", "name": ">", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.>_mysql_8_0_non_typed_operators", "name": ">", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.^_mysql_8_0_bit_functions", "name": "^", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.^_mysql_8_0_non_typed_operators", "name": "^", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.and_mysql_8_0_logical_operators", "name": "AND", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.and_mysql_8_0_non_typed_operators", "name": "AND", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.between_mysql_8_0_comparison_operators", "name": "BETWEEN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.between_mysql_8_0_non_typed_operators", "name": "BETWEEN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.between_mysql_8_0_operator_precedence", "name": "BETWEEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mysql.operator.div_mysql_8_0_arithmetic_functions", "name": "DIV", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.div_mysql_8_0_non_typed_operators", "name": "DIV", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.div_mysql_8_0_numeric_functions", "name": "DIV", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.exists_mysql_8_0_comparison_operators", "name": "EXISTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.exists_mysql_8_0_non_typed_operators", "name": "EXISTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.in_mysql_8_0_bit_functions", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mysql.operator.in_mysql_8_0_cast_functions", "name": "IN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mysql.operator.in_mysql_8_0_comparison_operators", "name": "IN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.in_mysql_8_0_non_typed_operators", "name": "IN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.in_mysql_8_0_string_functions", "name": "IN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.is_mysql_8_0_comparison_operators", "name": "IS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.is_mysql_8_0_non_typed_operators", "name": "IS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.is_not_mysql_8_0_comparison_operators", "name": "IS NOT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.is_not_mysql_8_0_non_typed_operators", "name": "IS NOT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.is_not_null_mysql_8_0_comparison_operators", "name": "IS NOT NULL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.is_not_null_mysql_8_0_non_typed_operators", "name": "IS NOT NULL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.is_null_mysql_8_0_comparison_operators", "name": "IS NULL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.is_null_mysql_8_0_non_typed_operators", "name": "IS NULL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.like_mysql_8_0_cast_functions", "name": "LIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "mysql.operator.like_mysql_8_0_comparison_operators", "name": "LIKE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.like_mysql_8_0_non_typed_operators", "name": "LIKE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.like_mysql_8_0_string_comparison_functions", "name": "LIKE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.like_mysql_8_0_string_functions", "name": "LIKE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.mod_mysql_8_0_arithmetic_functions", "name": "MOD", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.mod_mysql_8_0_non_typed_operators", "name": "MOD", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.mod_mysql_8_0_numeric_functions", "name": "MOD", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.not_between_mysql_8_0_comparison_operators", "name": "NOT BETWEEN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.not_between_mysql_8_0_non_typed_operators", "name": "NOT BETWEEN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.not_exists_mysql_8_0_comparison_operators", "name": "NOT EXISTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.not_exists_mysql_8_0_non_typed_operators", "name": "NOT EXISTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.not_in_mysql_8_0_comparison_operators", "name": "NOT IN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.not_in_mysql_8_0_non_typed_operators", "name": "NOT IN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.not_like_mysql_8_0_comparison_operators", "name": "NOT LIKE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.not_like_mysql_8_0_non_typed_operators", "name": "NOT LIKE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.not_like_mysql_8_0_string_comparison_functions", "name": "NOT LIKE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.not_like_mysql_8_0_string_functions", "name": "NOT LIKE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.not_mysql_8_0_logical_operators", "name": "NOT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.not_mysql_8_0_non_typed_operators", "name": "NOT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.not_regexp_mysql_8_0_non_typed_operators", "name": "NOT REGEXP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.not_regexp_mysql_8_0_string_comparison_functions", "name": "NOT REGEXP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "mysql.operator.not_regexp_mysql_8_0_string_functions", "name": "NOT REGEXP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.not_rlike_mysql_8_0_string_comparison_functions", "name": "NOT RLIKE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "mysql.operator.or_mysql_8_0_logical_operators", "name": "OR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "mysql.operator.or_mysql_8_0_non_typed_operators", "name": "OR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "mysql.operator.or_mysql_8_0_string_functions", "name": "OR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.regexp_mysql_8_0_non_typed_operators", "name": "REGEXP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.regexp_mysql_8_0_string_functions", "name": "REGEXP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.rlike_mysql_8_0_non_typed_operators", "name": "RLIKE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.rlike_mysql_8_0_string_functions", "name": "RLIKE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.xor_mysql_8_0_logical_operators", "name": "XOR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.xor_mysql_8_0_non_typed_operators", "name": "XOR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.|_mysql_8_0_bit_functions", "name": "|", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.|_mysql_8_0_non_typed_operators", "name": "|", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.~_mysql_8_0_bit_functions", "name": "~", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "mysql.operator.~_mysql_8_0_non_typed_operators", "name": "~", "status": "needs_review", "reason": ["missing_examples"], "details": []}

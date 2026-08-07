@@ -1,0 +1,62 @@
+{
+  "dbms": "postgresql",
+  "feature_type": "function",
+  "nodes": {
+    "page": 32,
+    "section": 143,
+    "block": 3024,
+    "feature_candidate": 651
+  },
+  "edges": {
+    "page_contains_section": 143,
+    "section_contains_block": 3024,
+    "section_previous": 111,
+    "section_next": 111,
+    "feature_documented_in_section": 693,
+    "total": 4082
+  },
+  "noise": {
+    "noise_nodes": 0,
+    "noise_sections": 0,
+    "noise_blocks": 0,
+    "eligible_nodes": 3199
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "postgresql.function.abbrev",
+      "target": "postgresql_current_functions_net_s0002"
+    },
+    {
+      "source": "postgresql.function.abs",
+      "target": "postgresql_current_functions_math_s0002"
+    },
+    {
+      "source": "postgresql.function.acldefault",
+      "target": "postgresql_current_functions_info_s0004"
+    },
+    {
+      "source": "postgresql.function.aclexplode",
+      "target": "postgresql_current_functions_info_s0004"
+    },
+    {
+      "source": "postgresql.function.acos",
+      "target": "postgresql_current_functions_math_s0002"
+    },
+    {
+      "source": "postgresql.function.acosd",
+      "target": "postgresql_current_functions_math_s0002"
+    },
+    {
+      "source": "postgresql.function.acosh",
+      "target": "postgresql_current_functions_math_s0002"
+    },
+    {
+      "source": "postgresql.function.age",
+      "target": "postgresql_current_functions_datetime_s0002"
+    }
+  ],
+  "generated_at": "2026-08-06T18:49:09.905281+08:00"
+}

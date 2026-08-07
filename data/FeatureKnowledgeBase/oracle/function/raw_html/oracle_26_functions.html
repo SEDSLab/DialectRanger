@@ -1,0 +1,215 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="topic">
+      <meta name="DC.Title" content="Functions">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-D079EFD3-C683-441F-977E-2C9503089982">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Functions</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="boolean-test-condition.html" title="Previous" type="text/html">
+      <link rel="next" href="About-SQL-Functions.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Functions","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="boolean-test-condition.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="About-SQL-Functions.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-D079EFD3-C683-441F-977E-2C9503089982" name="GUID-D079EFD3-C683-441F-977E-2C9503089982"></a><a id="SQLRF006"></a>
+         
+         <h2 id="SQLRF-GUID-D079EFD3-C683-441F-977E-2C9503089982" class="sect2"><span class="enumeration_chapter">7 </span>Functions
+         </h2>
+         <div class="ind">
+            <div>
+               <p><span class="bold">Functions</span> are similar to operators in that they manipulate data items and return a result. Functions differ from operators in the format of their arguments. This format enables them to operate on zero, one, two, or more arguments:
+               </p><pre class="oac_no_warn" dir="ltr"><span class="italic">function</span>(<span class="italic">argument</span>, <span class="italic">argument</span>, ...) 
+</pre><p>A function without any arguments is similar to a pseudocolumn (refer to <a href="Pseudocolumns.html#GUID-6C65C788-76AA-4A51-B011-51D53DD2521D">Pseudocolumns</a>). However, a pseudocolumn typically returns a different value for each row in the result set, whereas a function without any arguments typically returns the same value for each row.
+               </p>
+               <p>This chapter contains these sections:</p>
+               <ul style="list-style-type: disc;">
+                  <li>
+                     <p><a href="About-SQL-Functions.html#GUID-D51AB228-518C-4213-8BD4-F919623D105E">About SQL Functions</a></p>
+                  </li>
+                  <li>
+                     <p><a href="Single-Row-Functions.html#GUID-B93F789D-B486-49FF-B0CD-0C6181C5D85C">Single-Row Functions</a></p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-AC0E8A99-5097-4147-8295-C88EAC5AA362">Numeric Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-06062705-1EC8-44ED-89B8-0F0573B74EA2">Character Functions Returning Character Values</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-07B646B7-FCED-4682-B160-B94A3E1272B0">Character Functions Returning Number Values</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-6D1746FB-E1A3-4377-8C76-1DEDFF561370">Character Set Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-C6D2C400-F4F1-4D8D-861D-63814E3F6024">Collation Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-5652DBC2-41C7-4F07-BEDD-DAF620E35F3C">Datetime Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-D16F7FB3-48D9-4354-A58A-357515D402DC">General Comparison Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-0E5115DD-F906-4F04-BB70-DF62DD4BBF91">Conversion Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-292D5A19-3B8C-43C4-AD26-66952698EF7A">Large Object Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-57E0EC6A-4C7A-48B5-95E1-F47F2FF66993">Collection Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-B3E664DC-2675-4AC7-885B-B9AB287CF76F">Hierarchical Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-E64F8D20-C7E2-482A-914F-2781D0AA4E64">Oracle Machine Learning for SQL Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-C64CC0DE-0D7C-42C8-B078-92A2984AD953">XML Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-C13171B3-C070-4137-AC71-7A30BD26F380">JSON Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-CDCB89CB-CCE4-4AAB-84DC-A63725A733EF">Encoding and Decoding Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-C4201DFA-90C5-46DA-B528-0B6D4E8C647A">NULL-Related Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-82B2A2E3-A7DD-46EC-9260-8EC320DA518E">Environment and Identifier Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-AEF8F898-493F-4BE8-86E6-06241BB78AB0">Domain Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-C0C477F1-8210-4CA9-A5FA-0A340C409892">Vector Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-97F3185F-B39A-492A-AD01-8CBCD4713AC9">UUID Functions</a></p>
+                        </li>
+                        <li>
+                           <p><a href="Single-Row-Functions.html#GUID-C27DB967-BA88-4033-85E3-49F22C27ACD9">Calendar Functions</a></p>
+                        </li>
+                     </ul>
+                  </li>
+                  <li>
+                     <p><a href="Aggregate-Functions.html#GUID-62BE676B-AF18-4E63-BD14-25206FEA0848">Aggregate Functions</a></p>
+                  </li>
+                  <li>
+                     <p><a href="Analytic-Functions.html#GUID-527832F7-63C0-4445-8C16-307FA5084056">Analytic Functions</a></p>
+                  </li>
+                  <li>
+                     <p><a href="Object-Reference-Functions.html#GUID-538CB642-0FDA-4090-9197-8685E1B55EC6">Object Reference Functions</a></p>
+                  </li>
+                  <li>
+                     <p><a href="Model-Functions.html#GUID-C3070477-FF37-4FF1-8602-031163FB2646">Model Functions</a></p>
+                  </li>
+                  <li>
+                     <p><a href="OLAP-Functions.html#GUID-2AE523A7-630C-4907-B91B-89861C141EBD">OLAP Functions</a></p>
+                  </li>
+                  <li>
+                     <p><a href="Data-Cartridge-Functions.html#GUID-C2B7672A-A9B4-4B53-A9FB-08B9B2EB75D4">Data Cartridge Functions</a></p>
+                  </li>
+                  <li>
+                     <p><a href="About-User-Defined-Functions.html#GUID-4EB3E236-8216-471C-BA44-23D87BDFEA67">About User-Defined Functions</a></p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

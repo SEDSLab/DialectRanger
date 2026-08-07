@@ -1,0 +1,7 @@
+{
+  "dbms": "mariadb",
+  "feature_type": "operator",
+  "candidates": 428,
+  "groups": 404,
+  "drafts": 404
+}

@@ -1,0 +1,62 @@
+{
+  "dbms": "duckdb",
+  "feature_type": "datatype",
+  "nodes": {
+    "page": 225,
+    "section": 1758,
+    "block": 18090,
+    "feature_candidate": 39
+  },
+  "edges": {
+    "page_contains_section": 1758,
+    "section_contains_block": 18090,
+    "section_previous": 1733,
+    "section_next": 1733,
+    "feature_documented_in_section": 127,
+    "total": 23441
+  },
+  "noise": {
+    "noise_nodes": 440,
+    "noise_sections": 0,
+    "noise_blocks": 440,
+    "eligible_nodes": 19634
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "duckdb.function.two",
+      "target": "duckdb_stable_struct_s0009"
+    },
+    {
+      "source": "duckdb.function.two",
+      "target": "duckdb_stable_struct_s0009"
+    },
+    {
+      "source": "duckdb.function.two",
+      "target": "duckdb_stable_struct_s0009"
+    },
+    {
+      "source": "duckdb.function.two",
+      "target": "duckdb_stable_struct_s0009"
+    },
+    {
+      "source": "duckdb.function.two",
+      "target": "duckdb_stable_struct_s0009"
+    },
+    {
+      "source": "duckdb.function.two",
+      "target": "duckdb_stable_struct_s0009"
+    },
+    {
+      "source": "duckdb.function.two",
+      "target": "duckdb_stable_struct_s0009"
+    },
+    {
+      "source": "duckdb.function.two",
+      "target": "duckdb_stable_struct_s0009"
+    }
+  ],
+  "generated_at": "2026-08-06T19:05:42.196369+08:00"
+}

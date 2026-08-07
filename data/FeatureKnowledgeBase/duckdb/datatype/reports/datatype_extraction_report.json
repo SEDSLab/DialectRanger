@@ -1,0 +1,13 @@
+{
+  "dbms": "duckdb",
+  "feature_type": "datatype",
+  "candidate_features": 163,
+  "candidate_groups": 38,
+  "feature_drafts": 38,
+  "known_type_coverage": {
+    "total": 0,
+    "covered": 0,
+    "missing": [],
+    "coverage_ratio": 1.0
+  }
+}

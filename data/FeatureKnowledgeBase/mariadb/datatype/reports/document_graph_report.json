@@ -1,0 +1,62 @@
+{
+  "dbms": "mariadb",
+  "feature_type": "datatype",
+  "nodes": {
+    "page": 111,
+    "section": 488,
+    "block": 2727,
+    "feature_candidate": 36
+  },
+  "edges": {
+    "page_contains_section": 488,
+    "section_contains_block": 2727,
+    "section_previous": 377,
+    "section_next": 377,
+    "feature_documented_in_section": 235,
+    "total": 4204
+  },
+  "noise": {
+    "noise_nodes": 260,
+    "noise_sections": 0,
+    "noise_blocks": 260,
+    "eligible_nodes": 3066
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "mariadb.datatype.bigint",
+      "target": "mariadb_current_data_types_s0001"
+    },
+    {
+      "source": "mariadb.datatype.bigint",
+      "target": "mariadb_current_data_type_storage_requirements_s0002"
+    },
+    {
+      "source": "mariadb.datatype.bigint",
+      "target": "mariadb_current_numeric_data_types_s0002"
+    },
+    {
+      "source": "mariadb.datatype.bigint",
+      "target": "mariadb_current_connect_data_types_s0001"
+    },
+    {
+      "source": "mariadb.datatype.bigint",
+      "target": "mariadb_current_connect_data_types_s0006"
+    },
+    {
+      "source": "mariadb.datatype.bigint",
+      "target": "mariadb_current_connect_data_types_s0015"
+    },
+    {
+      "source": "mariadb.datatype.bigint",
+      "target": "mariadb_current_numeric_data_type_overview_s0001"
+    },
+    {
+      "source": "mariadb.datatype.binary",
+      "target": "mariadb_current_binary_s0001"
+    }
+  ],
+  "generated_at": "2026-08-06T20:04:38.404552+08:00"
+}

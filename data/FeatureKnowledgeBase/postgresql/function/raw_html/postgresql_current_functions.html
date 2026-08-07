@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>PostgreSQL: Documentation: 18: Chapter 9. Functions and Operators</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8" />
+   
+  <meta name="theme-color" content="#336791"/>
+  <meta name="copyright" content="The PostgreSQL Global Development Group" />
+  <meta property="og:url" content="https://www.postgresql.org/docs/18/functions.html" />
+  <meta property="og:type" content="article" />
+
+  <meta property="article:published_time" content="2026-05-14T13:09:46" />
+  <meta property="og:image" content="https://www.postgresql.org/media/img/about/press/elephant.png" />
+  <meta property="og:title" content="Chapter 9. Functions and Operators" />
+  <meta property="og:description" content="Chapter&amp;nbsp;9.&amp;nbsp;Functions and Operators Table of Contents 9.1. Logical Operators 9.2. Comparison Functions and Operators 9.3. Mathematical Functions and Operators 9.4. …" />
+  <meta property="og:site_name" content="PostgreSQL Documentation" />
+  <link href="/media/css/fontawesome.css?73aab745" rel="stylesheet">
+  <link rel="stylesheet" href="/media/css/bootstrap-4.4.1.min.css">
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  <link rel="stylesheet" type="text/css" href="/dyncss/base.css?73aab745">
+
+  <script src="/media/js/theme.js?73aab745"></script>
+
+  
+
+
+  <link rel="canonical" href="https://www.postgresql.org/docs/current/functions.html" />
+
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-md-center">
+        <div class="col">
+          <!-- Header -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand p-0" href="/">
+              <img class="logo" src="/media/img/about/press/elephant.png" alt="PostgreSQL Elephant Logo">
+            </a>
+            <input type="checkbox" id="navbar-toggler" aria-controls="pgNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <label for="navbar-toggler" id="navbar-toggler-label" class="navbar-toggler" tabindex="0"><span class="navbar-toggler-icon"></span></label>
+            <div class="navbar-collapse" id="pgNavbar">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item p-2"><a href="/" title="Home">Home</a></li>
+                <li class="nav-item p-2"><a href="/about/" title="About">About</a></li>
+                <li class="nav-item p-2"><a href="/download/" title="Download">Download</a></li>
+                <li class="nav-item p-2"><a href="/docs/" title="Documentation">Documentation</a></li>
+                <li class="nav-item p-2"><a href="/community/" title="Community">Community</a></li>
+                <li class="nav-item p-2"><a href="/developer/" title="Developers">Developers</a></li>
+                <li class="nav-item p-2"><a href="/support/" title="Support">Support</a></li>
+                <li class="nav-item p-2"><a href="/about/donate/" title="Donate">Donate</a></li>
+                <li class="nav-item p-2"><a href="/account/" title="Your account">Your account</a></li>
+              </ul>
+              <form role="search" method="get" action="/search/">
+                <div class="input-group">
+                  <input id="q" name="q" type="text" size="20" maxlength="255" accesskey="s"  class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+              <form id="form-theme" class="form-inline d-none">
+                <button id="btn-theme" class="btn btn-default ml-1" type="button"></button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row justify-content-center pg-shout-box">
+        <div class="col text-white text-center">July 16, 2026: <a href="/about/news/postgresql-19-beta-2-released-3350/">PostgreSQL 19 Beta 2 Released!</a>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="container-fluid margin">
+      <div class="row">
+        <div id="pgContentWrap" class="col-11">
+          <div class="row">
+            <div class="col-md-6 mb-2">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <a href="/docs/" title="Documentation">Documentation</a> &rarr; <a href="/docs/18/index.html">PostgreSQL 18</a>
+                  </div>
+                </div>
+              </div>
+              
+                <div class="row">
+                  <div class="col">
+                    Supported Versions:
+                      
+                        
+                        
+                          <a href="/docs/current/functions.html" title="PostgreSQL 18 - Chapter 9. Functions and Operators" class="docs-version-selected">Current</a>
+                          (<a href="/docs/18/functions.html" title="PostgreSQL 18 - Chapter 9. Functions and Operators" class="docs-version-selected">18</a>)
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/17/functions.html" title="PostgreSQL 17 - Chapter 9. Functions and Operators" >17</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/16/functions.html" title="PostgreSQL 16 - Chapter 9. Functions and Operators" >16</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/15/functions.html" title="PostgreSQL 15 - Chapter 9. Functions and Operators" >15</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/14/functions.html" title="PostgreSQL 14 - Chapter 9. Functions and Operators" >14</a>
+                        
+                      
+                  </div>
+                </div>
+              
+              
+                <div class="row">
+                  <div class="col">
+                    Development Versions:
+                    
+                      
+                      <a href="/docs/19/functions.html" title="PostgreSQL 19 - Chapter 9. Functions and Operators"  rel="nofollow">19</a>
+                    
+                       / 
+                      <a href="/docs/devel/functions.html" title="PostgreSQL devel - Chapter 9. Functions and Operators"  rel="nofollow">devel</a>
+                    
+                  </div>
+                </div>
+              
+              
+                <div class="row">
+                  <div class="col-12">
+                    Unsupported versions:
+                    
+                      
+                      <a href="/docs/13/functions.html" title="PostgreSQL 13 - Chapter 9. Functions and Operators"  rel="nofollow">13</a>
+                    
+                       / 
+                      <a href="/docs/12/functions.html" title="PostgreSQL 12 - Chapter 9. Functions and Operators"  rel="nofollow">12</a>
+                    
+                       / 
+                      <a href="/docs/11/functions.html" title="PostgreSQL 11 - Chapter 9. Functions and Operators"  rel="nofollow">11</a>
+                    
+                       / 
+                      <a href="/docs/10/functions.html" title="PostgreSQL 10 - Chapter 9. Functions and Operators"  rel="nofollow">10</a>
+                    
+                       / 
+                      <a href="/docs/9.6/functions.html" title="PostgreSQL 9.6 - Chapter 9. Functions and Operators"  rel="nofollow">9.6</a>
+                    
+                       / 
+                      <a href="/docs/9.5/functions.html" title="PostgreSQL 9.5 - Chapter 9. Functions and Operators"  rel="nofollow">9.5</a>
+                    
+                       / 
+                      <a href="/docs/9.4/functions.html" title="PostgreSQL 9.4 - Chapter 9. Functions and Operators"  rel="nofollow">9.4</a>
+                    
+                       / 
+                      <a href="/docs/9.3/functions.html" title="PostgreSQL 9.3 - Chapter 9. Functions and Operators"  rel="nofollow">9.3</a>
+                    
+                       / 
+                      <a href="/docs/9.2/functions.html" title="PostgreSQL 9.2 - Chapter 9. Functions and Operators"  rel="nofollow">9.2</a>
+                    
+                       / 
+                      <a href="/docs/9.1/functions.html" title="PostgreSQL 9.1 - Chapter 9. Functions and Operators"  rel="nofollow">9.1</a>
+                    
+                       / 
+                      <a href="/docs/9.0/functions.html" title="PostgreSQL 9.0 - Chapter 9. Functions and Operators"  rel="nofollow">9.0</a>
+                    
+                       / 
+                      <a href="/docs/8.4/functions.html" title="PostgreSQL 8.4 - Chapter 9. Functions and Operators"  rel="nofollow">8.4</a>
+                    
+                       / 
+                      <a href="/docs/8.3/functions.html" title="PostgreSQL 8.3 - Chapter 9. Functions and Operators"  rel="nofollow">8.3</a>
+                    
+                       / 
+                      <a href="/docs/8.2/functions.html" title="PostgreSQL 8.2 - Chapter 9. Functions and Operators"  rel="nofollow">8.2</a>
+                    
+                       / 
+                      <a href="/docs/8.1/functions.html" title="PostgreSQL 8.1 - Chapter 9. Functions and Operators"  rel="nofollow">8.1</a>
+                    
+                       / 
+                      <a href="/docs/8.0/functions.html" title="PostgreSQL 8.0 - Chapter 9. Functions and Operators"  rel="nofollow">8.0</a>
+                    
+                       / 
+                      <a href="/docs/7.4/functions.html" title="PostgreSQL 7.4 - Chapter 9. Functions and Operators"  rel="nofollow">7.4</a>
+                    
+                       / 
+                      <a href="/docs/7.3/functions.html" title="PostgreSQL 7.3 - Chapter 9. Functions and Operators"  rel="nofollow">7.3</a>
+                    
+                       / 
+                      <a href="/docs/7.2/functions.html" title="PostgreSQL 7.2 - Chapter 9. Functions and Operators"  rel="nofollow">7.2</a>
+                    
+                       / 
+                      <a href="/docs/7.1/functions.html" title="PostgreSQL 7.1 - Chapter 9. Functions and Operators"  rel="nofollow">7.1</a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+            <div class="col-md-6 col-lg-5 offset-lg-1">
+              <form id="docSearchForm" role="search" method="get" action="/search/">
+                <input type="hidden" name="u" value="/docs/18/" />
+                <div class="input-group">
+                  <input type="text" id="q" name="q" class="form-control" placeholder="Search the documentation for..."/>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+            </div>
+          </div>
+
+          <div id="docContent">
+            <div class="navheader">
+  <table width="100%" summary="Navigation header">
+    <tr>
+      <th colspan="5" align="center">Chapter&nbsp;9.&nbsp;Functions and Operators</th>
+    </tr>
+    <tr>
+      <td width="10%" align="left"><a accesskey="p" href="datatype-pseudo.html" title="8.21.&nbsp;Pseudo-Types">Prev</a>&nbsp;</td>
+      <td width="10%" align="left"><a accesskey="u" href="sql.html" title="Part&nbsp;II.&nbsp;The SQL Language">Up</a></td>
+      <th width="60%" align="center">Part&nbsp;II.&nbsp;The SQL Language</th>
+      <td width="10%" align="right"><a accesskey="h" href="index.html" title="PostgreSQL 18.4 Documentation">Home</a></td>
+      <td width="10%" align="right">&nbsp;<a accesskey="n" href="functions-logical.html" title="9.1.&nbsp;Logical Operators">Next</a></td>
+    </tr>
+  </table>
+  <hr />
+</div>
+<div class="chapter" id="FUNCTIONS">
+  <div class="titlepage">
+    <div>
+      <div>
+        <h2 class="title">Chapter&nbsp;9.&nbsp;Functions and Operators</h2>
+      </div>
+    </div>
+  </div>
+  <div class="toc">
+    <p><strong>Table of Contents</strong></p>
+    <dl class="toc">
+      <dt><span class="sect1"><a href="functions-logical.html">9.1. Logical Operators</a></span></dt>
+      <dt><span class="sect1"><a href="functions-comparison.html">9.2. Comparison Functions and Operators</a></span></dt>
+      <dt><span class="sect1"><a href="functions-math.html">9.3. Mathematical Functions and Operators</a></span></dt>
+      <dt><span class="sect1"><a href="functions-string.html">9.4. String Functions and Operators</a></span></dt>
+      <dd>
+        <dl>
+          <dt><span class="sect2"><a href="functions-string.html#FUNCTIONS-STRING-FORMAT">9.4.1. <code class="function">format</code></a></span></dt>
+        </dl>
+      </dd>
+      <dt><span class="sect1"><a href="functions-binarystring.html">9.5. Binary String Functions and Operators</a></span></dt>
+      <dt><span class="sect1"><a href="functions-bitstring.html">9.6. Bit String Functions and Operators</a></span></dt>
+      <dt><span class="sect1"><a href="functions-matching.html">9.7. Pattern Matching</a></span></dt>
+      <dd>
+        <dl>
+          <dt><span class="sect2"><a href="functions-matching.html#FUNCTIONS-LIKE">9.7.1. <code class="function">LIKE</code></a></span></dt>
+          <dt><span class="sect2"><a href="functions-matching.html#FUNCTIONS-SIMILARTO-REGEXP">9.7.2. <code class="function">SIMILAR TO</code> Regular Expressions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-matching.html#FUNCTIONS-POSIX-REGEXP">9.7.3. <acronym class="acronym">POSIX</acronym> Regular Expressions</a></span></dt>
+        </dl>
+      </dd>
+      <dt><span class="sect1"><a href="functions-formatting.html">9.8. Data Type Formatting Functions</a></span></dt>
+      <dt><span class="sect1"><a href="functions-datetime.html">9.9. Date/Time Functions and Operators</a></span></dt>
+      <dd>
+        <dl>
+          <dt><span class="sect2"><a href="functions-datetime.html#FUNCTIONS-DATETIME-EXTRACT">9.9.1. <code class="function">EXTRACT</code>, <code class="function">date_part</code></a></span></dt>
+          <dt><span class="sect2"><a href="functions-datetime.html#FUNCTIONS-DATETIME-TRUNC">9.9.2. <code class="function">date_trunc</code></a></span></dt>
+          <dt><span class="sect2"><a href="functions-datetime.html#FUNCTIONS-DATETIME-BIN">9.9.3. <code class="function">date_bin</code></a></span></dt>
+          <dt><span class="sect2"><a href="functions-datetime.html#FUNCTIONS-DATETIME-ZONECONVERT">9.9.4. <code class="literal">AT TIME ZONE</code> and <code class="literal">AT LOCAL</code></a></span></dt>
+          <dt><span class="sect2"><a href="functions-datetime.html#FUNCTIONS-DATETIME-CURRENT">9.9.5. Current Date/Time</a></span></dt>
+          <dt><span class="sect2"><a href="functions-datetime.html#FUNCTIONS-DATETIME-DELAY">9.9.6. Delaying Execution</a></span></dt>
+        </dl>
+      </dd>
+      <dt><span class="sect1"><a href="functions-enum.html">9.10. Enum Support Functions</a></span></dt>
+      <dt><span class="sect1"><a href="functions-geometry.html">9.11. Geometric Functions and Operators</a></span></dt>
+      <dt><span class="sect1"><a href="functions-net.html">9.12. Network Address Functions and Operators</a></span></dt>
+      <dt><span class="sect1"><a href="functions-textsearch.html">9.13. Text Search Functions and Operators</a></span></dt>
+      <dt><span class="sect1"><a href="functions-uuid.html">9.14. UUID Functions</a></span></dt>
+      <dt><span class="sect1"><a href="functions-xml.html">9.15. XML Functions</a></span></dt>
+      <dd>
+        <dl>
+          <dt><span class="sect2"><a href="functions-xml.html#FUNCTIONS-PRODUCING-XML">9.15.1. Producing XML Content</a></span></dt>
+          <dt><span class="sect2"><a href="functions-xml.html#FUNCTIONS-XML-PREDICATES">9.15.2. XML Predicates</a></span></dt>
+          <dt><span class="sect2"><a href="functions-xml.html#FUNCTIONS-XML-PROCESSING">9.15.3. Processing XML</a></span></dt>
+          <dt><span class="sect2"><a href="functions-xml.html#FUNCTIONS-XML-MAPPING">9.15.4. Mapping Tables to XML</a></span></dt>
+        </dl>
+      </dd>
+      <dt><span class="sect1"><a href="functions-json.html">9.16. JSON Functions and Operators</a></span></dt>
+      <dd>
+        <dl>
+          <dt><span class="sect2"><a href="functions-json.html#FUNCTIONS-JSON-PROCESSING">9.16.1. Processing and Creating JSON Data</a></span></dt>
+          <dt><span class="sect2"><a href="functions-json.html#FUNCTIONS-SQLJSON-PATH">9.16.2. The SQL/JSON Path Language</a></span></dt>
+          <dt><span class="sect2"><a href="functions-json.html#SQLJSON-QUERY-FUNCTIONS">9.16.3. SQL/JSON Query Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-json.html#FUNCTIONS-SQLJSON-TABLE">9.16.4. JSON_TABLE</a></span></dt>
+        </dl>
+      </dd>
+      <dt><span class="sect1"><a href="functions-sequence.html">9.17. Sequence Manipulation Functions</a></span></dt>
+      <dt><span class="sect1"><a href="functions-conditional.html">9.18. Conditional Expressions</a></span></dt>
+      <dd>
+        <dl>
+          <dt><span class="sect2"><a href="functions-conditional.html#FUNCTIONS-CASE">9.18.1. <code class="literal">CASE</code></a></span></dt>
+          <dt><span class="sect2"><a href="functions-conditional.html#FUNCTIONS-COALESCE-NVL-IFNULL">9.18.2. <code class="literal">COALESCE</code></a></span></dt>
+          <dt><span class="sect2"><a href="functions-conditional.html#FUNCTIONS-NULLIF">9.18.3. <code class="literal">NULLIF</code></a></span></dt>
+          <dt><span class="sect2"><a href="functions-conditional.html#FUNCTIONS-GREATEST-LEAST">9.18.4. <code class="literal">GREATEST</code> and <code class="literal">LEAST</code></a></span></dt>
+        </dl>
+      </dd>
+      <dt><span class="sect1"><a href="functions-array.html">9.19. Array Functions and Operators</a></span></dt>
+      <dt><span class="sect1"><a href="functions-range.html">9.20. Range/Multirange Functions and Operators</a></span></dt>
+      <dt><span class="sect1"><a href="functions-aggregate.html">9.21. Aggregate Functions</a></span></dt>
+      <dt><span class="sect1"><a href="functions-window.html">9.22. Window Functions</a></span></dt>
+      <dt><span class="sect1"><a href="functions-merge-support.html">9.23. Merge Support Functions</a></span></dt>
+      <dt><span class="sect1"><a href="functions-subquery.html">9.24. Subquery Expressions</a></span></dt>
+      <dd>
+        <dl>
+          <dt><span class="sect2"><a href="functions-subquery.html#FUNCTIONS-SUBQUERY-EXISTS">9.24.1. <code class="literal">EXISTS</code></a></span></dt>
+          <dt><span class="sect2"><a href="functions-subquery.html#FUNCTIONS-SUBQUERY-IN">9.24.2. <code class="literal">IN</code></a></span></dt>
+          <dt><span class="sect2"><a href="functions-subquery.html#FUNCTIONS-SUBQUERY-NOTIN">9.24.3. <code class="literal">NOT IN</code></a></span></dt>
+          <dt><span class="sect2"><a href="functions-subquery.html#FUNCTIONS-SUBQUERY-ANY-SOME">9.24.4. <code class="literal">ANY</code>/<code class="literal">SOME</code></a></span></dt>
+          <dt><span class="sect2"><a href="functions-subquery.html#FUNCTIONS-SUBQUERY-ALL">9.24.5. <code class="literal">ALL</code></a></span></dt>
+          <dt><span class="sect2"><a href="functions-subquery.html#FUNCTIONS-SUBQUERY-SINGLE-ROW-COMP">9.24.6. Single-Row Comparison</a></span></dt>
+        </dl>
+      </dd>
+      <dt><span class="sect1"><a href="functions-comparisons.html">9.25. Row and Array Comparisons</a></span></dt>
+      <dd>
+        <dl>
+          <dt><span class="sect2"><a href="functions-comparisons.html#FUNCTIONS-COMPARISONS-IN-SCALAR">9.25.1. <code class="literal">IN</code></a></span></dt>
+          <dt><span class="sect2"><a href="functions-comparisons.html#FUNCTIONS-COMPARISONS-NOT-IN">9.25.2. <code class="literal">NOT IN</code></a></span></dt>
+          <dt><span class="sect2"><a href="functions-comparisons.html#FUNCTIONS-COMPARISONS-ANY-SOME">9.25.3. <code class="literal">ANY</code>/<code class="literal">SOME</code> (array)</a></span></dt>
+          <dt><span class="sect2"><a href="functions-comparisons.html#FUNCTIONS-COMPARISONS-ALL">9.25.4. <code class="literal">ALL</code> (array)</a></span></dt>
+          <dt><span class="sect2"><a href="functions-comparisons.html#ROW-WISE-COMPARISON">9.25.5. Row Constructor Comparison</a></span></dt>
+          <dt><span class="sect2"><a href="functions-comparisons.html#COMPOSITE-TYPE-COMPARISON">9.25.6. Composite Type Comparison</a></span></dt>
+        </dl>
+      </dd>
+      <dt><span class="sect1"><a href="functions-srf.html">9.26. Set Returning Functions</a></span></dt>
+      <dt><span class="sect1"><a href="functions-info.html">9.27. System Information Functions and Operators</a></span></dt>
+      <dd>
+        <dl>
+          <dt><span class="sect2"><a href="functions-info.html#FUNCTIONS-INFO-SESSION">9.27.1. Session Information Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-info.html#FUNCTIONS-INFO-ACCESS">9.27.2. Access Privilege Inquiry Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-info.html#FUNCTIONS-INFO-SCHEMA">9.27.3. Schema Visibility Inquiry Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-info.html#FUNCTIONS-INFO-CATALOG">9.27.4. System Catalog Information Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-info.html#FUNCTIONS-INFO-OBJECT">9.27.5. Object Information and Addressing Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-info.html#FUNCTIONS-INFO-COMMENT">9.27.6. Comment Information Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-info.html#FUNCTIONS-INFO-VALIDITY">9.27.7. Data Validity Checking Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-info.html#FUNCTIONS-INFO-SNAPSHOT">9.27.8. Transaction ID and Snapshot Information Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-info.html#FUNCTIONS-INFO-COMMIT-TIMESTAMP">9.27.9. Committed Transaction Information Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-info.html#FUNCTIONS-INFO-CONTROLDATA">9.27.10. Control Data Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-info.html#FUNCTIONS-INFO-VERSION">9.27.11. Version Information Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-info.html#FUNCTIONS-INFO-WAL-SUMMARY">9.27.12. WAL Summarization Information Functions</a></span></dt>
+        </dl>
+      </dd>
+      <dt><span class="sect1"><a href="functions-admin.html">9.28. System Administration Functions</a></span></dt>
+      <dd>
+        <dl>
+          <dt><span class="sect2"><a href="functions-admin.html#FUNCTIONS-ADMIN-SET">9.28.1. Configuration Settings Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-admin.html#FUNCTIONS-ADMIN-SIGNAL">9.28.2. Server Signaling Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-admin.html#FUNCTIONS-ADMIN-BACKUP">9.28.3. Backup Control Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-admin.html#FUNCTIONS-RECOVERY-CONTROL">9.28.4. Recovery Control Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-admin.html#FUNCTIONS-SNAPSHOT-SYNCHRONIZATION">9.28.5. Snapshot Synchronization Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-admin.html#FUNCTIONS-REPLICATION">9.28.6. Replication Management Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-admin.html#FUNCTIONS-ADMIN-DBOBJECT">9.28.7. Database Object Management Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-admin.html#FUNCTIONS-ADMIN-INDEX">9.28.8. Index Maintenance Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-admin.html#FUNCTIONS-ADMIN-GENFILE">9.28.9. Generic File Access Functions</a></span></dt>
+          <dt><span class="sect2"><a href="functions-admin.html#FUNCTIONS-ADVISORY-LOCKS">9.28.10. Advisory Lock Functions</a></span></dt>
+        </dl>
+      </dd>
+      <dt><span class="sect1"><a href="functions-trigger.html">9.29. Trigger Functions</a></span></dt>
+      <dt><span class="sect1"><a href="functions-event-triggers.html">9.30. Event Trigger Functions</a></span></dt>
+      <dd>
+        <dl>
+          <dt><span class="sect2"><a href="functions-event-triggers.html#PG-EVENT-TRIGGER-DDL-COMMAND-END-FUNCTIONS">9.30.1. Capturing Changes at Command End</a></span></dt>
+          <dt><span class="sect2"><a href="functions-event-triggers.html#PG-EVENT-TRIGGER-SQL-DROP-FUNCTIONS">9.30.2. Processing Objects Dropped by a DDL Command</a></span></dt>
+          <dt><span class="sect2"><a href="functions-event-triggers.html#PG-EVENT-TRIGGER-TABLE-REWRITE-FUNCTIONS">9.30.3. Handling a Table Rewrite Event</a></span></dt>
+        </dl>
+      </dd>
+      <dt><span class="sect1"><a href="functions-statistics.html">9.31. Statistics Information Functions</a></span></dt>
+      <dd>
+        <dl>
+          <dt><span class="sect2"><a href="functions-statistics.html#FUNCTIONS-STATISTICS-MCV">9.31.1. Inspecting MCV Lists</a></span></dt>
+        </dl>
+      </dd>
+    </dl>
+  </div><a id="id-1.5.8.2" class="indexterm" name="id-1.5.8.2"></a><a id="id-1.5.8.3" class="indexterm" name="id-1.5.8.3"></a>
+  <p><span class="productname">PostgreSQL</span> provides a large number of functions and operators for the built-in data types. This chapter describes most of them, although additional special-purpose functions appear in relevant sections of the manual. Users can also define their own functions and operators, as described in <a class="xref" href="server-programming.html" title="Part&nbsp;V.&nbsp;Server Programming">Part&nbsp;V</a>. The <span class="application">psql</span> commands <code class="command">\df</code> and <code class="command">\do</code> can be used to list all available functions and operators, respectively.</p>
+  <p>The notation used throughout this chapter to describe the argument and result data types of a function or operator is like this:</p>
+  <pre class="synopsis">
+<code class="function">repeat</code> ( <code class="type">text</code>, <code class="type">integer</code> ) → <code class="returnvalue">text</code>
+</pre>
+  <p>which says that the function <code class="function">repeat</code> takes one text and one integer argument and returns a result of type text. The right arrow is also used to indicate the result of an example, thus:</p>
+  <pre class="programlisting">
+repeat('Pg', 4) → <code class="returnvalue">PgPgPgPg</code>
+</pre>
+  <p>If you are concerned about portability then note that most of the functions and operators described in this chapter, with the exception of the most trivial arithmetic and comparison operators and some explicitly marked functions, are not specified by the <acronym class="acronym">SQL</acronym> standard. Some of this extended functionality is present in other <acronym class="acronym">SQL</acronym> database management systems, and in many cases this functionality is compatible and consistent between the various implementations.</p>
+</div>
+<div class="navfooter">
+  <hr />
+  <table width="100%" summary="Navigation footer">
+    <tr>
+      <td width="40%" align="left"><a accesskey="p" href="datatype-pseudo.html" title="8.21.&nbsp;Pseudo-Types">Prev</a>&nbsp;</td>
+      <td width="20%" align="center"><a accesskey="u" href="sql.html" title="Part&nbsp;II.&nbsp;The SQL Language">Up</a></td>
+      <td width="40%" align="right">&nbsp;<a accesskey="n" href="functions-logical.html" title="9.1.&nbsp;Logical Operators">Next</a></td>
+    </tr>
+    <tr>
+      <td width="40%" align="left" valign="top">8.21.&nbsp;Pseudo-Types&nbsp;</td>
+      <td width="20%" align="center"><a accesskey="h" href="index.html" title="PostgreSQL 18.4 Documentation">Home</a></td>
+      <td width="40%" align="right" valign="top">&nbsp;9.1.&nbsp;Logical Operators</td>
+    </tr>
+  </table>
+</div>
+
+          </div>
+          
+            <div id="docComments">
+              <h2>Submit correction</h2>
+              <p>
+              If you see anything in the documentation that is not correct, does not match
+              your experience with the particular feature or requires further clarification,
+              please use
+              <a href="/account/comments/new/18/functions.html/" rel="nofollow">this form</a>
+              to report a documentation issue.
+              </p>
+            </div>
+          
+        </div> <!-- pgContentWrap -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <!-- Copyright -->
+      <div class="container">
+        <a href="/about/policies/">Policies</a> |
+        <a href="/about/policies/coc/">Code of Conduct</a> |
+        <a href="/about/">About PostgreSQL</a> |
+        <a href="/about/contact/">Contact</a><br/>
+        <p>Copyright &copy; 1996-2026 The PostgreSQL Global Development Group</p>
+      </div>
+    </footer>
+    <script src="/media/js/main.js?73aab745"></script>
+
+  </body>
+</html>

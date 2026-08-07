@@ -1,0 +1,62 @@
+{
+  "dbms": "duckdb",
+  "feature_type": "function",
+  "nodes": {
+    "page": 242,
+    "section": 6918,
+    "block": 62914,
+    "feature_candidate": 585
+  },
+  "edges": {
+    "page_contains_section": 6918,
+    "section_contains_block": 62914,
+    "section_previous": 6885,
+    "section_next": 6885,
+    "feature_documented_in_section": 1276,
+    "total": 84878
+  },
+  "noise": {
+    "noise_nodes": 474,
+    "noise_sections": 0,
+    "noise_blocks": 474,
+    "eligible_nodes": 69607
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "duckdb.function.enum_code",
+      "target": "duckdb_stable_enum_s0001"
+    },
+    {
+      "source": "duckdb.function.enum_first",
+      "target": "duckdb_stable_enum_s0002"
+    },
+    {
+      "source": "duckdb.function.list_filter",
+      "target": "duckdb_stable_lambda_s0003"
+    },
+    {
+      "source": "duckdb.function.list_reduce",
+      "target": "duckdb_stable_lambda_s0004"
+    },
+    {
+      "source": "duckdb.function.list_transform",
+      "target": "duckdb_stable_lambda_s0005"
+    },
+    {
+      "source": "duckdb.function.list_filter",
+      "target": "duckdb_stable_list_s0005"
+    },
+    {
+      "source": "duckdb.function.list_reduce",
+      "target": "duckdb_stable_list_s0006"
+    },
+    {
+      "source": "duckdb.function.list_transform",
+      "target": "duckdb_stable_list_s0007"
+    }
+  ],
+  "generated_at": "2026-08-06T18:59:14.119878+08:00"
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="reference">
+      <meta name="DC.Title" content="JSON_EQUAL Condition">
+      <meta name="DC.subject" content="JSON_EQUAL condition, conditions, JSON_EQUAL">
+      <meta name="keywords" content="JSON_EQUAL condition, conditions, JSON_EQUAL">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-35C7012D-FCDB-4106-88C1-CABA78326896">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>JSON_EQUAL Condition</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="is-json-condition.html" title="Previous" type="text/html">
+      <link rel="next" href="json_exists-condition.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"JSON_EQUAL Condition","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="is-json-condition.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="json_exists-condition.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-35C7012D-FCDB-4106-88C1-CABA78326896" name="GUID-35C7012D-FCDB-4106-88C1-CABA78326896"></a>
+         
+         <h2 id="SQLRF-GUID-35C7012D-FCDB-4106-88C1-CABA78326896" class="sect2">JSON_EQUAL Condition</h2>
+         <div class="ind">
+            <div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-35C7012D-FCDB-4106-88C1-CABA78326896__GUID-86A4AA92-8F68-4751-B811-14C6B85A26EE">Syntax</p>
+                  <div class="figure" id="GUID-35C7012D-FCDB-4106-88C1-CABA78326896__GUID-3576748A-A3BF-4F2D-B154-CFCD2C98588D"><img src="img/json_equal_condition.gif" alt="Description of json_equal_condition.eps follows" title="Description of json_equal_condition.eps follows" longdesc="img_text/json_equal_condition.html"><br><a href="img_text/json_equal_condition.html">Description of the illustration json_equal_condition.eps</a></div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-35C7012D-FCDB-4106-88C1-CABA78326896__GUID-61B42718-F788-440A-A351-3A5F09A41A0A">Purpose</p>
+                  <p>The Oracle SQL condition <code class="codeph">JSON_EQUAL</code> compares two <code class="codeph">JSON</code> values and returns true if they are equal. It returns false if the two values are not equal. The input values must be valid <code class="codeph">JSON</code> data.
+                  </p>
+                  <p>The comparison ignores insignificant whitespace and insignificant object member order. For example, <code class="codeph">JSON</code> objects are equal, if they have the same members, regardless of their order.
+                  </p>
+                  <p> If either of the two compared inputs has one or more duplicate fields, then the value returned by <code class="codeph">JSON_EQUAL</code> is unspecified.
+                  </p>
+                  <p><code class="codeph">JSON_EQUAL</code> supports <code class="codeph">ERROR ON ERROR</code>, <code class="codeph">FALSE ON ERROR</code>, and <code class="codeph">TRUE ON ERROR</code>. The default is <code class="codeph">FALSE ON ERROR</code>. A typical example of an error is when the input expression is not valid <code class="codeph">JSON</code>. 
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-35C7012D-FCDB-4106-88C1-CABA78326896__GUID-15BED0A1-D861-4F0E-AE16-2C2375584817">Examples</p>
+                  <p>The following statements return TRUE:</p><pre class="oac_no_warn" dir="ltr">JSON_EQUAL('{}', '{ }')</pre><pre class="oac_no_warn" dir="ltr">JSON_EQUAL('{a:1, b:2}', '{b:2 , a:1 }')</pre><p>The following statement return FALSE:</p><pre class="oac_no_warn" dir="ltr">JSON_EQUAL('{a:"1"}', '{a:1 }') -&gt; FALSE</pre><p>The following statement results in a <code class="codeph">ORA-40441</code> <code class="codeph">JSON</code> syntax error
+                  </p><pre class="oac_no_warn" dir="ltr">JSON_EQUAL('[1]', '[}' ERROR ON ERROR)</pre></div>
+               <div class="section">
+                  <div class="infoboxnotealso" id="GUID-35C7012D-FCDB-4106-88C1-CABA78326896__GUID-56E4B083-0B7F-4EE5-A074-54C4EDD05F49">
+                     <p class="notep1">See Also:</p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADJSN" target="_blank"><span class="italic">Oracle Database JSON Developerâs Guide</span></a> for more information.
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

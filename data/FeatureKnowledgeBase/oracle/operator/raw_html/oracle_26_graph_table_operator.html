@@ -1,0 +1,310 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="reference">
+      <meta name="DC.Title" content="GRAPH_TABLE Operator">
+      <meta name="DC.subject" content="GRAPH_TABLE Operator, Operators, GRAPH_TABLE">
+      <meta name="keywords" content="GRAPH_TABLE Operator, Operators, GRAPH_TABLE">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>GRAPH_TABLE Operator</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="data-quality-operators.html" title="Previous" type="text/html">
+      <link rel="next" href="graph-reference.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"GRAPH_TABLE Operator","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="data-quality-operators.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="graph-reference.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305" name="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305"></a>
+         
+         <h2 id="SQLRF-GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305" class="sect2">GRAPH_TABLE Operator</h2>
+         <div class="ind">
+            <div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305__GUID-8CF3B57F-543D-4B8E-A83E-ABBE281E2343">Purpose</p>
+                  <p>The <code class="codeph">GRAPH_TABLE</code> operator can be used as a table expression in a <code class="codeph">FROM</code> clause. It takes a graph as input against which it matches a specified graph pattern. It then outputs a set of solutions in tabular form.
+                  </p>
+               </div>
+               <div class="section">
+                  <p>This topic consists of the following sub-topics:</p>
+                  <ul style="list-style-type: disc;" id="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305__UL_W5R_4NJ_KXB">
+                     <li>
+                        <p><a href="graph-reference.html#GUID-873488F0-58D1-4B9D-94B1-F4967B1785DD">Graph Reference</a></p>
+                     </li>
+                     <li>
+                        <p><a href="graph-pattern.html#GUID-1F1E8BC1-CEBB-43A2-B66A-C7D9BB24D88C">Graph Pattern</a></p>
+                     </li>
+                     <li>
+                        <p><a href="graph-table-shape.html#GUID-93202EC2-D2F3-45B0-869D-4C03057EB1A5">Graph Table Shape</a></p>
+                     </li>
+                     <li>
+                        <p><a href="value-expressions-graph_table.html#GUID-30B0844D-329B-4A95-BEA1-953AF9F3ED7C">Value Expressions for GRAPH_TABLE</a></p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305__GUID-076949F4-F94B-4E98-AEEF-E6126A0C9F72">Syntax</p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305__GUID-C2650D90-988C-4551-AFAA-C9E50FF62B1C"><span class="italic">graph_table</span>::=
+                  </p>
+                  <div class="figure" id="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305__FIG_SPR_F1R_YWB"><br><div class="imageleft"><img class="imageleft" id="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305__IMAGE_RWC_Z1R_YWB" src="img/graph_table.gif" alt="Description of graph_table.eps follows" title="Description of graph_table.eps follows" longdesc="img_text/graph_table.html"><br><a href="img_text/graph_table.html">Description of the illustration graph_table.eps</a></div><br></div>
+                  <p>(<span class="italic"><a href="graph-reference.html#GUID-873488F0-58D1-4B9D-94B1-F4967B1785DD__GUID-95FA262E-2E7B-4457-9B62-CBB97ED19E56">graph_reference ::=</a></span>, <span class="italic"><a href="graph-pattern.html#GUID-1F1E8BC1-CEBB-43A2-B66A-C7D9BB24D88C__GUID-2AE8A195-AE59-491B-B2F2-03C6204D33F0">graph_pattern ::=</a></span>, <span class="italic"><a href="graph-table-shape.html#GUID-93202EC2-D2F3-45B0-869D-4C03057EB1A5__GUID-25DD691C-4599-47C5-9122-B59ACCD03DBB">graph_table_shape ::=</a></span>)
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305__GUID-19BCB2C7-539C-4D0E-ACA9-A88DD12B584B">Semantics</p>
+                  <p>The<code class="codeph">GRAPH_TABLE</code> operator starts with the keyword <code class="codeph">GRAPH_TABLE</code> and consists of the following three parts that are placed between parentheses:
+                  </p>
+                  <ul style="list-style-type: disc;" id="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305__UL_D1K_SBJ_JXB">
+                     <li>
+                        <p><span class="italic"><code class="codeph">graph_reference</code></span>: a reference to a graph to perform the pattern matching on. Note that any graph first needs to be created through a <code class="codeph">CREATE PROPERTY GRAPH</code> statement before it can be referenced in a <code class="codeph">GRAPH_TABLE</code>.
+                        </p>
+                     </li>
+                     <li>
+                        <p><span class="italic"><code class="codeph">graph_pattern</code></span>: a graph pattern consisting of vertex and edge patterns together with search conditions. The pattern is matched against the graph to obtain a set of solutions.
+                        </p>
+                     </li>
+                     <li>
+                        <p><span class="italic"><code class="codeph">graph_table_shape</code></span>: a <code class="codeph">COLUMNS</code> clause that projects the solutions into a tabular form.
+                        </p>
+                     </li>
+                  </ul>
+                  <p>A <code class="codeph">FROM</code> clause in SQL may contain any number of <code class="codeph">GRAPH_TABLE</code> operators as well as other types of table expressions. This allows for joining data from multiple graphs or for joining graph data with tabular, JSON, XML, or other types of data.
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305__GUID-3D99E9E8-9FA0-4E3F-B03D-2192CFBC8349">Examples</p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305__GUID-09D21458-518A-4220-B524-389E0A63AEE5">Setting Up Sample Data</p>
+                  <p>This example creates a property graph, <code class="codeph">students_graph</code>, using <code class="codeph">persons</code>,<code class="codeph">university</code>, <code class="codeph">friendships</code>, and <code class="codeph">students</code> as the underlying database tables for the graph.
+                  </p>
+                  <p>The following statements first create the necessary tables and fill them with sample data:</p><pre class="language-sql runsqlbutton"><code>
+CREATE TABLE IF NOT EXISTS university (
+    id NUMBER GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1),
+    name VARCHAR2(10),
+    CONSTRAINT u_pk PRIMARY KEY (id));
+INSERT INTO university (name) VALUES ('ABC');
+INSERT INTO university (name) VALUES ('XYZ');
+</code></pre><pre class="language-sql runsqlbutton"><code>
+CREATE TABLE IF NOT EXISTS persons (
+     person_id NUMBER GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT
+     BY 1),
+     name VARCHAR2(10),
+     birthdate DATE,
+     height FLOAT DEFAULT ON NULL 0,
+     person_data JSON,
+     CONSTRAINT person_pk PRIMARY KEY (person_id));
+
+INSERT INTO persons (name, height, birthdate, person_data)
+       VALUES ('John', 1.80, to_date('13/06/1963', 'DD/MM/YYYY'), '{"department":"IT","role":"Software Developer"}');
+
+INSERT INTO persons (name, height, birthdate, person_data)
+       VALUES ('Mary', 1.65, to_date('25/09/1982', 'DD/MM/YYYY'), '{"department":"HR","role":"HR Manager"}');
+
+INSERT INTO persons (name, height, birthdate, person_data)
+       VALUES ('Bob', 1.75, to_date('11/03/1966', 'DD/MM/YYYY'), '{"department":"IT","role":"Technical Consultant"}');
+
+INSERT INTO persons (name, height, birthdate, person_data)
+       VALUES ('Alice', 1.70, to_date('01/02/1987', 'DD/MM/YYYY'), '{"department":"HR","role":"HR Assistant"}');</code></pre><pre class="language-sql runsqlbutton"><code>
+CREATE TABLE IF NOT EXISTS students (
+      s_id NUMBER GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1),
+      s_univ_id NUMBER,
+      s_person_id NUMBER,
+      subject VARCHAR2(10),      
+      CONSTRAINT stud_pk PRIMARY KEY (s_id),
+      CONSTRAINT stud_fk_person FOREIGN KEY (s_person_id) REFERENCES persons(person_id),
+      CONSTRAINT stud_fk_univ FOREIGN KEY (s_univ_id) REFERENCES university(id)
+    );
+
+INSERT INTO students(s_univ_id, s_person_id,subject) VALUES (1,1,'Arts');
+INSERT INTO students(s_univ_id, s_person_id,subject) VALUES (1,3,'Music');
+INSERT INTO students(s_univ_id, s_person_id,subject) VALUES (2,2,'Math');
+INSERT INTO students(s_univ_id, s_person_id,subject) VALUES (2,4,'Science');
+</code></pre><pre class="language-sql runsqlbutton"><code>
+CREATE TABLE IF NOT EXISTS friendships (
+    friendship_id NUMBER GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1),
+    person_a NUMBER,
+    person_b NUMBER,
+    meeting_date DATE,
+    CONSTRAINT fk_person_a_id FOREIGN KEY (person_a) REFERENCES persons(person_id),
+    CONSTRAINT fk_person_b_id FOREIGN KEY (person_b) REFERENCES persons(person_id),
+    CONSTRAINT fs_pk PRIMARY KEY (friendship_id)
+);
+
+INSERT INTO friendships (person_a, person_b, meeting_date) VALUES (1, 3, to_date('01/09/2000', 'DD/MM/YYYY'));
+INSERT INTO friendships (person_a, person_b, meeting_date) VALUES (2, 4, to_date('19/09/2000', 'DD/MM/YYYY'));
+INSERT INTO friendships (person_a, person_b, meeting_date) VALUES (2, 1, to_date('19/09/2000', 'DD/MM/YYYY'));
+INSERT INTO friendships (person_a, person_b, meeting_date) VALUES (3, 2, to_date('10/07/2001', 'DD/MM/YYYY'));
+</code></pre><p>The following statement creates a graph on top of the tables:</p><pre class="language-sql runsqlbutton"><code>
+CREATE PROPERTY GRAPH IF NOT EXISTS students_graph
+  VERTEX TABLES (
+    persons KEY (person_id)
+      LABEL person
+        PROPERTIES (person_id, name, birthdate AS dob)
+      LABEL person_ht
+        PROPERTIES (height),
+    university KEY (id)
+  )
+  EDGE TABLES (
+    friendships AS friends
+      KEY (friendship_id)
+      SOURCE KEY (person_a) REFERENCES persons(person_id)
+      DESTINATION KEY (person_b) REFERENCES persons(person_id)
+      PROPERTIES (friendship_id, meeting_date),
+    students AS student_of
+      SOURCE KEY (s_person_id) REFERENCES persons(person_id)
+      DESTINATION KEY (s_univ_id) REFERENCES university(id)
+      PROPERTIES (subject)
+  );</code></pre><p>This creates the following graph:</p>
+                  <div class="figure" id="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305__FIG_NC2_YFJ_JXB"><br><div class="imageleft"><img class="imageleft" id="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305__IMAGE_CMK_DHJ_JXB" height="669" width="1431" src="img/student_graph.png" alt="Description of student_graph.png follows" title="Description of student_graph.png follows" longdesc="img_text/student_graph.html"><br><a href="img_text/student_graph.html">Description of the illustration student_graph.png</a></div><br></div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305__GUID-BD3E1C86-A3DA-417B-801B-18D79EDC1EF2">Example: GRAPH_TABLE Query</p>
+                  <p>The following query matches a pattern on graph <code class="codeph">students_graph</code> to find friends of a person named <code class="codeph">John</code>:
+                  </p><pre class="language-sql runsqlbutton "><code>
+SELECT *
+FROM GRAPH_TABLE ( students_graph
+  MATCH (a IS person) -[e IS friends]- (b IS person)
+  WHERE a.name = 'John'
+  COLUMNS (b.name)
+);
+</code></pre><p>In the query:</p>
+                  <ul style="list-style-type: disc;" id="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305__UL_LFT_RHJ_JXB">
+                     <li>
+                        <p><code class="codeph">(a IS person)</code> is a vertex pattern that matches vertices labeled person and binds the solutions to a variable <code class="codeph">a</code>.
+                        </p>
+                     </li>
+                     <li>
+                        <p><code class="codeph">-[e IS friends]-</code> is an edge pattern that matches either incoming or outgoing edges labeled friends and binds the solutions to a variable <code class="codeph">e</code>.
+                        </p>
+                     </li>
+                     <li>
+                        <p><code class="codeph">(b IS person)</code> is another vertex pattern that matches vertices labeled person and binds the solutions to a variable <code class="codeph">b</code>.
+                        </p>
+                     </li>
+                     <li>
+                        <p><code class="codeph">WHERE a.name = 'John'</code> is a search condition that accesses the property <code class="codeph">name</code> from vertices bound to variable a to compare against the value <code class="codeph">John</code>.
+                        </p>
+                     </li>
+                     <li>
+                        <p><code class="codeph">COLUMNS (b.name)</code> specifies to return the property <code class="codeph">name</code> of vertex <code class="codeph">b</code> as part of the output table.
+                        </p>
+                     </li>
+                  </ul>
+                  <p>The output is:</p><pre class="oac_no_warn" dir="ltr">
+NAME
+----------
+Mary
+Bob
+</pre></div>
+               <div class="section">
+                  <div class="infoboxnotealso" id="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305__GUID-B39E2C0E-F413-4E2E-8133-78CF2AB63D78">
+                     <p class="notep1">See Also:</p>
+                     <ul style="list-style-type: disc;" id="GUID-CA6A600E-2087-46F8-A081-C6F3F01CF305__UL_Z12_XG4_V5B">
+                        <li>
+                           <p><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=SPGDG-GUID-B813BA1B-AEA0-4C70-8094-739FFC0E805B" target="_blank"><span class="italic">SQL Property Graph</span></a></p>
+                        </li>
+                        <li>
+                           <p>For property graph definitions and terminology , see <a href="create-property-graph.html#GUID-37364ADB-E89C-4D92-A431-F2544FEDB218"><span class="italic">CREATE PROPERTY GRAPH</span></a>.
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

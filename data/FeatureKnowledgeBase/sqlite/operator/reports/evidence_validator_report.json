@@ -1,0 +1,36 @@
+{
+  "dbms": "sqlite",
+  "feature_type": "operator",
+  "total_drafts": 41,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 41,
+  "invalid_features": 0,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 41,
+    "no_description_claims": 40,
+    "no_valid_syntax": 0,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 37
+  },
+  "sample_clean_features": [],
+  "sample_warning_features": [
+    "sqlite.operator.!=_sqlite_current_lang_expr",
+    "sqlite.operator.%_sqlite_current_lang_expr",
+    "sqlite.operator.&_sqlite_current_lang_expr",
+    "sqlite.operator.*_sqlite_current_lang_expr",
+    "sqlite.operator.+_sqlite_current_lang_expr",
+    "sqlite.operator.->>_sqlite_current_lang_expr",
+    "sqlite.operator.->_sqlite_current_lang_expr",
+    "sqlite.operator.-_sqlite_current_lang_expr",
+    "sqlite.operator./_sqlite_current_lang_expr",
+    "sqlite.operator.<<_sqlite_current_lang_expr"
+  ],
+  "sample_invalid_features": [],
+  "generated_at": "2026-08-06T19:08:15.742179+08:00"
+}

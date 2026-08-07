@@ -1,0 +1,3994 @@
+{
+  "signature_backfill_enabled": true,
+  "metadata_backfill_enabled": true,
+  "residual_invalid_handling_enabled": true,
+  "features_backfilled": 43,
+  "formal_signatures_added": 0,
+  "weak_signatures_added": 60,
+  "rejected_example_like_signatures": 0,
+  "source_metadata_backfilled": 465,
+  "examples_backfilled": 31,
+  "description_claims_backfilled": 10,
+  "backfilled_features": [
+    {
+      "feature_id": "trino.function.abs",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.all",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.any",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.any_match",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.array_agg",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.array_join",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.cardinality",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.ceiling",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.classify",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.coalesce",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.count",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.features",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.filter",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.floor",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.if",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.intersection_cardinality",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.jaccard_index",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.json_exists",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.json_object",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.json_query",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.json_value",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.keyvalue",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.learn_classifier",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.learn_regressor",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.linestring",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.listagg",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.map",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.max",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.rank",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.reduce_agg",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.regexp_like",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.regexp_replace",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.regress",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.setdouble",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.setlong",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.size",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.sum",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.theta_sketch_cardinality",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.timestamp",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.transform",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.try",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.unique",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "trino.function.upper",
+      "added_syntax": [],
+      "evidence_refs": []
+    }
+  ],
+  "backfilled_examples": [
+    {
+      "feature_id": "trino.function.any_match",
+      "example_count": 1,
+      "evidence_refs": [
+        "trino_current_lambda_s0003_b0012"
+      ]
+    },
+    {
+      "feature_id": "trino.function.array_agg",
+      "example_count": 1,
+      "evidence_refs": [
+        "trino_current_aggregate_s0003_b0005"
+      ]
+    },
+    {
+      "feature_id": "trino.function.array_join",
+      "example_count": 1,
+      "evidence_refs": [
+        "trino_current_setdigest_s0001_b0006"
+      ]
+    },
+    {
+      "feature_id": "trino.function.cardinality",
+      "example_count": 1,
+      "evidence_refs": [
+        "trino_current_hyperloglog_s0003_b0004"
+      ]
+    },
+    {
+      "feature_id": "trino.function.classify",
+      "example_count": 1,
+      "evidence_refs": [
+        "trino_current_ml_s0003_b0007"
+      ]
+    },
+    {
+      "feature_id": "trino.function.coalesce",
+      "example_count": 1,
+      "evidence_refs": [
+        "trino_current_conditional_s0007_b0015"
+      ]
+    },
+    {
+      "feature_id": "trino.function.count",
+      "example_count": 4,
+      "evidence_refs": [
+        "trino_current_aggregate_s0003_b0007",
+        "trino_current_aggregate_s0003_b0010",
+        "trino_current_aggregate_s0003_b0013",
+        "trino_current_datasketches_s0004_b0005"
+      ]
+    },
+    {
+      "feature_id": "trino.function.features",
+      "example_count": 1,
+      "evidence_refs": [
+        "trino_current_ml_s0002_b0003"
+      ]
+    },
+    {
+      "feature_id": "trino.function.if",
+      "example_count": 1,
+      "evidence_refs": [
+        "trino_current_conditional_s0003_b0008"
+      ]
+    },
+    {
+      "feature_id": "trino.function.intersection_cardinality",
+      "example_count": 1,
+      "evidence_refs": [
+        "trino_current_setdigest_s0001_b0006"
+      ]
+    },
+    {
+      "feature_id": "trino.function.jaccard_index",
+      "example_count": 1,
+      "evidence_refs": [
+        "trino_current_setdigest_s0001_b0006"
+      ]
+    },
+    {
+      "feature_id": "trino.function.json_exists",
+      "example_count": 2,
+      "evidence_refs": [
+        "trino_current_json_s0027_b0009",
+        "trino_current_json_s0027_b0016"
+      ]
+    },
+    {
+      "feature_id": "trino.function.json_object",
+      "example_count": 11,
+      "evidence_refs": [
+        "trino_current_json_s0039_b0003",
+        "trino_current_json_s0039_b0005",
+        "trino_current_json_s0040_b0005",
+        "trino_current_json_s0040_b0007",
+        "trino_current_json_s0040_b0009",
+        "trino_current_json_s0040_b0011",
+        "trino_current_json_s0040_b0013",
+        "trino_current_json_s0041_b0003",
+        "trino_current_json_s0042_b0004",
+        "trino_current_json_s0043_b0003",
+        "trino_current_json_s0043_b0005"
+      ]
+    },
+    {
+      "feature_id": "trino.function.json_query",
+      "example_count": 7,
+      "evidence_refs": [
+        "trino_current_json_s0029_b0009",
+        "trino_current_json_s0029_b0016",
+        "trino_current_json_s0029_b0023",
+        "trino_current_json_s0029_b0030",
+        "trino_current_json_s0029_b0037",
+        "trino_current_json_s0035_b0008",
+        "trino_current_json_s0040_b0009"
+      ]
+    },
+    {
+      "feature_id": "trino.function.json_value",
+      "example_count": 4,
+      "evidence_refs": [
+        "trino_current_json_s0031_b0009",
+        "trino_current_json_s0031_b0016",
+        "trino_current_json_s0031_b0023",
+        "trino_current_json_s0031_b0030"
+      ]
+    },
+    {
+      "feature_id": "trino.function.learn_classifier",
+      "example_count": 2,
+      "evidence_refs": [
+        "trino_current_ml_s0003_b0003",
+        "trino_current_ml_s0003_b0007"
+      ]
+    },
+    {
+      "feature_id": "trino.function.learn_regressor",
+      "example_count": 2,
+      "evidence_refs": [
+        "trino_current_ml_s0004_b0004",
+        "trino_current_ml_s0004_b0006"
+      ]
+    },
+    {
+      "feature_id": "trino.function.listagg",
+      "example_count": 6,
+      "evidence_refs": [
+        "trino_current_aggregate_s0004_b0038",
+        "trino_current_aggregate_s0004_b0042",
+        "trino_current_aggregate_s0004_b0046",
+        "trino_current_aggregate_s0004_b0048",
+        "trino_current_aggregate_s0004_b0051",
+        "trino_current_aggregate_s0004_b0055"
+      ]
+    },
+    {
+      "feature_id": "trino.function.map",
+      "example_count": 5,
+      "evidence_refs": [
+        "trino_current_map_s0001_b0004",
+        "trino_current_map_s0001_b0006",
+        "trino_current_map_s0001_b0008",
+        "trino_current_map_s0001_b0010",
+        "trino_current_map_s0002_b0005"
+      ]
+    },
+    {
+      "feature_id": "trino.function.rank",
+      "example_count": 1,
+      "evidence_refs": [
+        "trino_current_window_s0001_b0003"
+      ]
+    },
+    {
+      "feature_id": "trino.function.reduce_agg",
+      "example_count": 1,
+      "evidence_refs": [
+        "trino_current_lambda_s0003_b0016"
+      ]
+    },
+    {
+      "feature_id": "trino.function.regexp_replace",
+      "example_count": 1,
+      "evidence_refs": [
+        "trino_current_lambda_s0003_b0014"
+      ]
+    },
+    {
+      "feature_id": "trino.function.regress",
+      "example_count": 1,
+      "evidence_refs": [
+        "trino_current_ml_s0004_b0006"
+      ]
+    },
+    {
+      "feature_id": "trino.function.setdouble",
+      "example_count": 2,
+      "evidence_refs": [
+        "trino_current_functions_s0006_b0011",
+        "trino_current_functions_s0006_b0013"
+      ]
+    },
+    {
+      "feature_id": "trino.function.setlong",
+      "example_count": 2,
+      "evidence_refs": [
+        "trino_current_functions_s0006_b0011",
+        "trino_current_functions_s0006_b0013"
+      ]
+    },
+    {
+      "feature_id": "trino.function.sum",
+      "example_count": 3,
+      "evidence_refs": [
+        "trino_current_datasketches_s0004_b0003",
+        "trino_current_datasketches_s0004_b0005",
+        "trino_current_window_s0002_b0004"
+      ]
+    },
+    {
+      "feature_id": "trino.function.theta_sketch_cardinality",
+      "example_count": 1,
+      "evidence_refs": [
+        "trino_current_datasketches_s0004_b0003"
+      ]
+    },
+    {
+      "feature_id": "trino.function.timestamp",
+      "example_count": 2,
+      "evidence_refs": [
+        "trino_current_variant_s0008_b0028",
+        "trino_current_variant_s0011_b0028"
+      ]
+    },
+    {
+      "feature_id": "trino.function.transform",
+      "example_count": 3,
+      "evidence_refs": [
+        "trino_current_lambda_s0003_b0003",
+        "trino_current_lambda_s0003_b0006",
+        "trino_current_lambda_s0003_b0009"
+      ]
+    },
+    {
+      "feature_id": "trino.function.try",
+      "example_count": 2,
+      "evidence_refs": [
+        "trino_current_conditional_s0007_b0009",
+        "trino_current_conditional_s0007_b0015"
+      ]
+    },
+    {
+      "feature_id": "trino.function.upper",
+      "example_count": 1,
+      "evidence_refs": [
+        "trino_current_lambda_s0003_b0014"
+      ]
+    }
+  ],
+  "weak_table_row_features_added": 433,
+  "non_function_noise_kept_invalid": 1,
+  "residual_features_added": [
+    {
+      "feature_id": "trino.function.abs",
+      "added_syntax": [
+        "abs()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.acos",
+      "added_syntax": [
+        "acos()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.ai_extract",
+      "added_syntax": [
+        "ai_extract(text, labels)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.all",
+      "added_syntax": [
+        "ALL (...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.all_match",
+      "added_syntax": [
+        "all_match()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.any",
+      "added_syntax": [
+        "ANY (...)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.any_value",
+      "added_syntax": [
+        "any_value()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.approx_distinct",
+      "added_syntax": [
+        "approx_distinct()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.approx_most_frequent",
+      "added_syntax": [
+        "approx_most_frequent()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.approx_percentile",
+      "added_syntax": [
+        "approx_percentile()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.approx_set",
+      "added_syntax": [
+        "approx_set()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.arbitrary",
+      "added_syntax": [
+        "arbitrary()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.array_distinct",
+      "added_syntax": [
+        "array_distinct()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.array_except",
+      "added_syntax": [
+        "array_except()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.array_first",
+      "added_syntax": [
+        "array_first()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.array_histogram",
+      "added_syntax": [
+        "array_histogram()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.array_intersect",
+      "added_syntax": [
+        "array_intersect()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.array_last",
+      "added_syntax": [
+        "array_last()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.array_max",
+      "added_syntax": [
+        "array_max()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.array_min",
+      "added_syntax": [
+        "array_min()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.array_position",
+      "added_syntax": [
+        "array_position()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.array_remove",
+      "added_syntax": [
+        "array_remove()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.array_sort",
+      "added_syntax": [
+        "array_sort()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.array_union",
+      "added_syntax": [
+        "array_union()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.arrays_overlap",
+      "added_syntax": [
+        "arrays_overlap()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.asin",
+      "added_syntax": [
+        "asin()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.at_timezone",
+      "added_syntax": [
+        "at_timezone()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.atan",
+      "added_syntax": [
+        "atan()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.atan2",
+      "added_syntax": [
+        "atan2()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.avg",
+      "added_syntax": [
+        "avg()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bar",
+      "added_syntax": [
+        "bar()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.beta_cdf",
+      "added_syntax": [
+        "beta_cdf()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bigint",
+      "added_syntax": [
+        "bigint()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bing_tile",
+      "added_syntax": [
+        "bing_tile()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bing_tile_at",
+      "added_syntax": [
+        "bing_tile_at()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bing_tile_coordinates",
+      "added_syntax": [
+        "bing_tile_coordinates()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bing_tile_polygon",
+      "added_syntax": [
+        "bing_tile_polygon()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bing_tile_quadkey",
+      "added_syntax": [
+        "bing_tile_quadkey()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bing_tile_zoom_level",
+      "added_syntax": [
+        "bing_tile_zoom_level()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bing_tiles_around",
+      "added_syntax": [
+        "bing_tiles_around()",
+        "bing_tiles_around(latitude, longitude, zoom_level)",
+        "bing_tiles_around(latitude, longitude, zoom_level, radius_in_km)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bit_count",
+      "added_syntax": [
+        "bit_count()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bitwise_and",
+      "added_syntax": [
+        "bitwise_and()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bitwise_and_agg",
+      "added_syntax": [
+        "bitwise_and_agg()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bitwise_left_shift",
+      "added_syntax": [
+        "bitwise_left_shift()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bitwise_not",
+      "added_syntax": [
+        "bitwise_not()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bitwise_or",
+      "added_syntax": [
+        "bitwise_or()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bitwise_or_agg",
+      "added_syntax": [
+        "bitwise_or_agg()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bitwise_right_shift",
+      "added_syntax": [
+        "bitwise_right_shift()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bitwise_right_shift_arithmetic",
+      "added_syntax": [
+        "bitwise_right_shift_arithmetic()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bitwise_xor",
+      "added_syntax": [
+        "bitwise_xor()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bool_and",
+      "added_syntax": [
+        "bool_and()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.bool_or",
+      "added_syntax": [
+        "bool_or()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.cbrt",
+      "added_syntax": [
+        "cbrt()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.ceil",
+      "added_syntax": [
+        "ceil()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.ceiling",
+      "added_syntax": [
+        "ceiling()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.char2hexint",
+      "added_syntax": [
+        "char2hexint()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.checksum",
+      "added_syntax": [
+        "checksum()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.chr",
+      "added_syntax": [
+        "chr()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.codepoint",
+      "added_syntax": [
+        "codepoint()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.color",
+      "added_syntax": [
+        "color()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.combinations",
+      "added_syntax": [
+        "combinations()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.concat",
+      "added_syntax": [
+        "concat()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.concat_ws",
+      "added_syntax": [
+        "concat_ws()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.contains",
+      "added_syntax": [
+        "contains()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.contains_sequence",
+      "added_syntax": [
+        "contains_sequence()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.convex_hull_agg",
+      "added_syntax": [
+        "convex_hull_agg()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.corr",
+      "added_syntax": [
+        "corr()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.cos",
+      "added_syntax": [
+        "cos()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.cosh",
+      "added_syntax": [
+        "cosh()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.cosine_distance",
+      "added_syntax": [
+        "cosine_distance()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.cosine_similarity",
+      "added_syntax": [
+        "cosine_similarity()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.count_if",
+      "added_syntax": [
+        "count_if()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.covar_pop",
+      "added_syntax": [
+        "covar_pop()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.covar_samp",
+      "added_syntax": [
+        "covar_samp()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.crc32",
+      "added_syntax": [
+        "crc32()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.cume_dist",
+      "added_syntax": [
+        "cume_dist()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.current_groups",
+      "added_syntax": [
+        "current_groups()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.current_timezone",
+      "added_syntax": [
+        "current_timezone()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.date",
+      "added_syntax": [
+        "date()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.date_add",
+      "added_syntax": [
+        "date_add()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.date_diff",
+      "added_syntax": [
+        "date_diff()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.date_format",
+      "added_syntax": [
+        "date_format()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.date_parse",
+      "added_syntax": [
+        "date_parse()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.date_trunc",
+      "added_syntax": [
+        "date_trunc()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.day",
+      "added_syntax": [
+        "day()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.day_of_month",
+      "added_syntax": [
+        "day_of_month()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.day_of_week",
+      "added_syntax": [
+        "day_of_week()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.day_of_year",
+      "added_syntax": [
+        "day_of_year()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.degrees",
+      "added_syntax": [
+        "degrees()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.dense_rank",
+      "added_syntax": [
+        "dense_rank()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.dow",
+      "added_syntax": [
+        "dow()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.doy",
+      "added_syntax": [
+        "doy()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.e",
+      "added_syntax": [
+        "e()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.element_at",
+      "added_syntax": [
+        "element_at()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.empty_approx_set",
+      "added_syntax": [
+        "empty_approx_set()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.ends_with",
+      "added_syntax": [
+        "ends_with()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.every",
+      "added_syntax": [
+        "every()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.exclude_columns",
+      "added_syntax": [
+        "exclude_columns()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.exp",
+      "added_syntax": [
+        "exp()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.extract",
+      "added_syntax": [
+        "extract()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.filter",
+      "added_syntax": [
+        "filter()",
+        "FILTER (WHERE name IS NOT NULL)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.first_value",
+      "added_syntax": [
+        "first_value()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.flatten",
+      "added_syntax": [
+        "flatten()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.floor",
+      "added_syntax": [
+        "floor()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.format",
+      "added_syntax": [
+        "format()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.format_datetime",
+      "added_syntax": [
+        "format_datetime()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.format_number",
+      "added_syntax": [
+        "format_number()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.from_base",
+      "added_syntax": [
+        "from_base()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.from_base32",
+      "added_syntax": [
+        "from_base32()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.from_base64",
+      "added_syntax": [
+        "from_base64()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.from_base64url",
+      "added_syntax": [
+        "from_base64url()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.from_big_endian_32",
+      "added_syntax": [
+        "from_big_endian_32()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.from_big_endian_64",
+      "added_syntax": [
+        "from_big_endian_64()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.from_encoded_polyline",
+      "added_syntax": [
+        "from_encoded_polyline()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.from_geojson_geometry",
+      "added_syntax": [
+        "from_geojson_geometry()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.from_hex",
+      "added_syntax": [
+        "from_hex()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.from_ieee754_32",
+      "added_syntax": [
+        "from_ieee754_32()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.from_ieee754_64",
+      "added_syntax": [
+        "from_ieee754_64()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.from_iso8601_date",
+      "added_syntax": [
+        "from_iso8601_date()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.from_iso8601_timestamp",
+      "added_syntax": [
+        "from_iso8601_timestamp()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.from_iso8601_timestamp_nanos",
+      "added_syntax": [
+        "from_iso8601_timestamp_nanos()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.from_unixtime",
+      "added_syntax": [
+        "from_unixtime()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.from_unixtime_nanos",
+      "added_syntax": [
+        "from_unixtime_nanos()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.from_utf8",
+      "added_syntax": [
+        "from_utf8()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.geometric_mean",
+      "added_syntax": [
+        "geometric_mean()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.geometry_collect_agg",
+      "added_syntax": [
+        "geometry_collect_agg()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.geometry_from_hadoop_shape",
+      "added_syntax": [
+        "geometry_from_hadoop_shape()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.geometry_invalid_reason",
+      "added_syntax": [
+        "geometry_invalid_reason()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.geometry_nearest_points",
+      "added_syntax": [
+        "geometry_nearest_points()",
+        "geometry_nearest_points(first: Geometry, second: Geometry)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.geometry_to_bing_tiles",
+      "added_syntax": [
+        "geometry_to_bing_tiles()",
+        "geometry_to_bing_tiles(geometry, zoom_level)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.geometry_union",
+      "added_syntax": [
+        "geometry_union()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.geometry_union_agg",
+      "added_syntax": [
+        "geometry_union_agg()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.great_circle_distance",
+      "added_syntax": [
+        "great_circle_distance()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.greatest",
+      "added_syntax": [
+        "greatest()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.hamming_distance",
+      "added_syntax": [
+        "hamming_distance()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.hash_counts",
+      "added_syntax": [
+        "hash_counts()",
+        "hash_counts(x)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.histogram",
+      "added_syntax": [
+        "histogram()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.hmac_md5",
+      "added_syntax": [
+        "hmac_md5()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.hmac_sha1",
+      "added_syntax": [
+        "hmac_sha1()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.hmac_sha256",
+      "added_syntax": [
+        "hmac_sha256()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.hmac_sha512",
+      "added_syntax": [
+        "hmac_sha512()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.hour",
+      "added_syntax": [
+        "hour()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.human_readable_seconds",
+      "added_syntax": [
+        "human_readable_seconds()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.index",
+      "added_syntax": [
+        "index()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.infinity",
+      "added_syntax": [
+        "infinity()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.inverse_beta_cdf",
+      "added_syntax": [
+        "inverse_beta_cdf()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.inverse_normal_cdf",
+      "added_syntax": [
+        "inverse_normal_cdf()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.is_finite",
+      "added_syntax": [
+        "is_finite()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.is_infinite",
+      "added_syntax": [
+        "is_infinite()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.is_json_scalar",
+      "added_syntax": [
+        "is_json_scalar()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.is_nan",
+      "added_syntax": [
+        "is_nan()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.json_array_contains",
+      "added_syntax": [
+        "json_array_contains()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.json_array_get",
+      "added_syntax": [
+        "json_array_get()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.json_array_length",
+      "added_syntax": [
+        "json_array_length()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.json_extract",
+      "added_syntax": [
+        "json_extract()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.json_extract_scalar",
+      "added_syntax": [
+        "json_extract_scalar()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.json_format",
+      "added_syntax": [
+        "json_format()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.json_parse",
+      "added_syntax": [
+        "json_parse()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.json_size",
+      "added_syntax": [
+        "json_size()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.keyvalue",
+      "added_syntax": [
+        "keyvalue()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.kurtosis",
+      "added_syntax": [
+        "kurtosis()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.lag",
+      "added_syntax": [
+        "lag()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.last_day_of_month",
+      "added_syntax": [
+        "last_day_of_month()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.last_value",
+      "added_syntax": [
+        "last_value()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.lead",
+      "added_syntax": [
+        "lead()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.learn_libsvm_classifier",
+      "added_syntax": [
+        "learn_libsvm_classifier()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.learn_libsvm_regressor",
+      "added_syntax": [
+        "learn_libsvm_regressor()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.least",
+      "added_syntax": [
+        "least()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.length",
+      "added_syntax": [
+        "length()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.levenshtein_distance",
+      "added_syntax": [
+        "levenshtein_distance()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.line_interpolate_point",
+      "added_syntax": [
+        "line_interpolate_point()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.line_interpolate_points",
+      "added_syntax": [
+        "line_interpolate_points()",
+        "line_interpolate_points(LineString, double, repeated)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.line_locate_point",
+      "added_syntax": [
+        "line_locate_point()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.linestring",
+      "added_syntax": [
+        "LINESTRING (0 0, 1 1, 1 2)",
+        "LINESTRING (2 3, 3 4)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.ln",
+      "added_syntax": [
+        "ln()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.localtimestamp",
+      "added_syntax": [
+        "localtimestamp(p)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.log",
+      "added_syntax": [
+        "log()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.log10",
+      "added_syntax": [
+        "log10()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.log2",
+      "added_syntax": [
+        "log2()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.lower",
+      "added_syntax": [
+        "lower()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.lpad",
+      "added_syntax": [
+        "lpad()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.ltrim",
+      "added_syntax": [
+        "ltrim()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.luhn_check",
+      "added_syntax": [
+        "luhn_check()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.make_set_digest",
+      "added_syntax": [
+        "make_set_digest()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.map_agg",
+      "added_syntax": [
+        "map_agg()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.map_concat",
+      "added_syntax": [
+        "map_concat()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.map_entries",
+      "added_syntax": [
+        "map_entries()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.map_filter",
+      "added_syntax": [
+        "map_filter()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.map_from_entries",
+      "added_syntax": [
+        "map_from_entries()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.map_keys",
+      "added_syntax": [
+        "map_keys()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.map_union",
+      "added_syntax": [
+        "map_union()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.map_values",
+      "added_syntax": [
+        "map_values()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.map_zip_with",
+      "added_syntax": [
+        "map_zip_with()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.max",
+      "added_syntax": [
+        "max()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.max_by",
+      "added_syntax": [
+        "max_by()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.md5",
+      "added_syntax": [
+        "md5()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.merge",
+      "added_syntax": [
+        "merge()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.merge_set_digest",
+      "added_syntax": [
+        "merge_set_digest()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.millisecond",
+      "added_syntax": [
+        "millisecond()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.min",
+      "added_syntax": [
+        "min()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.min_by",
+      "added_syntax": [
+        "min_by()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.minute",
+      "added_syntax": [
+        "minute()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.mod",
+      "added_syntax": [
+        "mod()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.month",
+      "added_syntax": [
+        "month()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.multimap_agg",
+      "added_syntax": [
+        "multimap_agg()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.multimap_from_entries",
+      "added_syntax": [
+        "multimap_from_entries()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.multipoint",
+      "added_syntax": [
+        "MULTIPOINT (0 0, 1 2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.murmur3",
+      "added_syntax": [
+        "murmur3()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.nan",
+      "added_syntax": [
+        "nan()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.ngrams",
+      "added_syntax": [
+        "ngrams()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.none_match",
+      "added_syntax": [
+        "none_match()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.normal_cdf",
+      "added_syntax": [
+        "normal_cdf()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.normalize",
+      "added_syntax": [
+        "normalize()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.now",
+      "added_syntax": [
+        "now()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.nth_value",
+      "added_syntax": [
+        "nth_value()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.ntile",
+      "added_syntax": [
+        "ntile()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.nullif",
+      "added_syntax": [
+        "nullif(value1, value2)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.number",
+      "added_syntax": [
+        "number()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.numeric_histogram",
+      "added_syntax": [
+        "numeric_histogram()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.objectid_timestamp",
+      "added_syntax": [
+        "objectid_timestamp()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.parse_data_size",
+      "added_syntax": [
+        "parse_data_size()",
+        "parse_data_size(string)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.parse_datetime",
+      "added_syntax": [
+        "parse_datetime()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.parse_duration",
+      "added_syntax": [
+        "parse_duration()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.percent_rank",
+      "added_syntax": [
+        "percent_rank()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.pi",
+      "added_syntax": [
+        "pi()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.point",
+      "added_syntax": [
+        "POINT (0 0)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.position",
+      "added_syntax": [
+        "position()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.pow",
+      "added_syntax": [
+        "pow()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.power",
+      "added_syntax": [
+        "power()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.qdigest_agg",
+      "added_syntax": [
+        "qdigest_agg()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.quarter",
+      "added_syntax": [
+        "quarter()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.radians",
+      "added_syntax": [
+        "radians()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.rand",
+      "added_syntax": [
+        "rand()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.random",
+      "added_syntax": [
+        "random()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.random_string",
+      "added_syntax": [
+        "random_string()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.reduce",
+      "added_syntax": [
+        "reduce()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.regexp_count",
+      "added_syntax": [
+        "regexp_count()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.regexp_extract",
+      "added_syntax": [
+        "regexp_extract()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.regexp_extract_all",
+      "added_syntax": [
+        "regexp_extract_all()",
+        "regexp_extract_all(string, pattern)",
+        "regexp_extract_all(string, pattern, group)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.regexp_like",
+      "added_syntax": [
+        "regexp_like()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.regexp_position",
+      "added_syntax": [
+        "regexp_position()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.regexp_split",
+      "added_syntax": [
+        "regexp_split()",
+        "regexp_split(string, pattern)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.regr_intercept",
+      "added_syntax": [
+        "regr_intercept()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.regr_slope",
+      "added_syntax": [
+        "regr_slope()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.render",
+      "added_syntax": [
+        "render()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.repeat",
+      "added_syntax": [
+        "repeat()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.replace",
+      "added_syntax": [
+        "replace()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.reverse",
+      "added_syntax": [
+        "reverse()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.rgb",
+      "added_syntax": [
+        "rgb()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.round",
+      "added_syntax": [
+        "round()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.row_number",
+      "added_syntax": [
+        "row_number()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.rpad",
+      "added_syntax": [
+        "rpad()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.rtrim",
+      "added_syntax": [
+        "rtrim()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.second",
+      "added_syntax": [
+        "second()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.sequence",
+      "added_syntax": [
+        "sequence()",
+        "sequence(start, stop)",
+        "sequence(start, stop, step)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.sha1",
+      "added_syntax": [
+        "sha1()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.sha256",
+      "added_syntax": [
+        "sha256()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.sha512",
+      "added_syntax": [
+        "sha512()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.shuffle",
+      "added_syntax": [
+        "shuffle()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.sign",
+      "added_syntax": [
+        "sign()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.simplify_geometry",
+      "added_syntax": [
+        "simplify_geometry()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.sin",
+      "added_syntax": [
+        "sin()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.sinh",
+      "added_syntax": [
+        "sinh()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.size",
+      "added_syntax": [
+        "size()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.skewness",
+      "added_syntax": [
+        "skewness()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.slice",
+      "added_syntax": [
+        "slice()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.soundex",
+      "added_syntax": [
+        "soundex()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.spatial_partitioning",
+      "added_syntax": [
+        "spatial_partitioning()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.spatial_partitions",
+      "added_syntax": [
+        "spatial_partitions()",
+        "spatial_partitions(KdbTree, Geometry)",
+        "spatial_partitions(KdbTree, Geometry, distance)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.split",
+      "added_syntax": [
+        "split()",
+        "split(string, delimiter)",
+        "split(string, delimiter, limit)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.split_part",
+      "added_syntax": [
+        "split_part()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.split_to_map",
+      "added_syntax": [
+        "split_to_map()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.split_to_multimap",
+      "added_syntax": [
+        "split_to_multimap()",
+        "split_to_multimap(string, entryDelimiter, keyValueDelimiter)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.spooky_hash_v2_32",
+      "added_syntax": [
+        "spooky_hash_v2_32()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.spooky_hash_v2_64",
+      "added_syntax": [
+        "spooky_hash_v2_64()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.sqrt",
+      "added_syntax": [
+        "sqrt()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_area",
+      "added_syntax": [
+        "ST_Area()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_asbinary",
+      "added_syntax": [
+        "ST_AsBinary()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_asewkb",
+      "added_syntax": [
+        "ST_AsEWKB()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_asewkt",
+      "added_syntax": [
+        "ST_AsEWKT()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_astext",
+      "added_syntax": [
+        "ST_AsText()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_boundary",
+      "added_syntax": [
+        "ST_Boundary()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_buffer",
+      "added_syntax": [
+        "ST_Buffer()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_centroid",
+      "added_syntax": [
+        "ST_Centroid()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_collect",
+      "added_syntax": [
+        "ST_Collect()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_contains",
+      "added_syntax": [
+        "ST_Contains()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_convexhull",
+      "added_syntax": [
+        "ST_ConvexHull()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_coorddim",
+      "added_syntax": [
+        "ST_CoordDim()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_crosses",
+      "added_syntax": [
+        "ST_Crosses()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_difference",
+      "added_syntax": [
+        "ST_Difference()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_dimension",
+      "added_syntax": [
+        "ST_Dimension()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_disjoint",
+      "added_syntax": [
+        "ST_Disjoint()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_distance",
+      "added_syntax": [
+        "ST_Distance()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_endpoint",
+      "added_syntax": [
+        "ST_EndPoint()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_envelope",
+      "added_syntax": [
+        "ST_Envelope()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_envelopeaspts",
+      "added_syntax": [
+        "ST_EnvelopeAsPts()",
+        "ST_EnvelopeAsPts(Geometry)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_equals",
+      "added_syntax": [
+        "ST_Equals()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_exteriorring",
+      "added_syntax": [
+        "ST_ExteriorRing()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_force2d",
+      "added_syntax": [
+        "ST_Force2D()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_force3d",
+      "added_syntax": [
+        "ST_Force3D()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_geometries",
+      "added_syntax": [
+        "ST_Geometries()",
+        "ST_Geometries(Geometry)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_geometryfromtext",
+      "added_syntax": [
+        "ST_GeometryFromText()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_geometryn",
+      "added_syntax": [
+        "ST_GeometryN()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_geometrytype",
+      "added_syntax": [
+        "ST_GeometryType()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_geomfrombinary",
+      "added_syntax": [
+        "ST_GeomFromBinary()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_geomfromewkt",
+      "added_syntax": [
+        "ST_GeomFromEWKT()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_geomfromkml",
+      "added_syntax": [
+        "ST_GeomFromKML()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_interiorringn",
+      "added_syntax": [
+        "ST_InteriorRingN()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_interiorrings",
+      "added_syntax": [
+        "ST_InteriorRings()",
+        "ST_InteriorRings(Geometry)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_intersection",
+      "added_syntax": [
+        "ST_Intersection()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_intersects",
+      "added_syntax": [
+        "ST_Intersects()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_isclosed",
+      "added_syntax": [
+        "ST_IsClosed()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_isempty",
+      "added_syntax": [
+        "ST_IsEmpty()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_isring",
+      "added_syntax": [
+        "ST_IsRing()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_issimple",
+      "added_syntax": [
+        "ST_IsSimple()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_isvalid",
+      "added_syntax": [
+        "ST_IsValid()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_length",
+      "added_syntax": [
+        "ST_Length()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_linefromtext",
+      "added_syntax": [
+        "ST_LineFromText()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_linemerge",
+      "added_syntax": [
+        "ST_LineMerge()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_linestring",
+      "added_syntax": [
+        "ST_LineString()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_makeline",
+      "added_syntax": [
+        "ST_MakeLine()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_makepolygon",
+      "added_syntax": [
+        "ST_MakePolygon()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_minimumboundingcircle",
+      "added_syntax": [
+        "ST_MinimumBoundingCircle()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_multi",
+      "added_syntax": [
+        "ST_Multi()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_multipoint",
+      "added_syntax": [
+        "ST_MultiPoint()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_normalize",
+      "added_syntax": [
+        "ST_Normalize()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_numgeometries",
+      "added_syntax": [
+        "ST_NumGeometries()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_numinteriorring",
+      "added_syntax": [
+        "ST_NumInteriorRing()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_numpoints",
+      "added_syntax": [
+        "ST_NumPoints()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_orientedenvelope",
+      "added_syntax": [
+        "ST_OrientedEnvelope()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_overlaps",
+      "added_syntax": [
+        "ST_Overlaps()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_point",
+      "added_syntax": [
+        "ST_Point()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_pointn",
+      "added_syntax": [
+        "ST_PointN()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_pointonsurface",
+      "added_syntax": [
+        "ST_PointOnSurface()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_points",
+      "added_syntax": [
+        "ST_Points()",
+        "ST_Points(Geometry)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_polygon",
+      "added_syntax": [
+        "ST_Polygon()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_polygonize",
+      "added_syntax": [
+        "ST_Polygonize()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_reduceprecision",
+      "added_syntax": [
+        "ST_ReducePrecision()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_relate",
+      "added_syntax": [
+        "ST_Relate()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_setsrid",
+      "added_syntax": [
+        "ST_SetSRID()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_srid",
+      "added_syntax": [
+        "ST_SRID()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_startpoint",
+      "added_syntax": [
+        "ST_StartPoint()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_symdifference",
+      "added_syntax": [
+        "ST_SymDifference()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_touches",
+      "added_syntax": [
+        "ST_Touches()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_transform",
+      "added_syntax": [
+        "ST_Transform()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_union",
+      "added_syntax": [
+        "ST_Union()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_voronoipolygons",
+      "added_syntax": [
+        "ST_VoronoiPolygons()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_within",
+      "added_syntax": [
+        "ST_Within()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_x",
+      "added_syntax": [
+        "ST_X()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_xmax",
+      "added_syntax": [
+        "ST_XMax()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_xmin",
+      "added_syntax": [
+        "ST_XMin()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_y",
+      "added_syntax": [
+        "ST_Y()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_ymax",
+      "added_syntax": [
+        "ST_YMax()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_ymin",
+      "added_syntax": [
+        "ST_YMin()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.st_z",
+      "added_syntax": [
+        "ST_Z()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.starts_with",
+      "added_syntax": [
+        "starts_with()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.stddev",
+      "added_syntax": [
+        "stddev()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.stddev_pop",
+      "added_syntax": [
+        "stddev_pop()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.stddev_samp",
+      "added_syntax": [
+        "stddev_samp()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.string",
+      "added_syntax": [
+        "string()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.strpos",
+      "added_syntax": [
+        "strpos()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.substr",
+      "added_syntax": [
+        "substr()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.substring",
+      "added_syntax": [
+        "substring()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.tan",
+      "added_syntax": [
+        "tan()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.tanh",
+      "added_syntax": [
+        "tanh()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.tdigest_agg",
+      "added_syntax": [
+        "tdigest_agg()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.theta_sketch_union",
+      "added_syntax": [
+        "theta_sketch_union()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.time",
+      "added_syntax": [
+        "TIME(p)",
+        "time()",
+        "time(p)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.time_tz",
+      "added_syntax": [
+        "time_tz()",
+        "time_tz(p)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.timestamp_objectid",
+      "added_syntax": [
+        "timestamp_objectid()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.timestamp_tz",
+      "added_syntax": [
+        "timestamp_tz()",
+        "timestamp_tz(p)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.timezone",
+      "added_syntax": [
+        "timezone()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.timezone_hour",
+      "added_syntax": [
+        "timezone_hour()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.timezone_minute",
+      "added_syntax": [
+        "timezone_minute()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.title_case",
+      "added_syntax": [
+        "title_case()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_base",
+      "added_syntax": [
+        "to_base()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_base32",
+      "added_syntax": [
+        "to_base32()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_base64",
+      "added_syntax": [
+        "to_base64()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_base64url",
+      "added_syntax": [
+        "to_base64url()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_big_endian_32",
+      "added_syntax": [
+        "to_big_endian_32()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_big_endian_64",
+      "added_syntax": [
+        "to_big_endian_64()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_char",
+      "added_syntax": [
+        "to_char()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_date",
+      "added_syntax": [
+        "to_date()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_encoded_polyline",
+      "added_syntax": [
+        "to_encoded_polyline()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_geojson_geometry",
+      "added_syntax": [
+        "to_geojson_geometry()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_geometry",
+      "added_syntax": [
+        "to_geometry()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_hex",
+      "added_syntax": [
+        "to_hex()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_ieee754_32",
+      "added_syntax": [
+        "to_ieee754_32()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_ieee754_64",
+      "added_syntax": [
+        "to_ieee754_64()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_iso8601",
+      "added_syntax": [
+        "to_iso8601()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_milliseconds",
+      "added_syntax": [
+        "to_milliseconds()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_spherical_geography",
+      "added_syntax": [
+        "to_spherical_geography()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_timestamp",
+      "added_syntax": [
+        "to_timestamp()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_unixtime",
+      "added_syntax": [
+        "to_unixtime()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.to_utf8",
+      "added_syntax": [
+        "to_utf8()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.transform_keys",
+      "added_syntax": [
+        "transform_keys()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.transform_values",
+      "added_syntax": [
+        "transform_values()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.translate",
+      "added_syntax": [
+        "translate()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.trim",
+      "added_syntax": [
+        "trim()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.trim_array",
+      "added_syntax": [
+        "trim_array()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.truncate",
+      "added_syntax": [
+        "truncate()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.try_cast",
+      "added_syntax": [
+        "try_cast()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.typeof",
+      "added_syntax": [
+        "typeof()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.unique",
+      "added_syntax": [
+        "UNIQUE ( subquery )",
+        "UNIQUE (SELECT 1 WHERE false)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.url_decode",
+      "added_syntax": [
+        "url_decode()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.url_encode",
+      "added_syntax": [
+        "url_encode()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.url_extract_fragment",
+      "added_syntax": [
+        "url_extract_fragment()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.url_extract_host",
+      "added_syntax": [
+        "url_extract_host()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.url_extract_parameter",
+      "added_syntax": [
+        "url_extract_parameter()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.url_extract_path",
+      "added_syntax": [
+        "url_extract_path()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.url_extract_port",
+      "added_syntax": [
+        "url_extract_port()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.url_extract_protocol",
+      "added_syntax": [
+        "url_extract_protocol()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.url_extract_query",
+      "added_syntax": [
+        "url_extract_query()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.uuid",
+      "added_syntax": [
+        "uuid()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.value_at_quantile",
+      "added_syntax": [
+        "value_at_quantile()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.values_at_quantiles",
+      "added_syntax": [
+        "values_at_quantiles()",
+        "values_at_quantiles(tdigest, quantiles)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.var_pop",
+      "added_syntax": [
+        "var_pop()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.var_samp",
+      "added_syntax": [
+        "var_samp()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.variance",
+      "added_syntax": [
+        "variance()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.version",
+      "added_syntax": [
+        "version()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.week",
+      "added_syntax": [
+        "week()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.week_of_year",
+      "added_syntax": [
+        "week_of_year()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.width_bucket",
+      "added_syntax": [
+        "width_bucket()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.wilson_interval_lower",
+      "added_syntax": [
+        "wilson_interval_lower()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.wilson_interval_upper",
+      "added_syntax": [
+        "wilson_interval_upper()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.with_timezone",
+      "added_syntax": [
+        "with_timezone()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.word_stem",
+      "added_syntax": [
+        "word_stem()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.xxhash64",
+      "added_syntax": [
+        "xxhash64()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.year",
+      "added_syntax": [
+        "year()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.year_of_week",
+      "added_syntax": [
+        "year_of_week()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.yow",
+      "added_syntax": [
+        "yow()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.zip",
+      "added_syntax": [
+        "zip()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "trino.function.zip_with",
+      "added_syntax": [
+        "zip_with()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    }
+  ],
+  "residual_features_kept_invalid": [
+    {
+      "feature_id": "trino.function.f",
+      "reason": "non_function_noise"
+    }
+  ],
+  "generated_at": "2026-08-06T19:59:04.861528+08:00"
+}

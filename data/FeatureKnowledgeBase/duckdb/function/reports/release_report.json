@@ -1,0 +1,31 @@
+{
+  "dbms": "duckdb",
+  "feature_type": "function",
+  "total_pages": 242,
+  "total_sections": 6918,
+  "total_blocks": 62914,
+  "candidate_features": 16427,
+  "candidate_groups": 585,
+  "feature_drafts": 585,
+  "total_drafts": 585,
+  "clean_validated_features": 34,
+  "validated_with_warnings": 519,
+  "invalid_features": 32,
+  "total_validated_features": 553,
+  "total_kb_features": 553,
+  "total_review_items": 551,
+  "validation_summary": {
+    "schema_invalid": 32,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 484,
+    "no_description_claims": 387,
+    "no_valid_syntax": 32,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 14,
+    "alias_like_feature": 319
+  },
+  "generated_at": "2026-08-06T18:59:22.024295+08:00"
+}

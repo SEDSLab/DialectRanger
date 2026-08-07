@@ -1,0 +1,38 @@
+{
+  "dbms": "postgresql",
+  "feature_type": "datatype",
+  "total_drafts": 57,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 56,
+  "invalid_features": 1,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 57,
+    "no_description_claims": 8,
+    "no_valid_syntax": 1,
+    "no_valid_examples": 0,
+    "weak_syntax": 56,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 6
+  },
+  "sample_clean_features": [],
+  "sample_warning_features": [
+    "postgresql.datatype.any",
+    "postgresql.datatype.anyarray",
+    "postgresql.datatype.anyelement",
+    "postgresql.datatype.anyenum",
+    "postgresql.datatype.anynonarray",
+    "postgresql.datatype.anyrange",
+    "postgresql.datatype.array",
+    "postgresql.datatype.bigint",
+    "postgresql.datatype.bigserial",
+    "postgresql.datatype.bit"
+  ],
+  "sample_invalid_features": [
+    "postgresql.datatype.interval"
+  ],
+  "generated_at": "2026-08-06T18:50:24.675653+08:00"
+}

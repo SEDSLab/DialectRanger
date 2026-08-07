@@ -1,0 +1,36 @@
+{
+  "dbms": "mariadb",
+  "feature_type": "operator",
+  "total_drafts": 404,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 404,
+  "invalid_features": 0,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 404,
+    "no_description_claims": 404,
+    "no_valid_syntax": 0,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 125,
+    "long_examples": 0,
+    "alias_like_feature": 354
+  },
+  "sample_clean_features": [],
+  "sample_warning_features": [
+    "mariadb.operator.!=_mariadb_current_not_equal_md",
+    "mariadb.operator.!=_mariadb_current_operator_precedence",
+    "mariadb.operator.%_mariadb_current_arithmetic_operators_md",
+    "mariadb.operator.%_mariadb_current_modulo_operator_md",
+    "mariadb.operator.%_mariadb_current_operator_precedence",
+    "mariadb.operator.&_mariadb_current_and_md",
+    "mariadb.operator.&_mariadb_current_bitwise_not_md",
+    "mariadb.operator.&_mariadb_current_function_and_operator_reference_md",
+    "mariadb.operator.&_mariadb_current_operator_precedence",
+    "mariadb.operator.*_mariadb_current_addition_operator_md"
+  ],
+  "sample_invalid_features": [],
+  "generated_at": "2026-08-06T20:03:19.624476+08:00"
+}

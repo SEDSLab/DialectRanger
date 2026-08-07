@@ -1,0 +1,1874 @@
+ <!DOCTYPE html>
+		<html
+			class="layout layout-holy-grail   show-table-of-contents conceptual show-breadcrumb default-focus"
+			lang="en-us"
+			dir="ltr"
+			data-authenticated="false"
+			data-auth-status-determined="false"
+			data-target="docs"
+			x-ms-format-detection="none"
+		>
+			
+		<head>
+			<title>ALTER FUNCTION (Transact-SQL) - SQL Server | Microsoft Learn</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name="color-scheme" content="light dark" />
+
+			<meta name="description" content="ALTER FUNCTION (Transact-SQL)" />
+			<link rel="canonical" href="https://learn.microsoft.com/en-us/sql/t-sql/statements/alter-function-transact-sql?view=sql-server-ver17" /> 
+
+			<!-- Non-customizable open graph and sharing-related metadata -->
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:site" content="@MicrosoftLearn" />
+			<meta property="og:type" content="website" />
+			<meta property="og:image:alt" content="Microsoft Learn" />
+			<meta property="og:image" content="https://learn.microsoft.com/en-us/media/open-graph-image.png" />
+			<!-- Page specific open graph and sharing-related metadata -->
+			<meta property="og:title" content="ALTER FUNCTION (Transact-SQL) - SQL Server" />
+			<meta property="og:url" content="https://learn.microsoft.com/en-us/sql/t-sql/statements/alter-function-transact-sql?view=sql-server-ver17" />
+			<meta property="og:description" content="ALTER FUNCTION (Transact-SQL)" />
+			<meta name="platform_id" content="5ea94faa-0173-f2ce-2a1e-c8a34db7f79d" /> <meta name="scope" content="sql" />
+			<meta name="locale" content="en-us" />
+			 
+			<meta name="uhfHeaderId" content="MSDocsHeader-DocsSQL" />
+
+			<meta name="page_type" content="conceptual" />
+
+			<!--page specific meta tags-->
+			
+
+			<!-- custom meta tags -->
+			
+		<meta name="toc_preview" content="true" />
+	
+		<meta name="feedback_system" content="Standard" />
+	
+		<meta name="feedback_product_url" content="https://feedback.azure.com/d365community/forum/04fe6ee0-3b25-ec11-b6e6-000d3a4f0da0" />
+	
+		<meta name="feedback_help_link_url" content="https://learn.microsoft.com/answers/tags/191/sql-server" />
+	
+		<meta name="feedback_help_link_type" content="get-help-at-qna" />
+	
+		<meta name="recommendations" content="true" />
+	
+		<meta name="breadcrumb_path" content="../../breadcrumb/toc.json" />
+	
+		<meta name="monikerRange" content="&gt;=aps-pdw-2016 || =azuresqldb-current || &gt;=sql-server-2017 || &gt;=sql-server-linux-2017 || =azuresqldb-mi-current || =azure-sqldw-latest || =fabric || =fabric-sqldb" />
+	
+		<meta name="ms.update-cycle" content="1825-days" />
+	
+		<meta name="author" content="markingmyname" />
+	
+		<meta name="ms.author" content="maghan" />
+	
+		<meta name="ms.date" content="2025-05-27T00:00:00Z" />
+	
+		<meta name="ms.service" content="sql" />
+	
+		<meta name="ms.subservice" content="t-sql" />
+	
+		<meta name="ms.topic" content="reference" />
+	
+		<meta name="ms.custom" content="ignite-2025" />
+	
+		<meta name="document_id" content="abdd65b3-6131-6428-dead-7781c8b7d79e" />
+	
+		<meta name="document_version_independent_id" content="00a94bdc-791c-4b5d-a873-31d16c14bc3b" />
+	
+		<meta name="updated_at" content="2026-07-21T00:29:00Z" />
+	
+		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/sql-docs-pr/blob/live/docs/t-sql/statements/alter-function-transact-sql.md" />
+	
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/sql-docs-pr/blob/4f43f815712bfe38231ce50021bfd788a7269693/docs/t-sql/statements/alter-function-transact-sql.md" />
+	
+		<meta name="git_commit_id" content="4f43f815712bfe38231ce50021bfd788a7269693" />
+	
+		<meta name="monikers" content="fabric" />
+	
+		<meta name="monikers" content="azure-sqldw-latest" />
+	
+		<meta name="monikers" content="azuresqldb-current" />
+	
+		<meta name="monikers" content="azuresqldb-mi-current" />
+	
+		<meta name="monikers" content="fabric-sqldb" />
+	
+		<meta name="monikers" content="aps-pdw-2016" />
+	
+		<meta name="monikers" content="aps-pdw-2016-au7" />
+	
+		<meta name="monikers" content="sql-server-linux-2017" />
+	
+		<meta name="monikers" content="sql-server-linux-ver15" />
+	
+		<meta name="monikers" content="sql-server-linux-ver16" />
+	
+		<meta name="monikers" content="sql-server-linux-ver17" />
+	
+		<meta name="monikers" content="sql-server-2017" />
+	
+		<meta name="monikers" content="sql-server-ver15" />
+	
+		<meta name="monikers" content="sql-server-ver16" />
+	
+		<meta name="monikers" content="sql-server-ver17" />
+	
+		<meta name="default_moniker" content="sql-server-ver17" />
+	
+		<meta name="site_name" content="Docs" />
+	
+		<meta name="depot_name" content="SQL.sql-content" />
+	
+		<meta name="schema" content="Conceptual" />
+	
+		<meta name="toc_rel" content="../../toc.json" />
+	
+		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/SQL.sql-content/{branchName}{pdfName}" />
+	
+		<meta name="search.mshattr.devlang" content="tsql" />
+	
+		<meta name="word_count" content="2901" />
+	
+		<meta name="config_moniker_range" content="=azuresqldb-current || =azuresqldb-mi-current || =azure-sqldw-latest || &gt;=aps-pdw-2016 || &gt;=sql-server-2017 || &gt;=sql-server-linux-2017 || =fabric || =fabric-sqldb" />
+	
+		<meta name="asset_id" content="t-sql/statements/alter-function-transact-sql" />
+	
+		<meta name="moniker_range_name" content="f3ddb4a4ec3193bff1ec3401d447b815" />
+	
+		<meta name="item_type" content="Content" />
+	
+		<meta name="source_path" content="docs/t-sql/statements/alter-function-transact-sql.md" />
+	
+		<meta name="previous_tlsh_hash" content="169CE472639C6300FFD30F0A3466BA98E2E5C24A6360AA68112B3960D11A3E935B40A4E5A30F7F847331855370E2E55F60DA973AE07E367196F038DDC59C1561C7AE7BBFD9" />
+	
+		<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/sql-docs/blob/live/docs/t-sql/statements/alter-function-transact-sql.md" />
+	
+		<meta name="markdown_url" content="https://learn.microsoft.com/en-us/sql/t-sql/statements/alter-function-transact-sql?view=sql-server-ver17&amp;accept=text/markdown" />
+	 
+		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/540ac133-a371-4dbb-8f94-28d6cc77a70b" data-source="generated" />
+	
+		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/60bfc045-f127-4841-9d00-ea35495a5800" data-source="generated" />
+	
+
+			<!-- Apply persisted/system theme before first paint to prevent wrong-theme flash when scripts are deferred. -->
+			<script id="theme-preference">
+				(function () {
+			try {
+				var stored = localStorage.getItem('theme');
+				var theme = /^(light|dark|high-contrast)$/.test(stored)
+					? stored
+					: matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+				document.documentElement.classList.add('theme-' + theme);
+			} catch (e) {}
+		})();;
+			</script>
+
+			<script id="atlas-layout-preferences">
+				(function () {
+			try {
+				var state = JSON.parse(localStorage.getItem('atlas-layout-preferences') || '{}');
+				var view = state["docs-layout-persistence"] || {};
+				var excludesKey = "";
+				var blocked = {};
+				if (excludesKey) {
+					var exclusions = JSON.parse(localStorage.getItem('atlas-layout-exclusions') || '{}');
+					if (Object.prototype.hasOwnProperty.call(exclusions, excludesKey)) {
+						var scoped = exclusions[excludesKey];
+						if (scoped) {
+							if (typeof scoped === 'object') blocked = scoped;
+						}
+					}
+				}
+				var html = document.documentElement;
+				for (var c in view) {
+					if (Object.prototype.hasOwnProperty.call(blocked, c)) continue;
+					if (view[c]) html.classList.add(c);
+					else html.classList.remove(c);
+				}
+			} catch (e) {}
+		})();;
+			</script>
+
+			<!-- assets and js globals -->
+			
+			<link rel="stylesheet" href="/static/assets/0.4.03503.8087-34604b98/styles/site.css" />
+			
+			<script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"></script>
+			<script async src="https://js.monitor.azure.com/scripts/c/ms.jsll-4.min.js"></script>
+			
+
+			<!-- msdocs global object -->
+			<script id="msdocs-script">
+		var msDocs = {
+  "environment": {
+    "accessLevel": "online",
+    "azurePortalHostname": "portal.azure.com",
+    "reviewFeatures": false,
+    "supportLevel": "production",
+    "systemContent": true,
+    "siteName": "learn",
+    "legacyHosting": false
+  },
+  "data": {
+    "contentLocale": "en-us",
+    "contentDir": "ltr",
+    "userLocale": "en-us",
+    "userDir": "ltr",
+    "pageTemplate": "Conceptual",
+    "layoutStateStorageKey": "docs-layout-persistence",
+    "brand": "",
+    "context": {},
+    "standardFeedback": true,
+    "showFeedbackReport": false,
+    "feedbackHelpLinkType": "get-help-at-qna",
+    "feedbackHelpLinkUrl": "https://learn.microsoft.com/answers/tags/191/sql-server",
+    "feedbackSystem": "Standard",
+    "feedbackGitHubRepo": "MicrosoftDocs/sql-docs",
+    "feedbackProductUrl": "https://feedback.azure.com/d365community/forum/04fe6ee0-3b25-ec11-b6e6-000d3a4f0da0",
+    "extendBreadcrumb": false,
+    "isEditDisplayable": true,
+    "isPrivateUnauthorized": false,
+    "hideViewSource": false,
+    "isPermissioned": false,
+    "hasRecommendations": false,
+    "contributors": [
+      {
+        "name": "markingmyname",
+        "url": "https://github.com/markingmyname"
+      },
+      {
+        "name": "rwestMSFT",
+        "url": "https://github.com/rwestMSFT"
+      },
+      {
+        "name": "rmca14",
+        "url": "https://github.com/rmca14"
+      },
+      {
+        "name": "WilliamDAssafMSFT",
+        "url": "https://github.com/WilliamDAssafMSFT"
+      },
+      {
+        "name": "alexbuckgit",
+        "url": "https://github.com/alexbuckgit"
+      },
+      {
+        "name": "v-regandowner",
+        "url": "https://github.com/v-regandowner"
+      },
+      {
+        "name": "niko-neugebauer",
+        "url": "https://github.com/niko-neugebauer"
+      },
+      {
+        "name": "rothja",
+        "url": "https://github.com/rothja"
+      },
+      {
+        "name": "cawrites",
+        "url": "https://github.com/cawrites"
+      },
+      {
+        "name": "DCtheGeek",
+        "url": "https://github.com/DCtheGeek"
+      },
+      {
+        "name": "kimani-m",
+        "url": "https://github.com/kimani-m"
+      },
+      {
+        "name": "MikeRayMSFT",
+        "url": "https://github.com/MikeRayMSFT"
+      },
+      {
+        "name": "Saisang",
+        "url": "https://github.com/Saisang"
+      },
+      {
+        "name": "v-alje",
+        "url": "https://github.com/v-alje"
+      },
+      {
+        "name": "craigg-msft",
+        "url": "https://github.com/craigg-msft"
+      },
+      {
+        "name": "edmacauley",
+        "url": "https://github.com/edmacauley"
+      },
+      {
+        "name": "BYHAM",
+        "url": "https://github.com/BYHAM"
+      }
+    ]
+  },
+  "functions": {}
+};;
+	</script>
+
+			<!-- base scripts, msdocs global should be before this -->
+			<script
+				src="/static/assets/0.4.03503.8087-34604b98/scripts/en-us/index-docs.js"
+				async
+			></script>
+			
+
+			<!-- json-ld -->
+			
+		</head>
+	
+			<body
+				id="body"
+				data-bi-name="body"
+				class="layout-body "
+				lang="en-us"
+				dir="ltr"
+			>
+				<header class="layout-body-header background-color-body-medium">
+		<div class="header-holder has-default-focus">
+			
+		<a
+			href="#main"
+			
+			style="z-index: 1070"
+			class="outline-color-text visually-hidden-until-focused position-fixed inner-focus focus-visible top-0 left-0 right-0 padding-xs text-align-center background-color-body"
+			
+		>
+			Skip to main content
+		</a>
+	
+		<a
+			href="#"
+			data-skip-to-ask-learn
+			style="z-index: 1070"
+			class="outline-color-text visually-hidden-until-focused position-fixed inner-focus focus-visible top-0 left-0 right-0 padding-xs text-align-center background-color-body"
+			hidden
+		>
+			Skip to Ask Learn chat experience
+		</a>
+	
+
+			<div hidden id="cookie-consent-holder" data-test-id="cookie-consent-container"></div>
+			<!-- Unsupported browser warning -->
+			<div
+				id="unsupported-browser"
+				style="background-color: white; color: black; padding: 16px; border-bottom: 1px solid grey;"
+				hidden
+			>
+				<div style="max-width: 800px; margin: 0 auto;">
+					<p style="font-size: 24px">This browser is no longer supported.</p>
+					<p style="font-size: 16px; margin-top: 16px;">
+						Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.
+					</p>
+					<div style="margin-top: 12px;">
+						<a
+							href="https://go.microsoft.com/fwlink/p/?LinkID=2092881 "
+							style="background-color: #0078d4; border: 1px solid #0078d4; color: white; padding: 6px 12px; border-radius: 2px; display: inline-block;"
+						>
+							Download Microsoft Edge
+						</a>
+						<a
+							href="https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge"
+							style="background-color: white; padding: 6px 12px; border: 1px solid #505050; color: #171717; border-radius: 2px; display: inline-block;"
+						>
+							More info about Internet Explorer and Microsoft Edge
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- site header -->
+			<div
+				id="ms--site-header"
+				data-test-id="site-header-wrapper"
+				itemscope="itemscope"
+				itemtype="http://schema.org/Organization"
+			>
+				<div
+					id="ms--mobile-nav"
+					class="site-header display-none-tablet padding-inline-none gap-none"
+					data-bi-name="mobile-header"
+					data-test-id="mobile-header"
+				></div>
+				<div
+					id="ms--primary-nav"
+					class="site-header display-none display-flex-tablet"
+					data-bi-name="L1-header"
+					data-test-id="primary-header"
+				></div>
+				<div
+					id="ms--secondary-nav"
+					class="site-header display-none display-flex-tablet"
+					data-bi-name="L2-header"
+					data-test-id="secondary-header"
+					
+				></div>
+			</div>
+			
+		<!-- banner -->
+		<div data-banner>
+			<div id="disclaimer-holder"></div>
+			
+		</div>
+		<!-- banner end -->
+	
+		</div>
+	</header>
+				 <section
+					id="layout-body-menu"
+					class="layout-body-menu border-right display-flex background-color-body-medium"
+					data-bi-name="menu"
+			  >
+					
+		<div
+			id="left-container"
+			class="left-container display-none padding-none display-block-tablet width-full display-none-until-layout-restored"
+			data-toc-container="true"
+		>
+			<div
+				id="ms--toc-content"
+				class="padding-left-sm padding-right-none padding-bottom-sm height-full"
+			>
+				<nav
+					id="affixed-left-container"
+					class="margin-top-xxs-tablet position-sticky display-flex flex-direction-column width-full"
+					aria-label="Primary"
+					data-bi-name="left-toc"
+					role="navigation"
+				>
+					<div
+						id="ms--collapsible-toc-header"
+						class="display-flex flex-direction-row-reverse justify-content-center align-items-center margin-bottom-xxs margin-right-xxs"
+					>
+						<button
+							type="button"
+							class="button button-clear inner-focus"
+							data-collapsible-toc-toggle
+							aria-expanded="true"
+							hidden
+							aria-controls="ms--toc-content"
+							aria-label="Table of contents"
+						>
+							<span class="icon icon-mirrored-rtl font-size-md" aria-hidden="true">
+								<span
+									class="docon docon-panel-left-contract display-none-layout-menu-collapsed"
+								></span>
+								<span
+									class="docon docon-panel-left-expand display-none display-inline-layout-menu-collapsed"
+								></span>
+							</span>
+						</button>
+						<div
+							id="ms--collapsible-toc-moniker-slot"
+							class="flex-grow-1 display-none-layout-menu-collapsed"
+						></div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	
+			  </section>
+
+				<main
+					id="main"
+					role="main"
+					class="layout-body-main "
+					data-bi-name="content"
+					lang="en-us"
+					dir="ltr"
+				>
+					
+			<div
+		id="ms--content-header"
+		class="content-header default-focus border-bottom-none"
+		data-bi-name="content-header"
+	>
+		<div class="content-header-controls margin-xxs margin-inline-sm-tablet">
+			<button
+				type="button"
+				class="contents-button button button-sm margin-right-xxs"
+				data-bi-name="contents-expand"
+				aria-haspopup="true"
+				data-contents-button
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-menu"></span></span>
+				<span class="contents-expand-title"> Table of contents </span>
+			</button>
+			<button
+				type="button"
+				class="ap-collapse-behavior ap-expanded button button-sm"
+				data-bi-name="ap-collapse"
+				aria-controls="action-panel"
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-exit-mode"></span></span>
+				<span>Exit editor mode</span>
+			</button>
+		</div>
+	</div>
+			<div
+				data-main-column
+				class="reading-width margin-inline-auto layout-padding padding-top-none padding-top-sm-tablet padding-bottom-sm"
+			>
+				<div>
+					
+		<div id="article-header" class="background-color-body margin-bottom-xs display-none-print">
+			<div class="display-flex align-items-center justify-content-space-between">
+				
+		<details
+			id="article-header-breadcrumbs-overflow-popover"
+			class="popover popover-left"
+			data-for="article-header-breadcrumbs"
+		>
+			<summary
+				class="button button-clear button-primary button-sm inner-focus"
+				aria-label="All breadcrumbs"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-more"></span>
+				</span>
+			</summary>
+			<div id="article-header-breadcrumbs-overflow" class="popover-content"></div>
+		</details>
+
+		<bread-crumbs
+			id="article-header-breadcrumbs"
+			role="group"
+			aria-label="Breadcrumbs"
+			data-test-id="article-header-breadcrumbs"
+			class="overflow-hidden flex-grow-1 margin-right-sm margin-right-md-tablet margin-right-lg-desktop margin-left-negative-xxs padding-left-xxs"
+		></bread-crumbs>
+	 
+		<div
+			id="article-header-page-actions"
+			class="opacity-none margin-left-auto display-flex flex-wrap-no-wrap align-items-stretch"
+		>
+			
+		<button
+			class="button button-sm border-none inner-focus display-none-tablet flex-shrink-0 "
+			data-bi-name="ask-learn-assistant-entry"
+			data-test-id="ask-learn-assistant-modal-entry-mobile"
+			data-ask-learn-modal-entry
+			
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-none display-inline-flex-tablet display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn "
+			data-bi-name="ask-learn-assistant-entry"
+			
+			data-test-id="ask-learn-assistant-modal-entry-tablet"
+			data-ask-learn-modal-entry
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn "
+			data-bi-name="ask-learn-assistant-entry"
+			
+			data-test-id="ask-learn-assistant-flyout-entry"
+			data-ask-learn-flyout-entry
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	 
+
+			<details class="popover popover-right" id="article-header-page-actions-overflow">
+				<summary
+					class="justify-content-flex-start button button-clear button-sm button-primary inner-focus"
+					aria-label="More actions"
+					title="More actions"
+				>
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-more-vertical"></span>
+					</span>
+				</summary>
+				<div class="popover-content">
+					
+		<button
+			type="button"
+			id="ms--focus-mode-button"
+			data-focus-mode
+			data-bi-name="focus-mode-entry"
+			data-page-action-item="overflow-all"
+			data-popover-close
+			class="button button-clear button-sm button-block justify-content-flex-start text-align-left inner-focus display-none display-inline-flex-tablet"
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-glasses"></span>
+			</span>
+			<span>Reading mode</span>
+		</button>
+	 
+		<button
+			data-page-action-item="overflow-mobile"
+			type="button"
+			class="display-block-layout-menu-collapsed button-block button-sm inner-focus button button-clear display-none-tablet justify-content-flex-start text-align-left"
+			data-bi-name="contents-expand"
+			data-contents-button
+			data-popover-close
+		>
+			<span class="icon" aria-hidden="true"
+				><span class="docon docon-editor-list-bullet"></span
+			></span>
+			<span class="contents-expand-title">Table of contents</span>
+		</button>
+	 
+		<a
+			id="lang-link-overflow"
+			class="button-sm inner-focus button button-clear button-block justify-content-flex-start text-align-left"
+			data-bi-name="language-toggle"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-read-in-link
+			href="#"
+			hidden
+		>
+			<span class="icon" aria-hidden="true" data-read-in-link-icon>
+				<span class="docon docon-locale-globe"></span>
+			</span>
+			<span data-read-in-link-text>Read in English</span>
+		</a>
+	
+					
+		<button
+			type="button"
+			class="collection button button-clear button-sm button-block justify-content-flex-start text-align-left inner-focus"
+			data-list-type="collection"
+			data-bi-name="collection"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-popover-close
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-circle-addition"></span>
+			</span>
+			<span class="collection-status">Add</span>
+		</button>
+	 
+		<button
+			type="button"
+			class="collection button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+			data-list-type="plan"
+			data-bi-name="plan"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-popover-close
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-circle-addition"></span>
+			</span>
+			<span class="plan-status">Add to Plans</span>
+		</button>
+	 
+					
+		<a
+			data-contenteditbtn
+			class="button button-clear button-block button-sm inner-focus justify-content-flex-start text-align-left text-decoration-none"
+			data-bi-name="edit"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			
+			href="https://github.com/MicrosoftDocs/sql-docs/blob/live/docs/t-sql/statements/alter-function-transact-sql.md"
+			data-original_content_git_url="https://github.com/MicrosoftDocs/sql-docs-pr/blob/live/docs/t-sql/statements/alter-function-transact-sql.md"
+			data-original_content_git_url_template="{repo}/blob/{branch}/docs/t-sql/statements/alter-function-transact-sql.md"
+			data-pr_repo=""
+			data-pr_branch=""
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-edit-outline"></span>
+			</span>
+			<span>Edit</span>
+		</a>
+	  
+		<hr class="margin-block-xxs" />
+		
+				<button
+					class="button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+					type="button"
+					data-bi-name="copy-markdown"
+					data-page-action-item="overflow-all"
+					data-copy-markdown
+					data-copy-state="idle"
+					data-check-hidden="true"
+				>
+					<span class="icon color-primary" aria-hidden="true">
+						<span data-show-when="idle" class="docon docon-code-lang"></span>
+						<span data-show-when="loading" class="loader" hidden></span>
+						<span data-show-when="success" class="docon docon-check-mark" hidden></span>
+					</span>
+					<span>Copy Markdown</span>
+				</button>
+		   
+				<button
+					class="button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+					type="button"
+					data-bi-name="print"
+					data-page-action-item="overflow-all"
+					data-popover-close
+					data-print-page
+					data-check-hidden="true"
+				>
+					<span class="icon color-primary" aria-hidden="true">
+						<span class="docon docon-print"></span>
+					</span>
+					<span>Print</span>
+				</button>
+		  
+	
+				</div>
+			</details>
+		</div>
+	
+			</div>
+		</div>
+	  
+		<!-- privateUnauthorizedTemplate is hidden by default -->
+		<div unauthorized-private-section data-bi-name="permission-content-unauthorized-private" hidden>
+			<hr class="hr margin-top-xs margin-bottom-sm" />
+			<div class="notification notification-info">
+				<div class="notification-content">
+					<p class="margin-top-none notification-title">
+						<span class="icon" aria-hidden="true"
+							><span class="docon docon-exclamation-circle-solid"></span
+						></span>
+						<span>Note</span>
+					</p>
+					<p class="margin-top-none authentication-determined not-authenticated">
+						Access to this page requires authorization. You can try <a class="docs-sign-in" href="#" data-bi-name="permission-content-sign-in">signing in</a> or <a  class="docs-change-directory" data-bi-name="permisson-content-change-directory">changing directories</a>.
+					</p>
+					<p class="margin-top-none authentication-determined authenticated">
+						Access to this page requires authorization. You can try <a class="docs-change-directory" data-bi-name="permisson-content-change-directory">changing directories</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	
+					<div class="content"><h1 id="alter-function-transact-sql">ALTER FUNCTION (Transact-SQL)</h1></div>
+					
+		<div
+			id="article-metadata"
+			data-bi-name="article-metadata"
+			data-test-id="article-metadata"
+			class="page-metadata-container display-flex gap-xxs justify-content-space-between align-items-center flex-wrap-wrap"
+		>
+			 
+				<div
+					id="user-feedback"
+					class="margin-block-xxs display-none display-none-print"
+					hidden
+					data-hide-on-archived
+				>
+					
+		<button
+			id="user-feedback-button"
+			data-test-id="conceptual-feedback-button"
+			class="button button-sm button-clear button-primary display-none"
+			type="button"
+			data-bi-name="user-feedback-button"
+			data-user-feedback-button
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-like"></span>
+			</span>
+			<span>Feedback</span>
+		</button>
+	
+				</div>
+		  
+		</div>
+	 
+		<div data-id="ai-summary" class="display-none-print">
+			<div id="ms--ai-summary-cta" class="margin-top-xs display-flex align-items-center">
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-sparkle-fill gradient-text-vivid"></span>
+				</span>
+				<button
+					id="ms--ai-summary"
+					type="button"
+					class="tag tag-sm tag-suggestion margin-left-xxs"
+					data-test-id="ai-summary-cta"
+					data-bi-name="ai-summary-cta"
+					data-an="ai-summary"
+				>
+					<span class="ai-summary-cta-text">
+						Summarize this article for me
+					</span>
+				</button>
+			</div>
+			<!-- Slot where the client will render the summary card after the user clicks the CTA -->
+			<div id="ms--ai-summary-header" class="margin-top-xs"></div>
+		</div>
+	 
+		<nav
+			id="center-doc-outline"
+			class="doc-outline display-none-desktop display-none-print margin-bottom-sm"
+			data-bi-name="intopic toc"
+			aria-label="In this article"
+		>
+			<h2 id="ms--in-this-article" class="title is-6 margin-block-xs">
+				In this article
+			</h2>
+		</nav>
+	
+					<div class="content"><p><strong>Applies to:</strong> <img src="../../includes/media/yes-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../../sql-server/sql-docs-navigation-guide?view=sql-server-ver17#applies-to" data-linktype="relative-path">SQL Server</a> <img src="../../includes/media/yes-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../../sql-server/sql-docs-navigation-guide?view=sql-server-ver17#applies-to" data-linktype="relative-path">Azure SQL Database</a> <img src="../../includes/media/yes-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../../sql-server/sql-docs-navigation-guide?view=sql-server-ver17#applies-to" data-linktype="relative-path">Azure SQL Managed Instance</a> <img src="../../includes/media/yes-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../../sql-server/sql-docs-navigation-guide?view=sql-server-ver17#applies-to" data-linktype="relative-path">Azure Synapse Analytics</a> <img src="../../includes/media/yes-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../../sql-server/sql-docs-navigation-guide?view=sql-server-ver17#applies-to" data-linktype="relative-path">Analytics Platform System (PDW)</a> <img src="../../includes/media/yes-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../../sql-server/sql-docs-navigation-guide?view=sql-server-ver17#applies-to" data-linktype="relative-path">SQL analytics endpoint in Microsoft Fabric</a> <img src="../../includes/media/yes-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../../sql-server/sql-docs-navigation-guide?view=sql-server-ver17#applies-to" data-linktype="relative-path">Warehouse in Microsoft Fabric</a> <img src="../../includes/media/yes-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../../sql-server/sql-docs-navigation-guide?view=sql-server-ver17#applies-to" data-linktype="relative-path">SQL database in Microsoft Fabric</a></p>
+<p>Alters an existing Transact-SQL or CLR function that was previously created by executing the <code>CREATE FUNCTION</code> statement, without changing permissions and without affecting any dependent functions, stored procedures, or triggers.</p>
+<div class="TIP">
+<p>Tip</p>
+<p>You can specify <code>CREATE OR ALTER FUNCTION</code> to create a new function if one does not exist by that name, or alter an existing function, in a single statement.</p>
+</div>
+<p><img src="../../includes/media/topic-link-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../language-elements/transact-sql-syntax-conventions-transact-sql?view=sql-server-ver17" data-linktype="relative-path">Transact-SQL syntax conventions</a></p>
+<h2 id="syntax">Syntax</h2>
+<pre><code class="lang-syntaxsql">-- Transact-SQL Scalar Function Syntax    
+ALTER FUNCTION [ schema_name. ] function_name   
+( [ { @parameter_name [ AS ][ type_schema_name. ] parameter_data_type   
+    [ = default ] }   
+    [ ,...n ]  
+  ]  
+)  
+RETURNS return_data_type  
+    [ WITH &lt;function_option&gt; [ ,...n ] ]  
+    [ AS ]  
+    BEGIN   
+        function_body   
+        RETURN scalar_expression  
+    END  
+[ ; ]
+</code></pre>
+<pre><code class="lang-syntaxsql">-- Transact-SQL Inline Table-Valued Function Syntax
+ALTER FUNCTION [ schema_name. ] function_name   
+( [ { @parameter_name [ AS ] [ type_schema_name. ] parameter_data_type   
+    [ = default ] }   
+    [ ,...n ]  
+  ]  
+)  
+RETURNS TABLE  
+    [ WITH &lt;function_option&gt; [ ,...n ] ]  
+    [ AS ]  
+    RETURN [ ( ] select_stmt [ ) ]  
+[ ; ]  
+</code></pre>
+<pre><code class="lang-syntaxsql">-- Transact-SQL Multistatement Table-valued Function Syntax
+ALTER FUNCTION [ schema_name. ] function_name   
+( [ { @parameter_name [ AS ] [ type_schema_name. ] parameter_data_type   
+    [ = default ] }   
+    [ ,...n ]  
+  ]  
+)  
+RETURNS @return_variable TABLE &lt;table_type_definition&gt;  
+    [ WITH &lt;function_option&gt; [ ,...n ] ]  
+    [ AS ]  
+    BEGIN   
+        function_body   
+        RETURN  
+    END  
+[ ; ]  
+</code></pre>
+<pre><code class="lang-syntaxsql">-- Transact-SQL Function Clauses   
+&lt;function_option&gt;::=   
+{  
+    [ ENCRYPTION ]  
+  | [ SCHEMABINDING ]  
+  | [ RETURNS NULL ON NULL INPUT | CALLED ON NULL INPUT ]  
+  | [ EXECUTE_AS_Clause ]  
+} 
+
+&lt;table_type_definition&gt;:: =   
+( { &lt;column_definition&gt; &lt;column_constraint&gt;   
+  | &lt;computed_column_definition&gt; }   
+    [ &lt;table_constraint&gt; ] [ ,...n ]  
+)   
+&lt;column_definition&gt;::=  
+{  
+    { column_name data_type }  
+    [ [ DEFAULT constant_expression ]   
+      [ COLLATE collation_name ] | [ ROWGUIDCOL ]  
+    ]  
+    | [ IDENTITY [ (seed , increment ) ] ]  
+    [ &lt;column_constraint&gt; [ ...n ] ]   
+}  
+
+&lt;column_constraint&gt;::=   
+{  
+    [ NULL | NOT NULL ]   
+    { PRIMARY KEY | UNIQUE }  
+      [ CLUSTERED | NONCLUSTERED ]   
+        [ WITH FILLFACTOR = fillfactor   
+        | WITH ( &lt; index_option &gt; [ , ...n ] )  
+      [ ON { filegroup | "default" } ]  
+  | [ CHECK ( logical_expression ) ] [ ,...n ]  
+}  
+
+&lt;computed_column_definition&gt;::=  
+column_name AS computed_column_expression   
+
+&lt;table_constraint&gt;::=  
+{   
+    { PRIMARY KEY | UNIQUE }  
+      [ CLUSTERED | NONCLUSTERED ]   
+      ( column_name [ ASC | DESC ] [ ,...n ] )  
+        [ WITH FILLFACTOR = fillfactor   
+        | WITH ( &lt;index_option&gt; [ , ...n ] )  
+  | [ CHECK ( logical_expression ) ] [ ,...n ]  
+}  
+
+&lt;index_option&gt;::=  
+{   
+    PAD_INDEX = { ON | OFF }   
+  | FILLFACTOR = fillfactor   
+  | IGNORE_DUP_KEY = { ON | OFF }  
+  | STATISTICS_NORECOMPUTE = { ON | OFF }   
+  | ALLOW_ROW_LOCKS = { ON | OFF }  
+  | ALLOW_PAGE_LOCKS ={ ON | OFF }   
+}  
+</code></pre>
+<pre><code class="lang-syntaxsql">-- CLR Scalar and Table-Valued Function Syntax
+ALTER FUNCTION [ schema_name. ] function_name   
+( { @parameter_name [AS] [ type_schema_name. ] parameter_data_type   
+    [ = default ] }   
+    [ ,...n ]  
+)  
+RETURNS { return_data_type | TABLE &lt;clr_table_type_definition&gt; }  
+    [ WITH &lt;clr_function_option&gt; [ ,...n ] ]  
+    [ AS ] EXTERNAL NAME &lt;method_specifier&gt;  
+[ ; ]  
+</code></pre>
+<pre><code class="lang-syntaxsql">-- CLR Function Clauses
+&lt;method_specifier&gt;::=  
+    assembly_name.class_name.method_name  
+
+&lt;clr_function_option&gt;::=  
+}  
+    [ RETURNS NULL ON NULL INPUT | CALLED ON NULL INPUT ]  
+  | [ EXECUTE_AS_Clause ]  
+}  
+
+&lt;clr_table_type_definition&gt;::=   
+( { column_name data_type } [ ,...n ] )  
+</code></pre>
+<pre><code class="lang-syntaxsql">-- Syntax for In-Memory OLTP: Natively compiled, scalar user-defined function  
+ALTER FUNCTION [ schema_name. ] function_name    
+ ( [ { @parameter_name [ AS ][ type_schema_name. ] parameter_data_type   
+    [ NULL | NOT NULL ] [ = default ] }   
+    [ ,...n ]   
+  ]   
+)   
+RETURNS return_data_type  
+    [ WITH &lt;function_option&gt; [ ,...n ] ]   
+    [ AS ]   
+    BEGIN ATOMIC WITH (set_option [ ,... n ])  
+        function_body   
+        RETURN scalar_expression  
+    END  
+
+&lt;function_option&gt;::=   
+{ |  NATIVE_COMPILATION   
+  |  SCHEMABINDING   
+  | [ EXECUTE_AS_Clause ]   
+  | [ RETURNS NULL ON NULL INPUT | CALLED ON NULL INPUT ]   
+}  
+</code></pre>
+<h2 id="arguments">Arguments</h2>
+<h4 id="schema_name"><em>schema_name</em></h4>
+<p>The name of the schema to which the user-defined function belongs.</p>
+<h4 id="function_name"><em>function_name</em></h4>
+<p>The user-defined function to be changed.</p>
+<div class="NOTE">
+<p>Note</p>
+<p>Parentheses are required after the function name even if a parameter is not specified.</p>
+</div>
+<h4 id="parameter_name">@<em>parameter_name</em></h4>
+<p>A parameter in the user-defined function. One or more parameters can be declared.</p>
+<p>A function can have a maximum of 2,100 parameters. The value of each declared parameter must be supplied by the user when the function is executed, unless a default for the parameter is defined.</p>
+<p>Specify a parameter name by using an at sign (<strong>@</strong>) as the first character. The parameter name must comply with the rules for <a href="../../relational-databases/databases/database-identifiers?view=sql-server-ver17" data-linktype="relative-path">identifiers</a>. Parameters are local to the function; the same parameter names can be used in other functions. Parameters can take the place only of constants; they cannot be used instead of table names, column names, or the names of other database objects.</p>
+<div class="NOTE">
+<p>Note</p>
+<p>ANSI_WARNINGS is not honored when passing parameters in a stored procedure, user-defined function, or when declaring and setting variables in a batch statement. For example, if a variable is defined as <strong>char(3)</strong>, and then set to a value larger than three characters, the data is truncated to the defined size and the INSERT or UPDATE statement succeeds.</p>
+</div>
+<h4 id="-type_schema_name--parameter_data_type">[ <em>type_schema_name.</em> ] <em>parameter_data_type</em></h4>
+<p>Is the parameter data type and optionally, the schema to which it belongs. For Transact-SQL functions, all data types, including CLR user-defined types, are allowed except the <strong>timestamp</strong> data type. For CLR functions, all data types, including CLR user-defined types, are allowed except <strong>text</strong>, <strong>ntext</strong>, <strong>image</strong>, and <strong>timestamp</strong> data types. The nonscalar types <strong>cursor</strong> and <strong>table</strong> cannot be specified as a parameter data type in either Transact-SQL or CLR functions.</p>
+<p>If <em>type_schema_name</em> is not specified, the SQL Server Database Engine looks for the <em>parameter_data_type</em> in the following order:</p>
+<ul>
+<li><p>The schema that contains the names of SQL Server system data types.</p>
+</li>
+<li><p>The default schema of the current user in the current database.</p>
+</li>
+<li><p>The <code>dbo</code> schema in the current database.</p>
+</li>
+</ul>
+<h4 id="--default-">[ = <em>default</em> ]</h4>
+<p>A default value for the parameter. If a <em>default</em> value is defined, the function can be executed without specifying a value for that parameter.</p>
+<div class="NOTE">
+<p>Note</p>
+<p>Default parameter values can be specified for CLR functions except for <strong>varchar(max)</strong> and <strong>varbinary(max)</strong> data types.</p>
+</div>
+<p>When a parameter of the function has a default value, the keyword DEFAULT must be specified when calling the function to retrieve the default value. This behavior is different from using parameters with default values in stored procedures in which omitting the parameter also implies the default value.</p>
+<h4 id="return_data_type"><em>return_data_type</em></h4>
+<p>The return value of a scalar user-defined function. For Transact-SQL functions, all data types, including CLR user-defined types, are allowed except the <strong>timestamp</strong> data type. For CLR functions, all data types, including CLR user-defined types, are allowed except <strong>text</strong>, <strong>ntext</strong>, <strong>image</strong>, and <strong>timestamp</strong> data types. The nonscalar types <strong>cursor</strong> and <strong>table</strong> cannot be specified as a return data type in either Transact-SQL or CLR functions.</p>
+<h4 id="function_body"><em>function_body</em></h4>
+<p>Specifies that a series of Transact-SQL statements, which together do not produce a side effect such as modifying a table, define the value of the function. <em>function_body</em> is used only in scalar functions and multistatement table-valued functions.</p>
+<p>In scalar functions, <em>function_body</em> is a series of Transact-SQL statements that together evaluate to a scalar value.</p>
+<p>In multistatement table-valued functions, <em>function_body</em> is a series of Transact-SQL statements that populate a TABLE return variable.</p>
+<h4 id="scalar_expression"><em>scalar_expression</em></h4>
+<p>Specifies that the scalar function returns a scalar value.</p>
+<h4 id="table">TABLE</h4>
+<p>Specifies that the return value of the table-valued function is a table. Only constants and <strong>@</strong><em>local_variables</em> can be passed to table-valued functions.</p>
+<p>In inline table-valued functions, the TABLE return value is defined through a single SELECT statement. Inline functions do not have associated return variables.</p>
+<p>In multistatement table-valued functions, <strong>@</strong><em>return_variable</em> is a TABLE variable used to store and accumulate the rows that should be returned as the value of the function. <strong>@</strong><em>return_variable</em> can be specified only for Transact-SQL functions and not for CLR functions.</p>
+<h4 id="select-stmt"><em>select-stmt</em></h4>
+<p>The single SELECT statement that defines the return value of an inline table-valued function.</p>
+<h4 id="external-name-method_specifierassembly_nameclass_namemethod_name">EXTERNAL NAME &lt;method_specifier&gt;<em>assembly_name.class_name</em>.<em>method_name</em></h4>
+<p><strong>Applies to</strong>: SQL Server 2008 (10.0.x) and later versions.</p>
+<p>Specifies the method of an assembly to bind with the function. <em>assembly_name</em> must match an existing assembly in SQL Server in the current database with visibility on. <em>class_name</em> must be a valid SQL Server identifier and must exist as a class in the assembly. If the class has a namespace-qualified name that uses a period (<strong>.</strong>) to separate namespace parts, the class name must be delimited by using brackets (<strong>[]</strong>) or quotation marks (<strong>""</strong>). <em>method_name</em> must be a valid SQL Server identifier and must exist as a static method in the specified class.</p>
+<div class="NOTE">
+<p>Note</p>
+<p>By default, SQL Server cannot execute CLR code. You can create, modify, and drop database objects that reference common language runtime modules; however, you cannot execute these references in SQL Server until you enable the <a href="../../database-engine/configure-windows/clr-enabled-server-configuration-option?view=sql-server-ver17" data-linktype="relative-path">clr enabled option</a>. To enable the option, use <a href="../../relational-databases/system-stored-procedures/sp-configure-transact-sql?view=sql-server-ver17" data-linktype="relative-path">sp_configure</a>.</p>
+</div>
+<div class="NOTE">
+<p>Note</p>
+<p>This option is not available in a contained database.</p>
+</div>
+<h4 id="table_type_definition--column_definition-column_constraint--computed_column_definition---table_constraint---n--"><em>&lt;<em>table_type_definition</em>&gt;</em>( { &lt;column_definition&gt; &lt;column_constraint&gt; | &lt;computed_column_definition&gt; } [ &lt;table_constraint&gt; ] [ ,...<em>n</em> ] )</h4>
+<p>Defines the table data type for a Transact-SQL function. The table declaration includes column definitions and column or table constraints.</p>
+<h4 id="-clr_table_type_definition----column_namedata_type---n--">&lt; clr_table_type_definition &gt; ( { <em>column_namedata_type</em> } [ ,...<em>n</em> ] )</h4>
+<p><strong>Applies to</strong>: SQL Server 2008 (10.0.x) and later, SQL Database (<a href="/en-us/azure/azure-sql/database/features-comparison?WT.mc_id=TSQL_GetItTag" data-linktype="absolute-path">Preview in some regions</a>).</p>
+<p>Defines the table data types for a CLR function. The table declaration includes only column names and data types.</p>
+<h4 id="nullnot-null">NULL|NOT NULL</h4>
+<p>Supported only for natively compiled, scalar user-defined functions. For more information, see <a href="../../relational-databases/in-memory-oltp/scalar-user-defined-functions-for-in-memory-oltp?view=sql-server-ver17" data-linktype="relative-path">Scalar User-Defined Functions for In-Memory OLTP</a>.</p>
+<h4 id="native_compilation">NATIVE_COMPILATION</h4>
+<p>Indicates whether a user-defined function is natively compiled. This argument is required for natively compiled, scalar user-defined functions.</p>
+<p>The NATIVE_COMPILATION argument is required when you ALTER the function, and can only be used, if the function was created with the NATIVE_COMPILATION argument.</p>
+<h4 id="begin-atomic-with">BEGIN ATOMIC WITH</h4>
+<p>Supported only for natively compiled, scalar user-defined functions, and is required. For more information, see <a href="../../relational-databases/in-memory-oltp/atomic-blocks-in-native-procedures?view=sql-server-ver17" data-linktype="relative-path">Atomic Blocks in Native Procedures</a>.</p>
+<h4 id="schemabinding">SCHEMABINDING</h4>
+<p>The SCHEMABINDING argument is required for natively compiled, scalar user-defined functions.</p>
+<p><strong>&lt;function_option&gt;::= and &lt;clr_function_option&gt;::=</strong></p>
+<p>Specifies the function will have one or more of the following options.</p>
+<h4 id="encryption">ENCRYPTION</h4>
+<p><strong>Applies to</strong>: SQL Server 2008 (10.0.x) and later versions.</p>
+<p>Indicates that the Database Engine encrypts the catalog view columns that contain the text of the <code>ALTER FUNCTION</code> statement. Using ENCRYPTION prevents the function from being published as part of SQL Server replication. ENCRYPTION cannot be specified for CLR functions.</p>
+<h4 id="schemabinding-1">SCHEMABINDING</h4>
+<p>Specifies that the function is bound to the database objects that it references. When SCHEMABINDING is specified, the base objects cannot be modified in a way that would affect the function definition. The function definition itself must first be modified or dropped to remove dependencies on the object that is to be modified.</p>
+<p>The binding of the function to the objects it references is removed only when one of the following actions occurs:</p>
+<ul>
+<li><p>The function is dropped.</p>
+</li>
+<li><p>The function is modified by using the ALTER statement with the SCHEMABINDING option not specified.</p>
+</li>
+</ul>
+<p>For a list of conditions that must be met before a function can be schema bound, see <a href="create-function-transact-sql?view=sql-server-ver17" data-linktype="relative-path">CREATE FUNCTION (Transact-SQL)</a>.</p>
+<h4 id="returns-null-on-null-input--called-on-null-input">RETURNS NULL ON NULL INPUT | CALLED ON NULL INPUT</h4>
+<p>Specifies the <code>OnNULLCall</code> attribute of a scalar-valued function. If not specified, <code>CALLED ON NULL INPUT</code> is implied by default. This means that the function body executes even if <code>NULL</code> is passed as an argument.</p>
+<p>If <code>RETURNS NULL ON NULL INPUT</code> is specified in a CLR function, it indicates that SQL Server can return <code>NULL</code> when any of the arguments it receives is NULL, without actually invoking the body of the function. If the method specified in &lt;method_specifier&gt; already has a custom attribute that indicates <code>RETURNS NULL ON NULL INPUT</code>, but the <code>ALTER FUNCTION</code> statement indicates <code>CALLED ON NULL INPUT</code>, the <code>ALTER FUNCTION</code> statement takes precedence. The <code>OnNULLCall</code> attribute cannot be specified for CLR table-valued functions.</p>
+<h4 id="execute-as-clause">EXECUTE AS clause</h4>
+<p>Specifies the security context under which the user-defined function is executed. Therefore, you can control which user account SQL Server uses to validate permissions on any database objects referenced by the function.</p>
+<div class="NOTE">
+<p>Note</p>
+<p>EXECUTE AS cannot be specified for inline user-defined functions.</p>
+</div>
+<p>For more information, see <a href="execute-as-clause-transact-sql?view=sql-server-ver17" data-linktype="relative-path">EXECUTE AS Clause (Transact-SQL)</a>.</p>
+<p><strong>&lt; column_definition &gt;::=</strong></p>
+<p>Defines the table data type. The table declaration includes column definitions and constraints. For CLR functions, only <em>column_name</em> and <em>data_type</em> can be specified.</p>
+<h4 id="column_name"><em>column_name</em></h4>
+<p>The name of a column in the table. Column names must comply with the rules for identifiers and must be unique in the table. <em>column_name</em> can consist of 1 through 128 characters.</p>
+<h4 id="data_type"><em>data_type</em></h4>
+<p>Specifies the column data type. For Transact-SQL functions, all data types, including CLR user-defined types, are allowed except <strong>timestamp</strong>. For CLR functions, all data types, including CLR user-defined types, are allowed except <strong>text</strong>, <strong>ntext</strong>, <strong>image</strong>, <strong>char</strong>, <strong>varchar</strong>, <strong>varchar(max)</strong>, and <strong>timestamp</strong>.The nonscalar type <strong>cursor</strong> cannot be specified as a column data type in either Transact-SQL or CLR functions.</p>
+<h4 id="default-constant_expression">DEFAULT <em>constant_expression</em></h4>
+<p>Specifies the value provided for the column when a value is not explicitly supplied during an insert. <em>constant_expression</em> is a constant, <code>NULL</code>, or a system function value. DEFAULT definitions can be applied to any column except those that have the IDENTITY property. DEFAULT cannot be specified for CLR table-valued functions.</p>
+<h4 id="collate-collation_name">COLLATE <em>collation_name</em></h4>
+<p>Specifies the collation for the column. If not specified, the column is assigned the default collation of the database. Collation name can be either a Windows collation name or a SQL collation name. For a list of and more information, see <a href="windows-collation-name-transact-sql?view=sql-server-ver17" data-linktype="relative-path">Windows collation name</a> and <a href="sql-server-collation-name-transact-sql?view=sql-server-ver17" data-linktype="relative-path">SQL Server Collation Name</a>.</p>
+<p>The COLLATE clause can be used to change the collations only of columns of the <strong>char</strong>, <strong>varchar</strong>, <strong>nchar</strong>, and <strong>nvarchar</strong> data types.</p>
+<p>COLLATE cannot be specified for CLR table-valued functions.</p>
+<h4 id="rowguidcol">ROWGUIDCOL</h4>
+<p>Indicates that the new column is a row global unique identifier column. Only one <strong>uniqueidentifier</strong> column per table can be designated as the <strong>ROWGUIDCOL</strong> column. The <strong>ROWGUIDCOL</strong> property can be assigned only to a <strong>uniqueidentifier</strong> column.</p>
+<p>The ROWGUIDCOL property does not enforce uniqueness of the values stored in the column. It also does not automatically generate values for new rows inserted into the table. To generate unique values for each column, use the <code>NEWID</code> function on <code>INSERT</code> statements. A default value can be specified; however, <code>NEWID</code> cannot be specified as the default.</p>
+<h4 id="identity">IDENTITY</h4>
+<p>Indicates that the new column is an identity column. When a new row is added to the table, SQL Server provides a unique, incremental value for the column. Identity columns are typically used together with PRIMARY KEY constraints to serve as the unique row identifier for the table. The IDENTITY property can be assigned to <strong>tinyint</strong>, <strong>smallint</strong>, <strong>int</strong>, <strong>bigint</strong>, <strong>decimal(p,0)</strong>, or <strong>numeric(p,0)</strong> columns. Only one identity column can be created per table. Bound defaults and DEFAULT constraints cannot be used with an identity column. You must specify both the <em>seed</em> and <em>increment</em> or neither. If neither is specified, the default is (1,1).</p>
+<p>IDENTITY cannot be specified for CLR table-valued functions.</p>
+<h4 id="seed"><em>seed</em></h4>
+<p>The integer value to be assigned to the first row in the table.</p>
+<h4 id="increment"><em>increment</em></h4>
+<p>The integer value to add to the <em>seed</em> value for successive rows in the table.</p>
+<p><strong>&lt; column_constraint &gt;::= and &lt; table_constraint&gt;::=</strong></p>
+<p>Defines the constraint for a specified column or table. For CLR functions, the only constraint type allowed is NULL. Named constraints are not allowed.</p>
+<h4 id="null--not-null">NULL | NOT NULL</h4>
+<p>Determines whether null values are allowed in the column. <code>NULL</code> is not strictly a constraint but can be specified just like <code>NOT NULL</code>. <code>NOT NULL</code> cannot be specified for CLR table-valued functions.</p>
+<h4 id="primary-key">PRIMARY KEY</h4>
+<p>A constraint that enforces entity integrity for a specified column through a unique index. In table-valued user-defined functions, the PRIMARY KEY constraint can be created on only one column per table. PRIMARY KEY cannot be specified for CLR table-valued functions.</p>
+<h4 id="unique">UNIQUE</h4>
+<p>A constraint that provides entity integrity for a specified column or columns through a unique index. A table can have multiple UNIQUE constraints. UNIQUE cannot be specified for CLR table-valued functions.</p>
+<h4 id="clustered--nonclustered">CLUSTERED | NONCLUSTERED</h4>
+<p>Indicate that a clustered or a nonclustered index is created for the PRIMARY KEY or UNIQUE constraint. PRIMARY KEY constraints use CLUSTERED, and UNIQUE constraints use NONCLUSTERED.</p>
+<p>CLUSTERED can be specified for only one constraint. If CLUSTERED is specified for a UNIQUE constraint and a PRIMARY KEY constraint is also specified, the PRIMARY KEY uses NONCLUSTERED.</p>
+<p>CLUSTERED and NONCLUSTERED cannot be specified for CLR table-valued functions.</p>
+<h4 id="check">CHECK</h4>
+<p>A constraint that enforces domain integrity by limiting the possible values that can be entered into a column or columns. CHECK constraints cannot be specified for CLR table-valued functions.</p>
+<h4 id="logical_expression"><em>logical_expression</em></h4>
+<p>A logical expression that returns TRUE or FALSE.</p>
+<p><strong>&lt;computed_column_definition&gt;::=</strong></p>
+<p>Specifies a computed column. For more information about computed columns, see <a href="create-table-transact-sql?view=sql-server-ver17" data-linktype="relative-path">CREATE TABLE (Transact-SQL)</a>.</p>
+<h4 id="column_name-1"><em>column_name</em></h4>
+<p>The name of the computed column.</p>
+<h4 id="computed_column_expression"><em>computed_column_expression</em></h4>
+<p>An expression that defines the value of a computed column.</p>
+<p><strong>&lt;index_option&gt;::=</strong></p>
+<p>Specifies the index options for the PRIMARY KEY or UNIQUE index. For more information about index options, see <a href="create-index-transact-sql?view=sql-server-ver17" data-linktype="relative-path">CREATE INDEX (Transact-SQL)</a>.</p>
+<h4 id="pad_index---on--off-">PAD_INDEX = { ON | OFF }</h4>
+<p>Specifies index padding. The default is OFF.</p>
+<h4 id="fillfactor--fillfactor">FILLFACTOR = <em>fillfactor</em></h4>
+<p>Specifies a percentage that indicates how full the Database Engine should make the leaf level of each index page during index creation or change. <em>fillfactor</em> must be an integer value from 1 to 100. The default is 0.</p>
+<h4 id="ignore_dup_key---on--off-">IGNORE_DUP_KEY = { ON | OFF }</h4>
+<p>Specifies the error response when an insert operation attempts to insert duplicate key values into a unique index. The IGNORE_DUP_KEY option applies only to insert operations after the index is created or rebuilt. The default is OFF.</p>
+<h4 id="statistics_norecompute---on--off-">STATISTICS_NORECOMPUTE = { ON | OFF }</h4>
+<p>Specifies whether distribution statistics are recomputed. The default is OFF.</p>
+<h4 id="allow_row_locks---on--off-">ALLOW_ROW_LOCKS = { ON | OFF }</h4>
+<p>Specifies whether row locks are allowed. The default is ON.</p>
+<h4 id="allow_page_locks---on--off-">ALLOW_PAGE_LOCKS = { ON | OFF }</h4>
+<p>Specifies whether page locks are allowed. The default is ON.</p>
+<h2 id="remarks">Remarks</h2>
+<p>ALTER FUNCTION cannot be used to change a scalar-valued function to a table-valued function, or vice versa. Also, ALTER FUNCTION cannot be used to change an inline function to a multistatement function, or vice versa. ALTER FUNCTION cannot be used to change a Transact-SQL function to a CLR function or vice-versa.</p>
+<p>The following Service Broker statements cannot be included in the definition of a Transact-SQL user-defined function:</p>
+<ul>
+<li><code>BEGIN DIALOG CONVERSATION</code></li>
+<li><code>END CONVERSATION</code></li>
+<li><code>GET CONVERSATION GROUP</code></li>
+<li><code>MOVE CONVERSATION</code></li>
+<li><code>RECEIVE</code></li>
+<li><code>SEND</code></li>
+</ul>
+<h2 id="permissions">Permissions</h2>
+<p>Requires ALTER permission on the function or on the schema. If the function specifies a user-defined type, requires EXECUTE permission on the type.</p>
+<p>In Microsoft Fabric, members of the Fabric workspace Administrator, Member, and Contributor roles can create functions.</p>
+<h2 id="related-content">Related content</h2>
+<ul>
+<li><a href="create-function-transact-sql?view=sql-server-ver17" data-linktype="relative-path">CREATE FUNCTION (Transact-SQL)</a></li>
+<li><a href="drop-function-transact-sql?view=sql-server-ver17" data-linktype="relative-path">DROP FUNCTION (Transact-SQL)</a></li>
+<li><a href="../../relational-databases/replication/publish/make-schema-changes-on-publication-databases?view=sql-server-ver17" data-linktype="relative-path">Make Schema Changes on Publication Databases</a></li>
+<li><a href="../functions/eventdata-transact-sql?view=sql-server-ver17" data-linktype="relative-path">EVENTDATA (Transact-SQL)</a></li>
+</ul>
+</div>
+					
+		<div
+			id="ms--inline-notifications"
+			class="margin-block-xs"
+			data-bi-name="inline-notification"
+		></div>
+	 
+		<div
+			id="assertive-live-region"
+			role="alert"
+			aria-live="assertive"
+			class="visually-hidden"
+			aria-relevant="additions"
+			aria-atomic="true"
+		></div>
+		<div
+			id="polite-live-region"
+			role="status"
+			aria-live="polite"
+			class="visually-hidden"
+			aria-relevant="additions"
+			aria-atomic="true"
+		></div>
+	
+					
+		<!-- feedback section -->
+		<section
+			id="site-user-feedback-footer"
+			class="font-size-sm margin-top-md display-none-print display-none-desktop"
+			data-test-id="site-user-feedback-footer"
+			data-bi-name="site-feedback-section"
+		>
+			<hr class="hr" />
+			<h2 id="ms--feedback" class="title is-3">Feedback</h2>
+			<div class="display-flex flex-wrap-wrap align-items-center">
+				<p class="font-weight-semibold margin-xxs margin-left-none">
+					Was this page helpful?
+				</p>
+				<div class="buttons">
+					<button
+						class="thumb-rating-button like button button-primary button-sm"
+						data-test-id="footer-rating-yes"
+						data-binary-rating-response="rating-yes"
+						type="button"
+						title="This article is helpful"
+						data-bi-name="button-rating-yes"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-like"></span>
+						</span>
+						<span>Yes</span>
+					</button>
+					<button
+						class="thumb-rating-button dislike button button-primary button-sm"
+						id="standard-rating-no-button"
+						hidden
+						data-test-id="footer-rating-no"
+						data-binary-rating-response="rating-no"
+						type="button"
+						title="This article is not helpful"
+						data-bi-name="button-rating-no"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-dislike"></span>
+						</span>
+						<span>No</span>
+					</button>
+					<details
+						class="popover popover-top"
+						id="mobile-help-popover"
+						data-test-id="footer-feedback-popover"
+					>
+						<summary
+							class="thumb-rating-button dislike button button-primary button-sm"
+							data-test-id="details-footer-rating-no"
+							data-binary-rating-response="rating-no"
+							title="This article is not helpful"
+							data-bi-name="button-rating-no"
+							aria-pressed="false"
+							data-bi-an="feedback-unhelpful-popover"
+						>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-dislike"></span>
+							</span>
+							<span>No</span>
+						</summary>
+						<div
+							class="popover-content width-200 width-300-tablet"
+							role="dialog"
+							aria-labelledby="popover-heading"
+							aria-describedby="popover-description"
+						>
+							<p id="popover-heading" class="font-size-lg margin-bottom-xxs font-weight-semibold">
+								Need help with this topic?
+							</p>
+							<p id="popover-description" class="font-size-sm margin-bottom-xs">
+								Want to try using Ask Learn to clarify or guide you through this topic?
+							</p>
+							
+		<div class="buttons flex-direction-row flex-wrap justify-content-center gap-xxs">
+			<div>
+		<button
+			class="button button-sm border inner-focus display-none margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-test-id="ask-learn-assistant-modal-entry-mobile-feedback"
+			data-ask-learn-modal-entry-feedback
+			data-bi-an=feedback-unhelpful-popover
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-inline-flex display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-modal-entry-tablet-feedback"
+			data-ask-learn-modal-entry-feedback
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-flyout-entry-feedback"
+			data-ask-learn-flyout-entry-show-only
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	</div>
+			<button
+				type="button"
+				class="button button-sm margin-right-xxs"
+				data-help-option="suggest-fix"
+				data-bi-name="feedback-suggest"
+				data-bi-an="feedback-unhelpful-popover"
+				data-test-id="suggest-fix"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-feedback"></span>
+				</span>
+				<span> Suggest a fix? </span>
+			</button>
+		</div>
+	
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+		<!-- end feedback section -->
+	
+				</div>
+				
+		<div id="ms--additional-resources-mobile" class="display-none-print">
+			<hr class="hr" hidden />
+			<h2 id="ms--additional-resources-mobile-heading" class="title is-3" hidden>
+				Additional resources
+			</h2>
+			 
+		<section
+			id="right-rail-training-mobile"
+			class=""
+			data-bi-name="learning-resource-card"
+			hidden
+		></section>
+	 
+		<section
+			id="right-rail-events-mobile"
+			class=""
+			data-bi-name="events-card"
+			hidden
+		></section>
+	
+		</div>
+	 
+		<div
+			id="article-metadata-footer"
+			data-bi-name="article-metadata-footer"
+			data-test-id="article-metadata-footer"
+			class="page-metadata-container"
+		>
+			<hr class="hr" />
+			<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
+				<li class="visibility-hidden-visual-diff">
+			<span class="badge badge-sm text-wrap-pretty">
+				<span>Last updated on <local-time format="twoDigitNumeric"
+		datetime="2026-07-21T00:29:00.000Z"
+		data-article-date-source="calculated"
+		class="is-invisible"
+	>
+		2026-07-21
+	</local-time></span>
+			</span>
+		</li>
+			</ul>
+		</div>
+	
+			</div>
+			
+		<div
+			id="action-panel"
+			role="region"
+			aria-label="Action Panel"
+			class="action-panel"
+			tabindex="-1"
+		></div>
+	
+		
+				</main>
+				<aside
+					id="layout-body-aside"
+					class="layout-body-aside  "
+					data-bi-name="aside"
+					aria-label="Additional resources"
+			  >
+					
+		<div
+			id="ms--additional-resources"
+			class="right-container padding-sm display-none display-block-desktop height-full"
+			data-bi-name="pageactions"
+		>
+			<div id="affixed-right-container" data-bi-name="right-column">
+				
+		<nav
+			id="side-doc-outline"
+			class="doc-outline border-bottom padding-bottom-xs margin-bottom-xs scrollbar-width-thin"
+			data-bi-name="intopic toc"
+			aria-label="In this article"
+		>
+			<h3>In this article</h3>
+		</nav>
+	
+				<!-- Feedback -->
+				
+		<section
+			id="ms--site-user-feedback-right-rail"
+			class="font-size-sm display-none-print"
+			data-test-id="site-user-feedback-right-rail"
+			data-bi-name="site-feedback-right-rail"
+		>
+			<div class="display-flex flex-wrap-wrap align-items-center">
+				<p class="font-weight-semibold margin-xxs margin-left-none">
+					Was this page helpful?
+				</p>
+				<div class="display-flex flex-wrap-nowrap">
+					<button
+						class="thumb-rating-button like inner-focus"
+						data-test-id="right-rail-rating-yes"
+						data-binary-rating-response="rating-yes"
+						type="button"
+						title="This article is helpful"
+						aria-label="This article is helpful"
+						data-bi-name="button-rating-yes"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-like"></span>
+						</span>
+					</button>
+					<button
+						class="thumb-rating-button dislike inner-focus"
+						id="right-rail-no-button"
+						hidden
+						data-test-id="right-rail-rating-no"
+						data-binary-rating-response="rating-no"
+						type="button"
+						title="This article is not helpful"
+						aria-label="This article is not helpful"
+						data-bi-name="button-rating-no"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-dislike"></span>
+						</span>
+					</button>
+					<details class="popover popover-right" id="help-popover" data-test-id="feedback-popover">
+						<summary
+							tabindex="0"
+							class="thumb-rating-button dislike inner-focus"
+							data-test-id="details-right-rail-rating-no"
+							data-binary-rating-response="rating-no"
+							title="This article is not helpful"
+							aria-label="This article is not helpful"
+							data-bi-name="button-rating-no"
+							aria-pressed="false"
+							data-bi-an="feedback-unhelpful-popover"
+						>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-dislike"></span>
+							</span>
+						</summary>
+						<div
+							class="popover-content width-200 width-300-tablet"
+							role="dialog"
+							aria-labelledby="popover-heading-right-rail"
+							aria-describedby="popover-description-right-rail"
+						>
+							<p
+								id="popover-heading-right-rail"
+								class="font-size-lg margin-bottom-xxs font-weight-semibold"
+							>
+								Need help with this topic?
+							</p>
+							<p id="popover-description-right-rail" class="font-size-sm margin-bottom-xs">
+								Want to try using Ask Learn to clarify or guide you through this topic?
+							</p>
+							
+		<div class="buttons flex-direction-row flex-wrap justify-content-center gap-xxs">
+			<div>
+		<button
+			class="button button-sm border inner-focus display-none margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-test-id="ask-learn-assistant-modal-entry-mobile-feedback"
+			data-ask-learn-modal-entry-feedback
+			data-bi-an=feedback-unhelpful-popover
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-inline-flex display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-modal-entry-tablet-feedback"
+			data-ask-learn-modal-entry-feedback
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-flyout-entry-feedback"
+			data-ask-learn-flyout-entry-show-only
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	</div>
+			<button
+				type="button"
+				class="button button-sm margin-right-xxs"
+				data-help-option="suggest-fix"
+				data-bi-name="feedback-suggest"
+				data-bi-an="feedback-unhelpful-popover"
+				data-test-id="suggest-fix"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-feedback"></span>
+				</span>
+				<span> Suggest a fix? </span>
+			</button>
+		</div>
+	
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+	
+			</div>
+		</div>
+	
+			  </aside> <section
+					id="layout-body-flyout"
+					class="layout-body-flyout "
+					data-bi-name="flyout"
+			  >
+					 <div
+	class="height-full border-left background-color-body-medium"
+	id="ask-learn-flyout"
+></div>
+			  </section> <div class="layout-body-footer " data-bi-name="layout-footer">
+		<footer
+			id="footer"
+			data-test-id="footer"
+			data-bi-name="footer"
+			class="footer-layout padding-xs padding-sm-desktop has-default-focus border-top"
+			role="contentinfo"
+		>
+			<div class="display-flex gap-xs flex-wrap-wrap is-full-height padding-right-lg-desktop">
+				
+		<a
+			data-mscc-ic="false"
+			href="#"
+			data-bi-name="select-locale"
+			class="locale-selector-link flex-shrink-0 button button-sm button-clear external-link-indicator"
+			id=""
+			title=""
+			><span class="icon" aria-hidden="true"
+				><span class="docon docon-world"></span></span
+			><span class="local-selector-link-text">en-us</span></a
+		>
+	 <div class="ccpa-privacy-link" data-ccpa-privacy-link hidden>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://aka.ms/yourcaliforniaprivacychoices"
+			data-bi-name="your-privacy-choices"
+			class="button button-sm button-clear flex-shrink-0 external-link-indicator"
+			id=""
+			title=""
+			>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 30 14"
+			xml:space="preserve"
+			height="16"
+			width="43"
+			aria-hidden="true"
+			focusable="false"
+		>
+			<path
+				d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z"
+				style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"
+			></path>
+			<path
+				d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z"
+				style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"
+			></path>
+			<path
+				d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z"
+				style="fill:#fff"
+			></path>
+			<path
+				d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z"
+				style="fill:#06f"
+			></path>
+		</svg>
+	
+			<span>Your Privacy Choices</span></a
+		>
+	
+	</div>
+				<div class="flex-shrink-0">
+		<div class="dropdown has-caret-up">
+			<button
+				data-test-id="theme-selector-button"
+				class="dropdown-trigger button button-clear button-sm inner-focus theme-dropdown-trigger"
+				aria-controls="{{ themeMenuId }}"
+				aria-haspopup="true"
+				aria-expanded="false"
+				data-bi-name="theme"
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-sun"></span></span>
+				<span>Theme</span>
+				<span class="icon expanded-indicator" aria-hidden="true">
+					<span class="docon docon-chevron-down-light"></span>
+				</span>
+			</button>
+			<div class="dropdown-menu" id="{{ themeMenuId }}" role="menu">
+				<ul class="theme-selector padding-xxs" data-test-id="theme-dropdown-menu" role="none">
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="light"
+							tabindex="-1"
+						>
+							<span class="theme-light margin-right-xxs">
+								<span
+									class="theme-selector-icon border display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> Light </span>
+						</button>
+					</li>
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="dark"
+							tabindex="-1"
+						>
+							<span class="theme-dark margin-right-xxs">
+								<span
+									class="border theme-selector-icon display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> Dark </span>
+						</button>
+					</li>
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="high-contrast"
+							tabindex="-1"
+						>
+							<span class="theme-high-contrast margin-right-xxs">
+								<span
+									class="border theme-selector-icon display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> High contrast </span>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+			</div>
+			<ul class="links" data-bi-name="footerlinks">
+				<li class="manage-cookies-holder" hidden=""></li>
+				<li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/principles-for-ai-generated-content"
+			data-bi-name="aiDisclaimer"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>AI Disclaimer</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/previous-versions/"
+			data-bi-name="archivelink"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Previous Versions</a
+		>
+	
+	</li> <li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog"
+			data-bi-name="bloglink"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Blog</a
+		>
+	
+	</li> <li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/contribute"
+			data-bi-name="contributorGuide"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Contribute</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://go.microsoft.com/fwlink/?LinkId=521839"
+			data-bi-name="privacy"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Privacy</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://go.microsoft.com/fwlink/?linkid=2259814"
+			data-bi-name="consumer-health-privacy"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Consumer Health Privacy</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/legal/termsofuse"
+			data-bi-name="termsofuse"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Terms of Use</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://www.microsoft.com/legal/intellectualproperty/Trademarks/"
+			data-bi-name="trademarks"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Trademarks</a
+		>
+	
+	</li>
+				<li>&copy; Microsoft 2026</li>
+			</ul>
+		</footer>
+	</footer>
+			</body>
+		</html>

@@ -1,0 +1,551 @@
+{"feature_id": "duckdb.function.abs", "name": "ABS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.acos", "name": "ACOS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.acosh", "name": "ACOSH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.add", "name": "ADD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.age", "name": "AGE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.aggregate", "name": "AGGREGATE", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.ago", "name": "AGO", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.alias", "name": "ALIAS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.any_value", "name": "ANY_VALUE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.apply", "name": "APPLY", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.approx_count_distinct", "name": "APPROX_COUNT_DISTINCT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.approx_quantile", "name": "APPROX_QUANTILE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.approx_top_k", "name": "APPROX_TOP_K", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.arg_max", "name": "ARG_MAX", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.arg_max_null", "name": "ARG_MAX_NULL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.arg_min", "name": "ARG_MIN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.arg_min_null", "name": "ARG_MIN_NULL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_aggr", "name": "ARRAY_AGGR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_aggregate", "name": "ARRAY_AGGREGATE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_append", "name": "ARRAY_APPEND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_apply", "name": "ARRAY_APPLY", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims", "alias_like_feature"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.array_cat", "name": "ARRAY_CAT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_concat", "name": "ARRAY_CONCAT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_contains", "name": "ARRAY_CONTAINS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_cosine_distance", "name": "ARRAY_COSINE_DISTANCE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_cosine_similarity", "name": "ARRAY_COSINE_SIMILARITY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_cross_product", "name": "ARRAY_CROSS_PRODUCT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_distance", "name": "ARRAY_DISTANCE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_distinct", "name": "ARRAY_DISTINCT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_dot_product", "name": "ARRAY_DOT_PRODUCT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_extract", "name": "ARRAY_EXTRACT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_filter", "name": "ARRAY_FILTER", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims", "alias_like_feature"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.array_grade_up", "name": "ARRAY_GRADE_UP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_has", "name": "ARRAY_HAS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_has_all", "name": "ARRAY_HAS_ALL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_has_any", "name": "ARRAY_HAS_ANY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_indexof", "name": "ARRAY_INDEXOF", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_inner_product", "name": "ARRAY_INNER_PRODUCT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_intersect", "name": "ARRAY_INTERSECT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_length", "name": "ARRAY_LENGTH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_negative_dot_product", "name": "ARRAY_NEGATIVE_DOT_PRODUCT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_negative_inner_product", "name": "ARRAY_NEGATIVE_INNER_PRODUCT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_pop_back", "name": "ARRAY_POP_BACK", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.array_pop_front", "name": "ARRAY_POP_FRONT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.array_position", "name": "ARRAY_POSITION", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_prepend", "name": "ARRAY_PREPEND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_push_back", "name": "ARRAY_PUSH_BACK", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_push_front", "name": "ARRAY_PUSH_FRONT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_reduce", "name": "ARRAY_REDUCE", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims", "alias_like_feature"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.array_resize", "name": "ARRAY_RESIZE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_reverse", "name": "ARRAY_REVERSE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_reverse_sort", "name": "ARRAY_REVERSE_SORT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_select", "name": "ARRAY_SELECT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_slice", "name": "ARRAY_SLICE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.array_sort", "name": "ARRAY_SORT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_to_string", "name": "ARRAY_TO_STRING", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.array_to_string_comma_default", "name": "ARRAY_TO_STRING_COMMA_DEFAULT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_transform", "name": "ARRAY_TRANSFORM", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims", "alias_like_feature"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.array_unique", "name": "ARRAY_UNIQUE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_value", "name": "ARRAY_VALUE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_where", "name": "ARRAY_WHERE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.array_zip", "name": "ARRAY_ZIP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.ascii", "name": "ASCII", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.asin", "name": "ASIN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.asinh", "name": "ASINH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.atan", "name": "ATAN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.atan2", "name": "ATAN2", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.atanh", "name": "ATANH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.avg", "name": "AVG", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.bar", "name": "BAR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.base64", "name": "BASE64", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.bin", "name": "BIN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.bit_and", "name": "BIT_AND", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.bit_count", "name": "BIT_COUNT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.bit_length", "name": "BIT_LENGTH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.bit_or", "name": "BIT_OR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.bit_position", "name": "BIT_POSITION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.bit_xor", "name": "BIT_XOR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.bitstring", "name": "BITSTRING", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.bitstring_agg", "name": "BITSTRING_AGG", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.bool_and", "name": "BOOL_AND", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.bool_or", "name": "BOOL_OR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.can_cast_implicitly", "name": "CAN_CAST_IMPLICITLY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.cardinality", "name": "CARDINALITY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.cbrt", "name": "CBRT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.ceil", "name": "CEIL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.ceiling", "name": "CEILING", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.century", "name": "CENTURY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.char_length", "name": "CHAR_LENGTH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.character_length", "name": "CHARACTER_LENGTH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.checkpoint", "name": "CHECKPOINT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.chr", "name": "CHR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.coalesce", "name": "COALESCE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.concat", "name": "CONCAT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.concat_ws", "name": "CONCAT_WS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.constant_or_null", "name": "CONSTANT_OR_NULL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.contains", "name": "contains", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.corr", "name": "CORR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.cos", "name": "COS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.cot", "name": "COT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.count_if", "name": "COUNT_IF", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.countif", "name": "COUNTIF", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.covar_pop", "name": "COVAR_POP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.covar_samp", "name": "COVAR_SAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.create_sort_key", "name": "CREATE_SORT_KEY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.cume_dist", "name": "CUME_DIST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.current_catalog", "name": "CURRENT_CATALOG", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.current_database", "name": "CURRENT_DATABASE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.current_localtime", "name": "CURRENT_LOCALTIME", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.current_localtimestamp", "name": "CURRENT_LOCALTIMESTAMP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.current_query", "name": "CURRENT_QUERY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.current_schema", "name": "CURRENT_SCHEMA", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.current_schemas", "name": "CURRENT_SCHEMAS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.current_setting", "name": "CURRENT_SETTING", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.currval", "name": "CURRVAL", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.damerau_levenshtein", "name": "DAMERAU_LEVENSHTEIN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.date_add", "name": "DATE_ADD", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.date_diff", "name": "DATE_DIFF", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.date_part", "name": "DATE_PART", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.date_sub", "name": "DATE_SUB", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.date_trunc", "name": "DATE_TRUNC", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.datediff", "name": "DATEDIFF", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.datepart", "name": "DATEPART", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.datesub", "name": "DATESUB", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.day", "name": "DAY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.dayname", "name": "DAYNAME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.dayofmonth", "name": "DAYOFMONTH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.dayofweek", "name": "DAYOFWEEK", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.dayofyear", "name": "DAYOFYEAR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.days_in_month", "name": "DAYS_IN_MONTH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.decade", "name": "DECADE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.decode", "name": "DECODE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.degrees", "name": "DEGREES", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.dense_rank", "name": "DENSE_RANK", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.divide", "name": "DIVIDE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.duckdb_bind_add_result_column", "name": "duckdb_bind_add_result_column", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.duckdb_bind_get_extra_info", "name": "duckdb_bind_get_extra_info", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.duckdb_bind_get_named_parameter", "name": "duckdb_bind_get_named_parameter", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.duckdb_bind_get_parameter", "name": "duckdb_bind_get_parameter", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.duckdb_bind_get_parameter_count", "name": "duckdb_bind_get_parameter_count", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.duckdb_bind_set_bind_data", "name": "duckdb_bind_set_bind_data", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.duckdb_bind_set_cardinality", "name": "duckdb_bind_set_cardinality", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.duckdb_bind_set_error", "name": "duckdb_bind_set_error", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.duckdb_create_table_function", "name": "duckdb_create_table_function", "status": "needs_review", "reason": ["no_description_claims", "long_example"], "details": []}
+{"feature_id": "duckdb.function.duckdb_destroy_table_function", "name": "duckdb_destroy_table_function", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "long_example"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.duckdb_function_get_bind_data", "name": "duckdb_function_get_bind_data", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.duckdb_function_get_extra_info", "name": "duckdb_function_get_extra_info", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.duckdb_function_get_init_data", "name": "duckdb_function_get_init_data", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.duckdb_function_get_local_init_data", "name": "duckdb_function_get_local_init_data", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.duckdb_function_set_error", "name": "duckdb_function_set_error", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.duckdb_init_get_bind_data", "name": "duckdb_init_get_bind_data", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.duckdb_init_get_column_count", "name": "duckdb_init_get_column_count", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.duckdb_init_get_column_index", "name": "duckdb_init_get_column_index", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.duckdb_init_get_extra_info", "name": "duckdb_init_get_extra_info", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.duckdb_init_set_error", "name": "duckdb_init_set_error", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.duckdb_init_set_init_data", "name": "duckdb_init_set_init_data", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.duckdb_init_set_max_threads", "name": "duckdb_init_set_max_threads", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.duckdb_register_table_function", "name": "duckdb_register_table_function", "status": "needs_review", "reason": ["no_description_claims", "long_example"], "details": []}
+{"feature_id": "duckdb.function.duckdb_table_function_add_named_parameter", "name": "duckdb_table_function_add_named_parameter", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims", "long_example"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.duckdb_table_function_add_parameter", "name": "duckdb_table_function_add_parameter", "status": "needs_review", "reason": ["no_description_claims", "long_example"], "details": []}
+{"feature_id": "duckdb.function.duckdb_table_function_set_bind", "name": "duckdb_table_function_set_bind", "status": "needs_review", "reason": ["no_description_claims", "long_example"], "details": []}
+{"feature_id": "duckdb.function.duckdb_table_function_set_extra_info", "name": "duckdb_table_function_set_extra_info", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims", "long_example"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.duckdb_table_function_set_function", "name": "duckdb_table_function_set_function", "status": "needs_review", "reason": ["no_description_claims", "long_example"], "details": []}
+{"feature_id": "duckdb.function.duckdb_table_function_set_init", "name": "duckdb_table_function_set_init", "status": "needs_review", "reason": ["no_description_claims", "long_example"], "details": []}
+{"feature_id": "duckdb.function.duckdb_table_function_set_local_init", "name": "duckdb_table_function_set_local_init", "status": "needs_review", "reason": ["no_description_claims", "long_example"], "details": []}
+{"feature_id": "duckdb.function.duckdb_table_function_set_name", "name": "duckdb_table_function_set_name", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims", "long_example"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.duckdb_table_function_supports_projection_pushdown", "name": "duckdb_table_function_supports_projection_pushdown", "status": "needs_review", "reason": ["no_description_claims", "long_example"], "details": []}
+{"feature_id": "duckdb.function.editdist3", "name": "EDITDIST3", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.element_at", "name": "ELEMENT_AT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.encode", "name": "ENCODE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.ends_with", "name": "ENDS_WITH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.entropy", "name": "ENTROPY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.enum_code", "name": "ENUM_CODE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.enum_first", "name": "ENUM_FIRST", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.enum_last", "name": "ENUM_LAST", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.enum_range", "name": "ENUM_RANGE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.enum_range_boundary", "name": "ENUM_RANGE_BOUNDARY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.epoch", "name": "EPOCH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.epoch_ms", "name": "EPOCH_MS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.epoch_ns", "name": "EPOCH_NS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.epoch_us", "name": "EPOCH_US", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.equi_width_bins", "name": "EQUI_WIDTH_BINS", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.era", "name": "ERA", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.error", "name": "ERROR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.even", "name": "EVEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.exp", "name": "EXP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.extract", "name": "EXTRACT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.factorial", "name": "FACTORIAL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.favg", "name": "FAVG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.fdiv", "name": "FDIV", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.filter", "name": "filter", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.first_value", "name": "FIRST_VALUE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.flatten", "name": "FLATTEN", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.floor", "name": "FLOOR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.fmod", "name": "FMOD", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.force_checkpoint", "name": "FORCE_CHECKPOINT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.format", "name": "FORMAT", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.format_bytes", "name": "FORMAT_BYTES", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.formatreadabledecimalsize", "name": "FORMATREADABLEDECIMALSIZE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.formatreadablesize", "name": "FORMATREADABLESIZE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.from_base64", "name": "FROM_BASE64", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.from_binary", "name": "FROM_BINARY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.from_hex", "name": "FROM_HEX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.from_json", "name": "FROM_JSON", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.from_json_strict", "name": "FROM_JSON_STRICT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.fsum", "name": "FSUM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.gamma", "name": "GAMMA", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.gcd", "name": "GCD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.gen_random_uuid", "name": "GEN_RANDOM_UUID", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.generate_series", "name": "GENERATE_SERIES", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.generate_subscripts", "name": "generate_subscripts", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.geometric_mean", "name": "GEOMETRIC_MEAN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.get_bit", "name": "GET_BIT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.get_current_time", "name": "GET_CURRENT_TIME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.get_current_timestamp", "name": "GET_CURRENT_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.getenv", "name": "GETENV", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.grade_up", "name": "GRADE_UP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.greatest", "name": "GREATEST", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.greatest_common_divisor", "name": "GREATEST_COMMON_DIVISOR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.group", "name": "GROUP", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.grouping", "name": "GROUPING", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.hamming", "name": "HAMMING", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.hash", "name": "HASH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.hex", "name": "HEX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.histogram", "name": "HISTOGRAM", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.histogram_exact", "name": "HISTOGRAM_EXACT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.histogram_values", "name": "HISTOGRAM_VALUES", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.hour", "name": "HOUR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.iceberg_load_table_response", "name": "ICEBERG_LOAD_TABLE_RESPONSE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.iceberg_metadata", "name": "ICEBERG_METADATA", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.iceberg_partition_stats", "name": "ICEBERG_PARTITION_STATS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.iceberg_scan", "name": "ICEBERG_SCAN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.iceberg_schema_properties", "name": "ICEBERG_SCHEMA_PROPERTIES", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.iceberg_table_properties", "name": "ICEBERG_TABLE_PROPERTIES", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.iceberg_to_ducklake", "name": "ICEBERG_TO_DUCKLAKE", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims", "alias_like_feature"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.icu_sort_key", "name": "ICU_SORT_KEY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.if", "name": "IF", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.ifnull", "name": "IFNULL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.ilike_escape", "name": "ILIKE_ESCAPE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.instr", "name": "INSTR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.is_histogram_other_bin", "name": "IS_HISTOGRAM_OTHER_BIN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.isfinite", "name": "ISFINITE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.isinf", "name": "ISINF", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.isnan", "name": "ISNAN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.isodow", "name": "ISODOW", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.isoyear", "name": "ISOYEAR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.jaccard", "name": "JACCARD", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.jaro_similarity", "name": "JARO_SIMILARITY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.jaro_winkler_similarity", "name": "JARO_WINKLER_SIMILARITY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.json_exists", "name": "JSON_EXISTS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.json_extract", "name": "JSON_EXTRACT", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.json_extract_string", "name": "JSON_EXTRACT_STRING", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.json_transform", "name": "JSON_TRANSFORM", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.json_transform_strict", "name": "JSON_TRANSFORM_STRICT", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.json_value", "name": "JSON_VALUE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.julian", "name": "JULIAN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.kurtosis", "name": "KURTOSIS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.kurtosis_pop", "name": "KURTOSIS_POP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.last", "name": "LAST", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.last_day", "name": "LAST_DAY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.last_value", "name": "LAST_VALUE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.lcase", "name": "LCASE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.lcm", "name": "LCM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.lead", "name": "LEAD", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.least", "name": "LEAST", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.least_common_multiple", "name": "LEAST_COMMON_MULTIPLE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.left", "name": "LEFT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.left_grapheme", "name": "LEFT_GRAPHEME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.length", "name": "LENGTH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.length_grapheme", "name": "LENGTH_GRAPHEME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.levenshtein", "name": "LEVENSHTEIN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.lgamma", "name": "LGAMMA", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.like_escape", "name": "LIKE_ESCAPE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.list", "name": "list", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "duckdb.function.list_aggr", "name": "LIST_AGGR", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.list_aggregate", "name": "LIST_AGGREGATE", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.list_any_value", "name": "LIST_ANY_VALUE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.list_append", "name": "LIST_APPEND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_apply", "name": "LIST_APPLY", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.list_approx_count_distinct", "name": "LIST_APPROX_COUNT_DISTINCT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_avg", "name": "LIST_AVG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_bit_and", "name": "LIST_BIT_AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_bit_or", "name": "LIST_BIT_OR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_bit_xor", "name": "LIST_BIT_XOR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_bool_and", "name": "LIST_BOOL_AND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_bool_or", "name": "LIST_BOOL_OR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_cat", "name": "LIST_CAT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_concat", "name": "LIST_CONCAT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_contains", "name": "LIST_CONTAINS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.list_cosine_distance", "name": "LIST_COSINE_DISTANCE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_cosine_similarity", "name": "LIST_COSINE_SIMILARITY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_count", "name": "LIST_COUNT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_distance", "name": "LIST_DISTANCE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_distinct", "name": "LIST_DISTINCT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_dot_product", "name": "LIST_DOT_PRODUCT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_element", "name": "LIST_ELEMENT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_entropy", "name": "LIST_ENTROPY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_extract", "name": "LIST_EXTRACT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_first", "name": "LIST_FIRST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_grade_up", "name": "LIST_GRADE_UP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_has", "name": "LIST_HAS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.list_has_all", "name": "LIST_HAS_ALL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.list_has_any", "name": "LIST_HAS_ANY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.list_histogram", "name": "LIST_HISTOGRAM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_indexof", "name": "LIST_INDEXOF", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_inner_product", "name": "LIST_INNER_PRODUCT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_intersect", "name": "LIST_INTERSECT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.list_kurtosis", "name": "LIST_KURTOSIS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_kurtosis_pop", "name": "LIST_KURTOSIS_POP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_last", "name": "LIST_LAST", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.list_mad", "name": "LIST_MAD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_max", "name": "LIST_MAX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_median", "name": "LIST_MEDIAN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_min", "name": "LIST_MIN", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.list_mode", "name": "LIST_MODE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_negative_dot_product", "name": "LIST_NEGATIVE_DOT_PRODUCT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_negative_inner_product", "name": "LIST_NEGATIVE_INNER_PRODUCT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_pack", "name": "LIST_PACK", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_position", "name": "LIST_POSITION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.list_prepend", "name": "LIST_PREPEND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_product", "name": "LIST_PRODUCT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_resize", "name": "LIST_RESIZE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_reverse", "name": "LIST_REVERSE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_reverse_sort", "name": "LIST_REVERSE_SORT", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.list_select", "name": "LIST_SELECT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.list_sem", "name": "LIST_SEM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_skewness", "name": "LIST_SKEWNESS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_slice", "name": "LIST_SLICE", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.list_sort", "name": "LIST_SORT", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.list_stddev_pop", "name": "LIST_STDDEV_POP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_stddev_samp", "name": "LIST_STDDEV_SAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_string_agg", "name": "LIST_STRING_AGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_sum", "name": "LIST_SUM", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.list_unique", "name": "LIST_UNIQUE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_value", "name": "LIST_VALUE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_var_pop", "name": "LIST_VAR_POP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_var_samp", "name": "LIST_VAR_SAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.list_where", "name": "LIST_WHERE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.list_zip", "name": "LIST_ZIP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.ln", "name": "LN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.log", "name": "LOG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.log10", "name": "LOG10", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.log2", "name": "LOG2", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.lpad", "name": "LPAD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.ltrim", "name": "LTRIM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.mad", "name": "MAD", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.make_date", "name": "MAKE_DATE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.make_time", "name": "MAKE_TIME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.make_timestamp", "name": "MAKE_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.make_timestamp_ms", "name": "MAKE_TIMESTAMP_MS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.make_timestamp_ns", "name": "MAKE_TIMESTAMP_NS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.make_timestamptz", "name": "MAKE_TIMESTAMPTZ", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.map", "name": "MAP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.map_concat", "name": "MAP_CONCAT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.map_contains", "name": "MAP_CONTAINS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.map_contains_entry", "name": "MAP_CONTAINS_ENTRY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.map_contains_value", "name": "MAP_CONTAINS_VALUE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.map_entries", "name": "MAP_ENTRIES", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.map_extract", "name": "MAP_EXTRACT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.map_extract_value", "name": "MAP_EXTRACT_VALUE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.map_from_entries", "name": "MAP_FROM_ENTRIES", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.map_keys", "name": "MAP_KEYS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.map_values", "name": "MAP_VALUES", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.md5", "name": "MD5", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.md5_number", "name": "MD5_NUMBER", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.md5_number_lower", "name": "MD5_NUMBER_LOWER", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.md5_number_upper", "name": "MD5_NUMBER_UPPER", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.median", "name": "MEDIAN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.microsecond", "name": "MICROSECOND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.millennium", "name": "MILLENNIUM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.millisecond", "name": "MILLISECOND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.minute", "name": "MINUTE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.mismatches", "name": "MISMATCHES", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.mode", "name": "MODE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.month", "name": "MONTH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.monthname", "name": "MONTHNAME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.multiply", "name": "MULTIPLY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.nextafter", "name": "NEXTAFTER", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.nextval", "name": "NEXTVAL", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.nfc_normalize", "name": "NFC_NORMALIZE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.not_ilike_escape", "name": "NOT_ILIKE_ESCAPE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.not_like_escape", "name": "NOT_LIKE_ESCAPE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.now", "name": "now", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.nth_value", "name": "NTH_VALUE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.ntile", "name": "NTILE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.nullif", "name": "NULLIF", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.octet_length", "name": "OCTET_LENGTH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.ord", "name": "ORD", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.parse_dirname", "name": "PARSE_DIRNAME", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.parse_dirpath", "name": "PARSE_DIRPATH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.parse_filename", "name": "PARSE_FILENAME", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.parse_formatted_bytes", "name": "PARSE_FORMATTED_BYTES", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.parse_path", "name": "PARSE_PATH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.percent_rank", "name": "PERCENT_RANK", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.percentile_cont", "name": "PERCENTILE_CONT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.percentile_disc", "name": "PERCENTILE_DISC", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.pg_typeof", "name": "PG_TYPEOF", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.position", "name": "POSITION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.pow", "name": "POW", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.power", "name": "POWER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.prefix", "name": "PREFIX", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.printf", "name": "PRINTF", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.product", "name": "PRODUCT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.quantile_disc", "name": "QUANTILE_DISC", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.quarter", "name": "QUARTER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.query", "name": "QUERY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.query_table", "name": "QUERY_TABLE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.radians", "name": "RADIANS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.random", "name": "RANDOM", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.range", "name": "range", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.rank", "name": "RANK", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.rank_dense", "name": "RANK_DENSE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.read_blob", "name": "READ_BLOB", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.read_text", "name": "READ_TEXT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.reduce", "name": "REDUCE", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.regexp_escape", "name": "REGEXP_ESCAPE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.regexp_extract_all", "name": "REGEXP_EXTRACT_ALL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.regexp_full_match", "name": "REGEXP_FULL_MATCH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.regexp_replace", "name": "REGEXP_REPLACE", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.regexp_split_to_array", "name": "REGEXP_SPLIT_TO_ARRAY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.regexp_split_to_table", "name": "REGEXP_SPLIT_TO_TABLE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.regr_avgx", "name": "REGR_AVGX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.regr_avgy", "name": "REGR_AVGY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.regr_count", "name": "REGR_COUNT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.regr_intercept", "name": "REGR_INTERCEPT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.regr_r2", "name": "REGR_R2", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.regr_slope", "name": "REGR_SLOPE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.regr_sxx", "name": "REGR_SXX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.regr_sxy", "name": "REGR_SXY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.regr_syy", "name": "REGR_SYY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.remove_iceberg_schema_properties", "name": "REMOVE_ICEBERG_SCHEMA_PROPERTIES", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.remove_iceberg_table_properties", "name": "REMOVE_ICEBERG_TABLE_PROPERTIES", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.repeat", "name": "REPEAT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.repeat_row", "name": "REPEAT_ROW", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.replace", "name": "replace", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.replace_type", "name": "REPLACE_TYPE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.reservoir_quantile", "name": "RESERVOIR_QUANTILE", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims", "alias_like_feature"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.reverse", "name": "REVERSE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.right", "name": "RIGHT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.right_grapheme", "name": "RIGHT_GRAPHEME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.round", "name": "ROUND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.round_even", "name": "ROUND_EVEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.roundbankers", "name": "ROUNDBANKERS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.row", "name": "ROW", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.row_number", "name": "row_number", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.rpad", "name": "RPAD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.rtrim", "name": "RTRIM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.second", "name": "SECOND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.sem", "name": "SEM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.set_bit", "name": "SET_BIT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.set_iceberg_schema_properties", "name": "SET_ICEBERG_SCHEMA_PROPERTIES", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.set_iceberg_table_properties", "name": "SET_ICEBERG_TABLE_PROPERTIES", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.setseed", "name": "SETSEED", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.sha1", "name": "SHA1", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.sha256", "name": "SHA256", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.sign", "name": "SIGN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.signbit", "name": "SIGNBIT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.sin", "name": "SIN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.skewness", "name": "SKEWNESS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.sleep_ms", "name": "SLEEP_MS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.split", "name": "SPLIT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.split_part", "name": "SPLIT_PART", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.sqrt", "name": "SQRT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.st_drivers", "name": "st_drivers", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.st_readosm", "name": "st_readosm", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "duckdb.function.st_readshp", "name": "st_readshp", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.starts_with", "name": "STARTS_WITH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.stats", "name": "STATS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.stddev_pop", "name": "STDDEV_POP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.stddev_samp", "name": "STDDEV_SAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.str_split", "name": "STR_SPLIT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.str_split_regex", "name": "STR_SPLIT_REGEX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.strftime", "name": "strftime", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.string_split", "name": "STRING_SPLIT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.string_split_regex", "name": "STRING_SPLIT_REGEX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.string_to_array", "name": "STRING_TO_ARRAY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.strip_accents", "name": "STRIP_ACCENTS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.strlen", "name": "STRLEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.strpos", "name": "STRPOS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.struct_concat", "name": "STRUCT_CONCAT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.struct_contains", "name": "STRUCT_CONTAINS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.struct_extract", "name": "STRUCT_EXTRACT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.struct_extract_at", "name": "STRUCT_EXTRACT_AT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.struct_insert", "name": "STRUCT_INSERT", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims", "alias_like_feature"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.struct_pack", "name": "STRUCT_PACK", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims", "alias_like_feature"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.struct_position", "name": "STRUCT_POSITION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.struct_update", "name": "STRUCT_UPDATE", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims", "alias_like_feature"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.struct_values", "name": "STRUCT_VALUES", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.substr", "name": "SUBSTR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.substring", "name": "SUBSTRING", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.substring_grapheme", "name": "SUBSTRING_GRAPHEME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.subtract", "name": "SUBTRACT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.suffix", "name": "SUFFIX", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.tan", "name": "TAN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.time_bucket", "name": "TIME_BUCKET", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.timetz_byte_comparable", "name": "TIMETZ_BYTE_COMPARABLE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.timezone", "name": "TIMEZONE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.timezone_hour", "name": "TIMEZONE_HOUR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.timezone_minute", "name": "TIMEZONE_MINUTE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_base", "name": "TO_BASE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_base64", "name": "TO_BASE64", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_binary", "name": "TO_BINARY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_centuries", "name": "TO_CENTURIES", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_days", "name": "TO_DAYS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_decades", "name": "TO_DECADES", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_hex", "name": "TO_HEX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_hours", "name": "TO_HOURS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_microseconds", "name": "TO_MICROSECONDS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_millennia", "name": "TO_MILLENNIA", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_milliseconds", "name": "TO_MILLISECONDS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_minutes", "name": "TO_MINUTES", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_months", "name": "TO_MONTHS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_quarters", "name": "TO_QUARTERS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_seconds", "name": "TO_SECONDS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_timestamp", "name": "TO_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_weeks", "name": "TO_WEEKS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.to_years", "name": "TO_YEARS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.today", "name": "TODAY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.transaction_timestamp", "name": "TRANSACTION_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.translate", "name": "TRANSLATE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.trim", "name": "TRIM", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.trunc", "name": "TRUNC", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.try_strptime", "name": "TRY_STRPTIME", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.txid_current", "name": "TXID_CURRENT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.typeof", "name": "TYPEOF", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.ucase", "name": "UCASE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.unbin", "name": "UNBIN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.unhex", "name": "UNHEX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.unicode", "name": "UNICODE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.union_extract", "name": "UNION_EXTRACT", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims", "alias_like_feature"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.union_tag", "name": "UNION_TAG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.union_value", "name": "UNION_VALUE", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims", "alias_like_feature"], "details": ["signature: empty string"]}
+{"feature_id": "duckdb.function.unnest", "name": "unnest", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "duckdb.function.unpivot_list", "name": "UNPIVOT_LIST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.url_decode", "name": "URL_DECODE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.url_encode", "name": "URL_ENCODE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.uuid", "name": "UUID", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.uuid_extract_timestamp", "name": "UUID_EXTRACT_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.uuid_extract_version", "name": "UUID_EXTRACT_VERSION", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.uuidv4", "name": "UUIDV4", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.uuidv7", "name": "UUIDV7", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.var_pop", "name": "VAR_POP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.var_samp", "name": "VAR_SAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.version", "name": "VERSION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "duckdb.function.week", "name": "WEEK", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.weekday", "name": "WEEKDAY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.weekofyear", "name": "WEEKOFYEAR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.weighted_avg", "name": "WEIGHTED_AVG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.xor", "name": "XOR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.year", "name": "YEAR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "duckdb.function.yearweek", "name": "YEARWEEK", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}

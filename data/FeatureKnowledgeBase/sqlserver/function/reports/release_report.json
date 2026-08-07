@@ -1,0 +1,31 @@
+{
+  "dbms": "sqlserver",
+  "feature_type": "function",
+  "total_pages": 221,
+  "total_sections": 2597,
+  "total_blocks": 13864,
+  "candidate_features": 1523,
+  "candidate_groups": 192,
+  "feature_drafts": 192,
+  "total_drafts": 192,
+  "clean_validated_features": 108,
+  "validated_with_warnings": 48,
+  "invalid_features": 36,
+  "total_validated_features": 156,
+  "total_kb_features": 156,
+  "total_review_items": 84,
+  "validation_summary": {
+    "schema_invalid": 36,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 38,
+    "no_description_claims": 29,
+    "no_valid_syntax": 36,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 2,
+    "large_evidence_block": 0,
+    "long_examples": 18,
+    "alias_like_feature": 2
+  },
+  "generated_at": "2026-08-06T19:56:10.021910+08:00"
+}

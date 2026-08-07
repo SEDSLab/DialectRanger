@@ -1,0 +1,31 @@
+{
+  "dbms": "cockroachdb",
+  "feature_type": "datatype",
+  "processed_pages": 1,
+  "skipped_pages": 0,
+  "total_sections": 4,
+  "total_blocks": 57,
+  "section_sources": {
+    "fallback": 1,
+    "heading_tree": 3
+  },
+  "block_types": {
+    "anchor": 5,
+    "heading": 3,
+    "table": 1,
+    "table_row": 26,
+    "code": 13,
+    "list": 6,
+    "signature": 3
+  },
+  "pages": [
+    {
+      "page_id": "cockroachdb_stable_data_types",
+      "sections": 4,
+      "blocks": 57,
+      "anchors": 5,
+      "tables": 1,
+      "code_blocks": 13
+    }
+  ]
+}

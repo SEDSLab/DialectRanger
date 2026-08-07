@@ -1,0 +1,36 @@
+{
+  "dbms": "cockroachdb",
+  "feature_type": "datatype",
+  "total_drafts": 20,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 20,
+  "invalid_features": 0,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 20,
+    "no_description_claims": 0,
+    "no_valid_syntax": 0,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 0
+  },
+  "sample_clean_features": [],
+  "sample_warning_features": [
+    "cockroachdb.datatype.array",
+    "cockroachdb.datatype.bit",
+    "cockroachdb.datatype.bool",
+    "cockroachdb.datatype.boolean",
+    "cockroachdb.datatype.bytes",
+    "cockroachdb.datatype.collate",
+    "cockroachdb.datatype.date",
+    "cockroachdb.datatype.decimal",
+    "cockroachdb.datatype.enum",
+    "cockroachdb.datatype.inet"
+  ],
+  "sample_invalid_features": [],
+  "generated_at": "2026-08-06T19:12:49.169442+08:00"
+}

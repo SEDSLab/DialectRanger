@@ -1,0 +1,7 @@
+{
+  "dbms": "postgresql",
+  "feature_type": "datatype",
+  "candidates": 237,
+  "groups": 57,
+  "drafts": 57
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="reference">
+      <meta name="DC.Title" content="Multiset Operators">
+      <meta name="DC.subject" content="multiset operators, nested tables, combining, MULTISET EXCEPT operator, operators, MULTISET EXCEPT, MULTISET INTERSECT operator, MULTISET INTERSECT, MULTISET UNION operator, MULTISET UNION">
+      <meta name="keywords" content="multiset operators, nested tables, combining, MULTISET EXCEPT operator, operators, MULTISET EXCEPT, MULTISET INTERSECT operator, MULTISET INTERSECT, MULTISET UNION operator, MULTISET UNION">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-793FCBB0-A97C-4884-BCAC-DD0542EA746B">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Multiset Operators</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="Set-Operators.html" title="Previous" type="text/html">
+      <link rel="next" href="shard_chunk_id-operator.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Multiset Operators","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="Set-Operators.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="shard_chunk_id-operator.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-793FCBB0-A97C-4884-BCAC-DD0542EA746B" name="GUID-793FCBB0-A97C-4884-BCAC-DD0542EA746B"></a><a id="SQLRF0032"></a>
+         
+         <h2 id="SQLRF-GUID-793FCBB0-A97C-4884-BCAC-DD0542EA746B" class="sect2">Multiset Operators </h2>
+         <div class="ind">
+            <div>
+               <div class="section">
+                  <p>Multiset operators combine the results of two nested tables into a single nested table.</p>
+                  <p>The examples related to multiset operators require that two nested tables be created and loaded with data as follows:</p>
+                  <p>First, make a copy of the <code class="codeph">oe.customers</code> table called <code class="codeph">customers_demo</code>: 
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE TABLE customers_demo AS
+  SELECT * FROM customers;
+</pre><p>Next, create a table type called <code class="codeph">cust_address_tab_typ</code>. This type will be used when creating the nested table columns.
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE TYPE cust_address_tab_typ AS
+  TABLE OF cust_address_typ;
+/
+</pre><p>Now, create two nested table columns in the <code class="codeph">customers_demo</code> table:
+                  </p><pre class="oac_no_warn" dir="ltr">ALTER TABLE customers_demo
+  ADD (cust_address_ntab cust_address_tab_typ,
+       cust_address2_ntab cust_address_tab_typ)
+    NESTED TABLE cust_address_ntab STORE AS cust_address_ntab_store
+    NESTED TABLE cust_address2_ntab STORE AS cust_address2_ntab_store;
+</pre><p>Finally, load data into the two new nested table columns using data from the <code class="codeph">cust_address</code> column of the <code class="codeph">oe.customers</code> table:
+                  </p><pre class="oac_no_warn" dir="ltr">UPDATE customers_demo cd
+  SET cust_address_ntab = 
+    CAST(MULTISET(SELECT cust_address
+                    FROM customers c
+                    WHERE c.customer_id =
+                          cd.customer_id) as cust_address_tab_typ);
+
+UPDATE customers_demo cd
+  SET cust_address2_ntab = 
+    CAST(MULTISET(SELECT cust_address
+                    FROM customers c
+                    WHERE c.customer_id =
+                          cd.customer_id) as cust_address_tab_typ);</pre></div>
+            </div><a id="SQLRF51167"></a><a id="SQLRF51166"></a><div class="props_rev_3"><a id="GUID-FCDB466F-08D0-4539-AFBB-34D4D2176C44" name="GUID-FCDB466F-08D0-4539-AFBB-34D4D2176C44"></a><h3 id="SQLRF-GUID-FCDB466F-08D0-4539-AFBB-34D4D2176C44" class="sect3">MULTISET EXCEPT </h3>
+               <div>
+                  <div class="section">
+                     <p><code class="codeph">MULTISET</code> <code class="codeph">EXCEPT</code> takes as arguments two nested tables and returns a nested table whose elements are in the first nested table but not in the second nested table. The two input nested tables must be of the same type, and the returned nested table is of the same type as well.
+                     </p>
+                     <div class="figure" id="GUID-FCDB466F-08D0-4539-AFBB-34D4D2176C44__GUID-024D625D-A41D-4094-98B1-3729366A34C1"><img src="img/multiset_except.gif" alt="Description of multiset_except.eps follows" title="Description of multiset_except.eps follows" longdesc="img_text/multiset_except.html"><br><a href="img_text/multiset_except.html">Description of the illustration multiset_except.eps</a></div>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p>The <code class="codeph">ALL</code> keyword instructs Oracle to return all elements in <span class="italic"><code class="codeph">nested_table1</code></span> that are not in <span class="italic"><code class="codeph">nested_table2</code></span>. For example, if a particular element occurs <span class="italic"><code class="codeph">m</code></span> times in <span class="italic"><code class="codeph">nested_table1</code></span> and <span class="italic"><code class="codeph">n</code></span> times in <span class="italic"><code class="codeph">nested_table2</code></span>, then the result will have <span class="italic"><code class="codeph">(m-n)</code></span> occurrences of the element if <span class="italic"><code class="codeph">m &gt;n</code></span> and 0 occurrences if <span class="italic"><code class="codeph">m&lt;=n</code></span>. <code class="codeph">ALL</code> is the default.
+                           </p>
+                        </li>
+                        <li>
+                           <p>The <code class="codeph">DISTINCT</code> keyword instructs Oracle to eliminate any element in <span class="italic"><code class="codeph">nested_table1</code></span> which is also in <span class="italic"><code class="codeph">nested_table2</code></span>, regardless of the number of occurrences.
+                           </p>
+                        </li>
+                        <li>
+                           <p>The element types of the nested tables must be comparable. Refer to <a href="Comparison-Conditions.html#GUID-828576BF-E606-4EA6-B94B-BFF48B67F927">Comparison Conditions</a> for information on the comparability of nonscalar types.
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-FCDB466F-08D0-4539-AFBB-34D4D2176C44__GUID-1A2C851B-0481-4749-9420-70917FD6A2B3">Example</p>
+                  </div>
+                  <div class="section">
+                     <p>The following example compares two nested tables and returns a nested table of those elements found in the first nested table but not in the second nested table:</p><pre class="oac_no_warn" dir="ltr">SELECT customer_id, cust_address_ntab
+  MULTISET EXCEPT DISTINCT cust_address2_ntab multiset_except
+  FROM customers_demo
+  ORDER BY customer_id;
+
+CUSTOMER_ID MULTISET_EXCEPT(STREET_ADDRESS, POSTAL_CODE, CITY, STATE_PROVINCE, COUNTRY_ID)
+----------- --------------------------------------------------------------------------------
+        101 CUST_ADDRESS_TAB_TYP()
+        102 CUST_ADDRESS_TAB_TYP()
+        103 CUST_ADDRESS_TAB_TYP()
+        104 CUST_ADDRESS_TAB_TYP()
+        105 CUST_ADDRESS_TAB_TYP()
+. . .</pre><p>The preceding example requires the table <code class="codeph">customers_demo</code> and two nested table columns containing data. Refer to <a href="Multiset-Operators.html#GUID-793FCBB0-A97C-4884-BCAC-DD0542EA746B">Multiset Operators</a> to create this table and nested table columns.
+                     </p>
+                  </div>
+               </div>
+            </div><a id="SQLRF51169"></a><a id="SQLRF51168"></a><div class="props_rev_3"><a id="GUID-B0C85A24-7E7A-4793-B5C1-F8F0222B45E6" name="GUID-B0C85A24-7E7A-4793-B5C1-F8F0222B45E6"></a><h3 id="SQLRF-GUID-B0C85A24-7E7A-4793-B5C1-F8F0222B45E6" class="sect3">MULTISET INTERSECT </h3>
+               <div>
+                  <div class="section">
+                     <p><code class="codeph">MULTISET</code> <code class="codeph">INTERSECT</code> takes as arguments two nested tables and returns a nested table whose values are common in the two input nested tables. The two input nested tables must be of the same type, and the returned nested table is of the same type as well.
+                     </p>
+                     <div class="figure" id="GUID-B0C85A24-7E7A-4793-B5C1-F8F0222B45E6__GUID-1A74C5A3-CCDB-4FCE-BA85-F464CAB3B06D"><img src="img/multiset_intersect.gif" alt="Description of multiset_intersect.eps follows" title="Description of multiset_intersect.eps follows" longdesc="img_text/multiset_intersect.html"><br><a href="img_text/multiset_intersect.html">Description of the illustration multiset_intersect.eps</a></div>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p>The <code class="codeph">ALL</code> keyword instructs Oracle to return all common occurrences of elements that are in the two input nested tables, including duplicate common values and duplicate common <code class="codeph">NULL</code> occurrences. For example, if a particular value occurs <code class="codeph">m</code> times in <span class="italic"><code class="codeph">nested_table1</code></span> and <code class="codeph">n</code> times in <span class="italic"><code class="codeph">nested_table2</code></span>, then the result would contain the element <code class="codeph">min(m,n)</code> times. <code class="codeph">ALL</code> is the default.
+                           </p>
+                        </li>
+                        <li>
+                           <p>The <code class="codeph">DISTINCT</code> keyword instructs Oracle to eliminate duplicates from the returned nested table, including duplicates of <code class="codeph">NULL</code>, if they exist.
+                           </p>
+                        </li>
+                        <li>
+                           <p>The element types of the nested tables must be comparable. Refer to <a href="Comparison-Conditions.html#GUID-828576BF-E606-4EA6-B94B-BFF48B67F927">Comparison Conditions</a> for information on the comparability of nonscalar types.
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-B0C85A24-7E7A-4793-B5C1-F8F0222B45E6__GUID-B2B0431E-09C0-4AE3-BF47-986B0A7C0F1B">Example</p>
+                  </div>
+                  <div class="section">
+                     <p>The following example compares two nested tables and returns a nested table of those elements found in both input nested tables:</p><pre class="oac_no_warn" dir="ltr">SELECT customer_id, cust_address_ntab
+  MULTISET INTERSECT DISTINCT cust_address2_ntab multiset_intersect
+  FROM customers_demo
+  ORDER BY customer_id;
+
+CUSTOMER_ID MULTISET_INTERSECT(STREET_ADDRESS, POSTAL_CODE, CITY, STATE_PROVINCE, COUNTRY_ID
+----------- -----------------------------------------------------------------------------------
+        101 CUST_ADDRESS_TAB_TYP(CUST_ADDRESS_TYP('514 W Superior St', '46901', 'Kokomo', 'IN', 'US'))
+        102 CUST_ADDRESS_TAB_TYP(CUST_ADDRESS_TYP('2515 Bloyd Ave', '46218', 'Indianapolis', 'IN', 'US'))
+        103 CUST_ADDRESS_TAB_TYP(CUST_ADDRESS_TYP('8768 N State Rd 37', '47404', 'Bloomington', 'IN', 'US'))
+        104 CUST_ADDRESS_TAB_TYP(CUST_ADDRESS_TYP('6445 Bay Harbor Ln', '46254', 'Indianapolis', 'IN', 'US'))
+        105 CUST_ADDRESS_TAB_TYP(CUST_ADDRESS_TYP('4019 W 3Rd St', '47404', 'Bloomington', 'IN', 'US'))
+. . .</pre><p>The preceding example requires the table <code class="codeph">customers_demo</code> and two nested table columns containing data. Refer to <a href="Multiset-Operators.html#GUID-793FCBB0-A97C-4884-BCAC-DD0542EA746B">Multiset Operators</a> to create this table and nested table columns.
+                     </p>
+                  </div>
+               </div>
+            </div><a id="SQLRF51171"></a><a id="SQLRF51170"></a><div class="props_rev_3"><a id="GUID-12124160-B10B-4FE8-A850-4CE01FBD2384" name="GUID-12124160-B10B-4FE8-A850-4CE01FBD2384"></a><h3 id="SQLRF-GUID-12124160-B10B-4FE8-A850-4CE01FBD2384" class="sect3">MULTISET UNION </h3>
+               <div>
+                  <div class="section">
+                     <p><code class="codeph">MULTISET</code> <code class="codeph">UNION</code> takes as arguments two nested tables and returns a nested table whose values are those of the two input nested tables. The two input nested tables must be of the same type, and the returned nested table is of the same type as well.
+                     </p>
+                     <div class="figure" id="GUID-12124160-B10B-4FE8-A850-4CE01FBD2384__GUID-69AE2F37-3AA0-4EE5-B99F-71CF706C6F45"><img src="img/multiset_union.gif" alt="Description of multiset_union.eps follows" title="Description of multiset_union.eps follows" longdesc="img_text/multiset_union.html"><br><a href="img_text/multiset_union.html">Description of the illustration multiset_union.eps</a></div>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p>The <code class="codeph">ALL</code> keyword instructs Oracle to return all elements that are in the two input nested tables, including duplicate values and duplicate <code class="codeph">NULL</code> occurrences. This is the default.
+                           </p>
+                        </li>
+                        <li>
+                           <p>The <code class="codeph">DISTINCT</code> keyword instructs Oracle to eliminate duplicates from the returned nested table, including duplicates of <code class="codeph">NULL</code>, if they exist.
+                           </p>
+                        </li>
+                        <li>
+                           <p>The element types of the nested tables must be comparable. Refer to <a href="Comparison-Conditions.html#GUID-828576BF-E606-4EA6-B94B-BFF48B67F927">Comparison Conditions</a> for information on the comparability of nonscalar types.
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-12124160-B10B-4FE8-A850-4CE01FBD2384__GUID-796114A3-109F-4BD3-9D5E-83BE5C3C4751">Example</p>
+                  </div>
+                  <div class="section">
+                     <p>The following example compares two nested tables and returns a nested table of elements from both input nested tables:</p><pre class="oac_no_warn" dir="ltr">SELECT customer_id, cust_address_ntab
+  MULTISET UNION cust_address2_ntab multiset_union
+  FROM customers_demo
+  ORDER BY customer_id;
+
+CUSTOMER_ID MULTISET_UNION(STREET_ADDRESS, POSTAL_CODE, CITY, STATE_PROVINCE, COUNTRY_ID)
+----------- -------------------------------------------------------------------------------
+        101 CUST_ADDRESS_TAB_TYP(CUST_ADDRESS_TYP('514 W Superior St', '46901', 'Kokomo', 'IN', 'US'),
+                                 CUST_ADDRESS_TYP('514 W Superior St', '46901', 'Kokomo', 'IN', 'US'))
+        102 CUST_ADDRESS_TAB_TYP(CUST_ADDRESS_TYP('2515 Bloyd Ave', '46218', 'Indianapolis', 'IN', 'US'), 
+                                 CUST_ADDRESS_TYP('2515 Bloyd Ave', '46218', 'Indianapolis', 'IN','US'))
+        103 CUST_ADDRESS_TAB_TYP(CUST_ADDRESS_TYP('8768 N State Rd 37', '47404', 'Bloomington', 'IN', 'US'), 
+                                 CUST_ADDRESS_TYP('8768 N State Rd 37', '47404', 'Bloomington', 'IN', 'US'))
+        104 CUST_ADDRESS_TAB_TYP(CUST_ADDRESS_TYP('6445 Bay Harbor Ln', '46254', 'Indianapolis', 'IN', 'US'), 
+                                 CUST_ADDRESS_TYP('6445 Bay Harbor Ln', '46254', 'Indianapolis', 'IN', 'US'))
+        105 CUST_ADDRESS_TAB_TYP(CUST_ADDRESS_TYP('4019 W 3Rd St', '47404', 'Bloomington', 'IN', 'US'), 
+                                 CUST_ADDRESS_TYP('4019 W 3Rd St', '47404', 'Bloomington', 'IN', 'US'))
+. . .</pre><p>The preceding example requires the table <code class="codeph">customers_demo</code> and two nested table columns containing data. Refer to <a href="Multiset-Operators.html#GUID-793FCBB0-A97C-4884-BCAC-DD0542EA746B">Multiset Operators</a> to create this table and nested table columns.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

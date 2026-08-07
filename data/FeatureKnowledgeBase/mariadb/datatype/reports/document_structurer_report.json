@@ -1,0 +1,911 @@
+{
+  "dbms": "mariadb",
+  "feature_type": "datatype",
+  "processed_pages": 111,
+  "skipped_pages": 0,
+  "total_sections": 488,
+  "total_blocks": 2727,
+  "section_sources": {
+    "fallback": 46,
+    "heading_tree": 442
+  },
+  "block_types": {
+    "paragraph": 1513,
+    "heading": 442,
+    "signature": 15,
+    "list": 329,
+    "code": 376,
+    "anchor": 29,
+    "note": 23
+  },
+  "pages": [
+    {
+      "page_id": "mariadb_current_data_types",
+      "sections": 1,
+      "blocks": 12,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_binary",
+      "sections": 7,
+      "blocks": 29,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_setting_character_sets_and_collations",
+      "sections": 18,
+      "blocks": 179,
+      "anchors": 7,
+      "tables": 0,
+      "code_blocks": 42
+    },
+    {
+      "page_id": "mariadb_current_data_type_storage_requirements",
+      "sections": 8,
+      "blocks": 105,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_auto_increment",
+      "sections": 10,
+      "blocks": 52,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_auto_increment_faq",
+      "sections": 14,
+      "blocks": 41,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_null_values",
+      "sections": 11,
+      "blocks": 55,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_row_type_of",
+      "sections": 2,
+      "blocks": 10,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "mariadb_current_serial",
+      "sections": 3,
+      "blocks": 11,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_type_of",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_numeric_data_types",
+      "sections": 2,
+      "blocks": 31,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_date_and_time_data_types",
+      "sections": 1,
+      "blocks": 8,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_string_data_types",
+      "sections": 3,
+      "blocks": 47,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_data_types_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_numeric",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_datetime",
+      "sections": 8,
+      "blocks": 35,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_type_conversion",
+      "sections": 5,
+      "blocks": 39,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_blob_and_text_data_types",
+      "sections": 4,
+      "blocks": 37,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "mariadb_current_blob",
+      "sections": 9,
+      "blocks": 27,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_char",
+      "sections": 8,
+      "blocks": 34,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "mariadb_current_character",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_char_byte",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_char_varying",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_clob",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_enum",
+      "sections": 6,
+      "blocks": 31,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_inet4",
+      "sections": 4,
+      "blocks": 18,
+      "anchors": 4,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_inet6",
+      "sections": 18,
+      "blocks": 129,
+      "anchors": 8,
+      "tables": 0,
+      "code_blocks": 34
+    },
+    {
+      "page_id": "mariadb_current_json",
+      "sections": 6,
+      "blocks": 37,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "mariadb_current_long_and_long_varchar",
+      "sections": 1,
+      "blocks": 5,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_long_char_varying",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_long_character_varying",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_long_varbinary",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_long_varchar",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_long_varcharacter",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_longblob",
+      "sections": 6,
+      "blocks": 21,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_longtext",
+      "sections": 7,
+      "blocks": 24,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_mediumblob",
+      "sections": 6,
+      "blocks": 20,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_mediumtext",
+      "sections": 7,
+      "blocks": 24,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_national_char",
+      "sections": 3,
+      "blocks": 11,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_national_char_varying",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_national_character_varying",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_national_character",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_national_varchar",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_national_varcharacter",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_nchar",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_nchar_varchar",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_nchar_varcharacter",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_nchar_varying",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_raw",
+      "sections": 2,
+      "blocks": 10,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "mariadb_current_row",
+      "sections": 12,
+      "blocks": 75,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "mariadb_current_set_data_type",
+      "sections": 4,
+      "blocks": 16,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "mariadb_current_text",
+      "sections": 10,
+      "blocks": 37,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "mariadb_current_tinyblob",
+      "sections": 6,
+      "blocks": 19,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_tinytext",
+      "sections": 6,
+      "blocks": 19,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_uuid_data_type",
+      "sections": 8,
+      "blocks": 37,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_varbinary",
+      "sections": 8,
+      "blocks": 32,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_varchar",
+      "sections": 14,
+      "blocks": 71,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "mariadb_current_varchar2",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_varcharacter",
+      "sections": 2,
+      "blocks": 8,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_xmltype",
+      "sections": 15,
+      "blocks": 54,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "mariadb_current_character_sets",
+      "sections": 1,
+      "blocks": 7,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_binary_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_character_set_and_collation_overview",
+      "sections": 3,
+      "blocks": 23,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_supported_character_sets_and_collations",
+      "sections": 7,
+      "blocks": 181,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "mariadb_current_unicode",
+      "sections": 1,
+      "blocks": 18,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_internationalization_and_localization",
+      "sections": 1,
+      "blocks": 7,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_setting_character_sets_and_collations_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_bigint",
+      "sections": 8,
+      "blocks": 33,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_boolean",
+      "sections": 4,
+      "blocks": 18,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "mariadb_current_data_type_storage_requirements_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_tinyint",
+      "sections": 8,
+      "blocks": 30,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_smallint",
+      "sections": 9,
+      "blocks": 33,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_mediumint",
+      "sections": 8,
+      "blocks": 30,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_int",
+      "sections": 8,
+      "blocks": 31,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_float",
+      "sections": 6,
+      "blocks": 26,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_double",
+      "sections": 3,
+      "blocks": 22,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "mariadb_current_decimal",
+      "sections": 8,
+      "blocks": 34,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_bit",
+      "sections": 4,
+      "blocks": 14,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_date",
+      "sections": 9,
+      "blocks": 25,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_time",
+      "sections": 5,
+      "blocks": 24,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_timestamp",
+      "sections": 11,
+      "blocks": 59,
+      "anchors": 4,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "mariadb_current_year_data_type",
+      "sections": 5,
+      "blocks": 19,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_auto_increment_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_auto_increment_faq_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_null_values_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_connect_data_types",
+      "sections": 15,
+      "blocks": 232,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_row_type_of_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_serial_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_type_of_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_numeric_data_type_overview",
+      "sections": 6,
+      "blocks": 49,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "mariadb_current_bool",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_dec_numeric_fixed",
+      "sections": 2,
+      "blocks": 7,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "mariadb_current_numeric_data_types_dec",
+      "sections": 2,
+      "blocks": 8,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_double_precision",
+      "sections": 3,
+      "blocks": 11,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_fixed",
+      "sections": 2,
+      "blocks": 8,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_float4",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_float8",
+      "sections": 2,
+      "blocks": 8,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_floating_point_accuracy",
+      "sections": 2,
+      "blocks": 11,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "mariadb_current_int1",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "mariadb_current_int2",
+      "sections": 2,
+      "blocks": 8,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_int3",
+      "sections": 2,
+      "blocks": 8,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_int4",
+      "sections": 2,
+      "blocks": 8,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_int8",
+      "sections": 2,
+      "blocks": 8,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_integer",
+      "sections": 3,
+      "blocks": 10,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_middleint",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_number",
+      "sections": 2,
+      "blocks": 11,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "mariadb_current_real",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_numeric_data_types_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_sql_tsi_year",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "mariadb_current_date_and_time_data_types_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mariadb_current_string_data_types_md",
+      "sections": 1,
+      "blocks": 1,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "dbms": "sqlite",
+  "feature_type": "function",
+  "nodes": {
+    "page": 13,
+    "section": 137,
+    "block": 1760,
+    "feature_candidate": 81
+  },
+  "edges": {
+    "page_contains_section": 137,
+    "section_contains_block": 1760,
+    "section_previous": 124,
+    "section_next": 124,
+    "feature_documented_in_section": 83,
+    "total": 2228
+  },
+  "noise": {
+    "noise_nodes": 33,
+    "noise_sections": 0,
+    "noise_blocks": 33,
+    "eligible_nodes": 1877
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "sqlite.function.abs",
+      "target": "sqlite_current_lang_corefunc_s0004"
+    },
+    {
+      "source": "sqlite.function.acos",
+      "target": "sqlite_current_lang_mathfunc_s0003"
+    },
+    {
+      "source": "sqlite.function.acosh",
+      "target": "sqlite_current_lang_mathfunc_s0003"
+    },
+    {
+      "source": "sqlite.function.asin",
+      "target": "sqlite_current_lang_mathfunc_s0003"
+    },
+    {
+      "source": "sqlite.function.asinh",
+      "target": "sqlite_current_lang_mathfunc_s0003"
+    },
+    {
+      "source": "sqlite.function.atan",
+      "target": "sqlite_current_lang_mathfunc_s0003"
+    },
+    {
+      "source": "sqlite.function.atan2",
+      "target": "sqlite_current_lang_mathfunc_s0003"
+    },
+    {
+      "source": "sqlite.function.atanh",
+      "target": "sqlite_current_lang_mathfunc_s0003"
+    }
+  ],
+  "generated_at": "2026-08-06T19:08:08.037314+08:00"
+}

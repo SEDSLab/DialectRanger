@@ -1,0 +1,261 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="reference">
+      <meta name="DC.Title" content="Aggregate Functions">
+      <meta name="DC.subject" content="aggregate functions, SQL functions">
+      <meta name="keywords" content="aggregate functions, SQL functions">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-62BE676B-AF18-4E63-BD14-25206FEA0848">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Aggregate Functions</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="About-SQL-Functions.html" title="Previous" type="text/html">
+      <link rel="next" href="Analytic-Functions.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Aggregate Functions","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="About-SQL-Functions.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="Analytic-Functions.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-62BE676B-AF18-4E63-BD14-25206FEA0848" name="GUID-62BE676B-AF18-4E63-BD14-25206FEA0848"></a><a id="SQLRF20035"></a>
+         
+         <h2 id="SQLRF-GUID-62BE676B-AF18-4E63-BD14-25206FEA0848" class="sect2">Aggregate Functions </h2>
+         <div class="ind">
+            <div>
+               <div class="section">
+                  <p>Aggregate functions return a single result row based on groups of rows, rather than on single rows. Aggregate functions can appear in select lists and in <code class="codeph">ORDER</code> <code class="codeph">BY</code> and <code class="codeph">HAVING</code> clauses. They are commonly used with the <code class="codeph">GROUP</code> <code class="codeph">BY</code> clause in a <code class="codeph">SELECT</code> statement, where the database divides the rows of a queried table or view into groups. In a query containing a <code class="codeph">GROUP</code> <code class="codeph">BY</code> clause, the elements of the select list can be aggregate functions, <code class="codeph">GROUP</code> <code class="codeph">BY</code> expressions, constants, or expressions involving one of these. Oracle applies the aggregate functions to each group of rows and returns a single result row for each group. 
+                  </p>
+                  <p>If you omit the <code class="codeph">GROUP</code> <code class="codeph">BY</code> clause, then Oracle applies aggregate functions in the select list to all the rows in the queried table or view. You use aggregate functions in the <code class="codeph">HAVING</code> clause to eliminate groups from the output based on the results of the aggregate functions, rather than on the values of the individual rows of the queried table or view. 
+                  </p>
+                  <div class="infoboxnotealso" id="GUID-62BE676B-AF18-4E63-BD14-25206FEA0848__GUID-45245106-601D-4A31-80FA-EC5DBFB816B0">
+                     <p class="notep1">See Also:</p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p><a href="SELECT.html#GUID-CFA006CA-6FF1-4972-821E-6996142A51C6__I2066419">Using the GROUP BY Clause: Examples</a> and the <a href="SELECT.html#GUID-CFA006CA-6FF1-4972-821E-6996142A51C6__I2078943">HAVING Clause</a> for more information on the <code class="codeph">GROUP</code> <code class="codeph">BY</code> clause and <code class="codeph">HAVING</code> clauses in queries and subqueries
+                           </p>
+                        </li>
+                        <li>
+                           <p>Appendix C in <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=NLSPG-GUID-AFCE41ED-775B-4A00-AF38-C436776AE0C5" target="_blank"><span><cite>Oracle AI Database
+                                        Globalization Support Guide</cite></span></a> for the collation determination rules for expressions in the <code class="codeph">ORDER</code> <code class="codeph">BY</code> clause of an aggregate function
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="section">
+                  <p>Many aggregate functions that take a single argument accept the following clauses:</p>
+                  <ul style="list-style-type: disc;" id="GUID-62BE676B-AF18-4E63-BD14-25206FEA0848__UL_PXL_Z4J_NHC">
+                     <li>
+                        <p><code class="codeph">DISTINCT</code> and <code class="codeph">UNIQUE</code>, which are synonymous, cause an aggregate function to consider only distinct values of the argument expression. The syntax diagrams for aggregate functions in this chapter use the keyword <code class="codeph">DISTINCT</code> for simplicity.
+                        </p>
+                     </li>
+                     <li>
+                        <p><code class="codeph">ALL</code> causes an aggregate function to consider all values, including all duplicates. 
+                        </p>
+                     </li>
+                  </ul>
+                  <p>For example, the <code class="codeph">DISTINCT</code> average of 1, 1, 1, and 3 is 2. The <code class="codeph">ALL</code> average is 1.5. If you specify neither, then the default is <code class="codeph">ALL</code>. 
+                  </p>
+               </div>
+               <div class="section">
+                  <p>Some aggregate functions allow the <span class="italic"><code class="codeph">windowing_clause</code></span>, which is part of the syntax of analytic functions. Refer to <span class="italic"><a href="Analytic-Functions.html#GUID-527832F7-63C0-4445-8C16-307FA5084056__I97640">windowing_clause</a></span> for information about this clause. 
+                  </p>
+               </div>
+               <div class="section">
+                  <p>All aggregate functions except <code class="codeph">COUNT</code>(*), <code class="codeph">GROUPING</code>, and <code class="codeph">GROUPING_ID</code> ignore nulls. You can use the <code class="codeph">NVL</code> function in the argument to an aggregate function to substitute a value for a null. <code class="codeph">COUNT</code> and <code class="codeph">REGR_COUNT</code> never return null, but return either a number or zero. For all the remaining aggregate functions, if the data set contains no rows, or contains only rows with nulls as arguments to the aggregate function, then the function returns null. 
+                  </p>
+               </div>
+               <div class="section">
+                  <p><a id="d117550e261" class="indexterm-anchor"></a>The aggregate functions <code class="codeph">MIN</code>, <code class="codeph">MAX</code>, <code class="codeph">SUM</code>, <code class="codeph">AVG</code>, <code class="codeph">COUNT</code>, <code class="codeph">VARIANCE</code>, and <code class="codeph">STDDEV</code>, when followed by the <code class="codeph">KEEP</code> keyword, can be used in conjunction with the <code class="codeph">FIRST</code> or <code class="codeph">LAST</code> function to operate on a set of values from a set of rows that rank as the <code class="codeph">FIRST</code> or <code class="codeph">LAST</code> with respect to a given sorting specification. Refer to <a href="FIRST.html#GUID-85AB9246-0E0A-44A1-A7E6-4E57502E9238">FIRST</a> for more information.
+                  </p>
+               </div>
+               <div class="section">
+                  <p>You can nest aggregate functions. For example, the following example calculates the average of the maximum salaries of all the departments in the sample schema <code class="codeph">hr</code>:
+                  </p><pre class="oac_no_warn" dir="ltr">SELECT AVG(MAX(salary))
+  FROM employees
+  GROUP BY department_id;
+
+AVG(MAX(SALARY))
+----------------
+      10926.3333
+</pre><p>This calculation evaluates the inner aggregate (<code class="codeph">MAX</code>(<code class="codeph">salary</code>)) for each group defined by the <code class="codeph">GROUP</code> <code class="codeph">BY</code> clause (<code class="codeph">department_id</code>), and aggregates the results again.
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-62BE676B-AF18-4E63-BD14-25206FEA0848__GUID-C0C8D687-7D0C-4D96-A5D0-F1BB61FB55C3">FILTER Clause Syntax</p><pre class="oac_no_warn" dir="ltr">aggregate_function ( <span class="italic">aggregate_function_arguments</span> ) [ FILTER ( WHERE <span class="italic">condition</span> )]</pre></div>
+               <div class="section" id="GUID-62BE676B-AF18-4E63-BD14-25206FEA0848__SECTION_NZC_FCQ_5HC">
+                  <p class="subhead1" id="GUID-62BE676B-AF18-4E63-BD14-25206FEA0848__GUID-DFB54847-6CD9-45F2-8552-72AEA547BDC8">FILTER Clause Semantics</p>
+                  <p>Specify the <code class="codeph">FILTER WHERE</code> <span class="italic"><code class="codeph">condition</code></span> clause optionally at the end of an aggregate function to filter the rows of data that are fed into the aggregate function. The <code class="codeph">FILTER WHERE</code> clause works in the same way that a <code class="codeph">WHERE</code> clause filters rows, but it is localized to the specific aggregate function. 
+                  </p>
+                  <p><span class="bold">Rules</span></p>
+                  <p>You can use <code class="codeph">FILTER WHERE</code> before the <code class="codeph">OVER</code> clause when the aggregate function is used as a window function.
+                  </p>
+                  <p>You cannot use <code class="codeph">FILTER WHERE</code> after a non-aggregate function.
+                  </p>
+                  <p><span class="bold"><span class="italic">condition</span></span></p>
+                  <p> <span class="italic"><code class="codeph">condition</code></span> can be any conditions that are currently supported in the <code class="codeph">WHERE</code> clause, except for subqueries, window functions, and outer references. It can refer to any columns in the underlying tables that the aggregation function aggregates for. The condition is applied to the rows filtered by the <code class="codeph">WHERE</code> clause, after which the specific aggregation is performed on the filtered rows by the <code class="codeph">FILTER</code> clause.
+                  </p>
+               </div>
+               <div class="section">
+                  <ul class="simple" style="list-style-type: none;padding-left:0;">
+                     <li><a href="ANY_VALUE.html#GUID-A3C47D5E-B145-40B2-93D2-CA3BA65C2D81">ANY_VALUE</a></li>
+                     <li><a href="APPROX_COUNT.html#GUID-7D07E04A-3F9A-425E-BADE-EDA9C6162E9C">APPROX_COUNT</a></li>
+                     <li><a href="APPROX_COUNT_DISTINCT.html#GUID-50055A05-0187-4481-AFE5-2414F7227713">APPROX_COUNT_DISTINCT</a></li>
+                     <li><a href="APPROX_COUNT_DISTINCT_AGG.html#GUID-EEDA9388-A066-422A-B5C0-639A3076A10B">APPROX_COUNT_DISTINCT_AGG</a></li>
+                     <li><a href="APPROX_COUNT_DISTINCT_DETAIL.html#GUID-8FBD2881-743D-425E-A104-472A720DEF50">APPROX_COUNT_DISTINCT_DETAIL</a></li>
+                     <li><a href="APPROX_MEDIAN.html#GUID-F6A11DF2-121A-4057-9D0B-BF1A221B5622">APPROX_MEDIAN</a></li>
+                     <li><a href="APPROX_PERCENTILE.html#GUID-70D54091-EE2F-4283-A10B-1AB5A1242FE2">APPROX_PERCENTILE</a></li>
+                     <li><a href="APPROX_PERCENTILE_AGG.html#GUID-72A1DAB0-4A3E-42BF-9E20-92273AD62E11">APPROX_PERCENTILE_AGG</a></li>
+                     <li><a href="APPROX_PERCENTILE_DETAIL.html#GUID-F9A0B9B5-671F-43CA-9FA7-69A2DD174F54">APPROX_PERCENTILE_DETAIL</a></li>
+                     <li><a href="APPROX_RANK.html#GUID-4F20978C-3188-4225-863D-0F7A25FD78FD">APPROX_RANK</a></li>
+                     <li><a href="APPROX_SUM.html#GUID-AC2A72A7-24E5-4FB8-B012-BD35CB560D6B">APPROX_SUM</a></li>
+                     <li><a href="AVG.html#GUID-B64BCBF1-DAA0-4D88-9821-2C4D3FDE5E4A">AVG</a></li>
+                     <li><a href="BIT_AND_AGG.html#GUID-82497098-6D77-48D3-89EF-C1041BF8A258">BIT_AND_AGG</a></li>
+                     <li><a href="BIT_OR_AGG.html#GUID-18B0E3CB-1C90-4625-8E36-B422FA4E04A8">BIT_OR_AGG</a></li>
+                     <li><a href="BIT_XOR_AGG.html#GUID-1563FB7E-9CC9-4D03-859E-BE336AF01F1D">BIT_XOR_AGG</a></li>
+                     <li><a href="boolean_and_agg.html#GUID-AF3C1A26-C7A1-4BD2-B15C-86B761D4D8D9">BOOLEAN_AND_AGG</a></li>
+                     <li><a href="boolean_or_agg.html#GUID-C3E187DE-BD26-4440-B0AD-51342FFA4775">BOOLEAN_OR_AGG</a></li>
+                     <li><a href="checksum.html#GUID-3F55C5DF-F23A-4B2F-BC6F-E03B34B78BA8">CHECKSUM</a></li>
+                     <li><a href="COLLECT.html#GUID-A0A74602-2A97-449B-A3EC-847D38D3DA90">COLLECT</a></li>
+                     <li><a href="CORR.html#GUID-E73AF5E2-38A4-436A-955C-5122C079F49C">CORR</a></li>
+                     <li><a href="CORR_A.html#GUID-B2DED35A-2ECE-4DF0-BDA4-28F28B7BCA23">CORR_*</a></li>
+                     <li><a href="COUNT.html#GUID-AEF08B79-024D-4E3A-B362-9715FB011776">COUNT</a></li>
+                     <li><a href="COVAR_POP.html#GUID-D728D05F-D2E3-405C-986F-088B8353553A">COVAR_POP</a></li>
+                     <li><a href="COVAR_SAMP.html#GUID-7850B9E1-83A4-41CB-8F17-DCD2E2A70C95">COVAR_SAMP</a></li>
+                     <li><a href="CUME_DIST.html#GUID-B12C577C-A63C-4D19-8E18-FCCBBFBF8278">CUME_DIST</a></li>
+                     <li><a href="DENSE_RANK.html#GUID-BB66F574-09DF-4594-87A4-ABD83E8DC3FE">DENSE_RANK</a></li>
+                     <li><a href="every.html#GUID-C34D8A50-3050-4F32-941A-8C2512DEC62D">EVERY</a></li>
+                     <li><a href="FIRST.html#GUID-85AB9246-0E0A-44A1-A7E6-4E57502E9238">FIRST</a></li>
+                     <li><a href="GROUP_ID.html#GUID-3A5A9C15-1B67-4FD7-AC41-EE8349B2E834">GROUP_ID</a></li>
+                     <li><a href="GROUPING.html#GUID-82E6084A-0BDF-4587-A40E-36899783F073">GROUPING</a></li>
+                     <li><a href="GROUPING_ID.html#GUID-E20A5B8E-73B6-42FD-8AFB-DD3CD6D6DC61">GROUPING_ID</a></li>
+                     <li><a href="JSON_ARRAYAGG.html#GUID-6D56077D-78DE-4CC0-9498-225DDC42E054">JSON_ARRAYAGG</a></li>
+                     <li><a href="JSON_OBJECTAGG.html#GUID-09422D4A-936C-4D38-9991-C64101283D98">JSON_OBJECTAGG</a></li>
+                     <li><a href="KURTOSIS_POP.html#GUID-F820DFF7-B758-460E-AECC-053915069B9F">KURTOSIS_POP</a></li>
+                     <li><a href="KURTOSIS_SAMP.html#GUID-487DE503-A015-415F-B6CD-F9D095B91178">KURTOSIS_SAMP</a></li>
+                     <li><a href="LAST.html#GUID-4E16BC0E-D3B8-4BA4-8F97-3A08891A85CC">LAST</a></li>
+                     <li><a href="LISTAGG.html#GUID-B6E50D8E-F467-425B-9436-F7F8BF38D466">LISTAGG</a></li>
+                     <li><a href="MAX.html#GUID-E5372020-A6DA-44BF-93BE-DA8C3F74CD01">MAX</a></li>
+                     <li><a href="MEDIAN.html#GUID-DE15705A-AC18-4416-8487-B9E1D70CE01A">MEDIAN</a></li>
+                     <li><a href="MIN.html#GUID-F7F04E18-1AD8-4D15-9491-4622AD847A74">MIN</a></li>
+                     <li><a href="PERCENT_RANK.html#GUID-66A868F5-9EBA-482A-BF8C-09300B9EE165">PERCENT_RANK</a></li>
+                     <li><a href="PERCENTILE_CONT.html#GUID-CA259452-A565-41B3-A4F4-DD74B66CEDE0">PERCENTILE_CONT</a></li>
+                     <li><a href="PERCENTILE_DISC.html#GUID-7C34FDDA-C241-474F-8C5C-50CC0182E005">PERCENTILE_DISC</a></li>
+                     <li><a href="RANK.html#GUID-0950BD34-C994-41DA-A8F9-34B3FE53BBBA">RANK</a></li>
+                     <li><a href="REGR_-Linear-Regression-Functions.html#GUID-A675B68F-2A88-4843-BE2C-FCDE9C65F9A9">REGR_ (Linear Regression) Functions</a></li>
+                     <li><a href="SKEWNESS_POP.html#GUID-DF34158F-B681-4933-BA27-0A3885A9F43C">SKEWNESS_POP</a></li>
+                     <li><a href="SKEWNESS_SAMP.html#GUID-E71D9AEC-0AAA-4A6C-BF70-29EE9AD8F7EC">SKEWNESS_SAMP</a></li>
+                     <li><a href="STATS_BINOMIAL_TEST.html#GUID-3DDCDC0C-0DB2-479F-A6EB-E9FC0063ABF4">STATS_BINOMIAL_TEST</a></li>
+                     <li><a href="STATS_CROSSTAB.html#GUID-AA0958AE-FF56-4970-B880-23426E0B7E6D">STATS_CROSSTAB</a></li>
+                     <li><a href="STATS_F_TEST.html#GUID-9E2A91FC-5BB3-449A-810C-DA6CB52B56ED">STATS_F_TEST</a></li>
+                     <li><a href="STATS_KS_TEST.html#GUID-ADE2ACB3-C852-499F-8892-E4AA101EC80D">STATS_KS_TEST</a></li>
+                     <li><a href="STATS_MODE.html#GUID-10BDACE0-C435-4E3F-BC50-FD1A41C0F508">STATS_MODE</a></li>
+                     <li><a href="STATS_MW_TEST.html#GUID-77AF4F10-D4DC-45A9-94E8-F4F648F81222">STATS_MW_TEST</a></li>
+                     <li><a href="STATS_ONE_WAY_ANOVA.html#GUID-CC614CE5-56CB-4A54-8571-6FEAD2D2E75F">STATS_ONE_WAY_ANOVA</a></li>
+                     <li><a href="STATS_T_TEST_.html#GUID-B570D6F6-E4D7-4033-AC83-7E76F2E9CC2A">STATS_T_TEST_*</a></li>
+                     <li><a href="STATS_WSR_TEST.html#GUID-80A8A9A9-7CD9-4358-B628-6D67BD42BA5B">STATS_WSR_TEST</a></li>
+                     <li><a href="STDDEV.html#GUID-CA0C3B1F-1A4C-4CFB-ADAB-D90216C4E099">STDDEV</a></li>
+                     <li><a href="STDDEV_POP.html#GUID-4F804DE5-7E20-4E08-A1BA-32DBB167B34B">STDDEV_POP</a></li>
+                     <li><a href="STDDEV_SAMP.html#GUID-7B2A708E-E73A-4CFE-978E-3F9C4BD37467">STDDEV_SAMP</a></li>
+                     <li><a href="SUM.html#GUID-5610BE2C-CFE5-446F-A1F7-B924B5663220">SUM</a></li>
+                     <li><a href="SYS_OP_ZONE_ID.html#GUID-947900CE-F4E0-43B5-B30C-4FDDA3913F17">SYS_OP_ZONE_ID</a></li>
+                     <li><a href="SYS_XMLAGG.html#GUID-BEDD241D-360A-46A2-AEBF-C8B70E465D75">SYS_XMLAGG</a></li>
+                     <li><a href="VAR_POP.html#GUID-B62FB4A4-BD1F-47B0-B412-31A98B70C2E4">VAR_POP</a></li>
+                     <li><a href="VAR_SAMP.html#GUID-314D5831-0E26-4ABF-9F46-35F78F97DA52">VAR_SAMP</a></li>
+                     <li><a href="VARIANCE.html#GUID-EC33717A-2509-402D-B3BB-7EECB2E4ED8B">VARIANCE</a></li>
+                     <li><a href="XMLAGG.html#GUID-BCD1D755-5E26-4F73-BA22-521C30D275DA">XMLAGG</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "dbms": "mysql",
+  "feature_type": "function",
+  "mode": "shadow",
+  "backend": "mock",
+  "total_features": 485,
+  "semantic_drafts": 485,
+  "status_counts": {
+    "extracted": 413,
+    "partial": 72,
+    "insufficient_context": 0,
+    "no_context": 0,
+    "skipped": 0,
+    "validation_failed": 0
+  },
+  "description_claims": 1121,
+  "constraints": 815,
+  "example_roles": 564,
+  "invalid_evidence_refs": 0,
+  "merge_into_kb": false,
+  "generated_at": "2026-08-06T18:46:23.158514+08:00"
+}

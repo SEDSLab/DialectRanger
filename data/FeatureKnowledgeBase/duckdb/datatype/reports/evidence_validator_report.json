@@ -1,0 +1,38 @@
+{
+  "dbms": "duckdb",
+  "feature_type": "datatype",
+  "total_drafts": 38,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 37,
+  "invalid_features": 1,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 38,
+    "no_description_claims": 1,
+    "no_valid_syntax": 1,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 0
+  },
+  "sample_clean_features": [],
+  "sample_warning_features": [
+    "duckdb.datatype.bigint",
+    "duckdb.datatype.bit",
+    "duckdb.datatype.bitstring",
+    "duckdb.datatype.blob",
+    "duckdb.datatype.boolean",
+    "duckdb.datatype.char",
+    "duckdb.datatype.character",
+    "duckdb.datatype.date",
+    "duckdb.datatype.double",
+    "duckdb.datatype.enum"
+  ],
+  "sample_invalid_features": [
+    "duckdb.datatype.decimal"
+  ],
+  "generated_at": "2026-08-06T19:05:43.893108+08:00"
+}

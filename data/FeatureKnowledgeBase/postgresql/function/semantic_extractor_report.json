@@ -1,0 +1,22 @@
+{
+  "dbms": "postgresql",
+  "feature_type": "function",
+  "mode": "shadow",
+  "backend": "mock",
+  "total_features": 651,
+  "semantic_drafts": 651,
+  "status_counts": {
+    "extracted": 616,
+    "partial": 35,
+    "insufficient_context": 0,
+    "no_context": 0,
+    "skipped": 0,
+    "validation_failed": 0
+  },
+  "description_claims": 1659,
+  "constraints": 794,
+  "example_roles": 451,
+  "invalid_evidence_refs": 0,
+  "merge_into_kb": false,
+  "generated_at": "2026-08-06T18:49:13.228217+08:00"
+}

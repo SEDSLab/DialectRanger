@@ -1,0 +1,121 @@
+{
+  "dbms": "mysql",
+  "feature_type": "operator",
+  "processed_pages": 12,
+  "skipped_pages": 0,
+  "total_sections": 81,
+  "total_blocks": 2563,
+  "section_sources": {
+    "heading_tree": 12,
+    "anchor_group": 69
+  },
+  "block_types": {
+    "heading": 34,
+    "anchor": 308,
+    "paragraph": 133,
+    "table": 10,
+    "table_row": 206,
+    "code": 1357,
+    "list": 227,
+    "note": 2,
+    "signature": 286
+  },
+  "pages": [
+    {
+      "page_id": "mysql_8_0_non_typed_operators",
+      "sections": 1,
+      "blocks": 52,
+      "anchors": 1,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_operator_precedence",
+      "sections": 1,
+      "blocks": 21,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "mysql_8_0_comparison_operators",
+      "sections": 6,
+      "blocks": 306,
+      "anchors": 69,
+      "tables": 1,
+      "code_blocks": 154
+    },
+    {
+      "page_id": "mysql_8_0_logical_operators",
+      "sections": 1,
+      "blocks": 56,
+      "anchors": 14,
+      "tables": 1,
+      "code_blocks": 27
+    },
+    {
+      "page_id": "mysql_8_0_assignment_operators",
+      "sections": 1,
+      "blocks": 34,
+      "anchors": 10,
+      "tables": 1,
+      "code_blocks": 16
+    },
+    {
+      "page_id": "mysql_8_0_numeric_functions",
+      "sections": 1,
+      "blocks": 42,
+      "anchors": 1,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_arithmetic_functions",
+      "sections": 1,
+      "blocks": 76,
+      "anchors": 24,
+      "tables": 1,
+      "code_blocks": 24
+    },
+    {
+      "page_id": "mysql_8_0_string_functions",
+      "sections": 50,
+      "blocks": 863,
+      "anchors": 109,
+      "tables": 1,
+      "code_blocks": 476
+    },
+    {
+      "page_id": "mysql_8_0_string_comparison_functions",
+      "sections": 2,
+      "blocks": 92,
+      "anchors": 14,
+      "tables": 1,
+      "code_blocks": 61
+    },
+    {
+      "page_id": "mysql_8_0_cast_functions",
+      "sections": 3,
+      "blocks": 550,
+      "anchors": 12,
+      "tables": 1,
+      "code_blocks": 375
+    },
+    {
+      "page_id": "mysql_8_0_bit_functions",
+      "sections": 2,
+      "blocks": 221,
+      "anchors": 26,
+      "tables": 1,
+      "code_blocks": 81
+    },
+    {
+      "page_id": "mysql_8_0_spatial_operator_functions",
+      "sections": 12,
+      "blocks": 250,
+      "anchors": 22,
+      "tables": 0,
+      "code_blocks": 137
+    }
+  ]
+}

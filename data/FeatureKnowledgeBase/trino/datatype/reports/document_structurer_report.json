@@ -1,0 +1,31 @@
+{
+  "dbms": "trino",
+  "feature_type": "datatype",
+  "processed_pages": 1,
+  "skipped_pages": 0,
+  "total_sections": 50,
+  "total_blocks": 281,
+  "section_sources": {
+    "heading_tree": 50
+  },
+  "block_types": {
+    "heading": 50,
+    "paragraph": 105,
+    "list": 26,
+    "code": 27,
+    "definition_term": 35,
+    "definition_description": 35,
+    "note": 1,
+    "signature": 2
+  },
+  "pages": [
+    {
+      "page_id": "trino_current_types",
+      "sections": 50,
+      "blocks": 281,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 27
+    }
+  ]
+}

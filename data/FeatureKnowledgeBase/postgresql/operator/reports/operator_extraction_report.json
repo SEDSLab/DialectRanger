@@ -1,0 +1,20 @@
+{
+  "dbms": "postgresql",
+  "feature_type": "operator",
+  "candidate_features": 212,
+  "candidate_groups": 173,
+  "feature_drafts": 173,
+  "known_operator_coverage": {
+    "total": 50,
+    "covered": 44,
+    "missing": [
+      "##",
+      "&&",
+      "<->",
+      "?-",
+      "@-@",
+      "ILIKE"
+    ],
+    "coverage_ratio": 0.88
+  }
+}

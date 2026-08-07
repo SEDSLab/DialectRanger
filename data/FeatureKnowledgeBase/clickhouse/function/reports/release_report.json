@@ -1,0 +1,31 @@
+{
+  "dbms": "clickhouse",
+  "feature_type": "function",
+  "total_pages": 49,
+  "total_sections": 1471,
+  "total_blocks": 19415,
+  "candidate_features": 5962,
+  "candidate_groups": 1289,
+  "feature_drafts": 1289,
+  "total_drafts": 1289,
+  "clean_validated_features": 20,
+  "validated_with_warnings": 1255,
+  "invalid_features": 14,
+  "total_validated_features": 1275,
+  "total_kb_features": 1275,
+  "total_review_items": 1269,
+  "validation_summary": {
+    "schema_invalid": 14,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 25,
+    "no_description_claims": 1267,
+    "no_valid_syntax": 14,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 7,
+    "alias_like_feature": 22
+  },
+  "generated_at": "2026-08-06T19:47:41.122118+08:00"
+}

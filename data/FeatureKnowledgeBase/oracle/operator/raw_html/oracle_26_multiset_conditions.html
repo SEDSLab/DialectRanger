@@ -1,0 +1,297 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="reference">
+      <meta name="DC.Title" content="Multiset Conditions">
+      <meta name="DC.subject" content="conditions, multiset, multiset conditions, SET conditions, SET, nested tables, testing for a set, IS [NOT] EMPTY conditions, IS [NOT] EMPTY, collections, testing for empty, membership conditions, membership, MEMBER conditions, MEMBER, SUBMULTISET condition, SUBMULTISET, determining hierarchy">
+      <meta name="keywords" content="conditions, multiset, multiset conditions, SET conditions, SET, nested tables, testing for a set, IS [NOT] EMPTY conditions, IS [NOT] EMPTY, collections, testing for empty, membership conditions, membership, MEMBER conditions, MEMBER, SUBMULTISET condition, SUBMULTISET, determining hierarchy">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-E8164A15-715A-40A0-944D-26DF4C84DE3F">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Multiset Conditions</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="Model-Conditions.html" title="Previous" type="text/html">
+      <link rel="next" href="Pattern-matching-Conditions.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Multiset Conditions","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="Model-Conditions.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="Pattern-matching-Conditions.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-E8164A15-715A-40A0-944D-26DF4C84DE3F" name="GUID-E8164A15-715A-40A0-944D-26DF4C84DE3F"></a><a id="SQLRF52128"></a>
+         
+         <h2 id="SQLRF-GUID-E8164A15-715A-40A0-944D-26DF4C84DE3F" class="sect2">Multiset Conditions </h2>
+         <div class="ind">
+            <div>
+               <div class="section">
+                  <p>Multiset conditions test various aspects of nested tables.</p>
+               </div>
+            </div><a id="SQLRF52130"></a><a id="SQLRF52131"></a><a id="SQLRF52129"></a><div class="props_rev_3"><a id="GUID-1F61D1E7-4EA7-4254-8056-CB74ACFF254D" name="GUID-1F61D1E7-4EA7-4254-8056-CB74ACFF254D"></a><h3 id="SQLRF-GUID-1F61D1E7-4EA7-4254-8056-CB74ACFF254D" class="sect3">IS A SET Condition </h3>
+               <div>
+                  <div class="section">
+                     <p>Use <code class="codeph">IS</code> <code class="codeph">A</code> <code class="codeph">SET</code> conditions to test whether a specified nested table is composed of unique elements. The condition returns <code class="codeph">UNKNOWN</code> if the nested table is <code class="codeph">NULL</code>. Otherwise, it returns <code class="codeph">TRUE</code> if the nested table is a set, even if it is a nested table of length zero, and <code class="codeph">FALSE</code> otherwise.
+                     </p>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-1F61D1E7-4EA7-4254-8056-CB74ACFF254D__GUID-570F5DE0-7AC9-48D0-9F83-5158FF024117"><span class="italic">is_a_set_condition</span>::=
+                     </p>
+                  </div>
+                  <div class="section">
+                     <div class="figure" id="GUID-1F61D1E7-4EA7-4254-8056-CB74ACFF254D__GUID-6BBD5CE2-E87F-42A6-9035-93E81218D947"><img src="img/is_a_set_condition.gif" alt="Description of is_a_set_condition.eps follows" title="Description of is_a_set_condition.eps follows" longdesc="img_text/is_a_set_condition.html"><br><a href="img_text/is_a_set_condition.html">Description of the illustration is_a_set_condition.eps</a></div>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-1F61D1E7-4EA7-4254-8056-CB74ACFF254D__GUID-C071DC9F-FF8B-46DD-8C90-735CA7BFF796">Example</p>
+                  </div>
+                  <div class="section">
+                     <p>The following example selects from the table <code class="codeph">customers_demo</code> those rows in which the <code class="codeph">cust_address_ntab</code> nested table column contains unique elements:
+                     </p><pre class="oac_no_warn" dir="ltr">SELECT customer_id, cust_address_ntab
+  FROM customers_demo
+  WHERE cust_address_ntab IS A SET
+  ORDER BY customer_id;
+
+CUSTOMER_ID CUST_ADDRESS_NTAB(STREET_ADDRESS, POSTAL_CODE, CITY, STATE_PROVINCE, COUNTRY_ID)
+----------------------------------------------------------------------------------------------
+        101 CUST_ADDRESS_TAB_TYP(CUST_ADDRESS_TYP('514 W Superior St', '46901', 'Kokomo', 'IN', 'US'))
+        102 CUST_ADDRESS_TAB_TYP(CUST_ADDRESS_TYP('2515 Bloyd Ave', '46218', 'Indianapolis', 'IN', 'US'))
+        103 CUST_ADDRESS_TAB_TYP(CUST_ADDRESS_TYP('8768 N State Rd 37', '47404', 'Bloomington', 'IN', 'US'))
+        104 CUST_ADDRESS_TAB_TYP(CUST_ADDRESS_TYP('6445 Bay Harbor Ln', '46254', 'Indianapolis', 'IN', 'US'))
+        105 CUST_ADDRESS_TAB_TYP(CUST_ADDRESS_TYP('4019 W 3Rd St', '47404', 'Bloomington', 'IN', 'US'))
+</pre><p>The preceding example requires the table <code class="codeph">customers_demo</code> and a nested table column containing data. Refer to <span class="q">"<a href="Multiset-Operators.html#GUID-793FCBB0-A97C-4884-BCAC-DD0542EA746B">Multiset Operators</a>"</span> to create this table and nested table column.
+                     </p>
+                  </div>
+               </div>
+            </div><a id="SQLRF52133"></a><a id="SQLRF52134"></a><a id="SQLRF52132"></a><div class="props_rev_3"><a id="GUID-EED3C932-8A77-4841-BCC0-CD524F1E65A1" name="GUID-EED3C932-8A77-4841-BCC0-CD524F1E65A1"></a><h3 id="SQLRF-GUID-EED3C932-8A77-4841-BCC0-CD524F1E65A1" class="sect3">IS EMPTY Condition </h3>
+               <div>
+                  <div class="section">
+                     <p>Use the <code class="codeph">IS</code> <code class="codeph">[NOT]</code> <code class="codeph">EMPTY</code> conditions to test whether a specified nested table is empty. A nested table that consists of a single value, a <code class="codeph">NULL</code>, is not considered an empty nested table. 
+                     </p>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-EED3C932-8A77-4841-BCC0-CD524F1E65A1__GUID-ABC46378-E66D-4BCD-96DC-EC3F543AD4C7"><span class="italic">is_empty_condition</span>::=
+                     </p>
+                  </div>
+                  <div class="section">
+                     <div class="figure" id="GUID-EED3C932-8A77-4841-BCC0-CD524F1E65A1__GUID-03559C18-0709-4FE6-BC69-283BF3F285B8"><img src="img/is_empty_condition.gif" alt="Description of is_empty_condition.eps follows" title="Description of is_empty_condition.eps follows" longdesc="img_text/is_empty_condition.html"><br><a href="img_text/is_empty_condition.html">Description of the illustration is_empty_condition.eps</a></div>
+                     <p>The condition returns a Boolean value: <code class="codeph">TRUE</code> for an <code class="codeph">IS</code> <code class="codeph">EMPTY</code> condition if the collection is empty, and <code class="codeph">TRUE</code> for an <code class="codeph">IS</code> <code class="codeph">NOT</code> <code class="codeph">EMPTY</code> condition if the collection is not empty. If you specify <code class="codeph">NULL</code> for the nested table or varray, then the result is <code class="codeph">NULL</code>. 
+                     </p>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-EED3C932-8A77-4841-BCC0-CD524F1E65A1__GUID-E907159C-DEDD-4F63-A8CC-CA1971C730E8">Example</p>
+                  </div>
+                  <div class="section">
+                     <p>The following example selects from the sample table <code class="codeph">pm.print_media</code> those rows in which the <code class="codeph">ad_textdocs_ntab</code> nested table column is not empty:
+                     </p><pre class="oac_no_warn" dir="ltr">SELECT product_id, TO_CHAR(ad_finaltext) AS text
+   FROM print_media
+   WHERE ad_textdocs_ntab IS NOT EMPTY 
+   ORDER BY product_id, text;</pre></div>
+               </div>
+            </div><a id="SQLRF52136"></a><a id="SQLRF52137"></a><a id="SQLRF52135"></a><div class="props_rev_3"><a id="GUID-228D6708-37E1-4C54-8715-7EC2CF5B5998" name="GUID-228D6708-37E1-4C54-8715-7EC2CF5B5998"></a><h3 id="SQLRF-GUID-228D6708-37E1-4C54-8715-7EC2CF5B5998" class="sect3">MEMBER Condition </h3>
+               <div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-228D6708-37E1-4C54-8715-7EC2CF5B5998__GUID-33E40845-A511-4DEE-A4AD-8B153C118B72"><span class="italic">member_condition</span>::=
+                     </p>
+                  </div>
+                  <div class="section">
+                     <div class="figure" id="GUID-228D6708-37E1-4C54-8715-7EC2CF5B5998__GUID-6791734F-0BB3-4F40-88EB-499898AEDB85"><img src="img/member_condition.gif" alt="Description of member_condition.eps follows" title="Description of member_condition.eps follows" longdesc="img_text/member_condition.html"><br><a href="img_text/member_condition.html">Description of the illustration member_condition.eps</a></div>
+                     <p>A <span class="italic"><code class="codeph">member_condition</code></span> is a membership condition that tests whether an element is a member of a nested table. The return value is <code class="codeph">TRUE</code> if <span class="italic"><code class="codeph">expr</code></span> is equal to a member of the specified nested table or varray. The return value is <code class="codeph">NULL</code> if <span class="italic"><code class="codeph">expr</code></span> is null or if the nested table is empty.
+                     </p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p><span class="italic"><code class="codeph">expr</code></span> must be of the same type as the element type of the nested table.
+                           </p>
+                        </li>
+                        <li>
+                           <p>The <code class="codeph">OF</code> keyword is optional and does not change the behavior of the condition.
+                           </p>
+                        </li>
+                        <li>
+                           <p>The <code class="codeph">NOT</code> keyword reverses the Boolean output: Oracle returns <code class="codeph">FALSE</code> if <span class="italic"><code class="codeph">expr</code></span> is a member of the specified nested table.
+                           </p>
+                        </li>
+                        <li>
+                           <p>The element types of the nested table must be comparable. Refer to <a href="Comparison-Conditions.html#GUID-828576BF-E606-4EA6-B94B-BFF48B67F927">Comparison Conditions</a> for information on the comparability of nonscalar types.
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-228D6708-37E1-4C54-8715-7EC2CF5B5998__GUID-E01C1AA2-2075-48B5-8566-36A79954343E">Example</p>
+                  </div>
+                  <div class="section">
+                     <p>The following example selects from the table <code class="codeph">customers_demo</code> those rows in which the <code class="codeph">cust_address_ntab</code> nested table column contains the values specified in the <code class="codeph">WHERE</code> clause: 
+                     </p><pre class="oac_no_warn" dir="ltr">SELECT customer_id, cust_address_ntab
+  FROM customers_demo
+  WHERE cust_address_typ('8768 N State Rd 37', 47404, 
+                         'Bloomington', 'IN', 'US')
+  MEMBER OF cust_address_ntab
+  ORDER BY customer_id;
+
+CUSTOMER_ID CUST_ADDRESS_NTAB(STREET_ADDRESS, POSTAL_CODE, CITY, STATE_PROVINCE, COUNTRY_ID)
+------------ ---------------------------------------------------------------------------------
+        103 CUST_ADDRESS_TAB_TYP(CUST_ADDRESS_TYP('8768 N State Rd 37', '47404', 'Bloomington', 'IN', 'US'))
+</pre><p>The preceding example requires the table <code class="codeph">customers_demo</code> and a nested table column containing data. Refer to <a href="Multiset-Operators.html#GUID-793FCBB0-A97C-4884-BCAC-DD0542EA746B">Multiset Operators</a> to create this table and nested table column.
+                     </p>
+                  </div>
+               </div>
+            </div><a id="SQLRF52139"></a><a id="SQLRF52140"></a><a id="SQLRF52138"></a><div class="props_rev_3"><a id="GUID-6EC9172B-DF92-469B-B8BD-E7FFFCEFB37B" name="GUID-6EC9172B-DF92-469B-B8BD-E7FFFCEFB37B"></a><h3 id="SQLRF-GUID-6EC9172B-DF92-469B-B8BD-E7FFFCEFB37B" class="sect3">SUBMULTISET Condition </h3>
+               <div>
+                  <div class="section">
+                     <p>The <code class="codeph">SUBMULTISET</code> condition tests whether a specified nested table is a submultiset of another specified nested table.
+                     </p>
+                     <p>The operator returns a Boolean value. <code class="codeph">TRUE</code> is returned when <span class="italic"><code class="codeph">nested_table1</code></span> is a submultiset of <span class="italic"><code class="codeph">nested_table2</code></span>. <span class="italic"><code class="codeph">nested_table1</code></span> is a submultiset of <span class="italic"><code class="codeph">nested_table2</code></span> when one of the following conditions occur:
+                     </p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p><span class="italic"><code class="codeph">nested_table1</code></span> is not null and contains no rows. <code class="codeph">TRUE</code> is returned even if <span class="italic"><code class="codeph">nested_table2</code></span> is null since an empty multiset is a submultiset of any non-null replacement for <span class="italic"><code class="codeph">nested_table2</code></span>.
+                           </p>
+                        </li>
+                        <li>
+                           <p><span class="italic"><code class="codeph">nested_table1</code></span> and <span class="italic"><code class="codeph">nested_table2</code></span> are not null, <span class="italic"><code class="codeph">nested_table1</code></span> does not contain a null element, and there is a one-to-one mapping of each element in <span class="italic"><code class="codeph">nested_table1</code></span> to an equal element in <span class="italic"><code class="codeph">nested_table2</code></span>.
+                           </p>
+                        </li>
+                     </ul>
+                     <p><code class="codeph">NULL</code> is returned when one of the following conditions occurs:
+                     </p>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p><span class="italic"><code class="codeph">nested_table1</code></span> is null.
+                           </p>
+                        </li>
+                        <li>
+                           <p><span class="italic"><code class="codeph">nested_table2</code></span> is null, and <span class="italic"><code class="codeph">nested_table1</code></span> is not null and not empty.
+                           </p>
+                        </li>
+                        <li>
+                           <p><span class="italic"><code class="codeph">nested_table1</code></span> is a submultiset of <span class="italic"><code class="codeph">nested_table2</code></span> after modifying each null element of <span class="italic"><code class="codeph">nested_table1</code></span> and <span class="italic"><code class="codeph">nested_table2</code></span> to some non-null value, enabling a one-to-one mapping of each element in <span class="italic"><code class="codeph">nested_table1</code></span> to an equal element in <span class="italic"><code class="codeph">nested_table2</code></span>.
+                           </p>
+                        </li>
+                     </ul>
+                     <p>If none of the above conditions occur, then <code class="codeph">FALSE</code> is returned.
+                     </p>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-6EC9172B-DF92-469B-B8BD-E7FFFCEFB37B__GUID-3B9CEA7A-B3A8-4344-8BA7-BDCD79A39472"><span class="italic">submultiset_condition</span>::=
+                     </p>
+                  </div>
+                  <div class="section">
+                     <div class="figure" id="GUID-6EC9172B-DF92-469B-B8BD-E7FFFCEFB37B__GUID-A6EC7A37-A48C-4629-B216-C79FF2F48A76"><img src="img/submultiset_condition.gif" alt="Description of submultiset_condition.eps follows" title="Description of submultiset_condition.eps follows" longdesc="img_text/submultiset_condition.html"><br><a href="img_text/submultiset_condition.html">Description of the illustration submultiset_condition.eps</a></div>
+                     <ul style="list-style-type: disc;">
+                        <li>
+                           <p>The <code class="codeph">OF</code> keyword is optional and does not change the behavior of the operator.
+                           </p>
+                        </li>
+                        <li>
+                           <p>The <code class="codeph">NOT</code> keyword reverses the Boolean output: Oracle returns <code class="codeph">FALSE</code> if <span class="italic"><code class="codeph">nested_table1</code></span> is a subset of <span class="italic"><code class="codeph">nested_table2</code></span>.
+                           </p>
+                        </li>
+                        <li>
+                           <p>The element types of the nested table must be comparable. Refer to <a href="Comparison-Conditions.html#GUID-828576BF-E606-4EA6-B94B-BFF48B67F927">Comparison Conditions</a> for information on the comparability of nonscalar types.
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-6EC9172B-DF92-469B-B8BD-E7FFFCEFB37B__GUID-4F2B3CE5-1E87-48CA-B220-DCD69E056807">Example</p>
+                  </div>
+                  <div class="section">
+                     <p>The following example selects from the <code class="codeph">customers_demo</code> table those rows in which the <code class="codeph">cust_address_ntab</code> nested table is a submultiset of the <code class="codeph">cust_address2_ntab</code> nested table:
+                     </p><pre class="oac_no_warn" dir="ltr">SELECT customer_id, cust_address_ntab
+  FROM customers_demo
+  WHERE cust_address_ntab SUBMULTISET OF cust_address2_ntab
+  ORDER BY customer_id;
+</pre><p>The preceding example requires the table <code class="codeph">customers_demo</code> and two nested table columns containing data. Refer to <a href="Multiset-Operators.html#GUID-793FCBB0-A97C-4884-BCAC-DD0542EA746B">Multiset Operators</a> to create this table and nested table columns.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

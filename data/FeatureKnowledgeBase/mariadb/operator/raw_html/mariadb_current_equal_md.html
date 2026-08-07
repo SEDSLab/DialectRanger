@@ -1,0 +1,93 @@
+> For the complete documentation index, see [llms.txt](https://mariadb.com/docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/equal.md).
+
+# =
+
+## Syntax
+
+```bnf
+left_expr = right_expr
+```
+
+## Description
+
+Equal operator. Evaluates both SQL expressions and returns `1` if they are equal, `0` if they are not equal, or [NULL](/docs/server/reference/data-types/null-values.md) if either expression is `NULL`. If the expressions return different data types (for example, a number and a string), a type conversion is performed.
+
+When used in row comparisons these two queries are synonymous and return the same results:
+
+```sql
+SELECT (t1.a, t1.b) = (t2.x, t2.y) FROM t1 INNER JOIN t2;
+
+SELECT (t1.a = t2.x) AND (t1.b = t2.y) FROM t1 INNER JOIN t2;
+```
+
+To perform a `NULL`-safe comparison, use the [<=>](/docs/server/reference/sql-structure/operators/comparison-operators/null-safe-equal.md) operator.
+
+`=` can also be used as an [assignment operator](/docs/server/reference/sql-structure/operators/assignment-operators/assignment-operators-assignment-operator.md).
+
+## Examples
+
+```sql
+SELECT 1 = 0;
++-------+
+| 1 = 0 |
++-------+
+|     0 |
++-------+
+
+SELECT '0' = 0;
++---------+
+| '0' = 0 |
++---------+
+|       1 |
++---------+
+
+SELECT '0.0' = 0;
++-----------+
+| '0.0' = 0 |
++-----------+
+|         1 |
++-----------+
+
+SELECT '0.01' = 0;
++------------+
+| '0.01' = 0 |
++------------+
+|          0 |
++------------+
+
+SELECT '.01' = 0.01;
++--------------+
+| '.01' = 0.01 |
++--------------+
+|            1 |
++--------------+
+
+SELECT (5 * 2) = CONCAT('1', '0');
++----------------------------+
+| (5 * 2) = CONCAT('1', '0') |
++----------------------------+
+|                          1 |
++----------------------------+
+
+SELECT 1 = NULL;
++----------+
+| 1 = NULL |
++----------+
+|     NULL |
++----------+
+
+SELECT NULL = NULL;
++-------------+
+| NULL = NULL |
++-------------+
+|        NULL |
++-------------+
+```
+
+## See Also
+
+* [Operator Precedence](/docs/server/reference/sql-structure/operators/operator-precedence.md)
+
+<sub>*This page is licensed: GPLv2, originally from*</sub> [<sub>*fill\_help\_tables.sql*</sub>](https://github.com/MariaDB/server/blob/main/scripts/fill_help_tables.sql)
+
+{% @marketo/form formId="4316" %}

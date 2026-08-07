@@ -1,0 +1,31 @@
+{
+  "dbms": "mysql",
+  "feature_type": "function",
+  "total_candidates": 3361,
+  "total_groups": 485,
+  "total_drafts": 485,
+  "signature_backfill_enabled": true,
+  "metadata_backfill_enabled": true,
+  "features_backfilled": 353,
+  "formal_signatures_added": 0,
+  "weak_signatures_added": 791,
+  "examples_backfilled": 23,
+  "description_claims_backfilled": 483,
+  "generated_at": "2026-08-06T18:46:22.164073+08:00",
+  "graph_backfill_enabled": true,
+  "graph_backfilled_features": 0,
+  "graph_description_backfilled": 0,
+  "graph_examples_backfilled": 0,
+  "graph_backfill_skipped": 485,
+  "graph_backfill_skip_reasons": {
+    "no_alias_evidence": 6,
+    "no_target_description": 0,
+    "no_target_example": 0,
+    "not_alias_candidate": 479,
+    "noise_target": 0
+  },
+  "sample_graph_backfilled_features": [],
+  "graph_backfill_description_deduplicated": 0,
+  "graph_backfill_syntax_like_examples_dropped": 0,
+  "source_sections_repaired_from_evidence": 0
+}

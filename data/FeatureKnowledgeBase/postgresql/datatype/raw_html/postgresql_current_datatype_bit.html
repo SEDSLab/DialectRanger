@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>PostgreSQL: Documentation: 18: 8.10. Bit String Types</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8" />
+   
+  <meta name="theme-color" content="#336791"/>
+  <meta name="copyright" content="The PostgreSQL Global Development Group" />
+  <meta property="og:url" content="https://www.postgresql.org/docs/18/datatype-bit.html" />
+  <meta property="og:type" content="article" />
+
+  <meta property="article:published_time" content="2026-05-14T13:09:46" />
+  <meta property="og:image" content="https://www.postgresql.org/media/img/about/press/elephant.png" />
+  <meta property="og:title" content="8.10. Bit String Types" />
+  <meta property="og:description" content="8.10.&amp;nbsp;Bit String Types # Bit strings are strings of 1&#x27;s and 0&#x27;s. They can be used to store or visualize …" />
+  <meta property="og:site_name" content="PostgreSQL Documentation" />
+  <link href="/media/css/fontawesome.css?73aab745" rel="stylesheet">
+  <link rel="stylesheet" href="/media/css/bootstrap-4.4.1.min.css">
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  <link rel="stylesheet" type="text/css" href="/dyncss/base.css?73aab745">
+
+  <script src="/media/js/theme.js?73aab745"></script>
+
+  
+
+
+  <link rel="canonical" href="https://www.postgresql.org/docs/current/datatype-bit.html" />
+
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-md-center">
+        <div class="col">
+          <!-- Header -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand p-0" href="/">
+              <img class="logo" src="/media/img/about/press/elephant.png" alt="PostgreSQL Elephant Logo">
+            </a>
+            <input type="checkbox" id="navbar-toggler" aria-controls="pgNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <label for="navbar-toggler" id="navbar-toggler-label" class="navbar-toggler" tabindex="0"><span class="navbar-toggler-icon"></span></label>
+            <div class="navbar-collapse" id="pgNavbar">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item p-2"><a href="/" title="Home">Home</a></li>
+                <li class="nav-item p-2"><a href="/about/" title="About">About</a></li>
+                <li class="nav-item p-2"><a href="/download/" title="Download">Download</a></li>
+                <li class="nav-item p-2"><a href="/docs/" title="Documentation">Documentation</a></li>
+                <li class="nav-item p-2"><a href="/community/" title="Community">Community</a></li>
+                <li class="nav-item p-2"><a href="/developer/" title="Developers">Developers</a></li>
+                <li class="nav-item p-2"><a href="/support/" title="Support">Support</a></li>
+                <li class="nav-item p-2"><a href="/about/donate/" title="Donate">Donate</a></li>
+                <li class="nav-item p-2"><a href="/account/" title="Your account">Your account</a></li>
+              </ul>
+              <form role="search" method="get" action="/search/">
+                <div class="input-group">
+                  <input id="q" name="q" type="text" size="20" maxlength="255" accesskey="s"  class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+              <form id="form-theme" class="form-inline d-none">
+                <button id="btn-theme" class="btn btn-default ml-1" type="button"></button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row justify-content-center pg-shout-box">
+        <div class="col text-white text-center">July 16, 2026: <a href="/about/news/postgresql-19-beta-2-released-3350/">PostgreSQL 19 Beta 2 Released!</a>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="container-fluid margin">
+      <div class="row">
+        <div id="pgContentWrap" class="col-11">
+          <div class="row">
+            <div class="col-md-6 mb-2">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <a href="/docs/" title="Documentation">Documentation</a> &rarr; <a href="/docs/18/index.html">PostgreSQL 18</a>
+                  </div>
+                </div>
+              </div>
+              
+                <div class="row">
+                  <div class="col">
+                    Supported Versions:
+                      
+                        
+                        
+                          <a href="/docs/current/datatype-bit.html" title="PostgreSQL 18 - 8.10. Bit String Types" class="docs-version-selected">Current</a>
+                          (<a href="/docs/18/datatype-bit.html" title="PostgreSQL 18 - 8.10. Bit String Types" class="docs-version-selected">18</a>)
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/17/datatype-bit.html" title="PostgreSQL 17 - 8.10. Bit String Types" >17</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/16/datatype-bit.html" title="PostgreSQL 16 - 8.10. Bit String Types" >16</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/15/datatype-bit.html" title="PostgreSQL 15 - 8.10. Bit String Types" >15</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/14/datatype-bit.html" title="PostgreSQL 14 - 8.10. Bit String Types" >14</a>
+                        
+                      
+                  </div>
+                </div>
+              
+              
+                <div class="row">
+                  <div class="col">
+                    Development Versions:
+                    
+                      
+                      <a href="/docs/19/datatype-bit.html" title="PostgreSQL 19 - 8.10. Bit String Types"  rel="nofollow">19</a>
+                    
+                       / 
+                      <a href="/docs/devel/datatype-bit.html" title="PostgreSQL devel - 8.10. Bit String Types"  rel="nofollow">devel</a>
+                    
+                  </div>
+                </div>
+              
+              
+                <div class="row">
+                  <div class="col-12">
+                    Unsupported versions:
+                    
+                      
+                      <a href="/docs/13/datatype-bit.html" title="PostgreSQL 13 - 8.10. Bit String Types"  rel="nofollow">13</a>
+                    
+                       / 
+                      <a href="/docs/12/datatype-bit.html" title="PostgreSQL 12 - 8.10. Bit String Types"  rel="nofollow">12</a>
+                    
+                       / 
+                      <a href="/docs/11/datatype-bit.html" title="PostgreSQL 11 - 8.10. Bit String Types"  rel="nofollow">11</a>
+                    
+                       / 
+                      <a href="/docs/10/datatype-bit.html" title="PostgreSQL 10 - 8.10. Bit String Types"  rel="nofollow">10</a>
+                    
+                       / 
+                      <a href="/docs/9.6/datatype-bit.html" title="PostgreSQL 9.6 - 8.10. Bit String Types"  rel="nofollow">9.6</a>
+                    
+                       / 
+                      <a href="/docs/9.5/datatype-bit.html" title="PostgreSQL 9.5 - 8.10. Bit String Types"  rel="nofollow">9.5</a>
+                    
+                       / 
+                      <a href="/docs/9.4/datatype-bit.html" title="PostgreSQL 9.4 - 8.10. Bit String Types"  rel="nofollow">9.4</a>
+                    
+                       / 
+                      <a href="/docs/9.3/datatype-bit.html" title="PostgreSQL 9.3 - 8.10. Bit String Types"  rel="nofollow">9.3</a>
+                    
+                       / 
+                      <a href="/docs/9.2/datatype-bit.html" title="PostgreSQL 9.2 - 8.10. Bit String Types"  rel="nofollow">9.2</a>
+                    
+                       / 
+                      <a href="/docs/9.1/datatype-bit.html" title="PostgreSQL 9.1 - 8.10. Bit String Types"  rel="nofollow">9.1</a>
+                    
+                       / 
+                      <a href="/docs/9.0/datatype-bit.html" title="PostgreSQL 9.0 - 8.10. Bit String Types"  rel="nofollow">9.0</a>
+                    
+                       / 
+                      <a href="/docs/8.4/datatype-bit.html" title="PostgreSQL 8.4 - 8.10. Bit String Types"  rel="nofollow">8.4</a>
+                    
+                       / 
+                      <a href="/docs/8.3/datatype-bit.html" title="PostgreSQL 8.3 - 8.10. Bit String Types"  rel="nofollow">8.3</a>
+                    
+                       / 
+                      <a href="/docs/8.2/datatype-bit.html" title="PostgreSQL 8.2 - 8.10. Bit String Types"  rel="nofollow">8.2</a>
+                    
+                       / 
+                      <a href="/docs/8.1/datatype-bit.html" title="PostgreSQL 8.1 - 8.10. Bit String Types"  rel="nofollow">8.1</a>
+                    
+                       / 
+                      <a href="/docs/8.0/datatype-bit.html" title="PostgreSQL 8.0 - 8.10. Bit String Types"  rel="nofollow">8.0</a>
+                    
+                       / 
+                      <a href="/docs/7.4/datatype-bit.html" title="PostgreSQL 7.4 - 8.10. Bit String Types"  rel="nofollow">7.4</a>
+                    
+                       / 
+                      <a href="/docs/7.3/datatype-bit.html" title="PostgreSQL 7.3 - 8.10. Bit String Types"  rel="nofollow">7.3</a>
+                    
+                       / 
+                      <a href="/docs/7.2/datatype-bit.html" title="PostgreSQL 7.2 - 8.10. Bit String Types"  rel="nofollow">7.2</a>
+                    
+                       / 
+                      <a href="/docs/7.1/datatype-bit.html" title="PostgreSQL 7.1 - 8.10. Bit String Types"  rel="nofollow">7.1</a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+            <div class="col-md-6 col-lg-5 offset-lg-1">
+              <form id="docSearchForm" role="search" method="get" action="/search/">
+                <input type="hidden" name="u" value="/docs/18/" />
+                <div class="input-group">
+                  <input type="text" id="q" name="q" class="form-control" placeholder="Search the documentation for..."/>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+            </div>
+          </div>
+
+          <div id="docContent">
+            <div class="navheader">
+  <table width="100%" summary="Navigation header">
+    <tr>
+      <th colspan="5" align="center">8.10.&nbsp;Bit String Types</th>
+    </tr>
+    <tr>
+      <td width="10%" align="left"><a accesskey="p" href="datatype-net-types.html" title="8.9.&nbsp;Network Address Types">Prev</a>&nbsp;</td>
+      <td width="10%" align="left"><a accesskey="u" href="datatype.html" title="Chapter&nbsp;8.&nbsp;Data Types">Up</a></td>
+      <th width="60%" align="center">Chapter&nbsp;8.&nbsp;Data Types</th>
+      <td width="10%" align="right"><a accesskey="h" href="index.html" title="PostgreSQL 18.4 Documentation">Home</a></td>
+      <td width="10%" align="right">&nbsp;<a accesskey="n" href="datatype-textsearch.html" title="8.11.&nbsp;Text Search Types">Next</a></td>
+    </tr>
+  </table>
+  <hr />
+</div>
+<div class="sect1" id="DATATYPE-BIT">
+  <div class="titlepage">
+    <div>
+      <div>
+        <h2 class="title" style="clear: both">8.10.&nbsp;Bit String Types <a href="#DATATYPE-BIT" class="id_link">#</a></h2>
+      </div>
+    </div>
+  </div><a id="id-1.5.7.18.2" class="indexterm" name="id-1.5.7.18.2"></a>
+  <p>Bit strings are strings of 1's and 0's. They can be used to store or visualize bit masks. There are two SQL bit types: <code class="type">bit(<em class="replaceable"><code>n</code></em>)</code> and <code class="type">bit varying(<em class="replaceable"><code>n</code></em>)</code>, where <em class="replaceable"><code>n</code></em> is a positive integer.</p>
+  <p><code class="type">bit</code> type data must match the length <em class="replaceable"><code>n</code></em> exactly; it is an error to attempt to store shorter or longer bit strings. <code class="type">bit varying</code> data is of variable length up to the maximum length <em class="replaceable"><code>n</code></em>; longer strings will be rejected. Writing <code class="type">bit</code> without a length is equivalent to <code class="literal">bit(1)</code>, while <code class="type">bit varying</code> without a length specification means unlimited length.</p>
+  <div class="note">
+    <h3 class="title">Note</h3>
+    <p>If one explicitly casts a bit-string value to <code class="type">bit(<em class="replaceable"><code>n</code></em>)</code>, it will be truncated or zero-padded on the right to be exactly <em class="replaceable"><code>n</code></em> bits, without raising an error. Similarly, if one explicitly casts a bit-string value to <code class="type">bit varying(<em class="replaceable"><code>n</code></em>)</code>, it will be truncated on the right if it is more than <em class="replaceable"><code>n</code></em> bits.</p>
+  </div>
+  <p>Refer to <a class="xref" href="sql-syntax-lexical.html#SQL-SYNTAX-BIT-STRINGS" title="4.1.2.5.&nbsp;Bit-String Constants">Section&nbsp;4.1.2.5</a> for information about the syntax of bit string constants. Bit-logical operators and string manipulation functions are available; see <a class="xref" href="functions-bitstring.html" title="9.6.&nbsp;Bit String Functions and Operators">Section&nbsp;9.6</a>.</p>
+  <div class="example" id="id-1.5.7.18.7">
+    <p class="title"><strong>Example&nbsp;8.3.&nbsp;Using the Bit String Types</strong></p>
+    <div class="example-contents">
+      <pre class="programlisting">
+CREATE TABLE test (a BIT(3), b BIT VARYING(5));
+INSERT INTO test VALUES (B'101', B'00');
+INSERT INTO test VALUES (B'10', B'101');
+<code class="computeroutput">
+ERROR:  bit string length 2 does not match type bit(3)
+</code>
+INSERT INTO test VALUES (B'10'::bit(3), B'101');
+SELECT * FROM test;
+<code class="computeroutput">
+  a  |  b
+-----+-----
+ 101 | 00
+ 100 | 101
+</code>
+</pre>
+    </div>
+  </div><br class="example-break" />
+  <p>A bit string value requires 1 byte for each group of 8 bits, plus 5 or 8 bytes overhead depending on the length of the string (but long values may be compressed or moved out-of-line, as explained in <a class="xref" href="datatype-character.html" title="8.3.&nbsp;Character Types">Section&nbsp;8.3</a> for character strings).</p>
+</div>
+<div class="navfooter">
+  <hr />
+  <table width="100%" summary="Navigation footer">
+    <tr>
+      <td width="40%" align="left"><a accesskey="p" href="datatype-net-types.html" title="8.9.&nbsp;Network Address Types">Prev</a>&nbsp;</td>
+      <td width="20%" align="center"><a accesskey="u" href="datatype.html" title="Chapter&nbsp;8.&nbsp;Data Types">Up</a></td>
+      <td width="40%" align="right">&nbsp;<a accesskey="n" href="datatype-textsearch.html" title="8.11.&nbsp;Text Search Types">Next</a></td>
+    </tr>
+    <tr>
+      <td width="40%" align="left" valign="top">8.9.&nbsp;Network Address Types&nbsp;</td>
+      <td width="20%" align="center"><a accesskey="h" href="index.html" title="PostgreSQL 18.4 Documentation">Home</a></td>
+      <td width="40%" align="right" valign="top">&nbsp;8.11.&nbsp;Text Search Types</td>
+    </tr>
+  </table>
+</div>
+
+          </div>
+          
+            <div id="docComments">
+              <h2>Submit correction</h2>
+              <p>
+              If you see anything in the documentation that is not correct, does not match
+              your experience with the particular feature or requires further clarification,
+              please use
+              <a href="/account/comments/new/18/datatype-bit.html/" rel="nofollow">this form</a>
+              to report a documentation issue.
+              </p>
+            </div>
+          
+        </div> <!-- pgContentWrap -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <!-- Copyright -->
+      <div class="container">
+        <a href="/about/policies/">Policies</a> |
+        <a href="/about/policies/coc/">Code of Conduct</a> |
+        <a href="/about/">About PostgreSQL</a> |
+        <a href="/about/contact/">Contact</a><br/>
+        <p>Copyright &copy; 1996-2026 The PostgreSQL Global Development Group</p>
+      </div>
+    </footer>
+    <script src="/media/js/main.js?73aab745"></script>
+
+  </body>
+</html>

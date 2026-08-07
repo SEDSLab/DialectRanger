@@ -1,0 +1,31 @@
+{
+  "dbms": "mariadb",
+  "feature_type": "function",
+  "total_pages": 415,
+  "total_sections": 1492,
+  "total_blocks": 7919,
+  "candidate_features": 877,
+  "candidate_groups": 343,
+  "feature_drafts": 343,
+  "total_drafts": 343,
+  "clean_validated_features": 166,
+  "validated_with_warnings": 172,
+  "invalid_features": 5,
+  "total_validated_features": 338,
+  "total_kb_features": 338,
+  "total_review_items": 177,
+  "validation_summary": {
+    "schema_invalid": 5,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 73,
+    "no_description_claims": 108,
+    "no_valid_syntax": 5,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 21,
+    "alias_like_feature": 6
+  },
+  "generated_at": "2026-08-06T19:41:02.296268+08:00"
+}

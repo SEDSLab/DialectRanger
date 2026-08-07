@@ -1,0 +1,7 @@
+{
+  "dbms": "cockroachdb",
+  "feature_type": "operator",
+  "candidates": 88,
+  "groups": 58,
+  "drafts": 58
+}

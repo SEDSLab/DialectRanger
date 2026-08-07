@@ -1,0 +1,2 @@
+{"feature_id": "cockroachdb.function.position", "name": "POSITION", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "cockroachdb.function.trim", "name": "TRIM", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}

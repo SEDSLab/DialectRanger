@@ -1,0 +1,62 @@
+{
+  "dbms": "trino",
+  "feature_type": "function",
+  "nodes": {
+    "page": 48,
+    "section": 338,
+    "block": 5209,
+    "feature_candidate": 465
+  },
+  "edges": {
+    "page_contains_section": 338,
+    "section_contains_block": 5209,
+    "section_previous": 291,
+    "section_next": 291,
+    "feature_documented_in_section": 915,
+    "total": 7044
+  },
+  "noise": {
+    "noise_nodes": 4,
+    "noise_sections": 0,
+    "noise_blocks": 4,
+    "eligible_nodes": 5592
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "trino.function.abs",
+      "target": "trino_current_list_s0003"
+    },
+    {
+      "source": "trino.function.abs",
+      "target": "trino_current_list_by_topic_s0018"
+    },
+    {
+      "source": "trino.function.acos",
+      "target": "trino_current_list_s0003"
+    },
+    {
+      "source": "trino.function.acos",
+      "target": "trino_current_list_by_topic_s0018"
+    },
+    {
+      "source": "trino.function.ai_extract",
+      "target": "trino_current_ai_s0008"
+    },
+    {
+      "source": "trino.function.all",
+      "target": "trino_current_comparison_s0009"
+    },
+    {
+      "source": "trino.function.all_match",
+      "target": "trino_current_list_s0003"
+    },
+    {
+      "source": "trino.function.all_match",
+      "target": "trino_current_list_by_topic_s0003"
+    }
+  ],
+  "generated_at": "2026-08-06T19:59:03.880044+08:00"
+}

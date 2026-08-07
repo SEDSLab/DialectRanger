@@ -1,0 +1,13 @@
+{
+  "dbms": "duckdb",
+  "feature_type": "operator",
+  "candidate_features": 191,
+  "candidate_groups": 105,
+  "feature_drafts": 105,
+  "known_operator_coverage": {
+    "total": 0,
+    "covered": 0,
+    "missing": [],
+    "coverage_ratio": 1.0
+  }
+}

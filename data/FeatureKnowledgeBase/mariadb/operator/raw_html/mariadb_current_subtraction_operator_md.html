@@ -1,0 +1,65 @@
+> For the complete documentation index, see [llms.txt](https://mariadb.com/docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://mariadb.com/docs/server/reference/sql-structure/operators/arithmetic-operators/subtraction-operator.md).
+
+# Subtraction Operator (-)
+
+## Syntax
+
+```bnf
+-
+```
+
+## Description
+
+Subtraction. The operator is also used as the unary minus for changing sign.
+
+If both operands are integers, the result is calculated with [BIGINT](/docs/server/reference/data-types/numeric-data-types/bigint.md) precision. If either integer is unsigned, the result is also an unsigned integer, unless the `NO_UNSIGNED_SUBTRACTION` [SQL\_MODE](/docs/server/server-management/variables-and-modes/sql_mode.md) is enabled, in which case the result is always signed.
+
+For real or string operands, the operand with the highest precision determines the result precision.
+
+## Examples
+
+```sql
+SELECT 96-9;
++------+
+| 96-9 |
++------+
+|   87 |
++------+
+
+SELECT 15-17;
++-------+
+| 15-17 |
++-------+
+|    -2 |
++-------+
+
+SELECT 3.66 + 1.333;
++--------------+
+| 3.66 + 1.333 |
++--------------+
+|        4.993 |
++--------------+
+```
+
+Unary minus:
+
+```sql
+SELECT - (3+5);
++---------+
+| - (3+5) |
++---------+
+|      -8 |
++---------+
+```
+
+## See Also
+
+* [Type Conversion](/docs/server/reference/sql-functions/string-functions/type-conversion.md)
+* [Addition Operator (+)](/docs/server/reference/sql-structure/operators/arithmetic-operators/addition-operator.md)
+* [Multiplication Operator (\*)](/docs/server/reference/sql-structure/operators/arithmetic-operators/multiplication-operator.md)
+* [Division Operator (/)](/docs/server/reference/sql-structure/operators/arithmetic-operators/division-operator.md)
+* [Operator Precedence](/docs/server/reference/sql-structure/operators/operator-precedence.md)
+
+<sub>*This page is licensed: CC BY-SA / Gnu FDL*</sub>
+
+{% @marketo/form formId="4316" %}

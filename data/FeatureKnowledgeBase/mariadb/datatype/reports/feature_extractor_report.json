@@ -1,0 +1,7 @@
+{
+  "dbms": "mariadb",
+  "feature_type": "datatype",
+  "candidates": 372,
+  "groups": 36,
+  "drafts": 36
+}

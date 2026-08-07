@@ -1,0 +1,1876 @@
+ <!DOCTYPE html>
+		<html
+			class="layout layout-holy-grail   show-table-of-contents conceptual show-breadcrumb default-focus"
+			lang="en-us"
+			dir="ltr"
+			data-authenticated="false"
+			data-auth-status-determined="false"
+			data-target="docs"
+			x-ms-format-detection="none"
+		>
+			
+		<head>
+			<title>datetime2 (Transact-SQL) - SQL Server | Microsoft Learn</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name="color-scheme" content="light dark" />
+
+			<meta name="description" content="datetime2 defines a date that is combined with a time of day with high fractional precision, based on 24-hour clock." />
+			<link rel="canonical" href="https://learn.microsoft.com/en-us/sql/t-sql/data-types/datetime2-transact-sql?view=sql-server-ver17" /> 
+
+			<!-- Non-customizable open graph and sharing-related metadata -->
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:site" content="@MicrosoftLearn" />
+			<meta property="og:type" content="website" />
+			<meta property="og:image:alt" content="Microsoft Learn" />
+			<meta property="og:image" content="https://learn.microsoft.com/en-us/media/open-graph-image.png" />
+			<!-- Page specific open graph and sharing-related metadata -->
+			<meta property="og:title" content="datetime2 (Transact-SQL) - SQL Server" />
+			<meta property="og:url" content="https://learn.microsoft.com/en-us/sql/t-sql/data-types/datetime2-transact-sql?view=sql-server-ver17" />
+			<meta property="og:description" content="datetime2 defines a date that is combined with a time of day with high fractional precision, based on 24-hour clock." />
+			<meta name="platform_id" content="95259f78-ec2b-6f58-118a-30301fb074aa" /> <meta name="scope" content="sql" />
+			<meta name="locale" content="en-us" />
+			 
+			<meta name="uhfHeaderId" content="MSDocsHeader-DocsSQL" />
+
+			<meta name="page_type" content="conceptual" />
+
+			<!--page specific meta tags-->
+			
+
+			<!-- custom meta tags -->
+			
+		<meta name="toc_preview" content="true" />
+	
+		<meta name="feedback_system" content="Standard" />
+	
+		<meta name="feedback_product_url" content="https://feedback.azure.com/d365community/forum/04fe6ee0-3b25-ec11-b6e6-000d3a4f0da0" />
+	
+		<meta name="feedback_help_link_url" content="https://learn.microsoft.com/answers/tags/191/sql-server" />
+	
+		<meta name="feedback_help_link_type" content="get-help-at-qna" />
+	
+		<meta name="recommendations" content="true" />
+	
+		<meta name="breadcrumb_path" content="../../breadcrumb/toc.json" />
+	
+		<meta name="monikerRange" content="&gt;=aps-pdw-2016 || =azuresqldb-current || =azure-sqldw-latest || &gt;=sql-server-2017 || &gt;=sql-server-linux-2017 || =azuresqldb-mi-current || =fabric || =fabric-sqldb" />
+	
+		<meta name="ms.update-cycle" content="1825-days" />
+	
+		<meta name="author" content="rwestMSFT" />
+	
+		<meta name="ms.author" content="randolphwest" />
+	
+		<meta name="ms.reviewer" content="randolphwest" />
+	
+		<meta name="ms.date" content="2024-10-25T00:00:00Z" />
+	
+		<meta name="ms.service" content="sql" />
+	
+		<meta name="ms.subservice" content="t-sql" />
+	
+		<meta name="ms.topic" content="reference" />
+	
+		<meta name="ms.custom" content="ignite-2025" />
+	
+		<meta name="document_id" content="be8724bf-416a-437b-158c-a1f94019a36c" />
+	
+		<meta name="document_version_independent_id" content="3b055d34-8d37-cca3-a916-caa43b69af6a" />
+	
+		<meta name="updated_at" content="2026-07-20T22:35:00Z" />
+	
+		<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/sql-docs-pr/blob/live/docs/t-sql/data-types/datetime2-transact-sql.md" />
+	
+		<meta name="gitcommit" content="https://github.com/MicrosoftDocs/sql-docs-pr/blob/ded43ade54ce4a2df99863909465a905acb5c6e0/docs/t-sql/data-types/datetime2-transact-sql.md" />
+	
+		<meta name="git_commit_id" content="ded43ade54ce4a2df99863909465a905acb5c6e0" />
+	
+		<meta name="monikers" content="fabric" />
+	
+		<meta name="monikers" content="azure-sqldw-latest" />
+	
+		<meta name="monikers" content="azuresqldb-current" />
+	
+		<meta name="monikers" content="azuresqldb-mi-current" />
+	
+		<meta name="monikers" content="fabric-sqldb" />
+	
+		<meta name="monikers" content="aps-pdw-2016" />
+	
+		<meta name="monikers" content="aps-pdw-2016-au7" />
+	
+		<meta name="monikers" content="sql-server-linux-2017" />
+	
+		<meta name="monikers" content="sql-server-linux-ver15" />
+	
+		<meta name="monikers" content="sql-server-linux-ver16" />
+	
+		<meta name="monikers" content="sql-server-linux-ver17" />
+	
+		<meta name="monikers" content="sql-server-2017" />
+	
+		<meta name="monikers" content="sql-server-ver15" />
+	
+		<meta name="monikers" content="sql-server-ver16" />
+	
+		<meta name="monikers" content="sql-server-ver17" />
+	
+		<meta name="default_moniker" content="sql-server-ver17" />
+	
+		<meta name="site_name" content="Docs" />
+	
+		<meta name="depot_name" content="SQL.sql-content" />
+	
+		<meta name="schema" content="Conceptual" />
+	
+		<meta name="toc_rel" content="../../toc.json" />
+	
+		<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/SQL.sql-content/{branchName}{pdfName}" />
+	
+		<meta name="search.mshattr.devlang" content="tsql" />
+	
+		<meta name="word_count" content="1484" />
+	
+		<meta name="config_moniker_range" content="=azuresqldb-current || =azuresqldb-mi-current || =azure-sqldw-latest || &gt;=aps-pdw-2016 || &gt;=sql-server-2017 || &gt;=sql-server-linux-2017 || =fabric || =fabric-sqldb" />
+	
+		<meta name="asset_id" content="t-sql/data-types/datetime2-transact-sql" />
+	
+		<meta name="moniker_range_name" content="f3ddb4a4ec3193bff1ec3401d447b815" />
+	
+		<meta name="item_type" content="Content" />
+	
+		<meta name="source_path" content="docs/t-sql/data-types/datetime2-transact-sql.md" />
+	
+		<meta name="previous_tlsh_hash" content="E901BC02870C4226BFCC2FA23916761080F444C8A2AAAF5C28359698E61B2E6F8F255CFBA7077B0153BD466B1384E5CD71D69F25E08E33756EC5A45D829C1F22DBD77BF780" />
+	
+		<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/sql-docs/blob/live/docs/t-sql/data-types/datetime2-transact-sql.md" />
+	
+		<meta name="markdown_url" content="https://learn.microsoft.com/en-us/sql/t-sql/data-types/datetime2-transact-sql?view=sql-server-ver17&amp;accept=text/markdown" />
+	 
+		<meta name="cmProducts" content="https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/e7cd09c2-9e9a-4f0d-b160-c15783f45b1f" data-source="generated" />
+	
+		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/cbe4ca68-43ac-4375-aba5-5945a6394c20" data-source="generated" />
+	
+		<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/6ab7faaf-d791-4a26-96a2-3b11738538e7" data-source="generated" />
+	
+		<meta name="spProducts" content="https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1d337399-0ca4-4b4c-acef-8df37820e018" data-source="generated" />
+	
+		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/ced846cc-6a3c-4c8f-9dfb-3de0e90e2742" data-source="generated" />
+	
+		<meta name="spProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/302e28b0-1f09-4811-9a9b-2a72e0770581" data-source="generated" />
+	
+
+			<!-- Apply persisted/system theme before first paint to prevent wrong-theme flash when scripts are deferred. -->
+			<script id="theme-preference">
+				(function () {
+			try {
+				var stored = localStorage.getItem('theme');
+				var theme = /^(light|dark|high-contrast)$/.test(stored)
+					? stored
+					: matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+				document.documentElement.classList.add('theme-' + theme);
+			} catch (e) {}
+		})();;
+			</script>
+
+			<script id="atlas-layout-preferences">
+				(function () {
+			try {
+				var state = JSON.parse(localStorage.getItem('atlas-layout-preferences') || '{}');
+				var view = state["docs-layout-persistence"] || {};
+				var excludesKey = "";
+				var blocked = {};
+				if (excludesKey) {
+					var exclusions = JSON.parse(localStorage.getItem('atlas-layout-exclusions') || '{}');
+					if (Object.prototype.hasOwnProperty.call(exclusions, excludesKey)) {
+						var scoped = exclusions[excludesKey];
+						if (scoped) {
+							if (typeof scoped === 'object') blocked = scoped;
+						}
+					}
+				}
+				var html = document.documentElement;
+				for (var c in view) {
+					if (Object.prototype.hasOwnProperty.call(blocked, c)) continue;
+					if (view[c]) html.classList.add(c);
+					else html.classList.remove(c);
+				}
+			} catch (e) {}
+		})();;
+			</script>
+
+			<!-- assets and js globals -->
+			
+			<link rel="stylesheet" href="/static/assets/0.4.03503.8087-34604b98/styles/site.css" />
+			
+			<script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"></script>
+			<script async src="https://js.monitor.azure.com/scripts/c/ms.jsll-4.min.js"></script>
+			
+
+			<!-- msdocs global object -->
+			<script id="msdocs-script">
+		var msDocs = {
+  "environment": {
+    "accessLevel": "online",
+    "azurePortalHostname": "portal.azure.com",
+    "reviewFeatures": false,
+    "supportLevel": "production",
+    "systemContent": true,
+    "siteName": "learn",
+    "legacyHosting": false
+  },
+  "data": {
+    "contentLocale": "en-us",
+    "contentDir": "ltr",
+    "userLocale": "en-us",
+    "userDir": "ltr",
+    "pageTemplate": "Conceptual",
+    "layoutStateStorageKey": "docs-layout-persistence",
+    "brand": "",
+    "context": {},
+    "standardFeedback": true,
+    "showFeedbackReport": false,
+    "feedbackHelpLinkType": "get-help-at-qna",
+    "feedbackHelpLinkUrl": "https://learn.microsoft.com/answers/tags/191/sql-server",
+    "feedbackSystem": "Standard",
+    "feedbackGitHubRepo": "MicrosoftDocs/sql-docs",
+    "feedbackProductUrl": "https://feedback.azure.com/d365community/forum/04fe6ee0-3b25-ec11-b6e6-000d3a4f0da0",
+    "extendBreadcrumb": false,
+    "isEditDisplayable": true,
+    "isPrivateUnauthorized": false,
+    "hideViewSource": false,
+    "isPermissioned": false,
+    "hasRecommendations": false,
+    "contributors": [
+      {
+        "name": "rwestMSFT",
+        "url": "https://github.com/rwestMSFT"
+      },
+      {
+        "name": "MikeRayMSFT",
+        "url": "https://github.com/MikeRayMSFT"
+      },
+      {
+        "name": "rmca14",
+        "url": "https://github.com/rmca14"
+      },
+      {
+        "name": "meganbradley",
+        "url": "https://github.com/meganbradley"
+      },
+      {
+        "name": "MashaMSFT",
+        "url": "https://github.com/MashaMSFT"
+      },
+      {
+        "name": "alexbuckgit",
+        "url": "https://github.com/alexbuckgit"
+      },
+      {
+        "name": "rothja",
+        "url": "https://github.com/rothja"
+      },
+      {
+        "name": "julieMSFT",
+        "url": "https://github.com/julieMSFT"
+      },
+      {
+        "name": "Protiguous",
+        "url": "https://github.com/Protiguous"
+      },
+      {
+        "name": "cawrites",
+        "url": "https://github.com/cawrites"
+      },
+      {
+        "name": "PRMerger18",
+        "url": "https://github.com/PRMerger18"
+      },
+      {
+        "name": "dimitri-furman",
+        "url": "https://github.com/dimitri-furman"
+      },
+      {
+        "name": "craigg-msft",
+        "url": "https://github.com/craigg-msft"
+      },
+      {
+        "name": "pmasl",
+        "url": "https://github.com/pmasl"
+      },
+      {
+        "name": "v-alje",
+        "url": "https://github.com/v-alje"
+      },
+      {
+        "name": "edmacauley",
+        "url": "https://github.com/edmacauley"
+      }
+    ]
+  },
+  "functions": {}
+};;
+	</script>
+
+			<!-- base scripts, msdocs global should be before this -->
+			<script
+				src="/static/assets/0.4.03503.8087-34604b98/scripts/en-us/index-docs.js"
+				async
+			></script>
+			
+
+			<!-- json-ld -->
+			
+		</head>
+	
+			<body
+				id="body"
+				data-bi-name="body"
+				class="layout-body "
+				lang="en-us"
+				dir="ltr"
+			>
+				<header class="layout-body-header background-color-body-medium">
+		<div class="header-holder has-default-focus">
+			
+		<a
+			href="#main"
+			
+			style="z-index: 1070"
+			class="outline-color-text visually-hidden-until-focused position-fixed inner-focus focus-visible top-0 left-0 right-0 padding-xs text-align-center background-color-body"
+			
+		>
+			Skip to main content
+		</a>
+	
+		<a
+			href="#"
+			data-skip-to-ask-learn
+			style="z-index: 1070"
+			class="outline-color-text visually-hidden-until-focused position-fixed inner-focus focus-visible top-0 left-0 right-0 padding-xs text-align-center background-color-body"
+			hidden
+		>
+			Skip to Ask Learn chat experience
+		</a>
+	
+
+			<div hidden id="cookie-consent-holder" data-test-id="cookie-consent-container"></div>
+			<!-- Unsupported browser warning -->
+			<div
+				id="unsupported-browser"
+				style="background-color: white; color: black; padding: 16px; border-bottom: 1px solid grey;"
+				hidden
+			>
+				<div style="max-width: 800px; margin: 0 auto;">
+					<p style="font-size: 24px">This browser is no longer supported.</p>
+					<p style="font-size: 16px; margin-top: 16px;">
+						Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.
+					</p>
+					<div style="margin-top: 12px;">
+						<a
+							href="https://go.microsoft.com/fwlink/p/?LinkID=2092881 "
+							style="background-color: #0078d4; border: 1px solid #0078d4; color: white; padding: 6px 12px; border-radius: 2px; display: inline-block;"
+						>
+							Download Microsoft Edge
+						</a>
+						<a
+							href="https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge"
+							style="background-color: white; padding: 6px 12px; border: 1px solid #505050; color: #171717; border-radius: 2px; display: inline-block;"
+						>
+							More info about Internet Explorer and Microsoft Edge
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- site header -->
+			<div
+				id="ms--site-header"
+				data-test-id="site-header-wrapper"
+				itemscope="itemscope"
+				itemtype="http://schema.org/Organization"
+			>
+				<div
+					id="ms--mobile-nav"
+					class="site-header display-none-tablet padding-inline-none gap-none"
+					data-bi-name="mobile-header"
+					data-test-id="mobile-header"
+				></div>
+				<div
+					id="ms--primary-nav"
+					class="site-header display-none display-flex-tablet"
+					data-bi-name="L1-header"
+					data-test-id="primary-header"
+				></div>
+				<div
+					id="ms--secondary-nav"
+					class="site-header display-none display-flex-tablet"
+					data-bi-name="L2-header"
+					data-test-id="secondary-header"
+					
+				></div>
+			</div>
+			
+		<!-- banner -->
+		<div data-banner>
+			<div id="disclaimer-holder"></div>
+			
+		</div>
+		<!-- banner end -->
+	
+		</div>
+	</header>
+				 <section
+					id="layout-body-menu"
+					class="layout-body-menu border-right display-flex background-color-body-medium"
+					data-bi-name="menu"
+			  >
+					
+		<div
+			id="left-container"
+			class="left-container display-none padding-none display-block-tablet width-full display-none-until-layout-restored"
+			data-toc-container="true"
+		>
+			<div
+				id="ms--toc-content"
+				class="padding-left-sm padding-right-none padding-bottom-sm height-full"
+			>
+				<nav
+					id="affixed-left-container"
+					class="margin-top-xxs-tablet position-sticky display-flex flex-direction-column width-full"
+					aria-label="Primary"
+					data-bi-name="left-toc"
+					role="navigation"
+				>
+					<div
+						id="ms--collapsible-toc-header"
+						class="display-flex flex-direction-row-reverse justify-content-center align-items-center margin-bottom-xxs margin-right-xxs"
+					>
+						<button
+							type="button"
+							class="button button-clear inner-focus"
+							data-collapsible-toc-toggle
+							aria-expanded="true"
+							hidden
+							aria-controls="ms--toc-content"
+							aria-label="Table of contents"
+						>
+							<span class="icon icon-mirrored-rtl font-size-md" aria-hidden="true">
+								<span
+									class="docon docon-panel-left-contract display-none-layout-menu-collapsed"
+								></span>
+								<span
+									class="docon docon-panel-left-expand display-none display-inline-layout-menu-collapsed"
+								></span>
+							</span>
+						</button>
+						<div
+							id="ms--collapsible-toc-moniker-slot"
+							class="flex-grow-1 display-none-layout-menu-collapsed"
+						></div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	
+			  </section>
+
+				<main
+					id="main"
+					role="main"
+					class="layout-body-main "
+					data-bi-name="content"
+					lang="en-us"
+					dir="ltr"
+				>
+					
+			<div
+		id="ms--content-header"
+		class="content-header default-focus border-bottom-none"
+		data-bi-name="content-header"
+	>
+		<div class="content-header-controls margin-xxs margin-inline-sm-tablet">
+			<button
+				type="button"
+				class="contents-button button button-sm margin-right-xxs"
+				data-bi-name="contents-expand"
+				aria-haspopup="true"
+				data-contents-button
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-menu"></span></span>
+				<span class="contents-expand-title"> Table of contents </span>
+			</button>
+			<button
+				type="button"
+				class="ap-collapse-behavior ap-expanded button button-sm"
+				data-bi-name="ap-collapse"
+				aria-controls="action-panel"
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-exit-mode"></span></span>
+				<span>Exit editor mode</span>
+			</button>
+		</div>
+	</div>
+			<div
+				data-main-column
+				class="reading-width margin-inline-auto layout-padding padding-top-none padding-top-sm-tablet padding-bottom-sm"
+			>
+				<div>
+					
+		<div id="article-header" class="background-color-body margin-bottom-xs display-none-print">
+			<div class="display-flex align-items-center justify-content-space-between">
+				
+		<details
+			id="article-header-breadcrumbs-overflow-popover"
+			class="popover popover-left"
+			data-for="article-header-breadcrumbs"
+		>
+			<summary
+				class="button button-clear button-primary button-sm inner-focus"
+				aria-label="All breadcrumbs"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-more"></span>
+				</span>
+			</summary>
+			<div id="article-header-breadcrumbs-overflow" class="popover-content"></div>
+		</details>
+
+		<bread-crumbs
+			id="article-header-breadcrumbs"
+			role="group"
+			aria-label="Breadcrumbs"
+			data-test-id="article-header-breadcrumbs"
+			class="overflow-hidden flex-grow-1 margin-right-sm margin-right-md-tablet margin-right-lg-desktop margin-left-negative-xxs padding-left-xxs"
+		></bread-crumbs>
+	 
+		<div
+			id="article-header-page-actions"
+			class="opacity-none margin-left-auto display-flex flex-wrap-no-wrap align-items-stretch"
+		>
+			
+		<button
+			class="button button-sm border-none inner-focus display-none-tablet flex-shrink-0 "
+			data-bi-name="ask-learn-assistant-entry"
+			data-test-id="ask-learn-assistant-modal-entry-mobile"
+			data-ask-learn-modal-entry
+			
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-none display-inline-flex-tablet display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn "
+			data-bi-name="ask-learn-assistant-entry"
+			
+			data-test-id="ask-learn-assistant-modal-entry-tablet"
+			data-ask-learn-modal-entry
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn "
+			data-bi-name="ask-learn-assistant-entry"
+			
+			data-test-id="ask-learn-assistant-flyout-entry"
+			data-ask-learn-flyout-entry
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	 
+
+			<details class="popover popover-right" id="article-header-page-actions-overflow">
+				<summary
+					class="justify-content-flex-start button button-clear button-sm button-primary inner-focus"
+					aria-label="More actions"
+					title="More actions"
+				>
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-more-vertical"></span>
+					</span>
+				</summary>
+				<div class="popover-content">
+					
+		<button
+			type="button"
+			id="ms--focus-mode-button"
+			data-focus-mode
+			data-bi-name="focus-mode-entry"
+			data-page-action-item="overflow-all"
+			data-popover-close
+			class="button button-clear button-sm button-block justify-content-flex-start text-align-left inner-focus display-none display-inline-flex-tablet"
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-glasses"></span>
+			</span>
+			<span>Reading mode</span>
+		</button>
+	 
+		<button
+			data-page-action-item="overflow-mobile"
+			type="button"
+			class="display-block-layout-menu-collapsed button-block button-sm inner-focus button button-clear display-none-tablet justify-content-flex-start text-align-left"
+			data-bi-name="contents-expand"
+			data-contents-button
+			data-popover-close
+		>
+			<span class="icon" aria-hidden="true"
+				><span class="docon docon-editor-list-bullet"></span
+			></span>
+			<span class="contents-expand-title">Table of contents</span>
+		</button>
+	 
+		<a
+			id="lang-link-overflow"
+			class="button-sm inner-focus button button-clear button-block justify-content-flex-start text-align-left"
+			data-bi-name="language-toggle"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-read-in-link
+			href="#"
+			hidden
+		>
+			<span class="icon" aria-hidden="true" data-read-in-link-icon>
+				<span class="docon docon-locale-globe"></span>
+			</span>
+			<span data-read-in-link-text>Read in English</span>
+		</a>
+	
+					
+		<button
+			type="button"
+			class="collection button button-clear button-sm button-block justify-content-flex-start text-align-left inner-focus"
+			data-list-type="collection"
+			data-bi-name="collection"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-popover-close
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-circle-addition"></span>
+			</span>
+			<span class="collection-status">Add</span>
+		</button>
+	 
+		<button
+			type="button"
+			class="collection button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+			data-list-type="plan"
+			data-bi-name="plan"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			data-popover-close
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-circle-addition"></span>
+			</span>
+			<span class="plan-status">Add to Plans</span>
+		</button>
+	 
+					
+		<a
+			data-contenteditbtn
+			class="button button-clear button-block button-sm inner-focus justify-content-flex-start text-align-left text-decoration-none"
+			data-bi-name="edit"
+			data-page-action-item="overflow-all"
+			data-check-hidden="true"
+			
+			href="https://github.com/MicrosoftDocs/sql-docs/blob/live/docs/t-sql/data-types/datetime2-transact-sql.md"
+			data-original_content_git_url="https://github.com/MicrosoftDocs/sql-docs-pr/blob/live/docs/t-sql/data-types/datetime2-transact-sql.md"
+			data-original_content_git_url_template="{repo}/blob/{branch}/docs/t-sql/data-types/datetime2-transact-sql.md"
+			data-pr_repo=""
+			data-pr_branch=""
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-edit-outline"></span>
+			</span>
+			<span>Edit</span>
+		</a>
+	  
+		<hr class="margin-block-xxs" />
+		
+				<button
+					class="button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+					type="button"
+					data-bi-name="copy-markdown"
+					data-page-action-item="overflow-all"
+					data-copy-markdown
+					data-copy-state="idle"
+					data-check-hidden="true"
+				>
+					<span class="icon color-primary" aria-hidden="true">
+						<span data-show-when="idle" class="docon docon-code-lang"></span>
+						<span data-show-when="loading" class="loader" hidden></span>
+						<span data-show-when="success" class="docon docon-check-mark" hidden></span>
+					</span>
+					<span>Copy Markdown</span>
+				</button>
+		   
+				<button
+					class="button button-block button-clear button-sm justify-content-flex-start text-align-left inner-focus"
+					type="button"
+					data-bi-name="print"
+					data-page-action-item="overflow-all"
+					data-popover-close
+					data-print-page
+					data-check-hidden="true"
+				>
+					<span class="icon color-primary" aria-hidden="true">
+						<span class="docon docon-print"></span>
+					</span>
+					<span>Print</span>
+				</button>
+		  
+	
+				</div>
+			</details>
+		</div>
+	
+			</div>
+		</div>
+	  
+		<!-- privateUnauthorizedTemplate is hidden by default -->
+		<div unauthorized-private-section data-bi-name="permission-content-unauthorized-private" hidden>
+			<hr class="hr margin-top-xs margin-bottom-sm" />
+			<div class="notification notification-info">
+				<div class="notification-content">
+					<p class="margin-top-none notification-title">
+						<span class="icon" aria-hidden="true"
+							><span class="docon docon-exclamation-circle-solid"></span
+						></span>
+						<span>Note</span>
+					</p>
+					<p class="margin-top-none authentication-determined not-authenticated">
+						Access to this page requires authorization. You can try <a class="docs-sign-in" href="#" data-bi-name="permission-content-sign-in">signing in</a> or <a  class="docs-change-directory" data-bi-name="permisson-content-change-directory">changing directories</a>.
+					</p>
+					<p class="margin-top-none authentication-determined authenticated">
+						Access to this page requires authorization. You can try <a class="docs-change-directory" data-bi-name="permisson-content-change-directory">changing directories</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	
+					<div class="content"><h1 id="datetime2-transact-sql">datetime2 (Transact-SQL)</h1></div>
+					
+		<div
+			id="article-metadata"
+			data-bi-name="article-metadata"
+			data-test-id="article-metadata"
+			class="page-metadata-container display-flex gap-xxs justify-content-space-between align-items-center flex-wrap-wrap"
+		>
+			 
+				<div
+					id="user-feedback"
+					class="margin-block-xxs display-none display-none-print"
+					hidden
+					data-hide-on-archived
+				>
+					
+		<button
+			id="user-feedback-button"
+			data-test-id="conceptual-feedback-button"
+			class="button button-sm button-clear button-primary display-none"
+			type="button"
+			data-bi-name="user-feedback-button"
+			data-user-feedback-button
+			hidden
+		>
+			<span class="icon" aria-hidden="true">
+				<span class="docon docon-like"></span>
+			</span>
+			<span>Feedback</span>
+		</button>
+	
+				</div>
+		  
+		</div>
+	 
+		<div data-id="ai-summary" class="display-none-print">
+			<div id="ms--ai-summary-cta" class="margin-top-xs display-flex align-items-center">
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-sparkle-fill gradient-text-vivid"></span>
+				</span>
+				<button
+					id="ms--ai-summary"
+					type="button"
+					class="tag tag-sm tag-suggestion margin-left-xxs"
+					data-test-id="ai-summary-cta"
+					data-bi-name="ai-summary-cta"
+					data-an="ai-summary"
+				>
+					<span class="ai-summary-cta-text">
+						Summarize this article for me
+					</span>
+				</button>
+			</div>
+			<!-- Slot where the client will render the summary card after the user clicks the CTA -->
+			<div id="ms--ai-summary-header" class="margin-top-xs"></div>
+		</div>
+	 
+		<nav
+			id="center-doc-outline"
+			class="doc-outline display-none-desktop display-none-print margin-bottom-sm"
+			data-bi-name="intopic toc"
+			aria-label="In this article"
+		>
+			<h2 id="ms--in-this-article" class="title is-6 margin-block-xs">
+				In this article
+			</h2>
+		</nav>
+	
+					<div class="content"><p><strong>Applies to:</strong> <img src="../../includes/media/yes-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../../sql-server/sql-docs-navigation-guide?view=sql-server-ver17#applies-to" data-linktype="relative-path">SQL Server</a> <img src="../../includes/media/yes-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../../sql-server/sql-docs-navigation-guide?view=sql-server-ver17#applies-to" data-linktype="relative-path">Azure SQL Database</a> <img src="../../includes/media/yes-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../../sql-server/sql-docs-navigation-guide?view=sql-server-ver17#applies-to" data-linktype="relative-path">Azure SQL Managed Instance</a> <img src="../../includes/media/yes-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../../sql-server/sql-docs-navigation-guide?view=sql-server-ver17#applies-to" data-linktype="relative-path">Azure Synapse Analytics</a> <img src="../../includes/media/yes-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../../sql-server/sql-docs-navigation-guide?view=sql-server-ver17#applies-to" data-linktype="relative-path">Analytics Platform System (PDW)</a> <img src="../../includes/media/yes-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../../sql-server/sql-docs-navigation-guide?view=sql-server-ver17#applies-to" data-linktype="relative-path">SQL analytics endpoint in Microsoft Fabric</a> <img src="../../includes/media/yes-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../../sql-server/sql-docs-navigation-guide?view=sql-server-ver17#applies-to" data-linktype="relative-path">Warehouse in Microsoft Fabric</a> <img src="../../includes/media/yes-icon.svg?view=sql-server-ver17" role="presentation" data-linktype="relative-path">
+ <a href="../../sql-server/sql-docs-navigation-guide?view=sql-server-ver17#applies-to" data-linktype="relative-path">SQL database in Microsoft Fabric</a></p>
+<p>Defines a date that is combined with a time of day that is based on 24-hour clock. <strong>datetime2</strong> can be considered as an extension of the existing <strong>datetime</strong> type that has a larger date range, a larger default fractional precision, and optional user-specified precision.</p>
+<h2 id="datetime2-description">datetime2 description</h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Syntax</td>
+<td><strong>datetime2</strong> [ (<em>fractional seconds precision</em>) ]</td>
+</tr>
+<tr>
+<td>Usage</td>
+<td><code>DECLARE @MyDatetime2 datetime2(7);</code><br><code>CREATE TABLE Table1 (Column1 datetime2(7));</code></td>
+</tr>
+<tr>
+<td>Default string literal format<br><br>(used for down-level client)</td>
+<td><code>yyyy-MM-dd HH:mm:ss[.nnnnnnn]</code><br><br>For more information, see <a href="#backward-compatibility" data-linktype="self-bookmark">Backward compatibility for down-level clients</a> later in this article.</td>
+</tr>
+<tr>
+<td>Date range</td>
+<td><code>0001-01-01</code> through <code>9999-12-31</code><br><br>January 1, 1 CE through December 31, 9999 CE</td>
+</tr>
+<tr>
+<td>Time range</td>
+<td><code>00:00:00</code> through <code>23:59:59.9999999</code></td>
+</tr>
+<tr>
+<td>Time zone offset range</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Element ranges</td>
+<td><code>yyyy</code> is a four-digit number, ranging from <code>0001</code> through <code>9999</code>, which represents a year.<br><br><code>MM</code> is a two-digit number, ranging from <code>01</code> to <code>12</code>, which represents a month in the specified year.<br><br><code>dd</code> is a two-digit number, ranging from <code>01</code> to <code>31</code> depending on the month, which represents a day of the specified month.<br><br><code>HH</code> is a two-digit number, ranging from <code>00</code> to <code>23</code>, which represents the hour.<br><br><code>mm</code> is a two-digit number, ranging from <code>00</code> to <code>59</code>, which represents the minute.<br><br><code>ss</code> is a two-digit number, ranging from <code>00</code> to <code>59</code>, which represents the second.<br><br><code>n*</code> is a zero- to seven-digit number from <code>0</code> to <code>9999999</code>, which represents the fractional seconds. In Informatica, the fractional seconds are truncated when <em>n</em> is less than <code>3</code>.</td>
+</tr>
+<tr>
+<td>Character length</td>
+<td>19 positions minimum (<code>yyyy-MM-dd HH:mm:ss</code>) to 27 maximum (<code>yyyy-MM-dd HH:mm:ss.0000000</code>)</td>
+</tr>
+<tr>
+<td>Precision, scale</td>
+<td>0 to 7 digits, with an accuracy of 100 nanoseconds (100 ns). The default precision is 7 digits.<br><br>In Microsoft Fabric Data Warehouse, this precision can be an integer from 0 to 6, with no default. Precision must be specified in Microsoft Fabric Data Warehouse.</td>
+</tr>
+<tr>
+<td>Storage size <sup>1</sup></td>
+<td>6 bytes for precision less than 3.<br>7 bytes for precision 3 or 4.<br><br>All other precision requires 8 bytes. <sup>2</sup></td>
+</tr>
+<tr>
+<td>Accuracy</td>
+<td>100 nanoseconds</td>
+</tr>
+<tr>
+<td>Default value</td>
+<td><code>1900-01-01 00:00:00</code></td>
+</tr>
+<tr>
+<td>Calendar</td>
+<td>Gregorian</td>
+</tr>
+<tr>
+<td>User-defined fractional second precision</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Time zone offset aware and preservation</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Daylight saving aware</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p><sup>1</sup> Provided values are for uncompressed rowstore. Use of <a href="../../relational-databases/data-compression/data-compression?view=sql-server-ver17" data-linktype="relative-path">data compression</a> or <a href="../../relational-databases/indexes/columnstore-indexes-overview?view=sql-server-ver17" data-linktype="relative-path">columnstore</a> might alter storage size for each precision. Additionally, storage size on disk and in memory might differ. For example, <strong>datetime2</strong> values always require 8 bytes in memory when batch mode is used.</p>
+<p><sup>2</sup> When a <strong>datetime2</strong> value is cast to a <strong>varbinary</strong> value, an extra byte is added to the <strong>varbinary</strong> value to store precision.</p>
+<p>For data type metadata, see <a href="../../relational-databases/system-compatibility-views/sys-systypes-transact-sql?view=sql-server-ver17" data-linktype="relative-path">sys.systypes</a> or <a href="../functions/typeproperty-transact-sql?view=sql-server-ver17" data-linktype="relative-path">TYPEPROPERTY</a>. Precision and scale are variable for some date and time data types. To obtain the precision and scale for a column, see <a href="../functions/columnproperty-transact-sql?view=sql-server-ver17" data-linktype="relative-path">COLUMNPROPERTY</a>, <a href="../functions/col-length-transact-sql?view=sql-server-ver17" data-linktype="relative-path">COL_LENGTH</a>, or <a href="../../relational-databases/system-catalog-views/sys-columns-transact-sql?view=sql-server-ver17" data-linktype="relative-path">sys.columns</a>.</p>
+<h2 id="supported-string-literal-formats-for-datetime2">Supported string literal formats for datetime2</h2>
+<p>The following tables list the supported ISO 8601 and ODBC string literal formats for <strong>datetime2</strong>. For information about alphabetical, numeric, unseparated, and time formats for the date and time parts of <strong>datetime2</strong>, see <a href="date-transact-sql?view=sql-server-ver17" data-linktype="relative-path">date</a> and <a href="time-transact-sql?view=sql-server-ver17" data-linktype="relative-path">time</a>.</p>
+<table>
+<thead>
+<tr>
+<th>ISO 8601</th>
+<th>Descriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>yyyy-MM-ddTHH:mm:ss[.nnnnnnn]</code></td>
+<td>This format isn't affected by the <code>SET LANGUAGE</code> and <code>SET DATEFORMAT</code> session locale settings. The <code>T</code>, the colons (<code>:</code>), and the period (<code>.</code>) are included in the string literal, for example <code>2024-05-02T19:58:47.1234567</code>.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>ODBC</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{ ts 'yyyy-MM-dd HH:mm:ss[.nnnnnnn]' }</code></td>
+<td>ODBC API specific:<br><br>The number of digits to the right of the decimal point, which represents the fractional seconds, can be specified from 0 up to 7 (100 nanoseconds).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ansi-and-iso-8601-compliance">ANSI and ISO 8601 compliance</h2>
+<p>The ANSI and ISO 8601 compliance of <a href="date-transact-sql?view=sql-server-ver17" data-linktype="relative-path">date</a> and <a href="time-transact-sql?view=sql-server-ver17" data-linktype="relative-path">time</a> apply to <strong>datetime2</strong>.</p>
+<p><a id="backward-compatibility"></a></p>
+<h2 id="backward-compatibility-for-down-level-clients">Backward compatibility for down-level clients</h2>
+<p>Some down-level clients don't support the <strong>time</strong>, <strong>date</strong>, <strong>datetime2</strong>, and <strong>datetimeoffset</strong> data types. The following table shows the type mapping between an up-level instance of SQL Server and down-level clients.</p>
+<table>
+<thead>
+<tr>
+<th>SQL Server data type</th>
+<th>Default string literal format passed to down-level client</th>
+<th>Down-level ODBC</th>
+<th>Down-level OLEDB</th>
+<th>Down-level JDBC</th>
+<th>Down-level SQLCLIENT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>time</strong></td>
+<td>HH:mm:ss[.nnnnnnn]</td>
+<td>SQL_WVARCHAR or SQL_VARCHAR</td>
+<td>DBTYPE_WSTRor DBTYPE_STR</td>
+<td>Java.sql.String</td>
+<td>String or SqString</td>
+</tr>
+<tr>
+<td><strong>date</strong></td>
+<td>yyyy-MM-dd</td>
+<td>SQL_WVARCHAR or SQL_VARCHAR</td>
+<td>DBTYPE_WSTRor DBTYPE_STR</td>
+<td>Java.sql.String</td>
+<td>String or SqString</td>
+</tr>
+<tr>
+<td><strong>datetime2</strong></td>
+<td>yyyy-MM-dd HH:mm:ss[.nnnnnnn]</td>
+<td>SQL_WVARCHAR or SQL_VARCHAR</td>
+<td>DBTYPE_WSTRor DBTYPE_STR</td>
+<td>Java.sql.String</td>
+<td>String or SqString</td>
+</tr>
+<tr>
+<td><strong>datetimeoffset</strong></td>
+<td>yyyy-MM-dd HH:mm:ss[.nnnnnnn] [+|-]hh:mm</td>
+<td>SQL_WVARCHAR or SQL_VARCHAR</td>
+<td>DBTYPE_WSTRor DBTYPE_STR</td>
+<td>Java.sql.String</td>
+<td>String or SqString</td>
+</tr>
+</tbody>
+</table>
+<h2 id="convert-date-and-time-data">Convert date and time data</h2>
+<p>When you convert to date and time data types, the Database Engine rejects all values it can't recognize as dates or times. For information about using the CAST and CONVERT functions with date and time data, see <a href="../functions/cast-and-convert-transact-sql?view=sql-server-ver17" data-linktype="relative-path">CAST and CONVERT</a></p>
+<h3 id="convert-other-date-and-time-types-to-the-datetime2-data-type">Convert other date and time types to the datetime2 data type</h3>
+<p>This section describes what occurs when other date and time data types are converted to the <strong>datetime2</strong> data type.</p>
+<p>When the conversion is from <strong>date</strong>, the year, month, and day are copied. The time component is set to 00:00:00.0000000. The following code shows the results of converting a <code>date</code> value to a <code>datetime2</code> value.</p>
+<pre><code class="lang-sql">DECLARE @date AS DATE = '12-21-16';
+
+DECLARE @datetime2 AS DATETIME2 = @date;
+
+SELECT @datetime2 AS '@datetime2',
+       @date AS '@date';
+</code></pre>
+<p>Here's the result set.</p>
+<pre><code class="lang-output">@datetime2                  @date
+--------------------------- ----------
+2016-12-21 00:00:00.0000000 2016-12-21
+</code></pre>
+<p>When the conversion is from <strong>time(n)</strong>, the time component is copied, and the date component is set to <code>1900-01-01</code>. The following example shows the results of converting a <strong>time(7)</strong> value to a <strong>datetime2</strong> value.</p>
+<pre><code class="lang-sql">DECLARE @time AS TIME (7) = '12:10:16.1234567';
+
+DECLARE @datetime2 AS DATETIME2 = @time;
+
+SELECT @datetime2 AS '@datetime2',
+       @time AS '@time';
+</code></pre>
+<p>Here's the result set.</p>
+<pre><code class="lang-output">@datetime2                  @time
+--------------------------- ----------------
+1900-01-01 12:10:16.1234567 12:10:16.1234567
+</code></pre>
+<p>When the conversion is from <strong>smalldatetime</strong>, the hours and minutes are copied. The seconds and fractional seconds are set to 0. The following code shows the results of converting a <code>smalldatetime</code> value to a <code>datetime2</code> value.</p>
+<pre><code class="lang-sql">DECLARE @smalldatetime AS SMALLDATETIME = '12-01-16 12:32';
+
+DECLARE @datetime2 AS DATETIME2 = @smalldatetime;
+
+SELECT @datetime2 AS '@datetime2',
+       @smalldatetime AS '@smalldatetime';
+</code></pre>
+<p>Here's the result set.</p>
+<pre><code class="lang-output">@datetime2                  @smalldatetime
+--------------------------- -----------------------
+2016-12-01 12:32:00.0000000 2016-12-01 12:32:00
+</code></pre>
+<p>When the conversion is from <strong>datetimeoffset(n)</strong>, the date and time components are copied. The time zone is truncated. The following example shows the results of converting a <code>datetimeoffset(7)</code> value to a <code>datetime2</code> value.</p>
+<pre><code class="lang-sql">DECLARE @datetimeoffset AS DATETIMEOFFSET (7) = '2016-10-23 12:45:37.1234567 +10:0';
+
+DECLARE @datetime2 AS DATETIME2 = @datetimeoffset;
+
+SELECT @datetime2 AS '@datetime2',
+       @datetimeoffset AS '@datetimeoffset';
+</code></pre>
+<p>Here's the result set.</p>
+<pre><code class="lang-output">@datetime2                  @datetimeoffset
+--------------------------- ----------------------------------
+2016-10-23 12:45:37.1234567 2016-10-23 12:45:37.1234567 +10:00
+</code></pre>
+<p>When the conversion is from <strong>datetime</strong>, the date and time are copied. The fractional precision is extended to 7 digits. The following example shows the results of converting a <code>datetime</code> value to a <code>datetime2</code> value.</p>
+<pre><code class="lang-sql">DECLARE @datetime AS DATETIME = '2016-10-23 12:45:37.333';
+
+DECLARE @datetime2 AS DATETIME2 = @datetime;
+
+SELECT @datetime2 AS '@datetime2',
+       @datetime AS '@datetime';
+</code></pre>
+<p>Here's the result set.</p>
+<pre><code class="lang-output">@datetime2                  @datetime
+----------------------- ---------------------------
+2016-10-23 12:45:37.3333333 2016-10-23 12:45:37.333
+</code></pre>
+<h3 id="cast-explicitly-to-datetime2-when-using-datetime">Cast explicitly to datetime2 when using datetime</h3>
+<p>Under database compatibility level 130 and greater, implicit conversions from <strong>datetime</strong> to <strong>datetime2</strong> data types show improved accuracy by accounting for the fractional milliseconds, resulting in different converted values, as seen in the previous example. Use explicit casting to <strong>datetime2</strong> data type whenever a mixed comparison scenario between <strong>datetime</strong> and <strong>datetime2</strong> datatypes exists. For more information, see <a href="/en-us/troubleshoot/sql/database-engine/general/sql-server-azure-sql-database-improvements" data-linktype="absolute-path">SQL Server and Azure SQL Database improvements in handling some data types and uncommon operations</a>.</p>
+<h3 id="convert-string-literals-to-datetime2">Convert string literals to datetime2</h3>
+<p>Conversions from string literals to date and time types are permitted if all parts of the strings are in valid formats. Otherwise, a runtime error is raised. Implicit conversions or explicit conversions that don't specify a style, from date and time types to string literals are in the default format of the current session. The following table shows the rules for converting a string literal to the <strong>datetime2</strong> data type.</p>
+<table>
+<thead>
+<tr>
+<th>Input string literal</th>
+<th><strong>datetime2(<em>n</em>)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ODBC DATE</code></td>
+<td>ODBC string literals are mapped to the <strong>datetime</strong> data type. Any assignment operation from <code>ODBC DATETIME</code> literals into <strong>datetime2</strong> types causes an implicit conversion between <strong>datetime</strong> and this type as defined by the conversion rules.</td>
+</tr>
+<tr>
+<td><code>ODBC TIME</code></td>
+<td>See previous <code>ODBC DATE</code> rule.</td>
+</tr>
+<tr>
+<td><code>ODBC DATETIME</code></td>
+<td>See previous <code>ODBC DATE</code> rule.</td>
+</tr>
+<tr>
+<td><code>DATE</code> only</td>
+<td>The <code>TIME</code> part defaults to <code>00:00:00</code>.</td>
+</tr>
+<tr>
+<td><code>TIME</code> only</td>
+<td>The <code>DATE</code> part defaults to <code>1900-01-01</code>.</td>
+</tr>
+<tr>
+<td><code>TIMEZONE</code> only</td>
+<td>Default values are supplied.</td>
+</tr>
+<tr>
+<td><code>DATE</code> + <code>TIME</code></td>
+<td>Trivial.</td>
+</tr>
+<tr>
+<td><code>DATE</code> + <code>TIMEZONE</code></td>
+<td>Not allowed.</td>
+</tr>
+<tr>
+<td><code>TIME</code> + <code>TIMEZONE</code></td>
+<td>The <code>DATE</code> part defaults to 1900-1-1. <code>TIMEZONE</code> input is ignored.</td>
+</tr>
+<tr>
+<td><code>DATE</code> + <code>TIME</code> + <code>TIMEZONE</code></td>
+<td>The local <code>DATETIME</code> is used.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="examples">Examples</h2>
+<p>The following example compares the results of casting a string to each <strong>date</strong> and <strong>time</strong> data type.</p>
+<pre><code class="lang-sql">SELECT CAST ('2007-05-08 12:35:29. 1234567 +12:15' AS TIME (7)) AS 'time',
+       CAST ('2007-05-08 12:35:29. 1234567 +12:15' AS DATE) AS 'date',
+       CAST ('2007-05-08 12:35:29.123' AS SMALLDATETIME) AS 'smalldatetime',
+       CAST ('2007-05-08 12:35:29.123' AS DATETIME) AS 'datetime',
+       CAST ('2007-05-08 12:35:29. 1234567 +12:15' AS DATETIME2 (7)) AS 'datetime2',
+       CAST ('2007-05-08 12:35:29.1234567 +12:15' AS DATETIMEOFFSET (7)) AS 'datetimeoffset';
+</code></pre>
+<p>Here's the result set.</p>
+<table>
+<thead>
+<tr>
+<th>Data type</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>time</strong></td>
+<td>12:35:29.1234567</td>
+</tr>
+<tr>
+<td><strong>date</strong></td>
+<td>2007-05-08</td>
+</tr>
+<tr>
+<td><strong>smalldatetime</strong></td>
+<td>2007-05-08 12:35:00</td>
+</tr>
+<tr>
+<td><strong>datetime</strong></td>
+<td>2007-05-08 12:35:29.123</td>
+</tr>
+<tr>
+<td><strong>datetime2</strong></td>
+<td>2007-05-08 12:35:29.1234567</td>
+</tr>
+<tr>
+<td><strong>datetimeoffset</strong></td>
+<td>2007-05-08 12:35:29.1234567 +12:15</td>
+</tr>
+</tbody>
+</table>
+<h2 id="related-content">Related content</h2>
+<ul>
+<li><a href="../functions/cast-and-convert-transact-sql?view=sql-server-ver17" data-linktype="relative-path">CAST and CONVERT (Transact-SQL)</a></li>
+</ul>
+</div>
+					
+		<div
+			id="ms--inline-notifications"
+			class="margin-block-xs"
+			data-bi-name="inline-notification"
+		></div>
+	 
+		<div
+			id="assertive-live-region"
+			role="alert"
+			aria-live="assertive"
+			class="visually-hidden"
+			aria-relevant="additions"
+			aria-atomic="true"
+		></div>
+		<div
+			id="polite-live-region"
+			role="status"
+			aria-live="polite"
+			class="visually-hidden"
+			aria-relevant="additions"
+			aria-atomic="true"
+		></div>
+	
+					
+		<!-- feedback section -->
+		<section
+			id="site-user-feedback-footer"
+			class="font-size-sm margin-top-md display-none-print display-none-desktop"
+			data-test-id="site-user-feedback-footer"
+			data-bi-name="site-feedback-section"
+		>
+			<hr class="hr" />
+			<h2 id="ms--feedback" class="title is-3">Feedback</h2>
+			<div class="display-flex flex-wrap-wrap align-items-center">
+				<p class="font-weight-semibold margin-xxs margin-left-none">
+					Was this page helpful?
+				</p>
+				<div class="buttons">
+					<button
+						class="thumb-rating-button like button button-primary button-sm"
+						data-test-id="footer-rating-yes"
+						data-binary-rating-response="rating-yes"
+						type="button"
+						title="This article is helpful"
+						data-bi-name="button-rating-yes"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-like"></span>
+						</span>
+						<span>Yes</span>
+					</button>
+					<button
+						class="thumb-rating-button dislike button button-primary button-sm"
+						id="standard-rating-no-button"
+						hidden
+						data-test-id="footer-rating-no"
+						data-binary-rating-response="rating-no"
+						type="button"
+						title="This article is not helpful"
+						data-bi-name="button-rating-no"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-dislike"></span>
+						</span>
+						<span>No</span>
+					</button>
+					<details
+						class="popover popover-top"
+						id="mobile-help-popover"
+						data-test-id="footer-feedback-popover"
+					>
+						<summary
+							class="thumb-rating-button dislike button button-primary button-sm"
+							data-test-id="details-footer-rating-no"
+							data-binary-rating-response="rating-no"
+							title="This article is not helpful"
+							data-bi-name="button-rating-no"
+							aria-pressed="false"
+							data-bi-an="feedback-unhelpful-popover"
+						>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-dislike"></span>
+							</span>
+							<span>No</span>
+						</summary>
+						<div
+							class="popover-content width-200 width-300-tablet"
+							role="dialog"
+							aria-labelledby="popover-heading"
+							aria-describedby="popover-description"
+						>
+							<p id="popover-heading" class="font-size-lg margin-bottom-xxs font-weight-semibold">
+								Need help with this topic?
+							</p>
+							<p id="popover-description" class="font-size-sm margin-bottom-xs">
+								Want to try using Ask Learn to clarify or guide you through this topic?
+							</p>
+							
+		<div class="buttons flex-direction-row flex-wrap justify-content-center gap-xxs">
+			<div>
+		<button
+			class="button button-sm border inner-focus display-none margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-test-id="ask-learn-assistant-modal-entry-mobile-feedback"
+			data-ask-learn-modal-entry-feedback
+			data-bi-an=feedback-unhelpful-popover
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-inline-flex display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-modal-entry-tablet-feedback"
+			data-ask-learn-modal-entry-feedback
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-flyout-entry-feedback"
+			data-ask-learn-flyout-entry-show-only
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	</div>
+			<button
+				type="button"
+				class="button button-sm margin-right-xxs"
+				data-help-option="suggest-fix"
+				data-bi-name="feedback-suggest"
+				data-bi-an="feedback-unhelpful-popover"
+				data-test-id="suggest-fix"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-feedback"></span>
+				</span>
+				<span> Suggest a fix? </span>
+			</button>
+		</div>
+	
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+		<!-- end feedback section -->
+	
+				</div>
+				
+		<div id="ms--additional-resources-mobile" class="display-none-print">
+			<hr class="hr" hidden />
+			<h2 id="ms--additional-resources-mobile-heading" class="title is-3" hidden>
+				Additional resources
+			</h2>
+			 
+		<section
+			id="right-rail-training-mobile"
+			class=""
+			data-bi-name="learning-resource-card"
+			hidden
+		></section>
+	 
+		<section
+			id="right-rail-events-mobile"
+			class=""
+			data-bi-name="events-card"
+			hidden
+		></section>
+	
+		</div>
+	 
+		<div
+			id="article-metadata-footer"
+			data-bi-name="article-metadata-footer"
+			data-test-id="article-metadata-footer"
+			class="page-metadata-container"
+		>
+			<hr class="hr" />
+			<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
+				<li class="visibility-hidden-visual-diff">
+			<span class="badge badge-sm text-wrap-pretty">
+				<span>Last updated on <local-time format="twoDigitNumeric"
+		datetime="2026-07-20T22:35:00.000Z"
+		data-article-date-source="calculated"
+		class="is-invisible"
+	>
+		2026-07-20
+	</local-time></span>
+			</span>
+		</li>
+			</ul>
+		</div>
+	
+			</div>
+			
+		<div
+			id="action-panel"
+			role="region"
+			aria-label="Action Panel"
+			class="action-panel"
+			tabindex="-1"
+		></div>
+	
+		
+				</main>
+				<aside
+					id="layout-body-aside"
+					class="layout-body-aside  "
+					data-bi-name="aside"
+					aria-label="Additional resources"
+			  >
+					
+		<div
+			id="ms--additional-resources"
+			class="right-container padding-sm display-none display-block-desktop height-full"
+			data-bi-name="pageactions"
+		>
+			<div id="affixed-right-container" data-bi-name="right-column">
+				
+		<nav
+			id="side-doc-outline"
+			class="doc-outline border-bottom padding-bottom-xs margin-bottom-xs scrollbar-width-thin"
+			data-bi-name="intopic toc"
+			aria-label="In this article"
+		>
+			<h3>In this article</h3>
+		</nav>
+	
+				<!-- Feedback -->
+				
+		<section
+			id="ms--site-user-feedback-right-rail"
+			class="font-size-sm display-none-print"
+			data-test-id="site-user-feedback-right-rail"
+			data-bi-name="site-feedback-right-rail"
+		>
+			<div class="display-flex flex-wrap-wrap align-items-center">
+				<p class="font-weight-semibold margin-xxs margin-left-none">
+					Was this page helpful?
+				</p>
+				<div class="display-flex flex-wrap-nowrap">
+					<button
+						class="thumb-rating-button like inner-focus"
+						data-test-id="right-rail-rating-yes"
+						data-binary-rating-response="rating-yes"
+						type="button"
+						title="This article is helpful"
+						aria-label="This article is helpful"
+						data-bi-name="button-rating-yes"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-like"></span>
+						</span>
+					</button>
+					<button
+						class="thumb-rating-button dislike inner-focus"
+						id="right-rail-no-button"
+						hidden
+						data-test-id="right-rail-rating-no"
+						data-binary-rating-response="rating-no"
+						type="button"
+						title="This article is not helpful"
+						aria-label="This article is not helpful"
+						data-bi-name="button-rating-no"
+						aria-pressed="false"
+					>
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-dislike"></span>
+						</span>
+					</button>
+					<details class="popover popover-right" id="help-popover" data-test-id="feedback-popover">
+						<summary
+							tabindex="0"
+							class="thumb-rating-button dislike inner-focus"
+							data-test-id="details-right-rail-rating-no"
+							data-binary-rating-response="rating-no"
+							title="This article is not helpful"
+							aria-label="This article is not helpful"
+							data-bi-name="button-rating-no"
+							aria-pressed="false"
+							data-bi-an="feedback-unhelpful-popover"
+						>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-dislike"></span>
+							</span>
+						</summary>
+						<div
+							class="popover-content width-200 width-300-tablet"
+							role="dialog"
+							aria-labelledby="popover-heading-right-rail"
+							aria-describedby="popover-description-right-rail"
+						>
+							<p
+								id="popover-heading-right-rail"
+								class="font-size-lg margin-bottom-xxs font-weight-semibold"
+							>
+								Need help with this topic?
+							</p>
+							<p id="popover-description-right-rail" class="font-size-sm margin-bottom-xs">
+								Want to try using Ask Learn to clarify or guide you through this topic?
+							</p>
+							
+		<div class="buttons flex-direction-row flex-wrap justify-content-center gap-xxs">
+			<div>
+		<button
+			class="button button-sm border inner-focus display-none margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-test-id="ask-learn-assistant-modal-entry-mobile-feedback"
+			data-ask-learn-modal-entry-feedback
+			data-bi-an=feedback-unhelpful-popover
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-label="Ask Learn"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+		</button>
+		<button
+			class="button button-sm display-inline-flex display-none-desktop flex-shrink-0 margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-modal-entry-tablet-feedback"
+			data-ask-learn-modal-entry-feedback
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+		<button
+			class="button button-sm display-none flex-shrink-0 display-inline-flex-desktop margin-right-xxs border-color-ask-learn margin-right-xxs"
+			data-bi-name="ask-learn-assistant-entry-troubleshoot"
+			data-bi-an=feedback-unhelpful-popover
+			data-test-id="ask-learn-assistant-flyout-entry-feedback"
+			data-ask-learn-flyout-entry-show-only
+			data-flyout-button="toggle"
+			type="button"
+			style="min-width: max-content;"
+			aria-expanded="false"
+			aria-controls="ask-learn-flyout"
+			hidden
+		>
+			<span class="icon font-size-lg" aria-hidden="true">
+				<span class="docon docon-chat-sparkle-fill gradient-ask-learn-logo"></span>
+			</span>
+			<span>Ask Learn</span>
+		</button>
+	</div>
+			<button
+				type="button"
+				class="button button-sm margin-right-xxs"
+				data-help-option="suggest-fix"
+				data-bi-name="feedback-suggest"
+				data-bi-an="feedback-unhelpful-popover"
+				data-test-id="suggest-fix"
+			>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-feedback"></span>
+				</span>
+				<span> Suggest a fix? </span>
+			</button>
+		</div>
+	
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+	
+			</div>
+		</div>
+	
+			  </aside> <section
+					id="layout-body-flyout"
+					class="layout-body-flyout "
+					data-bi-name="flyout"
+			  >
+					 <div
+	class="height-full border-left background-color-body-medium"
+	id="ask-learn-flyout"
+></div>
+			  </section> <div class="layout-body-footer " data-bi-name="layout-footer">
+		<footer
+			id="footer"
+			data-test-id="footer"
+			data-bi-name="footer"
+			class="footer-layout padding-xs padding-sm-desktop has-default-focus border-top"
+			role="contentinfo"
+		>
+			<div class="display-flex gap-xs flex-wrap-wrap is-full-height padding-right-lg-desktop">
+				
+		<a
+			data-mscc-ic="false"
+			href="#"
+			data-bi-name="select-locale"
+			class="locale-selector-link flex-shrink-0 button button-sm button-clear external-link-indicator"
+			id=""
+			title=""
+			><span class="icon" aria-hidden="true"
+				><span class="docon docon-world"></span></span
+			><span class="local-selector-link-text">en-us</span></a
+		>
+	 <div class="ccpa-privacy-link" data-ccpa-privacy-link hidden>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://aka.ms/yourcaliforniaprivacychoices"
+			data-bi-name="your-privacy-choices"
+			class="button button-sm button-clear flex-shrink-0 external-link-indicator"
+			id=""
+			title=""
+			>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 30 14"
+			xml:space="preserve"
+			height="16"
+			width="43"
+			aria-hidden="true"
+			focusable="false"
+		>
+			<path
+				d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z"
+				style="fill-rule:evenodd;clip-rule:evenodd;fill:#fff"
+			></path>
+			<path
+				d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z"
+				style="fill-rule:evenodd;clip-rule:evenodd;fill:#06f"
+			></path>
+			<path
+				d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z"
+				style="fill:#fff"
+			></path>
+			<path
+				d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z"
+				style="fill:#06f"
+			></path>
+		</svg>
+	
+			<span>Your Privacy Choices</span></a
+		>
+	
+	</div>
+				<div class="flex-shrink-0">
+		<div class="dropdown has-caret-up">
+			<button
+				data-test-id="theme-selector-button"
+				class="dropdown-trigger button button-clear button-sm inner-focus theme-dropdown-trigger"
+				aria-controls="{{ themeMenuId }}"
+				aria-haspopup="true"
+				aria-expanded="false"
+				data-bi-name="theme"
+			>
+				<span class="icon" aria-hidden="true"><span class="docon docon-sun"></span></span>
+				<span>Theme</span>
+				<span class="icon expanded-indicator" aria-hidden="true">
+					<span class="docon docon-chevron-down-light"></span>
+				</span>
+			</button>
+			<div class="dropdown-menu" id="{{ themeMenuId }}" role="menu">
+				<ul class="theme-selector padding-xxs" data-test-id="theme-dropdown-menu" role="none">
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="light"
+							tabindex="-1"
+						>
+							<span class="theme-light margin-right-xxs">
+								<span
+									class="theme-selector-icon border display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> Light </span>
+						</button>
+					</li>
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="dark"
+							tabindex="-1"
+						>
+							<span class="theme-dark margin-right-xxs">
+								<span
+									class="border theme-selector-icon display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> Dark </span>
+						</button>
+					</li>
+					<li class="theme display-block" role="none">
+						<button
+							class="button button-clear button-sm theme-control button-block justify-content-flex-start text-align-left"
+							role="menuitemradio"
+							aria-checked="false"
+							data-theme-to="high-contrast"
+							tabindex="-1"
+						>
+							<span class="theme-high-contrast margin-right-xxs">
+								<span
+									class="border theme-selector-icon display-inline-block has-body-background"
+									aria-hidden="true"
+								>
+									<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+										<rect width="22" height="14" class="has-fill-body-background" />
+										<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+										<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+										<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+										<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+										<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+										<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+									</svg>
+								</span>
+							</span>
+							<span> High contrast </span>
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+			</div>
+			<ul class="links" data-bi-name="footerlinks">
+				<li class="manage-cookies-holder" hidden=""></li>
+				<li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/principles-for-ai-generated-content"
+			data-bi-name="aiDisclaimer"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>AI Disclaimer</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/previous-versions/"
+			data-bi-name="archivelink"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Previous Versions</a
+		>
+	
+	</li> <li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog"
+			data-bi-name="bloglink"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Blog</a
+		>
+	
+	</li> <li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/contribute"
+			data-bi-name="contributorGuide"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Contribute</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://go.microsoft.com/fwlink/?LinkId=521839"
+			data-bi-name="privacy"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Privacy</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://go.microsoft.com/fwlink/?linkid=2259814"
+			data-bi-name="consumer-health-privacy"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Consumer Health Privacy</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://learn.microsoft.com/en-us/legal/termsofuse"
+			data-bi-name="termsofuse"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Terms of Use</a
+		>
+	
+	</li><li>
+		
+		<a
+			data-mscc-ic="false"
+			href="https://www.microsoft.com/legal/intellectualproperty/Trademarks/"
+			data-bi-name="trademarks"
+			class=" external-link-indicator"
+			id=""
+			title=""
+			>Trademarks</a
+		>
+	
+	</li>
+				<li>&copy; Microsoft 2026</li>
+			</ul>
+		</footer>
+	</footer>
+			</body>
+		</html>

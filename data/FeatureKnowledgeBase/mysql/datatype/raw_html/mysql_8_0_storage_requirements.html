@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en" class="svg no-js">
+<head>
+    <meta charset="utf-8" />
+    <!--[if IE ]>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Language" content="en">
+
+    <title>MySQL :: MySQL 8.0 Reference Manual :: 13.7 Data Type Storage Requirements</title>
+    <link rel="stylesheet" media="all" href="https://labs.mysql.com/common/css/main-20250803.min.css" />
+            <link rel="stylesheet" media="all" href="https://labs.mysql.com/common/css/docs-20250803.min.css" />
+    
+    
+    <link rel="stylesheet" media="print" href="https://labs.mysql.com/common/css/print-20250803.min.css" />
+
+    
+    
+    
+    
+            <link rel="contents" href="index.html" title="MySQL 8.0 Reference Manual" />
+<link rel="start" href="index.html" title="MySQL 8.0 Reference Manual" />
+<link rel="prev" href="data-type-defaults.html" title="13.6 Data Type Default Values" />
+<link rel="next" href="choosing-types.html?ff=nopfpls" title="13.8 Choosing the Right Type for a Column" />
+<link rel="up" href="data-types.html" title="13 Data Types" />
+
+    
+    <link rel="shortcut icon" href="https://labs.mysql.com/common/themes/sakila/favicon.ico" />
+    <script async="async" type="text/javascript" src='https://consent.truste.com/notice?domain=oracle.com&c=teconsent&js=bb&noticeType=bb&text=true&cdn=1&pcookie&gtm=1' crossorigin></script>
+    <script src="https://www.oracle.com/assets/truste-oraclelib.js"></script>
+    <script>(function(H){ H.className=H.className.replace(/\bno-js\b/,'js') })(document.documentElement)</script>
+    <script src="https://labs.mysql.com/common/js/site-20250121.min.js"></script>
+
+    
+    
+    <!--[if lt IE 9]>
+        <script src="https://labs.mysql.com/common/js/polyfills/html5shiv-printshiv-3.7.2.min.js"></script>
+        <script src="https://labs.mysql.com/common/js/polyfills/respond-1.4.2.min.js"></script>
+    <![endif]-->
+        <!--[if IE 9]>
+        <style>#docs-sidebar-toc { box-sizing: content-box; }</style>
+    <![endif]-->
+        
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="E6BB6-B37B4-898B7-F97BA-BBCDB",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"E6BB6-B37B4-898B7-F97BA-BBCDB";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="tx7bjbfykvyok2tumyna-f-3dfe12e91-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1983233","ak.ai":parseInt("802521",10),"ak.ol":"0","ak.cr":5,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"1742e811","ak.r":34657,"ak.a2":n,"ak.m":"dscx","ak.n":"essl","ak.cport":32829,"ak.gh":"23.32.20.179","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1786013210","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==LcF6WkI7MlZxPDwCRwTnFEBbr+GbGOQkpfKm/MFMpVNfodwdpzBDeJ5XHl02KvaHIbL/q7kb2INU7dKYQ6VBgEozpq3wTxluZEZotlDjOSvxyOlO5dg2OI5aEymHATAPH4xoqpoYH/l3KXmKq1UceKCfYGpVtOsnpmaQTiw8lD5oPBGCFdWtiRAaGtvID1M2JxRAsAIDqbgo0IXKwOiCvYLIYmW1RynOHEaKCOzCLF9MZ3SyGVLyYXW2YH/DCS5aOXil8oGXobKTfMUJF1isWYx42rZ2zseZOfhEP/uBJXriSi9VXmc7K6cITIJNkDlAM4hMGlwuFFWyjBGJzBcMHK6iUlvniR0pcEqtAKS/ruYWqcCQVj1bTvdR8Cbervf36VK2+SwOMQV0xf64sCPgwDICY/FragmyzUb/TINFF5o=","ak.pv":"21","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body class="no-sidebar full-page dev">
+<a class="skip-main" href="#main">Skip to Main Content</a>
+<div class="page-wrapper">
+    <header>
+
+                        <a href="https://dev.mysql.com/" aria-label="MySQL Home" title="MySQL" id="l1-home-link"></a>
+        
+        <div id="l1-nav-container">
+            <div id="l1-line1">
+                <div id="l1-lhs">
+                    <div id="l1-slogan">
+                        The world's most popular open source database
+                    </div>
+                    <div id="l1-search-box">
+                        <form id="l1-search-form" method="get" action="https://search.oracle.com/mysql">
+                        <input type="hidden" name="app" value="mysql" />
+                        <input id="l1-search-input" type="search" class="icon-search" placeholder="Search" aria-label="Search" name="q" />
+                        </form>
+                    </div>
+                    <div id="l1-auth-links">
+                        <nav aria-label="Contact/Login Navigation" role="navigation">
+                            <a href="https://www.mysql.com/about/contact/"><b>Contact MySQL</b></a>
+                            <span id="l1-contact-separator">&nbsp;|&nbsp;</span>
+                            <span id="l1-contact-separator-br"><br /></span>
+                                                             <a href="https://dev.mysql.com/auth/login/?dest=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F8.0%2Fen%2Fstorage-requirements.html">Login</a> &nbsp;|&nbsp;
+                                 <a href="https://dev.mysql.com/auth/register/">Register</a>
+                                                    </nav>
+                    </div>
+                </div>
+            </div>
+            <div id="l1-line2">
+                <nav aria-label="Primary Navigation" role="navigation">
+                    <ul id="l1-nav">
+                        <li>
+                            <a href="https://www.mysql.com/"><!-- <span class="icon-sakila"></span>  -->MySQL.com</a>
+                        </li><li>
+                            <a href="https://www.mysql.com/downloads/"><!-- <span class="icon-download-thin"></span>  -->Downloads</a>
+                        </li><li class="active">
+                            <a href="/doc/"><!-- <span class="icon-books"></span>  -->Documentation</a>
+                        </li><li>
+                            <a href="/"><!-- <span class="icon-code"></span>  -->Developer Zone</a>
+                        </li>                    </ul>
+                </nav>
+                <div class="social-icons">
+                    <nav aria-label="Social Navigation" role="navigation">
+                        <a aria-label="Join us on Facebook" title="Join us on Facebook" href="http://www.facebook.com/mysql"><span class="icon-facebook"></span></a>
+                        <a aria-label="Follow us on X" title="Follow us on X" href="https://x.com/mysql"><span class="icon-x-twitter"></span></a>
+                        <a aria-label="Follow us on LinkedIn" title="Follow us on LinkedIn" href="https://www.linkedin.com/company/mysql"><span class="icon-linkedin"></span></a>
+                        <a aria-label="Visit our YouTube channel" title="Visit our YouTube channel" href="http://www.youtube.com/mysqlchannel"><span class="icon-youtube"></span></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="sub-header">
+            <div id="l2-nav-container">
+                <div id="l2-nav-toggle">
+                    <span class="icon-three-bars"></span>
+                </div>
+                                                                                        <a class="button nav-button-3" href="/"><span class="icon-code"></span> Developer Zone</a>
+                                                                                                                                    <a class="button nav-button-2" href="https://www.mysql.com/downloads/"><span class="icon-download-thin"></span> Downloads</a>
+                                                                                                <a class="button nav-button-1" href="https://www.mysql.com/"><span class="icon-sakila"></span> MySQL.com</a>
+                                                                        <div id="l2-search-toggle">
+                    <span class="icon-search"></span>
+                </div>
+                <div id="l2-site-icon">
+                                                                                                                                                                                                    <span class="icon-books"></span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
+                <div id="l1-section-title">
+                    <span id="l1-section-label">
+                        <a href="/doc/">Documentation</a>
+                    </span>
+                </div>
+                <nav aria-label="Secondary Navigation" role="navigation">
+                    
+
+<ul id="l2-nav">
+            	<li class="active"><a class="active " href="/doc/refman/en/">MySQL Server</a>
+    			</li>
+	        	<li class=""><a  href="/doc/index-enterprise.html">MySQL Enterprise</a>
+    			</li>
+	        	<li class=""><a  href="/doc/workbench/en/">Workbench</a>
+    			</li>
+	        	<li class=""><a  href="/doc/mysql-shell/en/mysql-innodb-cluster.html">InnoDB Cluster</a>
+    			</li>
+	        	<li class=""><a  href="/doc/index-cluster.html">MySQL NDB Cluster</a>
+    			</li>
+	        	<li class=""><a  href="/doc/index-connectors.html">Connectors</a>
+    			</li>
+	        	<li class=" last"><a  href="/doc/index-other.html">More</a>
+    			</li>
+	                        <li class="other-section"><a href="https://www.mysql.com/">MySQL.com</a></li>
+                            <li class="other-section"><a href="https://www.mysql.com/downloads/">Downloads</a></li>
+                                        <li class="other-section"><a href="/">Developer Zone</a></li>
+            </ul>
+                </nav>
+            </div>
+            <div id="l3-search-container"></div>
+            <div id="top-orange"><span id="section-nav">Section Menu: &nbsp; </span></div>
+        </div>
+    </header>
+        <div id="page">
+                        <div role="main" id="main" tabindex="-1">
+
+            
+                
+            
+<div>
+    <div id="docs-sidebar-toc" class="">
+    <div id="docs-toc-inner">
+        <div class="docs-sidebar-header" id="docs-nav-header">
+            <a class="docs-show-hide-nav" id="docs-hide-nav" href="" title="Hide Sidebar" aria-label="Hide Sidebar"><span class="icon-arrow-small-left"></span></a>
+            <div class="docs-nav-links">
+                                    
+    <a href="data-type-defaults.html"
+        aria-label="Previous" title="Previous: Data Type Default Values"><span
+        class="icon-chevron-left"></span></a>
+<a href="index.html" aria-label="Start" title="Start"><span class="icon-book-open"></span></a>
+        <a aria-label="Up" href="data-types.html" title="Up: Data Types"><span class="icon-chevron-up"></span></a>
+    <a href="choosing-types.html" aria-label="Next"
+        title="Next: Choosing the Right Type for a Column"><span
+        class="icon-chevron-right"></span></a>
+                            </div>
+        </div>
+                    
+<div id="docs-sidebar-search-container">
+    <div id="docs-sidebar-search-box">
+        <form method="get" action="/doc/search/">
+            <input type="hidden" name="d" id="d" value="201" />
+            <input type="hidden" name="p" id="p" value="1" />
+            <input type="text" name="q" id="q" title="Search this Manual"
+                value="Search this Manual"
+                style="color: #bbb;"
+                onfocus="if(this.value == 'Search this Manual') {this.value='';this.style.color='#555';}"
+                onblur="if(this.value == '') {this.value='Search this Manual';this.style.color='#bbb';}" />
+
+            <button class="docs-sidebar-search-btn" aria-label="Search" title="Search" type="submit">
+                <span class="icon-search"></span>
+            </button>
+        </form>
+    </div>
+</div>
+                <div class="docs-sidebar-nav">
+            <a class="docs-icon-home" href="/doc/"><span class="icon-home"></span>Documentation Home</a><hr />
+            <div class="docs-sidebar-mtitle">MySQL 8.0 Reference Manual</div>
+            <nav class="doctoc" id="doc-201">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="preface.html">Preface and Legal Notices</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="introduction.html">General Information</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="installing.html">Installing MySQL</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="upgrading.html">Upgrading MySQL</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="downgrading.html">Downgrading MySQL</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="tutorial.html">Tutorial</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="programs.html">MySQL Programs</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="server-administration.html">MySQL Server Administration</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="security.html">Security</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="backup-and-recovery.html">Backup and Recovery</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="optimization.html">Optimization</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="language-structure.html">Language Structure</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="charset.html">Character Sets, Collations, Unicode</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-down"></span></a></div><div class="docs-sidebar-nav-link"><a href="data-types.html">Data Types</a></div></div>                        <div class="docs-submenu">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="numeric-types.html">Numeric Data Types</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="numeric-type-syntax.html">Numeric Data Type Syntax</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="integer-types.html">Integer Types (Exact Value) - INTEGER, INT, SMALLINT, TINYINT,
+        MEDIUMINT, BIGINT</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fixed-point-types.html">Fixed-Point Types (Exact Value) - DECIMAL, NUMERIC</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="floating-point-types.html">Floating-Point Types (Approximate Value) - FLOAT, DOUBLE</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="bit-type.html">Bit-Value Type - BIT</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="numeric-type-attributes.html">Numeric Type Attributes</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="out-of-range-and-overflow.html">Out-of-Range and Overflow Handling</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="date-and-time-types.html">Date and Time Data Types</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="date-and-time-type-syntax.html">Date and Time Data Type Syntax</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="datetime.html">The DATE, DATETIME, and TIMESTAMP Types</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="time.html">The TIME Type</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="year.html">The YEAR Type</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="timestamp-initialization.html">Automatic Initialization and Updating for TIMESTAMP and DATETIME</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fractional-seconds.html">Fractional Seconds in Time Values</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="mysql-calendar.html">What Calendar Is Used By MySQL?</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="date-and-time-type-conversion.html">Conversion Between Date and Time Types</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="two-digit-years.html">2-Digit Years in Dates</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="string-types.html">String Data Types</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="string-type-syntax.html">String Data Type Syntax</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="char.html">The CHAR and VARCHAR Types</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="binary-varbinary.html">The BINARY and VARBINARY Types</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="blob.html">The BLOB and TEXT Types</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="enum.html">The ENUM Type</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="set.html">The SET Type</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="spatial-types.html">Spatial Data Types</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-type-overview.html">Spatial Data Types</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="opengis-geometry-model.html">The OpenGIS Geometry Model</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-geometry-class-hierarchy.html">The Geometry Class Hierarchy</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-class-geometry.html">Geometry Class</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-class-point.html">Point Class</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-class-curve.html">Curve Class</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-class-linestring.html">LineString Class</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-class-surface.html">Surface Class</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-class-polygon.html">Polygon Class</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-class-geometrycollection.html">GeometryCollection Class</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-class-multipoint.html">MultiPoint Class</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-class-multicurve.html">MultiCurve Class</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-class-multilinestring.html">MultiLineString Class</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-class-multisurface.html">MultiSurface Class</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-class-multipolygon.html">MultiPolygon Class</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-data-formats.html">Supported Spatial Data Formats</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="geometry-well-formedness-validity.html">Geometry Well-Formedness and Validity</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-reference-systems.html">Spatial Reference System Support</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="creating-spatial-columns.html">Creating Spatial Columns</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="populating-spatial-columns.html">Populating Spatial Columns</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fetching-spatial-data.html">Fetching Spatial Data</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="optimizing-spatial-analysis.html">Optimizing Spatial Analysis</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="creating-spatial-indexes.html">Creating Spatial Indexes</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="using-spatial-indexes.html">Using Spatial Indexes</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="json.html">The JSON Data Type</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="data-type-defaults.html">Data Type Default Values</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link current"><a href="storage-requirements.html">Data Type Storage Requirements</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="choosing-types.html">Choosing the Right Type for a Column</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="other-vendor-data-types.html">Using Data Types from Other Database Engines</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="functions.html">Functions and Operators</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="sql-statements.html">SQL Statements</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="data-dictionary.html">MySQL Data Dictionary</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="innodb-storage-engine.html">The InnoDB Storage Engine</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="storage-engines.html">Alternative Storage Engines</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="replication.html">Replication</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="group-replication.html">Group Replication</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="mysql-shell-userguide.html">MySQL Shell</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="document-store.html">Using MySQL as a Document Store</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="mysql-innodb-cluster-introduction.html">InnoDB Cluster</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="mysql-innodb-replicaset-introduction.html">InnoDB ReplicaSet</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="mysql-cluster.html">MySQL NDB Cluster 8.0</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="partitioning.html">Partitioning</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="stored-objects.html">Stored Objects</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="information-schema.html">INFORMATION_SCHEMA Tables</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="performance-schema.html">MySQL Performance Schema</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="sys-schema.html">MySQL sys Schema</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="connectors-apis.html">Connectors and APIs</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="mysql-enterprise.html">MySQL Enterprise Edition</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="workbench.html">MySQL Workbench</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="mysql-oci-marketplace.html">MySQL on OCI Marketplace</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="faqs.html">MySQL 8.0 Frequently Asked Questions</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="error-handling.html">Error Messages and Common Problems</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="indexes.html">Indexes</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="glossary.html">MySQL Glossary</a></div></div>                    </li>
+        </ul>
+                            </nav>
+        </div>
+
+        
+<a class="docs-sidebar-section" href=""><span class="icon-related"></span>
+    <span class="text">Related Documentation</span></a>
+<div class="docs-sidebar-accordian open">
+    <div class="text">
+        <a href="/doc/relnotes/mysql/8.0/en/">MySQL 8.0 Release Notes</a><br />
+        <a href="/doc/dev/mysql-server/latest/">MySQL 8.0 Source Code Documentation</a><br />
+        </div>
+</div>
+
+    <a class="docs-sidebar-section" href=""><span class="icon-download-thin"></span>
+        <span class="text">
+            Download
+                            this Manual
+                    </span>
+    </a>
+    <div class="docs-sidebar-accordian open">
+        <div class="text">
+                                    <a href="https://downloads.mysql.com/docs/refman-8.0-en.pdf">PDF (US Ltr)</a>
+            - 43.2Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.a4.pdf">PDF (A4)</a>
+            - 43.3Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.man-gpl.tar.gz">Man Pages (TGZ)</a>
+            - 295.2Kb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.man-gpl.zip">Man Pages (Zip)</a>
+            - 400.4Kb<br />
+                                                <a href="https://downloads.mysql.com/docs/mysql-8.0.info.gz">Info (Gzip)</a>
+            - 4.3Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/mysql-8.0.info.zip">Info (Zip)</a>
+            - 4.3Mb<br />
+                                </div>
+    </div>
+
+<a class="docs-sidebar-section" href=""><span class="icon-book"></span>
+    <span class="text">Excerpts from this Manual</span></a>
+<div class="docs-sidebar-accordian">
+    <div class="text">
+                <a href="/doc/mysql-g11n-excerpt/8.0/en/">MySQL Globalization</a><br />
+                <a href="/doc/mysql-infoschema-excerpt/8.0/en/">MySQL Information Schema</a><br />
+                <a href="/doc/mysql-installation-excerpt/8.0/en/">MySQL Installation Guide</a><br />
+                <a href="/doc/mysql-security-excerpt/8.0/en/">Security in MySQL</a><br />
+                <a href="/doc/mysql-startstop-excerpt/8.0/en/">Starting and Stopping MySQL</a><br />
+                <a href="/doc/mysql-linuxunix-excerpt/8.0/en/">MySQL and Linux/Unix</a><br />
+                <a href="/doc/mysql-windows-excerpt/8.0/en/">MySQL and Windows</a><br />
+                <a href="/doc/mysql-macos-excerpt/8.0/en/">MySQL and macOS</a><br />
+                <a href="/doc/mysql-solaris-excerpt/8.0/en/">MySQL and Solaris</a><br />
+                <a href="/doc/mysql-sourcebuild-excerpt/8.0/en/">Building MySQL from Source</a><br />
+                <a href="/doc/mysql-reslimits-excerpt/8.0/en/">MySQL Restrictions and Limitations</a><br />
+                <a href="/doc/mysql-partitioning-excerpt/8.0/en/">MySQL Partitioning</a><br />
+                <a href="/doc/mysql-tutorial-excerpt/8.0/en/">MySQL Tutorial</a><br />
+                <a href="/doc/mysql-perfschema-excerpt/8.0/en/">MySQL Performance Schema</a><br />
+                <a href="/doc/mysql-replication-excerpt/8.0/en/">MySQL Replication</a><br />
+                <a href="/doc/mysql-repo-excerpt/8.0/en/">Using the MySQL Yum Repository</a><br />
+                <a href="/doc/mysql-cluster-excerpt/8.0/en/">MySQL NDB Cluster 8.0</a><br />
+            </div>
+</div>
+
+        <br /><span id="wkr"><br /></span>
+    </div>
+    </div>
+
+    <div id="docs-main" class="has-toc">
+    <div id="docs-main-inner">
+
+                <div class="right" id="docs-version-nav">
+            <a href="" id="docs-version-nav-toggle">version 8.0
+            <span class="icon-chevron-down"></span></a>
+            <div id="docs-version-list">
+                                                        <a                         href="/doc/refman/26.7/en/storage-requirements.html">
+                        26.7
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.7/en/storage-requirements.html">
+                        9.7
+                                                &nbsp;current
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.6/en/storage-requirements.html">
+                        9.6
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.5/en/storage-requirements.html">
+                        9.5
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.4/en/storage-requirements.html">
+                        9.4
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.3/en/storage-requirements.html">
+                        9.3
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.2/en/storage-requirements.html">
+                        9.2
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.1/en/storage-requirements.html">
+                        9.1
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/8.4/en/storage-requirements.html">
+                        8.4
+                                            </a><br />
+                                                                                                                <a                         href="/doc/refman/5.7/en/storage-requirements.html">
+                        5.7
+                                            </a><br />
+                                                                        <div id="docs-version-nav-lang">
+                                                                                                                                                    <a                                     href="/doc/refman/8.0/ja/storage-requirements.html">
+                                    8.0&nbsp;
+                                                                            Japanese
+                                                                    </a><br />
+                                                                                            </div>
+                            </div>
+        </div>
+        
+        <div id="docs-show-nav" class="left hidden" style="margin-right: 15px;">
+            <a class="docs-show-hide-nav" href="" aria-label="Show Sidebar"
+                title="Show Sidebar"><span class="icon-arrow-small-right"></span></a>
+        </div>
+
+                        <div id="docs-breadcrumbs">
+            <a href="/doc/refman/8.0/en/">MySQL 8.0 Reference Manual</a> &nbsp;/&nbsp;
+                                                        <a href="data-types.html">Data Types</a> &nbsp;/&nbsp;
+                                                                                    Data Type Storage Requirements
+                                    </div>
+        
+        <div id="docs-body">
+        
+<div class="section">
+
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title"><a name="storage-requirements"></a>13.7 Data Type Storage Requirements</h2>
+
+</div>
+
+</div>
+
+</div>
+<a class="indexterm" name="id217492"></a><a class="indexterm" name="id217495"></a>
+<div class="itemizedlist">
+<ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="xref" href="storage-requirements.html#data-types-storage-reqs-innodb" title="InnoDB Table Storage Requirements">InnoDB Table Storage Requirements</a></p></li><li class="listitem"><p><a class="xref" href="storage-requirements.html#data-types-storage-reqs-ndb" title="NDB Table Storage Requirements">NDB Table Storage Requirements</a></p></li><li class="listitem"><p><a class="xref" href="storage-requirements.html#data-types-storage-reqs-numeric" title="Numeric Type Storage Requirements">Numeric Type Storage Requirements</a></p></li><li class="listitem"><p><a class="xref" href="storage-requirements.html#data-types-storage-reqs-date-time" title="Date and Time Type Storage Requirements">Date and Time Type Storage Requirements</a></p></li><li class="listitem"><p><a class="xref" href="storage-requirements.html#data-types-storage-reqs-strings" title="String Type Storage Requirements">String Type Storage Requirements</a></p></li><li class="listitem"><p><a class="xref" href="storage-requirements.html#data-types-storage-reqs-gis" title="Spatial Type Storage Requirements">Spatial Type Storage Requirements</a></p></li><li class="listitem"><p><a class="xref" href="storage-requirements.html#data-types-storage-reqs-json" title="JSON Storage Requirements">JSON Storage Requirements</a></p></li></ul>
+</div>
+<p>
+      The storage requirements for table data on disk depend on several
+      factors. Different storage engines represent data types and store
+      raw data differently. Table data might be compressed, either for a
+      column or an entire row, complicating the calculation of storage
+      requirements for a table or column.
+    </p><p>
+      Despite differences in storage layout on disk, the internal MySQL
+      APIs that communicate and exchange information about table rows
+      use a consistent data structure that applies across all storage
+      engines.
+    </p><p>
+      This section includes guidelines and information for the storage
+      requirements for each data type supported by MySQL, including the
+      internal format and size for storage engines that use a fixed-size
+      representation for data types. Information is listed by category
+      or storage engine.
+    </p><a class="indexterm" name="id217523"></a><p>
+      The internal representation of a table has a maximum row size of
+      65,535 bytes, even if the storage engine is capable of supporting
+      larger rows. This figure excludes
+      <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">BLOB</code></a> or
+      <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">TEXT</code></a> columns, which contribute only
+      9 to 12 bytes toward this size. For
+      <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">BLOB</code></a> and
+      <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">TEXT</code></a> data, the information is
+      stored internally in a different area of memory than the row
+      buffer. Different storage engines handle the allocation and
+      storage of this data in different ways, according to the method
+      they use for handling the corresponding types. For more
+      information, see <a class="xref" href="storage-engines.html" title="Chapter 18 Alternative Storage Engines">Chapter 18, <i>Alternative Storage Engines</i></a>, and
+      <a class="xref" href="column-count-limit.html" title="10.4.7 Limits on Table Column Count and Row Size">Section 10.4.7, “Limits on Table Column Count and Row Size”</a>.
+</p>
+<div class="simplesect">
+
+<div class="titlepage">
+<div>
+
+<div class="simple">
+<h3 class="title"><a name="data-types-storage-reqs-innodb"></a>InnoDB Table Storage Requirements</h3>
+</div>
+</div>
+</div>
+<a class="indexterm" name="id217538"></a><a class="indexterm" name="id217541"></a><p>
+        See <a class="xref" href="innodb-row-format.html" title="17.10 InnoDB Row Formats">Section 17.10, “InnoDB Row Formats”</a> for information about
+        storage requirements for <code class="literal">InnoDB</code> tables.
+</p>
+</div>
+
+<div class="simplesect">
+
+<div class="titlepage">
+<div>
+
+<div class="simple">
+<h3 class="title"><a name="data-types-storage-reqs-ndb"></a>NDB Table Storage Requirements</h3>
+
+</div>
+
+</div>
+
+</div>
+<a class="indexterm" name="id217548"></a><a class="indexterm" name="id217551"></a>
+<div class="important" style="margin-left: 0.5in; margin-right: 0.5in;">
+
+<div class="admon-title">
+Important
+</div>
+<p>
+          <a class="link" href="mysql-cluster.html" title="Chapter 25 MySQL NDB Cluster 8.0"><code class="literal">NDB</code></a> tables use
+          <span class="firstterm">4-byte alignment</span>; all
+          <a class="link" href="mysql-cluster.html" title="Chapter 25 MySQL NDB Cluster 8.0"><code class="literal">NDB</code></a> data storage is done in
+          multiples of 4 bytes. Thus, a column value that would
+          typically take 15 bytes requires 16 bytes in an
+          <a class="link" href="mysql-cluster.html" title="Chapter 25 MySQL NDB Cluster 8.0"><code class="literal">NDB</code></a> table. For example, in
+          <a class="link" href="mysql-cluster.html" title="Chapter 25 MySQL NDB Cluster 8.0"><code class="literal">NDB</code></a> tables, the
+          <a class="link" href="integer-types.html" title="13.1.2 Integer Types (Exact Value) - INTEGER, INT, SMALLINT, TINYINT, MEDIUMINT, BIGINT"><code class="literal">TINYINT</code></a>,
+          <a class="link" href="integer-types.html" title="13.1.2 Integer Types (Exact Value) - INTEGER, INT, SMALLINT, TINYINT, MEDIUMINT, BIGINT"><code class="literal">SMALLINT</code></a>,
+          <a class="link" href="integer-types.html" title="13.1.2 Integer Types (Exact Value) - INTEGER, INT, SMALLINT, TINYINT, MEDIUMINT, BIGINT"><code class="literal">MEDIUMINT</code></a>, and
+          <a class="link" href="integer-types.html" title="13.1.2 Integer Types (Exact Value) - INTEGER, INT, SMALLINT, TINYINT, MEDIUMINT, BIGINT"><code class="literal">INTEGER</code></a>
+          (<a class="link" href="integer-types.html" title="13.1.2 Integer Types (Exact Value) - INTEGER, INT, SMALLINT, TINYINT, MEDIUMINT, BIGINT"><code class="literal">INT</code></a>) column types each require
+          4 bytes storage per record due to the alignment factor.
+        </p><p>
+          Each <code class="literal">BIT(<em class="replaceable"><code>M</code></em>)</code>
+          column takes <em class="replaceable"><code>M</code></em> bits of storage
+          space. Although an individual
+          <a class="link" href="bit-type.html" title="13.1.5 Bit-Value Type - BIT"><code class="literal">BIT</code></a> column is
+          <span class="emphasis"><em>not</em></span> 4-byte aligned,
+          <a class="link" href="mysql-cluster.html" title="Chapter 25 MySQL NDB Cluster 8.0"><code class="literal">NDB</code></a> reserves 4 bytes (32 bits)
+          per row for the first 1-32 bits needed for
+          <code class="literal">BIT</code> columns, then another 4 bytes for bits
+          33-64, and so on.
+        </p><p>
+          While a <code class="literal">NULL</code> itself does not require any
+          storage space, <a class="link" href="mysql-cluster.html" title="Chapter 25 MySQL NDB Cluster 8.0"><code class="literal">NDB</code></a> reserves 4
+          bytes per row if the table definition contains any columns
+          allowing <code class="literal">NULL</code>, up to 32
+          <code class="literal">NULL</code> columns. (If an NDB Cluster table is
+          defined with more than 32 <code class="literal">NULL</code> columns up
+          to 64 <code class="literal">NULL</code> columns, then 8 bytes per row
+          are reserved.)
+</p>
+</div>
+<p>
+        Every table using the <a class="link" href="mysql-cluster.html" title="Chapter 25 MySQL NDB Cluster 8.0"><code class="literal">NDB</code></a> storage
+        engine requires a primary key; if you do not define a primary
+        key, a <span class="quote">“<span class="quote">hidden</span>”</span> primary key is created by
+        <a class="link" href="mysql-cluster.html" title="Chapter 25 MySQL NDB Cluster 8.0"><code class="literal">NDB</code></a>. This hidden primary key
+        consumes 31-35 bytes per table record.
+      </p><a class="indexterm" name="id217599"></a><p>
+        You can use the <a class="link" href="mysql-cluster-programs-ndb-size-pl.html" title="25.5.28 ndb_size.pl — NDBCLUSTER Size Requirement Estimator"><span class="command"><strong>ndb_size.pl</strong></span></a> Perl script to
+        estimate <a class="link" href="mysql-cluster.html" title="Chapter 25 MySQL NDB Cluster 8.0"><code class="literal">NDB</code></a> storage requirements.
+        It connects to a current MySQL (not NDB Cluster) database and
+        creates a report on how much space that database would require
+        if it used the <a class="link" href="mysql-cluster.html" title="Chapter 25 MySQL NDB Cluster 8.0"><code class="literal">NDB</code></a> storage engine.
+        See <a class="xref" href="mysql-cluster-programs-ndb-size-pl.html" title="25.5.28 ndb_size.pl — NDBCLUSTER Size Requirement Estimator">Section 25.5.28, “ndb_size.pl — NDBCLUSTER Size Requirement Estimator”</a> for
+        more information.
+</p>
+</div>
+
+<div class="simplesect">
+
+<div class="titlepage">
+<div>
+
+<div class="simple">
+<h3 class="title"><a name="data-types-storage-reqs-numeric"></a>Numeric Type Storage Requirements</h3>
+
+</div>
+
+</div>
+
+</div>
+<a class="indexterm" name="id217610"></a><a class="indexterm" name="id217613"></a>
+<div class="informaltable">
+<table summary="Storage required for numeric data types."><col style="width: 40%"><col style="width: 60%"><thead><tr>
+            <th>Data Type</th>
+            <th>Storage Required</th>
+          </tr></thead><tbody><tr>
+            <td><a class="link" href="integer-types.html" title="13.1.2 Integer Types (Exact Value) - INTEGER, INT, SMALLINT, TINYINT, MEDIUMINT, BIGINT"><code class="literal">TINYINT</code></a></td>
+            <td>1 byte</td>
+          </tr><tr>
+            <td><a class="link" href="integer-types.html" title="13.1.2 Integer Types (Exact Value) - INTEGER, INT, SMALLINT, TINYINT, MEDIUMINT, BIGINT"><code class="literal">SMALLINT</code></a></td>
+            <td>2 bytes</td>
+          </tr><tr>
+            <td><a class="link" href="integer-types.html" title="13.1.2 Integer Types (Exact Value) - INTEGER, INT, SMALLINT, TINYINT, MEDIUMINT, BIGINT"><code class="literal">MEDIUMINT</code></a></td>
+            <td>3 bytes</td>
+          </tr><tr>
+            <td><a class="link" href="integer-types.html" title="13.1.2 Integer Types (Exact Value) - INTEGER, INT, SMALLINT, TINYINT, MEDIUMINT, BIGINT"><code class="literal">INT</code></a>,
+              <a class="link" href="integer-types.html" title="13.1.2 Integer Types (Exact Value) - INTEGER, INT, SMALLINT, TINYINT, MEDIUMINT, BIGINT"><code class="literal">INTEGER</code></a></td>
+            <td>4 bytes</td>
+          </tr><tr>
+            <td><a class="link" href="integer-types.html" title="13.1.2 Integer Types (Exact Value) - INTEGER, INT, SMALLINT, TINYINT, MEDIUMINT, BIGINT"><code class="literal">BIGINT</code></a></td>
+            <td>8 bytes</td>
+          </tr><tr>
+            <td><code class="literal">FLOAT(<em class="replaceable"><code>p</code></em>)</code></td>
+            <td>4 bytes if 0 &lt;= <em class="replaceable"><code>p</code></em> &lt;= 24, 8 bytes if 25
+              &lt;= <em class="replaceable"><code>p</code></em> &lt;= 53</td>
+          </tr><tr>
+            <td><a class="link" href="floating-point-types.html" title="13.1.4 Floating-Point Types (Approximate Value) - FLOAT, DOUBLE"><code class="literal">FLOAT</code></a></td>
+            <td>4 bytes</td>
+          </tr><tr>
+            <td><code class="literal">DOUBLE [PRECISION]</code>,
+              <a class="link" href="floating-point-types.html" title="13.1.4 Floating-Point Types (Approximate Value) - FLOAT, DOUBLE"><code class="literal">REAL</code></a></td>
+            <td>8 bytes</td>
+          </tr><tr>
+            <td><code class="literal">DECIMAL(<em class="replaceable"><code>M</code></em>,<em class="replaceable"><code>D</code></em>)</code>,
+              <code class="literal">NUMERIC(<em class="replaceable"><code>M</code></em>,<em class="replaceable"><code>D</code></em>)</code></td>
+            <td>Varies; see following discussion</td>
+          </tr><tr>
+            <td><code class="literal">BIT(<em class="replaceable"><code>M</code></em>)</code></td>
+            <td>approximately (<em class="replaceable"><code>M</code></em>+7)/8 bytes</td>
+</tr></tbody></table>
+</div>
+<p>
+        Values for <a class="link" href="fixed-point-types.html" title="13.1.3 Fixed-Point Types (Exact Value) - DECIMAL, NUMERIC"><code class="literal">DECIMAL</code></a> (and
+        <a class="link" href="fixed-point-types.html" title="13.1.3 Fixed-Point Types (Exact Value) - DECIMAL, NUMERIC"><code class="literal">NUMERIC</code></a>) columns are represented
+        using a binary format that packs nine decimal (base 10) digits
+        into four bytes. Storage for the integer and fractional parts of
+        each value are determined separately. Each multiple of nine
+        digits requires four bytes, and the <span class="quote">“<span class="quote">leftover</span>”</span>
+        digits require some fraction of four bytes. The storage required
+        for excess digits is given by the following table.
+</p>
+<div class="informaltable">
+<table summary="Storage required by excess/leftover digits in DECIMAL values."><col style="width: 25%"><col style="width: 25%"><thead><tr>
+            <th>Leftover Digits</th>
+            <th>Number of Bytes</th>
+          </tr></thead><tbody><tr>
+            <td>0</td>
+            <td>0</td>
+          </tr><tr>
+            <td>1</td>
+            <td>1</td>
+          </tr><tr>
+            <td>2</td>
+            <td>1</td>
+          </tr><tr>
+            <td>3</td>
+            <td>2</td>
+          </tr><tr>
+            <td>4</td>
+            <td>2</td>
+          </tr><tr>
+            <td>5</td>
+            <td>3</td>
+          </tr><tr>
+            <td>6</td>
+            <td>3</td>
+          </tr><tr>
+            <td>7</td>
+            <td>4</td>
+          </tr><tr>
+            <td>8</td>
+            <td>4</td>
+</tr></tbody></table>
+</div>
+
+</div>
+<div class="simplesect">
+<div class="titlepage">
+<div>
+<div class="simple">
+<h3 class="title"><a name="data-types-storage-reqs-date-time"></a>Date and Time Type Storage Requirements</h3>
+
+</div>
+
+</div>
+
+</div>
+<a class="indexterm" name="id217726"></a><a class="indexterm" name="id217729"></a><a class="indexterm" name="id217732"></a><a class="indexterm" name="id217735"></a><p>
+        For <a class="link" href="time.html" title="13.2.3 The TIME Type"><code class="literal">TIME</code></a>,
+        <a class="link" href="datetime.html" title="13.2.2 The DATE, DATETIME, and TIMESTAMP Types"><code class="literal">DATETIME</code></a>, and
+        <a class="link" href="datetime.html" title="13.2.2 The DATE, DATETIME, and TIMESTAMP Types"><code class="literal">TIMESTAMP</code></a> columns, the storage
+        required for tables created before MySQL 5.6.4 differs from
+        tables created from 5.6.4 on. This is due to a change in 5.6.4
+        that permits these types to have a fractional part, which
+        requires from 0 to 3 bytes.
+</p>
+<div class="informaltable">
+<table summary="Storage required for date and time data types before MySQL 5.6.4 and as of MySQL 5.6.4."><col style="width: 20%"><col style="width: 40%"><col style="width: 40%"><thead><tr>
+            <th scope="col">Data Type</th>
+            <th scope="col">Storage Required Before MySQL 5.6.4</th>
+            <th scope="col">Storage Required as of MySQL 5.6.4</th>
+          </tr></thead><tbody><tr>
+            <th scope="row"><a class="link" href="year.html" title="13.2.4 The YEAR Type"><code class="literal">YEAR</code></a></th>
+            <td>1 byte</td>
+            <td>1 byte</td>
+          </tr><tr>
+            <th scope="row"><a class="link" href="datetime.html" title="13.2.2 The DATE, DATETIME, and TIMESTAMP Types"><code class="literal">DATE</code></a></th>
+            <td>3 bytes</td>
+            <td>3 bytes</td>
+          </tr><tr>
+            <th scope="row"><a class="link" href="time.html" title="13.2.3 The TIME Type"><code class="literal">TIME</code></a></th>
+            <td>3 bytes</td>
+            <td>3 bytes + fractional seconds storage</td>
+          </tr><tr>
+            <th scope="row"><a class="link" href="datetime.html" title="13.2.2 The DATE, DATETIME, and TIMESTAMP Types"><code class="literal">DATETIME</code></a></th>
+            <td>8 bytes</td>
+            <td>5 bytes + fractional seconds storage</td>
+          </tr><tr>
+            <th scope="row"><a class="link" href="datetime.html" title="13.2.2 The DATE, DATETIME, and TIMESTAMP Types"><code class="literal">TIMESTAMP</code></a></th>
+            <td>4 bytes</td>
+            <td>4 bytes + fractional seconds storage</td>
+</tr></tbody></table>
+</div>
+<p>
+        As of MySQL 5.6.4, storage for
+        <a class="link" href="year.html" title="13.2.4 The YEAR Type"><code class="literal">YEAR</code></a> and
+        <a class="link" href="datetime.html" title="13.2.2 The DATE, DATETIME, and TIMESTAMP Types"><code class="literal">DATE</code></a> remains unchanged. However,
+        <a class="link" href="time.html" title="13.2.3 The TIME Type"><code class="literal">TIME</code></a>,
+        <a class="link" href="datetime.html" title="13.2.2 The DATE, DATETIME, and TIMESTAMP Types"><code class="literal">DATETIME</code></a>, and
+        <a class="link" href="datetime.html" title="13.2.2 The DATE, DATETIME, and TIMESTAMP Types"><code class="literal">TIMESTAMP</code></a> are represented
+        differently. <a class="link" href="datetime.html" title="13.2.2 The DATE, DATETIME, and TIMESTAMP Types"><code class="literal">DATETIME</code></a> is packed
+        more efficiently, requiring 5 rather than 8 bytes for the
+        nonfractional part, and all three parts have a fractional part
+        that requires from 0 to 3 bytes, depending on the fractional
+        seconds precision of stored values.
+</p>
+<div class="informaltable">
+<table summary="Required storage for fractional seconds precision."><col style="width: 50%"><col style="width: 50%"><thead><tr>
+            <th>Fractional Seconds Precision</th>
+            <th>Storage Required</th>
+          </tr></thead><tbody><tr>
+            <td>0</td>
+            <td>0 bytes</td>
+          </tr><tr>
+            <td>1, 2</td>
+            <td>1 byte</td>
+          </tr><tr>
+            <td>3, 4</td>
+            <td>2 bytes</td>
+          </tr><tr>
+            <td>5, 6</td>
+            <td>3 bytes</td>
+</tr></tbody></table>
+</div>
+<p>
+        For example, <a class="link" href="time.html" title="13.2.3 The TIME Type"><code class="literal">TIME(0)</code></a>,
+        <a class="link" href="time.html" title="13.2.3 The TIME Type"><code class="literal">TIME(2)</code></a>,
+        <a class="link" href="time.html" title="13.2.3 The TIME Type"><code class="literal">TIME(4)</code></a>, and
+        <a class="link" href="time.html" title="13.2.3 The TIME Type"><code class="literal">TIME(6)</code></a> use 3, 4, 5, and 6 bytes,
+        respectively. <a class="link" href="time.html" title="13.2.3 The TIME Type"><code class="literal">TIME</code></a> and
+        <a class="link" href="time.html" title="13.2.3 The TIME Type"><code class="literal">TIME(0)</code></a> are equivalent and
+        require the same storage.
+      </p><p>
+        For details about internal representation of temporal values,
+        see <a class="ulink" href="/doc/internals/en/algorithms.html" target="_top">MySQL
+        Internals: Important Algorithms and Structures</a>.
+</p>
+</div>
+<div class="simplesect">
+<div class="titlepage">
+<div>
+<div class="simple">
+<h3 class="title"><a name="data-types-storage-reqs-strings"></a>String Type Storage Requirements</h3>
+
+</div>
+
+</div>
+
+</div>
+<a class="indexterm" name="id217834"></a><a class="indexterm" name="id217837"></a><p>
+        In the following table, <em class="replaceable"><code>M</code></em> represents
+        the declared column length in characters for nonbinary string
+        types and bytes for binary string types.
+        <em class="replaceable"><code>L</code></em> represents the actual length in
+        bytes of a given string value.
+</p>
+<div class="informaltable">
+<table summary="Storage required for string types."><col style="width: 40%"><col style="width: 60%"><thead><tr>
+            <th>Data Type</th>
+            <th>Storage Required</th>
+          </tr></thead><tbody><tr>
+            <td><code class="literal">CHAR(<em class="replaceable"><code>M</code></em>)</code></td>
+            <td>The compact family of InnoDB row formats optimize storage for
+              variable-length character sets. See
+              <a class="xref" href="innodb-row-format.html#innodb-compact-row-format-characteristics" title="COMPACT Row Format Storage Characteristics">COMPACT Row Format Storage Characteristics</a>.
+              Otherwise, <em class="replaceable"><code>M</code></em> ×
+              <em class="replaceable"><code>w</code></em> bytes, <code class="literal">&lt;=
+              <em class="replaceable"><code>M</code></em> &lt;=</code> 255, where
+              <em class="replaceable"><code>w</code></em> is the number of bytes
+              required for the maximum-length character in the character
+              set.</td>
+          </tr><tr>
+            <td><code class="literal">BINARY(<em class="replaceable"><code>M</code></em>)</code></td>
+            <td><em class="replaceable"><code>M</code></em> bytes, 0 <code class="literal">&lt;=
+              <em class="replaceable"><code>M</code></em> &lt;=</code> 255</td>
+          </tr><tr>
+            <td><code class="literal">VARCHAR(<em class="replaceable"><code>M</code></em>)</code>,
+              <code class="literal">VARBINARY(<em class="replaceable"><code>M</code></em>)</code></td>
+            <td><em class="replaceable"><code>L</code></em> + 1 bytes if column values require 0
+              − 255 bytes, <em class="replaceable"><code>L</code></em> + 2 bytes
+              if values may require more than 255 bytes</td>
+          </tr><tr>
+            <td><a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">TINYBLOB</code></a>,
+              <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">TINYTEXT</code></a></td>
+            <td><em class="replaceable"><code>L</code></em> + 1 bytes, where
+              <em class="replaceable"><code>L</code></em> &lt;
+              2<sup>8</sup></td>
+          </tr><tr>
+            <td><a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">BLOB</code></a>, <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">TEXT</code></a></td>
+            <td><em class="replaceable"><code>L</code></em> + 2 bytes, where
+              <em class="replaceable"><code>L</code></em> &lt;
+              2<sup>16</sup></td>
+          </tr><tr>
+            <td><a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">MEDIUMBLOB</code></a>,
+              <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">MEDIUMTEXT</code></a></td>
+            <td><em class="replaceable"><code>L</code></em> + 3 bytes, where
+              <em class="replaceable"><code>L</code></em> &lt;
+              2<sup>24</sup></td>
+          </tr><tr>
+            <td><a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">LONGBLOB</code></a>,
+              <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">LONGTEXT</code></a></td>
+            <td><em class="replaceable"><code>L</code></em> + 4 bytes, where
+              <em class="replaceable"><code>L</code></em> &lt;
+              2<sup>32</sup></td>
+          </tr><tr>
+            <td><code class="literal">ENUM('<em class="replaceable"><code>value1</code></em>','<em class="replaceable"><code>value2</code></em>',...)</code></td>
+            <td>1 or 2 bytes, depending on the number of enumeration values (65,535
+              values maximum)</td>
+          </tr><tr>
+            <td><code class="literal">SET('<em class="replaceable"><code>value1</code></em>','<em class="replaceable"><code>value2</code></em>',...)</code></td>
+            <td>1, 2, 3, 4, or 8 bytes, depending on the number of set members (64
+              members maximum)</td>
+</tr></tbody></table>
+</div>
+<p>
+        Variable-length string types are stored using a length prefix
+        plus data. The length prefix requires from one to four bytes
+        depending on the data type, and the value of the prefix is
+        <em class="replaceable"><code>L</code></em> (the byte length of the string).
+        For example, storage for a
+        <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">MEDIUMTEXT</code></a> value requires
+        <em class="replaceable"><code>L</code></em> bytes to store the value plus three
+        bytes to store the length of the value.
+      </p><p>
+        To calculate the number of bytes used to store a particular
+        <a class="link" href="char.html" title="13.3.2 The CHAR and VARCHAR Types"><code class="literal">CHAR</code></a>,
+        <a class="link" href="char.html" title="13.3.2 The CHAR and VARCHAR Types"><code class="literal">VARCHAR</code></a>, or
+        <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">TEXT</code></a> column value, you must take
+        into account the character set used for that column and whether
+        the value contains multibyte characters. In particular, when
+        using a UTF-8 Unicode character set, you must keep in mind that
+        not all characters use the same number of bytes.
+        <code class="literal">utf8mb3</code> and <code class="literal">utf8mb4</code>
+        character sets can require up to three and four bytes per
+        character, respectively. For a breakdown of the storage used for
+        different categories of <code class="literal">utf8mb3</code> or
+        <code class="literal">utf8mb4</code> characters, see
+        <a class="xref" href="charset-unicode.html" title="12.9 Unicode Support">Section 12.9, “Unicode Support”</a>.
+      </p><a class="indexterm" name="id217948"></a><a class="indexterm" name="id217951"></a><a class="indexterm" name="id217954"></a><p>
+        <a class="link" href="char.html" title="13.3.2 The CHAR and VARCHAR Types"><code class="literal">VARCHAR</code></a>,
+        <a class="link" href="binary-varbinary.html" title="13.3.3 The BINARY and VARBINARY Types"><code class="literal">VARBINARY</code></a>, and the
+        <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">BLOB</code></a> and
+        <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">TEXT</code></a> types are variable-length
+        types. For each, the storage requirements depend on these
+        factors:
+</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+            The actual length of the column value
+          </p></li><li class="listitem"><p>
+            The column's maximum possible length
+          </p></li><li class="listitem"><p>
+            The character set used for the column, because some
+            character sets contain multibyte characters
+</p></li></ul>
+</div>
+<p>
+        For example, a <code class="literal">VARCHAR(255)</code> column can hold a
+        string with a maximum length of 255 characters. Assuming that
+        the column uses the <code class="literal">latin1</code> character set (one
+        byte per character), the actual storage required is the length
+        of the string (<em class="replaceable"><code>L</code></em>), plus one byte to
+        record the length of the string. For the string
+        <code class="literal">'abcd'</code>, <em class="replaceable"><code>L</code></em> is 4 and
+        the storage requirement is five bytes. If the same column is
+        instead declared to use the <code class="literal">ucs2</code> double-byte
+        character set, the storage requirement is 10 bytes: The length
+        of <code class="literal">'abcd'</code> is eight bytes and the column
+        requires two bytes to store lengths because the maximum length
+        is greater than 255 (up to 510 bytes).
+      </p><p>
+        The effective maximum number of <span class="emphasis"><em>bytes</em></span> that
+        can be stored in a <a class="link" href="char.html" title="13.3.2 The CHAR and VARCHAR Types"><code class="literal">VARCHAR</code></a> or
+        <a class="link" href="binary-varbinary.html" title="13.3.3 The BINARY and VARBINARY Types"><code class="literal">VARBINARY</code></a> column is subject to
+        the maximum row size of 65,535 bytes, which is shared among all
+        columns. For a <a class="link" href="char.html" title="13.3.2 The CHAR and VARCHAR Types"><code class="literal">VARCHAR</code></a> column
+        that stores multibyte characters, the effective maximum number
+        of <span class="emphasis"><em>characters</em></span> is less. For example,
+        <code class="literal">utf8mb4</code> characters can require up to four
+        bytes per character, so a <a class="link" href="char.html" title="13.3.2 The CHAR and VARCHAR Types"><code class="literal">VARCHAR</code></a>
+        column that uses the <code class="literal">utf8mb4</code> character set
+        can be declared to be a maximum of 16,383 characters. See
+        <a class="xref" href="column-count-limit.html" title="10.4.7 Limits on Table Column Count and Row Size">Section 10.4.7, “Limits on Table Column Count and Row Size”</a>.
+      </p><p>
+        <code class="literal">InnoDB</code> encodes fixed-length fields greater
+        than or equal to 768 bytes in length as variable-length fields,
+        which can be stored off-page. For example, a
+        <code class="literal">CHAR(255)</code> column can exceed 768 bytes if the
+        maximum byte length of the character set is greater than 3, as
+        it is with <code class="literal">utf8mb4</code>.
+      </p><p>
+        The <a class="link" href="mysql-cluster.html" title="Chapter 25 MySQL NDB Cluster 8.0"><code class="literal">NDB</code></a> storage engine supports
+        variable-width columns. This means that a
+        <a class="link" href="char.html" title="13.3.2 The CHAR and VARCHAR Types"><code class="literal">VARCHAR</code></a> column in an NDB Cluster
+        table requires the same amount of storage as would any other
+        storage engine, with the exception that such values are 4-byte
+        aligned. Thus, the string <code class="literal">'abcd'</code> stored in a
+        <code class="literal">VARCHAR(50)</code> column using the
+        <code class="literal">latin1</code> character set requires 8 bytes (rather
+        than 5 bytes for the same column value in a
+        <code class="literal">MyISAM</code> table).
+      </p><p>
+        <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">TEXT</code></a>,
+        <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">BLOB</code></a>, and
+        <a class="link" href="json.html" title="13.5 The JSON Data Type"><code class="literal">JSON</code></a> columns are implemented
+        differently in the <a class="link" href="mysql-cluster.html" title="Chapter 25 MySQL NDB Cluster 8.0"><code class="literal">NDB</code></a> storage
+        engine, wherein each row in the column is made up of two
+        separate parts. One of these is of fixed size (256 bytes for
+        <code class="literal">TEXT</code> and <code class="literal">BLOB</code>, 4000 bytes
+        for <code class="literal">JSON</code>), and is actually stored in the
+        original table. The other consists of any data in excess of 256
+        bytes, which is stored in a hidden blob parts table. The size of
+        the rows in this second table are determined by the exact type
+        of the column, as shown in the following table:
+</p>
+<div class="informaltable">
+<table summary="NDB blob table row lengths for TEXT and BLOB types."><col style="width: 40%"><col style="width: 60%"><thead><tr>
+            <th>Type</th>
+            <th>Blob Part Size</th>
+          </tr></thead><tbody><tr>
+            <td><a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">BLOB</code></a>, <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">TEXT</code></a></td>
+            <td>2000</td>
+          </tr><tr>
+            <td><a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">MEDIUMBLOB</code></a>,
+              <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">MEDIUMTEXT</code></a></td>
+            <td>4000</td>
+          </tr><tr>
+            <td><a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">LONGBLOB</code></a>,
+              <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">LONGTEXT</code></a></td>
+            <td>13948</td>
+          </tr><tr>
+            <td><a class="link" href="json.html" title="13.5 The JSON Data Type"><code class="literal">JSON</code></a></td>
+            <td>8100</td>
+</tr></tbody></table>
+</div>
+<p>
+        This means that the size of a
+        <a class="link" href="blob.html" title="13.3.4 The BLOB and TEXT Types"><code class="literal">TEXT</code></a> column is 256 if
+        <em class="replaceable"><code>size</code></em> &lt;= 256 (where
+        <em class="replaceable"><code>size</code></em> represents the size of the row);
+        otherwise, the size is 256 +
+        <em class="replaceable"><code>size</code></em> + (2000 ×
+        (<em class="replaceable"><code>size</code></em> − 256) % 2000).
+      </p><p>
+        No blob parts are stored separately by <code class="literal">NDB</code>
+        for <code class="literal">TINYBLOB</code> or <code class="literal">TINYTEXT</code>
+        column values.
+      </p><p>
+        You can increase the size of an <code class="literal">NDB</code> blob
+        column's blob part to the maximum of 13948 using
+        <code class="literal">NDB_COLUMN</code> in a column comment when creating
+        or altering the parent table. In NDB 8.0.30 and later, it is
+        also possible to set the inline size for a
+        <code class="literal">TEXT</code>, <code class="literal">BLOB</code>, or
+        <code class="literal">JSON</code> column, using
+        <code class="literal">NDB_TABLE</code> in a column comment. See
+        <a class="xref" href="create-table-ndb-comment-options.html#create-table-ndb-comment-column-options" title="NDB_COLUMN Options">NDB_COLUMN Options</a>, for
+        more information.
+      </p><a class="indexterm" name="id218073"></a><p>
+        The size of an <a class="link" href="enum.html" title="13.3.5 The ENUM Type"><code class="literal">ENUM</code></a> object is
+        determined by the number of different enumeration values. One
+        byte is used for enumerations with up to 255 possible values.
+        Two bytes are used for enumerations having between 256 and
+        65,535 possible values. See <a class="xref" href="enum.html" title="13.3.5 The ENUM Type">Section 13.3.5, “The ENUM Type”</a>.
+      </p><a class="indexterm" name="id218080"></a><p>
+        The size of a <a class="link" href="set.html" title="13.3.6 The SET Type"><code class="literal">SET</code></a> object is
+        determined by the number of different set members. If the set
+        size is <em class="replaceable"><code>N</code></em>, the object occupies
+        <code class="literal">(<em class="replaceable"><code>N</code></em>+7)/8</code> bytes,
+        rounded up to 1, 2, 3, 4, or 8 bytes. A
+        <a class="link" href="set.html" title="13.3.6 The SET Type"><code class="literal">SET</code></a> can have a maximum of 64
+        members. See <a class="xref" href="set.html" title="13.3.6 The SET Type">Section 13.3.6, “The SET Type”</a>.
+</p>
+</div>
+<div class="simplesect">
+<div class="titlepage">
+<div>
+<div class="simple">
+<h3 class="title"><a name="data-types-storage-reqs-gis"></a>Spatial Type Storage Requirements</h3>
+
+</div>
+
+</div>
+
+</div>
+<a class="indexterm" name="id218093"></a><a class="indexterm" name="id218096"></a><a class="indexterm" name="id218099"></a><p>
+        MySQL stores geometry values using 4 bytes to indicate the SRID
+        followed by the WKB representation of the value. The
+        <a class="link" href="string-functions.html#function_length"><code class="literal">LENGTH()</code></a> function returns the
+        space in bytes required for value storage.
+      </p><p>
+        For descriptions of WKB and internal storage formats for spatial
+        values, see <a class="xref" href="gis-data-formats.html" title="13.4.3 Supported Spatial Data Formats">Section 13.4.3, “Supported Spatial Data Formats”</a>.
+</p>
+</div>
+<div class="simplesect">
+<div class="titlepage">
+<div>
+<div class="simple">
+<h3 class="title"><a name="data-types-storage-reqs-json"></a>JSON Storage Requirements</h3>
+
+</div>
+
+</div>
+
+</div>
+<p>
+        In general, the storage requirement for a
+        <a class="link" href="json.html" title="13.5 The JSON Data Type"><code class="literal">JSON</code></a> column is approximately the
+        same as for a <code class="literal">LONGBLOB</code> or
+        <code class="literal">LONGTEXT</code> column; that is, the space consumed
+        by a JSON document is roughly the same as it would be for the
+        document's string representation stored in a column of one
+        of these types. However, there is an overhead imposed by the
+        binary encoding, including metadata and dictionaries needed for
+        lookup, of the individual values stored in the JSON document.
+        For example, a string stored in a JSON document requires 4 to 10
+        bytes additional storage, depending on the length of the string
+        and the size of the object or array in which it is stored.
+      </p><p>
+        In addition, MySQL imposes a limit on the size of any JSON
+        document stored in a <code class="literal">JSON</code> column such that it
+        cannot be any larger than the value of
+        <a class="link" href="server-system-variables.html#sysvar_max_allowed_packet"><code class="literal">max_allowed_packet</code></a>.
+</p>
+</div>
+
+</div>
+<br />
+        </div>
+
+                <div id="docs-in-page-nav-container">
+            <div id="docs-in-page-nav">
+                
+    <a href="data-type-defaults.html"
+        aria-label="Previous" title="Previous: Data Type Default Values"><span
+        class="icon-chevron-left"></span> PREV</a> &nbsp;
+<a href="index.html" aria-label="Start" title="Start"> HOME</a> &nbsp;
+        <a aria-label="Up" href="data-types.html" title="Up: Data Types"> UP</a> &nbsp;
+    <a href="choosing-types.html" aria-label="Next"
+        title="Next: Choosing the Right Type for a Column">NEXT <span
+        class="icon-chevron-right"></span></a>
+            </div>
+        </div>
+        
+         <div id="docs-body-extra">
+             
+<a class="docs-sidebar-section" href=""><span class="icon-related"></span>
+    <span class="text">Related Documentation</span></a>
+<div class="docs-sidebar-accordian">
+    <div class="text">
+        <a href="/doc/relnotes/mysql/8.0/en/">MySQL 8.0 Release Notes</a><br />
+        <a href="/doc/dev/mysql-server/latest/">MySQL 8.0 Source Code Documentation</a><br />
+        </div>
+</div>
+
+    <a class="docs-sidebar-section" href=""><span class="icon-download-thin"></span>
+        <span class="text">
+            Download
+                            this Manual
+                    </span>
+    </a>
+    <div class="docs-sidebar-accordian">
+        <div class="text">
+                                    <a href="https://downloads.mysql.com/docs/refman-8.0-en.pdf">PDF (US Ltr)</a>
+            - 43.2Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.a4.pdf">PDF (A4)</a>
+            - 43.3Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.man-gpl.tar.gz">Man Pages (TGZ)</a>
+            - 295.2Kb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.man-gpl.zip">Man Pages (Zip)</a>
+            - 400.4Kb<br />
+                                                <a href="https://downloads.mysql.com/docs/mysql-8.0.info.gz">Info (Gzip)</a>
+            - 4.3Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/mysql-8.0.info.zip">Info (Zip)</a>
+            - 4.3Mb<br />
+                                </div>
+    </div>
+
+<a class="docs-sidebar-section" href=""><span class="icon-book"></span>
+    <span class="text">Excerpts from this Manual</span></a>
+<div class="docs-sidebar-accordian">
+    <div class="text">
+                <a href="/doc/mysql-g11n-excerpt/8.0/en/">MySQL Globalization</a><br />
+                <a href="/doc/mysql-infoschema-excerpt/8.0/en/">MySQL Information Schema</a><br />
+                <a href="/doc/mysql-installation-excerpt/8.0/en/">MySQL Installation Guide</a><br />
+                <a href="/doc/mysql-security-excerpt/8.0/en/">Security in MySQL</a><br />
+                <a href="/doc/mysql-startstop-excerpt/8.0/en/">Starting and Stopping MySQL</a><br />
+                <a href="/doc/mysql-linuxunix-excerpt/8.0/en/">MySQL and Linux/Unix</a><br />
+                <a href="/doc/mysql-windows-excerpt/8.0/en/">MySQL and Windows</a><br />
+                <a href="/doc/mysql-macos-excerpt/8.0/en/">MySQL and macOS</a><br />
+                <a href="/doc/mysql-solaris-excerpt/8.0/en/">MySQL and Solaris</a><br />
+                <a href="/doc/mysql-sourcebuild-excerpt/8.0/en/">Building MySQL from Source</a><br />
+                <a href="/doc/mysql-reslimits-excerpt/8.0/en/">MySQL Restrictions and Limitations</a><br />
+                <a href="/doc/mysql-partitioning-excerpt/8.0/en/">MySQL Partitioning</a><br />
+                <a href="/doc/mysql-tutorial-excerpt/8.0/en/">MySQL Tutorial</a><br />
+                <a href="/doc/mysql-perfschema-excerpt/8.0/en/">MySQL Performance Schema</a><br />
+                <a href="/doc/mysql-replication-excerpt/8.0/en/">MySQL Replication</a><br />
+                <a href="/doc/mysql-repo-excerpt/8.0/en/">Using the MySQL Yum Repository</a><br />
+                <a href="/doc/mysql-cluster-excerpt/8.0/en/">MySQL NDB Cluster 8.0</a><br />
+            </div>
+</div>
+         </div>
+     </div>
+     </div>
+
+</div>
+
+<script>
+$(function() {
+    var doc = new $.doc({ 'mobile': $.browser.mobile, 'docId': 1, 'highlight': true });
+});
+</script>
+    
+
+            
+        </div>
+    </div>
+
+    <footer class="collapsed">
+        <div id="footer-bottom">
+                                    <div id="footer-collapse">
+                <a href="" id="expand-footer"
+                    aria-label="Expand Footer"
+                    title="Expand Footer"><span
+                    class="icon-plus-square"></span></a>
+            </div>
+                        <div class="footer-contact">
+                <div id="footer-contact-icon" style="display: none;">
+                    <span class="icon-call-phone"></span>
+                </div>
+                <div id="footer-contact-numbers" style="display: none;">
+                    <strong>Contact MySQL Sales</strong><br/>
+                    USA/Canada: +1-866-221-0634 &nbsp;
+                    (<a href="https://www.mysql.com/about/contact/phone/" class="darker-blue">More Countries &raquo;</a>)
+                </div>
+                <div id="footer-contact-copyright" style="display: inline-block;">
+                    <a href="http://www.oracle.com/" aria-label="Oracle" title="Oracle"><span class="oracle-logo"></span></a>
+                    &nbsp; <a href="https://www.oracle.com/legal/copyright.html">&copy; 2026 Oracle</a>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a aria-label="Join us on Facebook" title="Join us on Facebook" href="http://www.facebook.com/mysql"><span class="icon-facebook-square"></span></a>
+                <a aria-label="Follow us on X" title="Follow us on X" href="https://x.com/mysql"><span class="icon-x-twitter-square"></span></a>
+                <a aria-label="Follow us on LinkedIn" title="Follow us on LinkedIn" href="https://www.linkedin.com/company/mysql"><span class="icon-linkedin-square"></span></a>
+                <a aria-label="Visit our YouTube channel" title="Visit our YouTube channel" href="http://www.youtube.com/mysqlchannel"><span class="icon-youtube-square"></span></a>
+            </div>
+            <br class="clear" />
+        </div>
+        <div id="footer-links">
+
+            <div id="site-footer-links">
+                <div id="footer-nav"></div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://www.mysql.com/products/">Products</a></li>
+                        <li><a href="https://www.mysql.com/products/heatwave/">MySQL HeatWave</a></li>
+                        <li><a href="https://www.mysql.com/products/enterprise/">MySQL Enterprise Edition</a></li>
+                        <li><a href="https://www.mysql.com/products/standard/">MySQL Standard Edition</a></li>
+                        <li><a href="https://www.mysql.com/products/classic/">MySQL Classic Edition</a></li>
+                        <li><a href="https://www.mysql.com/products/cluster/">MySQL Cluster CGE</a></li>
+                        <li><a href="https://www.mysql.com/oem/">MySQL Embedded (OEM/ISV)</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://www.mysql.com/services/">Services</a></li>
+                        <li><a href="https://www.mysql.com/training/">Training</a></li>
+                        <li><a href="https://www.mysql.com/certification/">Certification</a></li>
+                        <li><a href="https://www.mysql.com/support/">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://www.mysql.com/downloads/">Downloads</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/mysql/">MySQL Community Server</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/cluster/">MySQL NDB Cluster</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/shell/">MySQL Shell</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/router/">MySQL Router</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://dev.mysql.com/doc/">Documentation</a></li>
+                        <li><a href="https://dev.mysql.com/doc/refman/en/">MySQL Reference Manual</a></li>
+                        <li><a href="https://dev.mysql.com/doc/workbench/en/">MySQL Workbench</a></li>
+                        <li><a href="https://dev.mysql.com/doc/index-cluster.html">MySQL NDB Cluster</a></li>
+                        <li><a href="https://dev.mysql.com/doc/index-connectors.html">MySQL Connectors</a></li>
+                        <li><a href="https://dev.mysql.com/doc/#topic">Topic Guides</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://www.mysql.com/about/">About MySQL</a></li>
+                        <li><a href="https://www.mysql.com/about/contact/">Contact Us</a></li>
+                        <li><a href="https://blogs.oracle.com/mysql/">Blogs</a></li>
+                                                                        <li><a href="https://www.mysql.com/buy-mysql/">How to Buy</a></li>
+                        <li><a href="https://www.mysql.com/partners/">Partners</a></li>
+                        <li><a href="https://www.mysql.com/about/jobs/">Job Opportunities</a></li>
+                        <li><a href="https://www.mysql.com/sitemap.html">Site Map</a></li>
+                    </ul>
+                </div>
+
+                            </div>
+
+            <div id="footer-logo">
+                <a href="http://www.oracle.com/" aria-label="Oracle" title="Oracle"><span class="oracle-logo"></span></a>
+                &nbsp; <a href="https://www.oracle.com/legal/copyright.html">&copy; 2026 Oracle</a>
+                <div class="footer-legal-links">
+                    <a href="https://www.oracle.com/legal/privacy/">Privacy</a> /
+                    <a href="https://www.oracle.com/legal/privacy/privacy-choices.html">Do Not Sell My Info</a> |
+                    <a href="https://www.oracle.com/us/legal/terms/index.html">Terms of Use</a> |
+                    <a href="https://www.oracle.com/us/legal/third-party-trademarks/index.html">Trademark Policy</a> |
+                    <div id="teconsent"></div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</div>
+
+            <script>
+    if ((oracle.truste.api.getGdprConsentDecision().consentDecision) &&
+            (oracle.truste.api.getGdprConsentDecision().consentDecision.indexOf(0) != -1 ||
+             oracle.truste.api.getGdprConsentDecision().consentDecision.indexOf(2) != -1) )
+    {
+        document.write('<script src="https://labs.mysql.com/common/js/metrics/ora_mysql.js"><\/script>');
+        document.write('<script type="text/javascript" async src="//c.oracleinfinity.io/acs/account/wh3g12c3gg/js/mysql/odc.js?_ora.context=analytics:production"><\/script>');
+    }
+    </script>
+
+        
+    
+</body>
+</html>

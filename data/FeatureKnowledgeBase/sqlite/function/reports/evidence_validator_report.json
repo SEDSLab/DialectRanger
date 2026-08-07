@@ -1,0 +1,38 @@
+{
+  "dbms": "sqlite",
+  "feature_type": "function",
+  "total_drafts": 81,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 80,
+  "invalid_features": 1,
+  "validation_summary": {
+    "schema_invalid": 1,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 72,
+    "no_description_claims": 75,
+    "no_valid_syntax": 1,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 66
+  },
+  "sample_clean_features": [],
+  "sample_warning_features": [
+    "sqlite.function.abs",
+    "sqlite.function.acos",
+    "sqlite.function.acosh",
+    "sqlite.function.asin",
+    "sqlite.function.asinh",
+    "sqlite.function.atan",
+    "sqlite.function.atan2",
+    "sqlite.function.atanh",
+    "sqlite.function.avg",
+    "sqlite.function.changes"
+  ],
+  "sample_invalid_features": [
+    "sqlite.function.json_extract"
+  ],
+  "generated_at": "2026-08-06T19:08:08.361924+08:00"
+}

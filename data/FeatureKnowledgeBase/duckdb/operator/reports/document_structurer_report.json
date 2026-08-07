@@ -1,0 +1,769 @@
+{
+  "dbms": "duckdb",
+  "feature_type": "operator",
+  "processed_pages": 93,
+  "skipped_pages": 5,
+  "total_sections": 609,
+  "total_blocks": 6083,
+  "section_sources": {
+    "fallback": 107,
+    "heading_tree": 502
+  },
+  "block_types": {
+    "anchor": 278,
+    "list": 651,
+    "paragraph": 1009,
+    "heading": 502,
+    "code": 993,
+    "table": 540,
+    "table_row": 1907,
+    "note": 57,
+    "signature": 146
+  },
+  "pages": [
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 2,
+      "blocks": 11,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_expression",
+      "sections": 9,
+      "blocks": 47,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 2,
+      "blocks": 11,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_case",
+      "sections": 3,
+      "blocks": 42,
+      "anchors": 3,
+      "tables": 4,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "duckdb_stable_cast",
+      "sections": 5,
+      "blocks": 45,
+      "anchors": 3,
+      "tables": 3,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_collations",
+      "sections": 4,
+      "blocks": 58,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 29
+    },
+    {
+      "page_id": "duckdb_stable_comparison_operators",
+      "sections": 4,
+      "blocks": 42,
+      "anchors": 4,
+      "tables": 3,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_in",
+      "sections": 7,
+      "blocks": 46,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 22
+    },
+    {
+      "page_id": "duckdb_stable_logical_operators",
+      "sections": 3,
+      "blocks": 27,
+      "anchors": 3,
+      "tables": 2,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_star",
+      "sections": 16,
+      "blocks": 140,
+      "anchors": 3,
+      "tables": 16,
+      "code_blocks": 26
+    },
+    {
+      "page_id": "duckdb_stable_subqueries",
+      "sections": 12,
+      "blocks": 112,
+      "anchors": 5,
+      "tables": 13,
+      "code_blocks": 14
+    },
+    {
+      "page_id": "duckdb_stable_try",
+      "sections": 4,
+      "blocks": 36,
+      "anchors": 3,
+      "tables": 3,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_regular_expressions",
+      "sections": 8,
+      "blocks": 109,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 2,
+      "blocks": 11,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 2,
+      "blocks": 11,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 2,
+      "blocks": 11,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 2,
+      "blocks": 11,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 2,
+      "blocks": 11,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_overview",
+      "sections": 2,
+      "blocks": 11,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_expression",
+      "sections": 9,
+      "blocks": 47,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_case",
+      "sections": 3,
+      "blocks": 42,
+      "anchors": 3,
+      "tables": 4,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "duckdb_stable_cast",
+      "sections": 5,
+      "blocks": 45,
+      "anchors": 3,
+      "tables": 3,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_collations",
+      "sections": 4,
+      "blocks": 58,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 29
+    },
+    {
+      "page_id": "duckdb_stable_comparison_operators",
+      "sections": 4,
+      "blocks": 42,
+      "anchors": 4,
+      "tables": 3,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_in",
+      "sections": 7,
+      "blocks": 46,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 22
+    },
+    {
+      "page_id": "duckdb_stable_logical_operators",
+      "sections": 3,
+      "blocks": 27,
+      "anchors": 3,
+      "tables": 2,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_star",
+      "sections": 16,
+      "blocks": 140,
+      "anchors": 3,
+      "tables": 16,
+      "code_blocks": 26
+    },
+    {
+      "page_id": "duckdb_stable_subqueries",
+      "sections": 12,
+      "blocks": 112,
+      "anchors": 5,
+      "tables": 13,
+      "code_blocks": 14
+    },
+    {
+      "page_id": "duckdb_stable_try",
+      "sections": 4,
+      "blocks": 36,
+      "anchors": 3,
+      "tables": 3,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_regular_expressions",
+      "sections": 8,
+      "blocks": 109,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_expression",
+      "sections": 9,
+      "blocks": 47,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_case",
+      "sections": 3,
+      "blocks": 42,
+      "anchors": 3,
+      "tables": 4,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "duckdb_stable_cast",
+      "sections": 5,
+      "blocks": 45,
+      "anchors": 3,
+      "tables": 3,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_collations",
+      "sections": 4,
+      "blocks": 58,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 29
+    },
+    {
+      "page_id": "duckdb_stable_comparison_operators",
+      "sections": 4,
+      "blocks": 42,
+      "anchors": 4,
+      "tables": 3,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_in",
+      "sections": 7,
+      "blocks": 46,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 22
+    },
+    {
+      "page_id": "duckdb_stable_logical_operators",
+      "sections": 3,
+      "blocks": 27,
+      "anchors": 3,
+      "tables": 2,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_star",
+      "sections": 16,
+      "blocks": 140,
+      "anchors": 3,
+      "tables": 16,
+      "code_blocks": 26
+    },
+    {
+      "page_id": "duckdb_stable_subqueries",
+      "sections": 12,
+      "blocks": 112,
+      "anchors": 5,
+      "tables": 13,
+      "code_blocks": 14
+    },
+    {
+      "page_id": "duckdb_stable_try",
+      "sections": 4,
+      "blocks": 36,
+      "anchors": 3,
+      "tables": 3,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_regular_expressions",
+      "sections": 8,
+      "blocks": 109,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_expression",
+      "sections": 9,
+      "blocks": 47,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_case",
+      "sections": 3,
+      "blocks": 42,
+      "anchors": 3,
+      "tables": 4,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "duckdb_stable_cast",
+      "sections": 5,
+      "blocks": 45,
+      "anchors": 3,
+      "tables": 3,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_collations",
+      "sections": 4,
+      "blocks": 58,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 29
+    },
+    {
+      "page_id": "duckdb_stable_comparison_operators",
+      "sections": 4,
+      "blocks": 42,
+      "anchors": 4,
+      "tables": 3,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_in",
+      "sections": 7,
+      "blocks": 46,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 22
+    },
+    {
+      "page_id": "duckdb_stable_logical_operators",
+      "sections": 3,
+      "blocks": 27,
+      "anchors": 3,
+      "tables": 2,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_star",
+      "sections": 16,
+      "blocks": 140,
+      "anchors": 3,
+      "tables": 16,
+      "code_blocks": 26
+    },
+    {
+      "page_id": "duckdb_stable_subqueries",
+      "sections": 12,
+      "blocks": 112,
+      "anchors": 5,
+      "tables": 13,
+      "code_blocks": 14
+    },
+    {
+      "page_id": "duckdb_stable_regular_expressions",
+      "sections": 8,
+      "blocks": 109,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_expression",
+      "sections": 9,
+      "blocks": 47,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_case",
+      "sections": 3,
+      "blocks": 42,
+      "anchors": 3,
+      "tables": 4,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "duckdb_stable_cast",
+      "sections": 5,
+      "blocks": 45,
+      "anchors": 3,
+      "tables": 3,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_collations",
+      "sections": 4,
+      "blocks": 58,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 29
+    },
+    {
+      "page_id": "duckdb_stable_comparison_operators",
+      "sections": 4,
+      "blocks": 42,
+      "anchors": 4,
+      "tables": 3,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_in",
+      "sections": 7,
+      "blocks": 46,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 22
+    },
+    {
+      "page_id": "duckdb_stable_logical_operators",
+      "sections": 3,
+      "blocks": 27,
+      "anchors": 3,
+      "tables": 2,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_star",
+      "sections": 16,
+      "blocks": 140,
+      "anchors": 3,
+      "tables": 16,
+      "code_blocks": 26
+    },
+    {
+      "page_id": "duckdb_stable_subqueries",
+      "sections": 12,
+      "blocks": 112,
+      "anchors": 5,
+      "tables": 13,
+      "code_blocks": 14
+    },
+    {
+      "page_id": "duckdb_stable_regular_expressions",
+      "sections": 8,
+      "blocks": 109,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_expression",
+      "sections": 9,
+      "blocks": 47,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_case",
+      "sections": 3,
+      "blocks": 42,
+      "anchors": 3,
+      "tables": 4,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "duckdb_stable_cast",
+      "sections": 5,
+      "blocks": 45,
+      "anchors": 3,
+      "tables": 3,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_collations",
+      "sections": 4,
+      "blocks": 58,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 29
+    },
+    {
+      "page_id": "duckdb_stable_comparison_operators",
+      "sections": 4,
+      "blocks": 42,
+      "anchors": 4,
+      "tables": 3,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_in",
+      "sections": 7,
+      "blocks": 46,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 22
+    },
+    {
+      "page_id": "duckdb_stable_logical_operators",
+      "sections": 3,
+      "blocks": 27,
+      "anchors": 3,
+      "tables": 2,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_star",
+      "sections": 16,
+      "blocks": 140,
+      "anchors": 3,
+      "tables": 16,
+      "code_blocks": 26
+    },
+    {
+      "page_id": "duckdb_stable_subqueries",
+      "sections": 12,
+      "blocks": 112,
+      "anchors": 5,
+      "tables": 13,
+      "code_blocks": 14
+    },
+    {
+      "page_id": "duckdb_stable_regular_expressions",
+      "sections": 8,
+      "blocks": 109,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_expression",
+      "sections": 9,
+      "blocks": 47,
+      "anchors": 2,
+      "tables": 2,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_case",
+      "sections": 3,
+      "blocks": 42,
+      "anchors": 3,
+      "tables": 4,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "duckdb_stable_cast",
+      "sections": 5,
+      "blocks": 45,
+      "anchors": 3,
+      "tables": 3,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_collations",
+      "sections": 4,
+      "blocks": 58,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 29
+    },
+    {
+      "page_id": "duckdb_stable_comparison_operators",
+      "sections": 4,
+      "blocks": 42,
+      "anchors": 4,
+      "tables": 3,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_in",
+      "sections": 7,
+      "blocks": 46,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 22
+    },
+    {
+      "page_id": "duckdb_stable_logical_operators",
+      "sections": 3,
+      "blocks": 27,
+      "anchors": 3,
+      "tables": 2,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_star",
+      "sections": 16,
+      "blocks": 140,
+      "anchors": 3,
+      "tables": 16,
+      "code_blocks": 26
+    },
+    {
+      "page_id": "duckdb_stable_subqueries",
+      "sections": 12,
+      "blocks": 112,
+      "anchors": 5,
+      "tables": 13,
+      "code_blocks": 14
+    },
+    {
+      "page_id": "duckdb_stable_regular_expressions",
+      "sections": 8,
+      "blocks": 109,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_in",
+      "sections": 7,
+      "blocks": 46,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 22
+    },
+    {
+      "page_id": "duckdb_stable_logical_operators",
+      "sections": 3,
+      "blocks": 27,
+      "anchors": 3,
+      "tables": 2,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_comparison_operators",
+      "sections": 4,
+      "blocks": 42,
+      "anchors": 4,
+      "tables": 3,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "duckdb_stable_cast",
+      "sections": 5,
+      "blocks": 45,
+      "anchors": 3,
+      "tables": 3,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "duckdb_stable_interval",
+      "sections": 3,
+      "blocks": 129,
+      "anchors": 2,
+      "tables": 19,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_numeric",
+      "sections": 6,
+      "blocks": 384,
+      "anchors": 2,
+      "tables": 60,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "duckdb_stable_star",
+      "sections": 16,
+      "blocks": 140,
+      "anchors": 3,
+      "tables": 16,
+      "code_blocks": 26
+    },
+    {
+      "page_id": "duckdb_stable_setops",
+      "sections": 12,
+      "blocks": 83,
+      "anchors": 3,
+      "tables": 7,
+      "code_blocks": 8
+    },
+    {
+      "page_id": "duckdb_stable_subqueries",
+      "sections": 12,
+      "blocks": 112,
+      "anchors": 5,
+      "tables": 13,
+      "code_blocks": 14
+    },
+    {
+      "page_id": "duckdb_stable_try",
+      "sections": 4,
+      "blocks": 36,
+      "anchors": 3,
+      "tables": 3,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "duckdb_stable_regular_expressions",
+      "sections": 8,
+      "blocks": 109,
+      "anchors": 2,
+      "tables": 12,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "duckdb_stable_collations",
+      "sections": 4,
+      "blocks": 58,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 29
+    }
+  ]
+}

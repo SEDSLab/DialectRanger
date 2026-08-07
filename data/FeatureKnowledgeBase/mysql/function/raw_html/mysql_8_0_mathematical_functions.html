@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<html lang="en" class="svg no-js">
+<head>
+    <meta charset="utf-8" />
+    <!--[if IE ]>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Language" content="en">
+
+    <title>MySQL :: MySQL 8.0 Reference Manual :: 14.6.2 Mathematical Functions</title>
+    <link rel="stylesheet" media="all" href="https://labs.mysql.com/common/css/main-20250803.min.css" />
+            <link rel="stylesheet" media="all" href="https://labs.mysql.com/common/css/docs-20250803.min.css" />
+    
+    
+    <link rel="stylesheet" media="print" href="https://labs.mysql.com/common/css/print-20250803.min.css" />
+
+    
+    
+    
+    
+            <link rel="contents" href="index.html" title="MySQL 8.0 Reference Manual" />
+<link rel="start" href="index.html" title="MySQL 8.0 Reference Manual" />
+<link rel="prev" href="arithmetic-functions.html" title="14.6.1 Arithmetic Operators" />
+<link rel="next" href="date-and-time-functions.html?ff=nopfpls" title="14.7 Date and Time Functions" />
+<link rel="up" href="numeric-functions.html" title="14.6 Numeric Functions and Operators" />
+
+    
+    <link rel="shortcut icon" href="https://labs.mysql.com/common/themes/sakila/favicon.ico" />
+    <script async="async" type="text/javascript" src='https://consent.truste.com/notice?domain=oracle.com&c=teconsent&js=bb&noticeType=bb&text=true&cdn=1&pcookie&gtm=1' crossorigin></script>
+    <script src="https://www.oracle.com/assets/truste-oraclelib.js"></script>
+    <script>(function(H){ H.className=H.className.replace(/\bno-js\b/,'js') })(document.documentElement)</script>
+    <script src="https://labs.mysql.com/common/js/site-20250121.min.js"></script>
+
+    
+    
+    <!--[if lt IE 9]>
+        <script src="https://labs.mysql.com/common/js/polyfills/html5shiv-printshiv-3.7.2.min.js"></script>
+        <script src="https://labs.mysql.com/common/js/polyfills/respond-1.4.2.min.js"></script>
+    <![endif]-->
+        <!--[if IE 9]>
+        <style>#docs-sidebar-toc { box-sizing: content-box; }</style>
+    <![endif]-->
+        
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="E6BB6-B37B4-898B7-F97BA-BBCDB",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"E6BB6-B37B4-898B7-F97BA-BBCDB";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="tx7bjbfykvyok2tumxia-f-f848a0e20-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1983233","ak.ai":parseInt("802521",10),"ak.ol":"0","ak.cr":2,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"1742300d","ak.r":34657,"ak.a2":n,"ak.m":"dscx","ak.n":"essl","ak.cport":39183,"ak.gh":"23.32.20.179","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1786013136","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==7bN2FcxODese/zkajRU2UO6a5F8LdcPiBA0tburoeQyalTLoriduYIibu/YkeyhFX+YQ9AlfJfTJ6Z9bWqqTTIWo6Kn30b9g8YN+KxElNjaV5p5xiL2lw/VDunv/LJi4tavzUVN1nYN0WyoTn2hvcuLqNHmmqEQAvBwqrlQTrG3RRgYBLuWKME+GkXdJyiYDOaSXZYlVxcjetsg58zniKyBZj2mOU6W9yEjcmwHfeqVX+KFTrCxaTW3+Ma3oP70MPaaMWIsKX9HIfzO5Xi/XePjUxujyqKlrHVGofqj+Jr59o70D2PuhmcH8DnYEEJ8CT9OjuLbpy62I/6dHxBT3ANdca/HcIjINvjJ1vG/vOcvpummmKDAfNHiZecTgDaP81EB/XnHa9zcR7k1lArBzmrkfkuHDYJbyTsde0tQLOPA=","ak.pv":"21","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body class="no-sidebar full-page dev">
+<a class="skip-main" href="#main">Skip to Main Content</a>
+<div class="page-wrapper">
+    <header>
+
+                        <a href="https://dev.mysql.com/" aria-label="MySQL Home" title="MySQL" id="l1-home-link"></a>
+        
+        <div id="l1-nav-container">
+            <div id="l1-line1">
+                <div id="l1-lhs">
+                    <div id="l1-slogan">
+                        The world's most popular open source database
+                    </div>
+                    <div id="l1-search-box">
+                        <form id="l1-search-form" method="get" action="https://search.oracle.com/mysql">
+                        <input type="hidden" name="app" value="mysql" />
+                        <input id="l1-search-input" type="search" class="icon-search" placeholder="Search" aria-label="Search" name="q" />
+                        </form>
+                    </div>
+                    <div id="l1-auth-links">
+                        <nav aria-label="Contact/Login Navigation" role="navigation">
+                            <a href="https://www.mysql.com/about/contact/"><b>Contact MySQL</b></a>
+                            <span id="l1-contact-separator">&nbsp;|&nbsp;</span>
+                            <span id="l1-contact-separator-br"><br /></span>
+                                                             <a href="https://dev.mysql.com/auth/login/?dest=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F8.0%2Fen%2Fmathematical-functions.html">Login</a> &nbsp;|&nbsp;
+                                 <a href="https://dev.mysql.com/auth/register/">Register</a>
+                                                    </nav>
+                    </div>
+                </div>
+            </div>
+            <div id="l1-line2">
+                <nav aria-label="Primary Navigation" role="navigation">
+                    <ul id="l1-nav">
+                        <li>
+                            <a href="https://www.mysql.com/"><!-- <span class="icon-sakila"></span>  -->MySQL.com</a>
+                        </li><li>
+                            <a href="https://www.mysql.com/downloads/"><!-- <span class="icon-download-thin"></span>  -->Downloads</a>
+                        </li><li class="active">
+                            <a href="/doc/"><!-- <span class="icon-books"></span>  -->Documentation</a>
+                        </li><li>
+                            <a href="/"><!-- <span class="icon-code"></span>  -->Developer Zone</a>
+                        </li>                    </ul>
+                </nav>
+                <div class="social-icons">
+                    <nav aria-label="Social Navigation" role="navigation">
+                        <a aria-label="Join us on Facebook" title="Join us on Facebook" href="http://www.facebook.com/mysql"><span class="icon-facebook"></span></a>
+                        <a aria-label="Follow us on X" title="Follow us on X" href="https://x.com/mysql"><span class="icon-x-twitter"></span></a>
+                        <a aria-label="Follow us on LinkedIn" title="Follow us on LinkedIn" href="https://www.linkedin.com/company/mysql"><span class="icon-linkedin"></span></a>
+                        <a aria-label="Visit our YouTube channel" title="Visit our YouTube channel" href="http://www.youtube.com/mysqlchannel"><span class="icon-youtube"></span></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="sub-header">
+            <div id="l2-nav-container">
+                <div id="l2-nav-toggle">
+                    <span class="icon-three-bars"></span>
+                </div>
+                                                                                        <a class="button nav-button-3" href="/"><span class="icon-code"></span> Developer Zone</a>
+                                                                                                                                    <a class="button nav-button-2" href="https://www.mysql.com/downloads/"><span class="icon-download-thin"></span> Downloads</a>
+                                                                                                <a class="button nav-button-1" href="https://www.mysql.com/"><span class="icon-sakila"></span> MySQL.com</a>
+                                                                        <div id="l2-search-toggle">
+                    <span class="icon-search"></span>
+                </div>
+                <div id="l2-site-icon">
+                                                                                                                                                                                                    <span class="icon-books"></span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
+                <div id="l1-section-title">
+                    <span id="l1-section-label">
+                        <a href="/doc/">Documentation</a>
+                    </span>
+                </div>
+                <nav aria-label="Secondary Navigation" role="navigation">
+                    
+
+<ul id="l2-nav">
+            	<li class="active"><a class="active " href="/doc/refman/en/">MySQL Server</a>
+    			</li>
+	        	<li class=""><a  href="/doc/index-enterprise.html">MySQL Enterprise</a>
+    			</li>
+	        	<li class=""><a  href="/doc/workbench/en/">Workbench</a>
+    			</li>
+	        	<li class=""><a  href="/doc/mysql-shell/en/mysql-innodb-cluster.html">InnoDB Cluster</a>
+    			</li>
+	        	<li class=""><a  href="/doc/index-cluster.html">MySQL NDB Cluster</a>
+    			</li>
+	        	<li class=""><a  href="/doc/index-connectors.html">Connectors</a>
+    			</li>
+	        	<li class=" last"><a  href="/doc/index-other.html">More</a>
+    			</li>
+	                        <li class="other-section"><a href="https://www.mysql.com/">MySQL.com</a></li>
+                            <li class="other-section"><a href="https://www.mysql.com/downloads/">Downloads</a></li>
+                                        <li class="other-section"><a href="/">Developer Zone</a></li>
+            </ul>
+                </nav>
+            </div>
+            <div id="l3-search-container"></div>
+            <div id="top-orange"><span id="section-nav">Section Menu: &nbsp; </span></div>
+        </div>
+    </header>
+        <div id="page">
+                        <div role="main" id="main" tabindex="-1">
+
+            
+                
+            
+<div>
+    <div id="docs-sidebar-toc" class="">
+    <div id="docs-toc-inner">
+        <div class="docs-sidebar-header" id="docs-nav-header">
+            <a class="docs-show-hide-nav" id="docs-hide-nav" href="" title="Hide Sidebar" aria-label="Hide Sidebar"><span class="icon-arrow-small-left"></span></a>
+            <div class="docs-nav-links">
+                                    
+    <a href="arithmetic-functions.html"
+        aria-label="Previous" title="Previous: Arithmetic Operators"><span
+        class="icon-chevron-left"></span></a>
+<a href="index.html" aria-label="Start" title="Start"><span class="icon-book-open"></span></a>
+        <a aria-label="Up" href="numeric-functions.html" title="Up: Numeric Functions and Operators"><span class="icon-chevron-up"></span></a>
+    <a href="date-and-time-functions.html" aria-label="Next"
+        title="Next: Date and Time Functions"><span
+        class="icon-chevron-right"></span></a>
+                            </div>
+        </div>
+                    
+<div id="docs-sidebar-search-container">
+    <div id="docs-sidebar-search-box">
+        <form method="get" action="/doc/search/">
+            <input type="hidden" name="d" id="d" value="201" />
+            <input type="hidden" name="p" id="p" value="1" />
+            <input type="text" name="q" id="q" title="Search this Manual"
+                value="Search this Manual"
+                style="color: #bbb;"
+                onfocus="if(this.value == 'Search this Manual') {this.value='';this.style.color='#555';}"
+                onblur="if(this.value == '') {this.value='Search this Manual';this.style.color='#bbb';}" />
+
+            <button class="docs-sidebar-search-btn" aria-label="Search" title="Search" type="submit">
+                <span class="icon-search"></span>
+            </button>
+        </form>
+    </div>
+</div>
+                <div class="docs-sidebar-nav">
+            <a class="docs-icon-home" href="/doc/"><span class="icon-home"></span>Documentation Home</a><hr />
+            <div class="docs-sidebar-mtitle">MySQL 8.0 Reference Manual</div>
+            <nav class="doctoc" id="doc-201">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="preface.html">Preface and Legal Notices</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="introduction.html">General Information</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="installing.html">Installing MySQL</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="upgrading.html">Upgrading MySQL</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="downgrading.html">Downgrading MySQL</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="tutorial.html">Tutorial</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="programs.html">MySQL Programs</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="server-administration.html">MySQL Server Administration</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="security.html">Security</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="backup-and-recovery.html">Backup and Recovery</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="optimization.html">Optimization</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="language-structure.html">Language Structure</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="charset.html">Character Sets, Collations, Unicode</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="data-types.html">Data Types</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-down"></span></a></div><div class="docs-sidebar-nav-link"><a href="functions.html">Functions and Operators</a></div></div>                        <div class="docs-submenu">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="built-in-function-reference.html">Built-In Function and Operator Reference</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="loadable-function-reference.html">Loadable Function Reference</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="type-conversion.html">Type Conversion in Expression Evaluation</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="non-typed-operators.html">Operators</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="operator-precedence.html">Operator Precedence</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="comparison-operators.html">Comparison Functions and Operators</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="logical-operators.html">Logical Operators</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="assignment-operators.html">Assignment Operators</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="flow-control-functions.html">Flow Control Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-down"></span></a></div><div class="docs-sidebar-nav-link"><a href="numeric-functions.html">Numeric Functions and Operators</a></div></div>                        <div class="docs-submenu">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="arithmetic-functions.html">Arithmetic Operators</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link current"><a href="mathematical-functions.html">Mathematical Functions</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="date-and-time-functions.html">Date and Time Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="string-functions.html">String Functions and Operators</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="string-comparison-functions.html">String Comparison Functions and Operators</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="regexp.html">Regular Expressions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="string-functions-charset.html">Character Set and Collation of Function Results</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="fulltext-search.html">Full-Text Search Functions</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fulltext-natural-language.html">Natural Language Full-Text Searches</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fulltext-boolean.html">Boolean Full-Text Searches</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fulltext-query-expansion.html">Full-Text Searches with Query Expansion</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fulltext-stopwords.html">Full-Text Stopwords</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fulltext-restrictions.html">Full-Text Restrictions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fulltext-fine-tuning.html">Fine-Tuning MySQL Full-Text Search</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="full-text-adding-collation.html">Adding a User-Defined Collation for Full-Text Indexing</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fulltext-search-ngram.html">ngram Full-Text Parser</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="fulltext-search-mecab.html">MeCab Full-Text Parser Plugin</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="cast-functions.html">Cast Functions and Operators</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="xml-functions.html">XML Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="bit-functions.html">Bit Functions and Operators</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="encryption-functions.html">Encryption and Compression Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="locking-functions.html">Locking Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="information-functions.html">Information Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="spatial-analysis-functions.html">Spatial Analysis Functions</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-function-reference.html">Spatial Function Reference</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-function-argument-handling.html">Argument Handling by Spatial Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-wkt-functions.html">Functions That Create Geometry Values from WKT Values</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-wkb-functions.html">Functions That Create Geometry Values from WKB Values</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-mysql-specific-functions.html">MySQL-Specific Functions That Create Geometry Values</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-format-conversion-functions.html">Geometry Format Conversion Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="gis-property-functions.html">Geometry Property Functions</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-general-property-functions.html">General Geometry Property Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-point-property-functions.html">Point Property Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-linestring-property-functions.html">LineString and MultiLineString Property Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-polygon-property-functions.html">Polygon and MultiPolygon Property Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gis-geometrycollection-property-functions.html">GeometryCollection Property Functions</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-operator-functions.html">Spatial Operator Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="spatial-relation-functions.html">Functions That Test Spatial Relations Between Geometry Objects</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-relation-functions-object-shapes.html">Spatial Relation Functions That Use Object Shapes</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-relation-functions-mbr.html">Spatial Relation Functions That Use Minimum Bounding Rectangles</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-geohash-functions.html">Spatial Geohash Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-geojson-functions.html">Spatial GeoJSON Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-aggregate-functions.html">Spatial Aggregate Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="spatial-convenience-functions.html">Spatial Convenience Functions</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="json-functions.html">JSON Functions</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="json-function-reference.html">JSON Function Reference</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="json-creation-functions.html">Functions That Create JSON Values</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="json-search-functions.html">Functions That Search JSON Values</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="json-modification-functions.html">Functions That Modify JSON Values</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="json-attribute-functions.html">Functions That Return JSON Value Attributes</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="json-table-functions.html">JSON Table Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="json-validation-functions.html">JSON Schema Validation Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="json-utility-functions.html">JSON Utility Functions</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="replication-functions.html">Replication Functions</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="group-replication-functions.html">Group Replication Functions</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="group-replication-functions-for-new-primary.html">Function which Configures Group Replication Primary</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="group-replication-functions-for-mode.html">Functions which Configure the Group Replication Mode</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="group-replication-functions-for-maximum-consensus.html">Functions to Inspect and Configure the Maximum Consensus Instances of a
+          Group</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="group-replication-functions-for-communication-protocol.html">Functions to Inspect and Set the Group Replication Communication
+Protocol Version</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="group-replication-functions-for-member-actions.html">Functions to Set and Reset Group Replication Member Actions</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="gtid-functions.html">Functions Used with Global Transaction Identifiers (GTIDs)</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="replication-functions-async-failover.html">Asynchronous Replication Channel Failover Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="replication-functions-synchronization.html">Position-Based Synchronization Functions</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="aggregate-functions-and-modifiers.html">Aggregate Functions</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="aggregate-functions.html">Aggregate Function Descriptions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="group-by-modifiers.html">GROUP BY Modifiers</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="group-by-handling.html">MySQL Handling of GROUP BY</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="group-by-functional-dependence.html">Detection of Functional Dependence</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="window-functions.html">Window Functions</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="window-function-descriptions.html">Window Function Descriptions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="window-functions-usage.html">Window Function Concepts and Syntax</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="window-functions-frames.html">Window Function Frame Specification</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="window-functions-named-windows.html">Named Windows</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="window-function-restrictions.html">Window Function Restrictions</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="performance-schema-functions.html">Performance Schema Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="internal-functions.html">Internal Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="miscellaneous-functions.html">Miscellaneous Functions</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable  loaded" aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="precision-math.html">Precision Math</a></div></div>                        <div class="docs-submenu hidden">
+                                    
+    <ul>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="precision-math-numbers.html">Types of Numeric Values</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="precision-math-decimal-characteristics.html">DECIMAL Data Type Characteristics</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="precision-math-expressions.html">Expression Handling</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="precision-math-rounding.html">Rounding Behavior</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="precision-math-examples.html">Precision Math Examples</a></div></div>                    </li>
+        </ul>
+                            </div>
+                    </li>
+        </ul>
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="sql-statements.html">SQL Statements</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="data-dictionary.html">MySQL Data Dictionary</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="innodb-storage-engine.html">The InnoDB Storage Engine</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="storage-engines.html">Alternative Storage Engines</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="replication.html">Replication</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="group-replication.html">Group Replication</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="mysql-shell-userguide.html">MySQL Shell</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="document-store.html">Using MySQL as a Document Store</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="mysql-innodb-cluster-introduction.html">InnoDB Cluster</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="mysql-innodb-replicaset-introduction.html">InnoDB ReplicaSet</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="mysql-cluster.html">MySQL NDB Cluster 8.0</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="partitioning.html">Partitioning</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="stored-objects.html">Stored Objects</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="information-schema.html">INFORMATION_SCHEMA Tables</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="performance-schema.html">MySQL Performance Schema</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="sys-schema.html">MySQL sys Schema</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="connectors-apis.html">Connectors and APIs</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="mysql-enterprise.html">MySQL Enterprise Edition</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="workbench.html">MySQL Workbench</a></div></div>                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="mysql-oci-marketplace.html">MySQL on OCI Marketplace</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="faqs.html">MySQL 8.0 Frequently Asked Questions</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="error-handling.html">Error Messages and Common Problems</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><a class="expandable " aria-label="Subnav" href=""><span class="icon-chevron-right"></span></a></div><div class="docs-sidebar-nav-link"><a href="indexes.html">Indexes</a></div></div>                        <div class="docs-submenu hidden">
+                            </div>
+                    </li>
+            <li>
+            <div><div class="docs-sidebar-nav-icon"><span class="icon-dot"></span></div><div class="docs-sidebar-nav-link"><a href="glossary.html">MySQL Glossary</a></div></div>                    </li>
+        </ul>
+                            </nav>
+        </div>
+
+        
+<a class="docs-sidebar-section" href=""><span class="icon-related"></span>
+    <span class="text">Related Documentation</span></a>
+<div class="docs-sidebar-accordian open">
+    <div class="text">
+        <a href="/doc/relnotes/mysql/8.0/en/">MySQL 8.0 Release Notes</a><br />
+        <a href="/doc/dev/mysql-server/latest/">MySQL 8.0 Source Code Documentation</a><br />
+        </div>
+</div>
+
+    <a class="docs-sidebar-section" href=""><span class="icon-download-thin"></span>
+        <span class="text">
+            Download
+                            this Manual
+                    </span>
+    </a>
+    <div class="docs-sidebar-accordian open">
+        <div class="text">
+                                    <a href="https://downloads.mysql.com/docs/refman-8.0-en.pdf">PDF (US Ltr)</a>
+            - 43.2Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.a4.pdf">PDF (A4)</a>
+            - 43.3Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.man-gpl.tar.gz">Man Pages (TGZ)</a>
+            - 295.2Kb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.man-gpl.zip">Man Pages (Zip)</a>
+            - 400.4Kb<br />
+                                                <a href="https://downloads.mysql.com/docs/mysql-8.0.info.gz">Info (Gzip)</a>
+            - 4.3Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/mysql-8.0.info.zip">Info (Zip)</a>
+            - 4.3Mb<br />
+                                </div>
+    </div>
+
+<a class="docs-sidebar-section" href=""><span class="icon-book"></span>
+    <span class="text">Excerpts from this Manual</span></a>
+<div class="docs-sidebar-accordian">
+    <div class="text">
+                <a href="/doc/mysql-g11n-excerpt/8.0/en/">MySQL Globalization</a><br />
+                <a href="/doc/mysql-infoschema-excerpt/8.0/en/">MySQL Information Schema</a><br />
+                <a href="/doc/mysql-installation-excerpt/8.0/en/">MySQL Installation Guide</a><br />
+                <a href="/doc/mysql-security-excerpt/8.0/en/">Security in MySQL</a><br />
+                <a href="/doc/mysql-startstop-excerpt/8.0/en/">Starting and Stopping MySQL</a><br />
+                <a href="/doc/mysql-linuxunix-excerpt/8.0/en/">MySQL and Linux/Unix</a><br />
+                <a href="/doc/mysql-windows-excerpt/8.0/en/">MySQL and Windows</a><br />
+                <a href="/doc/mysql-macos-excerpt/8.0/en/">MySQL and macOS</a><br />
+                <a href="/doc/mysql-solaris-excerpt/8.0/en/">MySQL and Solaris</a><br />
+                <a href="/doc/mysql-sourcebuild-excerpt/8.0/en/">Building MySQL from Source</a><br />
+                <a href="/doc/mysql-reslimits-excerpt/8.0/en/">MySQL Restrictions and Limitations</a><br />
+                <a href="/doc/mysql-partitioning-excerpt/8.0/en/">MySQL Partitioning</a><br />
+                <a href="/doc/mysql-tutorial-excerpt/8.0/en/">MySQL Tutorial</a><br />
+                <a href="/doc/mysql-perfschema-excerpt/8.0/en/">MySQL Performance Schema</a><br />
+                <a href="/doc/mysql-replication-excerpt/8.0/en/">MySQL Replication</a><br />
+                <a href="/doc/mysql-repo-excerpt/8.0/en/">Using the MySQL Yum Repository</a><br />
+                <a href="/doc/mysql-cluster-excerpt/8.0/en/">MySQL NDB Cluster 8.0</a><br />
+            </div>
+</div>
+
+        <br /><span id="wkr"><br /></span>
+    </div>
+    </div>
+
+    <div id="docs-main" class="has-toc">
+    <div id="docs-main-inner">
+
+                <div class="right" id="docs-version-nav">
+            <a href="" id="docs-version-nav-toggle">version 8.0
+            <span class="icon-chevron-down"></span></a>
+            <div id="docs-version-list">
+                                                        <a                         href="/doc/refman/26.7/en/mathematical-functions.html">
+                        26.7
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.7/en/mathematical-functions.html">
+                        9.7
+                                                &nbsp;current
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.6/en/mathematical-functions.html">
+                        9.6
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.5/en/mathematical-functions.html">
+                        9.5
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.4/en/mathematical-functions.html">
+                        9.4
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.3/en/mathematical-functions.html">
+                        9.3
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.2/en/mathematical-functions.html">
+                        9.2
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/9.1/en/mathematical-functions.html">
+                        9.1
+                                            </a><br />
+                                                                            <a                         href="/doc/refman/8.4/en/mathematical-functions.html">
+                        8.4
+                                            </a><br />
+                                                                                                                <a                         href="/doc/refman/5.7/en/mathematical-functions.html">
+                        5.7
+                                            </a><br />
+                                                                        <div id="docs-version-nav-lang">
+                                                                                                                                                    <a                                     href="/doc/refman/8.0/ja/mathematical-functions.html">
+                                    8.0&nbsp;
+                                                                            Japanese
+                                                                    </a><br />
+                                                                                            </div>
+                            </div>
+        </div>
+        
+        <div id="docs-show-nav" class="left hidden" style="margin-right: 15px;">
+            <a class="docs-show-hide-nav" href="" aria-label="Show Sidebar"
+                title="Show Sidebar"><span class="icon-arrow-small-right"></span></a>
+        </div>
+
+                        <div id="docs-breadcrumbs">
+            <a href="/doc/refman/8.0/en/">MySQL 8.0 Reference Manual</a> &nbsp;/&nbsp;
+                            <span id="breadcrumbs-link"><a href="" id="show-breadcrumbs">...</a> &nbsp;/&nbsp;</span>
+                <span class="hidden" id="hidden-breadcrumbs">
+                                                        <a href="functions.html">Functions and Operators</a> &nbsp;/&nbsp;
+                                                            <a href="numeric-functions.html">Numeric Functions and Operators</a> &nbsp;/&nbsp;
+                                                                                        </span>
+                                        Mathematical Functions
+                                    </div>
+        
+        <div id="docs-body">
+        
+<div class="section">
+
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a name="mathematical-functions"></a>14.6.2 Mathematical Functions</h3>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="table">
+<a name="id224507"></a><p class="title"><b>Table 14.10 Mathematical Functions</b></p>
+<div class="table-contents">
+<table frame="box" rules="all" summary="A reference that lists mathematical functions."><col style="width: 28%"><col style="width: 71%"><thead><tr><th>Name</th>
+<th>Description</th>
+</tr></thead><tbody><tr><td><a class="link" href="mathematical-functions.html#function_abs"><code class="literal">ABS()</code></a></td>
+<td>
+      Return the absolute value
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_acos"><code class="literal">ACOS()</code></a></td>
+<td>
+      Return the arc cosine
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_asin"><code class="literal">ASIN()</code></a></td>
+<td>
+      Return the arc sine
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_atan"><code class="literal">ATAN()</code></a></td>
+<td>
+      Return the arc tangent
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_atan2"><code class="literal">ATAN2()</code>, <code class="literal">ATAN()</code></a></td>
+<td>
+      Return the arc tangent of the two arguments
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_ceil"><code class="literal">CEIL()</code></a></td>
+<td>
+      Return the smallest integer value not less than the argument
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_ceiling"><code class="literal">CEILING()</code></a></td>
+<td>
+      Return the smallest integer value not less than the argument
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_conv"><code class="literal">CONV()</code></a></td>
+<td>
+      Convert numbers between different number bases
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_cos"><code class="literal">COS()</code></a></td>
+<td>
+      Return the cosine
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_cot"><code class="literal">COT()</code></a></td>
+<td>
+      Return the cotangent
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_crc32"><code class="literal">CRC32()</code></a></td>
+<td>
+      Compute a cyclic redundancy check value
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_degrees"><code class="literal">DEGREES()</code></a></td>
+<td>
+      Convert radians to degrees
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_exp"><code class="literal">EXP()</code></a></td>
+<td>
+      Raise to the power of
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_floor"><code class="literal">FLOOR()</code></a></td>
+<td>
+      Return the largest integer value not greater than the argument
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_ln"><code class="literal">LN()</code></a></td>
+<td>
+      Return the natural logarithm of the argument
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_log"><code class="literal">LOG()</code></a></td>
+<td>
+      Return the natural logarithm of the first argument
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_log10"><code class="literal">LOG10()</code></a></td>
+<td>
+      Return the base-10 logarithm of the argument
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_log2"><code class="literal">LOG2()</code></a></td>
+<td>
+      Return the base-2 logarithm of the argument
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_mod"><code class="literal">MOD()</code></a></td>
+<td>
+      Return the remainder
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_pi"><code class="literal">PI()</code></a></td>
+<td>
+      Return the value of pi
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_pow"><code class="literal">POW()</code></a></td>
+<td>
+      Return the argument raised to the specified power
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_power"><code class="literal">POWER()</code></a></td>
+<td>
+      Return the argument raised to the specified power
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_radians"><code class="literal">RADIANS()</code></a></td>
+<td>
+      Return argument converted to radians
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_rand"><code class="literal">RAND()</code></a></td>
+<td>
+      Return a random floating-point value
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_round"><code class="literal">ROUND()</code></a></td>
+<td>
+      Round the argument
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_sign"><code class="literal">SIGN()</code></a></td>
+<td>
+      Return the sign of the argument
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_sin"><code class="literal">SIN()</code></a></td>
+<td>
+      Return the sine of the argument
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_sqrt"><code class="literal">SQRT()</code></a></td>
+<td>
+      Return the square root of the argument
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_tan"><code class="literal">TAN()</code></a></td>
+<td>
+      Return the tangent of the argument
+    </td>
+</tr><tr><td><a class="link" href="mathematical-functions.html#function_truncate"><code class="literal">TRUNCATE()</code></a></td>
+<td>
+      Truncate to specified number of decimal places
+    </td>
+</tr></tbody></table>
+</div>
+
+</div>
+<br class="table-break"><p>
+        All mathematical functions return <code class="literal">NULL</code> in the
+        event of an error.
+</p><a class="indexterm" name="id224670"></a><a class="indexterm" name="id224672"></a>
+<div class="itemizedlist">
+<ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><a name="function_abs"></a><p>
+            <a class="link" href="mathematical-functions.html#function_abs"><code class="literal">ABS(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id224684"></a><p>
+            Returns the absolute value of <em class="replaceable"><code>X</code></em>,
+            or <code class="literal">NULL</code> if <em class="replaceable"><code>X</code></em>
+            is <code class="literal">NULL</code>.
+          </p><p>
+            The result type is derived from the argument type. An
+            implication of this is that
+            <a class="link" href="mathematical-functions.html#function_abs"><code class="literal">ABS(-9223372036854775808)</code></a>
+            produces an error because the result cannot be stored in a
+            signed <code class="literal">BIGINT</code> value.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT ABS(2);
+        -&gt; 2
+mysql&gt; SELECT ABS(-32);
+        -&gt; 32</code></pre><p>
+            This function is safe to use with
+            <a class="link" href="integer-types.html" title="13.1.2 Integer Types (Exact Value) - INTEGER, INT, SMALLINT, TINYINT, MEDIUMINT, BIGINT"><code class="literal">BIGINT</code></a> values.
+          </p></li><li class="listitem"><a name="function_acos"></a><p>
+            <a class="link" href="mathematical-functions.html#function_acos"><code class="literal">ACOS(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id224713"></a><p>
+            Returns the arc cosine of <em class="replaceable"><code>X</code></em>, that
+            is, the value whose cosine is <em class="replaceable"><code>X</code></em>.
+            Returns <code class="literal">NULL</code> if
+            <em class="replaceable"><code>X</code></em> is not in the range
+            <code class="literal">-1</code> to <code class="literal">1</code>, or if
+            <em class="replaceable"><code>X</code></em> is <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT ACOS(1);
+        -&gt; 0
+mysql&gt; SELECT ACOS(1.0001);
+        -&gt; NULL
+mysql&gt; SELECT ACOS(0);
+        -&gt; 1.5707963267949</code></pre></li><li class="listitem"><a name="function_asin"></a><p>
+            <a class="link" href="mathematical-functions.html#function_asin"><code class="literal">ASIN(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id224740"></a><p>
+            Returns the arc sine of <em class="replaceable"><code>X</code></em>, that
+            is, the value whose sine is <em class="replaceable"><code>X</code></em>.
+            Returns <code class="literal">NULL</code> if
+            <em class="replaceable"><code>X</code></em> is not in the range
+            <code class="literal">-1</code> to <code class="literal">1</code>, or if
+            <em class="replaceable"><code>X</code></em> is <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT ASIN(0.2);
+        -&gt; 0.20135792079033
+mysql&gt; SELECT ASIN('foo');
+
++-------------+
+| ASIN('foo') |
++-------------+
+|           0 |
++-------------+
+1 row in set, 1 warning (0.00 sec)
+
+mysql&gt; SHOW WARNINGS;
++---------+------+-----------------------------------------+
+| Level   | Code | Message                                 |
++---------+------+-----------------------------------------+
+| Warning | 1292 | Truncated incorrect DOUBLE value: 'foo' |
++---------+------+-----------------------------------------+</code></pre></li><li class="listitem"><a name="function_atan"></a><p>
+            <a class="link" href="mathematical-functions.html#function_atan"><code class="literal">ATAN(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id224767"></a><p>
+            Returns the arc tangent of <em class="replaceable"><code>X</code></em>,
+            that is, the value whose tangent is
+            <em class="replaceable"><code>X</code></em>. Returns
+            <em class="replaceable"><code>NULL</code></em> if
+            <em class="replaceable"><code>X</code></em> is <code class="literal">NULL</code>
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT ATAN(2);
+        -&gt; 1.1071487177941
+mysql&gt; SELECT ATAN(-2);
+        -&gt; -1.1071487177941</code></pre></li><li class="listitem"><a name="function_atan2"></a><p>
+            <a class="link" href="mathematical-functions.html#function_atan2"><code class="literal">ATAN(<em class="replaceable"><code>Y</code></em>,<em class="replaceable"><code>X</code></em>)</code></a>,
+            <a class="link" href="mathematical-functions.html#function_atan2"><code class="literal">ATAN2(<em class="replaceable"><code>Y</code></em>,<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id224795"></a><p>
+            Returns the arc tangent of the two variables
+            <em class="replaceable"><code>X</code></em> and
+            <em class="replaceable"><code>Y</code></em>. It is similar to calculating
+            the arc tangent of <code class="literal"><em class="replaceable"><code>Y</code></em> /
+            <em class="replaceable"><code>X</code></em></code>, except that the
+            signs of both arguments are used to determine the quadrant
+            of the result. Returns <code class="literal">NULL</code> if
+            <em class="replaceable"><code>X</code></em> or <em class="replaceable"><code>Y</code></em>
+            is <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT ATAN(-2,2);
+        -&gt; -0.78539816339745
+mysql&gt; SELECT ATAN2(PI(),0);
+        -&gt; 1.5707963267949</code></pre></li><li class="listitem"><a name="function_ceil"></a><p>
+            <a class="link" href="mathematical-functions.html#function_ceil"><code class="literal">CEIL(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id224822"></a><p>
+            <a class="link" href="mathematical-functions.html#function_ceil"><code class="literal">CEIL()</code></a> is a synonym for
+            <a class="link" href="mathematical-functions.html#function_ceiling"><code class="literal">CEILING()</code></a>.
+          </p></li><li class="listitem"><a name="function_ceiling"></a><p>
+            <a class="link" href="mathematical-functions.html#function_ceiling"><code class="literal">CEILING(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id224840"></a><p>
+            Returns the smallest integer value not less than
+            <em class="replaceable"><code>X</code></em>. Returns
+            <code class="literal">NULL</code> if <em class="replaceable"><code>X</code></em> is
+            <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT CEILING(1.23);
+        -&gt; 2
+mysql&gt; SELECT CEILING(-1.23);
+        -&gt; -1</code></pre><p>
+            For exact-value numeric arguments, the return value has an
+            exact-value numeric type. For string or floating-point
+            arguments, the return value has a floating-point type.
+          </p></li><li class="listitem"><a name="function_conv"></a><p>
+            <a class="link" href="mathematical-functions.html#function_conv"><code class="literal">CONV(<em class="replaceable"><code>N</code></em>,<em class="replaceable"><code>from_base</code></em>,<em class="replaceable"><code>to_base</code></em>)</code></a>
+          </p><a class="indexterm" name="id224865"></a><p>
+            Converts numbers between different number bases. Returns a
+            string representation of the number
+            <em class="replaceable"><code>N</code></em>, converted from base
+            <em class="replaceable"><code>from_base</code></em> to base
+            <em class="replaceable"><code>to_base</code></em>. Returns
+            <code class="literal">NULL</code> if any argument is
+            <code class="literal">NULL</code>. The argument
+            <em class="replaceable"><code>N</code></em> is interpreted as an integer,
+            but may be specified as an integer or a string. The minimum
+            base is <code class="literal">2</code> and the maximum base is
+            <code class="literal">36</code>. If
+            <em class="replaceable"><code>from_base</code></em> is a negative number,
+            <em class="replaceable"><code>N</code></em> is regarded as a signed number.
+            Otherwise, <em class="replaceable"><code>N</code></em> is treated as
+            unsigned. <a class="link" href="mathematical-functions.html#function_conv"><code class="literal">CONV()</code></a> works with
+            64-bit precision.
+          </p><p>
+            <code class="literal">CONV()</code> returns <code class="literal">NULL</code> if
+            any of its arguments are <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT CONV('a',16,2);
+        -&gt; '1010'
+mysql&gt; SELECT CONV('6E',18,8);
+        -&gt; '172'
+mysql&gt; SELECT CONV(-17,10,-18);
+        -&gt; '-H'
+mysql&gt; SELECT CONV(10+'10'+'10'+X'0a',10,10);
+        -&gt; '40'</code></pre></li><li class="listitem"><a name="function_cos"></a><p>
+            <a class="link" href="mathematical-functions.html#function_cos"><code class="literal">COS(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id224902"></a><p>
+            Returns the cosine of <em class="replaceable"><code>X</code></em>, where
+            <em class="replaceable"><code>X</code></em> is given in radians. Returns
+            <code class="literal">NULL</code> if <em class="replaceable"><code>X</code></em> is
+            <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT COS(PI());
+        -&gt; -1</code></pre></li><li class="listitem"><a name="function_cot"></a><p>
+            <a class="link" href="mathematical-functions.html#function_cot"><code class="literal">COT(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id224924"></a><p>
+            Returns the cotangent of <em class="replaceable"><code>X</code></em>.
+            Returns <code class="literal">NULL</code> if
+            <em class="replaceable"><code>X</code></em> is <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT COT(12);
+        -&gt; -1.5726734063977
+mysql&gt; SELECT COT(0);
+        -&gt; out-of-range error</code></pre></li><li class="listitem"><a name="function_crc32"></a><p>
+            <a class="link" href="mathematical-functions.html#function_crc32"><code class="literal">CRC32(<em class="replaceable"><code>expr</code></em>)</code></a>
+          </p><a class="indexterm" name="id224946"></a><p>
+            Computes a cyclic redundancy check value and returns a
+            32-bit unsigned value. The result is <code class="literal">NULL</code>
+            if the argument is <code class="literal">NULL</code>. The argument is
+            expected to be a string and (if possible) is treated as one
+            if it is not.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT CRC32('MySQL');
+        -&gt; 3259397556
+mysql&gt; SELECT CRC32('mysql');
+        -&gt; 2501908538</code></pre></li><li class="listitem"><a name="function_degrees"></a><p>
+            <a class="link" href="mathematical-functions.html#function_degrees"><code class="literal">DEGREES(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id224966"></a><p>
+            Returns the argument <em class="replaceable"><code>X</code></em>, converted
+            from radians to degrees. Returns <code class="literal">NULL</code> if
+            <em class="replaceable"><code>X</code></em> is <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT DEGREES(PI());
+        -&gt; 180
+mysql&gt; SELECT DEGREES(PI() / 2);
+        -&gt; 90</code></pre></li><li class="listitem"><a name="function_exp"></a><p>
+            <a class="link" href="mathematical-functions.html#function_exp"><code class="literal">EXP(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id224988"></a><p>
+            Returns the value of <span class="emphasis"><em>e</em></span> (the base of
+            natural logarithms) raised to the power of
+            <em class="replaceable"><code>X</code></em>. The inverse of this function
+            is <a class="link" href="mathematical-functions.html#function_log"><code class="literal">LOG()</code></a> (using a single
+            argument only) or <a class="link" href="mathematical-functions.html#function_ln"><code class="literal">LN()</code></a>.
+          </p><p>
+            If <em class="replaceable"><code>X</code></em> is <code class="literal">NULL</code>,
+            this function returns <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT EXP(2);
+        -&gt; 7.3890560989307
+mysql&gt; SELECT EXP(-2);
+        -&gt; 0.13533528323661
+mysql&gt; SELECT EXP(0);
+        -&gt; 1</code></pre></li><li class="listitem"><a name="function_floor"></a><p>
+            <a class="link" href="mathematical-functions.html#function_floor"><code class="literal">FLOOR(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id225017"></a><p>
+            Returns the largest integer value not greater than
+            <em class="replaceable"><code>X</code></em>. Returns
+            <code class="literal">NULL</code> if <em class="replaceable"><code>X</code></em> is
+            <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT FLOOR(1.23), FLOOR(-1.23);
+        -&gt; 1, -2</code></pre><p>
+            For exact-value numeric arguments, the return value has an
+            exact-value numeric type. For string or floating-point
+            arguments, the return value has a floating-point type.
+          </p></li><li class="listitem"><p>
+            <a class="link" href="string-functions.html#function_format"><code class="literal">FORMAT(<em class="replaceable"><code>X</code></em>,<em class="replaceable"><code>D</code></em>)</code></a>
+          </p><p>
+            Formats the number <em class="replaceable"><code>X</code></em> to a format
+            like <code class="literal">'#,###,###.##'</code>, rounded to
+            <em class="replaceable"><code>D</code></em> decimal places, and returns the
+            result as a string. For details, see
+            <a class="xref" href="string-functions.html" title="14.8 String Functions and Operators">Section 14.8, “String Functions and Operators”</a>.
+          </p></li><li class="listitem"><p>
+            <a class="indexterm" name="id225046"></a>
+
+            <a class="link" href="string-functions.html#function_hex"><code class="literal">HEX(N_or_S)</code></a>
+          </p><p>
+            This function can be used to obtain a hexadecimal
+            representation of a decimal number or a string; the manner
+            in which it does so varies according to the argument's
+            type. See this function's description in
+            <a class="xref" href="string-functions.html" title="14.8 String Functions and Operators">Section 14.8, “String Functions and Operators”</a>, for details.
+          </p></li><li class="listitem"><a name="function_ln"></a><p>
+            <a class="link" href="mathematical-functions.html#function_ln"><code class="literal">LN(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id225060"></a><p>
+            Returns the natural logarithm of
+            <em class="replaceable"><code>X</code></em>; that is, the
+            base-<span class="emphasis"><em>e</em></span> logarithm of
+            <em class="replaceable"><code>X</code></em>. If
+            <em class="replaceable"><code>X</code></em> is less than or equal to 0.0E0,
+            the function returns <code class="literal">NULL</code> and a warning
+            <span class="quote">“<span class="quote">Invalid argument for logarithm</span>”</span> is reported.
+            Returns <code class="literal">NULL</code> if
+            <em class="replaceable"><code>X</code></em> is <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT LN(2);
+        -&gt; 0.69314718055995
+mysql&gt; SELECT LN(-2);
+        -&gt; NULL</code></pre><p>
+            This function is synonymous with
+            <a class="link" href="mathematical-functions.html#function_log"><code class="literal">LOG(<em class="replaceable"><code>X</code></em>)</code></a>.
+            The inverse of this function is the
+            <a class="link" href="mathematical-functions.html#function_exp"><code class="literal">EXP()</code></a> function.
+          </p></li><li class="listitem"><a name="function_log"></a><p>
+            <a class="link" href="mathematical-functions.html#function_log"><code class="literal">LOG(<em class="replaceable"><code>X</code></em>)</code></a>,
+            <a class="link" href="mathematical-functions.html#function_log"><code class="literal">LOG(<em class="replaceable"><code>B</code></em>,<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id225097"></a><p>
+            If called with one parameter, this function returns the
+            natural logarithm of <em class="replaceable"><code>X</code></em>. If
+            <em class="replaceable"><code>X</code></em> is less than or equal to 0.0E0,
+            the function returns <code class="literal">NULL</code> and a warning
+            <span class="quote">“<span class="quote">Invalid argument for logarithm</span>”</span> is reported.
+            Returns <code class="literal">NULL</code> if
+            <em class="replaceable"><code>X</code></em> or <em class="replaceable"><code>B</code></em>
+            is <code class="literal">NULL</code>.
+          </p><p>
+            The inverse of this function (when called with a single
+            argument) is the <a class="link" href="mathematical-functions.html#function_exp"><code class="literal">EXP()</code></a>
+            function.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT LOG(2);
+        -&gt; 0.69314718055995
+mysql&gt; SELECT LOG(-2);
+        -&gt; NULL</code></pre><p>
+            If called with two parameters, this function returns the
+            logarithm of <em class="replaceable"><code>X</code></em> to the base
+            <em class="replaceable"><code>B</code></em>. If
+            <em class="replaceable"><code>X</code></em> is less than or equal to 0, or
+            if <em class="replaceable"><code>B</code></em> is less than or equal to 1,
+            then <code class="literal">NULL</code> is returned.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT LOG(2,65536);
+        -&gt; 16
+mysql&gt; SELECT LOG(10,100);
+        -&gt; 2
+mysql&gt; SELECT LOG(1,100);
+        -&gt; NULL</code></pre><p>
+            <a class="link" href="mathematical-functions.html#function_log"><code class="literal">LOG(<em class="replaceable"><code>B</code></em>,<em class="replaceable"><code>X</code></em>)</code></a>
+            is equivalent to
+            <a class="link" href="mathematical-functions.html#function_log"><code class="literal">LOG(<em class="replaceable"><code>X</code></em>) /
+            LOG(<em class="replaceable"><code>B</code></em>)</code></a>.
+          </p></li><li class="listitem"><a name="function_log2"></a><p>
+            <a class="link" href="mathematical-functions.html#function_log2"><code class="literal">LOG2(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id225145"></a><p>
+            Returns the base-2 logarithm of
+            <code class="literal"><em class="replaceable"><code>X</code></em></code>. If
+            <em class="replaceable"><code>X</code></em> is less than or equal to 0.0E0,
+            the function returns <code class="literal">NULL</code> and a warning
+            <span class="quote">“<span class="quote">Invalid argument for logarithm</span>”</span> is reported.
+            Returns <code class="literal">NULL</code> if
+            <em class="replaceable"><code>X</code></em> is <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT LOG2(65536);
+        -&gt; 16
+mysql&gt; SELECT LOG2(-100);
+        -&gt; NULL</code></pre><p>
+            <a class="link" href="mathematical-functions.html#function_log2"><code class="literal">LOG2()</code></a> is useful for finding
+            out how many bits a number requires for storage. This
+            function is approximately equivalent to the expression
+            <a class="link" href="mathematical-functions.html#function_log"><code class="literal">LOG(<em class="replaceable"><code>X</code></em>) /
+            LOG(2)</code></a>.
+          </p></li><li class="listitem"><a name="function_log10"></a><p>
+            <a class="link" href="mathematical-functions.html#function_log10"><code class="literal">LOG10(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id225177"></a><p>
+            Returns the base-10 logarithm of
+            <em class="replaceable"><code>X</code></em>. If
+            <em class="replaceable"><code>X</code></em> is less than or equal to 0.0E0,
+            the function returns <code class="literal">NULL</code> and a warning
+            <span class="quote">“<span class="quote">Invalid argument for logarithm</span>”</span> is reported.
+            Returns <code class="literal">NULL</code> if
+            <em class="replaceable"><code>X</code></em> is <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT LOG10(2);
+        -&gt; 0.30102999566398
+mysql&gt; SELECT LOG10(100);
+        -&gt; 2
+mysql&gt; SELECT LOG10(-100);
+        -&gt; NULL</code></pre><p>
+            <a class="link" href="mathematical-functions.html#function_log10"><code class="literal">LOG10(<em class="replaceable"><code>X</code></em>)</code></a>
+            is approximately equivalent to
+            <a class="link" href="mathematical-functions.html#function_log"><code class="literal">LOG(10,<em class="replaceable"><code>X</code></em>)</code></a>.
+          </p></li><li class="listitem"><a name="function_mod"></a><p>
+            <a class="link" href="mathematical-functions.html#function_mod"><code class="literal">MOD(<em class="replaceable"><code>N</code></em>,<em class="replaceable"><code>M</code></em>)</code></a>,
+            <a class="link" href="arithmetic-functions.html#operator_mod"><code class="literal"><em class="replaceable"><code>N</code></em>
+            % <em class="replaceable"><code>M</code></em></code></a>,
+            <a class="link" href="arithmetic-functions.html#operator_mod"><code class="literal"><em class="replaceable"><code>N</code></em>
+            MOD <em class="replaceable"><code>M</code></em></code></a>
+          </p><a class="indexterm" name="id225219"></a><a class="indexterm" name="id225221"></a><a class="indexterm" name="id225223"></a><a class="indexterm" name="id225225"></a><a class="indexterm" name="id225227"></a><p>
+            Modulo operation. Returns the remainder of
+            <em class="replaceable"><code>N</code></em> divided by
+            <em class="replaceable"><code>M</code></em>. Returns
+            <code class="literal">NULL</code> if <em class="replaceable"><code>M</code></em> or
+            <em class="replaceable"><code>N</code></em> is <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT MOD(234, 10);
+        -&gt; 4
+mysql&gt; SELECT 253 % 7;
+        -&gt; 1
+mysql&gt; SELECT MOD(29,9);
+        -&gt; 2
+mysql&gt; SELECT 29 MOD 9;
+        -&gt; 2</code></pre><p>
+            This function is safe to use with
+            <a class="link" href="integer-types.html" title="13.1.2 Integer Types (Exact Value) - INTEGER, INT, SMALLINT, TINYINT, MEDIUMINT, BIGINT"><code class="literal">BIGINT</code></a> values.
+          </p><p>
+            <a class="link" href="mathematical-functions.html#function_mod"><code class="literal">MOD()</code></a> also works on values
+            that have a fractional part and returns the exact remainder
+            after division:
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT MOD(34.5,3);
+        -&gt; 1.5</code></pre><p>
+            <a class="link" href="mathematical-functions.html#function_mod"><code class="literal">MOD(<em class="replaceable"><code>N</code></em>,0)</code></a>
+            returns <code class="literal">NULL</code>.
+          </p></li><li class="listitem"><a name="function_pi"></a><p>
+            <a class="link" href="mathematical-functions.html#function_pi"><code class="literal">PI()</code></a>
+          </p><a class="indexterm" name="id225265"></a><p>
+            Returns the value of π (pi). The default number of
+            decimal places displayed is seven, but MySQL uses the full
+            double-precision value internally.
+          </p><p>
+            Because the return value of this function is a
+            double-precision value, its exact representation may vary
+            between platforms or implementations. This also applies to
+            any expressions making use of <code class="literal">PI()</code>. See
+            <a class="xref" href="floating-point-types.html" title="13.1.4 Floating-Point Types (Approximate Value) - FLOAT, DOUBLE">Section 13.1.4, “Floating-Point Types (Approximate Value) - FLOAT, DOUBLE”</a>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT PI();
+        -&gt; 3.141593
+mysql&gt; SELECT PI()+0.000000000000000000;
+        -&gt; 3.141592653589793000</code></pre></li><li class="listitem"><a name="function_pow"></a><p>
+            <a class="link" href="mathematical-functions.html#function_pow"><code class="literal">POW(<em class="replaceable"><code>X</code></em>,<em class="replaceable"><code>Y</code></em>)</code></a>
+          </p><a class="indexterm" name="id225287"></a><p>
+            Returns the value of <em class="replaceable"><code>X</code></em> raised to
+            the power of <em class="replaceable"><code>Y</code></em>. Returns
+            <code class="literal">NULL</code> if <em class="replaceable"><code>X</code></em> or
+            <em class="replaceable"><code>Y</code></em> is <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT POW(2,2);
+        -&gt; 4
+mysql&gt; SELECT POW(2,-2);
+        -&gt; 0.25</code></pre></li><li class="listitem"><a name="function_power"></a><p>
+            <a class="link" href="mathematical-functions.html#function_power"><code class="literal">POWER(<em class="replaceable"><code>X</code></em>,<em class="replaceable"><code>Y</code></em>)</code></a>
+          </p><a class="indexterm" name="id225312"></a><p>
+            This is a synonym for <a class="link" href="mathematical-functions.html#function_pow"><code class="literal">POW()</code></a>.
+          </p></li><li class="listitem"><a name="function_radians"></a><p>
+            <a class="link" href="mathematical-functions.html#function_radians"><code class="literal">RADIANS(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id225328"></a><p>
+            Returns the argument <em class="replaceable"><code>X</code></em>, converted
+            from degrees to radians. (Note that π radians equals 180
+            degrees.) Returns <code class="literal">NULL</code> if
+            <em class="replaceable"><code>X</code></em> is <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT RADIANS(90);
+        -&gt; 1.5707963267949</code></pre></li><li class="listitem"><a name="function_rand"></a><p>
+            <a class="link" href="mathematical-functions.html#function_rand"><code class="literal">RAND([<em class="replaceable"><code>N</code></em>])</code></a>
+          </p><a class="indexterm" name="id225349"></a><p>
+            Returns a random floating-point value
+            <em class="replaceable"><code>v</code></em> in the range
+            <code class="literal">0</code> &lt;= <em class="replaceable"><code>v</code></em> &lt;
+            <code class="literal">1.0</code>. To obtain a random integer
+            <em class="replaceable"><code>R</code></em> in the range
+            <em class="replaceable"><code>i</code></em> &lt;=
+            <em class="replaceable"><code>R</code></em> &lt;
+            <em class="replaceable"><code>j</code></em>, use the expression
+            <a class="link" href="mathematical-functions.html#function_floor"><code class="literal">FLOOR(<em class="replaceable"><code>i</code></em>
+            + RAND() * (<em class="replaceable"><code>j</code></em></code></a>
+            − <code class="literal"><em class="replaceable"><code>i</code></em>))</code>.
+            For example, to obtain a random integer in the range the
+            range <code class="literal">7</code> &lt;=
+            <em class="replaceable"><code>R</code></em> &lt; <code class="literal">12</code>, use
+            the following statement:
+          </p><pre class="programlisting copytoclipboard language-sql one-line"><code class="language-sql">SELECT FLOOR(7 + (RAND() * 5));</code></pre><p>
+            If an integer argument <em class="replaceable"><code>N</code></em> is
+            specified, it is used as the seed value:
+</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
+                With a constant initializer argument, the seed is
+                initialized once when the statement is prepared, prior
+                to execution.
+              </p></li><li class="listitem"><p>
+                With a nonconstant initializer argument (such as a
+                column name), the seed is initialized with the value for
+                each invocation of
+                <a class="link" href="mathematical-functions.html#function_rand"><code class="literal">RAND()</code></a>.
+</p></li></ul>
+</div>
+<p>
+            One implication of this behavior is that for equal argument
+            values,
+            <a class="link" href="mathematical-functions.html#function_rand"><code class="literal">RAND(<em class="replaceable"><code>N</code></em>)</code></a>
+            returns the same value each time, and thus produces a
+            repeatable sequence of column values. In the following
+            example, the sequence of values produced by
+            <code class="literal">RAND(3)</code> is the same both places it
+            occurs.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; CREATE TABLE t (i INT);
+Query OK, 0 rows affected (0.42 sec)
+
+mysql&gt; INSERT INTO t VALUES(1),(2),(3);
+Query OK, 3 rows affected (0.00 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql&gt; SELECT i, RAND() FROM t;
++------+------------------+
+| i    | RAND()           |
++------+------------------+
+|    1 | 0.61914388706828 |
+|    2 | 0.93845168309142 |
+|    3 | 0.83482678498591 |
++------+------------------+
+3 rows in set (0.00 sec)
+
+mysql&gt; SELECT i, RAND(3) FROM t;
++------+------------------+
+| i    | RAND(3)          |
++------+------------------+
+|    1 | 0.90576975597606 |
+|    2 | 0.37307905813035 |
+|    3 | 0.14808605345719 |
++------+------------------+
+3 rows in set (0.00 sec)
+
+mysql&gt; SELECT i, RAND() FROM t;
++------+------------------+
+| i    | RAND()           |
++------+------------------+
+|    1 | 0.35877890638893 |
+|    2 | 0.28941420772058 |
+|    3 | 0.37073435016976 |
++------+------------------+
+3 rows in set (0.00 sec)
+
+mysql&gt; SELECT i, RAND(3) FROM t;
++------+------------------+
+| i    | RAND(3)          |
++------+------------------+
+|    1 | 0.90576975597606 |
+|    2 | 0.37307905813035 |
+|    3 | 0.14808605345719 |
++------+------------------+
+3 rows in set (0.01 sec)</code></pre><p>
+            <a class="link" href="mathematical-functions.html#function_rand"><code class="literal">RAND()</code></a> in a
+            <code class="literal">WHERE</code> clause is evaluated for every row
+            (when selecting from one table) or combination of rows (when
+            selecting from a multiple-table join). Thus, for optimizer
+            purposes, <a class="link" href="mathematical-functions.html#function_rand"><code class="literal">RAND()</code></a> is not a
+            constant value and cannot be used for index optimizations.
+            For more information, see
+            <a class="xref" href="function-optimization.html" title="10.2.1.20 Function Call Optimization">Section 10.2.1.20, “Function Call Optimization”</a>.
+          </p><p>
+            Use of a column with <a class="link" href="mathematical-functions.html#function_rand"><code class="literal">RAND()</code></a>
+            values in an <code class="literal">ORDER BY</code> or <code class="literal">GROUP
+            BY</code> clause may yield unexpected results because for
+            either clause a <a class="link" href="mathematical-functions.html#function_rand"><code class="literal">RAND()</code></a>
+            expression can be evaluated multiple times for the same row,
+            each time returning a different result. If the goal is to
+            retrieve rows in random order, you can use a statement like
+            this:
+          </p><pre class="programlisting copytoclipboard language-sql one-line"><code class="language-sql">SELECT * FROM <em class="replaceable">tbl_name</em> ORDER BY RAND();</code></pre><p>
+            To select a random sample from a set of rows, combine
+            <code class="literal">ORDER BY RAND()</code> with
+            <code class="literal">LIMIT</code>:
+          </p><pre class="programlisting copytoclipboard language-sql one-line"><code class="language-sql">SELECT * FROM table1, table2 WHERE a=b AND c&lt;d ORDER BY RAND() LIMIT 1000;</code></pre><p>
+            <a class="link" href="mathematical-functions.html#function_rand"><code class="literal">RAND()</code></a> is not meant to be a
+            perfect random generator. It is a fast way to generate
+            random numbers on demand that is portable between platforms
+            for the same MySQL version.
+          </p><p>
+            This function is unsafe for statement-based replication. A
+            warning is logged if you use this function when
+            <a class="link" href="replication-options-binary-log.html#sysvar_binlog_format"><code class="literal">binlog_format</code></a> is set to
+            <code class="literal">STATEMENT</code>.
+          </p></li><li class="listitem"><a name="function_round"></a><p>
+            <a class="link" href="mathematical-functions.html#function_round"><code class="literal">ROUND(<em class="replaceable"><code>X</code></em>)</code></a>,
+            <a class="link" href="mathematical-functions.html#function_round"><code class="literal">ROUND(<em class="replaceable"><code>X</code></em>,<em class="replaceable"><code>D</code></em>)</code></a>
+          </p><a class="indexterm" name="id225434"></a><p>
+            Rounds the argument <em class="replaceable"><code>X</code></em> to
+            <em class="replaceable"><code>D</code></em> decimal places. The rounding
+            algorithm depends on the data type of
+            <em class="replaceable"><code>X</code></em>. <em class="replaceable"><code>D</code></em>
+            defaults to 0 if not specified. <em class="replaceable"><code>D</code></em>
+            can be negative to cause <em class="replaceable"><code>D</code></em> digits
+            left of the decimal point of the value
+            <em class="replaceable"><code>X</code></em> to become zero. The maximum
+            absolute value for <em class="replaceable"><code>D</code></em> is 30; any
+            digits in excess of 30 (or -30) are truncated. If
+            <em class="replaceable"><code>X</code></em> or <em class="replaceable"><code>D</code></em>
+            is <code class="literal">NULL</code>, the function returns
+            <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT ROUND(-1.23);
+        -&gt; -1
+mysql&gt; SELECT ROUND(-1.58);
+        -&gt; -2
+mysql&gt; SELECT ROUND(1.58);
+        -&gt; 2
+mysql&gt; SELECT ROUND(1.298, 1);
+        -&gt; 1.3
+mysql&gt; SELECT ROUND(1.298, 0);
+        -&gt; 1
+mysql&gt; SELECT ROUND(23.298, -1);
+        -&gt; 20
+mysql&gt; SELECT ROUND(.12345678901234567890123456789012345, 35);
+        -&gt; 0.123456789012345678901234567890</code></pre><p>
+            The return value has the same type as the first argument
+            (assuming that it is integer, double, or decimal). This
+            means that for an integer argument, the result is an integer
+            (no decimal places):
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT ROUND(150.000,2), ROUND(150,2);
++------------------+--------------+
+| ROUND(150.000,2) | ROUND(150,2) |
++------------------+--------------+
+|           150.00 |          150 |
++------------------+--------------+</code></pre><p>
+            <a class="link" href="mathematical-functions.html#function_round"><code class="literal">ROUND()</code></a> uses the following
+            rules depending on the type of the first argument:
+</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
+                For exact-value numbers,
+                <a class="link" href="mathematical-functions.html#function_round"><code class="literal">ROUND()</code></a> uses the
+                <span class="quote">“<span class="quote">round half away from zero</span>”</span> or <span class="quote">“<span class="quote">round
+                toward nearest</span>”</span> rule: A value with a fractional
+                part of .5 or greater is rounded up to the next integer
+                if positive or down to the next integer if negative. (In
+                other words, it is rounded away from zero.) A value with
+                a fractional part less than .5 is rounded down to the
+                next integer if positive or up to the next integer if
+                negative.
+              </p></li><li class="listitem"><p>
+                For approximate-value numbers, the result depends on the
+                C library. On many systems, this means that
+                <a class="link" href="mathematical-functions.html#function_round"><code class="literal">ROUND()</code></a> uses the
+                <span class="quote">“<span class="quote">round to nearest even</span>”</span> rule: A value with
+                a fractional part exactly halfway between two integers
+                is rounded to the nearest even integer.
+</p></li></ul>
+</div>
+<p>
+            The following example shows how rounding differs for exact
+            and approximate values:
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT ROUND(2.5), ROUND(25E-1);
++------------+--------------+
+| ROUND(2.5) | ROUND(25E-1) |
++------------+--------------+
+| 3          |            2 |
++------------+--------------+</code></pre><p>
+            For more information, see <a class="xref" href="precision-math.html" title="14.24 Precision Math">Section 14.24, “Precision Math”</a>.
+          </p><p>
+            In MySQL 8.0.21 and later, the data type returned by
+            <code class="literal">ROUND()</code> (and
+            <a class="link" href="mathematical-functions.html#function_truncate"><code class="literal">TRUNCATE()</code></a>) is determined
+            according to the rules listed here:
+</p>
+<div class="itemizedlist">
+<ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
+                When the first argument is of any integer type, the
+                return type is always
+                <a class="link" href="integer-types.html" title="13.1.2 Integer Types (Exact Value) - INTEGER, INT, SMALLINT, TINYINT, MEDIUMINT, BIGINT"><code class="literal">BIGINT</code></a>.
+              </p></li><li class="listitem"><p>
+                When the first argument is of any floating-point type or
+                of any non-numeric type, the return type is always
+                <a class="link" href="floating-point-types.html" title="13.1.4 Floating-Point Types (Approximate Value) - FLOAT, DOUBLE"><code class="literal">DOUBLE</code></a>.
+              </p></li><li class="listitem"><p>
+                When the first argument is a
+                <a class="link" href="fixed-point-types.html" title="13.1.3 Fixed-Point Types (Exact Value) - DECIMAL, NUMERIC"><code class="literal">DECIMAL</code></a> value, the return
+                type is also <code class="literal">DECIMAL</code>.
+              </p></li><li class="listitem"><p>
+                The type attributes for the return value are also copied
+                from the first argument, except in the case of
+                <code class="literal">DECIMAL</code>, when the second argument is
+                a constant value.
+              </p><p>
+                When the desired number of decimal places is less than
+                the scale of the argument, the scale and the precision
+                of the result are adjusted accordingly.
+              </p><p>
+                In addition, for <code class="literal">ROUND()</code> (but not for
+                the <a class="link" href="mathematical-functions.html#function_truncate"><code class="literal">TRUNCATE()</code></a> function),
+                the precision is extended by one place to accommodate
+                rounding that increases the number of significant
+                digits. If the second argument is negative, the return
+                type is adjusted such that its scale is 0, with a
+                corresponding precision. For example,
+                <code class="literal">ROUND(99.999, 2)</code> returns
+                <code class="literal">100.00</code>—the first argument is
+                <code class="literal">DECIMAL(5, 3)</code>, and the return type is
+                <code class="literal">DECIMAL(5, 2)</code>.
+              </p><p>
+                If the second argument is negative, the return type has
+                scale 0 and a corresponding precision;
+                <code class="literal">ROUND(99.999, -1)</code> returns
+                <code class="literal">100</code>, which is <code class="literal">DECIMAL(3,
+                0)</code>.
+</p></li></ul>
+</div>
+</li><li class="listitem"><a name="function_sign"></a><p>
+            <a class="link" href="mathematical-functions.html#function_sign"><code class="literal">SIGN(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id225526"></a><p>
+            Returns the sign of the argument as <code class="literal">-1</code>,
+            <code class="literal">0</code>, or <code class="literal">1</code>, depending on
+            whether <em class="replaceable"><code>X</code></em> is negative, zero, or
+            positive. Returns <code class="literal">NULL</code> if
+            <em class="replaceable"><code>X</code></em> is <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT SIGN(-32);
+        -&gt; -1
+mysql&gt; SELECT SIGN(0);
+        -&gt; 0
+mysql&gt; SELECT SIGN(234);
+        -&gt; 1</code></pre></li><li class="listitem"><a name="function_sin"></a><p>
+            <a class="link" href="mathematical-functions.html#function_sin"><code class="literal">SIN(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id225552"></a><p>
+            Returns the sine of <em class="replaceable"><code>X</code></em>, where
+            <em class="replaceable"><code>X</code></em> is given in radians. Returns
+            <code class="literal">NULL</code> if <em class="replaceable"><code>X</code></em> is
+            <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT SIN(PI());
+        -&gt; 1.2246063538224e-16
+mysql&gt; SELECT ROUND(SIN(PI()));
+        -&gt; 0</code></pre></li><li class="listitem"><a name="function_sqrt"></a><p>
+            <a class="link" href="mathematical-functions.html#function_sqrt"><code class="literal">SQRT(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id225575"></a><p>
+            Returns the square root of a nonnegative number
+            <em class="replaceable"><code>X</code></em>. If
+            <em class="replaceable"><code>X</code></em> is <code class="literal">NULL</code>, the
+            function returns <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT SQRT(4);
+        -&gt; 2
+mysql&gt; SELECT SQRT(20);
+        -&gt; 4.4721359549996
+mysql&gt; SELECT SQRT(-16);
+        -&gt; NULL</code></pre></li><li class="listitem"><a name="function_tan"></a><p>
+            <a class="link" href="mathematical-functions.html#function_tan"><code class="literal">TAN(<em class="replaceable"><code>X</code></em>)</code></a>
+          </p><a class="indexterm" name="id225598"></a><p>
+            Returns the tangent of <em class="replaceable"><code>X</code></em>, where
+            <em class="replaceable"><code>X</code></em> is given in radians. Returns
+            <code class="literal">NULL</code> if <em class="replaceable"><code>X</code></em> is
+            <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT TAN(PI());
+        -&gt; -1.2246063538224e-16
+mysql&gt; SELECT TAN(PI()+1);
+        -&gt; 1.5574077246549</code></pre></li><li class="listitem"><a name="function_truncate"></a><p>
+            <a class="link" href="mathematical-functions.html#function_truncate"><code class="literal">TRUNCATE(<em class="replaceable"><code>X</code></em>,<em class="replaceable"><code>D</code></em>)</code></a>
+          </p><a class="indexterm" name="id225622"></a><p>
+            Returns the number <em class="replaceable"><code>X</code></em>, truncated
+            to <em class="replaceable"><code>D</code></em> decimal places. If
+            <em class="replaceable"><code>D</code></em> is <code class="literal">0</code>, the
+            result has no decimal point or fractional part.
+            <em class="replaceable"><code>D</code></em> can be negative to cause
+            <em class="replaceable"><code>D</code></em> digits left of the decimal
+            point of the value <em class="replaceable"><code>X</code></em> to become
+            zero. If <em class="replaceable"><code>X</code></em> or
+            <em class="replaceable"><code>D</code></em> is <code class="literal">NULL</code>, the
+            function returns <code class="literal">NULL</code>.
+          </p><pre class="programlisting copytoclipboard language-sql"><code class="language-sql">mysql&gt; SELECT TRUNCATE(1.223,1);
+        -&gt; 1.2
+mysql&gt; SELECT TRUNCATE(1.999,1);
+        -&gt; 1.9
+mysql&gt; SELECT TRUNCATE(1.999,0);
+        -&gt; 1
+mysql&gt; SELECT TRUNCATE(-1.999,1);
+        -&gt; -1.9
+mysql&gt; SELECT TRUNCATE(122,-2);
+       -&gt; 100
+mysql&gt; SELECT TRUNCATE(10.28*100,0);
+       -&gt; 1028</code></pre><p>
+            All numbers are rounded toward zero.
+          </p><p>
+            In MySQL 8.0.21 and later, the data type returned by
+            <code class="literal">TRUNCATE()</code> follows the same rules that
+            determine the return type of the <code class="literal">ROUND()</code>
+            function; for details, see the description for
+            <a class="link" href="mathematical-functions.html#function_round"><code class="literal">ROUND()</code></a>.
+</p></li></ul>
+</div>
+
+</div>
+
+<br />
+        </div>
+
+                <div id="docs-in-page-nav-container">
+            <div id="docs-in-page-nav">
+                
+    <a href="arithmetic-functions.html"
+        aria-label="Previous" title="Previous: Arithmetic Operators"><span
+        class="icon-chevron-left"></span> PREV</a> &nbsp;
+<a href="index.html" aria-label="Start" title="Start"> HOME</a> &nbsp;
+        <a aria-label="Up" href="numeric-functions.html" title="Up: Numeric Functions and Operators"> UP</a> &nbsp;
+    <a href="date-and-time-functions.html" aria-label="Next"
+        title="Next: Date and Time Functions">NEXT <span
+        class="icon-chevron-right"></span></a>
+            </div>
+        </div>
+        
+         <div id="docs-body-extra">
+             
+<a class="docs-sidebar-section" href=""><span class="icon-related"></span>
+    <span class="text">Related Documentation</span></a>
+<div class="docs-sidebar-accordian">
+    <div class="text">
+        <a href="/doc/relnotes/mysql/8.0/en/">MySQL 8.0 Release Notes</a><br />
+        <a href="/doc/dev/mysql-server/latest/">MySQL 8.0 Source Code Documentation</a><br />
+        </div>
+</div>
+
+    <a class="docs-sidebar-section" href=""><span class="icon-download-thin"></span>
+        <span class="text">
+            Download
+                            this Manual
+                    </span>
+    </a>
+    <div class="docs-sidebar-accordian">
+        <div class="text">
+                                    <a href="https://downloads.mysql.com/docs/refman-8.0-en.pdf">PDF (US Ltr)</a>
+            - 43.2Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.a4.pdf">PDF (A4)</a>
+            - 43.3Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.man-gpl.tar.gz">Man Pages (TGZ)</a>
+            - 295.2Kb<br />
+                                                <a href="https://downloads.mysql.com/docs/refman-8.0-en.man-gpl.zip">Man Pages (Zip)</a>
+            - 400.4Kb<br />
+                                                <a href="https://downloads.mysql.com/docs/mysql-8.0.info.gz">Info (Gzip)</a>
+            - 4.3Mb<br />
+                                                <a href="https://downloads.mysql.com/docs/mysql-8.0.info.zip">Info (Zip)</a>
+            - 4.3Mb<br />
+                                </div>
+    </div>
+
+<a class="docs-sidebar-section" href=""><span class="icon-book"></span>
+    <span class="text">Excerpts from this Manual</span></a>
+<div class="docs-sidebar-accordian">
+    <div class="text">
+                <a href="/doc/mysql-g11n-excerpt/8.0/en/">MySQL Globalization</a><br />
+                <a href="/doc/mysql-infoschema-excerpt/8.0/en/">MySQL Information Schema</a><br />
+                <a href="/doc/mysql-installation-excerpt/8.0/en/">MySQL Installation Guide</a><br />
+                <a href="/doc/mysql-security-excerpt/8.0/en/">Security in MySQL</a><br />
+                <a href="/doc/mysql-startstop-excerpt/8.0/en/">Starting and Stopping MySQL</a><br />
+                <a href="/doc/mysql-linuxunix-excerpt/8.0/en/">MySQL and Linux/Unix</a><br />
+                <a href="/doc/mysql-windows-excerpt/8.0/en/">MySQL and Windows</a><br />
+                <a href="/doc/mysql-macos-excerpt/8.0/en/">MySQL and macOS</a><br />
+                <a href="/doc/mysql-solaris-excerpt/8.0/en/">MySQL and Solaris</a><br />
+                <a href="/doc/mysql-sourcebuild-excerpt/8.0/en/">Building MySQL from Source</a><br />
+                <a href="/doc/mysql-reslimits-excerpt/8.0/en/">MySQL Restrictions and Limitations</a><br />
+                <a href="/doc/mysql-partitioning-excerpt/8.0/en/">MySQL Partitioning</a><br />
+                <a href="/doc/mysql-tutorial-excerpt/8.0/en/">MySQL Tutorial</a><br />
+                <a href="/doc/mysql-perfschema-excerpt/8.0/en/">MySQL Performance Schema</a><br />
+                <a href="/doc/mysql-replication-excerpt/8.0/en/">MySQL Replication</a><br />
+                <a href="/doc/mysql-repo-excerpt/8.0/en/">Using the MySQL Yum Repository</a><br />
+                <a href="/doc/mysql-cluster-excerpt/8.0/en/">MySQL NDB Cluster 8.0</a><br />
+            </div>
+</div>
+         </div>
+     </div>
+     </div>
+
+</div>
+
+<script>
+$(function() {
+    var doc = new $.doc({ 'mobile': $.browser.mobile, 'docId': 1, 'highlight': true });
+});
+</script>
+    
+
+            
+        </div>
+    </div>
+
+    <footer class="collapsed">
+        <div id="footer-bottom">
+                                    <div id="footer-collapse">
+                <a href="" id="expand-footer"
+                    aria-label="Expand Footer"
+                    title="Expand Footer"><span
+                    class="icon-plus-square"></span></a>
+            </div>
+                        <div class="footer-contact">
+                <div id="footer-contact-icon" style="display: none;">
+                    <span class="icon-call-phone"></span>
+                </div>
+                <div id="footer-contact-numbers" style="display: none;">
+                    <strong>Contact MySQL Sales</strong><br/>
+                    USA/Canada: +1-866-221-0634 &nbsp;
+                    (<a href="https://www.mysql.com/about/contact/phone/" class="darker-blue">More Countries &raquo;</a>)
+                </div>
+                <div id="footer-contact-copyright" style="display: inline-block;">
+                    <a href="http://www.oracle.com/" aria-label="Oracle" title="Oracle"><span class="oracle-logo"></span></a>
+                    &nbsp; <a href="https://www.oracle.com/legal/copyright.html">&copy; 2026 Oracle</a>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a aria-label="Join us on Facebook" title="Join us on Facebook" href="http://www.facebook.com/mysql"><span class="icon-facebook-square"></span></a>
+                <a aria-label="Follow us on X" title="Follow us on X" href="https://x.com/mysql"><span class="icon-x-twitter-square"></span></a>
+                <a aria-label="Follow us on LinkedIn" title="Follow us on LinkedIn" href="https://www.linkedin.com/company/mysql"><span class="icon-linkedin-square"></span></a>
+                <a aria-label="Visit our YouTube channel" title="Visit our YouTube channel" href="http://www.youtube.com/mysqlchannel"><span class="icon-youtube-square"></span></a>
+            </div>
+            <br class="clear" />
+        </div>
+        <div id="footer-links">
+
+            <div id="site-footer-links">
+                <div id="footer-nav"></div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://www.mysql.com/products/">Products</a></li>
+                        <li><a href="https://www.mysql.com/products/heatwave/">MySQL HeatWave</a></li>
+                        <li><a href="https://www.mysql.com/products/enterprise/">MySQL Enterprise Edition</a></li>
+                        <li><a href="https://www.mysql.com/products/standard/">MySQL Standard Edition</a></li>
+                        <li><a href="https://www.mysql.com/products/classic/">MySQL Classic Edition</a></li>
+                        <li><a href="https://www.mysql.com/products/cluster/">MySQL Cluster CGE</a></li>
+                        <li><a href="https://www.mysql.com/oem/">MySQL Embedded (OEM/ISV)</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://www.mysql.com/services/">Services</a></li>
+                        <li><a href="https://www.mysql.com/training/">Training</a></li>
+                        <li><a href="https://www.mysql.com/certification/">Certification</a></li>
+                        <li><a href="https://www.mysql.com/support/">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://www.mysql.com/downloads/">Downloads</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/mysql/">MySQL Community Server</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/cluster/">MySQL NDB Cluster</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/shell/">MySQL Shell</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/router/">MySQL Router</a></li>
+                        <li><a href="https://dev.mysql.com/downloads/workbench/">MySQL Workbench</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://dev.mysql.com/doc/">Documentation</a></li>
+                        <li><a href="https://dev.mysql.com/doc/refman/en/">MySQL Reference Manual</a></li>
+                        <li><a href="https://dev.mysql.com/doc/workbench/en/">MySQL Workbench</a></li>
+                        <li><a href="https://dev.mysql.com/doc/index-cluster.html">MySQL NDB Cluster</a></li>
+                        <li><a href="https://dev.mysql.com/doc/index-connectors.html">MySQL Connectors</a></li>
+                        <li><a href="https://dev.mysql.com/doc/#topic">Topic Guides</a></li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li class="top"><a href="https://www.mysql.com/about/">About MySQL</a></li>
+                        <li><a href="https://www.mysql.com/about/contact/">Contact Us</a></li>
+                        <li><a href="https://blogs.oracle.com/mysql/">Blogs</a></li>
+                                                                        <li><a href="https://www.mysql.com/buy-mysql/">How to Buy</a></li>
+                        <li><a href="https://www.mysql.com/partners/">Partners</a></li>
+                        <li><a href="https://www.mysql.com/about/jobs/">Job Opportunities</a></li>
+                        <li><a href="https://www.mysql.com/sitemap.html">Site Map</a></li>
+                    </ul>
+                </div>
+
+                            </div>
+
+            <div id="footer-logo">
+                <a href="http://www.oracle.com/" aria-label="Oracle" title="Oracle"><span class="oracle-logo"></span></a>
+                &nbsp; <a href="https://www.oracle.com/legal/copyright.html">&copy; 2026 Oracle</a>
+                <div class="footer-legal-links">
+                    <a href="https://www.oracle.com/legal/privacy/">Privacy</a> /
+                    <a href="https://www.oracle.com/legal/privacy/privacy-choices.html">Do Not Sell My Info</a> |
+                    <a href="https://www.oracle.com/us/legal/terms/index.html">Terms of Use</a> |
+                    <a href="https://www.oracle.com/us/legal/third-party-trademarks/index.html">Trademark Policy</a> |
+                    <div id="teconsent"></div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</div>
+
+            <script>
+    if ((oracle.truste.api.getGdprConsentDecision().consentDecision) &&
+            (oracle.truste.api.getGdprConsentDecision().consentDecision.indexOf(0) != -1 ||
+             oracle.truste.api.getGdprConsentDecision().consentDecision.indexOf(2) != -1) )
+    {
+        document.write('<script src="https://labs.mysql.com/common/js/metrics/ora_mysql.js"><\/script>');
+        document.write('<script type="text/javascript" async src="//c.oracleinfinity.io/acs/account/wh3g12c3gg/js/mysql/odc.js?_ora.context=analytics:production"><\/script>');
+    }
+    </script>
+
+        
+    
+</body>
+</html>

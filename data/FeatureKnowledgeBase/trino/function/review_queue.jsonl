@@ -1,0 +1,462 @@
+{"feature_id": "trino.function.abs", "name": "abs", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "trino.function.acos", "name": "acos", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.ai_extract", "name": "ai_extract", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "trino.function.all", "name": "all", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.function.all_match", "name": "all_match", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.any", "name": "any", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.function.any_match", "name": "any_match", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.any_value", "name": "any_value", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.approx_distinct", "name": "approx_distinct", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.approx_most_frequent", "name": "approx_most_frequent", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.approx_percentile", "name": "approx_percentile", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.approx_set", "name": "approx_set", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.arbitrary", "name": "arbitrary", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.array_agg", "name": "array_agg", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.array_distinct", "name": "array_distinct", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.array_except", "name": "array_except", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.array_first", "name": "array_first", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.array_histogram", "name": "array_histogram", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.array_intersect", "name": "array_intersect", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.array_join", "name": "array_join", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.array_last", "name": "array_last", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.array_max", "name": "array_max", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.array_min", "name": "array_min", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.array_position", "name": "array_position", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.array_remove", "name": "array_remove", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.array_sort", "name": "array_sort", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.array_union", "name": "array_union", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.arrays_overlap", "name": "arrays_overlap", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.asin", "name": "asin", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.at_timezone", "name": "at_timezone", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.atan", "name": "atan", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.atan2", "name": "atan2", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.avg", "name": "avg", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bar", "name": "bar", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.beta_cdf", "name": "beta_cdf", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bigint", "name": "BIGINT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bing_tile", "name": "bing_tile", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bing_tile_at", "name": "bing_tile_at", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bing_tile_coordinates", "name": "bing_tile_coordinates", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bing_tile_polygon", "name": "bing_tile_polygon", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bing_tile_quadkey", "name": "bing_tile_quadkey", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bing_tile_zoom_level", "name": "bing_tile_zoom_level", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bing_tiles_around", "name": "bing_tiles_around", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bit_count", "name": "bit_count", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bitwise_and", "name": "bitwise_and", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bitwise_and_agg", "name": "bitwise_and_agg", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bitwise_left_shift", "name": "bitwise_left_shift", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bitwise_not", "name": "bitwise_not", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bitwise_or", "name": "bitwise_or", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bitwise_or_agg", "name": "bitwise_or_agg", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bitwise_right_shift", "name": "bitwise_right_shift", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bitwise_right_shift_arithmetic", "name": "bitwise_right_shift_arithmetic", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bitwise_xor", "name": "bitwise_xor", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bool_and", "name": "bool_and", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.bool_or", "name": "bool_or", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.cardinality", "name": "cardinality", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.cbrt", "name": "cbrt", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.ceil", "name": "ceil", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.ceiling", "name": "ceiling", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "trino.function.char2hexint", "name": "char2hexint", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.checksum", "name": "checksum", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.chr", "name": "chr", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.coalesce", "name": "coalesce", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.codepoint", "name": "codepoint", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.color", "name": "color", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.combinations", "name": "combinations", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.concat", "name": "concat", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.concat_ws", "name": "concat_ws", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.contains", "name": "contains", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.contains_sequence", "name": "contains_sequence", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.convex_hull_agg", "name": "convex_hull_agg", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.corr", "name": "corr", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.cos", "name": "cos", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.cosh", "name": "cosh", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.cosine_distance", "name": "cosine_distance", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.cosine_similarity", "name": "cosine_similarity", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.count", "name": "count", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.count_if", "name": "count_if", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.covar_pop", "name": "covar_pop", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.covar_samp", "name": "covar_samp", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.crc32", "name": "crc32", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.cume_dist", "name": "cume_dist", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.current_groups", "name": "current_groups", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "trino.function.current_timezone", "name": "current_timezone", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.date", "name": "date", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.date_add", "name": "date_add", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.date_diff", "name": "date_diff", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.date_format", "name": "date_format", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.date_parse", "name": "date_parse", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.date_trunc", "name": "date_trunc", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.day", "name": "day", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.day_of_month", "name": "day_of_month", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.day_of_week", "name": "day_of_week", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.day_of_year", "name": "day_of_year", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.degrees", "name": "degrees", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.dense_rank", "name": "dense_rank", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.dow", "name": "dow", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.doy", "name": "doy", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.e", "name": "e", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.element_at", "name": "element_at", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.empty_approx_set", "name": "empty_approx_set", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.ends_with", "name": "ends_with", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.every", "name": "every", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.exclude_columns", "name": "exclude_columns", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.exp", "name": "exp", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.extract", "name": "extract", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.f", "name": "f", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "trino.function.features", "name": "features", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.filter", "name": "filter", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "trino.function.first_value", "name": "first_value", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.flatten", "name": "flatten", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.floor", "name": "floor", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.format", "name": "format", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.format_datetime", "name": "format_datetime", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.format_number", "name": "format_number", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.from_base", "name": "from_base", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.from_base32", "name": "from_base32", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.from_base64", "name": "from_base64", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.from_base64url", "name": "from_base64url", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.from_big_endian_32", "name": "from_big_endian_32", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.from_big_endian_64", "name": "from_big_endian_64", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.from_encoded_polyline", "name": "from_encoded_polyline", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.from_geojson_geometry", "name": "from_geojson_geometry", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.from_hex", "name": "from_hex", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.from_ieee754_32", "name": "from_ieee754_32", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.from_ieee754_64", "name": "from_ieee754_64", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.from_iso8601_date", "name": "from_iso8601_date", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.from_iso8601_timestamp", "name": "from_iso8601_timestamp", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.from_iso8601_timestamp_nanos", "name": "from_iso8601_timestamp_nanos", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.from_unixtime", "name": "from_unixtime", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.from_unixtime_nanos", "name": "from_unixtime_nanos", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.from_utf8", "name": "from_utf8", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.geometric_mean", "name": "geometric_mean", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.geometry_collect_agg", "name": "geometry_collect_agg", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.geometry_from_hadoop_shape", "name": "geometry_from_hadoop_shape", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.geometry_invalid_reason", "name": "geometry_invalid_reason", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.geometry_nearest_points", "name": "geometry_nearest_points", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.geometry_to_bing_tiles", "name": "geometry_to_bing_tiles", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.geometry_union", "name": "geometry_union", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.geometry_union_agg", "name": "geometry_union_agg", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.great_circle_distance", "name": "great_circle_distance", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.greatest", "name": "greatest", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.hamming_distance", "name": "hamming_distance", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.hash_counts", "name": "hash_counts", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "trino.function.histogram", "name": "histogram", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.hmac_md5", "name": "hmac_md5", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.hmac_sha1", "name": "hmac_sha1", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.hmac_sha256", "name": "hmac_sha256", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.hmac_sha512", "name": "hmac_sha512", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.hour", "name": "hour", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.human_readable_seconds", "name": "human_readable_seconds", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.if", "name": "if", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.index", "name": "index", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.infinity", "name": "infinity", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.intersection_cardinality", "name": "intersection_cardinality", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.inverse_beta_cdf", "name": "inverse_beta_cdf", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.inverse_normal_cdf", "name": "inverse_normal_cdf", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.is_finite", "name": "is_finite", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.is_infinite", "name": "is_infinite", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.is_json_scalar", "name": "is_json_scalar", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.is_nan", "name": "is_nan", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.jaccard_index", "name": "jaccard_index", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.json_array_contains", "name": "json_array_contains", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.json_array_get", "name": "json_array_get", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.json_array_length", "name": "json_array_length", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.json_exists", "name": "json_exists", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.json_extract", "name": "json_extract", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.json_extract_scalar", "name": "json_extract_scalar", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.json_format", "name": "json_format", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.json_parse", "name": "json_parse", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.json_query", "name": "json_query", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.json_size", "name": "json_size", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.json_value", "name": "json_value", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.keyvalue", "name": "keyvalue", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.kurtosis", "name": "kurtosis", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.lag", "name": "lag", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.last_day_of_month", "name": "last_day_of_month", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.last_value", "name": "last_value", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.lead", "name": "lead", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.learn_classifier", "name": "learn_classifier", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.learn_libsvm_classifier", "name": "learn_libsvm_classifier", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.learn_libsvm_regressor", "name": "learn_libsvm_regressor", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.learn_regressor", "name": "learn_regressor", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.least", "name": "least", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.length", "name": "length", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.levenshtein_distance", "name": "levenshtein_distance", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.line_interpolate_point", "name": "line_interpolate_point", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.line_interpolate_points", "name": "line_interpolate_points", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.line_locate_point", "name": "line_locate_point", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.linestring", "name": "linestring", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.listagg", "name": "listagg", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.ln", "name": "ln", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.localtimestamp", "name": "localtimestamp", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "trino.function.log", "name": "log", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.log10", "name": "log10", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.log2", "name": "log2", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.lower", "name": "lower", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.lpad", "name": "lpad", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.ltrim", "name": "ltrim", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.luhn_check", "name": "luhn_check", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.make_set_digest", "name": "make_set_digest", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.map_agg", "name": "map_agg", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.map_concat", "name": "map_concat", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.map_entries", "name": "map_entries", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.map_filter", "name": "map_filter", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.map_from_entries", "name": "map_from_entries", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.map_keys", "name": "map_keys", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.map_union", "name": "map_union", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.map_values", "name": "map_values", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.map_zip_with", "name": "map_zip_with", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.max", "name": "max", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "trino.function.max_by", "name": "max_by", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.md5", "name": "md5", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.merge", "name": "merge", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.merge_set_digest", "name": "merge_set_digest", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.millisecond", "name": "millisecond", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.min", "name": "min", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.min_by", "name": "min_by", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.minute", "name": "minute", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.mod", "name": "mod", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.month", "name": "month", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.multimap_agg", "name": "multimap_agg", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.multimap_from_entries", "name": "multimap_from_entries", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.multipoint", "name": "multipoint", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.murmur3", "name": "murmur3", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.nan", "name": "nan", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.ngrams", "name": "ngrams", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.none_match", "name": "none_match", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.normal_cdf", "name": "normal_cdf", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.normalize", "name": "normalize", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.now", "name": "now", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.nth_value", "name": "nth_value", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.ntile", "name": "ntile", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.nullif", "name": "nullif", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "trino.function.number", "name": "NUMBER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.numeric_histogram", "name": "numeric_histogram", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.objectid_timestamp", "name": "objectid_timestamp", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.parse_data_size", "name": "parse_data_size", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "trino.function.parse_datetime", "name": "parse_datetime", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.parse_duration", "name": "parse_duration", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.percent_rank", "name": "percent_rank", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.pi", "name": "pi", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.point", "name": "point", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.function.position", "name": "position", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.pow", "name": "pow", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.power", "name": "power", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.qdigest_agg", "name": "qdigest_agg", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.quarter", "name": "quarter", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.radians", "name": "radians", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.rand", "name": "rand", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.random", "name": "random", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.random_string", "name": "random_string", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.rank", "name": "rank", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.reduce", "name": "reduce", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.reduce_agg", "name": "reduce_agg", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.regexp_count", "name": "regexp_count", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.regexp_extract", "name": "regexp_extract", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.regexp_extract_all", "name": "regexp_extract_all", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.regexp_like", "name": "regexp_like", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "trino.function.regexp_position", "name": "regexp_position", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.regexp_replace", "name": "regexp_replace", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.regexp_split", "name": "regexp_split", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.regr_intercept", "name": "regr_intercept", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.regr_slope", "name": "regr_slope", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.regress", "name": "regress", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.render", "name": "render", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.repeat", "name": "repeat", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.replace", "name": "replace", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.reverse", "name": "reverse", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.rgb", "name": "rgb", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.round", "name": "round", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.row_number", "name": "row_number", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.rpad", "name": "rpad", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.rtrim", "name": "rtrim", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.second", "name": "second", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.sequence", "name": "sequence", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "trino.function.setdouble", "name": "setdouble", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.setlong", "name": "setlong", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.sha1", "name": "sha1", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.sha256", "name": "sha256", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.sha512", "name": "sha512", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.shuffle", "name": "shuffle", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.sign", "name": "sign", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.simplify_geometry", "name": "simplify_geometry", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.sin", "name": "sin", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.sinh", "name": "sinh", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.size", "name": "size", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.function.skewness", "name": "skewness", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.slice", "name": "slice", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.soundex", "name": "soundex", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.spatial_partitioning", "name": "spatial_partitioning", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.spatial_partitions", "name": "spatial_partitions", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.split", "name": "split", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.split_part", "name": "split_part", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.split_to_map", "name": "split_to_map", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.split_to_multimap", "name": "split_to_multimap", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.spooky_hash_v2_32", "name": "spooky_hash_v2_32", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.spooky_hash_v2_64", "name": "spooky_hash_v2_64", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.sqrt", "name": "sqrt", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_area", "name": "st_area", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_asbinary", "name": "st_asbinary", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_asewkb", "name": "st_asewkb", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_asewkt", "name": "st_asewkt", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_astext", "name": "st_astext", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_boundary", "name": "st_boundary", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_buffer", "name": "st_buffer", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_centroid", "name": "st_centroid", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_collect", "name": "st_collect", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_contains", "name": "st_contains", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_convexhull", "name": "st_convexhull", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_coorddim", "name": "st_coorddim", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_crosses", "name": "st_crosses", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_difference", "name": "st_difference", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_dimension", "name": "st_dimension", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_disjoint", "name": "st_disjoint", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_distance", "name": "st_distance", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_endpoint", "name": "st_endpoint", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_envelope", "name": "st_envelope", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_envelopeaspts", "name": "st_envelopeaspts", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_equals", "name": "st_equals", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_exteriorring", "name": "st_exteriorring", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_force2d", "name": "st_force2d", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_force3d", "name": "st_force3d", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_geometries", "name": "st_geometries", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_geometryfromtext", "name": "st_geometryfromtext", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_geometryn", "name": "st_geometryn", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_geometrytype", "name": "st_geometrytype", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_geomfrombinary", "name": "st_geomfrombinary", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_geomfromewkt", "name": "st_geomfromewkt", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_geomfromkml", "name": "st_geomfromkml", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_interiorringn", "name": "st_interiorringn", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_interiorrings", "name": "st_interiorrings", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_intersection", "name": "st_intersection", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_intersects", "name": "st_intersects", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_isclosed", "name": "st_isclosed", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_isempty", "name": "st_isempty", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_isring", "name": "st_isring", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_issimple", "name": "st_issimple", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_isvalid", "name": "st_isvalid", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_length", "name": "st_length", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_linefromtext", "name": "st_linefromtext", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_linemerge", "name": "st_linemerge", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_linestring", "name": "st_linestring", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_makeline", "name": "st_makeline", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_makepolygon", "name": "st_makepolygon", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_minimumboundingcircle", "name": "st_minimumboundingcircle", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_multi", "name": "st_multi", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_multipoint", "name": "st_multipoint", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_normalize", "name": "st_normalize", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_numgeometries", "name": "st_numgeometries", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_numinteriorring", "name": "st_numinteriorring", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_numpoints", "name": "st_numpoints", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_orientedenvelope", "name": "st_orientedenvelope", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_overlaps", "name": "st_overlaps", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_point", "name": "st_point", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_pointn", "name": "st_pointn", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_pointonsurface", "name": "st_pointonsurface", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_points", "name": "st_points", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_polygon", "name": "st_polygon", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_polygonize", "name": "st_polygonize", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_reduceprecision", "name": "st_reduceprecision", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_relate", "name": "st_relate", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_setsrid", "name": "st_setsrid", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_srid", "name": "st_srid", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_startpoint", "name": "st_startpoint", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_symdifference", "name": "st_symdifference", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_touches", "name": "st_touches", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_transform", "name": "st_transform", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_union", "name": "st_union", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_voronoipolygons", "name": "st_voronoipolygons", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_within", "name": "st_within", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_x", "name": "st_x", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_xmax", "name": "st_xmax", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_xmin", "name": "st_xmin", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_y", "name": "st_y", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_ymax", "name": "st_ymax", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_ymin", "name": "st_ymin", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.st_z", "name": "st_z", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.starts_with", "name": "starts_with", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.stddev", "name": "stddev", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.stddev_pop", "name": "stddev_pop", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.stddev_samp", "name": "stddev_samp", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.string", "name": "STRING", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.function.strpos", "name": "strpos", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.substr", "name": "substr", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.substring", "name": "substring", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.sum", "name": "sum", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.tan", "name": "tan", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.tanh", "name": "tanh", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.tdigest_agg", "name": "tdigest_agg", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.theta_sketch_cardinality", "name": "theta_sketch_cardinality", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.theta_sketch_union", "name": "theta_sketch_union", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.time", "name": "TIME", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.function.time_tz", "name": "TIME_TZ", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.timestamp", "name": "TIMESTAMP", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.timestamp_objectid", "name": "timestamp_objectid", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.timestamp_tz", "name": "TIMESTAMP_TZ", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.timezone", "name": "timezone", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.timezone_hour", "name": "timezone_hour", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.timezone_minute", "name": "timezone_minute", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.title_case", "name": "title_case", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_base", "name": "to_base", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_base32", "name": "to_base32", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_base64", "name": "to_base64", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_base64url", "name": "to_base64url", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_big_endian_32", "name": "to_big_endian_32", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_big_endian_64", "name": "to_big_endian_64", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_char", "name": "to_char", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_date", "name": "to_date", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_encoded_polyline", "name": "to_encoded_polyline", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_geojson_geometry", "name": "to_geojson_geometry", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_geometry", "name": "to_geometry", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_hex", "name": "to_hex", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_ieee754_32", "name": "to_ieee754_32", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_ieee754_64", "name": "to_ieee754_64", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_iso8601", "name": "to_iso8601", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_milliseconds", "name": "to_milliseconds", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_spherical_geography", "name": "to_spherical_geography", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_timestamp", "name": "to_timestamp", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_unixtime", "name": "to_unixtime", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.to_utf8", "name": "to_utf8", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.transform", "name": "transform", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.transform_keys", "name": "transform_keys", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.transform_values", "name": "transform_values", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.translate", "name": "translate", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.trim", "name": "trim", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.trim_array", "name": "trim_array", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.truncate", "name": "truncate", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.try", "name": "try", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.try_cast", "name": "try_cast", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.typeof", "name": "typeof", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.unique", "name": "unique", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.upper", "name": "upper", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "trino.function.url_decode", "name": "url_decode", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.url_encode", "name": "url_encode", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.url_extract_fragment", "name": "url_extract_fragment", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.url_extract_host", "name": "url_extract_host", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.url_extract_parameter", "name": "url_extract_parameter", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.url_extract_path", "name": "url_extract_path", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.url_extract_port", "name": "url_extract_port", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.url_extract_protocol", "name": "url_extract_protocol", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.url_extract_query", "name": "url_extract_query", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.uuid", "name": "uuid", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.value_at_quantile", "name": "value_at_quantile", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.values_at_quantiles", "name": "values_at_quantiles", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "trino.function.var_pop", "name": "var_pop", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.var_samp", "name": "var_samp", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.variance", "name": "variance", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.version", "name": "version", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.week", "name": "week", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.week_of_year", "name": "week_of_year", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.width_bucket", "name": "width_bucket", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.wilson_interval_lower", "name": "wilson_interval_lower", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.wilson_interval_upper", "name": "wilson_interval_upper", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.with_timezone", "name": "with_timezone", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.word_stem", "name": "word_stem", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.xxhash64", "name": "xxhash64", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.year", "name": "year", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.year_of_week", "name": "year_of_week", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.yow", "name": "yow", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.zip", "name": "zip", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.function.zip_with", "name": "zip_with", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}

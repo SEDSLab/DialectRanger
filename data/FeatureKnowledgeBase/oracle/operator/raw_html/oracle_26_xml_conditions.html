@@ -1,0 +1,194 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="reference">
+      <meta name="DC.Title" content="XML Conditions">
+      <meta name="DC.subject" content="XML, conditions, EXISTS condition, EXISTS, RESOURCE_VIEW, PATH_VIEW, database repository, SQL access to, UNDER_PATH condition, UNDER_PATH">
+      <meta name="keywords" content="XML, conditions, EXISTS condition, EXISTS, RESOURCE_VIEW, PATH_VIEW, database repository, SQL access to, UNDER_PATH condition, UNDER_PATH">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-DE0B495D-F70A-4D37-AB8B-9376991E6081">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>XML Conditions</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="Null-Conditions.html" title="Previous" type="text/html">
+      <link rel="next" href="SQL-JSON-Conditions.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"XML Conditions","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="Null-Conditions.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="SQL-JSON-Conditions.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-DE0B495D-F70A-4D37-AB8B-9376991E6081" name="GUID-DE0B495D-F70A-4D37-AB8B-9376991E6081"></a><a id="SQLRF52155"></a>
+         
+         <h2 id="SQLRF-GUID-DE0B495D-F70A-4D37-AB8B-9376991E6081" class="sect2">XML Conditions </h2>
+         <div class="ind">
+            <div>
+               <div class="section">
+                  <p>XML conditions determine whether a specified XML resource can be found in a specified path.</p>
+               </div>
+            </div><a id="SQLRF52157"></a><a id="SQLRF52158"></a><a id="SQLRF52156"></a><div class="props_rev_3"><a id="GUID-51E593FF-9AB0-4E1F-ABF7-5330F82FC0AE" name="GUID-51E593FF-9AB0-4E1F-ABF7-5330F82FC0AE"></a><h3 id="SQLRF-GUID-51E593FF-9AB0-4E1F-ABF7-5330F82FC0AE" class="sect3">EQUALS_PATH Condition </h3>
+               <div>
+                  <div class="section">
+                     <p>The <code class="codeph">EQUALS_PATH</code> condition determines whether a resource in the Oracle XML database can be found in the database at a specified path.
+                     </p>
+                     <p>Use this condition in queries to <code class="codeph">RESOURCE_VIEW</code> and <code class="codeph">PATH_VIEW</code>. These public views provide a mechanism for SQL access to data stored in the XML database repository. <code class="codeph">RESOURCE_VIEW</code> contains one row for each resource in the repository, and <code class="codeph">PATH_VIEW</code> contains one row for each unique path in the repository.
+                     </p>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-51E593FF-9AB0-4E1F-ABF7-5330F82FC0AE__GUID-89D15D58-61E7-4C8E-BC89-4E97B58C74A2"><span class="italic">equals_path_condition::=</span></p>
+                  </div>
+                  <div class="section">
+                     <div class="figure" id="GUID-51E593FF-9AB0-4E1F-ABF7-5330F82FC0AE__GUID-29B522C3-C9DF-49FB-BB72-B38F187B07BE"><img src="img/equals_path_condition.gif" alt="Description of equals_path_condition.eps follows" title="Description of equals_path_condition.eps follows" longdesc="img_text/equals_path_condition.html"><br><a href="img_text/equals_path_condition.html">Description of the illustration equals_path_condition.eps</a></div>
+                     <p>This condition applies only to the path as specified. It is similar to but more restrictive than <code class="codeph">UNDER_PATH</code>.
+                     </p>
+                     <p>For <span class="italic"><code class="codeph">path_string</code></span>, specify the (absolute) path name to resolve. This can contain components that are hard or weak resource links.
+                     </p>
+                     <p>The optional <span class="italic"><code class="codeph">correlation_integer</code></span> argument correlates the <code class="codeph">EQUALS_PATH</code> condition with its ancillary functions <code class="codeph">DEPTH</code> and <code class="codeph">PATH</code>.
+                     </p>
+                     <div class="infoboxnotealso" id="GUID-51E593FF-9AB0-4E1F-ABF7-5330F82FC0AE__GUID-A2BA65BD-49D4-4360-96D0-CA82E093CACA">
+                        <p class="notep1">See Also:</p>
+                        <p><a href="XML-Conditions.html#GUID-37EF3738-5751-4888-9397-50EAD8360D6D">UNDER_PATH Condition</a>, <a href="DEPTH.html#GUID-C0107BE4-0003-4329-9CCE-D0671B3F3538">DEPTH</a>, and <a href="PATH.html#GUID-91937F98-7718-4F39-9225-1E0229F11F0D">PATH</a></p>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-51E593FF-9AB0-4E1F-ABF7-5330F82FC0AE__GUID-DF2580EF-D351-4910-A1CA-5ACBE166A46A">Example</p>
+                  </div>
+                  <div class="section">
+                     <p>The view <code class="codeph">RESOURCE_VIEW</code> computes the paths (in the <code class="codeph">any_path</code> column) that lead to all XML resources (in the <code class="codeph">res</code> column) in the database repository. The following example queries the <code class="codeph">RESOURCE_VIEW</code> view to find the paths to the resources in the sample schema <code class="codeph">oe</code>. The <code class="codeph">EQUALS_PATH</code> condition causes the query to return only the specified path:
+                     </p><pre class="oac_no_warn" dir="ltr">SELECT ANY_PATH FROM RESOURCE_VIEW
+   WHERE EQUALS_PATH(res, '/sys/schemas/OE/www.example.com')=1;
+
+ANY_PATH
+-----------------------------------------------
+/sys/schemas/OE/www.example.com
+</pre><p>Compare this example with that for <a href="XML-Conditions.html#GUID-37EF3738-5751-4888-9397-50EAD8360D6D">UNDER_PATH Condition</a>.
+                     </p>
+                  </div>
+               </div>
+            </div><a id="SQLRF52160"></a><a id="SQLRF52161"></a><a id="SQLRF52159"></a><div class="props_rev_3"><a id="GUID-37EF3738-5751-4888-9397-50EAD8360D6D" name="GUID-37EF3738-5751-4888-9397-50EAD8360D6D"></a><h3 id="SQLRF-GUID-37EF3738-5751-4888-9397-50EAD8360D6D" class="sect3">UNDER_PATH Condition </h3>
+               <div>
+                  <div class="section">
+                     <p>The <code class="codeph">UNDER_PATH</code> condition determines whether resources specified in a column can be found under a particular path specified by <span class="italic"><code class="codeph">path_string</code></span> in the Oracle XML database repository. The path information is computed by the <code class="codeph">RESOURCE_VIEW</code> view, which you query to use this condition.
+                     </p>
+                     <p>Use this condition in queries to <code class="codeph">RESOURCE_VIEW</code> and <code class="codeph">PATH_VIEW</code>. These public views provide a mechanism for SQL access to data stored in the XML database repository. <code class="codeph">RESOURCE_VIEW</code> contains one row for each resource in the repository, and <code class="codeph">PATH_VIEW</code> contains one row for each unique path in the repository.
+                     </p>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-37EF3738-5751-4888-9397-50EAD8360D6D__GUID-6D12E679-7CC0-4802-980D-E75BE8D852F6"><span class="italic">under_path_condition</span>::=
+                     </p>
+                  </div>
+                  <div class="section">
+                     <div class="figure" id="GUID-37EF3738-5751-4888-9397-50EAD8360D6D__GUID-57503911-62D9-4FA6-9372-50BC791D9745"><img src="img/under_path_condition.gif" alt="Description of under_path_condition.eps follows" title="Description of under_path_condition.eps follows" longdesc="img_text/under_path_condition.html"><br><a href="img_text/under_path_condition.html">Description of the illustration under_path_condition.eps</a></div>
+                     <p>The optional <span class="italic"><code class="codeph">levels</code></span> argument indicates the number of levels down from <span class="italic"><code class="codeph">path_string</code></span> Oracle should search. For <span class="italic"><code class="codeph">levels</code></span>, specify any nonnegative integer.
+                     </p>
+                     <p>The optional <span class="italic"><code class="codeph">correlation_integer</code></span> argument correlates the <code class="codeph">UNDER_PATH</code> condition with its ancillary functions <code class="codeph">PATH</code> and <code class="codeph">DEPTH</code>.
+                     </p>
+                     <div class="infoboxnotealso" id="GUID-37EF3738-5751-4888-9397-50EAD8360D6D__GUID-8BD2F2EC-62FC-425F-90F4-CEBB1E7B9F7F">
+                        <p class="notep1">See Also:</p>
+                        <p>The related condition <a href="XML-Conditions.html#GUID-51E593FF-9AB0-4E1F-ABF7-5330F82FC0AE">EQUALS_PATH Condition</a> and the ancillary functions <a href="DEPTH.html#GUID-C0107BE4-0003-4329-9CCE-D0671B3F3538">DEPTH</a> and <a href="PATH.html#GUID-91937F98-7718-4F39-9225-1E0229F11F0D">PATH</a></p>
+                     </div>
+                  </div>
+                  <div class="section">
+                     <p class="subhead2" id="GUID-37EF3738-5751-4888-9397-50EAD8360D6D__GUID-323B006F-3366-450B-BAE2-FD8600B727D7">Example</p>
+                  </div>
+                  <div class="section">
+                     <p>The view <code class="codeph">RESOURCE_VIEW</code> computes the paths (in the <code class="codeph">any_path</code> column) that lead to all XML resources (in the <code class="codeph">res</code> column) in the database repository. The following example queries the <code class="codeph">RESOURCE_VIEW</code> view to find the paths to the resources in the sample schema <code class="codeph">oe</code>. The query returns the path of the XML schema that was created in <a href="CREATE-TABLE.html#GUID-F9CE0CC3-13AE-4744-A43C-EAC7A71AAAB6__I2130736">XMLType Table Examples</a>:
+                     </p><pre class="oac_no_warn" dir="ltr">SELECT ANY_PATH FROM RESOURCE_VIEW
+   WHERE UNDER_PATH(res, '/sys/schemas/OE/www.example.com')=1;
+
+ANY_PATH
+----------------------------------------------
+/sys/schemas/OE/www.example.com/xwarehouses.xsd</pre></div>
+               </div>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

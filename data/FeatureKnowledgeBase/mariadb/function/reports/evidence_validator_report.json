@@ -1,0 +1,53 @@
+{
+  "dbms": "mariadb",
+  "feature_type": "function",
+  "total_drafts": 343,
+  "clean_validated_features": 166,
+  "validated_with_warnings": 172,
+  "invalid_features": 5,
+  "validation_summary": {
+    "schema_invalid": 5,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 73,
+    "no_description_claims": 108,
+    "no_valid_syntax": 5,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 21,
+    "alias_like_feature": 6
+  },
+  "sample_clean_features": [
+    "mariadb.function.abs",
+    "mariadb.function.adddate",
+    "mariadb.function.addtime",
+    "mariadb.function.aes_encrypt",
+    "mariadb.function.ascii",
+    "mariadb.function.avg",
+    "mariadb.function.benchmark",
+    "mariadb.function.bin",
+    "mariadb.function.binlog_gtid_pos",
+    "mariadb.function.bit_and"
+  ],
+  "sample_warning_features": [
+    "mariadb.function.acos",
+    "mariadb.function.add_months",
+    "mariadb.function.aes_decrypt",
+    "mariadb.function.against",
+    "mariadb.function.asin",
+    "mariadb.function.atan",
+    "mariadb.function.atan2",
+    "mariadb.function.backslash",
+    "mariadb.function.bit_count",
+    "mariadb.function.bit_length"
+  ],
+  "sample_invalid_features": [
+    "mariadb.function.json_table",
+    "mariadb.function.percentile_cont",
+    "mariadb.function.spider_bg_direct_sql",
+    "mariadb.function.spider_direct_sql",
+    "mariadb.function.weight_string"
+  ],
+  "generated_at": "2026-08-06T19:41:02.221305+08:00"
+}

@@ -1,0 +1,612 @@
+{
+  "dbms": "mysql",
+  "feature_type": "function",
+  "processed_pages": 73,
+  "skipped_pages": 0,
+  "total_sections": 568,
+  "total_blocks": 10587,
+  "section_sources": {
+    "heading_tree": 100,
+    "anchor_group": 468
+  },
+  "block_types": {
+    "heading": 136,
+    "anchor": 1261,
+    "paragraph": 541,
+    "table": 25,
+    "table_row": 412,
+    "code": 5746,
+    "list": 875,
+    "signature": 1567,
+    "note": 18,
+    "warning": 2,
+    "definition_term": 2,
+    "definition_description": 2
+  },
+  "pages": [
+    {
+      "page_id": "mysql_8_0_flow_control_functions",
+      "sections": 4,
+      "blocks": 159,
+      "anchors": 12,
+      "tables": 1,
+      "code_blocks": 123
+    },
+    {
+      "page_id": "mysql_8_0_numeric_functions",
+      "sections": 1,
+      "blocks": 42,
+      "anchors": 1,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_arithmetic_functions",
+      "sections": 1,
+      "blocks": 76,
+      "anchors": 24,
+      "tables": 1,
+      "code_blocks": 24
+    },
+    {
+      "page_id": "mysql_8_0_mathematical_functions",
+      "sections": 31,
+      "blocks": 338,
+      "anchors": 68,
+      "tables": 1,
+      "code_blocks": 127
+    },
+    {
+      "page_id": "mysql_8_0_date_and_time_functions",
+      "sections": 61,
+      "blocks": 1090,
+      "anchors": 125,
+      "tables": 1,
+      "code_blocks": 639
+    },
+    {
+      "page_id": "mysql_8_0_string_functions",
+      "sections": 50,
+      "blocks": 863,
+      "anchors": 109,
+      "tables": 1,
+      "code_blocks": 476
+    },
+    {
+      "page_id": "mysql_8_0_string_comparison_functions",
+      "sections": 2,
+      "blocks": 92,
+      "anchors": 14,
+      "tables": 1,
+      "code_blocks": 61
+    },
+    {
+      "page_id": "mysql_8_0_regexp",
+      "sections": 5,
+      "blocks": 267,
+      "anchors": 18,
+      "tables": 1,
+      "code_blocks": 173
+    },
+    {
+      "page_id": "mysql_8_0_string_functions_charset",
+      "sections": 1,
+      "blocks": 19,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "mysql_8_0_fulltext_boolean",
+      "sections": 5,
+      "blocks": 134,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 79
+    },
+    {
+      "page_id": "mysql_8_0_fulltext_fine_tuning",
+      "sections": 8,
+      "blocks": 64,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 16
+    },
+    {
+      "page_id": "mysql_8_0_fulltext_search_ngram",
+      "sections": 8,
+      "blocks": 43,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 7
+    },
+    {
+      "page_id": "mysql_8_0_fulltext_search_mecab",
+      "sections": 10,
+      "blocks": 115,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 72
+    },
+    {
+      "page_id": "mysql_8_0_cast_functions",
+      "sections": 3,
+      "blocks": 550,
+      "anchors": 12,
+      "tables": 1,
+      "code_blocks": 375
+    },
+    {
+      "page_id": "mysql_8_0_xml_functions",
+      "sections": 3,
+      "blocks": 231,
+      "anchors": 10,
+      "tables": 1,
+      "code_blocks": 150
+    },
+    {
+      "page_id": "mysql_8_0_bit_functions",
+      "sections": 2,
+      "blocks": 221,
+      "anchors": 26,
+      "tables": 1,
+      "code_blocks": 81
+    },
+    {
+      "page_id": "mysql_8_0_encryption_functions",
+      "sections": 13,
+      "blocks": 277,
+      "anchors": 28,
+      "tables": 1,
+      "code_blocks": 146
+    },
+    {
+      "page_id": "mysql_8_0_locking_functions",
+      "sections": 6,
+      "blocks": 86,
+      "anchors": 14,
+      "tables": 1,
+      "code_blocks": 36
+    },
+    {
+      "page_id": "mysql_8_0_information_functions",
+      "sections": 19,
+      "blocks": 379,
+      "anchors": 41,
+      "tables": 1,
+      "code_blocks": 200
+    },
+    {
+      "page_id": "mysql_8_0_spatial_analysis_functions",
+      "sections": 1,
+      "blocks": 8,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_gis_wkt_functions",
+      "sections": 9,
+      "blocks": 138,
+      "anchors": 23,
+      "tables": 0,
+      "code_blocks": 78
+    },
+    {
+      "page_id": "mysql_8_0_gis_wkb_functions",
+      "sections": 9,
+      "blocks": 136,
+      "anchors": 23,
+      "tables": 0,
+      "code_blocks": 75
+    },
+    {
+      "page_id": "mysql_8_0_gis_mysql_specific_functions",
+      "sections": 9,
+      "blocks": 78,
+      "anchors": 16,
+      "tables": 0,
+      "code_blocks": 30
+    },
+    {
+      "page_id": "mysql_8_0_gis_format_conversion_functions",
+      "sections": 4,
+      "blocks": 61,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 31
+    },
+    {
+      "page_id": "mysql_8_0_gis_property_functions",
+      "sections": 1,
+      "blocks": 2,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_gis_general_property_functions",
+      "sections": 7,
+      "blocks": 79,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 28
+    },
+    {
+      "page_id": "mysql_8_0_gis_point_property_functions",
+      "sections": 5,
+      "blocks": 77,
+      "anchors": 8,
+      "tables": 0,
+      "code_blocks": 37
+    },
+    {
+      "page_id": "mysql_8_0_gis_linestring_property_functions",
+      "sections": 7,
+      "blocks": 95,
+      "anchors": 12,
+      "tables": 0,
+      "code_blocks": 47
+    },
+    {
+      "page_id": "mysql_8_0_gis_polygon_property_functions",
+      "sections": 6,
+      "blocks": 91,
+      "anchors": 11,
+      "tables": 0,
+      "code_blocks": 53
+    },
+    {
+      "page_id": "mysql_8_0_gis_geometrycollection_property_functions",
+      "sections": 3,
+      "blocks": 27,
+      "anchors": 4,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "mysql_8_0_spatial_operator_functions",
+      "sections": 12,
+      "blocks": 250,
+      "anchors": 22,
+      "tables": 0,
+      "code_blocks": 137
+    },
+    {
+      "page_id": "mysql_8_0_spatial_relation_functions",
+      "sections": 1,
+      "blocks": 3,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_spatial_relation_functions_object_shapes",
+      "sections": 12,
+      "blocks": 146,
+      "anchors": 22,
+      "tables": 0,
+      "code_blocks": 64
+    },
+    {
+      "page_id": "mysql_8_0_spatial_relation_functions_mbr",
+      "sections": 10,
+      "blocks": 86,
+      "anchors": 20,
+      "tables": 0,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "mysql_8_0_spatial_geohash_functions",
+      "sections": 5,
+      "blocks": 73,
+      "anchors": 8,
+      "tables": 0,
+      "code_blocks": 35
+    },
+    {
+      "page_id": "mysql_8_0_spatial_geojson_functions",
+      "sections": 3,
+      "blocks": 54,
+      "anchors": 4,
+      "tables": 0,
+      "code_blocks": 42
+    },
+    {
+      "page_id": "mysql_8_0_spatial_aggregate_functions",
+      "sections": 2,
+      "blocks": 39,
+      "anchors": 4,
+      "tables": 0,
+      "code_blocks": 27
+    },
+    {
+      "page_id": "mysql_8_0_spatial_convenience_functions",
+      "sections": 6,
+      "blocks": 125,
+      "anchors": 10,
+      "tables": 0,
+      "code_blocks": 83
+    },
+    {
+      "page_id": "mysql_8_0_json_functions",
+      "sections": 1,
+      "blocks": 6,
+      "anchors": 1,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_json_creation_functions",
+      "sections": 4,
+      "blocks": 30,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 14
+    },
+    {
+      "page_id": "mysql_8_0_json_search_functions",
+      "sections": 8,
+      "blocks": 298,
+      "anchors": 20,
+      "tables": 0,
+      "code_blocks": 228
+    },
+    {
+      "page_id": "mysql_8_0_json_modification_functions",
+      "sections": 11,
+      "blocks": 197,
+      "anchors": 41,
+      "tables": 0,
+      "code_blocks": 103
+    },
+    {
+      "page_id": "mysql_8_0_json_attribute_functions",
+      "sections": 5,
+      "blocks": 81,
+      "anchors": 8,
+      "tables": 0,
+      "code_blocks": 61
+    },
+    {
+      "page_id": "mysql_8_0_json_table_functions",
+      "sections": 1,
+      "blocks": 96,
+      "anchors": 1,
+      "tables": 0,
+      "code_blocks": 54
+    },
+    {
+      "page_id": "mysql_8_0_json_validation_functions",
+      "sections": 3,
+      "blocks": 109,
+      "anchors": 10,
+      "tables": 0,
+      "code_blocks": 74
+    },
+    {
+      "page_id": "mysql_8_0_json_utility_functions",
+      "sections": 4,
+      "blocks": 73,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 39
+    },
+    {
+      "page_id": "mysql_8_0_replication_functions",
+      "sections": 1,
+      "blocks": 29,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_group_replication_functions",
+      "sections": 1,
+      "blocks": 18,
+      "anchors": 3,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_group_replication_functions_for_new_primary",
+      "sections": 2,
+      "blocks": 14,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "mysql_8_0_group_replication_functions_for_mode",
+      "sections": 3,
+      "blocks": 18,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "mysql_8_0_group_replication_functions_for_maximum_consensus",
+      "sections": 3,
+      "blocks": 18,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "mysql_8_0_group_replication_functions_for_communication_protocol",
+      "sections": 3,
+      "blocks": 24,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 7
+    },
+    {
+      "page_id": "mysql_8_0_group_replication_functions_for_member_actions",
+      "sections": 4,
+      "blocks": 39,
+      "anchors": 9,
+      "tables": 0,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "mysql_8_0_gtid_functions",
+      "sections": 5,
+      "blocks": 74,
+      "anchors": 11,
+      "tables": 1,
+      "code_blocks": 40
+    },
+    {
+      "page_id": "mysql_8_0_replication_functions_async_failover",
+      "sections": 6,
+      "blocks": 76,
+      "anchors": 16,
+      "tables": 1,
+      "code_blocks": 32
+    },
+    {
+      "page_id": "mysql_8_0_replication_functions_synchronization",
+      "sections": 3,
+      "blocks": 70,
+      "anchors": 5,
+      "tables": 1,
+      "code_blocks": 44
+    },
+    {
+      "page_id": "mysql_8_0_aggregate_functions_and_modifiers",
+      "sections": 1,
+      "blocks": 2,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_aggregate_functions",
+      "sections": 20,
+      "blocks": 420,
+      "anchors": 55,
+      "tables": 1,
+      "code_blocks": 266
+    },
+    {
+      "page_id": "mysql_8_0_window_functions",
+      "sections": 1,
+      "blocks": 4,
+      "anchors": 1,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "mysql_8_0_window_function_descriptions",
+      "sections": 12,
+      "blocks": 197,
+      "anchors": 23,
+      "tables": 1,
+      "code_blocks": 97
+    },
+    {
+      "page_id": "mysql_8_0_window_functions_usage",
+      "sections": 1,
+      "blocks": 75,
+      "anchors": 9,
+      "tables": 0,
+      "code_blocks": 40
+    },
+    {
+      "page_id": "mysql_8_0_window_functions_frames",
+      "sections": 1,
+      "blocks": 124,
+      "anchors": 1,
+      "tables": 0,
+      "code_blocks": 86
+    },
+    {
+      "page_id": "mysql_8_0_window_functions_named_windows",
+      "sections": 1,
+      "blocks": 28,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 13
+    },
+    {
+      "page_id": "mysql_8_0_performance_schema_functions",
+      "sections": 5,
+      "blocks": 93,
+      "anchors": 11,
+      "tables": 1,
+      "code_blocks": 42
+    },
+    {
+      "page_id": "mysql_8_0_internal_functions",
+      "sections": 30,
+      "blocks": 181,
+      "anchors": 61,
+      "tables": 1,
+      "code_blocks": 29
+    },
+    {
+      "page_id": "mysql_8_0_miscellaneous_functions",
+      "sections": 20,
+      "blocks": 429,
+      "anchors": 41,
+      "tables": 1,
+      "code_blocks": 225
+    },
+    {
+      "page_id": "mysql_8_0_enterprise_encryption_functions",
+      "sections": 8,
+      "blocks": 158,
+      "anchors": 14,
+      "tables": 0,
+      "code_blocks": 106
+    },
+    {
+      "page_id": "mysql_8_0_enterprise_encryption_functions_legacy",
+      "sections": 3,
+      "blocks": 184,
+      "anchors": 19,
+      "tables": 1,
+      "code_blocks": 107
+    },
+    {
+      "page_id": "mysql_8_0_data_masking_plugin_functions",
+      "sections": 16,
+      "blocks": 204,
+      "anchors": 45,
+      "tables": 0,
+      "code_blocks": 102
+    },
+    {
+      "page_id": "mysql_8_0_data_masking_component_functions",
+      "sections": 24,
+      "blocks": 376,
+      "anchors": 69,
+      "tables": 0,
+      "code_blocks": 229
+    },
+    {
+      "page_id": "mysql_8_0_keyring_functions_plugin_specific",
+      "sections": 4,
+      "blocks": 40,
+      "anchors": 10,
+      "tables": 0,
+      "code_blocks": 16
+    },
+    {
+      "page_id": "mysql_8_0_keyring_functions_general_purpose",
+      "sections": 7,
+      "blocks": 155,
+      "anchors": 28,
+      "tables": 0,
+      "code_blocks": 62
+    },
+    {
+      "page_id": "mysql_8_0_performance_schema_user_defined_functions_table",
+      "sections": 1,
+      "blocks": 33,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 18
+    }
+  ]
+}

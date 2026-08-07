@@ -1,0 +1,62 @@
+{
+  "dbms": "oracle",
+  "feature_type": "datatype",
+  "nodes": {
+    "page": 2,
+    "section": 63,
+    "block": 2235,
+    "feature_candidate": 30
+  },
+  "edges": {
+    "page_contains_section": 63,
+    "section_contains_block": 2235,
+    "section_previous": 61,
+    "section_next": 61,
+    "feature_documented_in_section": 120,
+    "total": 2540
+  },
+  "noise": {
+    "noise_nodes": 0,
+    "noise_sections": 0,
+    "noise_blocks": 0,
+    "eligible_nodes": 2300
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "oracle.datatype.anydata",
+      "target": "oracle_26_data_types_s0052"
+    },
+    {
+      "source": "oracle.datatype.anydataset",
+      "target": "oracle_26_data_types_s0053"
+    },
+    {
+      "source": "oracle.datatype.anytype",
+      "target": "oracle_26_data_types_s0051"
+    },
+    {
+      "source": "oracle.datatype.bfile",
+      "target": "oracle_26_data_types_s0003"
+    },
+    {
+      "source": "oracle.datatype.bfile",
+      "target": "oracle_26_data_types_s0031"
+    },
+    {
+      "source": "oracle.datatype.bfile",
+      "target": "oracle_26_data_types_s0032"
+    },
+    {
+      "source": "oracle.datatype.binary_double",
+      "target": "oracle_26_data_types_s0003"
+    },
+    {
+      "source": "oracle.datatype.binary_double",
+      "target": "oracle_26_data_types_s0012"
+    }
+  ],
+  "generated_at": "2026-08-06T19:51:01.868866+08:00"
+}

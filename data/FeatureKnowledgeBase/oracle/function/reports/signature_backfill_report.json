@@ -1,0 +1,2578 @@
+{
+  "signature_backfill_enabled": true,
+  "metadata_backfill_enabled": true,
+  "residual_invalid_handling_enabled": true,
+  "features_backfilled": 1,
+  "formal_signatures_added": 0,
+  "weak_signatures_added": 1,
+  "rejected_example_like_signatures": 0,
+  "source_metadata_backfilled": 318,
+  "examples_backfilled": 2,
+  "description_claims_backfilled": 48,
+  "backfilled_features": [
+    {
+      "feature_id": "oracle.function.avg",
+      "added_syntax": [],
+      "evidence_refs": []
+    }
+  ],
+  "backfilled_examples": [
+    {
+      "feature_id": "oracle.function.avg",
+      "example_count": 1,
+      "evidence_refs": [
+        "oracle_26_aggregate_functions_s0002_b0023"
+      ]
+    },
+    {
+      "feature_id": "oracle.function.max",
+      "example_count": 1,
+      "evidence_refs": [
+        "oracle_26_aggregate_functions_s0002_b0023"
+      ]
+    }
+  ],
+  "weak_table_row_features_added": 314,
+  "non_function_noise_kept_invalid": 2,
+  "residual_features_added": [
+    {
+      "feature_id": "oracle.function.abs",
+      "added_syntax": [
+        "ABS"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.acos",
+      "added_syntax": [
+        "ACOS"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.add_months",
+      "added_syntax": [
+        "ADD_MONTHS"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.any_value",
+      "added_syntax": [
+        "ANY_VALUE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.approx_count",
+      "added_syntax": [
+        "APPROX_COUNT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.approx_count_distinct",
+      "added_syntax": [
+        "APPROX_COUNT_DISTINCT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.approx_count_distinct_agg",
+      "added_syntax": [
+        "APPROX_COUNT_DISTINCT_AGG"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.approx_count_distinct_detail",
+      "added_syntax": [
+        "APPROX_COUNT_DISTINCT_DETAIL"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.approx_median",
+      "added_syntax": [
+        "APPROX_MEDIAN"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.approx_percentile",
+      "added_syntax": [
+        "APPROX_PERCENTILE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.approx_percentile_agg",
+      "added_syntax": [
+        "APPROX_PERCENTILE_AGG"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.approx_percentile_detail",
+      "added_syntax": [
+        "APPROX_PERCENTILE_DETAIL"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.approx_rank",
+      "added_syntax": [
+        "APPROX_RANK"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.approx_sum",
+      "added_syntax": [
+        "APPROX_SUM"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.ascii",
+      "added_syntax": [
+        "ASCII"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.asciistr",
+      "added_syntax": [
+        "ASCIISTR"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.asin",
+      "added_syntax": [
+        "ASIN"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.atan",
+      "added_syntax": [
+        "ATAN"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.atan2",
+      "added_syntax": [
+        "ATAN2"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.bfilename",
+      "added_syntax": [
+        "BFILENAME"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.bin_to_num",
+      "added_syntax": [
+        "BIN_TO_NUM"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.bit_and_agg",
+      "added_syntax": [
+        "BIT_AND_AGG"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.bit_or_agg",
+      "added_syntax": [
+        "BIT_OR_AGG"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.bit_xor_agg",
+      "added_syntax": [
+        "BIT_XOR_AGG"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.bitand",
+      "added_syntax": [
+        "BITAND"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.boolean_and_agg",
+      "added_syntax": [
+        "BOOLEAN_AND_AGG"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.boolean_or_agg",
+      "added_syntax": [
+        "BOOLEAN_OR_AGG"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.calendar",
+      "added_syntax": [
+        "CALENDAR"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.calendar_add_x_periods",
+      "added_syntax": [
+        "CALENDAR_ADD_X_PERIODS"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.calendar_start_end",
+      "added_syntax": [
+        "CALENDAR_START_END"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.calendar_x_of_y",
+      "added_syntax": [
+        "CALENDAR_X_OF_Y"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.cardinality",
+      "added_syntax": [
+        "CARDINALITY"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.ceil",
+      "added_syntax": [
+        "CEIL (number)",
+        "CEIL (datetime)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.chartorowid",
+      "added_syntax": [
+        "CHARTOROWID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.checksum",
+      "added_syntax": [
+        "CHECKSUM"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.chr",
+      "added_syntax": [
+        "CHR"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.clause",
+      "added_syntax": [
+        "clause (department_id)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.cluster_details",
+      "added_syntax": [
+        "CLUSTER_DETAILS"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.cluster_distance",
+      "added_syntax": [
+        "CLUSTER_DISTANCE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.cluster_id",
+      "added_syntax": [
+        "CLUSTER_ID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.cluster_probability",
+      "added_syntax": [
+        "CLUSTER_PROBABILITY"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.cluster_set",
+      "added_syntax": [
+        "CLUSTER_SET"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.coalesce",
+      "added_syntax": [
+        "COALESCE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.collation",
+      "added_syntax": [
+        "COLLATION"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.collect",
+      "added_syntax": [
+        "COLLECT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.compose",
+      "added_syntax": [
+        "COMPOSE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.con_dbid_to_id",
+      "added_syntax": [
+        "CON_DBID_TO_ID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.con_guid_to_id",
+      "added_syntax": [
+        "CON_GUID_TO_ID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.con_name_to_id",
+      "added_syntax": [
+        "CON_NAME_TO_ID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.con_uid_to_id",
+      "added_syntax": [
+        "CON_UID_TO_ID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.concat",
+      "added_syntax": [
+        "CONCAT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.consortium",
+      "added_syntax": [
+        "Consortium (W3C)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.convert",
+      "added_syntax": [
+        "CONVERT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.corr",
+      "added_syntax": [
+        "CORR"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.cos",
+      "added_syntax": [
+        "COS"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.cosh",
+      "added_syntax": [
+        "COSH"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.cosine_distance",
+      "added_syntax": [
+        "COSINE_DISTANCE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.count",
+      "added_syntax": [
+        "COUNT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.covar_pop",
+      "added_syntax": [
+        "COVAR_POP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.covar_samp",
+      "added_syntax": [
+        "COVAR_SAMP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.cube_table",
+      "added_syntax": [
+        "CUBE_TABLE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.cume_dist",
+      "added_syntax": [
+        "CUME_DIST"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.cv",
+      "added_syntax": [
+        "CV"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.data",
+      "added_syntax": [
+        "data (date, timestamp, and interval)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.dataobj_to_mat_partition",
+      "added_syntax": [
+        "DATAOBJ_TO_MAT_PARTITION"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.dataobj_to_partition",
+      "added_syntax": [
+        "DATAOBJ_TO_PARTITION"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.date",
+      "added_syntax": [
+        "date (DATE)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.dbtimezone",
+      "added_syntax": [
+        "DBTIMEZONE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.decode",
+      "added_syntax": [
+        "DECODE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.decompose",
+      "added_syntax": [
+        "DECOMPOSE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.dense_rank",
+      "added_syntax": [
+        "DENSE_RANK"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.depth",
+      "added_syntax": [
+        "DEPTH"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.deref",
+      "added_syntax": [
+        "DEREF"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.domain_check",
+      "added_syntax": [
+        "DOMAIN_CHECK"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.domain_check_type",
+      "added_syntax": [
+        "DOMAIN_CHECK_TYPE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.domain_display",
+      "added_syntax": [
+        "DOMAIN_DISPLAY"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.domain_name",
+      "added_syntax": [
+        "DOMAIN_NAME"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.domain_order",
+      "added_syntax": [
+        "DOMAIN_ORDER"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.dump",
+      "added_syntax": [
+        "DUMP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.every",
+      "added_syntax": [
+        "EVERY"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.existsnode",
+      "added_syntax": [
+        "EXISTSNODE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.exp",
+      "added_syntax": [
+        "EXP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.expression",
+      "added_syntax": [
+        "expression (before AND)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.extract",
+      "added_syntax": [
+        "EXTRACT (datetime)",
+        "EXTRACT (XML)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.extractvalue",
+      "added_syntax": [
+        "EXTRACTVALUE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.feature_compare",
+      "added_syntax": [
+        "FEATURE_COMPARE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.feature_details",
+      "added_syntax": [
+        "FEATURE_DETAILS"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.feature_id",
+      "added_syntax": [
+        "FEATURE_ID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.feature_set",
+      "added_syntax": [
+        "FEATURE_SET"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.feature_value",
+      "added_syntax": [
+        "FEATURE_VALUE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.first",
+      "added_syntax": [
+        "FIRST"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.fiscal",
+      "added_syntax": [
+        "FISCAL"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.fiscal_add_x_periods",
+      "added_syntax": [
+        "FISCAL_ADD_X_PERIODS"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.fiscal_start_end",
+      "added_syntax": [
+        "FISCAL_START_END"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.fiscal_x_of_y",
+      "added_syntax": [
+        "FISCAL_X_OF_Y"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.floor",
+      "added_syntax": [
+        "FLOOR (number)",
+        "FLOOR (datetime)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.from_tz",
+      "added_syntax": [
+        "FROM_TZ"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.from_vector",
+      "added_syntax": [
+        "FROM_VECTOR"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.function",
+      "added_syntax": [
+        "function(argument, argument, ...)",
+        "function (see the listing of analytic functions following this discussion of semantics)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.greatest",
+      "added_syntax": [
+        "GREATEST"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.group_id",
+      "added_syntax": [
+        "GROUP_ID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.grouping",
+      "added_syntax": [
+        "GROUPING"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.grouping_id",
+      "added_syntax": [
+        "GROUPING_ID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.hextoraw",
+      "added_syntax": [
+        "HEXTORAW"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.initcap",
+      "added_syntax": [
+        "INITCAP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.inner_product",
+      "added_syntax": [
+        "INNER_PRODUCT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.instr",
+      "added_syntax": [
+        "INSTR"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.is_uuid",
+      "added_syntax": [
+        "IS_UUID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.iteration_number",
+      "added_syntax": [
+        "ITERATION_NUMBER"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.join",
+      "added_syntax": [
+        "join (in the outer_join_clause)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.json_arrayagg",
+      "added_syntax": [
+        "JSON_ARRAYAGG"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.json_dataguide",
+      "added_syntax": [
+        "JSON_DATAGUIDE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.json_object",
+      "added_syntax": [
+        "JSON_OBJECT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.json_objectagg",
+      "added_syntax": [
+        "JSON_OBJECTAGG"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.json_query",
+      "added_syntax": [
+        "JSON_QUERY"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.json_table",
+      "added_syntax": [
+        "JSON_TABLE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.json_transform",
+      "added_syntax": [
+        "JSON_TRANSFORM"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.json_value",
+      "added_syntax": [
+        "JSON_VALUE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.kurtosis_pop",
+      "added_syntax": [
+        "KURTOSIS_POP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.kurtosis_samp",
+      "added_syntax": [
+        "KURTOSIS_SAMP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.l1_distance",
+      "added_syntax": [
+        "L1_DISTANCE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.l2_distance",
+      "added_syntax": [
+        "L2_DISTANCE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.lag",
+      "added_syntax": [
+        "LAG"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.last",
+      "added_syntax": [
+        "LAST"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.last_day",
+      "added_syntax": [
+        "LAST_DAY"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.lead",
+      "added_syntax": [
+        "LEAD"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.least",
+      "added_syntax": [
+        "LEAST"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.length",
+      "added_syntax": [
+        "LENGTH"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.listagg",
+      "added_syntax": [
+        "LISTAGG"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.ln",
+      "added_syntax": [
+        "LN"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.lnnvl",
+      "added_syntax": [
+        "LNNVL"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.localtimestamp",
+      "added_syntax": [
+        "LOCALTIMESTAMP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.log",
+      "added_syntax": [
+        "LOG"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.lower",
+      "added_syntax": [
+        "LOWER"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.lpad",
+      "added_syntax": [
+        "LPAD"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.ltrim",
+      "added_syntax": [
+        "LTRIM"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.make_ref",
+      "added_syntax": [
+        "MAKE_REF"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.median",
+      "added_syntax": [
+        "MEDIAN"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.min",
+      "added_syntax": [
+        "MIN"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.mod",
+      "added_syntax": [
+        "MOD"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.months_between",
+      "added_syntax": [
+        "MONTHS_BETWEEN"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.nanvl",
+      "added_syntax": [
+        "NANVL"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.nchr",
+      "added_syntax": [
+        "NCHR"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.new_time",
+      "added_syntax": [
+        "NEW_TIME"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.next_day",
+      "added_syntax": [
+        "NEXT_DAY"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.nls_charset_decl_len",
+      "added_syntax": [
+        "NLS_CHARSET_DECL_LEN"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.nls_charset_id",
+      "added_syntax": [
+        "NLS_CHARSET_ID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.nls_charset_name",
+      "added_syntax": [
+        "NLS_CHARSET_NAME"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.nls_collation_id",
+      "added_syntax": [
+        "NLS_COLLATION_ID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.nls_collation_name",
+      "added_syntax": [
+        "NLS_COLLATION_NAME"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.nls_initcap",
+      "added_syntax": [
+        "NLS_INITCAP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.nls_lower",
+      "added_syntax": [
+        "NLS_LOWER"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.nls_upper",
+      "added_syntax": [
+        "NLS_UPPER"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.nlssort",
+      "added_syntax": [
+        "NLSSORT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.notation",
+      "added_syntax": [
+        "Notation (JSON)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.ntile",
+      "added_syntax": [
+        "NTILE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.nullif",
+      "added_syntax": [
+        "NULLIF"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.numtodsinterval",
+      "added_syntax": [
+        "NUMTODSINTERVAL"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.numtoyminterval",
+      "added_syntax": [
+        "NUMTOYMINTERVAL"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.nvl",
+      "added_syntax": [
+        "NVL"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.nvl2",
+      "added_syntax": [
+        "NVL2"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.ora_dm_partition_name",
+      "added_syntax": [
+        "ORA_DM_PARTITION_NAME"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.ora_dst_affected",
+      "added_syntax": [
+        "ORA_DST_AFFECTED"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.ora_dst_convert",
+      "added_syntax": [
+        "ORA_DST_CONVERT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.ora_dst_error",
+      "added_syntax": [
+        "ORA_DST_ERROR"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.ora_hash",
+      "added_syntax": [
+        "ORA_HASH"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.ora_invoking_user",
+      "added_syntax": [
+        "ORA_INVOKING_USER"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.ora_invoking_userid",
+      "added_syntax": [
+        "ORA_INVOKING_USERID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.path",
+      "added_syntax": [
+        "PATH"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.percent_rank",
+      "added_syntax": [
+        "PERCENT_RANK"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.percentile_cont",
+      "added_syntax": [
+        "PERCENTILE_CONT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.percentile_disc",
+      "added_syntax": [
+        "PERCENTILE_DISC"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.power",
+      "added_syntax": [
+        "POWER"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.powermultiset",
+      "added_syntax": [
+        "POWERMULTISET"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.powermultiset_by_cardinality",
+      "added_syntax": [
+        "POWERMULTISET_BY_CARDINALITY"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.prediction",
+      "added_syntax": [
+        "PREDICTION"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.prediction_bounds",
+      "added_syntax": [
+        "PREDICTION_BOUNDS"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.prediction_cost",
+      "added_syntax": [
+        "PREDICTION_COST"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.prediction_details",
+      "added_syntax": [
+        "PREDICTION_DETAILS"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.prediction_probability",
+      "added_syntax": [
+        "PREDICTION_PROBABILITY"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.prediction_set",
+      "added_syntax": [
+        "PREDICTION_SET"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.presentnnv",
+      "added_syntax": [
+        "PRESENTNNV"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.presentv",
+      "added_syntax": [
+        "PRESENTV"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.previous",
+      "added_syntax": [
+        "PREVIOUS"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.pseudocolumn",
+      "added_syntax": [
+        "pseudocolumn (refer to Pseudocolumns)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.query",
+      "added_syntax": [
+        "query (in the model_column_clauses)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.rank",
+      "added_syntax": [
+        "RANK"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.ratio_to_report",
+      "added_syntax": [
+        "RATIO_TO_REPORT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.raw_to_uuid",
+      "added_syntax": [
+        "RAW_TO_UUID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.rawtohex",
+      "added_syntax": [
+        "RAWTOHEX"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.rawtonhex",
+      "added_syntax": [
+        "RAWTONHEX"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.ref",
+      "added_syntax": [
+        "REF"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.reftohex",
+      "added_syntax": [
+        "REFTOHEX"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.regexp_count",
+      "added_syntax": [
+        "REGEXP_COUNT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.regexp_instr",
+      "added_syntax": [
+        "REGEXP_INSTR"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.regexp_replace",
+      "added_syntax": [
+        "REGEXP_REPLACE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.regexp_substr",
+      "added_syntax": [
+        "REGEXP_SUBSTR"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.regr_",
+      "added_syntax": [
+        "REGR_ (Linear Regression)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.remainder",
+      "added_syntax": [
+        "REMAINDER"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.replace",
+      "added_syntax": [
+        "REPLACE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.retail",
+      "added_syntax": [
+        "RETAIL"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.retail_add_x_periods",
+      "added_syntax": [
+        "RETAIL_ADD_X_PERIODS"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.retail_start_end",
+      "added_syntax": [
+        "RETAIL_START_END"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.retail_x_of_y",
+      "added_syntax": [
+        "RETAIL_X_OF_Y"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.round",
+      "added_syntax": [
+        "ROUND (number)",
+        "ROUND (datetime)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.row_number",
+      "added_syntax": [
+        "ROW_NUMBER"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.rowidtochar",
+      "added_syntax": [
+        "ROWIDTOCHAR"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.rowidtonchar",
+      "added_syntax": [
+        "ROWIDTONCHAR"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.rpad",
+      "added_syntax": [
+        "RPAD"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.rtrim",
+      "added_syntax": [
+        "RTRIM"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.scn_to_timestamp",
+      "added_syntax": [
+        "SCN_TO_TIMESTAMP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.sequence",
+      "added_syntax": [
+        "sequence (ascending or descending)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.sessiontimezone",
+      "added_syntax": [
+        "SESSIONTIMEZONE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.sign",
+      "added_syntax": [
+        "SIGN"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.sin",
+      "added_syntax": [
+        "SIN"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.sinh",
+      "added_syntax": [
+        "SINH"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.skewness_pop",
+      "added_syntax": [
+        "SKEWNESS_POP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.skewness_samp",
+      "added_syntax": [
+        "SKEWNESS_SAMP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.soundex",
+      "added_syntax": [
+        "SOUNDEX"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.sqrt",
+      "added_syntax": [
+        "SQRT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.standard_hash",
+      "added_syntax": [
+        "STANDARD_HASH"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.stats_binomial_test",
+      "added_syntax": [
+        "STATS_BINOMIAL_TEST"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.stats_crosstab",
+      "added_syntax": [
+        "STATS_CROSSTAB"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.stats_f_test",
+      "added_syntax": [
+        "STATS_F_TEST"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.stats_ks_test",
+      "added_syntax": [
+        "STATS_KS_TEST"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.stats_mode",
+      "added_syntax": [
+        "STATS_MODE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.stats_mw_test",
+      "added_syntax": [
+        "STATS_MW_TEST"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.stats_one_way_anova",
+      "added_syntax": [
+        "STATS_ONE_WAY_ANOVA"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.stats_wsr_test",
+      "added_syntax": [
+        "STATS_WSR_TEST"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.stddev",
+      "added_syntax": [
+        "STDDEV"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.stddev_pop",
+      "added_syntax": [
+        "STDDEV_POP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.stddev_samp",
+      "added_syntax": [
+        "STDDEV_SAMP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.substr",
+      "added_syntax": [
+        "SUBSTR"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.sum",
+      "added_syntax": [
+        "SUM"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.syntax",
+      "added_syntax": [
+        "syntax (without parentheses)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.sys_connect_by_path",
+      "added_syntax": [
+        "SYS_CONNECT_BY_PATH"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.sys_context",
+      "added_syntax": [
+        "SYS_CONTEXT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.sys_dburigen",
+      "added_syntax": [
+        "SYS_DBURIGEN"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.sys_extract_utc",
+      "added_syntax": [
+        "SYS_EXTRACT_UTC"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.sys_guid",
+      "added_syntax": [
+        "SYS_GUID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.sys_op_zone_id",
+      "added_syntax": [
+        "SYS_OP_ZONE_ID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.sys_typeid",
+      "added_syntax": [
+        "SYS_TYPEID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.sys_xmlagg",
+      "added_syntax": [
+        "SYS_XMLAGG"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.sys_xmlgen",
+      "added_syntax": [
+        "SYS_XMLGEN"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.sysdate",
+      "added_syntax": [
+        "SYSDATE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.systimestamp",
+      "added_syntax": [
+        "SYSTIMESTAMP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.tan",
+      "added_syntax": [
+        "TAN"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.tanh",
+      "added_syntax": [
+        "TANH"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.timestamp",
+      "added_syntax": [
+        "timestamp (TIMESTAMP, TIMESTAMP WITH TIME ZONE, and TIMESTAMP WITH LOCAL TIME ZONE)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.timestamp_to_scn",
+      "added_syntax": [
+        "TIMESTAMP_TO_SCN"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.to_binary_double",
+      "added_syntax": [
+        "TO_BINARY_DOUBLE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.to_binary_float",
+      "added_syntax": [
+        "TO_BINARY_FLOAT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.to_blob",
+      "added_syntax": [
+        "TO_BLOB (bfile)",
+        "TO_BLOB (raw)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.to_char",
+      "added_syntax": [
+        "TO_CHAR (datetime)",
+        "TO_CHAR (bfile|blob)",
+        "TO_CHAR (character)",
+        "TO_CHAR (number)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.to_clob",
+      "added_syntax": [
+        "TO_CLOB (bfile|blob)",
+        "TO_CLOB (character)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.to_date",
+      "added_syntax": [
+        "TO_DATE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.to_dsinterval",
+      "added_syntax": [
+        "TO_DSINTERVAL"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.to_lob",
+      "added_syntax": [
+        "TO_LOB"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.to_multi_byte",
+      "added_syntax": [
+        "TO_MULTI_BYTE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.to_nchar",
+      "added_syntax": [
+        "TO_NCHAR (character)",
+        "TO_NCHAR (datetime)",
+        "TO_NCHAR (number)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.to_nclob",
+      "added_syntax": [
+        "TO_NCLOB"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.to_number",
+      "added_syntax": [
+        "TO_NUMBER"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.to_single_byte",
+      "added_syntax": [
+        "TO_SINGLE_BYTE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.to_timestamp",
+      "added_syntax": [
+        "TO_TIMESTAMP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.to_timestamp_tz",
+      "added_syntax": [
+        "TO_TIMESTAMP_TZ"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.to_vector",
+      "added_syntax": [
+        "TO_VECTOR"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.to_yminterval",
+      "added_syntax": [
+        "TO_YMINTERVAL"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.translate",
+      "added_syntax": [
+        "TRANSLATE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.treat",
+      "added_syntax": [
+        "TREAT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.trim",
+      "added_syntax": [
+        "TRIM"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.trunc",
+      "added_syntax": [
+        "TRUNC (number)",
+        "TRUNC (datetime)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.tz_offset",
+      "added_syntax": [
+        "TZ_OFFSET"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.uid",
+      "added_syntax": [
+        "UID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.unistr",
+      "added_syntax": [
+        "UNISTR"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.upper",
+      "added_syntax": [
+        "UPPER"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.user",
+      "added_syntax": [
+        "USER"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.userenv",
+      "added_syntax": [
+        "USERENV"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.uuid",
+      "added_syntax": [
+        "UUID (Universally Unique Identifier)",
+        "UUID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.uuid_to_raw",
+      "added_syntax": [
+        "UUID_TO_RAW"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.validate_conversion",
+      "added_syntax": [
+        "VALIDATE_CONVERSION"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.value",
+      "added_syntax": [
+        "value (depending on whether you have specified ROW, RANGE, or GROUPS respectively)",
+        "value (depending on whether you have specified ROW, RANGE, or GROUPSrespectively)",
+        "VALUE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.var_pop",
+      "added_syntax": [
+        "VAR_POP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.var_samp",
+      "added_syntax": [
+        "VAR_SAMP"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.variance",
+      "added_syntax": [
+        "VARIANCE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.vector",
+      "added_syntax": [
+        "VECTOR"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.vector_chunks",
+      "added_syntax": [
+        "VECTOR_CHUNKS"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.vector_dimension_count",
+      "added_syntax": [
+        "VECTOR_DIMENSION_COUNT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.vector_dimension_format",
+      "added_syntax": [
+        "VECTOR_DIMENSION_FORMAT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.vector_dims",
+      "added_syntax": [
+        "VECTOR_DIMS"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.vector_distance",
+      "added_syntax": [
+        "VECTOR_DISTANCE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.vector_embedding",
+      "added_syntax": [
+        "VECTOR_EMBEDDING"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.vector_norm",
+      "added_syntax": [
+        "VECTOR_NORM"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.vector_serialize",
+      "added_syntax": [
+        "VECTOR_SERIALIZE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.vsize",
+      "added_syntax": [
+        "VSIZE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.width_bucket",
+      "added_syntax": [
+        "WIDTH_BUCKET"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmlagg",
+      "added_syntax": [
+        "XMLAGG"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmlcast",
+      "added_syntax": [
+        "XMLCAST"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmlcdata",
+      "added_syntax": [
+        "XMLCDATA"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmlcolattval",
+      "added_syntax": [
+        "XMLCOLATTVAL"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmlcomment",
+      "added_syntax": [
+        "XMLCOMMENT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmlconcat",
+      "added_syntax": [
+        "XMLCONCAT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmldiff",
+      "added_syntax": [
+        "XMLDIFF"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmlelement",
+      "added_syntax": [
+        "XMLELEMENT"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmlexists",
+      "added_syntax": [
+        "XMLEXISTS"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmlforest",
+      "added_syntax": [
+        "XMLFOREST"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmlisvalid",
+      "added_syntax": [
+        "XMLISVALID"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmlparse",
+      "added_syntax": [
+        "XMLPARSE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmlpatch",
+      "added_syntax": [
+        "XMLPATCH"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmlpi",
+      "added_syntax": [
+        "XMLPI"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmlquery",
+      "added_syntax": [
+        "XMLQUERY"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmlsequence",
+      "added_syntax": [
+        "XMLSEQUENCE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmlserialize",
+      "added_syntax": [
+        "XMLSERIALIZE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmltable",
+      "added_syntax": [
+        "XMLTABLE"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "oracle.function.xmltransform",
+      "added_syntax": [
+        "XMLTRANSFORM"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    }
+  ],
+  "residual_features_kept_invalid": [
+    {
+      "feature_id": "oracle.function.aggregate",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "oracle.function.asterisk",
+      "reason": "non_function_noise"
+    }
+  ],
+  "generated_at": "2026-08-07T14:41:02.229836+08:00"
+}

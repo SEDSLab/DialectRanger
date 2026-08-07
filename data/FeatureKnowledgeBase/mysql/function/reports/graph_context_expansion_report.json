@@ -1,0 +1,43 @@
+{
+  "dbms": "mysql",
+  "feature_type": "function",
+  "graph_expansion_enabled": true,
+  "total_candidate_groups": 485,
+  "features_with_graph_expansion": 6,
+  "features_skipped_no_need": 479,
+  "graph_expanded_blocks": 36,
+  "graph_expanded_sections": 6,
+  "expansion_by_edge_type": {
+    "alias_candidate": 36
+  },
+  "skipped_noise_blocks": 0,
+  "graph_noise_blocks_removed": 0,
+  "direct_noise_blocks_removed": 10,
+  "deduplicated_blocks": 0,
+  "section_adjacency_edges_limited": true,
+  "alias_target_blocks_reclassified": 0,
+  "foreign_direct_blocks_removed": 0,
+  "related_mentions_skipped": 0,
+  "source_boundary_enforced": true,
+  "sample_expanded_features": [
+    "mysql.function.character_length",
+    "mysql.function.mid",
+    "mysql.function.octet_length",
+    "mysql.function.position",
+    "mysql.function.power",
+    "mysql.function.substr"
+  ],
+  "sample_skipped_features": [
+    "mysql.function.abs",
+    "mysql.function.acos",
+    "mysql.function.adddate",
+    "mysql.function.addtime",
+    "mysql.function.aes_decrypt",
+    "mysql.function.aes_encrypt",
+    "mysql.function.any_value",
+    "mysql.function.ascii",
+    "mysql.function.asin",
+    "mysql.function.asymmetric_decrypt"
+  ],
+  "generated_at": "2026-08-06T18:46:21.812319+08:00"
+}

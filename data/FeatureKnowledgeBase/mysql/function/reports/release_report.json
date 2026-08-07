@@ -1,0 +1,31 @@
+{
+  "dbms": "mysql",
+  "feature_type": "function",
+  "total_pages": 73,
+  "total_sections": 568,
+  "total_blocks": 10587,
+  "candidate_features": 3361,
+  "candidate_groups": 485,
+  "feature_drafts": 485,
+  "total_drafts": 485,
+  "clean_validated_features": 336,
+  "validated_with_warnings": 149,
+  "invalid_features": 0,
+  "total_validated_features": 485,
+  "total_kb_features": 485,
+  "total_review_items": 149,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 111,
+    "no_description_claims": 2,
+    "no_valid_syntax": 0,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 3,
+    "large_evidence_block": 0,
+    "long_examples": 45,
+    "alias_like_feature": 2
+  },
+  "generated_at": "2026-08-06T18:46:23.412736+08:00"
+}

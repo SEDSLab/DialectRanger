@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>PostgreSQL: Documentation: 18: 8.8. Geometric Types</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8" />
+   
+  <meta name="theme-color" content="#336791"/>
+  <meta name="copyright" content="The PostgreSQL Global Development Group" />
+  <meta property="og:url" content="https://www.postgresql.org/docs/18/datatype-geometric.html" />
+  <meta property="og:type" content="article" />
+
+  <meta property="article:published_time" content="2026-05-14T13:09:46" />
+  <meta property="og:image" content="https://www.postgresql.org/media/img/about/press/elephant.png" />
+  <meta property="og:title" content="8.8. Geometric Types" />
+  <meta property="og:description" content="8.8.&amp;nbsp;Geometric Types # 8.8.1. Points 8.8.2. Lines 8.8.3. Line Segments 8.8.4. Boxes 8.8.5. Paths 8.8.6. Polygons 8.8.7. Circles Geometric data …" />
+  <meta property="og:site_name" content="PostgreSQL Documentation" />
+  <link href="/media/css/fontawesome.css?73aab745" rel="stylesheet">
+  <link rel="stylesheet" href="/media/css/bootstrap-4.4.1.min.css">
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  <link rel="stylesheet" type="text/css" href="/dyncss/base.css?73aab745">
+
+  <script src="/media/js/theme.js?73aab745"></script>
+
+  
+
+
+  <link rel="canonical" href="https://www.postgresql.org/docs/current/datatype-geometric.html" />
+
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-md-center">
+        <div class="col">
+          <!-- Header -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand p-0" href="/">
+              <img class="logo" src="/media/img/about/press/elephant.png" alt="PostgreSQL Elephant Logo">
+            </a>
+            <input type="checkbox" id="navbar-toggler" aria-controls="pgNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <label for="navbar-toggler" id="navbar-toggler-label" class="navbar-toggler" tabindex="0"><span class="navbar-toggler-icon"></span></label>
+            <div class="navbar-collapse" id="pgNavbar">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item p-2"><a href="/" title="Home">Home</a></li>
+                <li class="nav-item p-2"><a href="/about/" title="About">About</a></li>
+                <li class="nav-item p-2"><a href="/download/" title="Download">Download</a></li>
+                <li class="nav-item p-2"><a href="/docs/" title="Documentation">Documentation</a></li>
+                <li class="nav-item p-2"><a href="/community/" title="Community">Community</a></li>
+                <li class="nav-item p-2"><a href="/developer/" title="Developers">Developers</a></li>
+                <li class="nav-item p-2"><a href="/support/" title="Support">Support</a></li>
+                <li class="nav-item p-2"><a href="/about/donate/" title="Donate">Donate</a></li>
+                <li class="nav-item p-2"><a href="/account/" title="Your account">Your account</a></li>
+              </ul>
+              <form role="search" method="get" action="/search/">
+                <div class="input-group">
+                  <input id="q" name="q" type="text" size="20" maxlength="255" accesskey="s"  class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+              <form id="form-theme" class="form-inline d-none">
+                <button id="btn-theme" class="btn btn-default ml-1" type="button"></button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row justify-content-center pg-shout-box">
+        <div class="col text-white text-center">July 16, 2026: <a href="/about/news/postgresql-19-beta-2-released-3350/">PostgreSQL 19 Beta 2 Released!</a>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="container-fluid margin">
+      <div class="row">
+        <div id="pgContentWrap" class="col-11">
+          <div class="row">
+            <div class="col-md-6 mb-2">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <a href="/docs/" title="Documentation">Documentation</a> &rarr; <a href="/docs/18/index.html">PostgreSQL 18</a>
+                  </div>
+                </div>
+              </div>
+              
+                <div class="row">
+                  <div class="col">
+                    Supported Versions:
+                      
+                        
+                        
+                          <a href="/docs/current/datatype-geometric.html" title="PostgreSQL 18 - 8.8. Geometric Types" class="docs-version-selected">Current</a>
+                          (<a href="/docs/18/datatype-geometric.html" title="PostgreSQL 18 - 8.8. Geometric Types" class="docs-version-selected">18</a>)
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/17/datatype-geometric.html" title="PostgreSQL 17 - 8.8. Geometric Types" >17</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/16/datatype-geometric.html" title="PostgreSQL 16 - 8.8. Geometric Types" >16</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/15/datatype-geometric.html" title="PostgreSQL 15 - 8.8. Geometric Types" >15</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/14/datatype-geometric.html" title="PostgreSQL 14 - 8.8. Geometric Types" >14</a>
+                        
+                      
+                  </div>
+                </div>
+              
+              
+                <div class="row">
+                  <div class="col">
+                    Development Versions:
+                    
+                      
+                      <a href="/docs/19/datatype-geometric.html" title="PostgreSQL 19 - 8.8. Geometric Types"  rel="nofollow">19</a>
+                    
+                       / 
+                      <a href="/docs/devel/datatype-geometric.html" title="PostgreSQL devel - 8.8. Geometric Types"  rel="nofollow">devel</a>
+                    
+                  </div>
+                </div>
+              
+              
+                <div class="row">
+                  <div class="col-12">
+                    Unsupported versions:
+                    
+                      
+                      <a href="/docs/13/datatype-geometric.html" title="PostgreSQL 13 - 8.8. Geometric Types"  rel="nofollow">13</a>
+                    
+                       / 
+                      <a href="/docs/12/datatype-geometric.html" title="PostgreSQL 12 - 8.8. Geometric Types"  rel="nofollow">12</a>
+                    
+                       / 
+                      <a href="/docs/11/datatype-geometric.html" title="PostgreSQL 11 - 8.8. Geometric Types"  rel="nofollow">11</a>
+                    
+                       / 
+                      <a href="/docs/10/datatype-geometric.html" title="PostgreSQL 10 - 8.8. Geometric Types"  rel="nofollow">10</a>
+                    
+                       / 
+                      <a href="/docs/9.6/datatype-geometric.html" title="PostgreSQL 9.6 - 8.8. Geometric Types"  rel="nofollow">9.6</a>
+                    
+                       / 
+                      <a href="/docs/9.5/datatype-geometric.html" title="PostgreSQL 9.5 - 8.8. Geometric Types"  rel="nofollow">9.5</a>
+                    
+                       / 
+                      <a href="/docs/9.4/datatype-geometric.html" title="PostgreSQL 9.4 - 8.8. Geometric Types"  rel="nofollow">9.4</a>
+                    
+                       / 
+                      <a href="/docs/9.3/datatype-geometric.html" title="PostgreSQL 9.3 - 8.8. Geometric Types"  rel="nofollow">9.3</a>
+                    
+                       / 
+                      <a href="/docs/9.2/datatype-geometric.html" title="PostgreSQL 9.2 - 8.8. Geometric Types"  rel="nofollow">9.2</a>
+                    
+                       / 
+                      <a href="/docs/9.1/datatype-geometric.html" title="PostgreSQL 9.1 - 8.8. Geometric Types"  rel="nofollow">9.1</a>
+                    
+                       / 
+                      <a href="/docs/9.0/datatype-geometric.html" title="PostgreSQL 9.0 - 8.8. Geometric Types"  rel="nofollow">9.0</a>
+                    
+                       / 
+                      <a href="/docs/8.4/datatype-geometric.html" title="PostgreSQL 8.4 - 8.8. Geometric Types"  rel="nofollow">8.4</a>
+                    
+                       / 
+                      <a href="/docs/8.3/datatype-geometric.html" title="PostgreSQL 8.3 - 8.8. Geometric Types"  rel="nofollow">8.3</a>
+                    
+                       / 
+                      <a href="/docs/8.2/datatype-geometric.html" title="PostgreSQL 8.2 - 8.8. Geometric Types"  rel="nofollow">8.2</a>
+                    
+                       / 
+                      <a href="/docs/8.1/datatype-geometric.html" title="PostgreSQL 8.1 - 8.8. Geometric Types"  rel="nofollow">8.1</a>
+                    
+                       / 
+                      <a href="/docs/8.0/datatype-geometric.html" title="PostgreSQL 8.0 - 8.8. Geometric Types"  rel="nofollow">8.0</a>
+                    
+                       / 
+                      <a href="/docs/7.4/datatype-geometric.html" title="PostgreSQL 7.4 - 8.8. Geometric Types"  rel="nofollow">7.4</a>
+                    
+                       / 
+                      <a href="/docs/7.3/datatype-geometric.html" title="PostgreSQL 7.3 - 8.8. Geometric Types"  rel="nofollow">7.3</a>
+                    
+                       / 
+                      <a href="/docs/7.2/datatype-geometric.html" title="PostgreSQL 7.2 - 8.8. Geometric Types"  rel="nofollow">7.2</a>
+                    
+                       / 
+                      <a href="/docs/7.1/datatype-geometric.html" title="PostgreSQL 7.1 - 8.8. Geometric Types"  rel="nofollow">7.1</a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+            <div class="col-md-6 col-lg-5 offset-lg-1">
+              <form id="docSearchForm" role="search" method="get" action="/search/">
+                <input type="hidden" name="u" value="/docs/18/" />
+                <div class="input-group">
+                  <input type="text" id="q" name="q" class="form-control" placeholder="Search the documentation for..."/>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+            </div>
+          </div>
+
+          <div id="docContent">
+            <div class="navheader">
+  <table width="100%" summary="Navigation header">
+    <tr>
+      <th colspan="5" align="center">8.8.&nbsp;Geometric Types</th>
+    </tr>
+    <tr>
+      <td width="10%" align="left"><a accesskey="p" href="datatype-enum.html" title="8.7.&nbsp;Enumerated Types">Prev</a>&nbsp;</td>
+      <td width="10%" align="left"><a accesskey="u" href="datatype.html" title="Chapter&nbsp;8.&nbsp;Data Types">Up</a></td>
+      <th width="60%" align="center">Chapter&nbsp;8.&nbsp;Data Types</th>
+      <td width="10%" align="right"><a accesskey="h" href="index.html" title="PostgreSQL 18.4 Documentation">Home</a></td>
+      <td width="10%" align="right">&nbsp;<a accesskey="n" href="datatype-net-types.html" title="8.9.&nbsp;Network Address Types">Next</a></td>
+    </tr>
+  </table>
+  <hr />
+</div>
+<div class="sect1" id="DATATYPE-GEOMETRIC">
+  <div class="titlepage">
+    <div>
+      <div>
+        <h2 class="title" style="clear: both">8.8.&nbsp;Geometric Types <a href="#DATATYPE-GEOMETRIC" class="id_link">#</a></h2>
+      </div>
+    </div>
+  </div>
+  <div class="toc">
+    <dl class="toc">
+      <dt><span class="sect2"><a href="datatype-geometric.html#DATATYPE-GEOMETRIC-POINTS">8.8.1. Points</a></span></dt>
+      <dt><span class="sect2"><a href="datatype-geometric.html#DATATYPE-LINE">8.8.2. Lines</a></span></dt>
+      <dt><span class="sect2"><a href="datatype-geometric.html#DATATYPE-LSEG">8.8.3. Line Segments</a></span></dt>
+      <dt><span class="sect2"><a href="datatype-geometric.html#DATATYPE-GEOMETRIC-BOXES">8.8.4. Boxes</a></span></dt>
+      <dt><span class="sect2"><a href="datatype-geometric.html#DATATYPE-GEOMETRIC-PATHS">8.8.5. Paths</a></span></dt>
+      <dt><span class="sect2"><a href="datatype-geometric.html#DATATYPE-POLYGON">8.8.6. Polygons</a></span></dt>
+      <dt><span class="sect2"><a href="datatype-geometric.html#DATATYPE-CIRCLE">8.8.7. Circles</a></span></dt>
+    </dl>
+  </div>
+  <p>Geometric data types represent two-dimensional spatial objects. <a class="xref" href="datatype-geometric.html#DATATYPE-GEO-TABLE" title="Table&nbsp;8.20.&nbsp;Geometric Types">Table&nbsp;8.20</a> shows the geometric types available in <span class="productname">PostgreSQL</span>.</p>
+  <div class="table" id="DATATYPE-GEO-TABLE">
+    <p class="title"><strong>Table&nbsp;8.20.&nbsp;Geometric Types</strong></p>
+    <div class="table-contents">
+      <table class="table" summary="Geometric Types" border="1">
+        <colgroup>
+          <col class="col1" />
+          <col class="col2" />
+          <col class="col3" />
+          <col class="col4" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Storage Size</th>
+            <th>Description</th>
+            <th>Representation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code class="type">point</code></td>
+            <td>16 bytes</td>
+            <td>Point on a plane</td>
+            <td>(x,y)</td>
+          </tr>
+          <tr>
+            <td><code class="type">line</code></td>
+            <td>24 bytes</td>
+            <td>Infinite line</td>
+            <td>{A,B,C}</td>
+          </tr>
+          <tr>
+            <td><code class="type">lseg</code></td>
+            <td>32 bytes</td>
+            <td>Finite line segment</td>
+            <td>[(x1,y1),(x2,y2)]</td>
+          </tr>
+          <tr>
+            <td><code class="type">box</code></td>
+            <td>32 bytes</td>
+            <td>Rectangular box</td>
+            <td>(x1,y1),(x2,y2)</td>
+          </tr>
+          <tr>
+            <td><code class="type">path</code></td>
+            <td>16+16n bytes</td>
+            <td>Closed path (similar to polygon)</td>
+            <td>((x1,y1),...)</td>
+          </tr>
+          <tr>
+            <td><code class="type">path</code></td>
+            <td>16+16n bytes</td>
+            <td>Open path</td>
+            <td>[(x1,y1),...]</td>
+          </tr>
+          <tr>
+            <td><code class="type">polygon</code></td>
+            <td>40+16n bytes</td>
+            <td>Polygon (similar to closed path)</td>
+            <td>((x1,y1),...)</td>
+          </tr>
+          <tr>
+            <td><code class="type">circle</code></td>
+            <td>24 bytes</td>
+            <td>Circle</td>
+            <td>&lt;(x,y),r&gt; (center point and radius)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div><br class="table-break" />
+  <p>In all these types, the individual coordinates are stored as <code class="type">double precision</code> (<code class="type">float8</code>) numbers.</p>
+  <p>A rich set of functions and operators is available to perform various geometric operations such as scaling, translation, rotation, and determining intersections. They are explained in <a class="xref" href="functions-geometry.html" title="9.11.&nbsp;Geometric Functions and Operators">Section&nbsp;9.11</a>.</p>
+  <div class="sect2" id="DATATYPE-GEOMETRIC-POINTS">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h3 class="title">8.8.1.&nbsp;Points <a href="#DATATYPE-GEOMETRIC-POINTS" class="id_link">#</a></h3>
+        </div>
+      </div>
+    </div><a id="id-1.5.7.16.6.2" class="indexterm" name="id-1.5.7.16.6.2"></a>
+    <p>Points are the fundamental two-dimensional building block for geometric types. Values of type <code class="type">point</code> are specified using either of the following syntaxes:</p>
+    <pre class="synopsis">
+( <em class="replaceable"><code>x</code></em> , <em class="replaceable"><code>y</code></em> )
+  <em class="replaceable"><code>x</code></em> , <em class="replaceable"><code>y</code></em>
+</pre>
+    <p>where <em class="replaceable"><code>x</code></em> and <em class="replaceable"><code>y</code></em> are the respective coordinates, as floating-point numbers.</p>
+    <p>Points are output using the first syntax.</p>
+  </div>
+  <div class="sect2" id="DATATYPE-LINE">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h3 class="title">8.8.2.&nbsp;Lines <a href="#DATATYPE-LINE" class="id_link">#</a></h3>
+        </div>
+      </div>
+    </div><a id="id-1.5.7.16.7.2" class="indexterm" name="id-1.5.7.16.7.2"></a>
+    <p>Lines are represented by the linear equation <em class="replaceable"><code>A</code></em>x + <em class="replaceable"><code>B</code></em>y + <em class="replaceable"><code>C</code></em> = 0, where <em class="replaceable"><code>A</code></em> and <em class="replaceable"><code>B</code></em> are not both zero. Values of type <code class="type">line</code> are input and output in the following form:</p>
+    <pre class="synopsis">
+{ <em class="replaceable"><code>A</code></em>, <em class="replaceable"><code>B</code></em>, <em class="replaceable"><code>C</code></em> }
+</pre>
+    <p>Alternatively, any of the following forms can be used for input:</p>
+    <pre class="synopsis">
+[ ( <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em> ) , ( <em class="replaceable"><code>x2</code></em> , <em class="replaceable"><code>y2</code></em> ) ]
+( ( <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em> ) , ( <em class="replaceable"><code>x2</code></em> , <em class="replaceable"><code>y2</code></em> ) )
+  ( <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em> ) , ( <em class="replaceable"><code>x2</code></em> , <em class="replaceable"><code>y2</code></em> )
+    <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em>   ,   <em class="replaceable"><code>x2</code></em> , <em class="replaceable"><code>y2</code></em>
+</pre>
+    <p>where <code class="literal">(<em class="replaceable"><code>x1</code></em>,<em class="replaceable"><code>y1</code></em>)</code> and <code class="literal">(<em class="replaceable"><code>x2</code></em>,<em class="replaceable"><code>y2</code></em>)</code> are two different points on the line.</p>
+  </div>
+  <div class="sect2" id="DATATYPE-LSEG">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h3 class="title">8.8.3.&nbsp;Line Segments <a href="#DATATYPE-LSEG" class="id_link">#</a></h3>
+        </div>
+      </div>
+    </div><a id="id-1.5.7.16.8.2" class="indexterm" name="id-1.5.7.16.8.2"></a><a id="id-1.5.7.16.8.3" class="indexterm" name="id-1.5.7.16.8.3"></a>
+    <p>Line segments are represented by pairs of points that are the endpoints of the segment. Values of type <code class="type">lseg</code> are specified using any of the following syntaxes:</p>
+    <pre class="synopsis">
+[ ( <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em> ) , ( <em class="replaceable"><code>x2</code></em> , <em class="replaceable"><code>y2</code></em> ) ]
+( ( <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em> ) , ( <em class="replaceable"><code>x2</code></em> , <em class="replaceable"><code>y2</code></em> ) )
+  ( <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em> ) , ( <em class="replaceable"><code>x2</code></em> , <em class="replaceable"><code>y2</code></em> )
+    <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em>   ,   <em class="replaceable"><code>x2</code></em> , <em class="replaceable"><code>y2</code></em>
+</pre>
+    <p>where <code class="literal">(<em class="replaceable"><code>x1</code></em>,<em class="replaceable"><code>y1</code></em>)</code> and <code class="literal">(<em class="replaceable"><code>x2</code></em>,<em class="replaceable"><code>y2</code></em>)</code> are the end points of the line segment.</p>
+    <p>Line segments are output using the first syntax.</p>
+  </div>
+  <div class="sect2" id="DATATYPE-GEOMETRIC-BOXES">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h3 class="title">8.8.4.&nbsp;Boxes <a href="#DATATYPE-GEOMETRIC-BOXES" class="id_link">#</a></h3>
+        </div>
+      </div>
+    </div><a id="id-1.5.7.16.9.2" class="indexterm" name="id-1.5.7.16.9.2"></a><a id="id-1.5.7.16.9.3" class="indexterm" name="id-1.5.7.16.9.3"></a>
+    <p>Boxes are represented by pairs of points that are opposite corners of the box. Values of type <code class="type">box</code> are specified using any of the following syntaxes:</p>
+    <pre class="synopsis">
+( ( <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em> ) , ( <em class="replaceable"><code>x2</code></em> , <em class="replaceable"><code>y2</code></em> ) )
+  ( <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em> ) , ( <em class="replaceable"><code>x2</code></em> , <em class="replaceable"><code>y2</code></em> )
+    <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em>   ,   <em class="replaceable"><code>x2</code></em> , <em class="replaceable"><code>y2</code></em>
+</pre>
+    <p>where <code class="literal">(<em class="replaceable"><code>x1</code></em>,<em class="replaceable"><code>y1</code></em>)</code> and <code class="literal">(<em class="replaceable"><code>x2</code></em>,<em class="replaceable"><code>y2</code></em>)</code> are any two opposite corners of the box.</p>
+    <p>Boxes are output using the second syntax.</p>
+    <p>Any two opposite corners can be supplied on input, but the values will be reordered as needed to store the upper right and lower left corners, in that order.</p>
+  </div>
+  <div class="sect2" id="DATATYPE-GEOMETRIC-PATHS">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h3 class="title">8.8.5.&nbsp;Paths <a href="#DATATYPE-GEOMETRIC-PATHS" class="id_link">#</a></h3>
+        </div>
+      </div>
+    </div><a id="id-1.5.7.16.10.2" class="indexterm" name="id-1.5.7.16.10.2"></a>
+    <p>Paths are represented by lists of connected points. Paths can be <em class="firstterm">open</em>, where the first and last points in the list are considered not connected, or <em class="firstterm">closed</em>, where the first and last points are considered connected.</p>
+    <p>Values of type <code class="type">path</code> are specified using any of the following syntaxes:</p>
+    <pre class="synopsis">
+[ ( <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em> ) , ... , ( <em class="replaceable"><code>xn</code></em> , <em class="replaceable"><code>yn</code></em> ) ]
+( ( <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em> ) , ... , ( <em class="replaceable"><code>xn</code></em> , <em class="replaceable"><code>yn</code></em> ) )
+  ( <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em> ) , ... , ( <em class="replaceable"><code>xn</code></em> , <em class="replaceable"><code>yn</code></em> )
+  ( <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em>   , ... ,   <em class="replaceable"><code>xn</code></em> , <em class="replaceable"><code>yn</code></em> )
+    <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em>   , ... ,   <em class="replaceable"><code>xn</code></em> , <em class="replaceable"><code>yn</code></em>
+</pre>
+    <p>where the points are the end points of the line segments comprising the path. Square brackets (<code class="literal">[]</code>) indicate an open path, while parentheses (<code class="literal">()</code>) indicate a closed path. When the outermost parentheses are omitted, as in the third through fifth syntaxes, a closed path is assumed.</p>
+    <p>Paths are output using the first or second syntax, as appropriate.</p>
+  </div>
+  <div class="sect2" id="DATATYPE-POLYGON">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h3 class="title">8.8.6.&nbsp;Polygons <a href="#DATATYPE-POLYGON" class="id_link">#</a></h3>
+        </div>
+      </div>
+    </div><a id="id-1.5.7.16.11.2" class="indexterm" name="id-1.5.7.16.11.2"></a>
+    <p>Polygons are represented by lists of points (the vertices of the polygon). Polygons are very similar to closed paths; the essential semantic difference is that a polygon is considered to include the area within it, while a path is not.</p>
+    <p>An important implementation difference between polygons and paths is that the stored representation of a polygon includes its smallest bounding box. This speeds up certain search operations, although computing the bounding box adds overhead while constructing new polygons.</p>
+    <p>Values of type <code class="type">polygon</code> are specified using any of the following syntaxes:</p>
+    <pre class="synopsis">
+( ( <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em> ) , ... , ( <em class="replaceable"><code>xn</code></em> , <em class="replaceable"><code>yn</code></em> ) )
+  ( <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em> ) , ... , ( <em class="replaceable"><code>xn</code></em> , <em class="replaceable"><code>yn</code></em> )
+  ( <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em>   , ... ,   <em class="replaceable"><code>xn</code></em> , <em class="replaceable"><code>yn</code></em> )
+    <em class="replaceable"><code>x1</code></em> , <em class="replaceable"><code>y1</code></em>   , ... ,   <em class="replaceable"><code>xn</code></em> , <em class="replaceable"><code>yn</code></em>
+</pre>
+    <p>where the points are the end points of the line segments comprising the boundary of the polygon.</p>
+    <p>Polygons are output using the first syntax.</p>
+  </div>
+  <div class="sect2" id="DATATYPE-CIRCLE">
+    <div class="titlepage">
+      <div>
+        <div>
+          <h3 class="title">8.8.7.&nbsp;Circles <a href="#DATATYPE-CIRCLE" class="id_link">#</a></h3>
+        </div>
+      </div>
+    </div><a id="id-1.5.7.16.12.2" class="indexterm" name="id-1.5.7.16.12.2"></a>
+    <p>Circles are represented by a center point and radius. Values of type <code class="type">circle</code> are specified using any of the following syntaxes:</p>
+    <pre class="synopsis">
+&lt; ( <em class="replaceable"><code>x</code></em> , <em class="replaceable"><code>y</code></em> ) , <em class="replaceable"><code>r</code></em> &gt;
+( ( <em class="replaceable"><code>x</code></em> , <em class="replaceable"><code>y</code></em> ) , <em class="replaceable"><code>r</code></em> )
+  ( <em class="replaceable"><code>x</code></em> , <em class="replaceable"><code>y</code></em> ) , <em class="replaceable"><code>r</code></em>
+    <em class="replaceable"><code>x</code></em> , <em class="replaceable"><code>y</code></em>   , <em class="replaceable"><code>r</code></em>
+</pre>
+    <p>where <code class="literal">(<em class="replaceable"><code>x</code></em>,<em class="replaceable"><code>y</code></em>)</code> is the center point and <em class="replaceable"><code>r</code></em> is the radius of the circle.</p>
+    <p>Circles are output using the first syntax.</p>
+  </div>
+</div>
+<div class="navfooter">
+  <hr />
+  <table width="100%" summary="Navigation footer">
+    <tr>
+      <td width="40%" align="left"><a accesskey="p" href="datatype-enum.html" title="8.7.&nbsp;Enumerated Types">Prev</a>&nbsp;</td>
+      <td width="20%" align="center"><a accesskey="u" href="datatype.html" title="Chapter&nbsp;8.&nbsp;Data Types">Up</a></td>
+      <td width="40%" align="right">&nbsp;<a accesskey="n" href="datatype-net-types.html" title="8.9.&nbsp;Network Address Types">Next</a></td>
+    </tr>
+    <tr>
+      <td width="40%" align="left" valign="top">8.7.&nbsp;Enumerated Types&nbsp;</td>
+      <td width="20%" align="center"><a accesskey="h" href="index.html" title="PostgreSQL 18.4 Documentation">Home</a></td>
+      <td width="40%" align="right" valign="top">&nbsp;8.9.&nbsp;Network Address Types</td>
+    </tr>
+  </table>
+</div>
+
+          </div>
+          
+            <div id="docComments">
+              <h2>Submit correction</h2>
+              <p>
+              If you see anything in the documentation that is not correct, does not match
+              your experience with the particular feature or requires further clarification,
+              please use
+              <a href="/account/comments/new/18/datatype-geometric.html/" rel="nofollow">this form</a>
+              to report a documentation issue.
+              </p>
+            </div>
+          
+        </div> <!-- pgContentWrap -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <!-- Copyright -->
+      <div class="container">
+        <a href="/about/policies/">Policies</a> |
+        <a href="/about/policies/coc/">Code of Conduct</a> |
+        <a href="/about/">About PostgreSQL</a> |
+        <a href="/about/contact/">Contact</a><br/>
+        <p>Copyright &copy; 1996-2026 The PostgreSQL Global Development Group</p>
+      </div>
+    </footer>
+    <script src="/media/js/main.js?73aab745"></script>
+
+  </body>
+</html>

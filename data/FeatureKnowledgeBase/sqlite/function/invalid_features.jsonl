@@ -1,0 +1,1 @@
+{"feature_id": "sqlite.function.json_extract", "name": "JSON_EXTRACT", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}

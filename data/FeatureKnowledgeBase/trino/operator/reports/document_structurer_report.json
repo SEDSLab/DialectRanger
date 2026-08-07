@@ -1,0 +1,106 @@
+{
+  "dbms": "trino",
+  "feature_type": "operator",
+  "processed_pages": 10,
+  "skipped_pages": 0,
+  "total_sections": 119,
+  "total_blocks": 2817,
+  "section_sources": {
+    "heading_tree": 119
+  },
+  "block_types": {
+    "heading": 119,
+    "list": 969,
+    "signature": 880,
+    "code": 101,
+    "paragraph": 139,
+    "definition_term": 210,
+    "definition_description": 225,
+    "table": 16,
+    "table_row": 154,
+    "note": 3,
+    "warning": 1
+  },
+  "pages": [
+    {
+      "page_id": "trino_current_list",
+      "sections": 28,
+      "blocks": 969,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "trino_current_list_by_topic",
+      "sections": 32,
+      "blocks": 957,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "trino_current_array",
+      "sections": 4,
+      "blocks": 109,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 7
+    },
+    {
+      "page_id": "trino_current_comparison",
+      "sections": 16,
+      "blocks": 159,
+      "anchors": 0,
+      "tables": 5,
+      "code_blocks": 43
+    },
+    {
+      "page_id": "trino_current_conditional",
+      "sections": 7,
+      "blocks": 71,
+      "anchors": 0,
+      "tables": 1,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "trino_current_datetime",
+      "sections": 12,
+      "blocks": 241,
+      "anchors": 0,
+      "tables": 6,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "trino_current_logical",
+      "sections": 3,
+      "blocks": 32,
+      "anchors": 0,
+      "tables": 3,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "trino_current_map",
+      "sections": 3,
+      "blocks": 44,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "trino_current_math",
+      "sections": 10,
+      "blocks": 134,
+      "anchors": 0,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "trino_current_string",
+      "sections": 4,
+      "blocks": 101,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    }
+  ]
+}

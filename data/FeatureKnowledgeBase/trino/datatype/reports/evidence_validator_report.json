@@ -1,0 +1,46 @@
+{
+  "dbms": "trino",
+  "feature_type": "datatype",
+  "total_drafts": 27,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 18,
+  "invalid_features": 9,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 27,
+    "no_description_claims": 10,
+    "no_valid_syntax": 9,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 9
+  },
+  "sample_clean_features": [],
+  "sample_warning_features": [
+    "trino.datatype.bigint",
+    "trino.datatype.hyperloglog",
+    "trino.datatype.int",
+    "trino.datatype.ipaddress",
+    "trino.datatype.map",
+    "trino.datatype.number",
+    "trino.datatype.p4hyperloglog",
+    "trino.datatype.qdigest",
+    "trino.datatype.real",
+    "trino.datatype.row"
+  ],
+  "sample_invalid_features": [
+    "trino.datatype.array",
+    "trino.datatype.boolean",
+    "trino.datatype.char",
+    "trino.datatype.date",
+    "trino.datatype.decimal",
+    "trino.datatype.double",
+    "trino.datatype.integer",
+    "trino.datatype.json",
+    "trino.datatype.time"
+  ],
+  "generated_at": "2026-08-06T19:59:15.533717+08:00"
+}

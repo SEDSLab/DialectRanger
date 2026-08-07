@@ -1,0 +1,27 @@
+{"feature_id": "trino.datatype.array", "name": "array", "status": "invalid", "reason": ["no_valid_syntax", "missing_examples", "syntax[0] missing evidence_refs — removed", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.datatype.bigint", "name": "bigint", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.datatype.boolean", "name": "boolean", "status": "invalid", "reason": ["no_valid_syntax", "missing_examples", "syntax[0] missing evidence_refs — removed", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.datatype.char", "name": "char", "status": "invalid", "reason": ["no_valid_syntax", "missing_examples", "syntax[0] missing evidence_refs — removed", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.datatype.date", "name": "date", "status": "invalid", "reason": ["no_valid_syntax", "missing_examples", "syntax[0] missing evidence_refs — removed", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.datatype.decimal", "name": "decimal", "status": "invalid", "reason": ["no_valid_syntax", "missing_examples", "syntax[0] missing evidence_refs — removed", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.datatype.double", "name": "double", "status": "invalid", "reason": ["no_valid_syntax", "missing_examples", "syntax[0] missing evidence_refs — removed", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.datatype.hyperloglog", "name": "hyperloglog", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.datatype.int", "name": "int", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.datatype.integer", "name": "integer", "status": "invalid", "reason": ["no_valid_syntax", "missing_examples", "syntax[0] missing evidence_refs — removed", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.datatype.ipaddress", "name": "ipaddress", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.datatype.json", "name": "json", "status": "invalid", "reason": ["no_valid_syntax", "missing_examples", "syntax[0] missing evidence_refs — removed", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.datatype.map", "name": "map", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.datatype.number", "name": "number", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "trino.datatype.p4hyperloglog", "name": "p4hyperloglog", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.datatype.qdigest", "name": "qdigest", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.datatype.real", "name": "real", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.datatype.row", "name": "row", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.datatype.setdigest", "name": "setdigest", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.datatype.time", "name": "time", "status": "invalid", "reason": ["no_valid_syntax", "missing_examples", "syntax[0] missing evidence_refs — removed", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "trino.datatype.time with time zone", "name": "time with time zone", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.datatype.timestamp", "name": "timestamp", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.datatype.timestamp with time zone", "name": "timestamp with time zone", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.datatype.uuid", "name": "uuid", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.datatype.varbinary", "name": "varbinary", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.datatype.varchar", "name": "varchar", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "trino.datatype.variant", "name": "variant", "status": "needs_review", "reason": ["missing_examples"], "details": []}

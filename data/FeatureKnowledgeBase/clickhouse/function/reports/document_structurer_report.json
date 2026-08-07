@@ -1,0 +1,416 @@
+{
+  "dbms": "clickhouse",
+  "feature_type": "function",
+  "processed_pages": 49,
+  "skipped_pages": 0,
+  "total_sections": 1471,
+  "total_blocks": 19415,
+  "section_sources": {
+    "fallback": 51,
+    "heading_tree": 1420
+  },
+  "block_types": {
+    "anchor": 307,
+    "heading": 1420,
+    "code": 12174,
+    "list": 3236,
+    "paragraph": 49,
+    "table": 20,
+    "table_row": 248,
+    "signature": 1961
+  },
+  "pages": [
+    {
+      "page_id": "clickhouse_current_functions",
+      "sections": 4,
+      "blocks": 44,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "clickhouse_current_functions",
+      "sections": 4,
+      "blocks": 44,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "clickhouse_current_index",
+      "sections": 7,
+      "blocks": 16,
+      "anchors": 9,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "clickhouse_current_regular_functions_index",
+      "sections": 3,
+      "blocks": 52,
+      "anchors": 6,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "clickhouse_current_tuple_functions",
+      "sections": 25,
+      "blocks": 324,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 148
+    },
+    {
+      "page_id": "clickhouse_current_array_functions",
+      "sections": 109,
+      "blocks": 1564,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 946
+    },
+    {
+      "page_id": "clickhouse_current_type_conversion_functions",
+      "sections": 184,
+      "blocks": 2941,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 1892
+    },
+    {
+      "page_id": "clickhouse_current_date_time_functions",
+      "sections": 129,
+      "blocks": 2056,
+      "anchors": 6,
+      "tables": 8,
+      "code_blocks": 1378
+    },
+    {
+      "page_id": "clickhouse_current_logical_functions",
+      "sections": 5,
+      "blocks": 99,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 61
+    },
+    {
+      "page_id": "clickhouse_current_array_join",
+      "sections": 2,
+      "blocks": 25,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 17
+    },
+    {
+      "page_id": "clickhouse_current_ai_functions",
+      "sections": 15,
+      "blocks": 223,
+      "anchors": 6,
+      "tables": 4,
+      "code_blocks": 140
+    },
+    {
+      "page_id": "clickhouse_current_arithmetic_functions",
+      "sections": 32,
+      "blocks": 369,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 250
+    },
+    {
+      "page_id": "clickhouse_current_bit_functions",
+      "sections": 15,
+      "blocks": 186,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 118
+    },
+    {
+      "page_id": "clickhouse_current_bitmap_functions",
+      "sections": 21,
+      "blocks": 201,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 102
+    },
+    {
+      "page_id": "clickhouse_current_comparison_functions",
+      "sections": 26,
+      "blocks": 193,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 105
+    },
+    {
+      "page_id": "clickhouse_current_conditional_functions",
+      "sections": 11,
+      "blocks": 135,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 91
+    },
+    {
+      "page_id": "clickhouse_current_distance_functions",
+      "sections": 22,
+      "blocks": 432,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 248
+    },
+    {
+      "page_id": "clickhouse_current_embedded_dict_functions",
+      "sections": 12,
+      "blocks": 108,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 40
+    },
+    {
+      "page_id": "clickhouse_current_encoding_functions",
+      "sections": 17,
+      "blocks": 286,
+      "anchors": 6,
+      "tables": 2,
+      "code_blocks": 191
+    },
+    {
+      "page_id": "clickhouse_current_encryption_functions",
+      "sections": 7,
+      "blocks": 192,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 102
+    },
+    {
+      "page_id": "clickhouse_current_ext_dict_functions",
+      "sections": 46,
+      "blocks": 925,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 599
+    },
+    {
+      "page_id": "clickhouse_current_files",
+      "sections": 2,
+      "blocks": 17,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "clickhouse_current_financial_functions",
+      "sections": 6,
+      "blocks": 91,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 47
+    },
+    {
+      "page_id": "clickhouse_current_functions_for_nulls",
+      "sections": 11,
+      "blocks": 107,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 67
+    },
+    {
+      "page_id": "clickhouse_current_hash_functions",
+      "sections": 69,
+      "blocks": 738,
+      "anchors": 6,
+      "tables": 1,
+      "code_blocks": 471
+    },
+    {
+      "page_id": "clickhouse_current_in_functions",
+      "sections": 2,
+      "blocks": 8,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "clickhouse_current_introspection",
+      "sections": 9,
+      "blocks": 104,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 66
+    },
+    {
+      "page_id": "clickhouse_current_ip_address_functions",
+      "sections": 25,
+      "blocks": 271,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 152
+    },
+    {
+      "page_id": "clickhouse_current_json_functions",
+      "sections": 56,
+      "blocks": 601,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 382
+    },
+    {
+      "page_id": "clickhouse_current_machine_learning_functions",
+      "sections": 11,
+      "blocks": 121,
+      "anchors": 6,
+      "tables": 1,
+      "code_blocks": 71
+    },
+    {
+      "page_id": "clickhouse_current_math_functions",
+      "sections": 42,
+      "blocks": 470,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 325
+    },
+    {
+      "page_id": "clickhouse_current_nlp_functions",
+      "sections": 9,
+      "blocks": 98,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 60
+    },
+    {
+      "page_id": "clickhouse_current_numeric_indexed_vector_functions",
+      "sections": 20,
+      "blocks": 224,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 143
+    },
+    {
+      "page_id": "clickhouse_current_other_functions",
+      "sections": 134,
+      "blocks": 1568,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 1025
+    },
+    {
+      "page_id": "clickhouse_current_random_functions",
+      "sections": 21,
+      "blocks": 229,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 138
+    },
+    {
+      "page_id": "clickhouse_current_overview",
+      "sections": 11,
+      "blocks": 36,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 15
+    },
+    {
+      "page_id": "clickhouse_current_rounding_functions",
+      "sections": 10,
+      "blocks": 147,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 90
+    },
+    {
+      "page_id": "clickhouse_current_splitting_merging_functions",
+      "sections": 14,
+      "blocks": 341,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 235
+    },
+    {
+      "page_id": "clickhouse_current_string_functions",
+      "sections": 98,
+      "blocks": 1080,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 687
+    },
+    {
+      "page_id": "clickhouse_current_string_replace_functions",
+      "sections": 12,
+      "blocks": 209,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 149
+    },
+    {
+      "page_id": "clickhouse_current_string_search_functions",
+      "sections": 63,
+      "blocks": 927,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 621
+    },
+    {
+      "page_id": "clickhouse_current_time_series_functions",
+      "sections": 21,
+      "blocks": 324,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 216
+    },
+    {
+      "page_id": "clickhouse_current_time_window_functions",
+      "sections": 9,
+      "blocks": 116,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 67
+    },
+    {
+      "page_id": "clickhouse_current_tuple_map_functions",
+      "sections": 26,
+      "blocks": 347,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 209
+    },
+    {
+      "page_id": "clickhouse_current_ulid_functions",
+      "sections": 4,
+      "blocks": 30,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 13
+    },
+    {
+      "page_id": "clickhouse_current_uniqtheta_functions",
+      "sections": 4,
+      "blocks": 26,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "clickhouse_current_url_functions",
+      "sections": 43,
+      "blocks": 359,
+      "anchors": 6,
+      "tables": 1,
+      "code_blocks": 201
+    },
+    {
+      "page_id": "clickhouse_current_uuid_functions",
+      "sections": 17,
+      "blocks": 198,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 130
+    },
+    {
+      "page_id": "clickhouse_current_udf",
+      "sections": 26,
+      "blocks": 213,
+      "anchors": 16,
+      "tables": 2,
+      "code_blocks": 115
+    }
+  ]
+}

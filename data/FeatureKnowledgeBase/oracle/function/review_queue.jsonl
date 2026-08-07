@@ -1,0 +1,318 @@
+{"feature_id": "oracle.function.abs", "name": "ABS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.acos", "name": "ACOS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.add_months", "name": "ADD_MONTHS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.aggregate", "name": "AGGREGATE", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "oracle.function.any_value", "name": "ANY_VALUE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.approx_count", "name": "APPROX_COUNT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.approx_count_distinct", "name": "APPROX_COUNT_DISTINCT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.approx_count_distinct_agg", "name": "APPROX_COUNT_DISTINCT_AGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.approx_count_distinct_detail", "name": "APPROX_COUNT_DISTINCT_DETAIL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.approx_median", "name": "APPROX_MEDIAN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.approx_percentile", "name": "APPROX_PERCENTILE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.approx_percentile_agg", "name": "APPROX_PERCENTILE_AGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.approx_percentile_detail", "name": "APPROX_PERCENTILE_DETAIL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.approx_rank", "name": "APPROX_RANK", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.approx_sum", "name": "APPROX_SUM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.ascii", "name": "ASCII", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.asciistr", "name": "ASCIISTR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.asin", "name": "ASIN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.asterisk", "name": "ASTERISK", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims", "alias_like_feature"], "details": ["signature: empty string"]}
+{"feature_id": "oracle.function.atan", "name": "ATAN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.atan2", "name": "ATAN2", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.avg", "name": "avg", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "oracle.function.bfilename", "name": "BFILENAME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.bin_to_num", "name": "BIN_TO_NUM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.bit_and_agg", "name": "BIT_AND_AGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.bit_or_agg", "name": "BIT_OR_AGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.bit_xor_agg", "name": "BIT_XOR_AGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.bitand", "name": "BITAND", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.boolean_and_agg", "name": "BOOLEAN_AND_AGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.boolean_or_agg", "name": "BOOLEAN_OR_AGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.calendar", "name": "CALENDAR", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.calendar_add_x_periods", "name": "CALENDAR_ADD_X_PERIODS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.calendar_start_end", "name": "CALENDAR_START_END", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.calendar_x_of_y", "name": "CALENDAR_X_OF_Y", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.cardinality", "name": "CARDINALITY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.ceil", "name": "CEIL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.chartorowid", "name": "CHARTOROWID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.checksum", "name": "CHECKSUM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.chr", "name": "CHR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.clause", "name": "CLAUSE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.cluster_details", "name": "CLUSTER_DETAILS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.cluster_distance", "name": "CLUSTER_DISTANCE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.cluster_id", "name": "CLUSTER_ID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.cluster_probability", "name": "CLUSTER_PROBABILITY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.cluster_set", "name": "CLUSTER_SET", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.coalesce", "name": "COALESCE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.collation", "name": "COLLATION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.collect", "name": "COLLECT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.compose", "name": "COMPOSE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.con_dbid_to_id", "name": "CON_DBID_TO_ID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.con_guid_to_id", "name": "CON_GUID_TO_ID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.con_name_to_id", "name": "CON_NAME_TO_ID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.con_uid_to_id", "name": "CON_UID_TO_ID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.concat", "name": "CONCAT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.consortium", "name": "CONSORTIUM", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.convert", "name": "CONVERT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.corr", "name": "CORR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.cos", "name": "COS", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.cosh", "name": "COSH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.cosine_distance", "name": "COSINE_DISTANCE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.count", "name": "COUNT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.covar_pop", "name": "COVAR_POP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.covar_samp", "name": "COVAR_SAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.cube_table", "name": "CUBE_TABLE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "oracle.function.cume_dist", "name": "CUME_DIST", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.cv", "name": "CV", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.data", "name": "DATA", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.dataobj_to_mat_partition", "name": "DATAOBJ_TO_MAT_PARTITION", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.dataobj_to_partition", "name": "DATAOBJ_TO_PARTITION", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.date", "name": "DATE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.dbtimezone", "name": "DBTIMEZONE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.decode", "name": "DECODE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.decompose", "name": "DECOMPOSE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.dense_rank", "name": "DENSE_RANK", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.depth", "name": "DEPTH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.deref", "name": "DEREF", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.domain_check", "name": "DOMAIN_CHECK", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.domain_check_type", "name": "DOMAIN_CHECK_TYPE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.domain_display", "name": "DOMAIN_DISPLAY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.domain_name", "name": "DOMAIN_NAME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.domain_order", "name": "DOMAIN_ORDER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.dump", "name": "DUMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.every", "name": "EVERY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.existsnode", "name": "EXISTSNODE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.exp", "name": "EXP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.expression", "name": "EXPRESSION", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.extract", "name": "EXTRACT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.extractvalue", "name": "EXTRACTVALUE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.feature_compare", "name": "FEATURE_COMPARE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.feature_details", "name": "FEATURE_DETAILS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.feature_id", "name": "FEATURE_ID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.feature_set", "name": "FEATURE_SET", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.feature_value", "name": "FEATURE_VALUE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.first", "name": "FIRST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.fiscal", "name": "FISCAL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.fiscal_add_x_periods", "name": "FISCAL_ADD_X_PERIODS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.fiscal_start_end", "name": "FISCAL_START_END", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.fiscal_x_of_y", "name": "FISCAL_X_OF_Y", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.floor", "name": "FLOOR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.from_tz", "name": "FROM_TZ", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.from_vector", "name": "FROM_VECTOR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.function", "name": "function", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.greatest", "name": "GREATEST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.group_id", "name": "GROUP_ID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.grouping", "name": "GROUPING", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.grouping_id", "name": "GROUPING_ID", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.hextoraw", "name": "HEXTORAW", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.initcap", "name": "INITCAP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.inner_product", "name": "INNER_PRODUCT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.instr", "name": "INSTR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.is_uuid", "name": "IS_UUID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.iteration_number", "name": "ITERATION_NUMBER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.join", "name": "JOIN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.json_arrayagg", "name": "JSON_ARRAYAGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.json_dataguide", "name": "JSON_DATAGUIDE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.json_object", "name": "JSON_OBJECT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.json_objectagg", "name": "JSON_OBJECTAGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.json_query", "name": "JSON_QUERY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.json_table", "name": "JSON_TABLE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.json_transform", "name": "JSON_TRANSFORM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.json_value", "name": "JSON_VALUE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.kurtosis_pop", "name": "KURTOSIS_POP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.kurtosis_samp", "name": "KURTOSIS_SAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.l1_distance", "name": "L1_DISTANCE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.l2_distance", "name": "L2_DISTANCE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.lag", "name": "LAG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.last", "name": "LAST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.last_day", "name": "LAST_DAY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.lead", "name": "LEAD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.least", "name": "LEAST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.length", "name": "LENGTH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.listagg", "name": "LISTAGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.ln", "name": "LN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.lnnvl", "name": "LNNVL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.localtimestamp", "name": "LOCALTIMESTAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.log", "name": "LOG", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.lower", "name": "LOWER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.lpad", "name": "LPAD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.ltrim", "name": "LTRIM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.make_ref", "name": "MAKE_REF", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.max", "name": "MAX", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "oracle.function.median", "name": "MEDIAN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.min", "name": "MIN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.mod", "name": "MOD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.months_between", "name": "MONTHS_BETWEEN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.nanvl", "name": "NANVL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.nchr", "name": "NCHR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.new_time", "name": "NEW_TIME", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.next_day", "name": "NEXT_DAY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.nls_charset_decl_len", "name": "NLS_CHARSET_DECL_LEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.nls_charset_id", "name": "NLS_CHARSET_ID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.nls_charset_name", "name": "NLS_CHARSET_NAME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.nls_collation_id", "name": "NLS_COLLATION_ID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.nls_collation_name", "name": "NLS_COLLATION_NAME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.nls_initcap", "name": "NLS_INITCAP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.nls_lower", "name": "NLS_LOWER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.nls_upper", "name": "NLS_UPPER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.nlssort", "name": "NLSSORT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.notation", "name": "NOTATION", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.ntile", "name": "NTILE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.nullif", "name": "NULLIF", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.numtodsinterval", "name": "NUMTODSINTERVAL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.numtoyminterval", "name": "NUMTOYMINTERVAL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.nvl", "name": "NVL", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.nvl2", "name": "NVL2", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.ora_dm_partition_name", "name": "ORA_DM_PARTITION_NAME", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.ora_dst_affected", "name": "ORA_DST_AFFECTED", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.ora_dst_convert", "name": "ORA_DST_CONVERT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.ora_dst_error", "name": "ORA_DST_ERROR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.ora_hash", "name": "ORA_HASH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.ora_invoking_user", "name": "ORA_INVOKING_USER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.ora_invoking_userid", "name": "ORA_INVOKING_USERID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.path", "name": "PATH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.percent_rank", "name": "PERCENT_RANK", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.percentile_cont", "name": "PERCENTILE_CONT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.percentile_disc", "name": "PERCENTILE_DISC", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.power", "name": "POWER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.powermultiset", "name": "POWERMULTISET", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.powermultiset_by_cardinality", "name": "POWERMULTISET_BY_CARDINALITY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.prediction", "name": "PREDICTION", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.prediction_bounds", "name": "PREDICTION_BOUNDS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.prediction_cost", "name": "PREDICTION_COST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.prediction_details", "name": "PREDICTION_DETAILS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.prediction_probability", "name": "PREDICTION_PROBABILITY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.prediction_set", "name": "PREDICTION_SET", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.presentnnv", "name": "PRESENTNNV", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.presentv", "name": "PRESENTV", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.previous", "name": "PREVIOUS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.pseudocolumn", "name": "PSEUDOCOLUMN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.query", "name": "QUERY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.rank", "name": "RANK", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.ratio_to_report", "name": "RATIO_TO_REPORT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.raw_to_uuid", "name": "RAW_TO_UUID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.rawtohex", "name": "RAWTOHEX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.rawtonhex", "name": "RAWTONHEX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.ref", "name": "REF", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.reftohex", "name": "REFTOHEX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.regexp_count", "name": "REGEXP_COUNT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.regexp_instr", "name": "REGEXP_INSTR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.regexp_replace", "name": "REGEXP_REPLACE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.regexp_substr", "name": "REGEXP_SUBSTR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.regr_", "name": "REGR_", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.remainder", "name": "REMAINDER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.replace", "name": "REPLACE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.retail", "name": "RETAIL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.retail_add_x_periods", "name": "RETAIL_ADD_X_PERIODS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.retail_start_end", "name": "RETAIL_START_END", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.retail_x_of_y", "name": "RETAIL_X_OF_Y", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.round", "name": "ROUND", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.row_number", "name": "ROW_NUMBER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.rowidtochar", "name": "ROWIDTOCHAR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.rowidtonchar", "name": "ROWIDTONCHAR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.rpad", "name": "RPAD", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.rtrim", "name": "RTRIM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.scn_to_timestamp", "name": "SCN_TO_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.sequence", "name": "SEQUENCE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.sessiontimezone", "name": "SESSIONTIMEZONE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.sign", "name": "SIGN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.sin", "name": "SIN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.sinh", "name": "SINH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.skewness_pop", "name": "SKEWNESS_POP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.skewness_samp", "name": "SKEWNESS_SAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.soundex", "name": "SOUNDEX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.sqrt", "name": "SQRT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.standard_hash", "name": "STANDARD_HASH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.stats_binomial_test", "name": "STATS_BINOMIAL_TEST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.stats_crosstab", "name": "STATS_CROSSTAB", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.stats_f_test", "name": "STATS_F_TEST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.stats_ks_test", "name": "STATS_KS_TEST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.stats_mode", "name": "STATS_MODE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.stats_mw_test", "name": "STATS_MW_TEST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.stats_one_way_anova", "name": "STATS_ONE_WAY_ANOVA", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.stats_wsr_test", "name": "STATS_WSR_TEST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.stddev", "name": "STDDEV", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.stddev_pop", "name": "STDDEV_POP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.stddev_samp", "name": "STDDEV_SAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.substr", "name": "SUBSTR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.sum", "name": "SUM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.syntax", "name": "SYNTAX", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.sys_connect_by_path", "name": "SYS_CONNECT_BY_PATH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.sys_context", "name": "SYS_CONTEXT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.sys_dburigen", "name": "SYS_DBURIGEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.sys_extract_utc", "name": "SYS_EXTRACT_UTC", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.sys_guid", "name": "SYS_GUID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.sys_op_zone_id", "name": "SYS_OP_ZONE_ID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.sys_typeid", "name": "SYS_TYPEID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.sys_xmlagg", "name": "SYS_XMLAGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.sys_xmlgen", "name": "SYS_XMLGEN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.sysdate", "name": "SYSDATE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.systimestamp", "name": "SYSTIMESTAMP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.tan", "name": "TAN", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.tanh", "name": "TANH", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.timestamp", "name": "TIMESTAMP", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.timestamp_to_scn", "name": "TIMESTAMP_TO_SCN", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.to_binary_double", "name": "TO_BINARY_DOUBLE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.to_binary_float", "name": "TO_BINARY_FLOAT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.to_blob", "name": "TO_BLOB", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.to_char", "name": "TO_CHAR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.to_clob", "name": "TO_CLOB", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.to_date", "name": "TO_DATE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.to_dsinterval", "name": "TO_DSINTERVAL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.to_lob", "name": "TO_LOB", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.to_multi_byte", "name": "TO_MULTI_BYTE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.to_nchar", "name": "TO_NCHAR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.to_nclob", "name": "TO_NCLOB", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.to_number", "name": "TO_NUMBER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.to_single_byte", "name": "TO_SINGLE_BYTE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.to_timestamp", "name": "TO_TIMESTAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.to_timestamp_tz", "name": "TO_TIMESTAMP_TZ", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.to_vector", "name": "TO_VECTOR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.to_yminterval", "name": "TO_YMINTERVAL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.translate", "name": "TRANSLATE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.treat", "name": "TREAT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.trim", "name": "TRIM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.trunc", "name": "TRUNC", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.tz_offset", "name": "TZ_OFFSET", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.uid", "name": "UID", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.unistr", "name": "UNISTR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.upper", "name": "UPPER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.user", "name": "USER", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.userenv", "name": "USERENV", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.uuid", "name": "UUID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.uuid_to_raw", "name": "UUID_TO_RAW", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.validate_conversion", "name": "VALIDATE_CONVERSION", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.value", "name": "VALUE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "oracle.function.var_pop", "name": "VAR_POP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.var_samp", "name": "VAR_SAMP", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.variance", "name": "VARIANCE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.vector", "name": "VECTOR", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.vector_chunks", "name": "VECTOR_CHUNKS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.vector_dimension_count", "name": "VECTOR_DIMENSION_COUNT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.vector_dimension_format", "name": "VECTOR_DIMENSION_FORMAT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.vector_dims", "name": "VECTOR_DIMS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.vector_distance", "name": "VECTOR_DISTANCE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.vector_embedding", "name": "VECTOR_EMBEDDING", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.vector_norm", "name": "VECTOR_NORM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.vector_serialize", "name": "VECTOR_SERIALIZE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.vsize", "name": "VSIZE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.width_bucket", "name": "WIDTH_BUCKET", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmlagg", "name": "XMLAGG", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmlcast", "name": "XMLCAST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmlcdata", "name": "XMLCDATA", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmlcolattval", "name": "XMLCOLATTVAL", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmlcomment", "name": "XMLCOMMENT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmlconcat", "name": "XMLCONCAT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmldiff", "name": "XMLDIFF", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmlelement", "name": "XMLELEMENT", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmlexists", "name": "XMLEXISTS", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmlforest", "name": "XMLFOREST", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmlisvalid", "name": "XMLISVALID", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmlparse", "name": "XMLPARSE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmlpatch", "name": "XMLPATCH", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmlpi", "name": "XMLPI", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmlquery", "name": "XMLQUERY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmlsequence", "name": "XMLSEQUENCE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmlserialize", "name": "XMLSERIALIZE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmltable", "name": "XMLTABLE", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "oracle.function.xmltransform", "name": "XMLTRANSFORM", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}

@@ -1,0 +1,84 @@
+{"feature_id": "sqlserver.function.app_name", "name": "app_name", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.applock_mode", "name": "applock_mode", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.applock_test", "name": "applock_test", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.assemblyproperty", "name": "assemblyproperty", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.atn2", "name": "atn2", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.bit", "name": "BIT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.category", "name": "CATEGORY", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.century", "name": "CENTURY", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.certprivatekey", "name": "certprivatekey", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.change_tracking_min_valid_version", "name": "CHANGE_TRACKING_MIN_VALID_VERSION", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.changetable", "name": "CHANGETABLE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.check", "name": "check", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.col_length", "name": "col_length", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.convert", "name": "convert", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "sqlserver.function.curdate", "name": "CURDATE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.current_user", "name": "current_user", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.cursor_status", "name": "cursor_status", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.curtime", "name": "CURTIME", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.datalength", "name": "DATALENGTH", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "sqlserver.function.date", "name": "date", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.dateadd", "name": "dateadd", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "sqlserver.function.datediff", "name": "datediff", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "sqlserver.function.datefromparts", "name": "datefromparts", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.datetime2fromparts", "name": "datetime2fromparts", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.datetimefromparts", "name": "datetimefromparts", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.datetimeoffsetfromparts", "name": "datetimeoffsetfromparts", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.file_name", "name": "file_name", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.filegroup_id", "name": "filegroup_id", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.filegroup_name", "name": "filegroup_name", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.fileproperty", "name": "fileproperty", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.fn_syscollector_get_execution_details", "name": "fn_syscollector_get_execution_details", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims", "alias_like_feature"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.fn_syscollector_get_execution_stats", "name": "fn_syscollector_get_execution_stats", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims", "alias_like_feature"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.fulltextcatalogproperty", "name": "fulltextcatalogproperty", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.fulltextserviceproperty", "name": "fulltextserviceproperty", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.function_name", "name": "function_name", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.generate_series", "name": "generate_series", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.getutcdate", "name": "getutcdate", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.has_perms_by_name", "name": "has_perms_by_name", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.index_col", "name": "index_col", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.is_member", "name": "is_member", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.is_rolemember", "name": "is_rolemember", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.is_srvrolemember", "name": "is_srvrolemember", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.isdate", "name": "isdate", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "sqlserver.function.isnull", "name": "isnull", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "long_example"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.log10", "name": "log10", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.loginproperty", "name": "loginproperty", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.min_active_rowversion", "name": "min_active_rowversion", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "sqlserver.function.newid", "name": "newid", "status": "needs_review", "reason": ["no_description_claims", "long_example"], "details": []}
+{"feature_id": "sqlserver.function.object_definition", "name": "object_definition", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.object_id", "name": "object_id", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "sqlserver.function.opendatasource", "name": "opendatasource", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.openquery", "name": "openquery", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.openrowset", "name": "openrowset", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.order", "name": "order", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.original_db_name", "name": "original_db_name", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.over", "name": "over", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.parse", "name": "parse", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.parsename", "name": "parsename", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.patindex", "name": "PATINDEX", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.pwdcompare", "name": "pwdcompare", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.pwdencrypt", "name": "pwdencrypt", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.s", "name": "S", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.serverproperty", "name": "serverproperty", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.session_user", "name": "session_user", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.smalldatetimefromparts", "name": "smalldatetimefromparts", "status": "needs_review", "reason": ["missing_examples", "no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.sql_variant", "name": "sql_variant", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.sql_variant_property", "name": "sql_variant_property", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.sqrt", "name": "sqrt", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.stats_date", "name": "stats_date", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.substring", "name": "SUBSTRING", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "sqlserver.function.suser_id", "name": "suser_id", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.switchoffset", "name": "switchoffset", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.sysdatetime", "name": "sysdatetime", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.sysdatetimeoffset", "name": "sysdatetimeoffset", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.system_user", "name": "system_user", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.textvalid", "name": "textvalid", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples", "no_description_claims"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.time", "name": "time", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.timefromparts", "name": "timefromparts", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.todatetimeoffset", "name": "todatetimeoffset", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlserver.function.try_convert", "name": "try_convert", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.try_parse", "name": "try_parse", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlserver.function.unicode", "name": "unicode", "status": "needs_review", "reason": ["long_example"], "details": []}
+{"feature_id": "sqlserver.function.user_id", "name": "user_id", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax"], "details": ["signature: empty string"]}
+{"feature_id": "sqlserver.function.vector_search", "name": "VECTOR_SEARCH", "status": "needs_review", "reason": ["missing_examples"], "details": []}

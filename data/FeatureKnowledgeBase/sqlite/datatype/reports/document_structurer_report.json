@@ -1,0 +1,29 @@
+{
+  "dbms": "sqlite",
+  "feature_type": "datatype",
+  "processed_pages": 1,
+  "skipped_pages": 0,
+  "total_sections": 21,
+  "total_blocks": 139,
+  "section_sources": {
+    "fallback": 1,
+    "heading_tree": 20
+  },
+  "block_types": {
+    "list": 50,
+    "anchor": 10,
+    "heading": 20,
+    "paragraph": 53,
+    "note": 6
+  },
+  "pages": [
+    {
+      "page_id": "sqlite_current_datatype3",
+      "sections": 21,
+      "blocks": 139,
+      "anchors": 10,
+      "tables": 0,
+      "code_blocks": 0
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "dbms": "sqlserver",
+  "feature_type": "function",
+  "mode": "shadow",
+  "backend": "mock",
+  "total_features": 192,
+  "semantic_drafts": 192,
+  "status_counts": {
+    "extracted": 172,
+    "partial": 18,
+    "insufficient_context": 2,
+    "no_context": 0,
+    "skipped": 0,
+    "validation_failed": 0
+  },
+  "description_claims": 480,
+  "constraints": 200,
+  "example_roles": 350,
+  "invalid_evidence_refs": 0,
+  "merge_into_kb": false,
+  "generated_at": "2026-08-06T19:56:09.806487+08:00"
+}

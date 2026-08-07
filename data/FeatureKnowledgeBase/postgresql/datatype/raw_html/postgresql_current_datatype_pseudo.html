@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>PostgreSQL: Documentation: 18: 8.21. Pseudo-Types</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8" />
+   
+  <meta name="theme-color" content="#336791"/>
+  <meta name="copyright" content="The PostgreSQL Global Development Group" />
+  <meta property="og:url" content="https://www.postgresql.org/docs/18/datatype-pseudo.html" />
+  <meta property="og:type" content="article" />
+
+  <meta property="article:published_time" content="2026-05-14T13:09:46" />
+  <meta property="og:image" content="https://www.postgresql.org/media/img/about/press/elephant.png" />
+  <meta property="og:title" content="8.21. Pseudo-Types" />
+  <meta property="og:description" content="8.21.&amp;nbsp;Pseudo-Types # The PostgreSQL type system contains a number of special-purpose entries that are collectively called pseudo-types. A pseudo-type cannot …" />
+  <meta property="og:site_name" content="PostgreSQL Documentation" />
+  <link href="/media/css/fontawesome.css?73aab745" rel="stylesheet">
+  <link rel="stylesheet" href="/media/css/bootstrap-4.4.1.min.css">
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  <link rel="stylesheet" type="text/css" href="/dyncss/base.css?73aab745">
+
+  <script src="/media/js/theme.js?73aab745"></script>
+
+  
+
+
+  <link rel="canonical" href="https://www.postgresql.org/docs/current/datatype-pseudo.html" />
+
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-md-center">
+        <div class="col">
+          <!-- Header -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand p-0" href="/">
+              <img class="logo" src="/media/img/about/press/elephant.png" alt="PostgreSQL Elephant Logo">
+            </a>
+            <input type="checkbox" id="navbar-toggler" aria-controls="pgNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <label for="navbar-toggler" id="navbar-toggler-label" class="navbar-toggler" tabindex="0"><span class="navbar-toggler-icon"></span></label>
+            <div class="navbar-collapse" id="pgNavbar">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item p-2"><a href="/" title="Home">Home</a></li>
+                <li class="nav-item p-2"><a href="/about/" title="About">About</a></li>
+                <li class="nav-item p-2"><a href="/download/" title="Download">Download</a></li>
+                <li class="nav-item p-2"><a href="/docs/" title="Documentation">Documentation</a></li>
+                <li class="nav-item p-2"><a href="/community/" title="Community">Community</a></li>
+                <li class="nav-item p-2"><a href="/developer/" title="Developers">Developers</a></li>
+                <li class="nav-item p-2"><a href="/support/" title="Support">Support</a></li>
+                <li class="nav-item p-2"><a href="/about/donate/" title="Donate">Donate</a></li>
+                <li class="nav-item p-2"><a href="/account/" title="Your account">Your account</a></li>
+              </ul>
+              <form role="search" method="get" action="/search/">
+                <div class="input-group">
+                  <input id="q" name="q" type="text" size="20" maxlength="255" accesskey="s"  class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+              <form id="form-theme" class="form-inline d-none">
+                <button id="btn-theme" class="btn btn-default ml-1" type="button"></button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row justify-content-center pg-shout-box">
+        <div class="col text-white text-center">July 16, 2026: <a href="/about/news/postgresql-19-beta-2-released-3350/">PostgreSQL 19 Beta 2 Released!</a>
+
+</div>
+      </div>
+    </div>
+    
+    <div class="container-fluid margin">
+      <div class="row">
+        <div id="pgContentWrap" class="col-11">
+          <div class="row">
+            <div class="col-md-6 mb-2">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <a href="/docs/" title="Documentation">Documentation</a> &rarr; <a href="/docs/18/index.html">PostgreSQL 18</a>
+                  </div>
+                </div>
+              </div>
+              
+                <div class="row">
+                  <div class="col">
+                    Supported Versions:
+                      
+                        
+                        
+                          <a href="/docs/current/datatype-pseudo.html" title="PostgreSQL 18 - 8.21. Pseudo-Types" class="docs-version-selected">Current</a>
+                          (<a href="/docs/18/datatype-pseudo.html" title="PostgreSQL 18 - 8.21. Pseudo-Types" class="docs-version-selected">18</a>)
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/17/datatype-pseudo.html" title="PostgreSQL 17 - 8.21. Pseudo-Types" >17</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/16/datatype-pseudo.html" title="PostgreSQL 16 - 8.21. Pseudo-Types" >16</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/15/datatype-pseudo.html" title="PostgreSQL 15 - 8.21. Pseudo-Types" >15</a>
+                        
+                      
+                         / 
+                        
+                          <a href="/docs/14/datatype-pseudo.html" title="PostgreSQL 14 - 8.21. Pseudo-Types" >14</a>
+                        
+                      
+                  </div>
+                </div>
+              
+              
+                <div class="row">
+                  <div class="col">
+                    Development Versions:
+                    
+                      
+                      <a href="/docs/19/datatype-pseudo.html" title="PostgreSQL 19 - 8.21. Pseudo-Types"  rel="nofollow">19</a>
+                    
+                       / 
+                      <a href="/docs/devel/datatype-pseudo.html" title="PostgreSQL devel - 8.21. Pseudo-Types"  rel="nofollow">devel</a>
+                    
+                  </div>
+                </div>
+              
+              
+                <div class="row">
+                  <div class="col-12">
+                    Unsupported versions:
+                    
+                      
+                      <a href="/docs/13/datatype-pseudo.html" title="PostgreSQL 13 - 8.21. Pseudo-Types"  rel="nofollow">13</a>
+                    
+                       / 
+                      <a href="/docs/12/datatype-pseudo.html" title="PostgreSQL 12 - 8.21. Pseudo-Types"  rel="nofollow">12</a>
+                    
+                       / 
+                      <a href="/docs/11/datatype-pseudo.html" title="PostgreSQL 11 - 8.21. Pseudo-Types"  rel="nofollow">11</a>
+                    
+                       / 
+                      <a href="/docs/10/datatype-pseudo.html" title="PostgreSQL 10 - 8.21. Pseudo-Types"  rel="nofollow">10</a>
+                    
+                       / 
+                      <a href="/docs/9.6/datatype-pseudo.html" title="PostgreSQL 9.6 - 8.21. Pseudo-Types"  rel="nofollow">9.6</a>
+                    
+                       / 
+                      <a href="/docs/9.5/datatype-pseudo.html" title="PostgreSQL 9.5 - 8.21. Pseudo-Types"  rel="nofollow">9.5</a>
+                    
+                       / 
+                      <a href="/docs/9.4/datatype-pseudo.html" title="PostgreSQL 9.4 - 8.21. Pseudo-Types"  rel="nofollow">9.4</a>
+                    
+                       / 
+                      <a href="/docs/9.3/datatype-pseudo.html" title="PostgreSQL 9.3 - 8.21. Pseudo-Types"  rel="nofollow">9.3</a>
+                    
+                       / 
+                      <a href="/docs/9.2/datatype-pseudo.html" title="PostgreSQL 9.2 - 8.21. Pseudo-Types"  rel="nofollow">9.2</a>
+                    
+                       / 
+                      <a href="/docs/9.1/datatype-pseudo.html" title="PostgreSQL 9.1 - 8.21. Pseudo-Types"  rel="nofollow">9.1</a>
+                    
+                       / 
+                      <a href="/docs/9.0/datatype-pseudo.html" title="PostgreSQL 9.0 - 8.21. Pseudo-Types"  rel="nofollow">9.0</a>
+                    
+                       / 
+                      <a href="/docs/8.4/datatype-pseudo.html" title="PostgreSQL 8.4 - 8.21. Pseudo-Types"  rel="nofollow">8.4</a>
+                    
+                       / 
+                      <a href="/docs/8.3/datatype-pseudo.html" title="PostgreSQL 8.3 - 8.21. Pseudo-Types"  rel="nofollow">8.3</a>
+                    
+                       / 
+                      <a href="/docs/8.2/datatype-pseudo.html" title="PostgreSQL 8.2 - 8.21. Pseudo-Types"  rel="nofollow">8.2</a>
+                    
+                       / 
+                      <a href="/docs/8.1/datatype-pseudo.html" title="PostgreSQL 8.1 - 8.21. Pseudo-Types"  rel="nofollow">8.1</a>
+                    
+                       / 
+                      <a href="/docs/8.0/datatype-pseudo.html" title="PostgreSQL 8.0 - 8.21. Pseudo-Types"  rel="nofollow">8.0</a>
+                    
+                       / 
+                      <a href="/docs/7.4/datatype-pseudo.html" title="PostgreSQL 7.4 - 8.21. Pseudo-Types"  rel="nofollow">7.4</a>
+                    
+                       / 
+                      <a href="/docs/7.3/datatype-pseudo.html" title="PostgreSQL 7.3 - 8.21. Pseudo-Types"  rel="nofollow">7.3</a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+            <div class="col-md-6 col-lg-5 offset-lg-1">
+              <form id="docSearchForm" role="search" method="get" action="/search/">
+                <input type="hidden" name="u" value="/docs/18/" />
+                <div class="input-group">
+                  <input type="text" id="q" name="q" class="form-control" placeholder="Search the documentation for..."/>
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                  </span>
+                </div><!-- /input-group -->
+              </form>
+            </div>
+          </div>
+
+          <div id="docContent">
+            <div class="navheader">
+  <table width="100%" summary="Navigation header">
+    <tr>
+      <th colspan="5" align="center">8.21.&nbsp;Pseudo-Types</th>
+    </tr>
+    <tr>
+      <td width="10%" align="left"><a accesskey="p" href="datatype-pg-lsn.html" title="8.20.&nbsp;pg_lsn Type">Prev</a>&nbsp;</td>
+      <td width="10%" align="left"><a accesskey="u" href="datatype.html" title="Chapter&nbsp;8.&nbsp;Data Types">Up</a></td>
+      <th width="60%" align="center">Chapter&nbsp;8.&nbsp;Data Types</th>
+      <td width="10%" align="right"><a accesskey="h" href="index.html" title="PostgreSQL 18.4 Documentation">Home</a></td>
+      <td width="10%" align="right">&nbsp;<a accesskey="n" href="functions.html" title="Chapter&nbsp;9.&nbsp;Functions and Operators">Next</a></td>
+    </tr>
+  </table>
+  <hr />
+</div>
+<div class="sect1" id="DATATYPE-PSEUDO">
+  <div class="titlepage">
+    <div>
+      <div>
+        <h2 class="title" style="clear: both">8.21.&nbsp;Pseudo-Types <a href="#DATATYPE-PSEUDO" class="id_link">#</a></h2>
+      </div>
+    </div>
+  </div><a id="id-1.5.7.29.2" class="indexterm" name="id-1.5.7.29.2"></a><a id="id-1.5.7.29.3" class="indexterm" name="id-1.5.7.29.3"></a><a id="id-1.5.7.29.4" class="indexterm" name="id-1.5.7.29.4"></a><a id="id-1.5.7.29.5" class="indexterm" name="id-1.5.7.29.5"></a><a id="id-1.5.7.29.6" class="indexterm" name="id-1.5.7.29.6"></a><a id="id-1.5.7.29.7" class="indexterm" name="id-1.5.7.29.7"></a><a id="id-1.5.7.29.8" class="indexterm" name="id-1.5.7.29.8"></a><a id="id-1.5.7.29.9" class="indexterm" name="id-1.5.7.29.9"></a><a id="id-1.5.7.29.10" class="indexterm" name="id-1.5.7.29.10"></a><a id="id-1.5.7.29.11" class="indexterm" name="id-1.5.7.29.11"></a><a id="id-1.5.7.29.12" class="indexterm" name="id-1.5.7.29.12"></a><a id="id-1.5.7.29.13" class="indexterm" name="id-1.5.7.29.13"></a><a id="id-1.5.7.29.14" class="indexterm" name="id-1.5.7.29.14"></a><a id="id-1.5.7.29.15" class="indexterm" name="id-1.5.7.29.15"></a><a id="id-1.5.7.29.16" class="indexterm" name="id-1.5.7.29.16"></a><a id="id-1.5.7.29.17" class="indexterm" name="id-1.5.7.29.17"></a><a id="id-1.5.7.29.18" class="indexterm" name="id-1.5.7.29.18"></a><a id="id-1.5.7.29.19" class="indexterm" name="id-1.5.7.29.19"></a><a id="id-1.5.7.29.20" class="indexterm" name="id-1.5.7.29.20"></a><a id="id-1.5.7.29.21" class="indexterm" name="id-1.5.7.29.21"></a><a id="id-1.5.7.29.22" class="indexterm" name="id-1.5.7.29.22"></a><a id="id-1.5.7.29.23" class="indexterm" name="id-1.5.7.29.23"></a><a id="id-1.5.7.29.24" class="indexterm" name="id-1.5.7.29.24"></a><a id="id-1.5.7.29.25" class="indexterm" name="id-1.5.7.29.25"></a><a id="id-1.5.7.29.26" class="indexterm" name="id-1.5.7.29.26"></a>
+  <p>The <span class="productname">PostgreSQL</span> type system contains a number of special-purpose entries that are collectively called <em class="firstterm">pseudo-types</em>. A pseudo-type cannot be used as a column data type, but it can be used to declare a function's argument or result type. Each of the available pseudo-types is useful in situations where a function's behavior does not correspond to simply taking or returning a value of a specific <acronym class="acronym">SQL</acronym> data type. <a class="xref" href="datatype-pseudo.html#DATATYPE-PSEUDOTYPES-TABLE" title="Table&nbsp;8.27.&nbsp;Pseudo-Types">Table&nbsp;8.27</a> lists the existing pseudo-types.</p>
+  <div class="table" id="DATATYPE-PSEUDOTYPES-TABLE">
+    <p class="title"><strong>Table&nbsp;8.27.&nbsp;Pseudo-Types</strong></p>
+    <div class="table-contents">
+      <table class="table" summary="Pseudo-Types" border="1">
+        <colgroup>
+          <col class="col1" />
+          <col class="col2" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code class="type">any</code></td>
+            <td>Indicates that a function accepts any input data type.</td>
+          </tr>
+          <tr>
+            <td><code class="type">anyelement</code></td>
+            <td>Indicates that a function accepts any data type (see <a class="xref" href="extend-type-system.html#EXTEND-TYPES-POLYMORPHIC" title="36.2.5.&nbsp;Polymorphic Types">Section&nbsp;36.2.5</a>).</td>
+          </tr>
+          <tr>
+            <td><code class="type">anyarray</code></td>
+            <td>Indicates that a function accepts any array data type (see <a class="xref" href="extend-type-system.html#EXTEND-TYPES-POLYMORPHIC" title="36.2.5.&nbsp;Polymorphic Types">Section&nbsp;36.2.5</a>).</td>
+          </tr>
+          <tr>
+            <td><code class="type">anynonarray</code></td>
+            <td>Indicates that a function accepts any non-array data type (see <a class="xref" href="extend-type-system.html#EXTEND-TYPES-POLYMORPHIC" title="36.2.5.&nbsp;Polymorphic Types">Section&nbsp;36.2.5</a>).</td>
+          </tr>
+          <tr>
+            <td><code class="type">anyenum</code></td>
+            <td>Indicates that a function accepts any enum data type (see <a class="xref" href="extend-type-system.html#EXTEND-TYPES-POLYMORPHIC" title="36.2.5.&nbsp;Polymorphic Types">Section&nbsp;36.2.5</a> and <a class="xref" href="datatype-enum.html" title="8.7.&nbsp;Enumerated Types">Section&nbsp;8.7</a>).</td>
+          </tr>
+          <tr>
+            <td><code class="type">anyrange</code></td>
+            <td>Indicates that a function accepts any range data type (see <a class="xref" href="extend-type-system.html#EXTEND-TYPES-POLYMORPHIC" title="36.2.5.&nbsp;Polymorphic Types">Section&nbsp;36.2.5</a> and <a class="xref" href="rangetypes.html" title="8.17.&nbsp;Range Types">Section&nbsp;8.17</a>).</td>
+          </tr>
+          <tr>
+            <td><code class="type">anymultirange</code></td>
+            <td>Indicates that a function accepts any multirange data type (see <a class="xref" href="extend-type-system.html#EXTEND-TYPES-POLYMORPHIC" title="36.2.5.&nbsp;Polymorphic Types">Section&nbsp;36.2.5</a> and <a class="xref" href="rangetypes.html" title="8.17.&nbsp;Range Types">Section&nbsp;8.17</a>).</td>
+          </tr>
+          <tr>
+            <td><code class="type">anycompatible</code></td>
+            <td>Indicates that a function accepts any data type, with automatic promotion of multiple arguments to a common data type (see <a class="xref" href="extend-type-system.html#EXTEND-TYPES-POLYMORPHIC" title="36.2.5.&nbsp;Polymorphic Types">Section&nbsp;36.2.5</a>).</td>
+          </tr>
+          <tr>
+            <td><code class="type">anycompatiblearray</code></td>
+            <td>Indicates that a function accepts any array data type, with automatic promotion of multiple arguments to a common data type (see <a class="xref" href="extend-type-system.html#EXTEND-TYPES-POLYMORPHIC" title="36.2.5.&nbsp;Polymorphic Types">Section&nbsp;36.2.5</a>).</td>
+          </tr>
+          <tr>
+            <td><code class="type">anycompatiblenonarray</code></td>
+            <td>Indicates that a function accepts any non-array data type, with automatic promotion of multiple arguments to a common data type (see <a class="xref" href="extend-type-system.html#EXTEND-TYPES-POLYMORPHIC" title="36.2.5.&nbsp;Polymorphic Types">Section&nbsp;36.2.5</a>).</td>
+          </tr>
+          <tr>
+            <td><code class="type">anycompatiblerange</code></td>
+            <td>Indicates that a function accepts any range data type, with automatic promotion of multiple arguments to a common data type (see <a class="xref" href="extend-type-system.html#EXTEND-TYPES-POLYMORPHIC" title="36.2.5.&nbsp;Polymorphic Types">Section&nbsp;36.2.5</a> and <a class="xref" href="rangetypes.html" title="8.17.&nbsp;Range Types">Section&nbsp;8.17</a>).</td>
+          </tr>
+          <tr>
+            <td><code class="type">anycompatiblemultirange</code></td>
+            <td>Indicates that a function accepts any multirange data type, with automatic promotion of multiple arguments to a common data type (see <a class="xref" href="extend-type-system.html#EXTEND-TYPES-POLYMORPHIC" title="36.2.5.&nbsp;Polymorphic Types">Section&nbsp;36.2.5</a> and <a class="xref" href="rangetypes.html" title="8.17.&nbsp;Range Types">Section&nbsp;8.17</a>).</td>
+          </tr>
+          <tr>
+            <td><code class="type">cstring</code></td>
+            <td>Indicates that a function accepts or returns a null-terminated C string.</td>
+          </tr>
+          <tr>
+            <td><code class="type">internal</code></td>
+            <td>Indicates that a function accepts or returns a server-internal data type.</td>
+          </tr>
+          <tr>
+            <td><code class="type">language_handler</code></td>
+            <td>A procedural language call handler is declared to return <code class="type">language_handler</code>.</td>
+          </tr>
+          <tr>
+            <td><code class="type">fdw_handler</code></td>
+            <td>A foreign-data wrapper handler is declared to return <code class="type">fdw_handler</code>.</td>
+          </tr>
+          <tr>
+            <td><code class="type">table_am_handler</code></td>
+            <td>A table access method handler is declared to return <code class="type">table_am_handler</code>.</td>
+          </tr>
+          <tr>
+            <td><code class="type">index_am_handler</code></td>
+            <td>An index access method handler is declared to return <code class="type">index_am_handler</code>.</td>
+          </tr>
+          <tr>
+            <td><code class="type">tsm_handler</code></td>
+            <td>A tablesample method handler is declared to return <code class="type">tsm_handler</code>.</td>
+          </tr>
+          <tr>
+            <td><code class="type">record</code></td>
+            <td>Identifies a function taking or returning an unspecified row type.</td>
+          </tr>
+          <tr>
+            <td><code class="type">trigger</code></td>
+            <td>A trigger function is declared to return <code class="type">trigger.</code></td>
+          </tr>
+          <tr>
+            <td><code class="type">event_trigger</code></td>
+            <td>An event trigger function is declared to return <code class="type">event_trigger.</code></td>
+          </tr>
+          <tr>
+            <td><code class="type">pg_ddl_command</code></td>
+            <td>Identifies a representation of DDL commands that is available to event triggers.</td>
+          </tr>
+          <tr>
+            <td><code class="type">void</code></td>
+            <td>Indicates that a function returns no value.</td>
+          </tr>
+          <tr>
+            <td><code class="type">unknown</code></td>
+            <td>Identifies a not-yet-resolved type, e.g., of an undecorated string literal.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div><br class="table-break" />
+  <p>Functions coded in C (whether built-in or dynamically loaded) can be declared to accept or return any of these pseudo-types. It is up to the function author to ensure that the function will behave safely when a pseudo-type is used as an argument type.</p>
+  <p>Functions coded in procedural languages can use pseudo-types only as allowed by their implementation languages. At present most procedural languages forbid use of a pseudo-type as an argument type, and allow only <code class="type">void</code> and <code class="type">record</code> as a result type (plus <code class="type">trigger</code> or <code class="type">event_trigger</code> when the function is used as a trigger or event trigger). Some also support polymorphic functions using the polymorphic pseudo-types, which are shown above and discussed in detail in <a class="xref" href="extend-type-system.html#EXTEND-TYPES-POLYMORPHIC" title="36.2.5.&nbsp;Polymorphic Types">Section&nbsp;36.2.5</a>.</p>
+  <p>The <code class="type">internal</code> pseudo-type is used to declare functions that are meant only to be called internally by the database system, and not by direct invocation in an <acronym class="acronym">SQL</acronym> query. If a function has at least one <code class="type">internal</code>-type argument then it cannot be called from <acronym class="acronym">SQL</acronym>. To preserve the type safety of this restriction it is important to follow this coding rule: do not create any function that is declared to return <code class="type">internal</code> unless it has at least one <code class="type">internal</code> argument.</p>
+</div>
+<div class="navfooter">
+  <hr />
+  <table width="100%" summary="Navigation footer">
+    <tr>
+      <td width="40%" align="left"><a accesskey="p" href="datatype-pg-lsn.html" title="8.20.&nbsp;pg_lsn Type">Prev</a>&nbsp;</td>
+      <td width="20%" align="center"><a accesskey="u" href="datatype.html" title="Chapter&nbsp;8.&nbsp;Data Types">Up</a></td>
+      <td width="40%" align="right">&nbsp;<a accesskey="n" href="functions.html" title="Chapter&nbsp;9.&nbsp;Functions and Operators">Next</a></td>
+    </tr>
+    <tr>
+      <td width="40%" align="left" valign="top">8.20.&nbsp;<code class="type">pg_lsn</code> Type&nbsp;</td>
+      <td width="20%" align="center"><a accesskey="h" href="index.html" title="PostgreSQL 18.4 Documentation">Home</a></td>
+      <td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;9.&nbsp;Functions and Operators</td>
+    </tr>
+  </table>
+</div>
+
+          </div>
+          
+            <div id="docComments">
+              <h2>Submit correction</h2>
+              <p>
+              If you see anything in the documentation that is not correct, does not match
+              your experience with the particular feature or requires further clarification,
+              please use
+              <a href="/account/comments/new/18/datatype-pseudo.html/" rel="nofollow">this form</a>
+              to report a documentation issue.
+              </p>
+            </div>
+          
+        </div> <!-- pgContentWrap -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <!-- Copyright -->
+      <div class="container">
+        <a href="/about/policies/">Policies</a> |
+        <a href="/about/policies/coc/">Code of Conduct</a> |
+        <a href="/about/">About PostgreSQL</a> |
+        <a href="/about/contact/">Contact</a><br/>
+        <p>Copyright &copy; 1996-2026 The PostgreSQL Global Development Group</p>
+      </div>
+    </footer>
+    <script src="/media/js/main.js?73aab745"></script>
+
+  </body>
+</html>

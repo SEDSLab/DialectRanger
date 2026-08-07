@@ -1,0 +1,2728 @@
+{
+  "signature_backfill_enabled": true,
+  "metadata_backfill_enabled": true,
+  "residual_invalid_handling_enabled": true,
+  "features_backfilled": 138,
+  "formal_signatures_added": 0,
+  "weak_signatures_added": 274,
+  "rejected_example_like_signatures": 0,
+  "source_metadata_backfilled": 192,
+  "examples_backfilled": 154,
+  "description_claims_backfilled": 163,
+  "backfilled_features": [
+    {
+      "feature_id": "sqlserver.function.abs",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.app_name",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.ascii",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.asin",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.atan",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.bit_count",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.bit_length",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.ceiling",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.certencoded",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.char",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.choose",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.col_name",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.columnproperty",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.concat",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.convert",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.cos",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.count",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.database_principal_id",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.databasepropertyex",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.datalength",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.date_bucket",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.dateadd",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.datediff",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.datediff_big",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.datefromparts",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.datename",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.datepart",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.datetime2",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.datetime2fromparts",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.datetimefromparts",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.datetimeoffsetfromparts",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.datetrunc",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.day",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.dayname",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.dayofmonth",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.dayofweek",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.db_id",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.db_name",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.edge_id_from_parts",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.eomonth",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.eventdata",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.exp",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.file_id",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.file_idex",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.file_name",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.filegroup_name",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.filegroupproperty",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.fileproperty",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.floor",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.format",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.generate_series",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.get_bit",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.getdate",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.getutcdate",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.graph_id_from_edge_id",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.graph_id_from_node_id",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.hour",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.iif",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.indexkey_property",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.indexproperty",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.is_member",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.isdate",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.isjson",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.json_arrayagg",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.json_modify",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.json_object",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.json_objectagg",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.json_path_exists",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.json_query",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.json_value",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.left_shift",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.log",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.log10",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.min_active_rowversion",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.minute",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.month",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.monthname",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.newid",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.node_id_from_parts",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.object_definition",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.object_id",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.object_id_from_edge_id",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.object_id_from_node_id",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.object_name",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.object_schema_name",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.objectproperty",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.objectpropertyex",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.octet_length",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.openjson",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.openxml",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.original_login",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.over",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.parse",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.permissions",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.pi",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.power",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.quarter",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.radians",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.rand",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.right_shift",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.round",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.schema_id",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.schema_name",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.scope_identity",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.second",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.set_bit",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.sign",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.sin",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.smalldatetimefromparts",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.sql_variant_property",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.sqrt",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.square",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.stats_date",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.str",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.string_split",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.substring",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.suser_name",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.suser_sid",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.suser_sname",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.switchoffset",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.sysdatetime",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.sysdatetimeoffset",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.sysutcdatetime",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.tan",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.textptr",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.timefromparts",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.todatetimeoffset",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.truncate",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.try_cast",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.try_parse",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.type_id",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.type_name",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.typeproperty",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.unicode",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.user_name",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.version",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.week",
+      "added_syntax": [],
+      "evidence_refs": []
+    },
+    {
+      "feature_id": "sqlserver.function.year",
+      "added_syntax": [],
+      "evidence_refs": []
+    }
+  ],
+  "backfilled_examples": [
+    {
+      "feature_id": "sqlserver.function.abs",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_abs_transact_sql_s0005_b0003",
+        "sqlserver_current_abs_transact_sql_s0005_b0007"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.acos",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_acos_transact_sql_s0005_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.applock_mode",
+      "example_count": 4,
+      "evidence_refs": [
+        "sqlserver_current_applock_mode_transact_sql_s0007_b0004",
+        "sqlserver_current_applock_mode_transact_sql_s0007_b0006",
+        "sqlserver_current_applock_test_transact_sql_s0007_b0004",
+        "sqlserver_current_applock_test_transact_sql_s0007_b0006"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.applock_test",
+      "example_count": 4,
+      "evidence_refs": [
+        "sqlserver_current_applock_mode_transact_sql_s0007_b0006",
+        "sqlserver_current_applock_mode_transact_sql_s0007_b0010",
+        "sqlserver_current_applock_test_transact_sql_s0007_b0006",
+        "sqlserver_current_applock_test_transact_sql_s0007_b0010"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.ascii",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_ascii_transact_sql_s0008_b0002",
+        "sqlserver_current_ascii_transact_sql_s0009_b0002",
+        "sqlserver_current_char_transact_sql_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.asin",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_asin_transact_sql_s0005_b0003",
+        "sqlserver_current_asin_transact_sql_s0006_b0003",
+        "sqlserver_current_asin_transact_sql_s0006_b0005"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.atan",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_atan_transact_sql_s0005_b0003",
+        "sqlserver_current_atan_transact_sql_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.atn2",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_atn2_transact_sql_s0005_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.bit_count",
+      "example_count": 4,
+      "evidence_refs": [
+        "sqlserver_current_bit_count_transact_sql_s0005_b0005",
+        "sqlserver_current_bit_count_transact_sql_s0005_b0007",
+        "sqlserver_current_bit_count_transact_sql_s0008_b0003",
+        "sqlserver_current_bit_count_transact_sql_s0009_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.bit_length",
+      "example_count": 4,
+      "evidence_refs": [
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0011_b0003",
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0013_b0003",
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0014_b0003",
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0015_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.ceiling",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_ceiling_transact_sql_s0006_b0003",
+        "sqlserver_current_rand_transact_sql_s0011_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.certencoded",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_certencoded_transact_sql_s0008_b0003",
+        "sqlserver_current_certencoded_transact_sql_s0009_b0006"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.certprivatekey",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_certencoded_transact_sql_s0009_b0006",
+        "sqlserver_current_certprivatekey_transact_sql_s0007_b0002"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.char",
+      "example_count": 14,
+      "evidence_refs": [
+        "sqlserver_current_cast_and_convert_transact_sql_s0029_b0003",
+        "sqlserver_current_cast_and_convert_transact_sql_s0039_b0003",
+        "sqlserver_current_char_transact_sql_s0008_b0003",
+        "sqlserver_current_char_transact_sql_s0009_b0003",
+        "sqlserver_current_char_transact_sql_s0010_b0003",
+        "sqlserver_current_char_transact_sql_s0011_b0003",
+        "sqlserver_current_char_transact_sql_s0012_b0003",
+        "sqlserver_current_char_transact_sql_s0013_b0003",
+        "sqlserver_current_char_transact_sql_s0014_b0003",
+        "sqlserver_current_char_transact_sql_s0015_b0004",
+        "sqlserver_current_create_function_transact_sql_s0069_b0005",
+        "sqlserver_current_current_user_transact_sql_s0007_b0003",
+        "sqlserver_current_datetrunc_transact_sql_s0011_b0003",
+        "sqlserver_current_system_user_transact_sql_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.choose",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_logical_functions_choose_transact_sql_s0012_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.col_length",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_col_length_transact_sql_s0007_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.col_name",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_col_name_transact_sql_s0010_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.columnproperty",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_columnproperty_transact_sql_s0007_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.concat",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0011_b0003",
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0015_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.convert",
+      "example_count": 33,
+      "evidence_refs": [
+        "sqlserver_current_acos_transact_sql_s0005_b0003",
+        "sqlserver_current_asin_transact_sql_s0005_b0003",
+        "sqlserver_current_atan_transact_sql_s0005_b0003",
+        "sqlserver_current_atn2_transact_sql_s0005_b0003",
+        "sqlserver_current_cast_and_convert_transact_sql_s0020_b0011",
+        "sqlserver_current_cast_and_convert_transact_sql_s0025_b0006",
+        "sqlserver_current_cast_and_convert_transact_sql_s0030_b0004",
+        "sqlserver_current_cast_and_convert_transact_sql_s0030_b0006",
+        "sqlserver_current_cast_and_convert_transact_sql_s0031_b0003",
+        "sqlserver_current_cast_and_convert_transact_sql_s0031_b0007",
+        "sqlserver_current_cast_and_convert_transact_sql_s0032_b0003",
+        "sqlserver_current_cast_and_convert_transact_sql_s0032_b0007",
+        "sqlserver_current_cast_and_convert_transact_sql_s0032_b0011",
+        "sqlserver_current_cast_and_convert_transact_sql_s0032_b0015",
+        "sqlserver_current_cast_and_convert_transact_sql_s0032_b0018",
+        "sqlserver_current_cast_and_convert_transact_sql_s0032_b0021",
+        "sqlserver_current_cast_and_convert_transact_sql_s0037_b0005",
+        "sqlserver_current_cast_and_convert_transact_sql_s0040_b0003",
+        "sqlserver_current_cast_and_convert_transact_sql_s0040_b0007",
+        "sqlserver_current_char_transact_sql_s0014_b0003",
+        "sqlserver_current_char_transact_sql_s0015_b0004",
+        "sqlserver_current_cos_transact_sql_s0005_b0003",
+        "sqlserver_current_cot_transact_sql_s0005_b0003",
+        "sqlserver_current_degrees_transact_sql_s0005_b0003",
+        "sqlserver_current_eventdata_transact_sql_s0007_b0003",
+        "sqlserver_current_exp_transact_sql_s0007_b0003",
+        "sqlserver_current_log10_transact_sql_s0007_b0003",
+        "sqlserver_current_log_transact_sql_s0007_b0003",
+        "sqlserver_current_nchar_transact_sql_s0007_b0003",
+        "sqlserver_current_newid_transact_sql_s0006_b0003",
+        "sqlserver_current_radians_transact_sql_s0007_b0003",
+        "sqlserver_current_scalar_user_defined_functions_for_in_memory_oltp_s0003_b0010",
+        "sqlserver_current_sin_transact_sql_s0005_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.cos",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_cos_transact_sql_s0005_b0003",
+        "sqlserver_current_cos_transact_sql_s0005_b0008"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.cot",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_cot_transact_sql_s0005_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.count",
+      "example_count": 10,
+      "evidence_refs": [
+        "sqlserver_current_count_transact_sql_s0013_b0003",
+        "sqlserver_current_count_transact_sql_s0014_b0003",
+        "sqlserver_current_count_transact_sql_s0015_b0003",
+        "sqlserver_current_count_transact_sql_s0016_b0003",
+        "sqlserver_current_count_transact_sql_s0018_b0003",
+        "sqlserver_current_count_transact_sql_s0019_b0003",
+        "sqlserver_current_count_transact_sql_s0020_b0003",
+        "sqlserver_current_count_transact_sql_s0021_b0003",
+        "sqlserver_current_count_transact_sql_s0022_b0003",
+        "sqlserver_current_string_split_transact_sql_s0013_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.cursor_status",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_cursor_status_transact_sql_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.database_principal_id",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_database_principal_id_transact_sql_s0007_b0003",
+        "sqlserver_current_database_principal_id_transact_sql_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.databasepropertyex",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_databasepropertyex_transact_sql_s0010_b0003",
+        "sqlserver_current_databasepropertyex_transact_sql_s0011_b0003",
+        "sqlserver_current_databasepropertyex_transact_sql_s0012_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.datalength",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_char_transact_sql_s0008_b0003",
+        "sqlserver_current_datalength_transact_sql_s0006_b0003",
+        "sqlserver_current_nchar_transact_sql_s0007_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.date_bucket",
+      "example_count": 14,
+      "evidence_refs": [
+        "sqlserver_current_date_bucket_transact_sql_s0010_b0003",
+        "sqlserver_current_date_bucket_transact_sql_s0010_b0005",
+        "sqlserver_current_date_bucket_transact_sql_s0010_b0007",
+        "sqlserver_current_date_bucket_transact_sql_s0010_b0009",
+        "sqlserver_current_date_bucket_transact_sql_s0012_b0003",
+        "sqlserver_current_date_bucket_transact_sql_s0013_b0003",
+        "sqlserver_current_date_bucket_transact_sql_s0017_b0003",
+        "sqlserver_current_date_bucket_transact_sql_s0019_b0003",
+        "sqlserver_current_date_bucket_transact_sql_s0020_b0003",
+        "sqlserver_current_date_bucket_transact_sql_s0021_b0003",
+        "sqlserver_current_date_bucket_transact_sql_s0022_b0003",
+        "sqlserver_current_date_bucket_transact_sql_s0023_b0003",
+        "sqlserver_current_date_bucket_transact_sql_s0024_b0003",
+        "sqlserver_current_date_bucket_transact_sql_s0025_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.dateadd",
+      "example_count": 17,
+      "evidence_refs": [
+        "sqlserver_current_dateadd_transact_sql_s0009_b0010",
+        "sqlserver_current_dateadd_transact_sql_s0010_b0003",
+        "sqlserver_current_dateadd_transact_sql_s0010_b0007",
+        "sqlserver_current_dateadd_transact_sql_s0011_b0003",
+        "sqlserver_current_dateadd_transact_sql_s0014_b0005",
+        "sqlserver_current_dateadd_transact_sql_s0017_b0003",
+        "sqlserver_current_dateadd_transact_sql_s0018_b0003",
+        "sqlserver_current_dateadd_transact_sql_s0020_b0003",
+        "sqlserver_current_dateadd_transact_sql_s0021_b0003",
+        "sqlserver_current_dateadd_transact_sql_s0022_b0003",
+        "sqlserver_current_dateadd_transact_sql_s0023_b0003",
+        "sqlserver_current_dateadd_transact_sql_s0024_b0003",
+        "sqlserver_current_dateadd_transact_sql_s0025_b0003",
+        "sqlserver_current_dateadd_transact_sql_s0026_b0003",
+        "sqlserver_current_datediff_big_transact_sql_s0010_b0002",
+        "sqlserver_current_datediff_transact_sql_s0020_b0002",
+        "sqlserver_current_session_user_transact_sql_s0007_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.datediff",
+      "example_count": 16,
+      "evidence_refs": [
+        "sqlserver_current_datediff_big_transact_sql_s0010_b0002",
+        "sqlserver_current_datediff_transact_sql_s0009_b0003",
+        "sqlserver_current_datediff_transact_sql_s0012_b0003",
+        "sqlserver_current_datediff_transact_sql_s0013_b0003",
+        "sqlserver_current_datediff_transact_sql_s0014_b0003",
+        "sqlserver_current_datediff_transact_sql_s0015_b0003",
+        "sqlserver_current_datediff_transact_sql_s0016_b0003",
+        "sqlserver_current_datediff_transact_sql_s0017_b0003",
+        "sqlserver_current_datediff_transact_sql_s0018_b0003",
+        "sqlserver_current_datediff_transact_sql_s0019_b0003",
+        "sqlserver_current_datediff_transact_sql_s0020_b0002",
+        "sqlserver_current_datediff_transact_sql_s0022_b0003",
+        "sqlserver_current_datediff_transact_sql_s0023_b0003",
+        "sqlserver_current_datediff_transact_sql_s0024_b0003",
+        "sqlserver_current_datediff_transact_sql_s0025_b0003",
+        "sqlserver_current_datediff_transact_sql_s0026_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.datediff_big",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_datediff_big_transact_sql_s0006_b0003",
+        "sqlserver_current_datediff_big_transact_sql_s0009_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.datename",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_datename_transact_sql_s0008_b0004",
+        "sqlserver_current_datename_transact_sql_s0008_b0006",
+        "sqlserver_current_datename_transact_sql_s0010_b0024"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.datepart",
+      "example_count": 6,
+      "evidence_refs": [
+        "sqlserver_current_create_function_transact_sql_s0069_b0005",
+        "sqlserver_current_datefirst_transact_sql_s0006_b0003",
+        "sqlserver_current_datepart_transact_sql_s0012_b0004",
+        "sqlserver_current_datepart_transact_sql_s0012_b0006",
+        "sqlserver_current_datepart_transact_sql_s0013_b0003",
+        "sqlserver_current_datepart_transact_sql_s0015_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.datetime2",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_create_function_sql_data_warehouse_s0026_b0013",
+        "sqlserver_current_create_function_sql_data_warehouse_s0026_b0015",
+        "sqlserver_current_datetrunc_transact_sql_s0020_b0014"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.datetimeoffset",
+      "example_count": 5,
+      "evidence_refs": [
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0006_b0003",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0006_b0005",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0007_b0003",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0008_b0003",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0008_b0005"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.datetrunc",
+      "example_count": 13,
+      "evidence_refs": [
+        "sqlserver_current_datetrunc_transact_sql_s0009_b0003",
+        "sqlserver_current_datetrunc_transact_sql_s0010_b0003",
+        "sqlserver_current_datetrunc_transact_sql_s0011_b0003",
+        "sqlserver_current_datetrunc_transact_sql_s0012_b0003",
+        "sqlserver_current_datetrunc_transact_sql_s0013_b0003",
+        "sqlserver_current_datetrunc_transact_sql_s0014_b0003",
+        "sqlserver_current_datetrunc_transact_sql_s0016_b0002",
+        "sqlserver_current_datetrunc_transact_sql_s0017_b0002",
+        "sqlserver_current_datetrunc_transact_sql_s0018_b0003",
+        "sqlserver_current_datetrunc_transact_sql_s0019_b0003",
+        "sqlserver_current_datetrunc_transact_sql_s0020_b0003",
+        "sqlserver_current_datetrunc_transact_sql_s0020_b0011",
+        "sqlserver_current_datetrunc_transact_sql_s0020_b0014"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.day",
+      "example_count": 6,
+      "evidence_refs": [
+        "sqlserver_current_day_transact_sql_s0006_b0003",
+        "sqlserver_current_day_transact_sql_s0006_b0005",
+        "sqlserver_current_month_transact_sql_s0006_b0005",
+        "sqlserver_current_month_transact_sql_s0007_b0005",
+        "sqlserver_current_year_transact_sql_s0006_b0005",
+        "sqlserver_current_year_transact_sql_s0007_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.dayname",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0011_b0003",
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0015_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.dayofmonth",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0011_b0003",
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0015_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.dayofweek",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0011_b0003",
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0015_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.db_id",
+      "example_count": 6,
+      "evidence_refs": [
+        "sqlserver_current_db_id_transact_sql_s0008_b0003",
+        "sqlserver_current_db_id_transact_sql_s0009_b0003",
+        "sqlserver_current_db_id_transact_sql_s0010_b0003",
+        "sqlserver_current_db_id_transact_sql_s0012_b0003",
+        "sqlserver_current_db_id_transact_sql_s0013_b0003",
+        "sqlserver_current_object_id_transact_sql_s0012_b0005"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.db_name",
+      "example_count": 6,
+      "evidence_refs": [
+        "sqlserver_current_db_name_transact_sql_s0008_b0003",
+        "sqlserver_current_db_name_transact_sql_s0009_b0003",
+        "sqlserver_current_db_name_transact_sql_s0011_b0003",
+        "sqlserver_current_db_name_transact_sql_s0012_b0003",
+        "sqlserver_current_object_name_transact_sql_s0010_b0003",
+        "sqlserver_current_object_schema_name_transact_sql_s0011_b0004"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.degrees",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_degrees_transact_sql_s0005_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.edge_id_from_parts",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_edge_id_from_parts_transact_sql_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.eomonth",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_eomonth_transact_sql_s0009_b0002",
+        "sqlserver_current_eomonth_transact_sql_s0010_b0002",
+        "sqlserver_current_eomonth_transact_sql_s0011_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.eventdata",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_eventdata_transact_sql_s0006_b0004",
+        "sqlserver_current_eventdata_transact_sql_s0007_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.exp",
+      "example_count": 4,
+      "evidence_refs": [
+        "sqlserver_current_exp_transact_sql_s0007_b0003",
+        "sqlserver_current_exp_transact_sql_s0008_b0003",
+        "sqlserver_current_exp_transact_sql_s0010_b0003",
+        "sqlserver_current_exp_transact_sql_s0011_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.file_id",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_file_id_transact_sql_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.file_idex",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_file_idex_transact_sql_s0007_b0003",
+        "sqlserver_current_file_idex_transact_sql_s0008_b0003",
+        "sqlserver_current_file_idex_transact_sql_s0009_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.file_name",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_file_name_transact_sql_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.filegroup_id",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_filegroup_id_transact_sql_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.filegroup_name",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_filegroup_name_transact_sql_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.filegroupproperty",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_filegroupproperty_transact_sql_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.fileproperty",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_fileproperty_transact_sql_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.floor",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_floor_transact_sql_s0006_b0003",
+        "sqlserver_current_rand_transact_sql_s0011_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.format",
+      "example_count": 12,
+      "evidence_refs": [
+        "sqlserver_current_format_transact_sql_s0010_b0003",
+        "sqlserver_current_format_transact_sql_s0011_b0003",
+        "sqlserver_current_format_transact_sql_s0012_b0003",
+        "sqlserver_current_format_transact_sql_s0012_b0007",
+        "sqlserver_current_format_transact_sql_s0013_b0003",
+        "sqlserver_current_format_transact_sql_s0013_b0005",
+        "sqlserver_current_format_transact_sql_s0013_b0007",
+        "sqlserver_current_format_transact_sql_s0013_b0009",
+        "sqlserver_current_format_transact_sql_s0013_b0011",
+        "sqlserver_current_format_transact_sql_s0013_b0013",
+        "sqlserver_current_format_transact_sql_s0014_b0003",
+        "sqlserver_current_format_transact_sql_s0015_b0008"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.fulltextcatalogproperty",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_fulltextcatalogproperty_transact_sql_s0007_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.fulltextserviceproperty",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_fulltextserviceproperty_transact_sql_s0005_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.generate_series",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_generate_series_transact_sql_s0011_b0002",
+        "sqlserver_current_generate_series_transact_sql_s0012_b0002",
+        "sqlserver_current_generate_series_transact_sql_s0013_b0002"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.get_bit",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_get_bit_transact_sql_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.getdate",
+      "example_count": 46,
+      "evidence_refs": [
+        "sqlserver_current_cast_and_convert_transact_sql_s0031_b0003",
+        "sqlserver_current_cast_and_convert_transact_sql_s0033_b0003",
+        "sqlserver_current_connections_transact_sql_s0006_b0003",
+        "sqlserver_current_cpu_busy_transact_sql_s0006_b0003",
+        "sqlserver_current_current_date_transact_sql_s0007_b0002",
+        "sqlserver_current_current_date_transact_sql_s0008_b0002",
+        "sqlserver_current_current_timestamp_transact_sql_s0007_b0002",
+        "sqlserver_current_current_timestamp_transact_sql_s0008_b0002",
+        "sqlserver_current_current_timestamp_transact_sql_s0009_b0002",
+        "sqlserver_current_current_user_transact_sql_s0007_b0003",
+        "sqlserver_current_format_transact_sql_s0011_b0003",
+        "sqlserver_current_getdate_transact_sql_s0004_b0005",
+        "sqlserver_current_getdate_transact_sql_s0006_b0002",
+        "sqlserver_current_getdate_transact_sql_s0006_b0004",
+        "sqlserver_current_getdate_transact_sql_s0007_b0002",
+        "sqlserver_current_getdate_transact_sql_s0007_b0004",
+        "sqlserver_current_getdate_transact_sql_s0008_b0002",
+        "sqlserver_current_getdate_transact_sql_s0008_b0004",
+        "sqlserver_current_getdate_transact_sql_s0010_b0002",
+        "sqlserver_current_getdate_transact_sql_s0011_b0002",
+        "sqlserver_current_getdate_transact_sql_s0012_b0002",
+        "sqlserver_current_getutcdate_transact_sql_s0006_b0002",
+        "sqlserver_current_getutcdate_transact_sql_s0006_b0004",
+        "sqlserver_current_getutcdate_transact_sql_s0007_b0002",
+        "sqlserver_current_getutcdate_transact_sql_s0007_b0004",
+        "sqlserver_current_getutcdate_transact_sql_s0008_b0002",
+        "sqlserver_current_getutcdate_transact_sql_s0008_b0004",
+        "sqlserver_current_idle_transact_sql_s0006_b0003",
+        "sqlserver_current_io_busy_transact_sql_s0006_b0003",
+        "sqlserver_current_session_user_transact_sql_s0007_b0003",
+        "sqlserver_current_suser_sid_transact_sql_s0013_b0003",
+        "sqlserver_current_suser_sname_transact_sql_s0011_b0003",
+        "sqlserver_current_sysdatetime_transact_sql_s0006_b0002",
+        "sqlserver_current_sysdatetime_transact_sql_s0008_b0002",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0006_b0003",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0006_b0005",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0008_b0003",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0008_b0005",
+        "sqlserver_current_system_user_transact_sql_s0007_b0003",
+        "sqlserver_current_sysutcdatetime_transact_sql_s0006_b0003",
+        "sqlserver_current_sysutcdatetime_transact_sql_s0006_b0005",
+        "sqlserver_current_sysutcdatetime_transact_sql_s0008_b0003",
+        "sqlserver_current_todatetimeoffset_transact_sql_s0006_b0003",
+        "sqlserver_current_total_errors_transact_sql_s0006_b0003",
+        "sqlserver_current_total_read_transact_sql_s0006_b0003",
+        "sqlserver_current_total_write_transact_sql_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.getutcdate",
+      "example_count": 25,
+      "evidence_refs": [
+        "sqlserver_current_current_date_transact_sql_s0007_b0002",
+        "sqlserver_current_current_date_transact_sql_s0008_b0002",
+        "sqlserver_current_current_timestamp_transact_sql_s0007_b0002",
+        "sqlserver_current_current_timestamp_transact_sql_s0008_b0002",
+        "sqlserver_current_current_timestamp_transact_sql_s0009_b0002",
+        "sqlserver_current_getdate_transact_sql_s0006_b0002",
+        "sqlserver_current_getdate_transact_sql_s0006_b0004",
+        "sqlserver_current_getdate_transact_sql_s0007_b0002",
+        "sqlserver_current_getdate_transact_sql_s0007_b0004",
+        "sqlserver_current_getdate_transact_sql_s0008_b0002",
+        "sqlserver_current_getdate_transact_sql_s0008_b0004",
+        "sqlserver_current_getutcdate_transact_sql_s0006_b0002",
+        "sqlserver_current_getutcdate_transact_sql_s0006_b0004",
+        "sqlserver_current_getutcdate_transact_sql_s0007_b0002",
+        "sqlserver_current_getutcdate_transact_sql_s0007_b0004",
+        "sqlserver_current_getutcdate_transact_sql_s0008_b0002",
+        "sqlserver_current_getutcdate_transact_sql_s0008_b0004",
+        "sqlserver_current_sysdatetime_transact_sql_s0006_b0002",
+        "sqlserver_current_sysdatetime_transact_sql_s0008_b0002",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0006_b0003",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0006_b0005",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0008_b0003",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0008_b0005",
+        "sqlserver_current_sysutcdatetime_transact_sql_s0006_b0003",
+        "sqlserver_current_sysutcdatetime_transact_sql_s0006_b0005"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.graph_id_from_edge_id",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_graph_id_from_edge_id_transact_sql_s0007_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.graph_id_from_node_id",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_graph_id_from_node_id_transact_sql_s0007_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.has_perms_by_name",
+      "example_count": 8,
+      "evidence_refs": [
+        "sqlserver_current_has_perms_by_name_transact_sql_s0007_b0003",
+        "sqlserver_current_has_perms_by_name_transact_sql_s0008_b0003",
+        "sqlserver_current_has_perms_by_name_transact_sql_s0009_b0002",
+        "sqlserver_current_has_perms_by_name_transact_sql_s0010_b0003",
+        "sqlserver_current_has_perms_by_name_transact_sql_s0011_b0003",
+        "sqlserver_current_has_perms_by_name_transact_sql_s0013_b0003",
+        "sqlserver_current_has_perms_by_name_transact_sql_s0013_b0005",
+        "sqlserver_current_has_perms_by_name_transact_sql_s0014_b0002"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.hour",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0011_b0003",
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0015_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.iif",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_logical_functions_iif_transact_sql_s0011_b0002",
+        "sqlserver_current_logical_functions_iif_transact_sql_s0012_b0002",
+        "sqlserver_current_logical_functions_iif_transact_sql_s0013_b0002"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.indexkey_property",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_indexkey_property_transact_sql_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.indexproperty",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_indexproperty_transact_sql_s0010_b0003",
+        "sqlserver_current_indexproperty_transact_sql_s0012_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.is_srvrolemember",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_is_srvrolemember_transact_sql_s0008_b0005"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.isdate",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_isdate_transact_sql_s0009_b0003",
+        "sqlserver_current_isdate_transact_sql_s0011_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.isjson",
+      "example_count": 8,
+      "evidence_refs": [
+        "sqlserver_current_isjson_transact_sql_s0009_b0003",
+        "sqlserver_current_isjson_transact_sql_s0010_b0003",
+        "sqlserver_current_isjson_transact_sql_s0011_b0003",
+        "sqlserver_current_isjson_transact_sql_s0012_b0003",
+        "sqlserver_current_isjson_transact_sql_s0013_b0003",
+        "sqlserver_current_isjson_transact_sql_s0014_b0003",
+        "sqlserver_current_validate_query_and_change_json_data_with_built_in_functions_sql_server_s0004_b0004",
+        "sqlserver_current_validate_query_and_change_json_data_with_built_in_functions_sql_server_s0011_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.isnull",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_datediff_big_transact_sql_s0010_b0002",
+        "sqlserver_current_datediff_transact_sql_s0020_b0002"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.json_arrayagg",
+      "example_count": 6,
+      "evidence_refs": [
+        "sqlserver_current_json_arrayagg_transact_sql_s0009_b0003",
+        "sqlserver_current_json_arrayagg_transact_sql_s0010_b0003",
+        "sqlserver_current_json_arrayagg_transact_sql_s0011_b0003",
+        "sqlserver_current_json_arrayagg_transact_sql_s0012_b0003",
+        "sqlserver_current_json_arrayagg_transact_sql_s0013_b0003",
+        "sqlserver_current_json_arrayagg_transact_sql_s0014_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.json_modify",
+      "example_count": 8,
+      "evidence_refs": [
+        "sqlserver_current_json_modify_transact_sql_s0010_b0003",
+        "sqlserver_current_json_modify_transact_sql_s0011_b0003",
+        "sqlserver_current_json_modify_transact_sql_s0012_b0003",
+        "sqlserver_current_json_modify_transact_sql_s0013_b0003",
+        "sqlserver_current_json_modify_transact_sql_s0014_b0003",
+        "sqlserver_current_json_modify_transact_sql_s0014_b0007",
+        "sqlserver_current_json_modify_transact_sql_s0015_b0003",
+        "sqlserver_current_validate_query_and_change_json_data_with_built_in_functions_sql_server_s0013_b0004"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.json_object",
+      "example_count": 8,
+      "evidence_refs": [
+        "sqlserver_current_json_object_transact_sql_s0009_b0003",
+        "sqlserver_current_json_object_transact_sql_s0010_b0003",
+        "sqlserver_current_json_object_transact_sql_s0011_b0003",
+        "sqlserver_current_json_object_transact_sql_s0012_b0003",
+        "sqlserver_current_json_object_transact_sql_s0013_b0003",
+        "sqlserver_current_json_object_transact_sql_s0014_b0003",
+        "sqlserver_current_json_object_transact_sql_s0015_b0003",
+        "sqlserver_current_json_object_transact_sql_s0016_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.json_objectagg",
+      "example_count": 5,
+      "evidence_refs": [
+        "sqlserver_current_json_objectagg_transact_sql_s0008_b0003",
+        "sqlserver_current_json_objectagg_transact_sql_s0009_b0003",
+        "sqlserver_current_json_objectagg_transact_sql_s0010_b0003",
+        "sqlserver_current_json_objectagg_transact_sql_s0011_b0003",
+        "sqlserver_current_json_objectagg_transact_sql_s0012_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.json_path_exists",
+      "example_count": 5,
+      "evidence_refs": [
+        "sqlserver_current_json_path_exists_transact_sql_s0008_b0003",
+        "sqlserver_current_json_path_exists_transact_sql_s0009_b0003",
+        "sqlserver_current_json_path_exists_transact_sql_s0010_b0003",
+        "sqlserver_current_json_path_exists_transact_sql_s0010_b0006",
+        "sqlserver_current_json_path_exists_transact_sql_s0010_b0009"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.json_query",
+      "example_count": 6,
+      "evidence_refs": [
+        "sqlserver_current_json_query_transact_sql_s0006_b0007",
+        "sqlserver_current_json_query_transact_sql_s0012_b0003",
+        "sqlserver_current_json_query_transact_sql_s0013_b0003",
+        "sqlserver_current_json_query_transact_sql_s0014_b0003",
+        "sqlserver_current_validate_query_and_change_json_data_with_built_in_functions_sql_server_s0006_b0003",
+        "sqlserver_current_validate_query_and_change_json_data_with_built_in_functions_sql_server_s0011_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.json_value",
+      "example_count": 9,
+      "evidence_refs": [
+        "sqlserver_current_json_value_transact_sql_s0011_b0004",
+        "sqlserver_current_json_value_transact_sql_s0012_b0003",
+        "sqlserver_current_json_value_transact_sql_s0013_b0003",
+        "sqlserver_current_json_value_transact_sql_s0014_b0003",
+        "sqlserver_current_validate_query_and_change_json_data_with_built_in_functions_sql_server_s0005_b0003",
+        "sqlserver_current_validate_query_and_change_json_data_with_built_in_functions_sql_server_s0006_b0003",
+        "sqlserver_current_validate_query_and_change_json_data_with_built_in_functions_sql_server_s0007_b0003",
+        "sqlserver_current_validate_query_and_change_json_data_with_built_in_functions_sql_server_s0011_b0003",
+        "sqlserver_current_validate_query_and_change_json_data_with_built_in_functions_sql_server_s0012_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.left_shift",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_left_shift_transact_sql_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.log",
+      "example_count": 4,
+      "evidence_refs": [
+        "sqlserver_current_exp_transact_sql_s0008_b0003",
+        "sqlserver_current_exp_transact_sql_s0011_b0003",
+        "sqlserver_current_log_transact_sql_s0007_b0003",
+        "sqlserver_current_log_transact_sql_s0010_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.log10",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_log10_transact_sql_s0007_b0003",
+        "sqlserver_current_log10_transact_sql_s0008_b0003",
+        "sqlserver_current_log10_transact_sql_s0010_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.loginproperty",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_loginproperty_transact_sql_s0010_b0003",
+        "sqlserver_current_loginproperty_transact_sql_s0011_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.min_active_rowversion",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_min_active_rowversion_transact_sql_s0005_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.minute",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0011_b0003",
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0015_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.month",
+      "example_count": 7,
+      "evidence_refs": [
+        "sqlserver_current_day_transact_sql_s0006_b0005",
+        "sqlserver_current_month_transact_sql_s0006_b0003",
+        "sqlserver_current_month_transact_sql_s0006_b0005",
+        "sqlserver_current_month_transact_sql_s0007_b0003",
+        "sqlserver_current_month_transact_sql_s0007_b0005",
+        "sqlserver_current_year_transact_sql_s0006_b0005",
+        "sqlserver_current_year_transact_sql_s0007_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.monthname",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0011_b0003",
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0015_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.newid",
+      "example_count": 6,
+      "evidence_refs": [
+        "sqlserver_current_json_array_transact_sql_s0014_b0003",
+        "sqlserver_current_json_object_transact_sql_s0014_b0003",
+        "sqlserver_current_newid_transact_sql_s0006_b0003",
+        "sqlserver_current_newid_transact_sql_s0007_b0004",
+        "sqlserver_current_newid_transact_sql_s0009_b0003",
+        "sqlserver_current_suser_sname_transact_sql_s0011_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.newsequentialid",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_newsequentialid_transact_sql_s0004_b0003",
+        "sqlserver_current_newsequentialid_transact_sql_s0004_b0005"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.node_id_from_parts",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_edge_id_from_parts_transact_sql_s0008_b0003",
+        "sqlserver_current_node_id_from_parts_transact_sql_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.object_id",
+      "example_count": 15,
+      "evidence_refs": [
+        "sqlserver_current_create_user_defined_functions_database_engine_s0009_b0003",
+        "sqlserver_current_create_user_defined_functions_database_engine_s0011_b0003",
+        "sqlserver_current_create_user_defined_functions_database_engine_s0012_b0003",
+        "sqlserver_current_db_id_transact_sql_s0010_b0003",
+        "sqlserver_current_has_perms_by_name_transact_sql_s0014_b0002",
+        "sqlserver_current_object_id_transact_sql_s0008_b0004",
+        "sqlserver_current_object_id_transact_sql_s0010_b0003",
+        "sqlserver_current_object_id_transact_sql_s0012_b0005",
+        "sqlserver_current_object_id_transact_sql_s0014_b0003",
+        "sqlserver_current_object_name_transact_sql_s0009_b0003",
+        "sqlserver_current_stats_date_transact_sql_s0008_b0003",
+        "sqlserver_current_stats_date_transact_sql_s0008_b0005",
+        "sqlserver_current_stats_date_transact_sql_s0010_b0003",
+        "sqlserver_current_stats_date_transact_sql_s0011_b0003",
+        "sqlserver_current_stats_date_transact_sql_s0011_b0005"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.object_id_from_edge_id",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_object_id_from_edge_id_transact_sql_s0007_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.object_id_from_node_id",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_object_id_from_node_id_transact_sql_s0007_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.object_name",
+      "example_count": 7,
+      "evidence_refs": [
+        "sqlserver_current_object_name_transact_sql_s0007_b0005",
+        "sqlserver_current_object_name_transact_sql_s0009_b0003",
+        "sqlserver_current_object_name_transact_sql_s0010_b0003",
+        "sqlserver_current_object_name_transact_sql_s0011_b0003",
+        "sqlserver_current_object_name_transact_sql_s0013_b0003",
+        "sqlserver_current_object_schema_name_transact_sql_s0011_b0004",
+        "sqlserver_current_procid_transact_sql_s0005_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.object_schema_name",
+      "example_count": 7,
+      "evidence_refs": [
+        "sqlserver_current_object_name_transact_sql_s0007_b0007",
+        "sqlserver_current_object_name_transact_sql_s0010_b0003",
+        "sqlserver_current_object_schema_name_transact_sql_s0009_b0005",
+        "sqlserver_current_object_schema_name_transact_sql_s0009_b0007",
+        "sqlserver_current_object_schema_name_transact_sql_s0011_b0004",
+        "sqlserver_current_object_schema_name_transact_sql_s0012_b0003",
+        "sqlserver_current_object_schema_name_transact_sql_s0012_b0006"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.objectproperty",
+      "example_count": 4,
+      "evidence_refs": [
+        "sqlserver_current_deterministic_and_nondeterministic_functions_s0003_b0003",
+        "sqlserver_current_objectproperty_transact_sql_s0009_b0003",
+        "sqlserver_current_objectproperty_transact_sql_s0012_b0003",
+        "sqlserver_current_objectproperty_transact_sql_s0013_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.objectpropertyex",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_objectpropertyex_transact_sql_s0008_b0003",
+        "sqlserver_current_objectpropertyex_transact_sql_s0011_b0003",
+        "sqlserver_current_objectpropertyex_transact_sql_s0012_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.octet_length",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0009_b0003",
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0010_b0003",
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0011_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.opendatasource",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_opendatasource_transact_sql_s0010_b0003",
+        "sqlserver_current_opendatasource_transact_sql_s0011_b0005",
+        "sqlserver_current_opendatasource_transact_sql_s0012_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.openjson",
+      "example_count": 11,
+      "evidence_refs": [
+        "sqlserver_current_openjson_transact_sql_s0002_b0002",
+        "sqlserver_current_openjson_transact_sql_s0006_b0004",
+        "sqlserver_current_openjson_transact_sql_s0007_b0005",
+        "sqlserver_current_openjson_transact_sql_s0008_b0003",
+        "sqlserver_current_openjson_transact_sql_s0017_b0003",
+        "sqlserver_current_openjson_transact_sql_s0018_b0003",
+        "sqlserver_current_openjson_transact_sql_s0019_b0003",
+        "sqlserver_current_openjson_transact_sql_s0020_b0003",
+        "sqlserver_current_openjson_transact_sql_s0021_b0003",
+        "sqlserver_current_validate_query_and_change_json_data_with_built_in_functions_sql_server_s0007_b0003",
+        "sqlserver_current_validate_query_and_change_json_data_with_built_in_functions_sql_server_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.openrowset",
+      "example_count": 7,
+      "evidence_refs": [
+        "sqlserver_current_openrowset_transact_sql_s0007_b0003",
+        "sqlserver_current_openrowset_transact_sql_s0008_b0004",
+        "sqlserver_current_openrowset_transact_sql_s0009_b0006",
+        "sqlserver_current_openrowset_transact_sql_s0010_b0004",
+        "sqlserver_current_openrowset_transact_sql_s0015_b0003",
+        "sqlserver_current_openrowset_transact_sql_s0016_b0004",
+        "sqlserver_current_openrowset_transact_sql_s0017_b0004"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.openxml",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_openxml_transact_sql_s0011_b0006",
+        "sqlserver_current_openxml_transact_sql_s0012_b0014",
+        "sqlserver_current_openxml_transact_sql_s0013_b0005"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.original_login",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_original_login_transact_sql_s0005_b0004"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.parse",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_parse_transact_sql_s0007_b0002",
+        "sqlserver_current_parse_transact_sql_s0008_b0002",
+        "sqlserver_current_parse_transact_sql_s0009_b0002"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.parsename",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_parsename_transact_sql_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.patindex",
+      "example_count": 6,
+      "evidence_refs": [
+        "sqlserver_current_patindex_transact_sql_s0010_b0003",
+        "sqlserver_current_patindex_transact_sql_s0011_b0003",
+        "sqlserver_current_patindex_transact_sql_s0012_b0003",
+        "sqlserver_current_patindex_transact_sql_s0013_b0003",
+        "sqlserver_current_patindex_transact_sql_s0014_b0003",
+        "sqlserver_current_patindex_transact_sql_s0015_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.permissions",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_permissions_transact_sql_s0007_b0003",
+        "sqlserver_current_permissions_transact_sql_s0008_b0003",
+        "sqlserver_current_permissions_transact_sql_s0009_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.pi",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_pi_transact_sql_s0004_b0003",
+        "sqlserver_current_square_transact_sql_s0005_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.power",
+      "example_count": 4,
+      "evidence_refs": [
+        "sqlserver_current_power_transact_sql_s0006_b0003",
+        "sqlserver_current_power_transact_sql_s0007_b0003",
+        "sqlserver_current_power_transact_sql_s0008_b0003",
+        "sqlserver_current_power_transact_sql_s0010_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.pwdcompare",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_pwdcompare_transact_sql_s0008_b0003",
+        "sqlserver_current_pwdcompare_transact_sql_s0009_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.quarter",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0011_b0003",
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0015_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.radians",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_radians_transact_sql_s0006_b0003",
+        "sqlserver_current_radians_transact_sql_s0007_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.rand",
+      "example_count": 6,
+      "evidence_refs": [
+        "sqlserver_current_rand_transact_sql_s0006_b0003",
+        "sqlserver_current_rand_transact_sql_s0008_b0003",
+        "sqlserver_current_rand_transact_sql_s0009_b0003",
+        "sqlserver_current_rand_transact_sql_s0010_b0003",
+        "sqlserver_current_rand_transact_sql_s0011_b0003",
+        "sqlserver_current_rand_transact_sql_s0012_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.right_shift",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_right_shift_transact_sql_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.round",
+      "example_count": 7,
+      "evidence_refs": [
+        "sqlserver_current_rand_transact_sql_s0009_b0003",
+        "sqlserver_current_rand_transact_sql_s0011_b0003",
+        "sqlserver_current_round_transact_sql_s0008_b0012",
+        "sqlserver_current_round_transact_sql_s0010_b0003",
+        "sqlserver_current_round_transact_sql_s0011_b0003",
+        "sqlserver_current_round_transact_sql_s0012_b0003",
+        "sqlserver_current_round_transact_sql_s0012_b0005"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.schema_id",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_objectproperty_transact_sql_s0013_b0003",
+        "sqlserver_current_schema_id_transact_sql_s0008_b0002",
+        "sqlserver_current_schema_id_transact_sql_s0009_b0002"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.schema_name",
+      "example_count": 5,
+      "evidence_refs": [
+        "sqlserver_current_create_function_sql_data_warehouse_s0023_b0003",
+        "sqlserver_current_create_function_sql_data_warehouse_s0026_b0011",
+        "sqlserver_current_objectproperty_transact_sql_s0013_b0003",
+        "sqlserver_current_schema_name_transact_sql_s0007_b0002",
+        "sqlserver_current_schema_name_transact_sql_s0008_b0002"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.scope_identity",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_scope_identity_transact_sql_s0006_b0012",
+        "sqlserver_current_scope_identity_transact_sql_s0007_b0004",
+        "sqlserver_current_scope_identity_transact_sql_s0007_b0008"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.second",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0011_b0003",
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0015_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.serverproperty",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_serverproperty_transact_sql_s0010_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.set_bit",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_set_bit_transact_sql_s0009_b0003",
+        "sqlserver_current_set_bit_transact_sql_s0010_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.sign",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_sign_transact_sql_s0005_b0003",
+        "sqlserver_current_sign_transact_sql_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.sin",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_sin_transact_sql_s0005_b0003",
+        "sqlserver_current_sin_transact_sql_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.sql_variant_property",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_sql_variant_property_transact_sql_s0006_b0003",
+        "sqlserver_current_sql_variant_property_transact_sql_s0007_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.sqrt",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_sqrt_transact_sql_s0005_b0003",
+        "sqlserver_current_sqrt_transact_sql_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.square",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_square_transact_sql_s0005_b0003",
+        "sqlserver_current_square_transact_sql_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.stats_date",
+      "example_count": 5,
+      "evidence_refs": [
+        "sqlserver_current_stats_date_transact_sql_s0008_b0003",
+        "sqlserver_current_stats_date_transact_sql_s0008_b0005",
+        "sqlserver_current_stats_date_transact_sql_s0010_b0003",
+        "sqlserver_current_stats_date_transact_sql_s0011_b0003",
+        "sqlserver_current_stats_date_transact_sql_s0011_b0005"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.str",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_str_transact_sql_s0009_b0003",
+        "sqlserver_current_str_transact_sql_s0009_b0007"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.string_split",
+      "example_count": 10,
+      "evidence_refs": [
+        "sqlserver_current_string_split_transact_sql_s0009_b0015",
+        "sqlserver_current_string_split_transact_sql_s0009_b0025",
+        "sqlserver_current_string_split_transact_sql_s0011_b0003",
+        "sqlserver_current_string_split_transact_sql_s0012_b0009",
+        "sqlserver_current_string_split_transact_sql_s0013_b0003",
+        "sqlserver_current_string_split_transact_sql_s0014_b0004",
+        "sqlserver_current_string_split_transact_sql_s0014_b0006",
+        "sqlserver_current_string_split_transact_sql_s0015_b0003",
+        "sqlserver_current_string_split_transact_sql_s0016_b0003",
+        "sqlserver_current_string_split_transact_sql_s0017_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.substring",
+      "example_count": 14,
+      "evidence_refs": [
+        "sqlserver_current_cast_and_convert_transact_sql_s0020_b0014",
+        "sqlserver_current_cast_and_convert_transact_sql_s0025_b0004",
+        "sqlserver_current_cast_and_convert_transact_sql_s0025_b0006",
+        "sqlserver_current_nchar_transact_sql_s0007_b0003",
+        "sqlserver_current_substring_transact_sql_s0011_b0003",
+        "sqlserver_current_substring_transact_sql_s0011_b0012",
+        "sqlserver_current_substring_transact_sql_s0012_b0004",
+        "sqlserver_current_substring_transact_sql_s0012_b0008",
+        "sqlserver_current_substring_transact_sql_s0014_b0003",
+        "sqlserver_current_substring_transact_sql_s0014_b0007",
+        "sqlserver_current_substring_transact_sql_s0015_b0002",
+        "sqlserver_current_substring_transact_sql_s0016_b0004",
+        "sqlserver_current_substring_transact_sql_s0017_b0002",
+        "sqlserver_current_unicode_transact_sql_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.suser_id",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_suser_id_transact_sql_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.suser_name",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_suser_name_transact_sql_s0008_b0003",
+        "sqlserver_current_suser_name_transact_sql_s0009_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.suser_sid",
+      "example_count": 5,
+      "evidence_refs": [
+        "sqlserver_current_suser_sid_transact_sql_s0010_b0003",
+        "sqlserver_current_suser_sid_transact_sql_s0011_b0004",
+        "sqlserver_current_suser_sid_transact_sql_s0012_b0004",
+        "sqlserver_current_suser_sid_transact_sql_s0013_b0003",
+        "sqlserver_current_suser_sid_transact_sql_s0014_b0004"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.suser_sname",
+      "example_count": 8,
+      "evidence_refs": [
+        "sqlserver_current_original_login_transact_sql_s0005_b0004",
+        "sqlserver_current_suser_sid_transact_sql_s0014_b0004",
+        "sqlserver_current_suser_sname_transact_sql_s0009_b0003",
+        "sqlserver_current_suser_sname_transact_sql_s0010_b0003",
+        "sqlserver_current_suser_sname_transact_sql_s0011_b0003",
+        "sqlserver_current_suser_sname_transact_sql_s0012_b0003",
+        "sqlserver_current_suser_sname_transact_sql_s0014_b0003",
+        "sqlserver_current_suser_sname_transact_sql_s0015_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.switchoffset",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_switchoffset_transact_sql_s0007_b0005"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.sysdatetime",
+      "example_count": 38,
+      "evidence_refs": [
+        "sqlserver_current_cast_and_convert_transact_sql_s0040_b0003",
+        "sqlserver_current_current_date_transact_sql_s0007_b0002",
+        "sqlserver_current_current_date_transact_sql_s0008_b0002",
+        "sqlserver_current_current_timestamp_transact_sql_s0007_b0002",
+        "sqlserver_current_current_timestamp_transact_sql_s0008_b0002",
+        "sqlserver_current_current_timestamp_transact_sql_s0009_b0002",
+        "sqlserver_current_date_bucket_transact_sql_s0023_b0003",
+        "sqlserver_current_dateadd_transact_sql_s0024_b0003",
+        "sqlserver_current_dateadd_transact_sql_s0025_b0003",
+        "sqlserver_current_dateadd_transact_sql_s0026_b0003",
+        "sqlserver_current_datediff_transact_sql_s0014_b0003",
+        "sqlserver_current_datediff_transact_sql_s0018_b0003",
+        "sqlserver_current_datediff_transact_sql_s0019_b0003",
+        "sqlserver_current_datediff_transact_sql_s0025_b0003",
+        "sqlserver_current_datediff_transact_sql_s0026_b0003",
+        "sqlserver_current_getdate_transact_sql_s0006_b0002",
+        "sqlserver_current_getdate_transact_sql_s0006_b0004",
+        "sqlserver_current_getdate_transact_sql_s0007_b0002",
+        "sqlserver_current_getdate_transact_sql_s0007_b0004",
+        "sqlserver_current_getdate_transact_sql_s0008_b0002",
+        "sqlserver_current_getdate_transact_sql_s0008_b0004",
+        "sqlserver_current_getdate_transact_sql_s0010_b0002",
+        "sqlserver_current_getutcdate_transact_sql_s0006_b0002",
+        "sqlserver_current_getutcdate_transact_sql_s0006_b0004",
+        "sqlserver_current_getutcdate_transact_sql_s0007_b0002",
+        "sqlserver_current_getutcdate_transact_sql_s0007_b0004",
+        "sqlserver_current_getutcdate_transact_sql_s0008_b0002",
+        "sqlserver_current_getutcdate_transact_sql_s0008_b0004",
+        "sqlserver_current_sysdatetime_transact_sql_s0006_b0002",
+        "sqlserver_current_sysdatetime_transact_sql_s0007_b0002",
+        "sqlserver_current_sysdatetime_transact_sql_s0008_b0002",
+        "sqlserver_current_sysdatetime_transact_sql_s0010_b0002",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0006_b0003",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0006_b0005",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0008_b0003",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0008_b0005",
+        "sqlserver_current_sysutcdatetime_transact_sql_s0006_b0003",
+        "sqlserver_current_sysutcdatetime_transact_sql_s0006_b0005"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.sysdatetimeoffset",
+      "example_count": 26,
+      "evidence_refs": [
+        "sqlserver_current_current_date_transact_sql_s0007_b0002",
+        "sqlserver_current_current_date_transact_sql_s0008_b0002",
+        "sqlserver_current_current_timestamp_transact_sql_s0007_b0002",
+        "sqlserver_current_current_timestamp_transact_sql_s0008_b0002",
+        "sqlserver_current_current_timestamp_transact_sql_s0009_b0002",
+        "sqlserver_current_getdate_transact_sql_s0006_b0002",
+        "sqlserver_current_getdate_transact_sql_s0006_b0004",
+        "sqlserver_current_getdate_transact_sql_s0007_b0002",
+        "sqlserver_current_getdate_transact_sql_s0007_b0004",
+        "sqlserver_current_getdate_transact_sql_s0008_b0002",
+        "sqlserver_current_getdate_transact_sql_s0008_b0004",
+        "sqlserver_current_getutcdate_transact_sql_s0006_b0002",
+        "sqlserver_current_getutcdate_transact_sql_s0006_b0004",
+        "sqlserver_current_getutcdate_transact_sql_s0007_b0002",
+        "sqlserver_current_getutcdate_transact_sql_s0007_b0004",
+        "sqlserver_current_getutcdate_transact_sql_s0008_b0002",
+        "sqlserver_current_getutcdate_transact_sql_s0008_b0004",
+        "sqlserver_current_sysdatetime_transact_sql_s0006_b0002",
+        "sqlserver_current_sysdatetime_transact_sql_s0008_b0002",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0006_b0003",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0006_b0005",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0007_b0003",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0008_b0003",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0008_b0005",
+        "sqlserver_current_sysutcdatetime_transact_sql_s0006_b0003",
+        "sqlserver_current_sysutcdatetime_transact_sql_s0006_b0005"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.sysutcdatetime",
+      "example_count": 28,
+      "evidence_refs": [
+        "sqlserver_current_create_function_sql_data_warehouse_s0026_b0013",
+        "sqlserver_current_create_function_sql_data_warehouse_s0026_b0015",
+        "sqlserver_current_current_date_transact_sql_s0007_b0002",
+        "sqlserver_current_current_date_transact_sql_s0008_b0002",
+        "sqlserver_current_current_timestamp_transact_sql_s0007_b0002",
+        "sqlserver_current_current_timestamp_transact_sql_s0008_b0002",
+        "sqlserver_current_current_timestamp_transact_sql_s0009_b0002",
+        "sqlserver_current_getdate_transact_sql_s0006_b0002",
+        "sqlserver_current_getdate_transact_sql_s0006_b0004",
+        "sqlserver_current_getdate_transact_sql_s0007_b0002",
+        "sqlserver_current_getdate_transact_sql_s0007_b0004",
+        "sqlserver_current_getdate_transact_sql_s0008_b0002",
+        "sqlserver_current_getdate_transact_sql_s0008_b0004",
+        "sqlserver_current_getutcdate_transact_sql_s0006_b0002",
+        "sqlserver_current_getutcdate_transact_sql_s0006_b0004",
+        "sqlserver_current_getutcdate_transact_sql_s0007_b0002",
+        "sqlserver_current_getutcdate_transact_sql_s0007_b0004",
+        "sqlserver_current_getutcdate_transact_sql_s0008_b0002",
+        "sqlserver_current_getutcdate_transact_sql_s0008_b0004",
+        "sqlserver_current_sysdatetime_transact_sql_s0006_b0002",
+        "sqlserver_current_sysdatetime_transact_sql_s0008_b0002",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0006_b0003",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0006_b0005",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0008_b0003",
+        "sqlserver_current_sysdatetimeoffset_transact_sql_s0008_b0005",
+        "sqlserver_current_sysutcdatetime_transact_sql_s0006_b0003",
+        "sqlserver_current_sysutcdatetime_transact_sql_s0006_b0005",
+        "sqlserver_current_sysutcdatetime_transact_sql_s0007_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.tan",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_tan_transact_sql_s0005_b0003",
+        "sqlserver_current_tan_transact_sql_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.textptr",
+      "example_count": 4,
+      "evidence_refs": [
+        "sqlserver_current_text_and_image_functions_textptr_transact_sql_s0008_b0003",
+        "sqlserver_current_text_and_image_functions_textptr_transact_sql_s0009_b0003",
+        "sqlserver_current_text_and_image_functions_textptr_transact_sql_s0010_b0003",
+        "sqlserver_current_text_and_image_functions_textptr_transact_sql_s0011_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.todatetimeoffset",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_todatetimeoffset_transact_sql_s0007_b0003",
+        "sqlserver_current_todatetimeoffset_transact_sql_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.truncate",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0011_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.try_cast",
+      "example_count": 4,
+      "evidence_refs": [
+        "sqlserver_current_try_cast_transact_sql_s0010_b0002",
+        "sqlserver_current_try_cast_transact_sql_s0010_b0006",
+        "sqlserver_current_try_cast_transact_sql_s0011_b0003",
+        "sqlserver_current_try_cast_transact_sql_s0012_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.try_convert",
+      "example_count": 4,
+      "evidence_refs": [
+        "sqlserver_current_try_convert_transact_sql_s0011_b0002",
+        "sqlserver_current_try_convert_transact_sql_s0011_b0007",
+        "sqlserver_current_try_convert_transact_sql_s0012_b0003",
+        "sqlserver_current_try_convert_transact_sql_s0013_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.type_id",
+      "example_count": 3,
+      "evidence_refs": [
+        "sqlserver_current_type_id_transact_sql_s0008_b0003",
+        "sqlserver_current_type_id_transact_sql_s0009_b0003",
+        "sqlserver_current_type_id_transact_sql_s0011_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.type_name",
+      "example_count": 4,
+      "evidence_refs": [
+        "sqlserver_current_type_id_transact_sql_s0009_b0003",
+        "sqlserver_current_type_id_transact_sql_s0011_b0003",
+        "sqlserver_current_type_name_transact_sql_s0007_b0003",
+        "sqlserver_current_type_name_transact_sql_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.typeproperty",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_typeproperty_transact_sql_s0007_b0003",
+        "sqlserver_current_typeproperty_transact_sql_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.unicode",
+      "example_count": 6,
+      "evidence_refs": [
+        "sqlserver_current_ascii_transact_sql_s0009_b0010",
+        "sqlserver_current_char_transact_sql_s0015_b0004",
+        "sqlserver_current_nchar_transact_sql_s0006_b0003",
+        "sqlserver_current_nchar_transact_sql_s0007_b0003",
+        "sqlserver_current_unicode_transact_sql_s0007_b0003",
+        "sqlserver_current_unicode_transact_sql_s0008_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.user_id",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_user_id_transact_sql_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.user_name",
+      "example_count": 6,
+      "evidence_refs": [
+        "sqlserver_current_user_name_transact_sql_s0008_b0003",
+        "sqlserver_current_user_name_transact_sql_s0009_b0003",
+        "sqlserver_current_user_name_transact_sql_s0010_b0003",
+        "sqlserver_current_user_name_transact_sql_s0011_b0005",
+        "sqlserver_current_user_name_transact_sql_s0013_b0003",
+        "sqlserver_current_user_name_transact_sql_s0014_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.version",
+      "example_count": 1,
+      "evidence_refs": [
+        "sqlserver_current_version_transact_sql_metadata_functions_s0006_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.week",
+      "example_count": 2,
+      "evidence_refs": [
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0011_b0003",
+        "sqlserver_current_odbc_scalar_functions_transact_sql_s0015_b0003"
+      ]
+    },
+    {
+      "feature_id": "sqlserver.function.year",
+      "example_count": 6,
+      "evidence_refs": [
+        "sqlserver_current_day_transact_sql_s0006_b0005",
+        "sqlserver_current_month_transact_sql_s0006_b0005",
+        "sqlserver_current_month_transact_sql_s0007_b0005",
+        "sqlserver_current_year_transact_sql_s0006_b0003",
+        "sqlserver_current_year_transact_sql_s0006_b0005",
+        "sqlserver_current_year_transact_sql_s0007_b0003"
+      ]
+    }
+  ],
+  "weak_table_row_features_added": 23,
+  "non_function_noise_kept_invalid": 36,
+  "residual_features_added": [
+    {
+      "feature_id": "sqlserver.function.app_name",
+      "added_syntax": [
+        "APP_NAME ( )",
+        "APP_NAME()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.bit",
+      "added_syntax": [
+        "Bit (dec)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.category",
+      "added_syntax": [
+        "category (p, s)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.century",
+      "added_syntax": [
+        "century (yy)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.change_tracking_min_valid_version",
+      "added_syntax": [
+        "CHANGE_TRACKING_MIN_VALID_VERSION()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.changetable",
+      "added_syntax": [
+        "CHANGETABLE (CHANGES)",
+        "CHANGETABLE (VERSION)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.check",
+      "added_syntax": [
+        "CHECK ( logical_expression )"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.curdate",
+      "added_syntax": [
+        "CURDATE( )"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.curtime",
+      "added_syntax": [
+        "CURTIME()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.datefromparts",
+      "added_syntax": [
+        "DATEFROMPARTS ( year, month, day )"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.datetime2fromparts",
+      "added_syntax": [
+        "DATETIME2FROMPARTS ( year, month, day, hour, minute, seconds, fractions, precision )"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.datetimefromparts",
+      "added_syntax": [
+        "DATETIMEFROMPARTS ( year , month , day , hour , minute , seconds , milliseconds )"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.datetimeoffsetfromparts",
+      "added_syntax": [
+        "DATETIMEOFFSETFROMPARTS ( year, month, day, hour, minute, seconds, fractions, hour_offset, minute_offset, precision )"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.is_member",
+      "added_syntax": [
+        "IS_MEMBER ( { 'group' | 'role' } )"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.object_definition",
+      "added_syntax": [
+        "OBJECT_DEFINITION ( object_id )"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.original_db_name",
+      "added_syntax": [
+        "ORIGINAL_DB_NAME ()"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.over",
+      "added_syntax": [
+        "OVER ( [ partition_by_clause ] [ order_by_clause ] [ ROW_or_RANGE_clause ] )",
+        "OVER ( PARTITION BY CustomerID ORDER BY TransactionDate, CustomerTransactionID ROWS UNBOUNDED PRECEDING )",
+        "OVER (ORDER BY a.PostalCode)",
+        "OVER (PARTITION BY soh.SalesOrderID)",
+        "OVER (ORDER BY DepartmentName)",
+        "OVER (PARTITION BY DepartmentName)",
+        "OVER (PARTITION BY SalesOrderID)",
+        "OVER (ORDER BY LastName)",
+        "OVER (PARTITION BY edh.DepartmentID)",
+        "OVER (PARTITION BY SalesOrderNumber)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.s",
+      "added_syntax": [
+        "s (Brasil)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.smalldatetimefromparts",
+      "added_syntax": [
+        "SMALLDATETIMEFROMPARTS ( year, month, day, hour, minute )"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.time",
+      "added_syntax": [
+        "time( precision )"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.timefromparts",
+      "added_syntax": [
+        "TIMEFROMPARTS ( hour, minute, seconds, fractions, precision )"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.try_parse",
+      "added_syntax": [
+        "TRY_PARSE ( string_value AS data_type [ USING culture ] )"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    },
+    {
+      "feature_id": "sqlserver.function.vector_search",
+      "added_syntax": [
+        "VECTOR_SEARCH (preview)"
+      ],
+      "status": "needs_review",
+      "reason": "weak_table_row_syntax_only"
+    }
+  ],
+  "residual_features_kept_invalid": [
+    {
+      "feature_id": "sqlserver.function.applock_mode",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.applock_test",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.assemblyproperty",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.certprivatekey",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.col_length",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.current_user",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.cursor_status",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.date",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.filegroup_id",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.fn_syscollector_get_execution_details",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.fn_syscollector_get_execution_stats",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.fulltextcatalogproperty",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.fulltextserviceproperty",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.function_name",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.has_perms_by_name",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.index_col",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.is_rolemember",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.is_srvrolemember",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.isnull",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.loginproperty",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.opendatasource",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.openquery",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.openrowset",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.order",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.parsename",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.patindex",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.pwdcompare",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.pwdencrypt",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.serverproperty",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.session_user",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.sql_variant",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.suser_id",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.system_user",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.textvalid",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.try_convert",
+      "reason": "non_function_noise"
+    },
+    {
+      "feature_id": "sqlserver.function.user_id",
+      "reason": "non_function_noise"
+    }
+  ],
+  "generated_at": "2026-08-06T19:56:08.987025+08:00"
+}

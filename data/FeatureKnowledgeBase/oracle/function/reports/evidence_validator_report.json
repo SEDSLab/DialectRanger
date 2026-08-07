@@ -1,0 +1,39 @@
+{
+  "dbms": "oracle",
+  "feature_type": "function",
+  "total_drafts": 318,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 316,
+  "invalid_features": 2,
+  "validation_summary": {
+    "schema_invalid": 2,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 316,
+    "no_description_claims": 270,
+    "no_valid_syntax": 2,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 267
+  },
+  "sample_clean_features": [],
+  "sample_warning_features": [
+    "oracle.function.abs",
+    "oracle.function.acos",
+    "oracle.function.add_months",
+    "oracle.function.any_value",
+    "oracle.function.approx_count",
+    "oracle.function.approx_count_distinct",
+    "oracle.function.approx_count_distinct_agg",
+    "oracle.function.approx_count_distinct_detail",
+    "oracle.function.approx_median",
+    "oracle.function.approx_percentile"
+  ],
+  "sample_invalid_features": [
+    "oracle.function.aggregate",
+    "oracle.function.asterisk"
+  ],
+  "generated_at": "2026-08-07T14:41:03.504890+08:00"
+}

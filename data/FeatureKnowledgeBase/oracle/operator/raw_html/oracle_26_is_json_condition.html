@@ -1,0 +1,413 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xml:lang="en-us" lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="DC.Type" content="reference">
+      <meta name="DC.Title" content="IS JSON Condition">
+      <meta name="DC.subject" content="IS JSON condition, conditions, IS JSON">
+      <meta name="keywords" content="IS JSON condition, conditions, IS JSON">
+      <meta name="DC.Creator" content="Adrian Daniel Popescu">
+      <meta name="DC.Creator" content="Alan Williams">
+      <meta name="DC.Creator" content="Alfonso Colunga Sosa">
+      <meta name="DC.Creator" content="Andy Witkowski">
+      <meta name="DC.Creator" content="Atif Chaudhry">
+      <meta name="DC.Creator" content="Aymaan Ashhab Ahmed">
+      <meta name="DC.Creator" content="Beda Hammerschmidt">
+      <meta name="DC.Creator" content="Bill Lee">
+      <meta name="DC.Creator" content="Chris Saxon">
+      <meta name="DC.Creator" content="Drew Adams">
+      <meta name="DC.Creator" content="Gerald Venzl">
+      <meta name="DC.Creator" content="Giridhar Ravipati">
+      <meta name="DC.Creator" content="Gopal Mulagund">
+      <meta name="DC.Creator" content="Gregg Christman">
+      <meta name="DC.Creator" content="Hermann Baer">
+      <meta name="DC.Creator" content="Huagang Li">
+      <meta name="DC.Creator" content="Ian Neall">
+      <meta name="DC.Creator" content="James Stamos">
+      <meta name="DC.Creator" content="Jan Michels">
+      <meta name="DC.Creator" content="Josh Spiegel">
+      <meta name="DC.Creator" content="Laurent Daynes">
+      <meta name="DC.Creator" content="Loic Lefevre">
+      <meta name="DC.Creator" content="Mahesh Girkar">
+      <meta name="DC.Creator" content="Mark Dilman">
+      <meta name="DC.Creator" content="Martin Bach">
+      <meta name="DC.Creator" content="Mary Beth Roeser">
+      <meta name="DC.Creator" content="Nigel Bayliss">
+      <meta name="DC.Creator" content="Neelam Goyal">
+      <meta name="DC.Creator" content="Nishant Chaudhary">
+      <meta name="DC.Creator" content="Oskar Van Rest">
+      <meta name="DC.Creator" content="Sankar Subramanian">
+      <meta name="DC.Creator" content="Shashaanka Agrawal">
+      <meta name="DC.Creator" content="Sergiusz Wolicki">
+      <meta name="DC.Creator" content="Shashank Gugnani">
+      <meta name="DC.Creator" content="Sundeep Abraham">
+      <meta name="DC.Creator" content="Thomas Baby">
+      <meta name="DC.Creator" content="Vlad Ioan Haprian">
+      <meta name="DC.Creator" content="Wayne Smith">
+      <meta name="DC.Creator" content="Ya Li">
+      <meta name="DC.Creator" content="Yanfei Fan">
+      <meta name="DC.Creator" content="Yi Ouyang">
+      <meta name="DC.Creator" content="Yinliang Wang">
+      <meta name="DC.Creator" content="Yuan Zhou">
+      <meta name="DC.Creator" content="Yunrui Li">
+      <meta name="DC.Creator" content="Usha Krishnamurthy">
+      <meta name="DC.Publisher" content="July2026">
+      <meta name="DC.Format" content="XHTML">
+      <meta name="DC.Identifier" content="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA">
+      <meta name="DC.Language" content="en-US">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>IS JSON Condition</title>
+      <meta property="og:site_name" content="Oracle Help Center">
+      <meta property="og:title" content="SQL Language Reference ">
+      <meta property="og:description" content>
+      <link rel="stylesheet" href="/sp_common/book-template/ohc-book-template/css/book.css">
+      <link rel="shortcut icon" href="/sp_common/book-template/ohc-common/img/favicon.ico">
+      <meta name="application-name" content="SQL Language Reference">
+      <meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)">
+      <meta name="plugin" content="SP_docbuilder HTML plugin release 18.2.2">
+      <link rel="alternate" href="sql-language-reference.pdf" title="PDF File" type="application/pdf">
+      <link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+      <meta name="dcterms.created" content="2026-07-30T18:50:33-07:00">
+      <meta name="dcterms.title" content="SQL Language Reference ">
+      <meta name="dcterms.dateCopyrighted" content="1996, 2026">
+      <meta name="dcterms.category" content="database">
+      <meta name="dcterms.identifier" content="G57157-02">
+      
+      <meta name="dcterms.product" content="en/database/oracle/oracle-database/26">
+      
+      <link rel="prev" href="SQL-JSON-Conditions.html" title="Previous" type="text/html">
+      <link rel="next" href="json_equal-condition.html" title="Next" type="text/html">
+      <script>
+        document.write('<style type="text/css">');
+        document.write('body > .noscript, body > .noscript ~ * { visibility: hidden; }');
+        document.write('</style>');
+     </script>
+      <script data-main="/sp_common/book-template/ohc-book-template/js/book-config" src="/sp_common/book-template/requirejs/require.js"></script>
+      <script>
+            if (window.require === undefined) {
+                document.write('<script data-main="sp_common/book-template/ohc-book-template/js/book-config" src="sp_common/book-template/requirejs/require.js"><\/script>');
+                document.write('<link href="sp_common/book-template/ohc-book-template/css/book.css" rel="stylesheet"/>');
+            }
+        </script>
+      <script type="application/json" id="ssot-metadata">{"primary":{"category":{"short_name":"database","element_name":"Database","display_in_url":true},"suite":{"short_name":"oracle","element_name":"Oracle","display_in_url":true},"product_group":{"short_name":"not-applicable","element_name":"Not applicable","display_in_url":false},"product":{"short_name":"oracle-database","element_name":"Oracle Database","display_in_url":true},"release":{"short_name":"26","element_name":"Release 26","display_in_url":true}}}</script>
+      
+    <meta name="dcterms.release" content="Release 26">
+    <meta name="dcterms.isVersionOf" content="SQLRF">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"IS JSON Condition","datePublished":"2026-07-31 CST","dateModified":"2026-07-31 CST"}</script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+   <body>
+      <div class="noscript alert alert-danger text-center" role="alert">
+         <a href="SQL-JSON-Conditions.html" class="pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>Previous</a>
+         <a href="json_equal-condition.html" class="pull-right">Next<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+         <span class="fa fa-exclamation-triangle" aria-hidden="true"></span> JavaScript must be enabled to correctly display this content
+        
+      </div>
+      <article class>
+         <a id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA" name="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA"></a><a id="SQLRF56662"></a><a id="SQLRF56663"></a><a id="SQLRF57000"></a><a id="SQLRF57001"></a><a id="SQLRF57002"></a><a id="SQLRF56661"></a>
+         
+         <h2 id="SQLRF-GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA" class="sect2">IS JSON Condition</h2>
+         <div class="ind">
+            <div>
+               <div class="section">
+                  <p>SQL/JSON conditions is json and is not json are complementary. They test whether their argument is syntactically correct, that is, well-formed, JSON data. With optional keyword <code class="codeph">VALIDATE</code> they test whether the data is also valid with respect to a given JSON schema.
+                  </p>
+                  <ul style="list-style-type: disc;">
+                     <li>
+                        <p>If the data tested is syntactically correct and keyword <code class="codeph">VALIDATE</code> is not present, then <code class="codeph">IS JSON</code> returns true, and <code class="codeph">IS NOT JSON</code> returns false. 
+                        </p>
+                     </li>
+                     <li>
+                        <p>If keyword <code class="codeph">VALIDATE</code> is present, then the data is tested to ensure that it is both well-formed and valid with respect to the specified JSON schema. Keyword <code class="codeph">VALIDATE</code> (optionally followed by keyword <code class="codeph">USING</code>) must be followed by a SQL string literal that is the JSON schema to validate against. 
+                        </p>
+                     </li>
+                     <li>
+                        <p>If an error occurs during parsing or validating, and the data is considered to not be well-formed or not valid, then <code class="codeph">IS JSON</code> returns false and <code class="codeph">IS NOT JSON</code> returns true. Parsing and validation errors are handled by the condition itself returning true or false. Other errors that are neither from parsing or validation, these errors are raised.  
+                        </p>
+                     </li>
+                     <li>
+                        <p>You can use <code class="codeph">IS JSON</code> and <code class="codeph">IS NOT JSON</code> in a <code class="codeph">CASE</code> expression or the <code class="codeph">WHERE</code> clause of a <code class="codeph">SELECT</code> statement. You can use <code class="codeph">IS JSON</code> in a check constraint. 
+                        </p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__GUID-DDB45343-8469-4BFD-9234-F35F953901A0"><span class="italic">IS_JSON_condition</span>::=
+                  </p>
+               </div>
+               <div class="section">
+                  <div class="figure" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__FIG_NJM_FJR_4YB"><img id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__IMAGE_YZM_ZJR_4YB" src="img/is_json_condition.gif" alt="Description of is_json_condition.eps follows" title="Description of is_json_condition.eps follows" longdesc="img_text/is_json_condition.html"><br><a href="img_text/is_json_condition.html">Description of the illustration is_json_condition.eps</a></div>
+                  <p>(<span class="italic"><a href="is-json-condition.html#GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__SECTION_JWG_DSY_CGC">IS_JSON_modifier_list::=</a></span>, <span class="italic"><a href="is-json-condition.html#GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__SECTION_VWH_XRY_CGC">IS_JSON_args::=</a></span>)
+                  </p>
+               </div>
+               <div class="section" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__SECTION_JWG_DSY_CGC">
+                  <p class="subhead1" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__GUID-127FFE89-5800-469C-BFDF-6BDB9AF0FCA6"><span class="italic"> IS_JSON_modifier_list</span>::=
+                  </p>
+                  <div class="figure" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__FIG_O2M_LXJ_2BC"><br><div class="imageleft"><img class="imageleft" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__IMAGE_GDL_SSJ_CGC" src="img/is_json_modifier_list.gif" alt="Description of is_json_modifier_list.eps follows" title="Description of is_json_modifier_list.eps follows" longdesc="img_text/is_json_modifier_list.html"><br><a href="img_text/is_json_modifier_list.html">Description of the illustration is_json_modifier_list.eps</a></div><br></div>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__GUID-3C497211-A955-446C-9515-F82CDF6344F7"><span class="italic">IS_JSON_modifier</span>::=
+                  </p>
+                  <div class="figure" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__FIG_BRW_4YJ_CGC"><br><div class="imageleft"><img class="imageleft" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__IMAGE_OLL_RYJ_CGC" src="img/is_json_modifier.gif" alt="Description of is_json_modifier.eps follows" title="Description of is_json_modifier.eps follows" longdesc="img_text/is_json_modifier.html"><br><a href="img_text/is_json_modifier.html">Description of the illustration is_json_modifier.eps</a></div><br></div>
+               </div>
+               <div class="section" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__SECTION_PXB_CSY_CGC">
+                  <p class="subhead1" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__GUID-E81756CA-28D7-4E51-A68A-39F6A6D6508C"><span class="italic">JSON_type_modifier</span>::=
+                  </p>
+                  <div class="figure" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__FIG_NSX_VYJ_CGC"><br><div class="imageleft"><img class="imageleft" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__IMAGE_AWB_1ZJ_CGC" src="img/json_type_modifier.gif" alt="Description of json_type_modifier.eps follows" title="Description of json_type_modifier.eps follows" longdesc="img_text/json_type_modifier.html"><br><a href="img_text/json_type_modifier.html">Description of the illustration json_type_modifier.eps</a></div><br></div>
+                  <p><span class="italic"><a href="Data-Types.html#GUID-E441F541-BA31-4E8C-B7B4-D2FB8C42D0DF__SECTION_J33_1SY_CGC">JSON_scalar_modifier::=</a></span></p>
+               </div>
+               <div class="section" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__SECTION_VWH_XRY_CGC">
+                  <p class="subhead1" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__GUID-EC7E5FF4-7A81-4A55-8CB5-ADF0FADB495E"><span class="italic">IS_JSON_args</span>::=
+                  </p>
+                  <div class="figure" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__FIG_CL5_BYJ_CGC"><br><div class="imageleft"><img class="imageleft" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__IMAGE_DL5_BYJ_CGC" src="img/is_json_args.gif" alt="Description of is_json_args.eps follows" title="Description of is_json_args.eps follows" longdesc="img_text/is_json_args.html"><br><a href="img_text/is_json_args.html">Description of the illustration is_json_args.eps</a></div><br></div>
+               </div>
+               <div class="section">
+                  <ul style="list-style-type: disc;" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__UL_JXY_YNX_X2C">
+                     <li>
+                        <p>Use <span class="italic"><code class="codeph">expr</code></span> to specify the JSON data to be evaluated. Specify an expression that evaluates to a text literal. If <span class="italic"><code class="codeph">expr</code></span> is a column, then the column must be of data type <code class="codeph">VARCHAR2</code>, <code class="codeph">CLOB</code>, or <code class="codeph">BLOB</code>. If <span class="italic"><code class="codeph">expr</code></span> evaluates to null or a text literal of length zero, then this condition returns <code class="codeph">UNKNOWN</code>.
+                        </p>
+                     </li>
+                     <li>
+                        <p><code class="codeph">LIMIT</code> in <span class="italic"><code class="codeph">json_modifier_spec</code></span> applies to the entire JSON modifier specification.
+                        </p>
+                     </li>
+                     <li>
+                        <p>Specify <code class="codeph">ALLOW</code> <code class="codeph">NULL</code> in <span class="italic"><code class="codeph">json_array_spec</code></span> to allow a JSON single type scalar value of  NULL.
+                        </p>
+                     </li>
+                     <li>
+                        <p>Specify <code class="codeph">DISALLOW</code> <code class="codeph">NULL</code> in <span class="italic"><code class="codeph">json_array_spec</code></span> to disallow a JSON single type scalar value of  NULL. This is the default.
+                        </p>
+                     </li>
+                     <li>
+                        <p>Specify <code class="codeph">SORT</code> in <span class="italic"><code class="codeph">json_array_spec</code></span> to sort the JSON array elements in ascending order.
+                        </p>
+                        <p>For more information see <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADJSN-GUID-8F897ED9-791B-4F53-AFAE-690DE38111D1" target="_blank">SQL/JSON Conditions IS JSON and IS NOT JSON</a> of the <span class="italic">JSON Developer's Guide</span>.
+                        </p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__GUID-299CF664-9ECA-4B92-B967-9D31C873ACB6"><span class="italic">IS_JSON_Modifier</span></p>
+                  <p>For JSON-type data, as an alternative to using <code class="codeph">VALIDATE</code> with a simple JSON schema you can use the <code class="codeph">IS JSON</code> modifers <code class="codeph">OBJECT</code>, <code class="codeph">ARRAY</code>, or <code class="codeph">SCALAR</code>, respectively.
+                  </p>
+                  <p>For more see <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADJSN-GUID-8F897ED9-791B-4F53-AFAE-690DE38111D1" target="_blank">SQL JSON Condtions IS JSON and IS NOT JSON</a> of the <span class="italic">JSON Developers's Guide</span>.
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__GUID-CD764D44-00AB-471C-AF10-77B923987D4E"><span class="italic">is_json_args</span></p>
+                  <ul style="list-style-type: disc;" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__UL_VPJ_WBX_VVB">
+                     <li>
+                        <p>You must specify <code class="codeph">FORMAT</code> <code class="codeph">JSON</code> if <span class="italic"><code class="codeph">expr</code></span> is a column of data type <code class="codeph">BLOB</code>.
+                        </p>
+                     </li>
+                     <li>
+                        <p>If you specify <code class="codeph">STRICT</code>, then this condition considers only strict JSON syntax to be well-formed JSON data. If you specify <code class="codeph">LAX</code>, then this condition also considers lax JSON syntax to be well-formed JSON data. The default is <code class="codeph">LAX</code>. 
+                        </p>
+                        <p>For a full discussion of <code class="codeph">STRICT</code> and <code class="codeph">LAX</code> syntax see <span class="italic"><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADJSN-GUID-8F897ED9-791B-4F53-AFAE-690DE38111D1" target="_blank">About Strict and Lax JSON Syntax</a></span>, and <span class="italic"><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADJSN-GUID-0CA2CCEE-BB1B-40C6-896F-2FB91FB21199" target="_blank">TYPE Clause for SQL Functions and Conditions</a></span></p>
+                     </li>
+                     <li>
+                        <p>If you specify <code class="codeph">WITH</code> <code class="codeph">UNIQUE</code> <code class="codeph">KEYS</code>, then this condition considers JSON data to be well-formed only if key names are unique within each object. If you specify <code class="codeph">WITHOUT</code> <code class="codeph">UNIQUE</code> <code class="codeph">KEYS</code>, then this condition considers JSON data to be well-formed even if duplicate key names occur within an object. A <code class="codeph">WITHOUT</code> <code class="codeph">UNIQUE</code> <code class="codeph">KEYS</code> test performs faster than a <code class="codeph">WITH</code> <code class="codeph">UNIQUE</code> <code class="codeph">KEYS</code> test. The default is <code class="codeph">WITHOUT</code> <code class="codeph">UNIQUE</code> <code class="codeph">KEYS</code>.
+                        </p>
+                     </li>
+                     <li>
+                        <p>Specify the optional keyword <code class="codeph">VALIDATE</code> to test that the data is also valid with respect to a given JSON schema.
+                        </p>
+                     </li>
+                     <li>
+                        <p>To enforce that a JSON type value is a certain type, you can use JSON type modifiers. See <a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADJSN-GUID-8F897ED9-791B-4F53-AFAE-690DE38111D1" target="_blank">SQL/JSON Conditions IS JSON and IS NOT JSON</a> <span class="italic">of the JSON Developer's Guide.</span></p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__GUID-D26DA143-9D95-4648-95A3-1149CEB66139">JSON Schema Validation</p>
+                  <p>A JSON schema typically specifies the allowed structure and data typing of other JSON documents. You can therefore use a JSON schema  to validate JSON data. You can validate JSON data against a JSON schema in the following ways:</p>
+                  <ul style="list-style-type: disc;" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__UL_ZGB_HCR_MWB">
+                     <li>
+                        <p>Use condition <code class="codeph">IS JSON</code> (or <code class="codeph">IS NOT JSON</code>) with keyword <code class="codeph">VALIDATE</code> and the name of a JSON schema, to test whether targeted data is valid (or invalid) against that schema. The schema can be provided as a literal string or a usage domain. (Keyword <code class="codeph">VALIDATE</code> can optionally be followed by keyword <code class="codeph">USING</code>.)
+                        </p>
+                        <p>You can use <code class="codeph">VALIDATE</code> with condition is json anywhere you can use that condition. This includes use in a <code class="codeph">WHERE</code> clause, or as a check constraint to ensure that only valid data is inserted in a column.
+                        </p>
+                        <p>When used as a check constraint for a JSON-type column, you can alternatively omit is json, and just use keyword <code class="codeph">VALIDATE</code> directly. These two table creations are equivalent, for a JSON-type column: 
+                        </p><pre class="oac_no_warn" dir="ltr">CREATE TABLE tab (jcol JSON VALIDATE '{"type" : "object"}â);</pre><pre class="oac_no_warn" dir="ltr">CREATE TABLE tab (jcol JSON CONSTRAINT jchk
+  CHECK (jcol IS JSON VALIDATE '{"type" : "object"}â));</pre></li>
+                     <li>
+                        <p>Use a usage domain as a check constraint for JSON type data. For example: </p><pre class="oac_no_warn" dir="ltr">CREATE DOMAIN jd AS JSON CONSTRAINT jchkd CHECK (jd IS JSON VALIDATE '{"type" : "object"});</pre><pre class="oac_no_warn" dir="ltr">CREATE TABLE jtab(jcol JSON DOMAIN jd);</pre><p>When creating a domain from a schema, you can alternatively omit the constraint and is json, and just use keyword <code class="codeph">VALIDATE</code> directly. This domain creation is equivalent to the previous one: 
+                        </p><pre class="oac_no_warn" dir="ltr">CREATE DOMAIN jd AS JSON VALIDATE '{"type" : "object"};</pre></li>
+                     <li>
+                        <p>For databases that support a binary JSON format, data can be encoded on the client. In such cases, the database does not have to convert textual JSON to its binary representation and hence validation using an extended data type can be performed.</p>
+                        <p>If textual JSON is sent to the database, it is followed by an encoding process to a binary representation (server-side encoding). In such circumstances, the schema validator can operate in <code class="codeph">CAST</code> mode. That is, the binary encoder can use the value specified for the extended data type keyword in the JSON schema and encode the scalar field to its binary representation. Only scaler types are eligible for casting.
+                        </p><pre class="oac_no_warn" dir="ltr">
+CREATE TABLE jtab (
+  id    NUMBER(9) PRIMARY KEY,
+  jcol  JSON CHECK(jcol IS JSON VALIDATE CAST USING '{
+                  "type": "object",
+                  "properties": {
+                       "firstName": {
+                        "extendedType": "string",
+                        "maxLength": 50
+                      },
+                      "birthDate" : {
+                        "extendedType": "date"
+                      }
+                    },
+                    "required": ["firstName", "birthDate"]
+                  }'
+  )
+);</pre><p>The following textual JSON is a valid document per the above schema:</p><pre class="oac_no_warn" dir="ltr">
+{
+  "firstName": "Scott",
+  "birthDate": "1990-04-02"
+}</pre></li>
+                     <li>
+                        <p>Use PL/SQL functions explained fully in <span class="italic"><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADJSN-GUID-7D67DF73-CB21-4878-AF93-D1A213411EC0" target="_blank">JSON Schema</a></span> of the <cite>JSON Developer's Guide</cite>.
+                        </p>
+                     </li>
+                  </ul>
+                  <p>Static dictionary views <code class="codeph">DBA_JSON_SCHEMA_COLUMNS</code>, <code class="codeph">ALL_JSON_SCHEMA_COLUMNS</code>, and <code class="codeph">USER_JSON_SCHEMA_COLUMNS</code> describe a JSON schema that you is used as a check constraint.
+                  </p>
+                  <p>Each row of these views contains the name of the table, the JSON column, and the constraint defined by the JSON schema, as well as the JSON schema itself and an indication of whether the cast mode is specified for the JSON schema. Views <code class="codeph">DBA_JSON_SCHEMA_COLUMNS</code> and <code class="codeph">ALL_JSON_SCHEMA_COLUMNS</code> also contain the name of the table owner. 
+                  </p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__GUID-1F739CF9-CCB4-47D3-A0D1-B384547730DC">Examples</p>
+               </div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__GUID-75BEDEAB-BE17-43FC-BBCE-02CA34294CDA">IS JSON VALIDATE</p>
+               </div>
+               <div class="section">
+                  <p>The following exampe creates a schema <code class="codeph">jsontab1</code> with a JSON constraint <code class="codeph">jtlisj</code> that has a  JSON validate check:
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE TABLE jsontab1(
+    id NUMBER(4),
+    j  JSON CONSTRAINT jt1isj CHECK (j IS JSON VALIDATE USING     
+     '{
+       "type":"object", 
+       "minProperties": 2
+      }')
+    );</pre><p>The following example shows the error when you try to insert values other than a JSON object:</p><pre class="oac_no_warn" dir="ltr">INSERT INTO jsontab1(j) VALUES ('["a", "b"]');
+INSERT INTO jsontab1(j) VALUES ('["a", "b"]')
+*
+ERROR at line 1:
+ORA-02290: check constraint (SYS.JT1ISJ) violated
+</pre><p>The following two examples shows a row added with valid input :</p><pre class="oac_no_warn" dir="ltr">INSERT INTO jsontab1(j) VALUES ('{"a": "a", "b": "b"}');
+
+   1 row created.
+ </pre><pre class="oac_no_warn" dir="ltr">INSERT INTO jsontab1(jschd) VALUES (json('"a json string"'));
+
+1 row created.
+</pre><p>The following example adds another constraint <code class="codeph">jschdsv</code> to table <code class="codeph">jsontab1</code>:
+                  </p><pre class="oac_no_warn" dir="ltr">
+ALTER TABLE jsontab1
+ADD jschd JSON CONSTRAINT jschdsv
+                   CHECK (jschd IS JSON VALIDATE USING '{"type":"string"}');
+
+Table altered.</pre><pre class="oac_no_warn" dir="ltr">
+SQL&gt; INSERT INTO jsontab1(jschd) VALUES (json('3.1415'));
+INSERT INTO jsontab1(jschd) VALUES (json('3.1415'))
+*
+ERROR at line 1:
+ORA-02290: check constraint (SYS.JSCHDSV) violated</pre><p><span class="bold">IS JSON VALIDATE in WHERE Clause</span></p><pre class="oac_no_warn" dir="ltr">SELECT COUNT(1) FROM jsontab1 WHERE j IS JSON 
+VALIDATE
+         '{"type" : "object",
+              "properties" : {
+                  "id" : {
+                      "type" : "number"
+                   }
+               }
+           }';</pre></div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__GUID-966983C1-E6D4-4C7A-9728-2AACF89A6811">Testing for STRICT or LAX JSON Syntax: Example</p>
+               </div>
+               <div class="section">
+                  <p>The following statement creates table <code class="codeph">t</code> with column <code class="codeph">col1</code>:
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE TABLE t (col1 VARCHAR2(100));
+</pre><p>The following statements insert values into column <code class="codeph">col1</code> of table <code class="codeph">t</code>:
+                  </p><pre class="oac_no_warn" dir="ltr">INSERT INTO t VALUES ( '[ "LIT192", "CS141", "HIS160" ]' );
+INSERT INTO t VALUES ( '{ "Name": "John" }' );
+INSERT INTO t VALUES ( '{ "Grade Values" : { A : 4.0, B : 3.0, C : 2.0 } }');
+INSERT INTO t VALUES ( '{ "isEnrolled" : true }' );
+INSERT INTO t VALUES ( '{ "isMatriculated" : False }' );
+INSERT INTO t VALUES (NULL);
+INSERT INTO t VALUES ('This is not well-formed JSON data');
+</pre><p>The following statement queries table <code class="codeph">t</code> and returns <code class="codeph">col1</code> values that are well-formed JSON data. Because neither the <code class="codeph">STRICT</code> nor <code class="codeph">LAX</code> keyword is specified, this example uses the default <code class="codeph">LAX</code> setting. Therefore, this query returns values that use strict or lax JSON syntax.
+                  </p><pre class="oac_no_warn" dir="ltr">SELECT col1
+  FROM t
+  WHERE col1 IS JSON;
+
+COL1
+--------------------------------------------------
+[ "LIT192", "CS141", "HIS160" ]
+{ "Name": "John" }
+{ "Grade Values" : { A : 4.0, B : 3.0, C : 2.0 } }
+{ "isEnrolled" : true }
+{ "isMatriculated" : False }
+</pre><p>The following statement queries table <code class="codeph">t</code> and returns <code class="codeph">col1</code> values that are well-formed JSON data. This example specifies the <code class="codeph">STRICT</code> setting. Therefore, this query returns only values that use strict JSON syntax.
+                  </p><pre class="oac_no_warn" dir="ltr">SELECT col1
+  FROM t
+  WHERE col1 IS JSON STRICT;
+
+COL1
+--------------------------------------------------
+[ "LIT192", "CS141", "HIS160" ]
+{ "Name": "John" }
+{ "isEnrolled" : true }
+</pre><p>The following statement queries table <code class="codeph">t</code> and returns <code class="codeph">col1</code> values that use lax JSON syntax, but omits <code class="codeph">col1</code> values that use strict JSON syntax. Therefore, this query returns only values that contain the exceptions allowed in lax JSON syntax.
+                  </p><pre class="oac_no_warn" dir="ltr">SELECT col1
+  FROM t
+  WHERE col1 IS NOT JSON STRICT AND col1 IS JSON LAX;
+
+COL1
+--------------------------------------------------
+{ "Grade Values" : { A : 4.0, B : 3.0, C : 2.0 } }
+{ "isMatriculated" : False }</pre></div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__GUID-9DD05BF0-37C8-4AFB-B6CB-EA13DB17DEE3">Testing for Unique Keys: Example</p>
+               </div>
+               <div class="section">
+                  <p>The following statement creates table <code class="codeph">t</code> with column <code class="codeph">col1</code>:
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE TABLE t (col1 VARCHAR2(100));
+</pre><p>The following statements insert values into column <code class="codeph">col1</code> of table <code class="codeph">t</code>:
+                  </p><pre class="oac_no_warn" dir="ltr">INSERT INTO t VALUES ('{a:100, b:200, c:300}');
+INSERT INTO t VALUES ('{a:100, a:200, b:300}');
+INSERT INTO t VALUES ('{a:100, b : {a:100, c:300}}');
+</pre><p>The following statement queries table t and returns <code class="codeph">col1</code> values that are well-formed JSON data with unique key names within each object:
+                  </p><pre class="oac_no_warn" dir="ltr">SELECT col1 FROM t
+  WHERE col1 IS JSON WITH UNIQUE KEYS;
+
+COL1
+---------------------------
+{a:100, b:200, c:300}
+{a:100, b : {a:100, c:300}}
+</pre><p>The second row is returned because, while the key name <code class="codeph">a</code> appears twice, it is in two different objects.
+                  </p>
+                  <p>The following statement queries table <code class="codeph">t</code> and returns <code class="codeph">col1</code> values that are well-formed JSON data, regardless of whether there are unique key names within each object:
+                  </p><pre class="oac_no_warn" dir="ltr">SELECT col1 FROM t
+  WHERE col1 IS JSON WITHOUT UNIQUE KEYS;
+
+COL1
+---------------------------
+{a:100, b:200, c:300}
+{a:100, a:200, b:300}
+{a:100, b : {a:100, c:300}}</pre></div>
+               <div class="section">
+                  <p class="subhead1" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__GUID-C71211C5-1A6C-409E-8ECB-0941D7E27FA0">Using IS JSON as a Check Constraint: Example</p>
+               </div>
+               <div class="section">
+                  <p>The following statement creates table <code class="codeph">j_purchaseorder</code>, which will store JSON data in column <code class="codeph">po_document</code>. The statement uses the <code class="codeph">IS</code> <code class="codeph">JSON</code> condition as a check constraint to ensure that only well-formed JSON is stored in column <code class="codeph">po_document</code>.
+                  </p><pre class="oac_no_warn" dir="ltr">CREATE TABLE j_purchaseorder
+  (id RAW (16) NOT NULL,
+   date_loaded TIMESTAMP(6) WITH TIME ZONE,
+   po_document CLOB CONSTRAINT ensure_json CHECK (po_document IS JSON));</pre></div>
+               <div class="section">
+                  <div class="infoboxnotealso" id="GUID-99B9493D-2929-4A09-BA39-A56F8E7319DA__GUID-87230A20-702B-4606-8A63-1EA8DB1081A8">
+                     <p class="notep1">See Also:</p>
+                     <p><span class="italic"><a href="/pls/topic/lookup?ctx=en/database/oracle/oracle-database/26/sqlrf&amp;id=ADJSN-GUID-8F897ED9-791B-4F53-AFAE-690DE38111D1" target="_blank">Conditions IS JSON and IS NOT JSON</a></span> of the <span class="italic">JSON Developer's Guide</span>.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </article>
+   </body>
+</html>

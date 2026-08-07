@@ -1,0 +1,62 @@
+{
+  "dbms": "sqlserver",
+  "feature_type": "operator",
+  "nodes": {
+    "page": 16,
+    "section": 122,
+    "block": 726,
+    "feature_candidate": 20
+  },
+  "edges": {
+    "page_contains_section": 122,
+    "section_contains_block": 726,
+    "section_previous": 106,
+    "section_next": 106,
+    "feature_documented_in_section": 22,
+    "total": 1082
+  },
+  "noise": {
+    "noise_nodes": 0,
+    "noise_sections": 0,
+    "noise_blocks": 0,
+    "eligible_nodes": 865
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "sqlserver.function.operators",
+      "target": "sqlserver_current_operators_transact_sql_s0001"
+    },
+    {
+      "source": "sqlserver.operator.%=",
+      "target": "sqlserver_current_compound_operators_transact_sql_s0002"
+    },
+    {
+      "source": "sqlserver.operator.&=",
+      "target": "sqlserver_current_compound_operators_transact_sql_s0002"
+    },
+    {
+      "source": "sqlserver.operator.*=",
+      "target": "sqlserver_current_compound_operators_transact_sql_s0002"
+    },
+    {
+      "source": "sqlserver.operator.+=",
+      "target": "sqlserver_current_compound_operators_transact_sql_s0002"
+    },
+    {
+      "source": "sqlserver.operator.-=",
+      "target": "sqlserver_current_compound_operators_transact_sql_s0002"
+    },
+    {
+      "source": "sqlserver.operator./=",
+      "target": "sqlserver_current_compound_operators_transact_sql_s0002"
+    },
+    {
+      "source": "sqlserver.operator.^=",
+      "target": "sqlserver_current_compound_operators_transact_sql_s0002"
+    }
+  ],
+  "generated_at": "2026-08-06T19:56:23.231509+08:00"
+}

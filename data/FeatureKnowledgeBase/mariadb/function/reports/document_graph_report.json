@@ -1,0 +1,79 @@
+{
+  "dbms": "mariadb",
+  "feature_type": "function",
+  "nodes": {
+    "page": 415,
+    "section": 1492,
+    "block": 7919,
+    "feature_candidate": 344
+  },
+  "edges": {
+    "page_contains_section": 1492,
+    "section_contains_block": 7919,
+    "section_previous": 1078,
+    "section_next": 1078,
+    "feature_documented_in_section": 377,
+    "see_also_links_to_feature": 3,
+    "total": 11947
+  },
+  "noise": {
+    "noise_nodes": 1164,
+    "noise_sections": 1,
+    "noise_blocks": 1163,
+    "eligible_nodes": 8664
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [
+    {
+      "source": "mariadb_current_aes_encrypt_s0004",
+      "target": "mariadb.function.kdf",
+      "matched_name": "KDF"
+    },
+    {
+      "source": "mariadb_current_ifnull_s0004",
+      "target": "mariadb.function.not",
+      "matched_name": "NOT"
+    },
+    {
+      "source": "mariadb_current_nullif_s0004",
+      "target": "mariadb.function.not",
+      "matched_name": "NOT"
+    }
+  ],
+  "sample_feature_documented_edges": [
+    {
+      "source": "mariadb.function.not",
+      "target": "mariadb_current_parentheses_s0001"
+    },
+    {
+      "source": "mariadb.function.kdf",
+      "target": "mariadb_current_kdf_s0001"
+    },
+    {
+      "source": "mariadb.function.abs",
+      "target": "mariadb_current_abs_s0001"
+    },
+    {
+      "source": "mariadb.function.acos",
+      "target": "mariadb_current_acos_s0001"
+    },
+    {
+      "source": "mariadb.function.add_months",
+      "target": "mariadb_current_add_months_s0002"
+    },
+    {
+      "source": "mariadb.function.adddate",
+      "target": "mariadb_current_adddate_s0001"
+    },
+    {
+      "source": "mariadb.function.addtime",
+      "target": "mariadb_current_addtime_s0001"
+    },
+    {
+      "source": "mariadb.function.aes_decrypt",
+      "target": "mariadb_current_aes_decrypt_s0001"
+    }
+  ],
+  "generated_at": "2026-08-06T19:41:01.028874+08:00"
+}

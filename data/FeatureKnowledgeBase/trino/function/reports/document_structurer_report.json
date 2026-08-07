@@ -1,0 +1,410 @@
+{
+  "dbms": "trino",
+  "feature_type": "function",
+  "processed_pages": 48,
+  "skipped_pages": 0,
+  "total_sections": 338,
+  "total_blocks": 5209,
+  "section_sources": {
+    "heading_tree": 338
+  },
+  "block_types": {
+    "heading": 338,
+    "paragraph": 641,
+    "code": 582,
+    "list": 1229,
+    "signature": 923,
+    "definition_term": 533,
+    "definition_description": 567,
+    "table": 45,
+    "table_row": 338,
+    "note": 9,
+    "warning": 4
+  },
+  "pages": [
+    {
+      "page_id": "trino_current_functions",
+      "sections": 7,
+      "blocks": 91,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 54
+    },
+    {
+      "page_id": "trino_current_list",
+      "sections": 28,
+      "blocks": 969,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "trino_current_list_by_topic",
+      "sections": 32,
+      "blocks": 957,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "trino_current_aggregate",
+      "sections": 9,
+      "blocks": 179,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 19
+    },
+    {
+      "page_id": "trino_current_ai",
+      "sections": 8,
+      "blocks": 65,
+      "anchors": 0,
+      "tables": 2,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "trino_current_array",
+      "sections": 4,
+      "blocks": 109,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 7
+    },
+    {
+      "page_id": "trino_current_binary",
+      "sections": 9,
+      "blocks": 83,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "trino_current_bitwise",
+      "sections": 1,
+      "blocks": 18,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "trino_current_color",
+      "sections": 1,
+      "blocks": 17,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "trino_current_comparison",
+      "sections": 16,
+      "blocks": 159,
+      "anchors": 0,
+      "tables": 5,
+      "code_blocks": 43
+    },
+    {
+      "page_id": "trino_current_conditional",
+      "sections": 7,
+      "blocks": 71,
+      "anchors": 0,
+      "tables": 1,
+      "code_blocks": 18
+    },
+    {
+      "page_id": "trino_current_conversion",
+      "sections": 5,
+      "blocks": 31,
+      "anchors": 0,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "trino_current_datasketches",
+      "sections": 4,
+      "blocks": 23,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "trino_current_datetime",
+      "sections": 12,
+      "blocks": 241,
+      "anchors": 0,
+      "tables": 6,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "trino_current_decimal",
+      "sections": 5,
+      "blocks": 23,
+      "anchors": 0,
+      "tables": 2,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "trino_current_geospatial",
+      "sections": 9,
+      "blocks": 281,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "trino_current_hyperloglog",
+      "sections": 4,
+      "blocks": 19,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "trino_current_ipaddress",
+      "sections": 1,
+      "blocks": 3,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "trino_current_json",
+      "sections": 46,
+      "blocks": 625,
+      "anchors": 0,
+      "tables": 22,
+      "code_blocks": 148
+    },
+    {
+      "page_id": "trino_current_lambda",
+      "sections": 3,
+      "blocks": 26,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 12
+    },
+    {
+      "page_id": "trino_current_logical",
+      "sections": 3,
+      "blocks": 32,
+      "anchors": 0,
+      "tables": 3,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "trino_current_ml",
+      "sections": 5,
+      "blocks": 40,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "trino_current_map",
+      "sections": 3,
+      "blocks": 44,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 6
+    },
+    {
+      "page_id": "trino_current_math",
+      "sections": 10,
+      "blocks": 134,
+      "anchors": 0,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "trino_current_qdigest",
+      "sections": 3,
+      "blocks": 18,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "trino_current_row",
+      "sections": 1,
+      "blocks": 4,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "trino_current_regexp",
+      "sections": 1,
+      "blocks": 55,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 21
+    },
+    {
+      "page_id": "trino_current_session",
+      "sections": 1,
+      "blocks": 10,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "trino_current_setdigest",
+      "sections": 4,
+      "blocks": 31,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    },
+    {
+      "page_id": "trino_current_string",
+      "sections": 4,
+      "blocks": 101,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "trino_current_system",
+      "sections": 1,
+      "blocks": 4,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "trino_current_table",
+      "sections": 8,
+      "blocks": 58,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 13
+    },
+    {
+      "page_id": "trino_current_teradata",
+      "sections": 3,
+      "blocks": 27,
+      "anchors": 0,
+      "tables": 1,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "trino_current_tdigest",
+      "sections": 3,
+      "blocks": 14,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "trino_current_url",
+      "sections": 3,
+      "blocks": 24,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 1
+    },
+    {
+      "page_id": "trino_current_uuid",
+      "sections": 1,
+      "blocks": 3,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "trino_current_variant",
+      "sections": 12,
+      "blocks": 138,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 54
+    },
+    {
+      "page_id": "trino_current_window",
+      "sections": 4,
+      "blocks": 37,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "trino_current_udf",
+      "sections": 1,
+      "blocks": 7,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "trino_current_functions",
+      "sections": 7,
+      "blocks": 91,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 54
+    },
+    {
+      "page_id": "trino_current_table_functions",
+      "sections": 13,
+      "blocks": 64,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 11
+    },
+    {
+      "page_id": "trino_current_show_functions",
+      "sections": 5,
+      "blocks": 30,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 5
+    },
+    {
+      "page_id": "trino_current_function",
+      "sections": 5,
+      "blocks": 31,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "trino_current_sql",
+      "sections": 5,
+      "blocks": 44,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 7
+    },
+    {
+      "page_id": "trino_current_python",
+      "sections": 6,
+      "blocks": 126,
+      "anchors": 0,
+      "tables": 1,
+      "code_blocks": 40
+    },
+    {
+      "page_id": "trino_current_create_function",
+      "sections": 5,
+      "blocks": 18,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 3
+    },
+    {
+      "page_id": "trino_current_drop_function",
+      "sections": 5,
+      "blocks": 20,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 4
+    },
+    {
+      "page_id": "trino_current_show_create_function",
+      "sections": 5,
+      "blocks": 14,
+      "anchors": 0,
+      "tables": 0,
+      "code_blocks": 2
+    }
+  ]
+}

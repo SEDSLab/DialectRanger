@@ -1,0 +1,31 @@
+{
+  "dbms": "oracle",
+  "feature_type": "operator",
+  "total_pages": 33,
+  "total_sections": 88,
+  "total_blocks": 1483,
+  "candidate_features": 29,
+  "candidate_groups": 29,
+  "feature_drafts": 29,
+  "total_drafts": 29,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 29,
+  "invalid_features": 0,
+  "total_validated_features": 29,
+  "total_kb_features": 21,
+  "total_review_items": 29,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 29,
+    "no_description_claims": 8,
+    "no_valid_syntax": 0,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 5
+  },
+  "generated_at": "2026-08-06T19:50:58.726981+08:00"
+}

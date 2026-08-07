@@ -1,0 +1,7 @@
+{
+  "dbms": "cockroachdb",
+  "feature_type": "datatype",
+  "candidates": 22,
+  "groups": 20,
+  "drafts": 20
+}

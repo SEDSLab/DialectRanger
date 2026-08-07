@@ -1,0 +1,47 @@
+> For the complete documentation index, see [llms.txt](https://mariadb.com/docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://mariadb.com/docs/server/reference/data-types/type-of.md).
+
+# TYPE OF
+
+## Overview
+
+This is special declaration only available inside a stored procedure.
+
+## EXAMPLES
+
+```sql
+CREATE TABLE typeof_table(
+  descr VARCHAR(20),
+  val INT
+);
+```
+
+```sql
+INSERT INTO typeof_table VALUES ('Life', 42);
+```
+
+```sql
+DELIMITER $$
+CREATE PROCEDURE typeof_proc()
+BEGIN
+  DECLARE descr TYPE OF typeof_table.descr;
+  DECLARE val TYPE OF typeof_table.val;
+  SELECT * INTO descr, val FROM typeof_table;
+  SELECT descr, val;
+END;
+$$
+DELIMITER ;
+```
+
+```sql
+CALL typeof_proc();
+
++-------+------+
+| descr | val  |
++-------+------+
+| Life  |   42 |
++-------+------+
+```
+
+<sub>*This page is: Copyright © 2026 MariaDB. All rights reserved.*</sub>
+
+{% @marketo/form formId="4316" %}

@@ -1,0 +1,84 @@
+> For the complete documentation index, see [llms.txt](https://mariadb.com/docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://mariadb.com/docs/server/reference/sql-structure/operators/logical-operators/or.md).
+
+# ||
+
+## Syntax
+
+```bnf
+OR, ||
+```
+
+## Description
+
+Logical `OR`. When both operands are non-`NULL`, the result is `1` if any operand is non-zero, and `0` otherwise. With a `NULL` operand, the result is `1` if the other operand is non-zero, and `NULL` otherwise. If both operands are `NULL`, the result is `NULL`.
+
+For this operator, [short-circuit evaluation](/docs/server/reference/sql-structure/operators/operator-precedence.md#short-circuit-evaluation) can be used.
+
+{% hint style="warning" %}
+Note that, if the `PIPES_AS_CONCAT` [SQL\_MODE](/docs/server/server-management/variables-and-modes/sql_mode.md) is set, `||` is used as a string concatenation operator. This means that `a || b` is the same as `CONCAT(a,b)`. See [CONCAT()](/docs/server/reference/sql-functions/string-functions/concat.md) for details.
+{% endhint %}
+
+### Oracle Mode
+
+In [Oracle mode](/docs/release-notes/community-server/about/compatibility-and-differences/sql_modeoracle.md), `||` ignores [null](/docs/server/reference/data-types/null-values.md).
+
+## Examples
+
+```sql
+SELECT 1 || 1;
++--------+
+| 1 || 1 |
++--------+
+|      1 |
++--------+
+
+SELECT 1 || 0;
++--------+
+| 1 || 0 |
++--------+
+|      1 |
++--------+
+
+SELECT 0 || 0;
++--------+
+| 0 || 0 |
++--------+
+|      0 |
++--------+
+
+SELECT 0 || NULL;
++-----------+
+| 0 || NULL |
++-----------+
+|      NULL |
++-----------+
+
+SELECT 1 || NULL;
++-----------+
+| 1 || NULL |
++-----------+
+|         1 |
++-----------+
+```
+
+In [Oracle mode](/docs/release-notes/community-server/about/compatibility-and-differences/sql_modeoracle.md):
+
+```sql
+SELECT 0 || NULL;
++-----------+
+| 0 || NULL |
++-----------+
+| 0         |
++-----------+
+```
+
+## See Also
+
+## See Also
+
+* [Operator Precedence](/docs/server/reference/sql-structure/operators/operator-precedence.md)
+* [Oracle mode](/docs/release-notes/community-server/about/compatibility-and-differences/sql_modeoracle.md)
+
+<sub>*This page is licensed: GPLv2, originally from*</sub> [<sub>*fill\_help\_tables.sql*</sub>](https://github.com/MariaDB/server/blob/main/scripts/fill_help_tables.sql)
+
+{% @marketo/form formId="4316" %}

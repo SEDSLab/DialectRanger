@@ -1,0 +1,62 @@
+{
+  "dbms": "duckdb",
+  "feature_type": "operator",
+  "nodes": {
+    "page": 98,
+    "section": 609,
+    "block": 6083,
+    "feature_candidate": 40
+  },
+  "edges": {
+    "page_contains_section": 609,
+    "section_contains_block": 6083,
+    "section_previous": 594,
+    "section_next": 594,
+    "feature_documented_in_section": 69,
+    "total": 7949
+  },
+  "noise": {
+    "noise_nodes": 200,
+    "noise_sections": 7,
+    "noise_blocks": 193,
+    "eligible_nodes": 6591
+  },
+  "graph_expansion_enabled": true,
+  "sample_alias_edges": [],
+  "sample_see_also_edges": [],
+  "sample_feature_documented_edges": [
+    {
+      "source": "duckdb.function.in",
+      "target": "duckdb_stable_in_s0002"
+    },
+    {
+      "source": "duckdb.function.in",
+      "target": "duckdb_stable_in_s0002"
+    },
+    {
+      "source": "duckdb.function.in",
+      "target": "duckdb_stable_in_s0002"
+    },
+    {
+      "source": "duckdb.function.in",
+      "target": "duckdb_stable_in_s0002"
+    },
+    {
+      "source": "duckdb.function.in",
+      "target": "duckdb_stable_in_s0002"
+    },
+    {
+      "source": "duckdb.function.in",
+      "target": "duckdb_stable_in_s0002"
+    },
+    {
+      "source": "duckdb.function.in",
+      "target": "duckdb_stable_in_s0002"
+    },
+    {
+      "source": "duckdb.function.in",
+      "target": "duckdb_stable_in_s0002"
+    }
+  ],
+  "generated_at": "2026-08-06T19:01:17.014324+08:00"
+}

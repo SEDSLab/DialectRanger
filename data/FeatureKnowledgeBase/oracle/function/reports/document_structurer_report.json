@@ -1,0 +1,96 @@
+{
+  "dbms": "oracle",
+  "feature_type": "function",
+  "processed_pages": 9,
+  "skipped_pages": 0,
+  "total_sections": 39,
+  "total_blocks": 904,
+  "section_sources": {
+    "fallback": 9,
+    "heading_tree": 30
+  },
+  "block_types": {
+    "anchor": 109,
+    "heading": 30,
+    "paragraph": 180,
+    "signature": 1,
+    "list": 442,
+    "code": 135,
+    "table": 1,
+    "table_row": 6
+  },
+  "pages": [
+    {
+      "page_id": "oracle_26_functions",
+      "sections": 2,
+      "blocks": 16,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "oracle_26_about_sql_functions",
+      "sections": 2,
+      "blocks": 37,
+      "anchors": 13,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "oracle_26_single_row_functions",
+      "sections": 23,
+      "blocks": 394,
+      "anchors": 42,
+      "tables": 1,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "oracle_26_aggregate_functions",
+      "sections": 2,
+      "blocks": 102,
+      "anchors": 4,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "oracle_26_analytic_functions",
+      "sections": 2,
+      "blocks": 323,
+      "anchors": 39,
+      "tables": 0,
+      "code_blocks": 117
+    },
+    {
+      "page_id": "oracle_26_object_reference_functions",
+      "sections": 2,
+      "blocks": 12,
+      "anchors": 3,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "oracle_26_model_functions",
+      "sections": 2,
+      "blocks": 9,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "oracle_26_olap_functions",
+      "sections": 2,
+      "blocks": 5,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    },
+    {
+      "page_id": "oracle_26_data_cartridge_functions",
+      "sections": 2,
+      "blocks": 6,
+      "anchors": 2,
+      "tables": 0,
+      "code_blocks": 0
+    }
+  ]
+}

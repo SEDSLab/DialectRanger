@@ -1,0 +1,22 @@
+{
+  "dbms": "mariadb",
+  "feature_type": "datatype",
+  "mode": "shadow",
+  "backend": "mock",
+  "total_features": 36,
+  "semantic_drafts": 36,
+  "status_counts": {
+    "extracted": 0,
+    "partial": 0,
+    "insufficient_context": 0,
+    "no_context": 36,
+    "skipped": 0,
+    "validation_failed": 0
+  },
+  "description_claims": 0,
+  "constraints": 0,
+  "example_roles": 0,
+  "invalid_evidence_refs": 0,
+  "merge_into_kb": false,
+  "generated_at": "2026-08-06T20:04:38.709882+08:00"
+}

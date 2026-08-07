@@ -1,0 +1,72 @@
+{
+  "dbms": "clickhouse",
+  "feature_type": "operator",
+  "processed_pages": 6,
+  "skipped_pages": 0,
+  "total_sections": 105,
+  "total_blocks": 977,
+  "section_sources": {
+    "fallback": 6,
+    "heading_tree": 99
+  },
+  "block_types": {
+    "anchor": 36,
+    "heading": 99,
+    "code": 617,
+    "signature": 87,
+    "list": 100,
+    "table": 6,
+    "table_row": 26,
+    "paragraph": 6
+  },
+  "pages": [
+    {
+      "page_id": "clickhouse_current_operators",
+      "sections": 48,
+      "blocks": 411,
+      "anchors": 6,
+      "tables": 3,
+      "code_blocks": 251
+    },
+    {
+      "page_id": "clickhouse_current_exists",
+      "sections": 1,
+      "blocks": 17,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 9
+    },
+    {
+      "page_id": "clickhouse_current_distributed_ddl",
+      "sections": 1,
+      "blocks": 17,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 10
+    },
+    {
+      "page_id": "clickhouse_current_index",
+      "sections": 48,
+      "blocks": 411,
+      "anchors": 6,
+      "tables": 3,
+      "code_blocks": 251
+    },
+    {
+      "page_id": "clickhouse_current_in",
+      "sections": 5,
+      "blocks": 113,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 96
+    },
+    {
+      "page_id": "clickhouse_current_in_functions",
+      "sections": 2,
+      "blocks": 8,
+      "anchors": 6,
+      "tables": 0,
+      "code_blocks": 0
+    }
+  ]
+}

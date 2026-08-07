@@ -1,0 +1,47 @@
+{
+  "dbms": "mysql",
+  "feature_type": "function",
+  "total_drafts": 485,
+  "clean_validated_features": 336,
+  "validated_with_warnings": 149,
+  "invalid_features": 0,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 111,
+    "no_description_claims": 2,
+    "no_valid_syntax": 0,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 3,
+    "large_evidence_block": 0,
+    "long_examples": 45,
+    "alias_like_feature": 2
+  },
+  "sample_clean_features": [
+    "mysql.function.abs",
+    "mysql.function.acos",
+    "mysql.function.adddate",
+    "mysql.function.addtime",
+    "mysql.function.aes_decrypt",
+    "mysql.function.aes_encrypt",
+    "mysql.function.any_value",
+    "mysql.function.ascii",
+    "mysql.function.asin",
+    "mysql.function.asymmetric_decrypt"
+  ],
+  "sample_warning_features": [
+    "mysql.function.can_access_column",
+    "mysql.function.can_access_database",
+    "mysql.function.can_access_table",
+    "mysql.function.can_access_user",
+    "mysql.function.can_access_view",
+    "mysql.function.ceil",
+    "mysql.function.character_length",
+    "mysql.function.contains",
+    "mysql.function.format_time",
+    "mysql.function.gen_blacklist"
+  ],
+  "sample_invalid_features": [],
+  "generated_at": "2026-08-06T18:46:23.267225+08:00"
+}

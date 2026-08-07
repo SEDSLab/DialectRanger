@@ -1,0 +1,47 @@
+{
+  "dbms": "postgresql",
+  "feature_type": "function",
+  "total_drafts": 651,
+  "clean_validated_features": 223,
+  "validated_with_warnings": 428,
+  "invalid_features": 0,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 301,
+    "no_description_claims": 27,
+    "no_valid_syntax": 0,
+    "no_valid_examples": 92,
+    "weak_syntax": 38,
+    "table_block_evidence": 35,
+    "large_evidence_block": 3,
+    "long_examples": 32,
+    "alias_like_feature": 14
+  },
+  "sample_clean_features": [
+    "postgresql.function.abbrev",
+    "postgresql.function.abs",
+    "postgresql.function.acosd",
+    "postgresql.function.age",
+    "postgresql.function.array_append",
+    "postgresql.function.array_cat",
+    "postgresql.function.array_dims",
+    "postgresql.function.array_fill",
+    "postgresql.function.array_length",
+    "postgresql.function.array_lower"
+  ],
+  "sample_warning_features": [
+    "postgresql.function.acldefault",
+    "postgresql.function.aclexplode",
+    "postgresql.function.acos",
+    "postgresql.function.acosh",
+    "postgresql.function.any_value",
+    "postgresql.function.area",
+    "postgresql.function.array_agg",
+    "postgresql.function.atand",
+    "postgresql.function.avg",
+    "postgresql.function.bit_and"
+  ],
+  "sample_invalid_features": [],
+  "generated_at": "2026-08-06T18:49:13.331940+08:00"
+}

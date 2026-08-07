@@ -1,0 +1,81 @@
+{"feature_id": "sqlite.function.abs", "name": "abs", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.acos", "name": "acos", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.acosh", "name": "acosh", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.asin", "name": "asin", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.asinh", "name": "asinh", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.atan", "name": "atan", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.atan2", "name": "atan2", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.atanh", "name": "atanh", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.avg", "name": "avg", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.changes", "name": "changes", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.char", "name": "char", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.coalesce", "name": "coalesce", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.concat", "name": "concat", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.concat_ws", "name": "concat_ws", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.cos", "name": "cos", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlite.function.cosh", "name": "cosh", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.cume_dist", "name": "cume_dist", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlite.function.degrees", "name": "degrees", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.dense_rank", "name": "dense_rank", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlite.function.exp", "name": "exp", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.first_value", "name": "first_value", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlite.function.floor", "name": "floor", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.format", "name": "format", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.glob", "name": "glob", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.hex", "name": "hex", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.ifnull", "name": "ifnull", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.instr", "name": "instr", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.json_extract", "name": "JSON_EXTRACT", "status": "invalid", "reason": ["schema_invalid", "empty_signature", "no_valid_syntax", "missing_examples"], "details": ["signature: empty string"]}
+{"feature_id": "sqlite.function.json_insert", "name": "JSON_INSERT", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlite.function.json_replace", "name": "JSON_REPLACE", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlite.function.json_set", "name": "JSON_SET", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlite.function.last_insert_rowid", "name": "last_insert_rowid", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.last_value", "name": "last_value", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlite.function.length", "name": "length", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.likelihood", "name": "likelihood", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.likely", "name": "likely", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.ln", "name": "ln", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.log2", "name": "log2", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.lower", "name": "lower", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.max", "name": "max", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.median", "name": "median", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.min", "name": "min", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.mod", "name": "mod", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.nth_value", "name": "nth_value", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlite.function.ntile", "name": "ntile", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlite.function.nullif", "name": "nullif", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.octet_length", "name": "octet_length", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.percent_rank", "name": "percent_rank", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlite.function.percentile", "name": "percentile", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.percentile_cont", "name": "percentile_cont", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.percentile_disc", "name": "percentile_disc", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.pi", "name": "pi", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.printf", "name": "printf", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.quote", "name": "quote", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.radians", "name": "radians", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.random", "name": "random", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.randomblob", "name": "randomblob", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.rank", "name": "rank", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlite.function.replace", "name": "replace", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.row_number", "name": "row_number", "status": "needs_review", "reason": ["no_description_claims"], "details": []}
+{"feature_id": "sqlite.function.sign", "name": "sign", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.sin", "name": "sin", "status": "needs_review", "reason": ["missing_examples"], "details": []}
+{"feature_id": "sqlite.function.sinh", "name": "sinh", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.soundex", "name": "soundex", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.sqlite_compileoption_get", "name": "sqlite_compileoption_get", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.sqlite_compileoption_used", "name": "sqlite_compileoption_used", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.sqlite_offset", "name": "sqlite_offset", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.sqlite_source_id", "name": "sqlite_source_id", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.sqlite_version", "name": "sqlite_version", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.sqrt", "name": "sqrt", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.tan", "name": "tan", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.tanh", "name": "tanh", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.total_changes", "name": "total_changes", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.trunc", "name": "trunc", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.typeof", "name": "typeof", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.unicode", "name": "unicode", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.unistr", "name": "unistr", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.unistr_quote", "name": "unistr_quote", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.unlikely", "name": "unlikely", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.upper", "name": "upper", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}
+{"feature_id": "sqlite.function.zeroblob", "name": "zeroblob", "status": "needs_review", "reason": ["missing_examples", "no_description_claims", "alias_like_feature"], "details": []}

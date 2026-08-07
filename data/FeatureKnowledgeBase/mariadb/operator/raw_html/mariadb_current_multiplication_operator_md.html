@@ -1,0 +1,57 @@
+> For the complete documentation index, see [llms.txt](https://mariadb.com/docs/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://mariadb.com/docs/server/reference/sql-structure/operators/arithmetic-operators/multiplication-operator.md).
+
+# Multiplication Operator (\*)
+
+## Syntax
+
+```bnf
+*
+```
+
+## Description
+
+Multiplication operator.
+
+## Examples
+
+```sql
+SELECT 7*6;
++-----+
+| 7*6 |
++-----+
+|  42 |
++-----+
+
+SELECT 1234567890*9876543210;
++-----------------------+
+| 1234567890*9876543210 |
++-----------------------+
+|  -6253480962446024716 |
++-----------------------+
+
+SELECT 18014398509481984*18014398509481984.0;
++---------------------------------------+
+| 18014398509481984*18014398509481984.0 |
++---------------------------------------+
+|   324518553658426726783156020576256.0 |
++---------------------------------------+
+
+SELECT 18014398509481984*18014398509481984;
++-------------------------------------+
+| 18014398509481984*18014398509481984 |
++-------------------------------------+
+|                                   0 |
++-------------------------------------+
+```
+
+## See Also
+
+* [Type Conversion](/docs/server/reference/sql-functions/string-functions/type-conversion.md)
+* [Addition Operator (+)](/docs/server/reference/sql-structure/operators/arithmetic-operators/addition-operator.md)
+* [Subtraction Operator (-)](/docs/server/reference/sql-structure/operators/arithmetic-operators/subtraction-operator.md)
+* [Division Operator (/)](/docs/server/reference/sql-structure/operators/arithmetic-operators/division-operator.md)
+* [Operator Precedence](/docs/server/reference/sql-structure/operators/operator-precedence.md)
+
+<sub>*This page is licensed: GPLv2, originally from*</sub> [<sub>*fill\_help\_tables.sql*</sub>](https://github.com/MariaDB/server/blob/main/scripts/fill_help_tables.sql)
+
+{% @marketo/form formId="4316" %}

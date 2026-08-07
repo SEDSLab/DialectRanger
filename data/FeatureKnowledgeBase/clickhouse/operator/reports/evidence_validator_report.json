@@ -1,0 +1,36 @@
+{
+  "dbms": "clickhouse",
+  "feature_type": "operator",
+  "total_drafts": 118,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 118,
+  "invalid_features": 0,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 118,
+    "no_description_claims": 118,
+    "no_valid_syntax": 0,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 0,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 39
+  },
+  "sample_clean_features": [],
+  "sample_warning_features": [
+    "clickhouse.operator.!=_all_clickhouse_current_index",
+    "clickhouse.operator.!=_all_clickhouse_current_operators",
+    "clickhouse.operator.!=_any_clickhouse_current_index",
+    "clickhouse.operator.!=_any_clickhouse_current_operators",
+    "clickhouse.operator.!=_clickhouse_current_index",
+    "clickhouse.operator.!=_clickhouse_current_operators",
+    "clickhouse.operator.%_clickhouse_current_index",
+    "clickhouse.operator.%_clickhouse_current_operators",
+    "clickhouse.operator.()_clickhouse_current_exists",
+    "clickhouse.operator.()_clickhouse_current_index"
+  ],
+  "sample_invalid_features": [],
+  "generated_at": "2026-08-06T21:58:14.100988+08:00"
+}

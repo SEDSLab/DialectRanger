@@ -1,0 +1,36 @@
+{
+  "dbms": "cockroachdb",
+  "feature_type": "operator",
+  "total_drafts": 58,
+  "clean_validated_features": 0,
+  "validated_with_warnings": 58,
+  "invalid_features": 0,
+  "validation_summary": {
+    "schema_invalid": 0,
+    "invalid_evidence_ref": 0,
+    "missing_examples": 58,
+    "no_description_claims": 17,
+    "no_valid_syntax": 0,
+    "no_valid_examples": 0,
+    "weak_syntax": 0,
+    "table_block_evidence": 50,
+    "large_evidence_block": 0,
+    "long_examples": 0,
+    "alias_like_feature": 15
+  },
+  "sample_clean_features": [],
+  "sample_warning_features": [
+    "cockroachdb.operator.!=_cockroachdb_stable_functions_and_operators",
+    "cockroachdb.operator.#>>_cockroachdb_stable_functions_and_operators",
+    "cockroachdb.operator.#>_cockroachdb_stable_functions_and_operators",
+    "cockroachdb.operator.#_cockroachdb_stable_functions_and_operators",
+    "cockroachdb.operator.%_cockroachdb_stable_functions_and_operators",
+    "cockroachdb.operator.&&_cockroachdb_stable_functions_and_operators",
+    "cockroachdb.operator.&_cockroachdb_stable_functions_and_operators",
+    "cockroachdb.operator.*_cockroachdb_stable_functions_and_operators",
+    "cockroachdb.operator.+_cockroachdb_stable_functions_and_operators",
+    "cockroachdb.operator.->>_cockroachdb_stable_functions_and_operators"
+  ],
+  "sample_invalid_features": [],
+  "generated_at": "2026-08-06T19:12:45.532748+08:00"
+}
