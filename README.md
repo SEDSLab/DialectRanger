@@ -9,8 +9,8 @@ At its foundation, DialectRanger is organized around two complementary knowledge
 
 Based on dialect-specific knowledge, our current work has explored two complementary DBMS fuzzing directions:
 
-- **SmartFuzz** — feature-guided seed synthesis for **mutation-based DBMS fuzzing**.
-- **FMU** — feature-aware adaptation for **generation-based DBMS fuzzers**.
+- **SmartFuzz** — high-quality initial seed synthesis for **mutation-based DBMS fuzzing**, guided by the **Feature Knowledge Base** and **Bug Knowledge Base**.
+- **FMU** — **Feature Knowledge Base-guided cross-dialect feature mapping** for **generation-based DBMS fuzzing**.
 
 These two directions focus on how dialect knowledge can improve test-case generation and adapt existing fuzzing techniques to heterogeneous DBMSs.
 
