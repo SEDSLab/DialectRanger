@@ -163,7 +163,7 @@ Detailed development plans are tracked in [TODO.md](TODO.md).
 
 ---
 
-### 📚 Supported Research
+## 📚 Supported Research
 
 ```bibtex
 @article{lin2026smartfuzz,
