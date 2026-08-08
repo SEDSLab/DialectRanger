@@ -27,7 +27,7 @@ These are testing capabilities provided by the platform rather than separate pro
   - [🌐 Website](#-website)
   - [🔧 Extraction Pipeline](#-extraction-pipeline)
 - [🐞 Bug Knowledge Base](#-bug-knowledge-base)
-- [📚 Supported Research](#-supported-research)
+- [📚 Papers](#-Papers)
 - [🗺️ TODO List](#️-todo-list)
 
 ---
