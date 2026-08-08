@@ -88,7 +88,7 @@ Structured Feature Knowledge Base
 
 ### 🌐 Website
 
-🔗 **Online Knowledge Base Browser:** 🔗 **[Online Knowledge Base Browser](https://sedslab.github.io/DialectRanger/)**
+🔗 **Link:** **[Online Knowledge Base Browser](https://sedslab.github.io/DialectRanger/)**
 
 The browser provides an interactive view of the extracted Feature Knowledge Base.
 
@@ -173,6 +173,7 @@ The Bug Knowledge Base will eventually be linked with the Feature Knowledge Base
 
 ## 📚 Supported Research
 
+{% raw %}
 ```bibtex
 @inproceedings{lin2026smartfuzz,
   title     = {SmartFuzz: Leveraging Large Language Models and Feature Composition to Generate High-Quality Seeds for Database Fuzzing},
@@ -198,6 +199,7 @@ The Bug Knowledge Base will eventually be linked with the Feature Knowledge Base
   year      = {2025}
 }
 ```
+{% endraw %}
 
 ---
 
