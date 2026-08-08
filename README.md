@@ -171,7 +171,7 @@ The Bug Knowledge Base will eventually be linked with the Feature Knowledge Base
 
 ---
 
-## 📚 Supported Research
+## 📚 Papers
 
 ```bibtex
 @inproceedings{lin2026smartfuzz,
