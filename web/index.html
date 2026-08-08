@@ -3,62 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DialectRanger — Database Knowledge Base</title>
+<meta name="description" content="DialectRanger is a knowledge-driven testing platform for multi-dialect database systems.">
+<title>DialectRanger — Multi-Dialect Database Testing</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to feature explorer</a>
+
 <header id="header">
   <div class="header-left">
     <h1>DialectRanger</h1>
-    <span class="subtitle">Database Knowledge Base</span>
+    <p class="project-intro">Knowledge-driven testing for multi-dialect database systems</p>
   </div>
   <div class="header-right">
     <span id="header-total"></span>
     <span class="sep">&middot;</span>
     <span id="header-dbms"></span>
-    <a href="https://github.com" target="_blank" class="gh-link">GitHub &#8599;</a>
+    <a href="https://github.com/SEDSLab/DialectRanger" target="_blank" rel="noopener noreferrer" class="gh-link">GitHub &#8599;</a>
   </div>
 </header>
 
-<nav id="top-tabs">
-  <button class="tab-btn active" data-tab="feature-kb">Feature Knowledge Base</button>
-  <button class="tab-btn" data-tab="bug-kb">Bug Knowledge Base</button>
+<nav id="top-tabs" role="tablist" aria-label="Knowledge bases">
+  <button id="tab-button-feature-kb" class="tab-btn active" data-tab="feature-kb" role="tab" aria-selected="true" aria-controls="tab-feature-kb">Feature Knowledge Base</button>
+  <button id="tab-button-bug-kb" class="tab-btn" data-tab="bug-kb" role="tab" aria-selected="false" aria-controls="tab-bug-kb">Bug Knowledge Base <span class="tab-status">Planned</span></button>
 </nav>
 
-<div id="tab-feature-kb" class="tab-content active">
+<div id="tab-feature-kb" class="tab-content active" role="tabpanel" aria-labelledby="tab-button-feature-kb">
 <div id="layout">
   <aside id="sidebar">
     <div class="sidebar-title">DATABASE FEATURES</div>
-    <nav id="sidebar-nav"></nav>
+    <nav id="sidebar-nav" aria-label="Browse features by database"></nav>
   </aside>
 
   <main id="main">
-    <section id="pipeline">
-      <div class="pipeline-item"><span class="pip-icon">📄</span><span class="pip-num">01</span><span class="pip-title">Documentation</span><span class="pip-desc">Official DBMS Docs</span></div>
-      <div class="pipeline-arrow">→</div>
-      <div class="pipeline-item"><span class="pip-icon">🔍</span><span class="pip-num">02</span><span class="pip-title">Discovery</span><span class="pip-desc">Locate Features</span></div>
-      <div class="pipeline-arrow">→</div>
-      <div class="pipeline-item"><span class="pip-icon">⚙️</span><span class="pip-num">03</span><span class="pip-title">Extraction</span><span class="pip-desc">Rule + Profile</span></div>
-      <div class="pipeline-arrow">→</div>
-      <div class="pipeline-item"><span class="pip-icon">✅</span><span class="pip-num">04</span><span class="pip-title">Validation</span><span class="pip-desc">Evidence Checking</span></div>
-      <div class="pipeline-arrow">→</div>
-      <div class="pipeline-item"><span class="pip-icon">📚</span><span class="pip-num">05</span><span class="pip-title">Knowledge Base</span><span class="pip-desc">Structured Features</span></div>
-    </section>
-
     <section id="stats-bar"></section>
 
-    <section id="search-area">
-      <input type="text" id="search-input" placeholder="Search features, syntax, description...">
+    <section id="search-area" aria-label="Search and filter features">
+      <label class="visually-hidden" for="search-input">Search database features</label>
+      <input type="search" id="search-input" placeholder="Search feature names, syntax, descriptions, or examples..." autocomplete="off">
       <div id="filters">
+        <label class="visually-hidden" for="filter-dbms">Filter by DBMS</label>
         <select id="filter-dbms"><option value="">All DBMS</option></select>
+        <label class="visually-hidden" for="filter-type">Filter by feature type</label>
         <select id="filter-type"><option value="">All Feature Types</option></select>
       </div>
     </section>
 
-    <section id="results-header"></section>
-    <section id="feature-list"></section>
-    <section id="empty-state" style="display:none">
+    <section id="results-header" aria-live="polite"></section>
+    <section id="feature-list" aria-label="Database features"></section>
+    <button id="load-more" type="button" hidden>Load more features</button>
+    <section id="empty-state" hidden>
       <p>No features found</p>
       <p class="hint">Try adjusting your search or filters.</p>
     </section>
@@ -66,10 +61,12 @@
 </div>
 </div>
 
-<div id="tab-bug-kb" class="tab-content">
+<div id="tab-bug-kb" class="tab-content" role="tabpanel" aria-labelledby="tab-button-bug-kb" hidden>
   <div id="bug-empty">
-    <p style="font-size:18px;font-weight:600;color:var(--text);margin-bottom:8px">Bug Knowledge Base</p>
-    <p style="color:var(--text-secondary)">Coming soon — database behavior anomalies and edge cases across DBMS implementations.</p>
+    <span class="status-pill">Planned</span>
+    <h2>Bug Knowledge Base</h2>
+    <p>Structured knowledge from historical DBMS bugs, triggering inputs, affected features, and supporting evidence.</p>
+    <p class="bug-note">It will connect bug knowledge with the Feature Knowledge Base to support fuzzing and regression validation.</p>
   </div>
 </div>
 

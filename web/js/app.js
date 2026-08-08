@@ -1,9 +1,10 @@
-/* Feature Crawler Knowledge Base — App Logic */
+/* DialectRanger Feature Knowledge Base — App Logic */
 (function() {
   const FEATURES = window.FEATURE_DATA || [];
   const REVIEWS = window.REVIEW_DATA || [];
   const STATS = window.STATS || { total: 0, dbms: {} };
   const DBMS_LIST = window.DBMS_LIST || [];
+  const PAGE_SIZE = 80;
 
   // DBMS color index (cycle through 10 colors)
   const dbmsColorIndex = {};
@@ -15,6 +16,8 @@
   let activeType = "";
   let searchQuery = "";
   let expandedId = null;
+  let visibleCount = PAGE_SIZE;
+  let searchTimer = null;
 
   // ── State helpers ──────────────────────────
   function filteredFeatures() {
@@ -62,7 +65,11 @@
       group.className = "dbms-group";
 
       const toggle = document.createElement("button");
+      const childrenId = "dbms-features-" + dbms.replace(/[^a-z0-9-]/gi, "-").toLowerCase();
       toggle.className = "dbms-toggle" + (activeDbms === dbms ? " open" : "");
+      toggle.type = "button";
+      toggle.setAttribute("aria-expanded", activeDbms === dbms ? "true" : "false");
+      toggle.setAttribute("aria-controls", childrenId);
       toggle.innerHTML = '<span class="arrow">&#9654;</span>' + dbms + '<span class="count">' + total + '</span>';
       toggle.onclick = function(e) {
         e.stopPropagation();
@@ -74,6 +81,7 @@
       };
 
       const children = document.createElement("div");
+      children.id = childrenId;
       children.className = "dbms-children" + (activeDbms === dbms ? " open" : "");
 
       [
@@ -84,6 +92,7 @@
       ].forEach(([ft, label, count]) => {
         if (count === 0) return;
         const btn = document.createElement("button");
+        btn.type = "button";
         btn.className = "ft-item" + (activeDbms === dbms && activeType === ft ? " active" : "");
         btn.innerHTML = label + ' <span class="ft-count">' + count + '</span>';
         btn.onclick = function(e) {
@@ -139,7 +148,9 @@
     searchEl.value = searchQuery;
     searchEl.oninput = function() {
       searchQuery = searchEl.value.trim();
-      renderFeatureList();
+      visibleCount = PAGE_SIZE;
+      window.clearTimeout(searchTimer);
+      searchTimer = window.setTimeout(renderFeatureList, 120);
     };
   }
 
@@ -148,6 +159,8 @@
     activeDbms = dbms || "";
     activeType = type || "";
     showReview = (type === "review");
+    visibleCount = PAGE_SIZE;
+    expandedId = null;
     document.getElementById("search-input").value = searchQuery;
     renderAll();
   }
@@ -161,7 +174,9 @@
     const list = document.getElementById("feature-list");
     const empty = document.getElementById("empty-state");
     const header = document.getElementById("results-header");
+    const loadMore = document.getElementById("load-more");
     const filtered = filteredFeatures();
+    const visible = filtered.slice(0, visibleCount);
     const st = currentStats();
 
     // Results header
@@ -181,12 +196,13 @@
 
     if (filtered.length === 0) {
       list.innerHTML = "";
-      empty.style.display = "block";
+      empty.hidden = false;
+      loadMore.hidden = true;
       return;
     }
-    empty.style.display = "none";
+    empty.hidden = true;
 
-    list.innerHTML = filtered.map((f, i) => {
+    list.innerHTML = visible.map(f => {
       const fid = f.feature_id;
       const isExpanded = expandedId === fid;
       const isReview = f.is_review;
@@ -195,8 +211,8 @@
       const sourceUrl = hasSource ? f.source_anchors[0] : "";
       const dbmClass = "dbms-" + (dbmsColorIndex[f.dbms] || 0);
 
-      let html = '<div class="feature-card ' + dbmClass + (isExpanded ? ' expanded' : '') + (isReview ? ' review-card' : '') + '" data-fid="' + fid + '" onclick="window._toggleCard(\'' + fid + '\')">';
-      html += '<div class="card-header"><span class="card-name">' + escapeHtml(f.name) + '</span><span class="card-expand">&#9660;</span></div>';
+      let html = '<article class="feature-card ' + dbmClass + (isExpanded ? ' expanded' : '') + (isReview ? ' review-card' : '') + '" data-fid="' + escapeHtml(fid) + '">';
+      html += '<button type="button" class="card-header" data-feature-id="' + escapeHtml(fid) + '" aria-expanded="' + isExpanded + '"><span class="card-name">' + escapeHtml(f.name) + '</span><span class="card-expand" aria-hidden="true">&#9660;</span></button>';
       html += '<div class="card-badges"><span class="badge badge-dbms">' + escapeHtml(f.dbms) + '</span><span class="badge badge-type">' + ftLabel + '</span>';
       if (isReview) {
         html += '<span class="badge badge-review">Review</span>';
@@ -220,13 +236,13 @@
       }
 
       // Sections display
-      const sections = f.source_sections_display || [];
-      const secText = sections.length > 0 ? sections.slice(0, 3).join(" &middot; ") : "";
+      const sections = Array.from(new Set(f.source_sections_display || []));
+      const secText = sections.length > 0 ? sections.slice(0, 3).join(" · ") : "";
 
       html += '<div class="card-footer">';
       html += '<span class="card-sources">' + escapeHtml(secText) + '</span>';
       html += '<span class="card-links">';
-      if (sourceUrl) html += '<a href="' + escapeHtml(sourceUrl) + '" target="_blank" onclick="event.stopPropagation()">Official Docs &#8599;</a>';
+      if (sourceUrl) html += '<a href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noopener noreferrer">Official Docs &#8599;</a>';
       html += '</span></div>';
 
       // Expanded detail
@@ -276,9 +292,21 @@
       }
 
       html += '</div>'; // detail-section
-      html += '</div>'; // card
+      html += '</article>'; // card
       return html;
     }).join("");
+
+    list.querySelectorAll(".card-header").forEach(function(button) {
+      button.addEventListener("click", function() {
+        window._toggleCard(button.dataset.featureId);
+      });
+    });
+
+    const remaining = filtered.length - visible.length;
+    loadMore.hidden = remaining <= 0;
+    loadMore.textContent = remaining > 0
+      ? "Load " + Math.min(PAGE_SIZE, remaining) + " more features"
+      : "";
   }
 
   // ── Card Expand/Collapse ─────────────────
@@ -309,6 +337,11 @@
   renderHeader();
   renderAll();
 
+  document.getElementById("load-more").addEventListener("click", function() {
+    visibleCount += PAGE_SIZE;
+    renderFeatureList();
+  });
+
   // Search submit on Enter
   document.getElementById("search-input").addEventListener("keydown", function(e) {
     if (e.key === "Enter") {
@@ -320,11 +353,30 @@
   // Tab switching
   document.querySelectorAll(".tab-btn").forEach(function(btn) {
     btn.addEventListener("click", function() {
-      document.querySelectorAll(".tab-btn").forEach(function(b) { b.classList.remove("active"); });
-      document.querySelectorAll(".tab-content").forEach(function(c) { c.classList.remove("active"); });
+      document.querySelectorAll(".tab-btn").forEach(function(b) {
+        b.classList.remove("active");
+        b.setAttribute("aria-selected", "false");
+      });
+      document.querySelectorAll(".tab-content").forEach(function(c) {
+        c.classList.remove("active");
+        c.hidden = true;
+      });
       btn.classList.add("active");
+      btn.setAttribute("aria-selected", "true");
       var target = document.getElementById("tab-" + btn.dataset.tab);
-      if (target) target.classList.add("active");
+      if (target) {
+        target.classList.add("active");
+        target.hidden = false;
+      }
+    });
+
+    btn.addEventListener("keydown", function(event) {
+      if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+      const tabs = Array.from(document.querySelectorAll(".tab-btn"));
+      const direction = event.key === "ArrowRight" ? 1 : -1;
+      const next = tabs[(tabs.indexOf(btn) + direction + tabs.length) % tabs.length];
+      next.focus();
+      next.click();
     });
   });
 })();
