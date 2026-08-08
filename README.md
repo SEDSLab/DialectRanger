@@ -88,7 +88,7 @@ Structured Feature Knowledge Base
 
 ### 🌐 Website
 
-🔗 **Online Knowledge Base Browser:** 🔗 **[Online Knowledge Base Browser](https://sedslab.github.io/DialectRanger/)**
+🔗 **[Online Knowledge Base Browser](https://sedslab.github.io/DialectRanger/)**
 
 The browser provides an interactive view of the extracted Feature Knowledge Base.
 
