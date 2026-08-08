@@ -176,7 +176,7 @@ The Bug Knowledge Base will eventually be linked with the Feature Knowledge Base
 ```bibtex
 @inproceedings{lin2026smartfuzz,
   title     = {SmartFuzz: Leveraging Large Language Models and Feature Composition to Generate High-Quality Seeds for Database Fuzzing},
-  author    = {Li Lin, intai Hong, Yanlin Zhuang and Rongxin Wu},
+  author    = {Li Lin, Jintai Hong, Yanlin Zhuang and Rongxin Wu},
   booktitle = {Proceedings of the 2026 International Conference on Object-Oriented Programming Systems, Languages, and Applications (OOPSLA 2026)},
   month     = {October},
   year      = {2026}
