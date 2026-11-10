@@ -1,0 +1,584 @@
+{
+  "schema_version": "featurecrawler-cold-profile/v1",
+  "profile_id": "manual_profile:monetdb_dec2025_structural_v1",
+  "dbms": "monetdb",
+  "generated": false,
+  "generated_at": null,
+  "run_id": "monetdb-input-preparation-20261104-v1",
+  "generation_mode": "MANUAL_PREPARED",
+  "manual_edit": false,
+  "profile_provenance": {
+    "author": "Codex: manual official HTML structure review",
+    "authored_at": "2026-11-04",
+    "revision": "1"
+  },
+  "source_pages": [
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/",
+      "page_hash": "f4289a5f79ab75496e79700a219d339599bc82acae9aa5cbf856f4a4908bbbd7"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/aggregate-functions/",
+      "page_hash": "93a9fb7d320ae9b0df9fcebb30b96e36ce3258e958280e03e251495dd1c4a78b"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/binary-string-functions/",
+      "page_hash": "593f2900e9d98ed20b501322e36e8e9aba9750d0aa96f0d5191229abac57de72"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/cast-conversion-functions/",
+      "page_hash": "836d2a071c35ffab709633f2434925c46d627f57d2af9874f1579f167be493e3"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/comparison-functions/",
+      "page_hash": "37f4d2a0dd6f2d77a810a9e0281aa94d7f1d0992ce085c4ff8172435a3ac2390"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/date-time-functions/",
+      "page_hash": "60824ae841f282ec01d55b8a0bd89d628d367d089caf039502315597b1be9bb6"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/filter-functions/",
+      "page_hash": "9d675ba987645a5c2117bd01b9a1e81c9d7d9ec7734c2cd2828dba3722e7932b"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/generator-functions/",
+      "page_hash": "79c3d2c86ba019e0665ebf54f0e11e40adb5957171f0e8b2f33b0a734850ade2"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/inet-functions/",
+      "page_hash": "fe66a554e6213895056c34d7b1d4ee06dbf2ed52081f8170460af54a2730dee8"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/json-functions/",
+      "page_hash": "448a7779ef23e1e643613cf1414961e03d8b92f7092d7e61a96a1d14c42078d5"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/logical-functions/",
+      "page_hash": "20b9171cc7cff38ca334929d1f8dd8babf94978c1b23f5587350263060801c8a"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/mathematics-functions/",
+      "page_hash": "6310e8140683bb383917b3e2f2f9427e204bd3e4c458740a6a8e8964d8c6c4b3"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/string-functions/",
+      "page_hash": "07c357ad6956474f2ce407fe0823d1ea9ec754a4dbe149c131274b8b69df61b1"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/url-functions/",
+      "page_hash": "27c6e41f87c00ce017b53fe932231c5d7682235b8a16f385878dad6117cf312a"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/uuid-functions/",
+      "page_hash": "4665616103a3065168fcc654fc633950cf6fb0b95cd0c3cc257764e354dd8531"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/window-functions/",
+      "page_hash": "f10c30d54e6cf2d8ad24effc485a0fba8830dcee7dc1df028a016ddb7a72ea9f"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-manipulation/subqueries/",
+      "page_hash": "e170d6567f0985377fb19611b1af7fabe99065fad66b4de5ee18649f5deac1d0"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-manipulation/table-expressions/",
+      "page_hash": "ec9f28972d5cc50a8f3c51505aa7157a8dc4c4e9156db7acd1099b330579d6f4"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-manipulation/window-expressions/",
+      "page_hash": "db1e7ccb479c9d206618815f68a1e77dd4a3c06e25ef514ecae89572f42058a1"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/",
+      "page_hash": "c9336eabfeddc0be99e96bcd3896903cb63d3e41cb993e9ba9f9fd07ddffeafe"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/base-types/",
+      "page_hash": "ef910da8e1029b4a1aaeed758ca8201156a5ab4b51207712bb89be8c3dca84c9"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/json-types/",
+      "page_hash": "908ba692b17d90944b255dfced43a02fc0a44494269970d5421e2a5e72fc1544"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/network-types/",
+      "page_hash": "0a02132a96837438981d0e779693c0fc1d0ae957e52bc7ad202938aff883cce6"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/serial-types/",
+      "page_hash": "0eda4c584df22c1432c9d65b9e6aeb44916adb84fa557e52c6c7d3279ba03400"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/temporal-types/",
+      "page_hash": "af0eb243490d66599907e7a61fa6109a1fa9f11bd5022b74c516581fd16f571b"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/udf-types/",
+      "page_hash": "6fb6651a6849f7e9d253f109eb0d61cf93e0b8fd89024cefdda00d7c72433074"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/url-types/",
+      "page_hash": "9582b25c3191ed9d81fa11f0f7db9490c657c65831c0b91326dff678988d31d5"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/uuid-types/",
+      "page_hash": "b61912f8844ae4d581019a8f6895647ee7705a4f2711195911be6c4e143c7f1c"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/lexical-structure/",
+      "page_hash": "812719e3d8d73eff534b26e7cff2bf4eed0d1ecdcf9bdf77531ac6cfdcd03c5e"
+    }
+  ],
+  "surfaces": [
+    {
+      "page_hint": "page_singleton",
+      "owner_strategy": "page_singleton",
+      "identity_slot": "page_title",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/json-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/url-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/uuid-types/"
+      ]
+    },
+    {
+      "page_hint": "heading_section",
+      "owner_strategy": "heading_section",
+      "identity_slot": "heading",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/aggregate-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/binary-string-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/cast-conversion-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/comparison-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/date-time-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/filter-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/generator-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/inet-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/json-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/logical-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/mathematics-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/string-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/url-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/uuid-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/window-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-manipulation/subqueries/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-manipulation/table-expressions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-manipulation/window-expressions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/base-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/json-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/network-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/serial-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/temporal-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/udf-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/url-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/uuid-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/lexical-structure/"
+      ]
+    },
+    {
+      "page_hint": "table_row",
+      "owner_strategy": "table_row",
+      "identity_slot": "first_cell_or_link",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/aggregate-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/binary-string-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/cast-conversion-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/comparison-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/date-time-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/filter-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/generator-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/inet-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/json-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/logical-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/mathematics-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/string-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/url-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/uuid-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/window-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/base-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/network-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/temporal-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/lexical-structure/"
+      ]
+    },
+    {
+      "page_hint": "signature",
+      "owner_strategy": "signature",
+      "identity_slot": "code_or_heading",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/aggregate-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/binary-string-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/cast-conversion-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/comparison-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/date-time-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/filter-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/generator-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/inet-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/json-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/logical-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/mathematics-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/string-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/url-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/uuid-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/window-functions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-manipulation/subqueries/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-manipulation/table-expressions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-manipulation/window-expressions/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/base-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/json-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/network-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/serial-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/temporal-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/udf-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/url-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/uuid-types/",
+        "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/lexical-structure/"
+      ]
+    }
+  ],
+  "hint_contract": {
+    "schema_version": "profile-structural-hints/v1",
+    "page_granularity": "MIXED",
+    "structural_region_hints": [
+      "PAGE",
+      "HEADING_SECTION",
+      "TABLE_ROW",
+      "SIGNATURE_BLOCK_OR_SPAN"
+    ],
+    "identity_surface_hints": [
+      "PAGE_TITLE_OR_PRIMARY_HEADING",
+      "HEADING",
+      "FIRST_CELL_OR_LINK",
+      "SIGNATURE_TEXT_OR_HEADING"
+    ],
+    "boundary_hints": [
+      "PAGE_BOUNDARY",
+      "HEADING_BOUNDED_SECTION",
+      "SIBLING_TABLE_ROW",
+      "SIGNATURE_SPAN_OR_BLOCK"
+    ],
+    "negative_surface_hints": [
+      "NAVIGATION",
+      "CROSS_REFERENCE",
+      "EXAMPLE_CODE"
+    ],
+    "example_surface_hints": [
+      "CODE_BLOCK",
+      "INLINE_LITERAL"
+    ],
+    "legacy_owner_strategy_hints": [
+      "page_singleton",
+      "heading_section",
+      "table_row",
+      "signature"
+    ],
+    "selection_authority": "OWNER_CANDIDATE_INFERENCE",
+    "definition_patterns": [],
+    "definition_scope_patterns": [
+      {
+        "relation": "SELF_DEFINITION",
+        "identity_slot": "EXPLICIT_SELF_SUBJECT",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "STORAGE_CLASS",
+        "identity_slot": "EXPLICIT_TYPE_LABEL",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "HEADING_SECTION",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING"
+      },
+      {
+        "relation": "CATALOG_ROW",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW"
+      },
+      {
+        "relation": "CATALOG_MEMBER_CONTEXT",
+        "identity_slot": "TYPED_LITERAL_MEMBER",
+        "boundary": "LIST_AND_SHARED_PARENT"
+      },
+      {
+        "relation": "GRAMMAR_MEMBER_CONTEXT",
+        "identity_slot": "GRAMMAR_MEMBER",
+        "boundary": "HEADING_SECTION"
+      },
+      {
+        "relation": "PAGE_SUBJECT_RELATION",
+        "identity_slot": "TYPED_SUBJECT_HEADING",
+        "boundary": "DEFINITION_PREFIX"
+      }
+    ],
+    "definition_structure_patterns": [
+      {
+        "structure": "A",
+        "identity_slot": "PAGE_SUBJECT",
+        "boundary": "SUBJECT_PAGE"
+      },
+      {
+        "structure": "B",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING",
+        "execution": {
+          "version": 1,
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING"
+              },
+              {
+                "kind": "VERIFIED_ANCHOR"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              }
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Example",
+                  "Examples",
+                  "Usage example",
+                  "Extended examples"
+                ]
+              }
+            },
+            {
+              "role": "PARAMETER",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Arguments",
+                  "Parameters"
+                ]
+              }
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Returns"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "structure": "D",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW",
+        "execution": {
+          "version": 1,
+          "when": {
+            "table_headers_any": [
+              "Function",
+              "Statistic Function",
+              "Operator",
+              "Predicate",
+              "SQL Name",
+              "SQL data type"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Function",
+                  "Statistic Function",
+                  "Operator",
+                  "Predicate",
+                  "SQL Name",
+                  "SQL data type"
+                ]
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Description"
+                ]
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Function",
+                  "Statistic Function"
+                ]
+              }
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Example",
+                  "Example query"
+                ]
+              }
+            },
+            {
+              "role": "EXAMPLE_RESULT",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Result"
+                ]
+              }
+            },
+            {
+              "role": "PARAMETER",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Argument types"
+                ]
+              }
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Return type"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "structure": "E",
+        "identity_slot": "TYPED_MEMBER",
+        "boundary": "SHARED_PARENT"
+      }
+    ],
+    "content_binding_patterns": [
+      "EXPLICIT_OPERATOR_EXPLANATION"
+    ],
+    "member_collection_patterns": [
+      {
+        "member_kind": "SYMBOLIC_OPERATOR",
+        "declaration_form": "GRAMMAR",
+        "scope": "HEADING_SECTION",
+        "description_sharing": "EXPLICIT_APPLICABILITY"
+      }
+    ],
+    "local_type_patterns": [
+      {
+        "context_type": "FUNCTION",
+        "owner_strategy": "table_row",
+        "grammar": "CALLABLE_DEFINITION",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "FUNCTION",
+        "owner_strategy": "heading_section",
+        "grammar": "CALLABLE_DEFINITION",
+        "identity_slot": "HEADING",
+        "boundary": "HEADING_BOUNDED_SECTION",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "FUNCTION",
+        "owner_strategy": "signature",
+        "grammar": "CALLABLE_DEFINITION",
+        "identity_slot": "SIGNATURE_TEXT_OR_HEADING",
+        "boundary": "CURRENT_BLOCK",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "OPERATOR",
+        "owner_strategy": "table_row",
+        "grammar": "OPERATOR_EXPRESSION",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "OPERATOR",
+        "owner_strategy": "heading_section",
+        "grammar": "OPERATOR_EXPRESSION",
+        "identity_slot": "HEADING",
+        "boundary": "HEADING_BOUNDED_SECTION",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "OPERATOR",
+        "owner_strategy": "signature",
+        "grammar": "OPERATOR_EXPRESSION",
+        "identity_slot": "SIGNATURE_TEXT_OR_HEADING",
+        "boundary": "CURRENT_BLOCK",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "DATATYPE",
+        "owner_strategy": "table_row",
+        "grammar": "DATATYPE_DECLARATION",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "DATATYPE",
+        "owner_strategy": "heading_section",
+        "grammar": "DATATYPE_DECLARATION",
+        "identity_slot": "HEADING",
+        "boundary": "HEADING_BOUNDED_SECTION",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "DATATYPE",
+        "owner_strategy": "signature",
+        "grammar": "DATATYPE_DECLARATION",
+        "identity_slot": "SIGNATURE_TEXT_OR_HEADING",
+        "boundary": "CURRENT_BLOCK",
+        "observed_region_refs": []
+      }
+    ]
+  },
+  "bootstrap": {
+    "method": "MANUAL_OFFICIAL_HTML_REVIEW_AND_CONTRACT_VALIDATION",
+    "sample_pages": 29,
+    "inventory_used": false,
+    "feature_extraction_executed": false,
+    "document_ir_region_refs_created": false
+  }
+}

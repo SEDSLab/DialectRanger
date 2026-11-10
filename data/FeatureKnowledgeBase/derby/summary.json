@@ -1,0 +1,22 @@
+{
+  "dbms": "derby",
+  "updated_at": "2026-11-09T13:32:00.316147+00:00",
+  "final_count": 110,
+  "review_count": 17,
+  "by_type": {
+    "function": 79,
+    "datatype": 22,
+    "operator": 9
+  },
+  "with_fields": {
+    "description": 107,
+    "syntax": 102,
+    "examples": 67
+  },
+  "quality_status": "QUALITY_PARTIAL",
+  "actual_model_calls": 0,
+  "official_recall": "NOT_EVALUATED",
+  "projection_loss": 0,
+  "duplicate_ids": 0,
+  "runtime_artifacts_published": false
+}

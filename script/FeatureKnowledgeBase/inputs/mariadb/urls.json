@@ -1,0 +1,1925 @@
+{
+  "dbms": "mariadb",
+  "documents": [
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/auto_increment"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/auto_increment-faq"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/data-type-storage-requirements"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/date-and-time-data-types"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/date-and-time-data-types/date"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/date-and-time-data-types/datetime"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/date-and-time-data-types/sql_tsi_year"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/date-and-time-data-types/time"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/date-and-time-data-types/timestamp"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/date-and-time-data-types/year-data-type"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/null-values"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/bigint"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/bit"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/bool"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/boolean"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/dec-numeric-fixed"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/decimal"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/double"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/double-precision"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/fixed"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/float"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/float4"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/float8"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/floating-point-accuracy"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/int"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/int1"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/int2"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/int3"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/int4"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/int8"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/integer"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/mediumint"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/middleint"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/number"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/numeric"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/numeric-data-type-overview"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/numeric-data-types-dec"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/real"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/smallint"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/numeric-data-types/tinyint"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/row-type-of"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/serial"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/binary"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/blob"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/blob-and-text-data-types"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/char"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/char-byte"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/char-varying"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/character"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/character-sets"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/character-sets/character-set-and-collation-overview"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/character-sets/internationalization-and-localization"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/character-sets/internationalization-and-localization/coordinated-universal-time"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/character-sets/internationalization-and-localization/locales-plugin"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/character-sets/internationalization-and-localization/server-locale"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/character-sets/internationalization-and-localization/setting-the-language-for-error-messages"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/character-sets/internationalization-and-localization/time-zones"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/character-sets/setting-character-sets-and-collations"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/character-sets/supported-character-sets-and-collations"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/character-sets/unicode"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/clob"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/enum"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/inet4"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/inet6"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/json"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/long-and-long-varchar"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/long-char-varying"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/long-character-varying"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/long-varbinary"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/long-varchar"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/long-varcharacter"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/longblob"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/longtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/mediumblob"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/mediumtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/national-char"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/national-char-varying"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/national-character"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/national-character-varying"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/national-varchar"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/national-varcharacter"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/nchar"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/nchar-varchar"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/nchar-varcharacter"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/nchar-varying"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/raw"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/row"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/set-data-type"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/text"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/tinyblob"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/tinytext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/uuid-data-type"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/varbinary"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/varchar"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/varchar2"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/varcharacter"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/string-data-types/xmltype"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/data-types/type-of"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/avg"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/bit_and"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/bit_or"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/bit_xor"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/count"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/count-distinct"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/group_concat"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/json_arrayagg"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/json_objectagg"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/max"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/min"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/std"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/stddev"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/stddev_pop"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/stddev_samp"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/sum"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/var_pop"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/var_samp"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/aggregate-functions/variance"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/control-flow-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/control-flow-functions/case-operator"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/control-flow-functions/decode_oracle"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/control-flow-functions/if-function"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/control-flow-functions/ifnull"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/control-flow-functions/nullif"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/control-flow-functions/nvl"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/control-flow-functions/nvl2"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/add_months"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/adddate"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/addtime"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/convert_tz"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/curdate"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/current_date"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/current_time"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/current_timestamp"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/curtime"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/date-and-time-units"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/date-function"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/date_add"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/date_format"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/date_sub"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/datediff"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/day"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/dayname"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/dayofmonth"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/dayofweek"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/dayofyear"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/extract"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/format_pico_time"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/from_days"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/from_unixtime"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/get_format"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/hour"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/last_day"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/localtime"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/localtimestamp"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/makedate"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/maketime"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/microsecond"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/microseconds-in-mariadb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/minute"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/month"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/monthname"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/months_between"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/now"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/period_add"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/period_diff"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/quarter"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/sec_to_time"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/second"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/str_to_date"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/subdate"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/subtime"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/sysdate"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/time-function"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/time_format"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/time_to_sec"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/timediff"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/timestamp-function"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/timestampadd"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/timestampdiff"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/to_date"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/to_days"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/to_seconds"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/trunc"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/unix_timestamp"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/utc_date"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/utc_time"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/utc_timestamp"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/week"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/weekday"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/weekofyear"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/year"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/date-time-functions/yearweek"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/function-and-operator-reference"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/abs"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/acos"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/asin"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/atan"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/atan2"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/ceil"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/ceiling"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/conv"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/cos"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/cot"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/crc32"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/crc32c"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/degrees"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/div"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/exp"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/floor"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/ln"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/log"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/log10"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/log2"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/mod"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/oct"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/pi"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/pow"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/power"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/radians"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/rand"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/round"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/sign"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/sin"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/sqrt"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/tan"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/to_number"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/truncate"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/xxh3"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/numeric-functions/xxh32"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/pseudo-columns"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/pseudo-columns/_rowid"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/bit-functions-and-operators"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/bit-functions-and-operators/bit_count"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/bit-functions-and-operators/bitwise-not"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/bit-functions-and-operators/bitwise-or"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/bit-functions-and-operators/bitwise-xor"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/bit-functions-and-operators/bitwise_and"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/bit-functions-and-operators/parentheses"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/bit-functions-and-operators/shift-left"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/bit-functions-and-operators/shift-right"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/bit-functions-and-operators/true-false"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions/aes_decrypt"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions/aes_encrypt"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions/compress"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions/decode"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions/des_decrypt"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions/des_encrypt"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions/encode"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions/encrypt"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions/kdf"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions/md5"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions/old_password"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions/password"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions/random_bytes"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions/sha1"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions/sha2"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions/uncompress"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/encryption-hashing-and-compression-functions/uncompressed_length"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/benchmark"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/binlog_gtid_pos"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/charset"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/coercibility"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/collation"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/connection_id"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/current_role"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/current_user"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/database"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/decode_histogram"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/default"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/found_rows"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/last_insert_id"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/last_value"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/procedure-analyse"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/row_count"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/rownum"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/schema"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/session_user"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/system_user"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/user"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/information-functions/version"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/get_lock"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/inet6_aton"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/inet6_ntoa"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/inet_aton"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/inet_ntoa"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/is_free_lock"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/is_ipv4"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/is_ipv4_compat"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/is_ipv4_mapped"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/is_ipv6"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/is_used_lock"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/master_gtid_wait"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/master_pos_wait"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/miscellaneous-functions-format_bytes"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/name_const"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/old-value"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/release_all_locks"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/release_lock"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/sleep"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/sys_guid"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/uuid"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/uuid_short"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/uuid_v4"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/uuid_v7"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/secondary-functions/miscellaneous-functions/values-value"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/dynamic-columns-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/dynamic-columns-functions/column_add"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/dynamic-columns-functions/column_check"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/dynamic-columns-functions/column_create"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/dynamic-columns-functions/column_delete"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/dynamic-columns-functions/column_exists"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/dynamic-columns-functions/column_get"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/dynamic-columns-functions/column_json"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/dynamic-columns-functions/column_list"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/galera-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/galera-functions/wsrep_last_seen_gtid"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/galera-functions/wsrep_last_written_gtid"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/galera-functions/wsrep_sync_wait_upto_gtid"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/geographic-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/differences-between-json_query-and-json_value"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json-arrow-operators"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json-validation-function"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_array"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_array_append"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_array_insert"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_array_intersect"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_compact"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_contains"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_contains_path"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_depth"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_detailed"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_equals"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_exists"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_extract"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_insert"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_key_value"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_keys"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_length"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_loose"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_merge"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_merge_patch"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_merge_preserve"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_normalize"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_object"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_object_filter_keys"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_object_to_array"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_overlaps"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_pretty"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_query"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_quote"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_remove"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_replace"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_schema_valid"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_search"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_set"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_table"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_type"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_unquote"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_valid"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/json_value"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/json-functions/jsonpath-expressions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/cume_dist"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/dense_rank"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/first_value"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/lag"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/lead"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/median"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/nth_value"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/ntile"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/percent_rank"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/percentile_cont"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/percentile_disc"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/rank"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/row_number"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/window-frames"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/window-functions-columnstore-window-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/window-functions/window-functions-overview"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/xml-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/xml-functions/extractvalue"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/special-functions/xml-functions/updatexml"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/ascii"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/bin"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/binary-operator"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/bit_length"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/cast"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/char-function"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/char_length"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/character_length"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/chr"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/concat"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/concat_ws"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/convert"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/elt"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/export_set"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/field"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/find_in_set"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/format"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/from_base64"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/hex"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/insert-function"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/instr"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/lcase"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/left"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/length"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/lengthb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/like"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/load_file"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/locate"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/lower"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/lpad"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/ltrim"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/make_set"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/match-against"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/mid"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/natural_sort_key"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/not-like"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/not-regexp"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/octet_length"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/ord"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/position"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/quote"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/regular-expressions-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/regular-expressions-functions/pcre"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/regular-expressions-functions/regexp"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/regular-expressions-functions/regexp_instr"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/regular-expressions-functions/regexp_replace"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/regular-expressions-functions/regexp_substr"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/regular-expressions-functions/regular-expressions-overview"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/regular-expressions-functions/rlike"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/repeat-function"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/replace-function"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/reverse"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/right"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/rpad"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/rtrim"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/sformat"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/soundex"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/sounds-like"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/space"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/strcmp"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/substr"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/substring"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/substring_index"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/to_base64"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/to_char"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/trim"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/trim_oracle"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/type-conversion"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/ucase"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/unhex"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/upper"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/string-functions/weight_string"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/vector-functions"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/vector-functions/vec_distance_cosine"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/vector-functions/vec_distance_euclidean"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/vector-functions/vec_fromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/vector-functions/vec_totext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-functions/vector-functions/vector-functions-vec_distance"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/buffer"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/convexhull"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/geojson-st_asgeojson"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/geometrycollection"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/linestring"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/multilinestring"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/multipoint"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/multipolygon"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/point"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/pointonsurface"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/polygon"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/st_buffer"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/st_convexhull"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/st_geomfromgeojson"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/st_intersection"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/st_pointonsurface"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/st_symdifference"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-constructors/st_union"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-properties/dimension"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-properties/geometry-properties-issimple"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-properties/isclosed"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-properties/isring"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-properties/st_boundary"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-properties/st_dimension"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-properties/st_envelope"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-properties/st_geometryn"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-properties/st_geometrytype"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-properties/st_isclosed"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-properties/st_isempty"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-properties/st_isring"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-properties/st_issimple"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-properties/st_numgeometries"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-properties/st_relate"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-properties/st_srid"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/contains"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/crosses"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/disjoint"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/equals"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/intersects"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/overlaps"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/st-contains"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/st-crosses"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/st-equals"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/st-intersects"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/st-overlaps"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/st-touches"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/st-within"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/st_difference"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/st_disjoint"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/st_distance"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/st_distance_sphere"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/st_length"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/touches"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/geometry-relations/within"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/linestring-properties/glength"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/linestring-properties/st_endpoint"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/linestring-properties/st_numpoints"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/linestring-properties/st_pointn"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/linestring-properties/st_startpoint"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/mbr-minimum-bounding-rectangle/mbrcontains"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/mbr-minimum-bounding-rectangle/mbrcoveredby"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/mbr-minimum-bounding-rectangle/mbrdisjoint"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/mbr-minimum-bounding-rectangle/mbrequal"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/mbr-minimum-bounding-rectangle/mbrintersects"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/mbr-minimum-bounding-rectangle/mbroverlaps"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/mbr-minimum-bounding-rectangle/mbrtouches"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/mbr-minimum-bounding-rectangle/mbrwithin"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/miscellaneous-gis-functions/st_collect"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/miscellaneous-gis-functions/st_geohash"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/miscellaneous-gis-functions/st_isvalid"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/miscellaneous-gis-functions/st_latfromgeohash"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/miscellaneous-gis-functions/st_longfromgeohash"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/miscellaneous-gis-functions/st_pointfromgeohash"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/miscellaneous-gis-functions/st_simplify"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/miscellaneous-gis-functions/st_validate"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/point-properties/st_x"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/point-properties/st_y"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/polygon-properties/centroid"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/polygon-properties/st_area"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/polygon-properties/st_centroid"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/polygon-properties/st_exteriorring"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/polygon-properties/st_interiorringn"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/polygon-properties/st_numinteriorrings"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/aswkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/geometrycollectionfromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/geometryfromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/linestringfromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/mlinefromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/mpointfromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/mpolyfromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/multilinestringfromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/multipointfromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/multipolygonfromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/polygonfromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/st_asbinary"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/st_aswkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/st_geomcollfromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/st_geometrycollectionfromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/st_geometryfromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/st_geomfromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/st_linefromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/st_linestringfromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/st_pointfromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/st_polyfromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkb/st_polygonfromwkb"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/geometrycollectionfromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/geometryfromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/linestringfromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/mlinefromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/mpointfromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/mpolyfromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/multilinestringfromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/multipointfromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/multipolygonfromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/polygonfromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/st_astext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/st_aswkt"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/st_geomcollfromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/st_geometrycollectionfromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/st_geometryfromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/st_geomfromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/st_linefromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/st_linestringfromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/st_pointfromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/st_polyfromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-statements/geometry-constructors/wkt/st_polygonfromtext"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/arithmetic-operators"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/arithmetic-operators/addition-operator"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/arithmetic-operators/division-operator"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/arithmetic-operators/modulo-operator"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/arithmetic-operators/multiplication-operator"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/arithmetic-operators/subtraction-operator"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/assignment-operators"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/assignment-operators/assignment-operator"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/assignment-operators/assignment-operators-assignment-operator"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/between-and"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/coalesce"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/equal"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/greater-than"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/greater-than-or-equal"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/greatest"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/in"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/interval"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/is"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/is-json"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/is-not"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/is-not-null"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/is-null"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/isnull"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/least"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/less-than"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/less-than-or-equal"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/not-between"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/not-equal"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/not-in"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/comparison-operators/null-safe-equal"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/logical-operators"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/logical-operators/and"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/logical-operators/not"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/logical-operators/or"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/logical-operators/xor"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/operators/operator-precedence"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/sequences/sequence-functions/next-value-for-sequence_name"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/sequences/sequence-functions/previous-value-for-sequence_name"
+    },
+    {
+      "url": "https://mariadb.com/docs/server/reference/sql-structure/sequences/sequence-functions/setval"
+    }
+  ]
+}

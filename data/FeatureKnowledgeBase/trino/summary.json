@@ -1,0 +1,22 @@
+{
+  "dbms": "trino",
+  "updated_at": "2026-11-10T08:56:10.164516+00:00",
+  "final_count": 503,
+  "review_count": 106,
+  "by_type": {
+    "function": 442,
+    "operator": 31,
+    "datatype": 30
+  },
+  "with_fields": {
+    "description": 494,
+    "syntax": 440,
+    "examples": 104
+  },
+  "quality_status": "QUALITY_PARTIAL",
+  "actual_model_calls": 0,
+  "official_recall": "NOT_EVALUATED",
+  "projection_loss": 0,
+  "duplicate_ids": 0,
+  "runtime_artifacts_published": false
+}

@@ -1,0 +1,461 @@
+{
+  "dbms": "mysql",
+  "documents": [
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions-and-modifiers.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/aggregate-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/arithmetic-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/assignment-operators.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/binary-varbinary.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/bit-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/bit-type.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/blob.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/built-in-function-reference.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/cast-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/char.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/choosing-types.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/comparison-operators.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/creating-spatial-columns.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/creating-spatial-indexes.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/data-type-defaults.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/data-types.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-type-conversion.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-type-syntax.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/date-and-time-types.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/datetime.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/encryption-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/enum.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/fetching-spatial-data.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/fixed-point-types.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/floating-point-types.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/flow-control-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/fractional-seconds.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/full-text-adding-collation.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/fulltext-boolean.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/fulltext-fine-tuning.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/fulltext-natural-language.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/fulltext-query-expansion.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/fulltext-restrictions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/fulltext-search-mecab.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/fulltext-search-ngram.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/fulltext-search.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/fulltext-stopwords.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/geometry-well-formedness-validity.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-class-curve.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-class-geometry.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-class-geometrycollection.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-class-linestring.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-class-multicurve.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-class-multilinestring.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-class-multipoint.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-class-multipolygon.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-class-multisurface.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-class-point.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-class-polygon.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-class-surface.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-data-formats.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-format-conversion-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-general-property-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-geometry-class-hierarchy.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-geometrycollection-property-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-linestring-property-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-mysql-specific-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-point-property-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-polygon-property-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-property-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-wkb-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gis-wkt-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/group-by-functional-dependence.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/group-by-handling.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/group-by-modifiers.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/group-replication-functions-for-communication-protocol.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/group-replication-functions-for-maximum-consensus.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/group-replication-functions-for-member-actions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/group-replication-functions-for-mode.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/group-replication-functions-for-new-primary.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/group-replication-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/gtid-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/information-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/integer-types.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/internal-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/json-attribute-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/json-creation-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/json-function-reference.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/json-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/json-modification-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/json-search-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/json-table-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/json-utility-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/json-validation-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/json.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/loadable-function-reference.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/locking-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/logical-operators.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/mathematical-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/miscellaneous-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/mysql-calendar.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/non-typed-operators.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/numeric-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/numeric-type-attributes.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/numeric-type-syntax.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/numeric-types.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/opengis-geometry-model.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/operator-precedence.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/optimizing-spatial-analysis.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/other-vendor-data-types.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/out-of-range-and-overflow.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/performance-schema-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/populating-spatial-columns.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/precision-math-decimal-characteristics.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/precision-math-examples.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/precision-math-expressions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/precision-math-numbers.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/precision-math-rounding.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/precision-math.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/regexp.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/replication-functions-async-failover.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/replication-functions-synchronization.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/replication-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/set-variable.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/set.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/spatial-aggregate-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/spatial-analysis-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/spatial-convenience-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/spatial-function-argument-handling.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/spatial-function-reference.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/spatial-geohash-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/spatial-geojson-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/spatial-operator-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/spatial-reference-systems.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/spatial-relation-functions-mbr.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/spatial-relation-functions-object-shapes.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/spatial-relation-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/spatial-type-overview.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/spatial-types.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/storage-requirements.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/string-comparison-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions-charset.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/string-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/string-type-syntax.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/string-types.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/time.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/timestamp-initialization.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/two-digit-years.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/type-conversion.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/update.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/using-spatial-indexes.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/window-function-descriptions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/window-function-restrictions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/window-functions-frames.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/window-functions-named-windows.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/window-functions-usage.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/window-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/xml-functions.html"
+    },
+    {
+      "url": "https://dev.mysql.com/doc/refman/8.4/en/year.html"
+    }
+  ]
+}

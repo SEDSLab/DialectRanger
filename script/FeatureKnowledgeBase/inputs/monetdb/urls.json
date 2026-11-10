@@ -1,0 +1,92 @@
+{
+  "dbms": "monetdb",
+  "documents": [
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/aggregate-functions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/binary-string-functions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/cast-conversion-functions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/comparison-functions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/date-time-functions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/filter-functions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/generator-functions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/inet-functions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/json-functions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/logical-functions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/mathematics-functions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/string-functions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/url-functions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/uuid-functions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-functions/window-functions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-manipulation/subqueries/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-manipulation/table-expressions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-manipulation/window-expressions/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/base-types/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/json-types/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/network-types/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/serial-types/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/temporal-types/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/udf-types/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/url-types/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/data-types/uuid-types/"
+    },
+    {
+      "url": "https://www.monetdb.org/documentation-Dec2025/user-guide/sql-manual/lexical-structure/"
+    }
+  ]
+}

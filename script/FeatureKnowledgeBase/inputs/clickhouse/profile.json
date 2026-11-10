@@ -1,0 +1,485 @@
+{
+  "schema_version": "featurecrawler-cold-profile/v1",
+  "profile_id": "manual_profile:clickhouse_official_structural_20261106_v1",
+  "dbms": "clickhouse",
+  "generated": false,
+  "generated_at": null,
+  "run_id": "clickhouse-input-preparation-20261106-v1",
+  "generation_mode": "MANUAL_REVISED",
+  "manual_edit": true,
+  "profile_provenance": {
+    "author": "Codex: official reference structure preparation",
+    "authored_at": "2026-11-07",
+    "revision": "3",
+    "derived_from_digest": "e01323b04f0ec7ffd5234eb83a70aebd2775c884d1f9b5f474c8a03bf2351c1b"
+  },
+  "source_pages": [
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/math-functions",
+      "page_hash": "c2ffd52ae2d7fb3a6b4d02bba58297e497a670afb88f087640ae7edc4deffcdc"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/array",
+      "page_hash": "ce586fa020a264983ec5b64e064241e5bc7877a27c0d74c19bc338246d8e6896"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/operators/index",
+      "page_hash": "64b0622fceacf6b259a97aa7b54f5a35a7cb3707382c56aa168eb5b67315dd5c"
+    }
+  ],
+  "surfaces": [
+    {
+      "page_hint": "page_singleton",
+      "owner_strategy": "page_singleton",
+      "identity_slot": "PAGE_SUBJECT",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://clickhouse.com/docs/reference/functions/regular-functions/math-functions",
+        "https://clickhouse.com/docs/reference/data-types/array",
+        "https://clickhouse.com/docs/reference/operators/index"
+      ],
+      "observed_block_count": 3
+    },
+    {
+      "page_hint": "heading_section",
+      "owner_strategy": "heading_section",
+      "identity_slot": "HEADING",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://clickhouse.com/docs/reference/functions/regular-functions/math-functions",
+        "https://clickhouse.com/docs/reference/data-types/array",
+        "https://clickhouse.com/docs/reference/operators/index"
+      ],
+      "observed_block_count": 106
+    },
+    {
+      "page_hint": "table_row",
+      "owner_strategy": "table_row",
+      "identity_slot": "VERIFIED_IDENTITY_CELL",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://clickhouse.com/docs/reference/functions/regular-functions/math-functions",
+        "https://clickhouse.com/docs/reference/data-types/array",
+        "https://clickhouse.com/docs/reference/operators/index"
+      ],
+      "observed_block_count": 13
+    }
+  ],
+  "hint_contract": {
+    "schema_version": "profile-structural-hints/v1",
+    "page_granularity": "MIXED",
+    "structural_region_hints": [
+      "PAGE",
+      "HEADING_SECTION",
+      "TABLE_ROW",
+      "SIGNATURE_BLOCK_OR_SPAN"
+    ],
+    "identity_surface_hints": [
+      "PAGE_TITLE_OR_PRIMARY_HEADING",
+      "HEADING",
+      "FIRST_CELL_OR_LINK",
+      "SIGNATURE_TEXT_OR_HEADING"
+    ],
+    "boundary_hints": [
+      "PAGE_BOUNDARY",
+      "HEADING_BOUNDED_SECTION",
+      "SIBLING_TABLE_ROW",
+      "SIGNATURE_SPAN_OR_BLOCK"
+    ],
+    "negative_surface_hints": [
+      "NAVIGATION",
+      "CROSS_REFERENCE",
+      "EXAMPLE_CODE"
+    ],
+    "example_surface_hints": [
+      "CODE_BLOCK",
+      "INLINE_LITERAL"
+    ],
+    "legacy_owner_strategy_hints": [
+      "page_singleton",
+      "heading_section",
+      "table_row"
+    ],
+    "selection_authority": "OWNER_CANDIDATE_INFERENCE",
+    "definition_patterns": [],
+    "definition_scope_patterns": [
+      {
+        "relation": "SIGNATURE_CONTAINER",
+        "identity_slot": "LEADING_SIGNATURE",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "relation": "SELF_DEFINITION",
+        "identity_slot": "EXPLICIT_SELF_SUBJECT",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "PARAGRAPH_SIGNATURE",
+        "identity_slot": "LABEL_AND_SIGNATURE",
+        "boundary": "NEXT_LABEL_OR_HEADING"
+      },
+      {
+        "relation": "STORAGE_CLASS",
+        "identity_slot": "EXPLICIT_TYPE_LABEL",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "TERM_BODY_PAIR",
+        "identity_slot": "TERM",
+        "boundary": "NEXT_TERM"
+      },
+      {
+        "relation": "HEADING_SECTION",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING"
+      },
+      {
+        "relation": "CATALOG_ROW",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW"
+      },
+      {
+        "relation": "CATALOG_MEMBER_CONTEXT",
+        "identity_slot": "TYPED_LITERAL_MEMBER",
+        "boundary": "LIST_AND_SHARED_PARENT"
+      },
+      {
+        "relation": "GRAMMAR_MEMBER_CONTEXT",
+        "identity_slot": "GRAMMAR_MEMBER",
+        "boundary": "HEADING_SECTION"
+      },
+      {
+        "relation": "PAGE_SUBJECT_RELATION",
+        "identity_slot": "TYPED_SUBJECT_HEADING",
+        "boundary": "DEFINITION_PREFIX"
+      }
+    ],
+    "definition_structure_patterns": [
+      {
+        "structure": "A",
+        "identity_slot": "PAGE_SUBJECT",
+        "boundary": "SUBJECT_PAGE",
+        "execution": {
+          "version": 1,
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING"
+              },
+              {
+                "kind": "VERIFIED_ANCHOR"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "fields": [
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Syntax and arguments",
+                  "Synopsis"
+                ]
+              }
+            },
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              }
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Examples",
+                  "Example",
+                  "Basic examples",
+                  "Usage example"
+                ]
+              }
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              }
+            },
+            {
+              "role": "PARAMETER",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Arguments",
+                  "Parameters"
+                ]
+              }
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Return types",
+                  "Returned value",
+                  "Returns"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "structure": "B",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING",
+        "execution": {
+          "version": 1,
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING"
+              },
+              {
+                "kind": "VERIFIED_ANCHOR"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "fields": [
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Syntax and arguments",
+                  "Synopsis"
+                ]
+              }
+            },
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              }
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Examples",
+                  "Example",
+                  "Basic examples",
+                  "Usage example"
+                ]
+              }
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              }
+            },
+            {
+              "role": "PARAMETER",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Arguments",
+                  "Parameters"
+                ]
+              }
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Return types",
+                  "Returned value",
+                  "Returns"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "structure": "D",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW",
+        "execution": {
+          "version": 1,
+          "when": {
+            "table_headers_any": [
+              "Operator",
+              "Name",
+              "Function"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Operator",
+                  "Name",
+                  "Function"
+                ]
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Description",
+                  "Purpose",
+                  "Range"
+                ]
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Syntax",
+                  "Signature"
+                ]
+              }
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Example",
+                  "Examples"
+                ]
+              }
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Return type",
+                  "Return types"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "structure": "C",
+        "identity_slot": "LEADING_TERM",
+        "boundary": "CURRENT_ENTRY",
+        "execution": {
+          "version": 1,
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "VERIFIED_ANCHOR"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "fields": [
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Syntax and arguments",
+                  "Synopsis"
+                ]
+              }
+            },
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              }
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Examples",
+                  "Example",
+                  "Basic examples",
+                  "Usage example"
+                ]
+              }
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              }
+            },
+            {
+              "role": "PARAMETER",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Arguments",
+                  "Parameters"
+                ]
+              }
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Return types",
+                  "Returned value",
+                  "Returns"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "structure": "E",
+        "identity_slot": "TYPED_MEMBER",
+        "boundary": "SHARED_PARENT"
+      }
+    ]
+  }
+}

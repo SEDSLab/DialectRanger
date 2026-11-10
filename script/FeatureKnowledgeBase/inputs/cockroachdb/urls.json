@@ -1,0 +1,89 @@
+{
+  "dbms": "cockroachdb",
+  "documents": [
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/array"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/bit"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/bool"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/bytes"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/citext"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/collate"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/data-types"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/date"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/decimal"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/domain"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/enum"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/float"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/functions-and-operators"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/inet"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/int"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/interval"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/jsonb"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/ltree"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/null-handling"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/oid"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/serial"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/string"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/time"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/timestamp"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/tsquery"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/tsvector"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/uuid"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/vector"
+    }
+  ]
+}

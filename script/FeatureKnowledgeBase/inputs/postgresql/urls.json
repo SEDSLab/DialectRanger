@@ -1,0 +1,167 @@
+{
+  "dbms": "postgresql",
+  "documents": [
+    {
+      "url": "https://www.postgresql.org/docs/18/arrays.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-binary.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-bit.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-boolean.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-character.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-datetime.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-enum.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-geometric.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-json.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-money.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-net-types.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-numeric.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-oid.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-pg-lsn.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-pseudo.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-textsearch.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-uuid.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-xml.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/domains.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-admin.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-aggregate.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-array.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-binarystring.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-bitstring.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-comparison.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-comparisons.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-conditional.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-datetime.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-enum.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-event-triggers.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-formatting.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-geometry.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-info.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-json.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-logical.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-matching.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-math.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-merge-support.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-net.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-range.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-sequence.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-srf.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-statistics.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-string.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-subquery.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-textsearch.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-trigger.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-uuid.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-window.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-xml.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/rangetypes.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/rowtypes.html"
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "schema_version": "featurecrawler-cold-profile/v1",
+  "profile_id": "manual_profile:duckdb20_structural_v1",
+  "dbms": "duckdb",
+  "generated": false,
+  "generated_at": null,
+  "run_id": "duckdb20-input-preparation-v1",
+  "generation_mode": "MANUAL_PREPARED",
+  "manual_edit": false,
+  "profile_provenance": {
+    "author": "Codex: manual official HTML structural review",
+    "authored_at": "2026-10-27",
+    "revision": "1"
+  },
+  "source_pages": [
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/overview",
+      "page_hash": "18abe5b5ca09912d61b82d047072b76d99ac2fe3a6c1eb974b4347fae43a2603"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/csv/overview",
+      "page_hash": "ded658297c69ad28f91dd42982a93f2d34fa9d3bd3c4bf4c869e5ee9b1d099bd"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/json/json_functions",
+      "page_hash": "80c2c95affd6a1910aa8760a745b8e6f470064c43843c1df4e1e8d900c0097ba"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/json/loading_json",
+      "page_hash": "97a848de42db9bda0a5dd2ec76a6b42ea47f8f61bb44e5942b4405eecb367f26"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/boolean",
+      "page_hash": "f6ad1277c4ddd347312f115bff3e8ee4c70652dc94f671c9ceaa3dcc47a518da"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/numeric",
+      "page_hash": "828d7604bbbb4c5089d080a095177eec3bf60cbc5c6d1e56b69107cc800e22c9"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/time",
+      "page_hash": "6b3af95c125019b6c9ffd701a676808d9b028d470bf878c4878699f62e0874a8"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/timestamp",
+      "page_hash": "47ba547f36ddb3cedaf6ceea6d431a23cdbae47dcd2ddc9a8f5fb339294e5642"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/expressions/comparison_operators",
+      "page_hash": "d3b04bd42cc88ece6408eb450bdc80298a10ca3f49b0e99e2b9a1ce67bbd9d98"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/aggregates",
+      "page_hash": "620f12fda49b7439836e2e8d82fc8e743ef70b1664ed5f822a18bbf3208d4e3e"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/list",
+      "page_hash": "55dfac7d6e78c84d25da83613b9f02dbd3b396b4a3b884f04486e578f30a446f"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/numeric",
+      "page_hash": "504a21b38adc7f2167433deb8063c3c804a92ee221f0cff75186aedbdaf3b825"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/text",
+      "page_hash": "f8d4772ed90746c31041f911755a1c069843073dec812f927e3d648e057708d1"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/window_functions",
+      "page_hash": "068f51516fbef39b60b9415c3d4674ad02455f5d0cc026d60a95e3d6099a3191"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/meta/duckdb_table_functions",
+      "page_hash": "375f2e630b5a6a11bf6202e6a1d0dea6752ba2d5711e6a17e78d6ce47e7d8b5a"
+    }
+  ],
+  "surfaces": [
+    {
+      "page_hint": "table_row",
+      "owner_strategy": "table_row",
+      "type_hint": "UNCERTAIN",
+      "identity_slot": "first_cell",
+      "observed_pages": [
+        "https://duckdb.org/docs/2.0/sql/data_types/overview",
+        "https://duckdb.org/docs/2.0/data/csv/overview",
+        "https://duckdb.org/docs/2.0/data/json/json_functions",
+        "https://duckdb.org/docs/2.0/data/json/loading_json",
+        "https://duckdb.org/docs/2.0/sql/data_types/boolean",
+        "https://duckdb.org/docs/2.0/sql/data_types/numeric",
+        "https://duckdb.org/docs/2.0/sql/data_types/time",
+        "https://duckdb.org/docs/2.0/sql/data_types/timestamp",
+        "https://duckdb.org/docs/2.0/sql/expressions/comparison_operators",
+        "https://duckdb.org/docs/2.0/sql/functions/aggregates",
+        "https://duckdb.org/docs/2.0/sql/functions/list",
+        "https://duckdb.org/docs/2.0/sql/functions/numeric",
+        "https://duckdb.org/docs/2.0/sql/functions/text",
+        "https://duckdb.org/docs/2.0/sql/functions/window_functions",
+        "https://duckdb.org/docs/2.0/sql/meta/duckdb_table_functions"
+      ]
+    },
+    {
+      "page_hint": "heading_section",
+      "owner_strategy": "heading_section",
+      "type_hint": "UNCERTAIN",
+      "identity_slot": "heading",
+      "observed_pages": [
+        "https://duckdb.org/docs/2.0/sql/data_types/overview",
+        "https://duckdb.org/docs/2.0/data/csv/overview",
+        "https://duckdb.org/docs/2.0/data/json/json_functions",
+        "https://duckdb.org/docs/2.0/data/json/loading_json",
+        "https://duckdb.org/docs/2.0/sql/data_types/boolean",
+        "https://duckdb.org/docs/2.0/sql/data_types/numeric",
+        "https://duckdb.org/docs/2.0/sql/data_types/timestamp",
+        "https://duckdb.org/docs/2.0/sql/expressions/comparison_operators",
+        "https://duckdb.org/docs/2.0/sql/functions/aggregates",
+        "https://duckdb.org/docs/2.0/sql/functions/list",
+        "https://duckdb.org/docs/2.0/sql/functions/numeric",
+        "https://duckdb.org/docs/2.0/sql/functions/text",
+        "https://duckdb.org/docs/2.0/sql/functions/window_functions",
+        "https://duckdb.org/docs/2.0/sql/meta/duckdb_table_functions"
+      ]
+    },
+    {
+      "page_hint": "signature",
+      "owner_strategy": "signature",
+      "type_hint": "UNCERTAIN",
+      "identity_slot": "code_or_heading",
+      "observed_pages": [
+        "https://duckdb.org/docs/2.0/sql/data_types/overview",
+        "https://duckdb.org/docs/2.0/data/csv/overview",
+        "https://duckdb.org/docs/2.0/data/json/json_functions",
+        "https://duckdb.org/docs/2.0/data/json/loading_json",
+        "https://duckdb.org/docs/2.0/sql/data_types/boolean",
+        "https://duckdb.org/docs/2.0/sql/data_types/numeric",
+        "https://duckdb.org/docs/2.0/sql/data_types/time",
+        "https://duckdb.org/docs/2.0/sql/data_types/timestamp",
+        "https://duckdb.org/docs/2.0/sql/expressions/comparison_operators",
+        "https://duckdb.org/docs/2.0/sql/functions/aggregates",
+        "https://duckdb.org/docs/2.0/sql/functions/list",
+        "https://duckdb.org/docs/2.0/sql/functions/numeric",
+        "https://duckdb.org/docs/2.0/sql/functions/text",
+        "https://duckdb.org/docs/2.0/sql/functions/window_functions",
+        "https://duckdb.org/docs/2.0/sql/meta/duckdb_table_functions"
+      ]
+    },
+    {
+      "page_hint": "list_item",
+      "owner_strategy": "list_item",
+      "type_hint": "UNCERTAIN",
+      "identity_slot": "inline_literal_or_label",
+      "observed_pages": [
+        "https://duckdb.org/docs/2.0/sql/data_types/overview",
+        "https://duckdb.org/docs/2.0/data/csv/overview",
+        "https://duckdb.org/docs/2.0/data/json/json_functions",
+        "https://duckdb.org/docs/2.0/data/json/loading_json",
+        "https://duckdb.org/docs/2.0/sql/data_types/boolean",
+        "https://duckdb.org/docs/2.0/sql/data_types/numeric",
+        "https://duckdb.org/docs/2.0/sql/data_types/time",
+        "https://duckdb.org/docs/2.0/sql/data_types/timestamp",
+        "https://duckdb.org/docs/2.0/sql/expressions/comparison_operators",
+        "https://duckdb.org/docs/2.0/sql/functions/aggregates",
+        "https://duckdb.org/docs/2.0/sql/functions/list",
+        "https://duckdb.org/docs/2.0/sql/functions/numeric",
+        "https://duckdb.org/docs/2.0/sql/functions/text",
+        "https://duckdb.org/docs/2.0/sql/functions/window_functions",
+        "https://duckdb.org/docs/2.0/sql/meta/duckdb_table_functions"
+      ]
+    },
+    {
+      "page_hint": "page_singleton",
+      "owner_strategy": "page_singleton",
+      "type_hint": "UNCERTAIN",
+      "identity_slot": "page_title",
+      "observed_pages": [
+        "https://duckdb.org/docs/2.0/sql/data_types/boolean"
+      ]
+    }
+  ],
+  "hint_contract": {
+    "schema_version": "profile-structural-hints/v1",
+    "page_granularity": "MIXED",
+    "structural_region_hints": [
+      "HEADING_SECTION",
+      "LIST_ITEM",
+      "PAGE",
+      "SIGNATURE_BLOCK_OR_SPAN",
+      "TABLE_ROW"
+    ],
+    "identity_surface_hints": [
+      "FIRST_CELL_OR_LINK",
+      "HEADING",
+      "LABEL_OR_INLINE_LITERAL",
+      "PAGE_TITLE_OR_PRIMARY_HEADING",
+      "SIGNATURE_TEXT_OR_HEADING"
+    ],
+    "boundary_hints": [
+      "HEADING_BOUNDED_SECTION",
+      "PAGE_BOUNDARY",
+      "SIBLING_LIST_ITEM",
+      "SIBLING_TABLE_ROW",
+      "SIGNATURE_SPAN_OR_BLOCK"
+    ],
+    "negative_surface_hints": [
+      "EXAMPLE_CODE",
+      "NAVIGATION",
+      "CROSS_REFERENCE"
+    ],
+    "example_surface_hints": [
+      "CODE_BLOCK",
+      "INLINE_LITERAL"
+    ],
+    "legacy_owner_strategy_hints": [
+      "heading_section",
+      "list_item",
+      "page_singleton",
+      "signature",
+      "table_row"
+    ],
+    "selection_authority": "OWNER_CANDIDATE_INFERENCE",
+    "definition_patterns": [
+      {
+        "grammar": "DATATYPE_DECLARATION",
+        "container": "LIST_ITEM",
+        "identity_slot": "LEADING_LITERAL",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "grammar": "OPERATOR_EXPRESSION",
+        "container": "LIST_ITEM",
+        "identity_slot": "LEADING_LITERAL",
+        "boundary": "CURRENT_CONTAINER"
+      }
+    ],
+    "definition_scope_patterns": [
+      {
+        "relation": "SIGNATURE_CONTAINER",
+        "identity_slot": "LEADING_SIGNATURE",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "relation": "SELF_DEFINITION",
+        "identity_slot": "EXPLICIT_SELF_SUBJECT",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "PARAGRAPH_SIGNATURE",
+        "identity_slot": "LABEL_AND_SIGNATURE",
+        "boundary": "NEXT_LABEL_OR_HEADING"
+      },
+      {
+        "relation": "STORAGE_CLASS",
+        "identity_slot": "EXPLICIT_TYPE_LABEL",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "TERM_BODY_PAIR",
+        "identity_slot": "TERM",
+        "boundary": "NEXT_TERM"
+      },
+      {
+        "relation": "HEADING_SECTION",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING"
+      },
+      {
+        "relation": "CATALOG_ROW",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW"
+      },
+      {
+        "relation": "CATALOG_MEMBER_CONTEXT",
+        "identity_slot": "TYPED_LITERAL_MEMBER",
+        "boundary": "LIST_AND_SHARED_PARENT"
+      },
+      {
+        "relation": "PAGE_SUBJECT_RELATION",
+        "identity_slot": "TYPED_SUBJECT_HEADING",
+        "boundary": "DEFINITION_PREFIX"
+      }
+    ],
+    "definition_structure_patterns": [
+      {
+        "structure": "A",
+        "identity_slot": "PAGE_SUBJECT",
+        "boundary": "SUBJECT_PAGE"
+      },
+      {
+        "structure": "B",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING"
+      },
+      {
+        "structure": "C",
+        "identity_slot": "LEADING_TERM",
+        "boundary": "CURRENT_ENTRY"
+      },
+      {
+        "structure": "D",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW"
+      },
+      {
+        "structure": "E",
+        "identity_slot": "TYPED_MEMBER",
+        "boundary": "SHARED_PARENT"
+      }
+    ],
+    "content_binding_patterns": [
+      "EXPLICIT_OPERATOR_EXPLANATION"
+    ],
+    "local_type_patterns": [
+      {
+        "context_type": "FUNCTION",
+        "owner_strategy": "table_row",
+        "grammar": "CALLABLE_DEFINITION",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "FUNCTION",
+        "owner_strategy": "heading_section",
+        "grammar": "CALLABLE_DEFINITION",
+        "identity_slot": "HEADING",
+        "boundary": "HEADING_BOUNDED_SECTION",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "FUNCTION",
+        "owner_strategy": "signature",
+        "grammar": "CALLABLE_DEFINITION",
+        "identity_slot": "SIGNATURE_TEXT_OR_HEADING",
+        "boundary": "CURRENT_BLOCK",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "OPERATOR",
+        "owner_strategy": "table_row",
+        "grammar": "OPERATOR_EXPRESSION",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "OPERATOR",
+        "owner_strategy": "heading_section",
+        "grammar": "OPERATOR_EXPRESSION",
+        "identity_slot": "HEADING",
+        "boundary": "HEADING_BOUNDED_SECTION",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "OPERATOR",
+        "owner_strategy": "signature",
+        "grammar": "OPERATOR_EXPRESSION",
+        "identity_slot": "SIGNATURE_TEXT_OR_HEADING",
+        "boundary": "CURRENT_BLOCK",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "DATATYPE",
+        "owner_strategy": "table_row",
+        "grammar": "DATATYPE_DECLARATION",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "DATATYPE",
+        "owner_strategy": "heading_section",
+        "grammar": "DATATYPE_DECLARATION",
+        "identity_slot": "HEADING",
+        "boundary": "HEADING_BOUNDED_SECTION",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "DATATYPE",
+        "owner_strategy": "signature",
+        "grammar": "DATATYPE_DECLARATION",
+        "identity_slot": "SIGNATURE_TEXT_OR_HEADING",
+        "boundary": "CURRENT_BLOCK",
+        "observed_region_refs": []
+      }
+    ]
+  },
+  "bootstrap": {
+    "method": "MANUAL_RAW_HTML_STRUCTURAL_REVIEW_WITH_GENERIC_CONTRACT_COMPILATION",
+    "sample_pages": 15,
+    "inventory_used": false,
+    "feature_extraction_executed": false,
+    "document_ir_region_refs_created": false
+  }
+}

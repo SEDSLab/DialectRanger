@@ -1,0 +1,245 @@
+{
+  "dbms": "duckdb",
+  "documents": [
+    {
+      "url": "https://duckdb.org/docs/2.0/data/csv/auto_detection"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/csv/overview"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/csv/reading_faulty_csv_files"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/csv/tips"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/json/caveats"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/json/creating_json"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/json/format_settings"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/json/installing_and_loading"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/json/json_functions"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/json/json_type"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/json/loading_json"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/json/overview"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/json/sql_to_and_from_json"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/json/writing_json"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/multiple_files/overview"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/parquet/encryption"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/parquet/metadata"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/parquet/overview"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/data/parquet/tips"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/array"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/bitstring"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/blob"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/boolean"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/date"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/enum"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/geometry"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/interval"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/list"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/literal_types"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/map"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/nulls"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/numeric"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/overview"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/struct"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/text"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/time"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/timestamp"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/timezones"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/typecasting"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/union"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/data_types/variant"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/expressions/case"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/expressions/cast"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/expressions/collations"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/expressions/comparison_operators"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/expressions/in"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/expressions/logical_operators"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/expressions/overview"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/expressions/star"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/expressions/subqueries"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/expressions/try"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/aggregates"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/array"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/bitstring"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/blob"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/date"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/dateformat"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/datepart"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/enum"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/geometry"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/interval"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/lambda"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/list"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/map"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/nested"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/numeric"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/overview"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/pattern_matching"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/regular_expressions"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/struct"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/text"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/time"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/timestamp"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/timestamptz"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/union"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/utility"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/variant"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/functions/window_functions"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/meta/duckdb_table_functions"
+    },
+    {
+      "url": "https://duckdb.org/docs/2.0/sql/query_syntax/unnest"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "dbms": "trino",
+  "documents": [
+    {
+      "url": "https://trino.io/docs/current/functions.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/aggregate.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/ai.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/array.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/binary.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/bitwise.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/color.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/comparison.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/conditional.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/conversion.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/datasketches.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/datetime.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/decimal.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/geospatial.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/hyperloglog.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/ipaddress.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/json.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/lambda.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/list-by-topic.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/list.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/logical.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/map.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/math.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/ml.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/qdigest.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/regexp.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/row.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/session.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/setdigest.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/string.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/system.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/table.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/tdigest.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/teradata.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/url.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/uuid.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/variant.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/functions/window.html"
+    },
+    {
+      "url": "https://trino.io/docs/current/language/types.html"
+    }
+  ]
+}

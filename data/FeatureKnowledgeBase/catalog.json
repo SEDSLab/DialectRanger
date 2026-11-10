@@ -1,0 +1,77 @@
+{
+  "schema_version": "dialectranger-feature-catalog/v1",
+  "databases": [
+    {
+      "dbms": "clickhouse",
+      "final": "clickhouse/final.json",
+      "review": "clickhouse/review.json",
+      "summary": "clickhouse/summary.json"
+    },
+    {
+      "dbms": "cockroachdb",
+      "final": "cockroachdb/final.json",
+      "review": "cockroachdb/review.json",
+      "summary": "cockroachdb/summary.json"
+    },
+    {
+      "dbms": "derby",
+      "final": "derby/final.json",
+      "review": "derby/review.json",
+      "summary": "derby/summary.json"
+    },
+    {
+      "dbms": "duckdb",
+      "final": "duckdb/final.json",
+      "review": "duckdb/review.json",
+      "summary": "duckdb/summary.json"
+    },
+    {
+      "dbms": "mariadb",
+      "final": "mariadb/final.json",
+      "review": "mariadb/review.json",
+      "summary": "mariadb/summary.json"
+    },
+    {
+      "dbms": "monetdb",
+      "final": "monetdb/final.json",
+      "review": "monetdb/review.json",
+      "summary": "monetdb/summary.json"
+    },
+    {
+      "dbms": "mysql",
+      "final": "mysql/final.json",
+      "review": "mysql/review.json",
+      "summary": "mysql/summary.json"
+    },
+    {
+      "dbms": "oracle",
+      "final": "oracle/final.json",
+      "review": "oracle/review.json",
+      "summary": "oracle/summary.json"
+    },
+    {
+      "dbms": "postgresql",
+      "final": "postgresql/final.json",
+      "review": "postgresql/review.json",
+      "summary": "postgresql/summary.json"
+    },
+    {
+      "dbms": "sqlite",
+      "final": "sqlite/final.json",
+      "review": "sqlite/review.json",
+      "summary": "sqlite/summary.json"
+    },
+    {
+      "dbms": "sqlserver",
+      "final": "sqlserver/final.json",
+      "review": "sqlserver/review.json",
+      "summary": "sqlserver/summary.json"
+    },
+    {
+      "dbms": "trino",
+      "final": "trino/final.json",
+      "review": "trino/review.json",
+      "summary": "trino/summary.json"
+    }
+  ]
+}

@@ -1,0 +1,567 @@
+{
+  "schema_version": "featurecrawler-cold-profile/v1",
+  "profile_id": "manual_profile:cockroachdb_scoped_type_authority_v2",
+  "dbms": "cockroachdb",
+  "generated": false,
+  "generated_at": null,
+  "run_id": "cockroachdb-input-preparation-20261106-v1",
+  "generation_mode": "MANUAL_REVISED",
+  "manual_edit": true,
+  "profile_provenance": {
+    "author": "Codex: official reference structure preparation",
+    "authored_at": "2026-11-06",
+    "revision": "2",
+    "derived_from_digest": "7ee301e8b2ca6c076b49ef1e0f8ee7df64fd463b186042a244c5150cee61d3c0"
+  },
+  "source_pages": [
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/functions-and-operators",
+      "page_hash": "750ff45a860371b22b3965a4084f579dc890a5c512825fbe3830411b350b224e"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/data-types",
+      "page_hash": "293375f7249d31026f1eab0af236df431e7dac5e36922de0568da1f3c89540b8"
+    },
+    {
+      "url": "https://docs.cockroachlabs.com/docs/stable/int",
+      "page_hash": "a0707f55fdf05d9183d82dfc2f1cdcc361035e002b81de3b6c764d8d05c402b2"
+    }
+  ],
+  "surfaces": [
+    {
+      "page_hint": "page_singleton",
+      "owner_strategy": "page_singleton",
+      "identity_slot": "PAGE_SUBJECT",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://docs.cockroachlabs.com/docs/stable/functions-and-operators",
+        "https://docs.cockroachlabs.com/docs/stable/data-types",
+        "https://docs.cockroachlabs.com/docs/stable/int"
+      ],
+      "observed_block_count": 3
+    },
+    {
+      "page_hint": "heading_section",
+      "owner_strategy": "heading_section",
+      "identity_slot": "HEADING",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://docs.cockroachlabs.com/docs/stable/functions-and-operators",
+        "https://docs.cockroachlabs.com/docs/stable/data-types",
+        "https://docs.cockroachlabs.com/docs/stable/int"
+      ],
+      "observed_block_count": 56
+    },
+    {
+      "page_hint": "table_row",
+      "owner_strategy": "table_row",
+      "identity_slot": "VERIFIED_IDENTITY_CELL",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://docs.cockroachlabs.com/docs/stable/functions-and-operators",
+        "https://docs.cockroachlabs.com/docs/stable/data-types",
+        "https://docs.cockroachlabs.com/docs/stable/int"
+      ],
+      "observed_block_count": 2694
+    }
+  ],
+  "hint_contract": {
+    "schema_version": "profile-structural-hints/v1",
+    "page_granularity": "MIXED",
+    "structural_region_hints": [
+      "PAGE",
+      "HEADING_SECTION",
+      "TABLE_ROW",
+      "SIGNATURE_BLOCK_OR_SPAN"
+    ],
+    "identity_surface_hints": [
+      "PAGE_TITLE_OR_PRIMARY_HEADING",
+      "HEADING",
+      "FIRST_CELL_OR_LINK",
+      "SIGNATURE_TEXT_OR_HEADING"
+    ],
+    "boundary_hints": [
+      "PAGE_BOUNDARY",
+      "HEADING_BOUNDED_SECTION",
+      "SIBLING_TABLE_ROW",
+      "SIGNATURE_SPAN_OR_BLOCK"
+    ],
+    "negative_surface_hints": [
+      "NAVIGATION",
+      "CROSS_REFERENCE",
+      "EXAMPLE_CODE"
+    ],
+    "example_surface_hints": [
+      "CODE_BLOCK",
+      "INLINE_LITERAL"
+    ],
+    "legacy_owner_strategy_hints": [
+      "page_singleton",
+      "heading_section",
+      "table_row"
+    ],
+    "selection_authority": "OWNER_CANDIDATE_INFERENCE",
+    "definition_patterns": [],
+    "definition_scope_patterns": [
+      {
+        "relation": "SIGNATURE_CONTAINER",
+        "identity_slot": "LEADING_SIGNATURE",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "relation": "SELF_DEFINITION",
+        "identity_slot": "EXPLICIT_SELF_SUBJECT",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "PARAGRAPH_SIGNATURE",
+        "identity_slot": "LABEL_AND_SIGNATURE",
+        "boundary": "NEXT_LABEL_OR_HEADING"
+      },
+      {
+        "relation": "STORAGE_CLASS",
+        "identity_slot": "EXPLICIT_TYPE_LABEL",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "TERM_BODY_PAIR",
+        "identity_slot": "TERM",
+        "boundary": "NEXT_TERM"
+      },
+      {
+        "relation": "HEADING_SECTION",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING"
+      },
+      {
+        "relation": "CATALOG_ROW",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW"
+      },
+      {
+        "relation": "CATALOG_MEMBER_CONTEXT",
+        "identity_slot": "TYPED_LITERAL_MEMBER",
+        "boundary": "LIST_AND_SHARED_PARENT"
+      },
+      {
+        "relation": "GRAMMAR_MEMBER_CONTEXT",
+        "identity_slot": "GRAMMAR_MEMBER",
+        "boundary": "HEADING_SECTION"
+      },
+      {
+        "relation": "PAGE_SUBJECT_RELATION",
+        "identity_slot": "TYPED_SUBJECT_HEADING",
+        "boundary": "DEFINITION_PREFIX"
+      }
+    ],
+    "definition_structure_patterns": [
+      {
+        "structure": "A",
+        "identity_slot": "PAGE_SUBJECT",
+        "boundary": "SUBJECT_PAGE",
+        "execution": {
+          "version": 1,
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING"
+              },
+              {
+                "kind": "VERIFIED_ANCHOR"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "fields": [
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Syntax and arguments",
+                  "Synopsis"
+                ]
+              }
+            },
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              }
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Examples",
+                  "Example",
+                  "Basic examples",
+                  "Usage example"
+                ]
+              }
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              }
+            },
+            {
+              "role": "PARAMETER",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Arguments",
+                  "Parameters"
+                ]
+              }
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Return types",
+                  "Returned value",
+                  "Returns"
+                ]
+              }
+            }
+          ],
+          "when": {
+            "page_path_prefixes": [
+              "/docs/stable/functions-and-operators",
+              "/docs/stable/null-handling",
+              "/docs/stable/collate",
+              "/docs/stable/domain",
+              "/docs/stable/data-types",
+              "/docs/stable/oid"
+            ]
+          }
+        },
+        "plan_id": "compatible_surface_0"
+      },
+      {
+        "structure": "B",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING",
+        "execution": {
+          "version": 1,
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING"
+              },
+              {
+                "kind": "VERIFIED_ANCHOR"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "fields": [
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Syntax and arguments",
+                  "Synopsis"
+                ]
+              }
+            },
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              }
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Examples",
+                  "Example",
+                  "Basic examples",
+                  "Usage example"
+                ]
+              }
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              }
+            },
+            {
+              "role": "PARAMETER",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Arguments",
+                  "Parameters"
+                ]
+              }
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Return types",
+                  "Returned value",
+                  "Returns"
+                ]
+              }
+            }
+          ]
+        },
+        "plan_id": "compatible_surface_1"
+      },
+      {
+        "structure": "D",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW",
+        "execution": {
+          "version": 1,
+          "when": {
+            "table_headers_any": [
+              "Function",
+              "Signature",
+              "Operator",
+              "Type"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Function",
+                  "Signature",
+                  "Operator",
+                  "Type"
+                ]
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Description",
+                  "Purpose"
+                ]
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Syntax",
+                  "Signature"
+                ]
+              }
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Example",
+                  "Examples"
+                ]
+              }
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Return type",
+                  "Return types"
+                ]
+              }
+            }
+          ]
+        },
+        "plan_id": "compatible_surface_2"
+      },
+      {
+        "plan_id": "declared_type_pages",
+        "structure": "A",
+        "identity_slot": "PAGE_SUBJECT",
+        "boundary": "SUBJECT_PAGE",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "DATATYPE",
+          "when": {
+            "page_path_prefixes": [
+              "/docs/stable/array",
+              "/docs/stable/bit",
+              "/docs/stable/bool",
+              "/docs/stable/bytes",
+              "/docs/stable/citext",
+              "/docs/stable/date",
+              "/docs/stable/decimal",
+              "/docs/stable/enum",
+              "/docs/stable/float",
+              "/docs/stable/inet",
+              "/docs/stable/int",
+              "/docs/stable/interval",
+              "/docs/stable/jsonb",
+              "/docs/stable/ltree",
+              "/docs/stable/serial",
+              "/docs/stable/string",
+              "/docs/stable/time",
+              "/docs/stable/timestamp",
+              "/docs/stable/tsquery",
+              "/docs/stable/tsvector",
+              "/docs/stable/uuid",
+              "/docs/stable/vector"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING",
+                "heading_level": 1,
+                "text_pattern": "[A-Z][A-Z0-9_]*(?:\\s*/\\s*[A-Z][A-Z0-9_]*)*",
+                "split_pattern": "\\s*/\\s*",
+                "name_pattern": "[A-Z][A-Z0-9_]*"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "Related content",
+              "See also",
+              "Feedback",
+              "Additional resources"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "exclude_text_prefixes": [
+                "Applies to:",
+                "Transact-SQL syntax conventions"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Remarks",
+                  "Description"
+                ]
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Examples",
+                  "Example"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "PARAMETER",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Arguments",
+                  "Parameters"
+                ]
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "TABLE_ROW"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return types",
+                  "Return type",
+                  "Returns"
+                ]
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "TABLE_ROW",
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            }
+          ]
+        }
+      }
+    ],
+    "authority_scope": "CONFIGURED_PLANS_ONLY"
+  }
+}

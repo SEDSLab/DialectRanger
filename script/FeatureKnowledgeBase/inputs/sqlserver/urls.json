@@ -1,0 +1,1307 @@
+{
+  "dbms": "sqlserver",
+  "documents": [
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/binary-and-varbinary-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/bit-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/char-and-varchar-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/constants-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/cursor-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-type-conversion-database-engine?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-type-precedence-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-type-synonyms-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/date-and-time-types?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/date-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/datetime-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/datetime2-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/datetimeoffset-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/decimal-and-numeric-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/float-and-real-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/getancestor-database-engine?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/getdescendant-database-engine?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/getlevel-database-engine?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/getreparentedvalue-database-engine?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/getroot-database-engine?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/hierarchyid-data-type-method-reference?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/isdescendantof-database-engine?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/json-data-type?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/money-and-smallmoney-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/nchar-and-nvarchar-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/nondeterministic-convert-date-literals?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/ntext-text-and-image-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/numeric-types?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/parse-database-engine?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/precision-scale-and-length-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/read-database-engine?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/rowversion-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/smalldatetime-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/sql-variant-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/string-and-binary-types?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/table-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/time-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/tostring-database-engine?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/uniqueidentifier-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/vector-data-type-half-precision-float?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/vector-data-type?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/write-database-engine?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/abs-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/acos-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/aggregate-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ai-analyze-sentiment-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ai-classify-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ai-extract-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ai-fix-grammar-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ai-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ai-generate-chunks-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ai-generate-embeddings-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ai-generate-response-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ai-summarize-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ai-translate-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/analytic-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/any-value-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/app-name-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/applock-mode-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/applock-test-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/approx-count-distinct-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/approx-median-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/approx-percentile-cont-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/approx-percentile-disc-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/approx-quantile-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ascii-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/asin-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/assemblyproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/asymkey-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/asymkeyproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/atan-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/atn2-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/avg-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/base64-decode-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/base64-encode-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/binary-checksum-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/bit-count-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/bit-manipulation-functions-overview?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/cast-and-convert-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ceiling-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/cert-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/certencoded-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/certprivatekey-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/certproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/char-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/charindex-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/checksum-agg-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/checksum-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/col-length-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/col-name-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/collation-functions-collationproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/collation-functions-tertiary-weights-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/columnproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/columns-updated-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/compress-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/concat-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/concat-ws-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/connectionproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/connections-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/context-info-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/conversion-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/cos-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/cot-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/count-big-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/count-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/cpu-busy-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/crypt-gen-random-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/cryptographic-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/cume-dist-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/current-date-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/current-request-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/current-timestamp-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/current-timezone-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/current-timezone-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/current-transaction-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/current-user-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/cursor-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/cursor-rows-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/cursor-status-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/data-type-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/database-principal-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/databasepropertyex-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/datalength-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/date-bucket-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/dateadd-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/datediff-big-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/datediff-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/datefirst-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/datefromparts-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/datename-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/datepart-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/datetime2fromparts-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/datetimefromparts-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/datetimeoffsetfromparts-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/datetrunc-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/day-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/db-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/db-name-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/dbts-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/decompress-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/decryptbyasymkey-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/decryptbycert-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/decryptbykey-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/decryptbykeyautoasymkey-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/decryptbykeyautocert-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/decryptbypassphrase-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/degrees-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/dense-rank-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/difference-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/edge-id-from-parts-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/edit-distance-similarity-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/edit-distance-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/encryptbyasymkey-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/encryptbycert-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/encryptbykey-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/encryptbypassphrase-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/eomonth-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/error-line-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/error-message-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/error-number-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/error-procedure-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/error-severity-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/error-state-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/error-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/eventdata-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/exp-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/fetch-status-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/file-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/file-idex-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/file-name-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/filegroup-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/filegroup-name-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/filegroupproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/fileproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/filepropertyex-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/first-value-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/floor-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/format-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/formatmessage-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/fulltextcatalogproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/fulltextserviceproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/functions?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/generate-series-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/get-bit-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/get-filestream-transaction-context-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/getansinull-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/getdate-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/getutcdate-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/graph-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/graph-id-from-edge-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/graph-id-from-node-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/grouping-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/grouping-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/has-dbaccess-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/has-perms-by-name-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/hashbytes-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/host-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/host-name-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ident-current-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ident-incr-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ident-seed-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/identity-function-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/identity-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/idle-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/index-col-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/indexkey-property-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/indexproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/io-busy-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/is-member-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/is-objectsigned-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/is-rolemember-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/is-srvrolemember-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/isdate-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/isjson-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/isnull-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/isnumeric-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/jaro-winkler-distance-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/jaro-winkler-similarity-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/json-array-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/json-arrayagg-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/json-contains-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/json-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/json-modify-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/json-object-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/json-objectagg-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/json-path-exists-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/json-query-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/json-value-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/key-guid-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/key-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/key-name-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/lag-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/langid-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/language-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/last-value-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/lead-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/left-shift-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/left-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/len-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/lock-timeout-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/log-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/log10-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/logical-functions-choose-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/logical-functions-greatest-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/logical-functions-iif-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/logical-functions-least-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/loginproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/lower-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ltrim-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/mathematical-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/max-connections-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/max-precision-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/max-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/median-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/metadata-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/min-active-rowversion-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/min-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/month-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/nchar-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/nestlevel-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/newid-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/newsequentialid-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/next-value-for-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/node-id-from-parts-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ntile-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/object-definition-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/object-id-from-edge-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/object-id-from-node-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/object-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/object-name-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/object-schema-name-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/objectproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/objectpropertyex-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/odbc-scalar-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/opendatasource-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/openjson-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/openquery-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/openrowset-bulk-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/openrowset-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/openxml-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/options-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/original-db-name-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/original-login-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/pack-received-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/pack-sent-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/packet-errors-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/parse-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/parsename-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/partition-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/patindex-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/percent-rank-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/percentile-cont-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/percentile-disc-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/permissions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/pi-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/power-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/procid-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/product-aggregate-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/pwdcompare-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/pwdencrypt-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/quantile-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/quotename-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/radians-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/rand-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/rank-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/ranking-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/regexp-count-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/regexp-instr-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/regexp-like-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/regexp-matches-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/regexp-replace-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/regexp-split-to-table-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/regexp-substr-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/remserver-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/replace-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/replicate-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/replication-functions-publishingservername?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/reverse-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/right-shift-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/right-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/round-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/row-number-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/rowcount-big-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/rowcount-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/rtrim-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/schema-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/schema-name-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/scope-identity-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/security-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/servername-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/serverproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/servicename-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/session-context-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/session-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/session-user-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/sessionproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/set-bit-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/sign-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/signbyasymkey-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/signbycert-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/sin-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/smalldatetimefromparts-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/soundex-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/space-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/spid-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/sql-variant-property-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/sqrt-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/square-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/stats-date-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/stdev-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/stdevp-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/str-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/string-agg-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/string-escape-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/string-split-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/stuff-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/substring-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/sum-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/suser-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/suser-name-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/suser-sid-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/suser-sname-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/switchoffset-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/symkeyproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/sysdatetime-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/sysdatetimeoffset-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/system-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/system-statistical-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/system-user-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/sysutcdatetime-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/tan-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/text-and-image-functions-textptr-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/text-and-image-functions-textvalid-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/textsize-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/timefromparts-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/timeticks-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/todatetimeoffset-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/total-errors-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/total-read-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/total-write-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/trancount-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/translate-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/trigger-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/trigger-nestlevel-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/trim-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/try-cast-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/try-convert-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/try-parse-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/type-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/type-name-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/typeproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/unicode-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/unistr-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/update-trigger-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/upper-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/user-id-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/user-name-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/user-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/var-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/varp-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/vector-distance-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/vector-functions-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/vector-norm-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/vector-normalize-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/vector-search-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/vectorproperty-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/verifysignedbyasymkey-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/verifysignedbycert-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/version-transact-sql-configuration-functions?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/version-transact-sql-metadata-functions?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/xact-state-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/year-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/arithmetic-operators-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/assignment-operator-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/between-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/bitwise-operators-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/comparison-operators-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/compound-operators-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/exists-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/in-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/like-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/logical-operators-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/operator-precedence-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/operators-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/relational-operators-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/scope-resolution-operator-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/set-operators-except-and-intersect-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/set-operators-union-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/string-operators-transact-sql?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/unary-operators-negative?view=sql-server-ver17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/unary-operators-positive?view=sql-server-ver17"
+    }
+  ]
+}

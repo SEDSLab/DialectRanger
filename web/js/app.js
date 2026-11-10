@@ -1,7 +1,14 @@
 /* DialectRanger Feature Knowledge Base — App Logic */
 (function() {
-  const FEATURES = window.FEATURE_DATA || [];
-  const REVIEWS = window.REVIEW_DATA || [];
+  const nameOrder = new Intl.Collator("en", { sensitivity: "base", numeric: true });
+  function compareFeatures(a, b) {
+    return nameOrder.compare(a.name || "", b.name || "") ||
+      nameOrder.compare(a.dbms || "", b.dbms || "") ||
+      nameOrder.compare(a.feature_type || "", b.feature_type || "") ||
+      nameOrder.compare(a.feature_id || "", b.feature_id || "");
+  }
+  const FEATURES = [...(window.FEATURE_DATA || [])].sort(compareFeatures);
+  const REVIEWS = [...(window.REVIEW_DATA || [])].sort(compareFeatures);
   const STATS = window.STATS || { total: 0, dbms: {} };
   const DBMS_LIST = window.DBMS_LIST || [];
   const PAGE_SIZE = 80;
@@ -58,8 +65,8 @@
 
     DBMS_LIST.forEach(dbms => {
       const s = STATS.dbms[dbms] || {};
-      const total = (s.function || 0) + (s.operator || 0) + (s.datatype || 0);
-      if (total === 0) return;
+      const total = (s.function || 0) + (s.operator || 0) + (s.datatype || 0) + (s.uncertain || 0);
+      if (total === 0 && countReviews(dbms) === 0) return;
 
       const group = document.createElement("div");
       group.className = "dbms-group";
@@ -88,6 +95,7 @@
         ["function", "Functions", s.function || 0],
         ["operator", "Operators", s.operator || 0],
         ["datatype", "Data Types", s.datatype || 0],
+        ["uncertain", "Uncertain", s.uncertain || 0],
         ["review", "Review", countReviews(dbms)],
       ].forEach(([ft, label, count]) => {
         if (count === 0) return;
@@ -137,8 +145,8 @@
     dbmsSel.onchange = function() { setFilter(dbmsSel.value, activeType); };
 
     typeSel.innerHTML = '<option value="">All Feature Types</option>';
-    ["function", "operator", "datatype", "review"].forEach(ft => {
-      const labels = { function: "Functions", operator: "Operators", datatype: "Data Types", review: "Review" };
+    ["function", "operator", "datatype", "uncertain", "review"].forEach(ft => {
+      const labels = { function: "Functions", operator: "Operators", datatype: "Data Types", uncertain: "Uncertain", review: "Review" };
       typeSel.innerHTML += '<option value="' + ft + '"' + (activeType === ft ? " selected" : "") + '>' + labels[ft] + '</option>';
     });
     typeSel.onchange = function() { setFilter(activeDbms, typeSel.value); };
@@ -249,27 +257,37 @@
       html += '<div class="detail-section">';
 
       // Description claims
-      if (f.descriptions.length > 1) {
-        html += '<div class="detail-title">Description</div>';
+      html += '<div class="detail-title">Description</div>';
+      if (f.descriptions.length > 0) {
         f.descriptions.forEach(d => {
           html += '<div class="detail-text">' + escapeHtml(d) + '</div>';
         });
-      }
+      } else html += '<div class="detail-text">Not available</div>';
 
       // Syntax
+      html += '<div class="detail-title">Syntax</div>';
       if (f.syntax.length > 0) {
-        html += '<div class="detail-title">Syntax</div>';
         f.syntax.forEach(s => {
           html += '<div class="detail-code">' + escapeHtml(s) + '</div>';
         });
-      }
+      } else html += '<div class="detail-text">Not available</div>';
 
       // Examples
+      html += '<div class="detail-title">Examples</div>';
       if (f.examples.length > 0) {
-        html += '<div class="detail-title">Examples</div>';
         f.examples.forEach(ex => {
           html += '<div class="detail-code">' + escapeHtml(ex) + '</div>';
         });
+      } else html += '<div class="detail-text">Not available</div>';
+
+      // Identity spellings are provenance, never substitutes for formal Syntax.
+      if ((f.aliases || []).length || (f.identity_variants || []).length) {
+        html += '<div class="detail-title">Aliases / Identity variants</div>';
+        html += '<div class="detail-text">' + escapeHtml(JSON.stringify({aliases:f.aliases || [], variants:f.identity_variants || []})) + '</div>';
+      }
+      if ((f.relations || []).length) {
+        html += '<div class="detail-title">Relations</div>';
+        html += '<div class="detail-code">' + escapeHtml(JSON.stringify(f.relations,null,2)) + '</div>';
       }
 
       // Metadata
@@ -279,7 +297,20 @@
       html += '<dt>Feature Type</dt><dd>' + ftLabel + '</dd>';
       html += '<dt>Feature ID</dt><dd style="font-family:monospace;font-size:11px">' + escapeHtml(fid) + '</dd>';
       if (f.status) html += '<dt>Status</dt><dd>' + escapeHtml(f.status) + '</dd>';
+      if (f.semantic_status) html += '<dt>Semantic Status</dt><dd>' + escapeHtml(f.semantic_status) + '</dd>';
       html += '</dl>';
+
+      const officialSources = (f.source_anchors || []).filter(url => /^https?:\/\//i.test(url));
+      if (officialSources.length) {
+        html += '<div class="detail-title">Official Sources</div>';
+        officialSources.forEach(url => {
+          html += '<div class="detail-text"><a target="_blank" rel="noopener noreferrer" href="' + escapeHtml(url) + '">' + escapeHtml(url) + '</a></div>';
+        });
+      }
+      if (f.provenance || f.quality) {
+        html += '<details><summary>Provenance / Quality</summary><div class="detail-code">' +
+          escapeHtml(JSON.stringify({provenance:f.provenance || {}, quality:f.quality || {}},null,2)) + '</div></details>';
+      }
 
       // Source Sections
       if (sections.length > 0) {

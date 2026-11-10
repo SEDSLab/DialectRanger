@@ -1,0 +1,14 @@
+{
+  "dbms": "hsqldb",
+  "documents": [
+    {
+      "url": "http://hsqldb.org/doc/2.0/guide/builtinfunctions-chapt.html"
+    },
+    {
+      "url": "http://hsqldb.org/doc/2.0/guide/dataaccess-chapt.html"
+    },
+    {
+      "url": "http://hsqldb.org/doc/2.0/guide/sqlgeneral-chapt.html"
+    }
+  ]
+}

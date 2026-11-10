@@ -1,0 +1,22 @@
+{
+  "dbms": "postgresql",
+  "updated_at": "2026-11-09T12:46:55.012274+00:00",
+  "final_count": 781,
+  "review_count": 332,
+  "by_type": {
+    "function": 630,
+    "operator": 54,
+    "datatype": 97
+  },
+  "with_fields": {
+    "description": 760,
+    "syntax": 656,
+    "examples": 331
+  },
+  "quality_status": "QUALITY_PARTIAL",
+  "actual_model_calls": 0,
+  "official_recall": "NOT_EVALUATED",
+  "projection_loss": 0,
+  "duplicate_ids": 0,
+  "runtime_artifacts_published": false
+}

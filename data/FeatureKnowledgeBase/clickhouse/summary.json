@@ -1,0 +1,22 @@
+{
+  "dbms": "clickhouse",
+  "updated_at": "2026-11-10T10:58:28.468311+00:00",
+  "final_count": 1630,
+  "review_count": 452,
+  "by_type": {
+    "function": 1572,
+    "datatype": 32,
+    "operator": 26
+  },
+  "with_fields": {
+    "description": 1579,
+    "syntax": 1570,
+    "examples": 1575
+  },
+  "quality_status": "QUALITY_PARTIAL",
+  "actual_model_calls": 0,
+  "official_recall": "NOT_EVALUATED",
+  "projection_loss": 0,
+  "duplicate_ids": 0,
+  "runtime_artifacts_published": false
+}

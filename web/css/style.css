@@ -168,7 +168,7 @@ body {
 .feature-card.expanded .detail-section { display: block; }
 .detail-section { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
 .detail-title { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 8px; }
-.detail-text { font-size: 14px; color: var(--text-secondary); margin-bottom: 8px; line-height: 1.6; }
+.detail-text { font-size: 14px; color: var(--text-secondary); margin-bottom: 8px; line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere; }
 .detail-code { display: block; padding: 7px 12px; margin-bottom: 5px; overflow-wrap: anywhere; white-space: pre-wrap; background: var(--code-bg); border-radius: 4px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; color: var(--text); }
 .detail-metadata { display: grid; grid-template-columns: auto 1fr; gap: 5px 14px; font-size: 14px; margin-top: 10px; }
 .detail-metadata dt { color: var(--text-secondary); font-weight: 500; }

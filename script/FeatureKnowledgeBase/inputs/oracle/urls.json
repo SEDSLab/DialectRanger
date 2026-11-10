@@ -1,0 +1,1979 @@
+{
+  "dbms": "oracle",
+  "documents": [
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ABS.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ACOS.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ADD_MONTHS.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ANY_VALUE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/APPROX_COUNT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/APPROX_COUNT_DISTINCT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/APPROX_COUNT_DISTINCT_AGG.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/APPROX_COUNT_DISTINCT_DETAIL.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/APPROX_MEDIAN.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/APPROX_PERCENTILE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/APPROX_PERCENTILE_AGG.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/APPROX_PERCENTILE_DETAIL.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/APPROX_RANK.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/APPROX_SUM.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ASCII.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ASCIISTR.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ASIN.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ATAN.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ATAN2.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/AVG.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/About-SQL-Conditions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/About-SQL-Functions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/About-SQL-Operators.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/About-User-Defined-Functions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Aggregate-Functions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Analytic-Functions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Arithmetic-Operators.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/BETWEEN-Condition.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/BFILENAME.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/BIN_TO_NUM.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/BITAND.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/BIT_AND_AGG.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/BIT_OR_AGG.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/BIT_XOR_AGG.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CARDINALITY.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CAST.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CEIL.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CHARTOROWID.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CHR.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CLUSTER_DETAILS.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CLUSTER_DISTANCE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CLUSTER_ID.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CLUSTER_PROBABILITY.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CLUSTER_SET.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/COALESCE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/COLLATE-Operator.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/COLLATION.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/COLLECT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/COMPOSE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CONCAT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CONVERT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CON_DBID_TO_ID.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CON_GUID_TO_ID.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CON_NAME_TO_ID.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CON_UID_TO_ID.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CORR.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CORR_A.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/COS.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/COSH.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/COUNT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/COVAR_POP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/COVAR_SAMP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CUBE_TABLE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CUME_DIST.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CUMULATE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CURRENT_DATE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CURRENT_TIMESTAMP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/CV.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Comments.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Comparison-Conditions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Compound-Conditions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Compound-Expressions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Concatenation-Operator.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Conditions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/DATAOBJ_TO_MAT_PARTITION.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/DATAOBJ_TO_PARTITION.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/DBTIMEZONE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/DECODE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/DECOMPOSE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/DENSE_RANK.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/DEPTH.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/DEREF.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/DUMP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Cartridge-Functions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/EMPTY_BLOB-EMPTY_CLOB.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/EXISTS-Condition.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/EXISTSNODE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/EXP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/EXTRACT-XML.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/EXTRACT-datetime.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/EXTRACTVALUE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Expression-Lists.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/FEATURE_COMPARE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/FEATURE_DETAILS.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/FEATURE_ID.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/FEATURE_SET.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/FEATURE_VALUE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/FIRST.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/FIRST_VALUE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/FLOOR.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/FROM_TZ.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Floating-Point-Conditions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Functions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/GREATEST.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/GROUPING.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/GROUPING_ID.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/GROUP_ID.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/HEXTORAW.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/HOP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Hierarchical-Queries.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Hierarchical-Query-Operators.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/IN-Condition.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/INITCAP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/INSTR.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/IS-OF-type-Condition.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ITERATION_NUMBER.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Interval-Expressions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/JSON_ARRAY.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/JSON_ARRAYAGG.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/JSON_DATAGUIDE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/JSON_OBJECT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/JSON_OBJECTAGG.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/JSON_QUERY.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/JSON_SERIALIZE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/JSON_TABLE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/JSON_TRANSFORM.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/JSON_VALUE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/KURTOSIS_POP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/KURTOSIS_SAMP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/LAG.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/LAST.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/LAST_DAY.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/LAST_VALUE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/LEAD.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/LEAST.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/LENGTH.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/LISTAGG.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/LN.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/LNNVL.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/LOCALTIMESTAMP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/LOG.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/LOWER.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/LPAD.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/LTRIM.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Literals.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Logical-Conditions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/MAKE_REF.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/MAX.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/MEDIAN.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/MIN.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/MOD.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/MONTHS_BETWEEN.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Model-Conditions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Model-Expressions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Model-Functions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Multiset-Conditions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Multiset-Operators.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NANVL.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NCHR.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NEW_TIME.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NEXT_DAY.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NLSSORT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NLS_CHARSET_DECL_LEN.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NLS_CHARSET_ID.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NLS_CHARSET_NAME.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NLS_COLLATION_ID.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NLS_COLLATION_NAME.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NLS_INITCAP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NLS_LOWER.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NLS_UPPER.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NTH_VALUE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NTILE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NULLIF.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NUMTODSINTERVAL.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NUMTOYMINTERVAL.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NVL.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/NVL2.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Null-Conditions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Nulls.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/OLAP-Functions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ORA_DM_PARTITION_NAME.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ORA_DST_AFFECTED.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ORA_DST_CONVERT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ORA_DST_ERROR.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ORA_HASH.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ORA_INVOKING_USER.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ORA_INVOKING_USERID.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Object-Reference-Functions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Operators.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Oracle-Regular-Expression-Support.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/PATH.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/PERCENTILE_CONT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/PERCENTILE_DISC.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/PERCENT_RANK.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/POWER.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/POWERMULTISET.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/POWERMULTISET_BY_CARDINALITY.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/PREDICTION.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/PREDICTION_BOUNDS.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/PREDICTION_COST.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/PREDICTION_DETAILS.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/PREDICTION_PROBABILITY.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/PREDICTION_SET.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/PRESENTNNV.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/PRESENTV.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/PREVIOUS.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Pattern-matching-Conditions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/RANK.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/RATIO_TO_REPORT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/RAWTOHEX.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/RAWTONHEX.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/REF.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/REFTOHEX.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/REGEXP_COUNT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/REGEXP_INSTR.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/REGEXP_REPLACE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/REGEXP_SUBSTR.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/REGR_-Linear-Regression-Functions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/REMAINDER.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/REPLACE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ROUND-date.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ROUND-number.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ROWIDTOCHAR.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ROWIDTONCHAR.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ROW_NUMBER.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/RPAD.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/RTRIM.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SCN_TO_TIMESTAMP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SESSIONS.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SESSIONTIMEZONE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SET.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SIGN.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SIN.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SINH.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SKEWNESS_POP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SKEWNESS_SAMP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SOUNDEX.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SQL-JSON-Conditions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SQRT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/STANDARD_HASH.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/STATS_BINOMIAL_TEST.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/STATS_CROSSTAB.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/STATS_F_TEST.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/STATS_KS_TEST.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/STATS_MODE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/STATS_MW_TEST.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/STATS_ONE_WAY_ANOVA.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/STATS_T_TEST_.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/STATS_WSR_TEST.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/STDDEV.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/STDDEV_POP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/STDDEV_SAMP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SUBSTR.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SUM.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SYSDATE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SYSTIMESTAMP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SYS_CONNECT_BY_PATH.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SYS_CONTEXT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SYS_DBURIGEN.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SYS_EXTRACT_UTC.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SYS_GUID.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SYS_OP_ZONE_ID.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SYS_TYPEID.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SYS_XMLAGG.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/SYS_XMLGEN.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Set-Operators.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Single-Row-Functions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Streaming-Windowing-Table-Functions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TAN.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TANH.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TIMESTAMP_TO_SCN.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_BINARY_DOUBLE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_BINARY_FLOAT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_BLOB-bfile.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_BLOB-raw.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_CHAR-bfile-blob.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_CHAR-character.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_CHAR-datetime.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_CHAR-number.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_CLOB-bfile-blob.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_CLOB-character.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_DATE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_DSINTERVAL.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_LOB.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_MULTI_BYTE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_NCHAR-character.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_NCHAR-datetime.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_NCHAR-number.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_NCLOB.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_NUMBER.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_SINGLE_BYTE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_TIMESTAMP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_TIMESTAMP_TZ.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TO_YMINTERVAL.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TRANSLATE-USING.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TRANSLATE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TREAT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TRIM.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TRUNC-date.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TRUNC-number.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TUMBLE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TZ_OFFSET.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/The-UNION-ALL-INTERSECT-MINUS-Operators.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/UID.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/UNISTR.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/UPPER.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/USER.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/USERENV.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/User-Defined-Operators.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/VALIDATE_CONVERSION.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/VALUE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/VARIANCE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/VAR_POP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/VAR_SAMP.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/VSIZE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/WIDTH_BUCKET.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XML-Conditions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLAGG.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLCAST.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLCDATA.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLCOLATTVAL.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLCOMMENT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLCONCAT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLDIFF.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLELEMENT.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLEXISTS.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLFOREST.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLISVALID.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLPARSE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLPATCH.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLPI.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLQUERY.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLSEQUENCE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLSERIALIZE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLTABLE.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/XMLTRANSFORM.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/bar_chart-operator.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/boolean-test-condition.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/boolean_and_agg.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/boolean_or_agg.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/calendar.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/calendar_add_x_periods.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/calendar_since.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/calendar_start_end.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/calendar_x_of_y.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/ceil-datetime.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/checksum.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/data-quality-operators.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/domain_check.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/domain_check_type.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/domain_display.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/domain_name.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/domain_order.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/every.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/fiscal.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/fiscal_add_x_periods.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/fiscal_start_end.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/fiscal_x_of_y.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/floor-datetime.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/from_vector.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/graph-pattern.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/graph-reference.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/graph-table-shape.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/graph_table-operator.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/is-json-condition.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/is_uuid.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/json-type-constructor.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/json_equal-condition.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/json_exists-condition.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/json_scalar.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/json_textcontains-condition.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/raw_to_uuid.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/retail.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/retail_add_x_periods.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/retail_day_exists.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/retail_start_end.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/retail_x_of_y.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/shard_chunk_id-operator.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/to_vector.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/uuid.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/uuid_to_raw.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/value-expressions-graph_table.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/vector.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/vector_chunks.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/vector_dimension_count.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/vector_dimension_format.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/vector_dims.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/vector_distance.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/vector_embedding.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/vector_norm.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/vector_serialize.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/abs.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/acos.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/add_months.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/any_value.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/approx_count.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/approx_count_distinct.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/approx_count_distinct_agg.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/approx_count_distinct_detail.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/approx_median.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/approx_percentile.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/approx_percentile_agg.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/approx_percentile_detail.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/approx_rank.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/approx_sum.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/ascii.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/asciistr.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/asin.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/atan.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/atan2.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/avg.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/bfilename.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/bin_to_num.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/bitand.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/bit_and_agg.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/bit_or_agg.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/bit_xor_agg.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/cardinality.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/cast.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/chartorowid.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/chr.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/coalesce.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/collation.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/collect.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/compose.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/concat.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/convert.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/con_dbid_to_id.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/con_guid_to_id.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/con_name_to_id.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/con_uid_to_id.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/corr.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/cos.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/cosh.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/count.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/covar_pop.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/covar_samp.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/cube_table.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/cumulate.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/current_date.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/current_timestamp.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/cv.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/dataobj_to_mat_partition.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/dataobj_to_partition.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/dbtimezone.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/decode.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/decompose.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/depth.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/deref.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/dump.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/existsnode.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/exp.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/first_value.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/from_tz.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/greatest.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/grouping.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/grouping_id.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/group_id.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/hextoraw.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/hop.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/initcap.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/instr.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/iteration_number.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/json_array.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/json_arrayagg.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/json_dataguide.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/json_object.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/json_objectagg.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/json_query.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/json_table.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/json_transform.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/json_value.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/kurtosis_pop.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/kurtosis_samp.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/lag.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/last_day.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/last_value.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/lead.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/least.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/ln.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/lnnvl.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/localtimestamp.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/log.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/lower.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/lpad.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/ltrim.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/make_ref.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/max.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/median.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/min.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/mod.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/months_between.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/nanvl.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/nchr.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/new_time.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/next_day.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/nlssort.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/nls_charset_decl_len.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/nls_charset_id.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/nls_charset_name.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/nls_collation_id.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/nls_collation_name.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/nls_initcap.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/nls_lower.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/nls_upper.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/nth_value.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/ntile.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/nullif.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/numtodsinterval.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/numtoyminterval.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/nvl.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/nvl2.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/ora_dm_partition_name.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/ora_dst_affected.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/ora_dst_convert.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/ora_dst_error.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/ora_hash.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/ora_invoking_user.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/ora_invoking_userid.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/path.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/percentile_cont.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/percentile_disc.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/power.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/powermultiset.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/powermultiset_by_cardnlty.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/prediction_bounds.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/presentnnv.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/presentv.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/previous.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/ratio_to_report.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/rawtohex.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/rawtonhex.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/ref.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/reftohex.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/regexp_count.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/regexp_instr.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/regexp_replace.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/regexp_substr.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/remainder.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/replace.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/rowidtochar.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/rowidtonchar.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/row_number.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/rpad.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/rtrim.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/scn_to_timestamp.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/sessions.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/sessiontimezone.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/set.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/sign.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/sin.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/sinh.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/skewness_pop.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/skewness_samp.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/soundex.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/sqrt.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/standard_hash.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/stats_binomial_test.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/stats_crosstab.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/stats_f_test.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/stats_ks_test.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/stats_mode.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/stats_one_way_anova.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/stats_wsr_test.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/stddev.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/stddev_pop.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/stddev_samp.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/sum.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/sysdate.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/systimestamp.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/sys_connect_by_path.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/sys_context.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/sys_dburigen.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/sys_extract_utc.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/sys_guid.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/sys_op_zone_id.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/sys_typeid.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/sys_xmlagg.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/sys_xmlgen.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/tan.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/tanh.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/timestamp_to_scn.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/to_binary_double.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/to_binary_float.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/to_date.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/to_dsinterval.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/to_lob.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/to_multi_byte.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/to_nclob.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/to_number.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/to_single_byte.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/to_timestamp.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/to_timestamp_tz.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/to_yminterval.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/translate.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/treat.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/trim.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/tumble.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/tz_offset.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/uid.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/unistr.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/upper.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/user.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/userenv.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/validate_conversion.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/value.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/variance.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/var_pop.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/var_samp.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/vsize.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/width_bucket.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmlagg.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmlcast.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmlcdata.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmlcolattval.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmlcomment.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmlconcat.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmldiff.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmlelement.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmlexists.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmlforest.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmlisvalid.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmlparse.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmlpatch.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmlpi.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmlquery.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmlsequence.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmlserialize.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmltable.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/xmltransform.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/boolean_and_agg.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/boolean_or_agg.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/calendar_fn.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/calendar_add_x_periods.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/calendar_since_fn.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/checksum.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/domain_check_function.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/domain_check_type_function.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/domain_display_function.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/domain_name_function.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/domain_order_function.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/every.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/fiscal_fn.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/fiscal_add_x_periods.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/from_vector.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/json_scalar.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/retail_fn.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/retail_add_x_periods_fn.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/retail_day_exists.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/vector_vecse.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/vector_chunks.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/vector_dimension_count.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/vector_dims.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/vector_distance.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/vector_embedding.html"
+    },
+    {
+      "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/img_text/vector_serialize.html"
+    }
+  ]
+}

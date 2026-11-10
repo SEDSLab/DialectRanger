@@ -1,0 +1,20 @@
+{
+  "dbms": "h2",
+  "documents": [
+    {
+      "url": "https://h2database.com/html/functions.html"
+    },
+    {
+      "url": "https://h2database.com/html/functions-aggregate.html"
+    },
+    {
+      "url": "https://h2database.com/html/functions-window.html"
+    },
+    {
+      "url": "https://h2database.com/html/datatypes.html"
+    },
+    {
+      "url": "https://h2database.com/html/grammar.html"
+    }
+  ]
+}

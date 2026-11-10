@@ -1,0 +1,45 @@
+schema_version: featurecrawler-profile/v2
+dbms: exampledb
+main_selectors:
+- main
+- article
+- body
+noise_selectors:
+- nav
+- header
+- footer
+- aside
+page_templates:
+- template_id: generic.reference-table
+  archetype: feature_reference_index
+  recipe: reference_table_recipe
+- template_id: generic.aggregate-syntax
+  archetype: aggregate_syntax
+  recipe: aggregate_syntax_recipe
+- template_id: generic.multi-detail
+  archetype: multi_feature_detail
+  recipe: definition_list_recipe
+- template_id: generic.single-detail
+  archetype: single_feature_detail
+  recipe: single_feature_detail_recipe
+recipes:
+- recipe_id: aggregate_syntax_recipe
+  enabled: true
+- recipe_id: definition_list_recipe
+  enabled: true
+- recipe_id: reference_table_recipe
+  enabled: true
+- recipe_id: single_feature_detail_recipe
+  enabled: true
+induction:
+  llm_role: evidence_bounded_structure_rule_inducer
+  allowed_outputs:
+  - page_archetype
+  - owner_boundary
+  - field_role_binding
+  - recipe_selection
+  forbidden_outputs:
+  - feature_inventory
+  - canonical_identity
+  - unsupported_feature_knowledge
+profile_id: profile:fixture-v2

@@ -1,0 +1,1100 @@
+{
+  "bootstrap": {
+    "db_specific_repair_used": false,
+    "input_document_count": 2,
+    "inventory_used": false,
+    "method": "deterministic_structural_observation",
+    "representative_page_count": 2
+  },
+  "dbms": "hsqldb",
+  "generated": false,
+  "generated_at": "2026-10-20T17:50:33.663348+00:00",
+  "generation_mode": "MANUAL_REVISED",
+  "hint_contract": {
+    "boundary_hints": [
+      "HEADING_BOUNDED_SECTION",
+      "SIBLING_TABLE_ROW",
+      "SIGNATURE_SPAN_OR_BLOCK",
+      "TERM_BODY_PAIR"
+    ],
+    "example_surface_hints": [
+      "CODE_BLOCK",
+      "INLINE_LITERAL"
+    ],
+    "identity_surface_hints": [
+      "DEFINITION_TERM",
+      "FIRST_CELL_OR_LINK",
+      "HEADING",
+      "SIGNATURE_TEXT_OR_HEADING"
+    ],
+    "legacy_owner_strategy_hints": [
+      "definition_list",
+      "heading_section",
+      "signature",
+      "table_row"
+    ],
+    "negative_surface_hints": [
+      "EXAMPLE_CODE",
+      "NAVIGATION",
+      "CROSS_REFERENCE"
+    ],
+    "page_granularity": "MULTI_FEATURE",
+    "schema_version": "profile-structural-hints/v1",
+    "selection_authority": "EXPLICIT_PROFILE_DEFINITIONS",
+    "structural_region_hints": [
+      "DEFINITION_LIST",
+      "HEADING_SECTION",
+      "SIGNATURE_BLOCK_OR_SPAN",
+      "TABLE_ROW"
+    ],
+    "definition_scope_patterns": [
+      {
+        "relation": "SIGNATURE_CONTAINER",
+        "identity_slot": "LEADING_SIGNATURE",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "relation": "SELF_DEFINITION",
+        "identity_slot": "EXPLICIT_SELF_SUBJECT",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "PARAGRAPH_SIGNATURE",
+        "identity_slot": "LABEL_AND_SIGNATURE",
+        "boundary": "NEXT_LABEL_OR_HEADING"
+      },
+      {
+        "relation": "STORAGE_CLASS",
+        "identity_slot": "EXPLICIT_TYPE_LABEL",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "TERM_BODY_PAIR",
+        "identity_slot": "TERM",
+        "boundary": "NEXT_TERM"
+      },
+      {
+        "relation": "HEADING_SECTION",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING"
+      },
+      {
+        "relation": "CATALOG_ROW",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW"
+      },
+      {
+        "relation": "CATALOG_MEMBER_CONTEXT",
+        "identity_slot": "TYPED_LITERAL_MEMBER",
+        "boundary": "LIST_AND_SHARED_PARENT"
+      },
+      {
+        "relation": "GRAMMAR_MEMBER_CONTEXT",
+        "identity_slot": "GRAMMAR_MEMBER",
+        "boundary": "HEADING_SECTION"
+      },
+      {
+        "relation": "PAGE_SUBJECT_RELATION",
+        "identity_slot": "TYPED_SUBJECT_HEADING",
+        "boundary": "DEFINITION_PREFIX"
+      }
+    ],
+    "definition_patterns": [
+      {
+        "grammar": "DATATYPE_DECLARATION",
+        "container": "LIST_ITEM",
+        "identity_slot": "LEADING_LITERAL",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "grammar": "OPERATOR_EXPRESSION",
+        "container": "LIST_ITEM",
+        "identity_slot": "LEADING_LITERAL",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "grammar": "DATATYPE_DECLARATION",
+        "container": "REPEATED_CONTAINER",
+        "identity_slot": "LEADING_LITERAL",
+        "boundary": "CURRENT_CONTAINER"
+      }
+    ],
+    "definition_structure_patterns": [
+      {
+        "plan_id": "function_entries",
+        "structure": "C",
+        "identity_slot": "LEADING_TERM",
+        "boundary": "CURRENT_ENTRY",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "FUNCTION",
+          "when": {
+            "page_path_prefixes": [
+              "/doc/2.0/guide/builtinfunctions-chapt.html"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "FIRST_BLOCK_TEXT",
+                "text_pattern": "[A-Za-z_][\\w.]*\\s*\\([^;]*\\)(?:\\s+[A-Za-z_][\\w.]*\\s*\\([^;]*\\))*",
+                "token_pattern": "[A-Za-z_][\\w.]*(?=\\s*\\()"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Signature",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ]
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Example",
+                  "Examples",
+                  "Usage examples"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Returns"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "function_headings_3",
+        "structure": "B",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "FUNCTION",
+          "when": {
+            "page_path_prefixes": [
+              "/doc/2.0/guide/builtinfunctions-chapt.html"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING",
+                "heading_level": 3,
+                "text_pattern": "([A-Z_][A-Z0-9_]*)(?:\\s*\\(.*\\))?",
+                "capture_group": 1
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Signature",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ]
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Example",
+                  "Examples",
+                  "Usage examples"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Returns"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "function_headings_4",
+        "structure": "B",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "FUNCTION",
+          "when": {
+            "page_path_prefixes": [
+              "/doc/2.0/guide/builtinfunctions-chapt.html"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING",
+                "heading_level": 4,
+                "text_pattern": "([A-Z_][A-Z0-9_]*)(?:\\s*\\(.*\\))?",
+                "capture_group": 1
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Signature",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ]
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Example",
+                  "Examples",
+                  "Usage examples"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Returns"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "function_headings_5",
+        "structure": "B",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "FUNCTION",
+          "when": {
+            "page_path_prefixes": [
+              "/doc/2.0/guide/builtinfunctions-chapt.html"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING",
+                "heading_level": 5,
+                "text_pattern": "([A-Z_][A-Z0-9_]*)(?:\\s*\\(.*\\))?",
+                "capture_group": 1
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Signature",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ]
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Example",
+                  "Examples",
+                  "Usage examples"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Returns"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "type_headings_3",
+        "structure": "B",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "DATATYPE",
+          "when": {
+            "page_path_prefixes": [
+              "/doc/2.0/guide/sqlgeneral-chapt.html"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING",
+                "heading_level": 3,
+                "text_pattern": "(?:\\d+(?:\\.\\d+)*\\.?\\s+)?([A-Z][A-Z0-9_]*(?:\\s+VARYING)?)(?:\\s+Type|\\s+type)?",
+                "capture_group": 1
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Signature",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ]
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Example",
+                  "Examples",
+                  "Usage examples"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Returns"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "type_headings_4",
+        "structure": "B",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "DATATYPE",
+          "when": {
+            "page_path_prefixes": [
+              "/doc/2.0/guide/sqlgeneral-chapt.html"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING",
+                "heading_level": 4,
+                "text_pattern": "(?:\\d+(?:\\.\\d+)*\\.?\\s+)?([A-Z][A-Z0-9_]*(?:\\s+VARYING)?)(?:\\s+Type|\\s+type)?",
+                "capture_group": 1
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Signature",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ]
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Example",
+                  "Examples",
+                  "Usage examples"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Returns"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "operator_rows",
+        "structure": "D",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "OPERATOR",
+          "when": {
+            "page_path_prefixes": [
+              "/doc/2.0/guide/builtinfunctions-chapt.html",
+              "/doc/2.0/guide/dataaccess-chapt.html",
+              "/doc/2.0/guide/sqlgeneral-chapt.html"
+            ],
+            "table_headers_any": [
+              "Operator"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Operator"
+                ],
+                "token_pattern": "[A-Z][A-Z_]*(?:\\s+(?:NOT|DISTINCT|FROM|NULL))*|[!<>=|&~+*/%\\-]+"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Description",
+                  "Meaning"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "manual_edit": true,
+  "profile_id": "manual_profile:hsqldb_explicit_v2",
+  "run_id": "unified_hsqldb_f119bb45c613db13",
+  "schema_version": "featurecrawler-cold-profile/v1",
+  "source_pages": [
+    {
+      "block_kinds": [
+        "CODE",
+        "DEFINITION",
+        "HEADING",
+        "TABLE_ROW",
+        "TEXT"
+      ],
+      "page_hash": "2dd88f041defa16b05ed4cfb6af322ae701ed31152bec02973a0a33517aaebfc",
+      "page_id": "page:b6e3856a0c7de9acdbda97da",
+      "url": "https://hsqldb.org/doc/2.0/guide/builtinfunctions-chapt.html"
+    },
+    {
+      "block_kinds": [
+        "CODE",
+        "DEFINITION",
+        "HEADING",
+        "TABLE_ROW",
+        "TEXT"
+      ],
+      "page_hash": "5585d108828cfb863e0bb40c170617d609c16d36c410f4296beb3a96b5916ae7",
+      "page_id": "page:a8ff46fc1aab283f4d0e3d6e",
+      "url": "https://hsqldb.org/doc/2.0/guide/sqlgeneral-chapt.html"
+    }
+  ],
+  "surfaces": [
+    {
+      "feature_bearing": true,
+      "feature_evidence": [
+        {
+          "count": 1,
+          "signal": "definition_term_with_body"
+        }
+      ],
+      "identity_slot": "definition_term",
+      "observed_block_count": 34,
+      "observed_pages": [
+        "https://hsqldb.org/doc/2.0/guide/sqlgeneral-chapt.html"
+      ],
+      "owner_strategy": "definition_list",
+      "page_hint": "definition_list",
+      "role_distribution": {
+        "FEATURE_DEFINITION": 1,
+        "SUPPORTING_CONTEXT": 33
+      },
+      "surface_confidence": 0.2952,
+      "surface_confidence_label": "LOW",
+      "surface_evidence": [
+        {
+          "count": 33,
+          "signal": "definition_without_identity_term"
+        },
+        {
+          "count": 1,
+          "signal": "definition_term_with_body"
+        }
+      ],
+      "surface_role": "FEATURE_REFERENCE",
+      "type_hint": "DATATYPE"
+    },
+    {
+      "feature_bearing": true,
+      "feature_evidence": [
+        {
+          "count": 1,
+          "signal": "definition_term_with_body"
+        }
+      ],
+      "identity_slot": "definition_term",
+      "observed_block_count": 14,
+      "observed_pages": [
+        "https://hsqldb.org/doc/2.0/guide/builtinfunctions-chapt.html"
+      ],
+      "owner_strategy": "definition_list",
+      "page_hint": "definition_list",
+      "role_distribution": {
+        "FEATURE_DEFINITION": 1,
+        "SUPPORTING_CONTEXT": 13
+      },
+      "surface_confidence": 0.3162,
+      "surface_confidence_label": "LOW",
+      "surface_evidence": [
+        {
+          "count": 13,
+          "signal": "definition_without_identity_term"
+        },
+        {
+          "count": 1,
+          "signal": "definition_term_with_body"
+        }
+      ],
+      "surface_role": "FEATURE_REFERENCE",
+      "type_hint": "FUNCTION"
+    },
+    {
+      "feature_bearing": false,
+      "feature_evidence": [],
+      "identity_slot": "heading",
+      "observed_block_count": 33,
+      "observed_pages": [
+        "https://hsqldb.org/doc/2.0/guide/sqlgeneral-chapt.html"
+      ],
+      "owner_strategy": "heading_section",
+      "page_hint": "heading_section",
+      "role_distribution": {
+        "SUPPORTING_CONTEXT": 33
+      },
+      "surface_confidence": 0.22,
+      "surface_confidence_label": "LOW",
+      "surface_evidence": [
+        {
+          "count": 33,
+          "signal": "ordinary_heading"
+        }
+      ],
+      "surface_role": "SUPPORTING_CONTEXT",
+      "type_hint": "DATATYPE"
+    },
+    {
+      "feature_bearing": false,
+      "feature_evidence": [],
+      "identity_slot": "heading",
+      "observed_block_count": 15,
+      "observed_pages": [
+        "https://hsqldb.org/doc/2.0/guide/builtinfunctions-chapt.html"
+      ],
+      "owner_strategy": "heading_section",
+      "page_hint": "heading_section",
+      "role_distribution": {
+        "SUPPORTING_CONTEXT": 15
+      },
+      "surface_confidence": 0.22,
+      "surface_confidence_label": "LOW",
+      "surface_evidence": [
+        {
+          "count": 15,
+          "signal": "ordinary_heading"
+        }
+      ],
+      "surface_role": "SUPPORTING_CONTEXT",
+      "type_hint": "FUNCTION"
+    },
+    {
+      "feature_bearing": true,
+      "feature_evidence": [
+        {
+          "count": 1,
+          "signal": "standalone_signature"
+        }
+      ],
+      "identity_slot": "code_or_heading",
+      "observed_block_count": 28,
+      "observed_pages": [
+        "https://hsqldb.org/doc/2.0/guide/sqlgeneral-chapt.html"
+      ],
+      "owner_strategy": "signature",
+      "page_hint": "signature",
+      "role_distribution": {
+        "FEATURE_DEFINITION": 1,
+        "SUPPORTING_CONTEXT": 27
+      },
+      "surface_confidence": 0.2335,
+      "surface_confidence_label": "LOW",
+      "surface_evidence": [
+        {
+          "count": 14,
+          "signal": "executable_or_example_context"
+        },
+        {
+          "count": 13,
+          "signal": "non_signature_code"
+        },
+        {
+          "count": 6,
+          "signal": "programming_api_declaration"
+        },
+        {
+          "count": 1,
+          "signal": "standalone_signature"
+        }
+      ],
+      "surface_role": "FEATURE_REFERENCE",
+      "type_hint": "DATATYPE"
+    },
+    {
+      "feature_bearing": true,
+      "feature_evidence": [
+        {
+          "count": 3,
+          "signal": "standalone_signature"
+        }
+      ],
+      "identity_slot": "code_or_heading",
+      "observed_block_count": 19,
+      "observed_pages": [
+        "https://hsqldb.org/doc/2.0/guide/builtinfunctions-chapt.html"
+      ],
+      "owner_strategy": "signature",
+      "page_hint": "signature",
+      "role_distribution": {
+        "FEATURE_DEFINITION": 3,
+        "SUPPORTING_CONTEXT": 16
+      },
+      "surface_confidence": 0.3152,
+      "surface_confidence_label": "LOW",
+      "surface_evidence": [
+        {
+          "count": 11,
+          "signal": "non_signature_code"
+        },
+        {
+          "count": 5,
+          "signal": "executable_or_example_context"
+        },
+        {
+          "count": 3,
+          "signal": "standalone_signature"
+        },
+        {
+          "count": 1,
+          "signal": "programming_api_declaration"
+        }
+      ],
+      "surface_role": "FEATURE_REFERENCE",
+      "type_hint": "FUNCTION"
+    },
+    {
+      "feature_bearing": true,
+      "feature_evidence": [
+        {
+          "count": 12,
+          "signal": "adjacent_context_cell"
+        },
+        {
+          "count": 12,
+          "signal": "first_cell_callable"
+        },
+        {
+          "count": 6,
+          "signal": "atomic_identity_cell"
+        },
+        {
+          "count": 6,
+          "signal": "typed_page_prior"
+        }
+      ],
+      "identity_slot": "first_cell",
+      "observed_block_count": 32,
+      "observed_pages": [
+        "https://hsqldb.org/doc/2.0/guide/sqlgeneral-chapt.html"
+      ],
+      "owner_strategy": "table_row",
+      "page_hint": "table_row",
+      "role_distribution": {
+        "FEATURE_CATALOG": 18,
+        "SUPPORTING_CONTEXT": 14
+      },
+      "surface_confidence": 0.47,
+      "surface_confidence_label": "LOW",
+      "surface_evidence": [
+        {
+          "count": 24,
+          "signal": "header:type"
+        },
+        {
+          "count": 14,
+          "signal": "table_without_identity_slot"
+        },
+        {
+          "count": 12,
+          "signal": "adjacent_context_cell"
+        },
+        {
+          "count": 12,
+          "signal": "first_cell_callable"
+        },
+        {
+          "count": 6,
+          "signal": "atomic_identity_cell"
+        },
+        {
+          "count": 6,
+          "signal": "typed_page_prior"
+        }
+      ],
+      "surface_role": "FEATURE_REFERENCE",
+      "type_hint": "DATATYPE"
+    },
+    {
+      "feature_bearing": false,
+      "feature_evidence": [],
+      "identity_slot": "first_cell",
+      "observed_block_count": 35,
+      "observed_pages": [
+        "https://hsqldb.org/doc/2.0/guide/builtinfunctions-chapt.html"
+      ],
+      "owner_strategy": "table_row",
+      "page_hint": "table_row",
+      "role_distribution": {
+        "SUPPORTING_CONTEXT": 35
+      },
+      "surface_confidence": 0.3,
+      "surface_confidence_label": "LOW",
+      "surface_evidence": [
+        {
+          "count": 35,
+          "signal": "table_without_identity_slot"
+        }
+      ],
+      "surface_role": "SUPPORTING_CONTEXT",
+      "type_hint": "FUNCTION"
+    }
+  ],
+  "profile_provenance": {
+    "author": "Codex: explicit structural migration",
+    "authored_at": "2026-11-08",
+    "revision": "2",
+    "derived_from_digest": "f243f12b69c51c92ee3c421638f745c2987188a05df2575fa97056f93d8d54f1"
+  }
+}

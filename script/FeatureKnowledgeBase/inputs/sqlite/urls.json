@@ -1,0 +1,125 @@
+{
+  "dbms": "sqlite",
+  "documents": [
+    {
+      "url": "https://www.sqlite.org/base64.html"
+    },
+    {
+      "url": "https://www.sqlite.org/base85.html"
+    },
+    {
+      "url": "https://www.sqlite.org/bytecodevtab.html"
+    },
+    {
+      "url": "https://www.sqlite.org/carray.html"
+    },
+    {
+      "url": "https://www.sqlite.org/cli.html"
+    },
+    {
+      "url": "https://www.sqlite.org/completion.html"
+    },
+    {
+      "url": "https://www.sqlite.org/csv.html"
+    },
+    {
+      "url": "https://www.sqlite.org/datatype3.html"
+    },
+    {
+      "url": "https://www.sqlite.org/dbpage.html"
+    },
+    {
+      "url": "https://www.sqlite.org/dbstat.html"
+    },
+    {
+      "url": "https://www.sqlite.org/diskusedfunc.html"
+    },
+    {
+      "url": "https://www.sqlite.org/floatingpoint.html"
+    },
+    {
+      "url": "https://www.sqlite.org/fts3.html"
+    },
+    {
+      "url": "https://www.sqlite.org/fts5.html"
+    },
+    {
+      "url": "https://www.sqlite.org/geopoly.html"
+    },
+    {
+      "url": "https://www.sqlite.org/json1.html"
+    },
+    {
+      "url": "https://www.sqlite.org/lang_aggfunc.html"
+    },
+    {
+      "url": "https://www.sqlite.org/lang_corefunc.html"
+    },
+    {
+      "url": "https://www.sqlite.org/lang_createtable.html"
+    },
+    {
+      "url": "https://www.sqlite.org/lang_datefunc.html"
+    },
+    {
+      "url": "https://www.sqlite.org/lang_expr.html"
+    },
+    {
+      "url": "https://www.sqlite.org/lang_mathfunc.html"
+    },
+    {
+      "url": "https://www.sqlite.org/memstat.html"
+    },
+    {
+      "url": "https://www.sqlite.org/percentile.html"
+    },
+    {
+      "url": "https://www.sqlite.org/pragma.html"
+    },
+    {
+      "url": "https://www.sqlite.org/printf.html"
+    },
+    {
+      "url": "https://www.sqlite.org/rowvalue.html"
+    },
+    {
+      "url": "https://www.sqlite.org/rtree.html"
+    },
+    {
+      "url": "https://www.sqlite.org/series.html"
+    },
+    {
+      "url": "https://www.sqlite.org/spellfix1.html"
+    },
+    {
+      "url": "https://www.sqlite.org/stmt.html"
+    },
+    {
+      "url": "https://www.sqlite.org/stricttables.html"
+    },
+    {
+      "url": "https://www.sqlite.org/swarmvtab.html"
+    },
+    {
+      "url": "https://www.sqlite.org/uintcseq.html"
+    },
+    {
+      "url": "https://www.sqlite.org/unionvtab.html"
+    },
+    {
+      "url": "https://www.sqlite.org/vec1doc.html"
+    },
+    {
+      "url": "https://www.sqlite.org/vec1ref.html"
+    },
+    {
+      "url": "https://www.sqlite.org/vtablist.html"
+    },
+    {
+      "url": "https://www.sqlite.org/windowfunctions.html"
+    },
+    {
+      "url": "https://www.sqlite.org/zipfile.html"
+    }
+  ]
+}

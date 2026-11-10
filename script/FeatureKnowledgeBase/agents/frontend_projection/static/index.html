@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canonical Feature KB</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">FeatureCrawler</p>
+      <h1>Canonical Feature Knowledge Base</h1>
+    </div>
+    <div id="header-count" class="header-count"></div>
+  </header>
+
+  <main class="shell">
+    <section id="summary" class="summary-grid" aria-label="Summary"></section>
+    <section class="toolbar" aria-label="Search and filters">
+      <label class="search-wrap">
+        <span class="sr-only">Search features</span>
+        <input id="search" type="search" placeholder="Search name, identity, key, description…">
+      </label>
+      <select id="type-filter" aria-label="Filter by feature type"><option value="">All types</option></select>
+      <select id="status-filter" aria-label="Filter by semantic status"><option value="">All semantic statuses</option></select>
+    </section>
+
+    <div class="content-grid">
+      <section>
+        <div id="result-count" class="result-count"></div>
+        <div id="feature-list" class="feature-list"></div>
+        <div id="empty" class="empty" hidden>No features match the current search or filters.</div>
+      </section>
+      <aside id="detail" class="detail empty-detail">
+        <p>Select a feature to inspect its Canonical projection.</p>
+      </aside>
+    </div>
+  </main>
+  <script src="js/data.js?v=2"></script>
+  <script src="js/app.js?v=2"></script>
+</body>
+</html>

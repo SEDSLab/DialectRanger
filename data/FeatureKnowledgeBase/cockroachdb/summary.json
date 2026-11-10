@@ -1,0 +1,22 @@
+{
+  "dbms": "cockroachdb",
+  "updated_at": "2026-11-10T11:13:57.350903+00:00",
+  "final_count": 782,
+  "review_count": 71,
+  "by_type": {
+    "function": 716,
+    "operator": 42,
+    "datatype": 24
+  },
+  "with_fields": {
+    "description": 747,
+    "syntax": 721,
+    "examples": 22
+  },
+  "quality_status": "QUALITY_PARTIAL",
+  "actual_model_calls": 0,
+  "official_recall": "NOT_EVALUATED",
+  "projection_loss": 0,
+  "duplicate_ids": 0,
+  "runtime_artifacts_published": false
+}

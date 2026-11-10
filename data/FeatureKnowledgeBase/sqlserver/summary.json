@@ -1,0 +1,22 @@
+{
+  "dbms": "sqlserver",
+  "updated_at": "2026-11-10T11:46:10.448365+00:00",
+  "final_count": 396,
+  "review_count": 176,
+  "by_type": {
+    "function": 329,
+    "operator": 34,
+    "datatype": 33
+  },
+  "with_fields": {
+    "description": 388,
+    "syntax": 329,
+    "examples": 341
+  },
+  "quality_status": "QUALITY_PARTIAL",
+  "actual_model_calls": 0,
+  "official_recall": "NOT_EVALUATED",
+  "projection_loss": 0,
+  "duplicate_ids": 0,
+  "runtime_artifacts_published": false
+}

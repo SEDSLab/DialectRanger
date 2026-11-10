@@ -1,0 +1,7 @@
+# Direct, bounded dependencies for reproducible resolver input.
+PyYAML>=6.0,<7
+requests>=2.28,<3
+beautifulsoup4>=4.12,<5
+lxml>=5,<7
+python-dotenv>=1,<2
+pytest>=8,<9

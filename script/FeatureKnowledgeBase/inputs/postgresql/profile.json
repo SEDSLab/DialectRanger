@@ -1,0 +1,373 @@
+{
+  "schema_version": "featurecrawler-cold-profile/v1",
+  "profile_id": "manual_profile:postgresql18_structural_v1",
+  "dbms": "postgresql",
+  "generated": false,
+  "generated_at": null,
+  "run_id": "postgresql18-input-preparation-v1",
+  "generation_mode": "MANUAL_PREPARED",
+  "manual_edit": false,
+  "profile_provenance": {
+    "author": "Codex: manual official HTML structural review",
+    "authored_at": "2026-10-26",
+    "revision": "1"
+  },
+  "source_pages": [
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-character.html",
+      "page_hash": "9f0e8fdc9e0a50347f34e06616f6304adbb02cae2c59c40549b846174ce7f915"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-datetime.html",
+      "page_hash": "3233e9f4e1dee07977f968c9545c36371d1ef08a3dbe73e375693a5088fb1d90"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-numeric.html",
+      "page_hash": "232f8390b4371c096c5c4b75d6a836a2dd3cd64043c579221f55d943c594ebe0"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-oid.html",
+      "page_hash": "c7e6014ce6d106e88b40133d9e5c41518cac64160add691a8d38166c820160b6"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype-pseudo.html",
+      "page_hash": "46fab1f96e88e9885d667e1cf124bf867efe477a19c34971178ed283d27dac05"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/datatype.html",
+      "page_hash": "f12e8419112bbd2b9e30b403846b331d6d0f6842ab131b2c1a33181825339121"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-aggregate.html",
+      "page_hash": "c466d05fe796e77f1362dae39c8b212c7bf381065904eb555fa91537e363e5d0"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-comparison.html",
+      "page_hash": "f08404f5624f8b87a91f117be7d59feca075508b124552b66b61940b5b6ef28c"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-conditional.html",
+      "page_hash": "8ba3a2afdfc09c4c353c8b3b1fe79577b00f937c17165bcee82b79eff597fd06"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-json.html",
+      "page_hash": "67de0f9e06cfbd22bf44bac93e019a6b7b38707b67feb48dca982eff72dfc162"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-math.html",
+      "page_hash": "b5b92d30b9e2c73ad58ad8764824cef32a42a31adf86b8e2fb2d47558233a80a"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-string.html",
+      "page_hash": "d15fcdc6fbe35f0cd5f6bd0e7a490f9b6bd72485ba7d772194d5113de8ba5e1b"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions-window.html",
+      "page_hash": "745aafdf90dd30d1a8ecc6a88f5a467a93af7e39293f78bcb1aaec44c2e53b9b"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/functions.html",
+      "page_hash": "472e26b308c96c7d4a8bfe348ed74a567c97b8cafb92c8564f4b9bd777304a82"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/rangetypes.html",
+      "page_hash": "6b48a5d497d70d5a14c9c07dc24fe63bbcc7c2fa4b94e88e9cde887407abee6d"
+    }
+  ],
+  "surfaces": [
+    {
+      "page_hint": "table_row",
+      "owner_strategy": "table_row",
+      "type_hint": "UNCERTAIN",
+      "identity_slot": "first_cell",
+      "observed_pages": [
+        "https://www.postgresql.org/docs/18/datatype-character.html",
+        "https://www.postgresql.org/docs/18/datatype-datetime.html",
+        "https://www.postgresql.org/docs/18/datatype-numeric.html",
+        "https://www.postgresql.org/docs/18/datatype-oid.html",
+        "https://www.postgresql.org/docs/18/datatype-pseudo.html",
+        "https://www.postgresql.org/docs/18/datatype.html",
+        "https://www.postgresql.org/docs/18/functions-aggregate.html",
+        "https://www.postgresql.org/docs/18/functions-comparison.html",
+        "https://www.postgresql.org/docs/18/functions-json.html",
+        "https://www.postgresql.org/docs/18/functions-math.html",
+        "https://www.postgresql.org/docs/18/functions-string.html",
+        "https://www.postgresql.org/docs/18/functions-window.html"
+      ]
+    },
+    {
+      "page_hint": "definition_list",
+      "owner_strategy": "definition_list",
+      "type_hint": "UNCERTAIN",
+      "identity_slot": "definition_term",
+      "observed_pages": [
+        "https://www.postgresql.org/docs/18/functions-json.html",
+        "https://www.postgresql.org/docs/18/functions-string.html"
+      ]
+    },
+    {
+      "page_hint": "list_item",
+      "owner_strategy": "list_item",
+      "type_hint": "UNCERTAIN",
+      "identity_slot": "inline_literal_or_label",
+      "observed_pages": [
+        "https://www.postgresql.org/docs/18/datatype-datetime.html",
+        "https://www.postgresql.org/docs/18/datatype-numeric.html",
+        "https://www.postgresql.org/docs/18/functions-json.html",
+        "https://www.postgresql.org/docs/18/functions-string.html",
+        "https://www.postgresql.org/docs/18/rangetypes.html"
+      ]
+    },
+    {
+      "page_hint": "heading_section",
+      "owner_strategy": "heading_section",
+      "type_hint": "UNCERTAIN",
+      "identity_slot": "heading",
+      "observed_pages": [
+        "https://www.postgresql.org/docs/18/datatype-character.html",
+        "https://www.postgresql.org/docs/18/datatype-datetime.html",
+        "https://www.postgresql.org/docs/18/datatype-numeric.html",
+        "https://www.postgresql.org/docs/18/datatype-oid.html",
+        "https://www.postgresql.org/docs/18/datatype.html",
+        "https://www.postgresql.org/docs/18/functions-aggregate.html",
+        "https://www.postgresql.org/docs/18/functions-comparison.html",
+        "https://www.postgresql.org/docs/18/functions-conditional.html",
+        "https://www.postgresql.org/docs/18/functions-json.html",
+        "https://www.postgresql.org/docs/18/functions-math.html",
+        "https://www.postgresql.org/docs/18/functions-string.html",
+        "https://www.postgresql.org/docs/18/functions-window.html",
+        "https://www.postgresql.org/docs/18/rangetypes.html"
+      ]
+    },
+    {
+      "page_hint": "signature",
+      "owner_strategy": "signature",
+      "type_hint": "UNCERTAIN",
+      "identity_slot": "code_or_heading",
+      "observed_pages": [
+        "https://www.postgresql.org/docs/18/datatype-character.html",
+        "https://www.postgresql.org/docs/18/datatype-datetime.html",
+        "https://www.postgresql.org/docs/18/datatype-numeric.html",
+        "https://www.postgresql.org/docs/18/datatype-oid.html",
+        "https://www.postgresql.org/docs/18/functions-aggregate.html",
+        "https://www.postgresql.org/docs/18/functions-comparison.html",
+        "https://www.postgresql.org/docs/18/functions-conditional.html",
+        "https://www.postgresql.org/docs/18/functions-json.html",
+        "https://www.postgresql.org/docs/18/functions-string.html",
+        "https://www.postgresql.org/docs/18/functions.html",
+        "https://www.postgresql.org/docs/18/rangetypes.html"
+      ]
+    }
+  ],
+  "hint_contract": {
+    "schema_version": "profile-structural-hints/v1",
+    "page_granularity": "MULTI_FEATURE",
+    "structural_region_hints": [
+      "DEFINITION_LIST",
+      "HEADING_SECTION",
+      "LIST_ITEM",
+      "SIGNATURE_BLOCK_OR_SPAN",
+      "TABLE_ROW"
+    ],
+    "identity_surface_hints": [
+      "DEFINITION_TERM",
+      "FIRST_CELL_OR_LINK",
+      "HEADING",
+      "LABEL_OR_INLINE_LITERAL",
+      "SIGNATURE_TEXT_OR_HEADING"
+    ],
+    "boundary_hints": [
+      "HEADING_BOUNDED_SECTION",
+      "SIBLING_LIST_ITEM",
+      "SIBLING_TABLE_ROW",
+      "SIGNATURE_SPAN_OR_BLOCK",
+      "TERM_BODY_PAIR"
+    ],
+    "negative_surface_hints": [
+      "EXAMPLE_CODE",
+      "NAVIGATION",
+      "CROSS_REFERENCE"
+    ],
+    "example_surface_hints": [
+      "CODE_BLOCK",
+      "INLINE_LITERAL"
+    ],
+    "legacy_owner_strategy_hints": [
+      "definition_list",
+      "heading_section",
+      "list_item",
+      "signature",
+      "table_row"
+    ],
+    "selection_authority": "OWNER_CANDIDATE_INFERENCE",
+    "definition_patterns": [
+      {
+        "grammar": "CALLABLE_DEFINITION",
+        "container": "LIST_ITEM",
+        "identity_slot": "LEADING_LITERAL",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "grammar": "CALLABLE_DEFINITION",
+        "container": "REPEATED_CONTAINER",
+        "identity_slot": "LEADING_LITERAL",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "grammar": "OPERATOR_EXPRESSION",
+        "container": "LIST_ITEM",
+        "identity_slot": "LEADING_LITERAL",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "grammar": "OPERATOR_EXPRESSION",
+        "container": "REPEATED_CONTAINER",
+        "identity_slot": "LEADING_LITERAL",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "grammar": "DATATYPE_DECLARATION",
+        "container": "LIST_ITEM",
+        "identity_slot": "LEADING_LITERAL",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "grammar": "DATATYPE_DECLARATION",
+        "container": "REPEATED_CONTAINER",
+        "identity_slot": "LEADING_LITERAL",
+        "boundary": "CURRENT_CONTAINER"
+      }
+    ],
+    "definition_scope_patterns": [
+      {
+        "relation": "SIGNATURE_CONTAINER",
+        "identity_slot": "LEADING_SIGNATURE",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "relation": "SELF_DEFINITION",
+        "identity_slot": "EXPLICIT_SELF_SUBJECT",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "PARAGRAPH_SIGNATURE",
+        "identity_slot": "LABEL_AND_SIGNATURE",
+        "boundary": "NEXT_LABEL_OR_HEADING"
+      },
+      {
+        "relation": "STORAGE_CLASS",
+        "identity_slot": "EXPLICIT_TYPE_LABEL",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "TERM_BODY_PAIR",
+        "identity_slot": "TERM",
+        "boundary": "NEXT_TERM"
+      },
+      {
+        "relation": "HEADING_SECTION",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING"
+      },
+      {
+        "relation": "CATALOG_ROW",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW"
+      },
+      {
+        "relation": "CATALOG_MEMBER_CONTEXT",
+        "identity_slot": "TYPED_LITERAL_MEMBER",
+        "boundary": "LIST_AND_SHARED_PARENT"
+      },
+      {
+        "relation": "PAGE_SUBJECT_RELATION",
+        "identity_slot": "TYPED_SUBJECT_HEADING",
+        "boundary": "DEFINITION_PREFIX"
+      }
+    ],
+    "content_binding_patterns": [
+      "EXPLICIT_OPERATOR_EXPLANATION"
+    ],
+    "local_type_patterns": [
+      {
+        "context_type": "FUNCTION",
+        "owner_strategy": "table_row",
+        "grammar": "CALLABLE_DEFINITION",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "FUNCTION",
+        "owner_strategy": "heading_section",
+        "grammar": "CALLABLE_DEFINITION",
+        "identity_slot": "HEADING",
+        "boundary": "HEADING_BOUNDED_SECTION",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "FUNCTION",
+        "owner_strategy": "signature",
+        "grammar": "CALLABLE_DEFINITION",
+        "identity_slot": "SIGNATURE_TEXT_OR_HEADING",
+        "boundary": "CURRENT_BLOCK",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "OPERATOR",
+        "owner_strategy": "table_row",
+        "grammar": "OPERATOR_EXPRESSION",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "OPERATOR",
+        "owner_strategy": "heading_section",
+        "grammar": "OPERATOR_EXPRESSION",
+        "identity_slot": "HEADING",
+        "boundary": "HEADING_BOUNDED_SECTION",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "OPERATOR",
+        "owner_strategy": "signature",
+        "grammar": "OPERATOR_EXPRESSION",
+        "identity_slot": "SIGNATURE_TEXT_OR_HEADING",
+        "boundary": "CURRENT_BLOCK",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "DATATYPE",
+        "owner_strategy": "table_row",
+        "grammar": "DATATYPE_DECLARATION",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "DATATYPE",
+        "owner_strategy": "heading_section",
+        "grammar": "DATATYPE_DECLARATION",
+        "identity_slot": "HEADING",
+        "boundary": "HEADING_BOUNDED_SECTION",
+        "observed_region_refs": []
+      },
+      {
+        "context_type": "DATATYPE",
+        "owner_strategy": "signature",
+        "grammar": "DATATYPE_DECLARATION",
+        "identity_slot": "SIGNATURE_TEXT_OR_HEADING",
+        "boundary": "CURRENT_BLOCK",
+        "observed_region_refs": []
+      }
+    ]
+  },
+  "bootstrap": {
+    "method": "MANUAL_RAW_HTML_STRUCTURAL_REVIEW",
+    "sample_pages": 15,
+    "inventory_used": false,
+    "feature_extraction_executed": false,
+    "document_ir_region_refs_created": false
+  }
+}

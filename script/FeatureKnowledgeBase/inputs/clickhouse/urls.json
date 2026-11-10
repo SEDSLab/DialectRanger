@@ -1,0 +1,1109 @@
+{
+  "dbms": "clickhouse",
+  "documents": [
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/aggregatefunction"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/array"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/boolean"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/data-types-binary-encoding"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/date"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/date32"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/datetime"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/datetime64"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/decimal"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/domains/index"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/dynamic"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/enum"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/fixedstring"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/float"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/geo"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/index"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/int-uint"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/ipv4"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/ipv6"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/lowcardinality"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/map"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/nested-data-structures/index"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/newjson"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/nullable"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/qbit"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/simpleaggregatefunction"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/special-data-types/expression"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/special-data-types/index"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/special-data-types/interval"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/special-data-types/nothing"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/special-data-types/set"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/string"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/time"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/time64"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/tuple"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/uuid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/data-types/variant"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/aggThrow"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/analysis_of_variance"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/any"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/anyHeavy"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/anyLast"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/approxtopk"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/approxtopsum"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/argAndMax"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/argAndMin"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/argMax"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/argMin"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/avg"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/avgWeighted"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/boundrat"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/categoricalInformationValue"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/combinators"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/contingency"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/corr"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/corrMatrix"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/corrStable"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/count"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/covarPop"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/covarPopMatrix"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/covarPopStable"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/covarSamp"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/covarSampMatrix"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/covarSampStable"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/cramersV"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/cramersVBiasCorrected"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/deltaSum"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/deltaSumTimestamp"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/distinctDynamicTypes"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/distinctJSONPaths"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/distinctJSONPathsAndTypes"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/entropy"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/estimateCompressionRatio"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/exponentialMovingAverage"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/exponentialTimeDecayedAvg"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/exponentialTimeDecayedCount"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/exponentialTimeDecayedMax"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/exponentialTimeDecayedSum"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/first_value"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/flame_graph"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/gini"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupArray"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupArrayArray"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupArrayInsertAt"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupArrayIntersect"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupArrayLast"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupArrayMovingAvg"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupArrayMovingSum"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupArraySample"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupArraySorted"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupBitAnd"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupBitOr"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupBitXor"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupBitmap"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupBitmapAnd"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupBitmapOr"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupBitmapXor"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupConcat"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupFormat"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/groupUniqArray"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/grouping_function"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/index"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/intervalLengthSum"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/kolmogorovSmirnovTest"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/kurtPop"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/kurtSamp"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/largestTriangleThreeBuckets"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/last_value"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/mannWhitneyUTest"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/max"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/maxIntersections"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/maxIntersectionsPosition"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/maxMap"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/meanZTest"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/median"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/mergedJSONPatch"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/min"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/minMap"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/parametric-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantile"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantileBFloat16"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantileDeterministic"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantileExact"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantileExactExclusive"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantileExactHigh"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantileExactInclusive"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantileExactLow"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantileExactWeighted"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantileExactWeightedInterpolated"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantileGK"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantileInterpolatedWeighted"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilePrometheusHistogram"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantileTDigest"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantileTDigestWeighted"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantileTiming"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantileTimingWeighted"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantileddsketch"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantiles"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesBFloat16"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesBFloat16Weighted"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesDD"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesDeterministic"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesExact"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesExactExclusive"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesExactHigh"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesExactInclusive"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesExactLow"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesExactWeighted"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesExactWeightedInterpolated"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesGK"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesInterpolatedWeighted"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesPrometheusHistogram"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesTDigest"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesTDigestWeighted"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesTiming"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/quantilesTimingWeighted"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/rankCorr"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/reference-index"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/regr_avgx"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/regr_avgy"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/regr_count"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/regr_intercept"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/regr_r2"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/regr_slope"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/regr_sxx"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/regr_sxy"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/regr_syy"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/simpleLinearRegression"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/singleValueOrNull"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/skewPop"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/skewSamp"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/sparkbar"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/stddevPop"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/stddevPopStable"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/stddevSamp"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/stddevSampStable"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/stochasticLinearRegression"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/stochasticLogisticRegression"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/studentTTest"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/studentTTestOneSample"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/sum"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/sumCount"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/sumKahan"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/sumMap"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/sumMapWithOverflow"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/sumWithOverflow"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/theilsU"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesAvgToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesBottomKMasks"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesChangesToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesCountToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesDeltaToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesDerivToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesFirstToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesGroupArray"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesIncreaseToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesInstantDeltaToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesInstantRateToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesLastToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesLastTwoSamples"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesLimitKMasks"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesLinearRegressionToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesMadToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesMaxToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesMinToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesPredictLinearToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesPresentToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesQuantileToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesRateToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesResampleToGridWithStaleness"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesResetsToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesStddevToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesStdvarToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesSumToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesTimestampOfFirstToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesTimestampOfLastToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesTimestampOfMaxToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesTimestampOfMinToGrid"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/timeSeriesTopKMasks"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/topK"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/topKWeighted"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/uniq"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/uniqCombined"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/uniqCombined64"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/uniqExact"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/uniqHLL12"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/uniqthetasketch"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/varPop"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/varPopStable"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/varSamp"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/varSampStable"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/aggregate-functions/welchTTest"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/index"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/ai-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/arithmetic-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/array-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/array-join"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/bit-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/bitmap-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/comparison-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/conditional-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/date-time-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/distance-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/embedded-dict-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/encoding-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/encryption-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/ext-dict-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/files"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/financial-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/functions-for-nulls"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/geo/coordinates"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/geo/flipCoordinates"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/geo/geohash"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/geo/geometry"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/geo/h3"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/geo/index"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/geo/mvt"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/geo/polygon"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/geo/s2"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/geo/svg"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/hash-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/in-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/introspection"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/ip-address-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/json-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/logical-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/machine-learning-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/math-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/nlp-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/numeric-indexed-vector-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/other-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/overview"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/random-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/rounding-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/splitting-merging-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/string-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/string-replace-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/string-search-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/time-series-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/time-window-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/tuple-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/tuple-map-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/type-conversion-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/udf"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/ulid-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/uniqtheta-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/url-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/uuid-functions"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/regular-functions/wasm_udf"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/arrowflight"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/azureBlobStorage"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/azureBlobStorageCluster"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/bigquery"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/cluster"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/deltalake"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/deltalakeCluster"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/dictionary"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/elasticsearch"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/eval"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/executable"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/file"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/fileCluster"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/filesystem"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/format"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/fuzzJSON"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/fuzzQuery"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/gcs"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/generate"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/generate_series"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/hdfs"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/hdfsCluster"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/hudi"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/hudiCluster"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/iceberg"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/icebergCluster"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/index"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/input"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/jdbc"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/loop"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/merge"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/mergeTreeCodecBlockCounts"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/mergeTreeIndex"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/mergeTreeProjection"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/mergeTreeTextIndex"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/mongodb"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/mysql"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/null"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/numbers"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/odbc"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/paimon"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/paimonCluster"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/postgresql"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/primes"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/prometheusQuery"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/prometheusQueryRange"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/redis"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/remote"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/s3"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/s3Cluster"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/sqlite"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/timeSeriesData"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/timeSeriesMetricFamilies"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/timeSeriesSamples"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/timeSeriesSelector"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/timeSeriesTags"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/timeSeriesTimeRanges"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/url"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/urlCluster"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/values"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/view"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/ytsaurus"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/table-functions/zeros"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/window-functions/cume_dist"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/window-functions/dense_rank"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/window-functions/first_value"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/window-functions/index"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/window-functions/lag"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/window-functions/lagInFrame"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/window-functions/last_value"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/window-functions/lead"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/window-functions/leadInFrame"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/window-functions/nonNegativeDerivative"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/window-functions/nth_value"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/window-functions/ntile"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/window-functions/percent_rank"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/window-functions/rank"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/functions/window-functions/row_number"
+    },
+    {
+      "url": "https://clickhouse.com/docs/reference/operators/index"
+    }
+  ]
+}

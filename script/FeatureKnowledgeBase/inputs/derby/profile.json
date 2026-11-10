@@ -1,0 +1,1072 @@
+{
+  "bootstrap": {
+    "db_specific_repair_used": false,
+    "input_document_count": 76,
+    "inventory_used": false,
+    "method": "deterministic_structural_observation",
+    "representative_page_count": 12
+  },
+  "dbms": "derby",
+  "generated": false,
+  "generated_at": "2026-10-20T17:59:12.528251+00:00",
+  "generation_mode": "MANUAL_REVISED",
+  "hint_contract": {
+    "boundary_hints": [
+      "HEADING_BOUNDED_SECTION",
+      "SIBLING_LIST_ITEM",
+      "SIBLING_TABLE_ROW",
+      "SIGNATURE_SPAN_OR_BLOCK",
+      "TERM_BODY_PAIR"
+    ],
+    "example_surface_hints": [
+      "CODE_BLOCK",
+      "INLINE_LITERAL"
+    ],
+    "identity_surface_hints": [
+      "DEFINITION_TERM",
+      "FIRST_CELL_OR_LINK",
+      "HEADING",
+      "LABEL_OR_INLINE_LITERAL",
+      "SIGNATURE_TEXT_OR_HEADING"
+    ],
+    "legacy_owner_strategy_hints": [
+      "definition_list",
+      "heading_section",
+      "list_item",
+      "signature",
+      "table_row"
+    ],
+    "negative_surface_hints": [
+      "EXAMPLE_CODE",
+      "NAVIGATION",
+      "CROSS_REFERENCE"
+    ],
+    "page_granularity": "MULTI_FEATURE",
+    "schema_version": "profile-structural-hints/v1",
+    "selection_authority": "EXPLICIT_PROFILE_DEFINITIONS",
+    "structural_region_hints": [
+      "DEFINITION_LIST",
+      "HEADING_SECTION",
+      "LIST_ITEM",
+      "SIGNATURE_BLOCK_OR_SPAN",
+      "TABLE_ROW"
+    ],
+    "definition_scope_patterns": [
+      {
+        "relation": "SIGNATURE_CONTAINER",
+        "identity_slot": "LEADING_SIGNATURE",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "relation": "SELF_DEFINITION",
+        "identity_slot": "EXPLICIT_SELF_SUBJECT",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "PARAGRAPH_SIGNATURE",
+        "identity_slot": "LABEL_AND_SIGNATURE",
+        "boundary": "NEXT_LABEL_OR_HEADING"
+      },
+      {
+        "relation": "STORAGE_CLASS",
+        "identity_slot": "EXPLICIT_TYPE_LABEL",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "TERM_BODY_PAIR",
+        "identity_slot": "TERM",
+        "boundary": "NEXT_TERM"
+      },
+      {
+        "relation": "HEADING_SECTION",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING"
+      },
+      {
+        "relation": "CATALOG_ROW",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW"
+      },
+      {
+        "relation": "CATALOG_MEMBER_CONTEXT",
+        "identity_slot": "TYPED_LITERAL_MEMBER",
+        "boundary": "LIST_AND_SHARED_PARENT"
+      },
+      {
+        "relation": "GRAMMAR_MEMBER_CONTEXT",
+        "identity_slot": "GRAMMAR_MEMBER",
+        "boundary": "HEADING_SECTION"
+      },
+      {
+        "relation": "PAGE_SUBJECT_RELATION",
+        "identity_slot": "TYPED_SUBJECT_HEADING",
+        "boundary": "DEFINITION_PREFIX"
+      }
+    ],
+    "definition_patterns": [
+      {
+        "grammar": "DATATYPE_DECLARATION",
+        "container": "LIST_ITEM",
+        "identity_slot": "LEADING_LITERAL",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "grammar": "OPERATOR_EXPRESSION",
+        "container": "LIST_ITEM",
+        "identity_slot": "LEADING_LITERAL",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "grammar": "DATATYPE_DECLARATION",
+        "container": "REPEATED_CONTAINER",
+        "identity_slot": "LEADING_LITERAL",
+        "boundary": "CURRENT_CONTAINER"
+      }
+    ],
+    "definition_structure_patterns": [
+      {
+        "plan_id": "function_pages",
+        "structure": "A",
+        "identity_slot": "PAGE_SUBJECT",
+        "boundary": "SUBJECT_PAGE",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "FUNCTION",
+          "when": {
+            "page_path_prefixes": [
+              "/derby/docs/10.17/ref/rrefbuiltbigint.html",
+              "/derby/docs/10.17/ref/rrefbuiltchar.html",
+              "/derby/docs/10.17/ref/rrefbuiltdouble.html",
+              "/derby/docs/10.17/ref/rrefbuiltinteger.html",
+              "/derby/docs/10.17/ref/rrefbuiltsmallint.html",
+              "/derby/docs/10.17/ref/rrefbuiltvarchar.html",
+              "/derby/docs/10.17/ref/rrefcasenullif.html",
+              "/derby/docs/10.17/ref/rrefcurrentisolation.html",
+              "/derby/docs/10.17/ref/rrefcurrentrole.html",
+              "/derby/docs/10.17/ref/rrefdatefunc.html",
+              "/derby/docs/10.17/ref/rrefdayfunc.html",
+              "/derby/docs/10.17/ref/rreffuncacos.html",
+              "/derby/docs/10.17/ref/rreffuncasin.html",
+              "/derby/docs/10.17/ref/rreffuncatan.html",
+              "/derby/docs/10.17/ref/rreffuncatan2.html",
+              "/derby/docs/10.17/ref/rreffuncceil.html",
+              "/derby/docs/10.17/ref/rreffunccoalesce.html",
+              "/derby/docs/10.17/ref/rreffunccos.html",
+              "/derby/docs/10.17/ref/rreffunccosh.html",
+              "/derby/docs/10.17/ref/rreffunccot.html",
+              "/derby/docs/10.17/ref/rreffuncdegrees.html",
+              "/derby/docs/10.17/ref/rreffuncexp.html",
+              "/derby/docs/10.17/ref/rreffuncfloor.html",
+              "/derby/docs/10.17/ref/rreffunclog.html",
+              "/derby/docs/10.17/ref/rreffunclog10.html",
+              "/derby/docs/10.17/ref/rreffuncpi.html",
+              "/derby/docs/10.17/ref/rreffuncradians.html",
+              "/derby/docs/10.17/ref/rreffuncrand.html",
+              "/derby/docs/10.17/ref/rreffuncrandom.html",
+              "/derby/docs/10.17/ref/rreffuncrownumber.html",
+              "/derby/docs/10.17/ref/rreffuncsign.html",
+              "/derby/docs/10.17/ref/rreffuncsin.html",
+              "/derby/docs/10.17/ref/rreffuncsinh.html",
+              "/derby/docs/10.17/ref/rreffunctan.html",
+              "/derby/docs/10.17/ref/rreffunctanh.html",
+              "/derby/docs/10.17/ref/rrefhourfunc.html",
+              "/derby/docs/10.17/ref/rrefidentityvallocal.html",
+              "/derby/docs/10.17/ref/rrefminutefunc.html",
+              "/derby/docs/10.17/ref/rrefmonthfunc.html",
+              "/derby/docs/10.17/ref/rrefsecondfunc.html",
+              "/derby/docs/10.17/ref/rrefsqlj1055824.html",
+              "/derby/docs/10.17/ref/rrefsqlj13083.html",
+              "/derby/docs/10.17/ref/rrefsqlj15866.html",
+              "/derby/docs/10.17/ref/rrefsqlj16762.html",
+              "/derby/docs/10.17/ref/rrefsqlj25228.html",
+              "/derby/docs/10.17/ref/rrefsqlj27781.html",
+              "/derby/docs/10.17/ref/rrefsqlj29026.html",
+              "/derby/docs/10.17/ref/rrefsqlj29930.html",
+              "/derby/docs/10.17/ref/rrefsqlj32613.html",
+              "/derby/docs/10.17/ref/rrefsqlj32693.html",
+              "/derby/docs/10.17/ref/rrefsqlj33520.html",
+              "/derby/docs/10.17/ref/rrefsqlj33562.html",
+              "/derby/docs/10.17/ref/rrefsqlj33772.html",
+              "/derby/docs/10.17/ref/rrefsqlj34177.html",
+              "/derby/docs/10.17/ref/rrefsqlj38716.html",
+              "/derby/docs/10.17/ref/rrefsqlj42049.html",
+              "/derby/docs/10.17/ref/rrefsqlj42324.html",
+              "/derby/docs/10.17/ref/rrefsqlj42476.html",
+              "/derby/docs/10.17/ref/rrefsqlj61998.html",
+              "/derby/docs/10.17/ref/rrefsqlj66113.html",
+              "/derby/docs/10.17/ref/rrefsqlj73147.html",
+              "/derby/docs/10.17/ref/rrefsqlj93082.html",
+              "/derby/docs/10.17/ref/rrefsqlj97870.html",
+              "/derby/docs/10.17/ref/rrefsqlj98067.html",
+              "/derby/docs/10.17/ref/rrefsqljcurrentdate.html",
+              "/derby/docs/10.17/ref/rrefsqljcurrentschema.html",
+              "/derby/docs/10.17/ref/rrefsqljcurrenttimestamp.html",
+              "/derby/docs/10.17/ref/rrefsqljmod.html",
+              "/derby/docs/10.17/ref/rrefsqljstddevpop.html",
+              "/derby/docs/10.17/ref/rrefsqljstddevsamp.html",
+              "/derby/docs/10.17/ref/rrefsqljvarpop.html",
+              "/derby/docs/10.17/ref/rrefsqljvarsamp.html",
+              "/derby/docs/10.17/ref/rreftimefunc.html",
+              "/derby/docs/10.17/ref/rreftimestampfunc.html",
+              "/derby/docs/10.17/ref/rreftrimfunc.html",
+              "/derby/docs/10.17/ref/rrefyearfunc.html"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING",
+                "heading_level": 1,
+                "text_pattern": "([A-Z][A-Z0-9_]*(?:\\s+(?:or\\s+)?[A-Z][A-Z0-9_]*)*)\\s+functions?",
+                "capture_group": 1,
+                "split_pattern": "\\s+or\\s+"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Signature",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Example",
+                  "Examples",
+                  "Usage examples"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Returns"
+                ]
+              },
+              "sharing": "DECLARED_MEMBERS"
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "type_pages",
+        "structure": "A",
+        "identity_slot": "PAGE_SUBJECT",
+        "boundary": "SUBJECT_PAGE",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "DATATYPE",
+          "when": {
+            "page_path_prefixes": [
+              "/derby/docs/10.17/ref/rrefblob.html",
+              "/derby/docs/10.17/ref/rrefclob.html",
+              "/derby/docs/10.17/ref/rrefsqlj10696.html",
+              "/derby/docs/10.17/ref/rrefsqlj12362.html",
+              "/derby/docs/10.17/ref/rrefsqlj13733.html",
+              "/derby/docs/10.17/ref/rrefsqlj14122.html",
+              "/derby/docs/10.17/ref/rrefsqlj15147.html",
+              "/derby/docs/10.17/ref/rrefsqlj15260.html",
+              "/derby/docs/10.17/ref/rrefsqlj16221.html",
+              "/derby/docs/10.17/ref/rrefsqlj18730.html",
+              "/derby/docs/10.17/ref/rrefsqlj21908.html",
+              "/derby/docs/10.17/ref/rrefsqlj27281.html",
+              "/derby/docs/10.17/ref/rrefsqlj27620.html",
+              "/derby/docs/10.17/ref/rrefsqlj30118.html",
+              "/derby/docs/10.17/ref/rrefsqlj30435.html",
+              "/derby/docs/10.17/ref/rrefsqlj32714.html",
+              "/derby/docs/10.17/ref/rrefsqlj41207.html",
+              "/derby/docs/10.17/ref/rrefsqlj42002.html",
+              "/derby/docs/10.17/ref/rrefsqlj57924.html",
+              "/derby/docs/10.17/ref/rrefsqljBoolean.html",
+              "/derby/docs/10.17/ref/rrefsqljdoubleprecision.html",
+              "/derby/docs/10.17/ref/rrefsqljtypexml.html"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING",
+                "heading_level": 1,
+                "text_pattern": "([A-Z][A-Z0-9_ ]*)\\s+data type",
+                "capture_group": 1
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Signature",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Example",
+                  "Examples",
+                  "Usage examples"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Returns"
+                ]
+              },
+              "sharing": "DECLARED_MEMBERS"
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "operator_rows",
+        "structure": "D",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "OPERATOR",
+          "when": {
+            "page_path_prefixes": [
+              "/derby/docs/10.17/ref/crefsqlj21305.html",
+              "/derby/docs/10.17/ref/crefsqlj28138.html",
+              "/derby/docs/10.17/ref/crefsqlj31068.html",
+              "/derby/docs/10.17/ref/crefsqlj41507.html",
+              "/derby/docs/10.17/ref/rrefblob.html",
+              "/derby/docs/10.17/ref/rrefbuiltbigint.html",
+              "/derby/docs/10.17/ref/rrefbuiltchar.html",
+              "/derby/docs/10.17/ref/rrefbuiltdouble.html",
+              "/derby/docs/10.17/ref/rrefbuiltinteger.html",
+              "/derby/docs/10.17/ref/rrefbuiltsmallint.html",
+              "/derby/docs/10.17/ref/rrefbuiltvarchar.html",
+              "/derby/docs/10.17/ref/rrefcasenullif.html",
+              "/derby/docs/10.17/ref/rrefclob.html",
+              "/derby/docs/10.17/ref/rrefcurrentisolation.html",
+              "/derby/docs/10.17/ref/rrefcurrentrole.html",
+              "/derby/docs/10.17/ref/rrefdatefunc.html",
+              "/derby/docs/10.17/ref/rrefdayfunc.html",
+              "/derby/docs/10.17/ref/rreffuncacos.html",
+              "/derby/docs/10.17/ref/rreffuncasin.html",
+              "/derby/docs/10.17/ref/rreffuncatan.html",
+              "/derby/docs/10.17/ref/rreffuncatan2.html",
+              "/derby/docs/10.17/ref/rreffuncceil.html",
+              "/derby/docs/10.17/ref/rreffunccoalesce.html",
+              "/derby/docs/10.17/ref/rreffunccos.html",
+              "/derby/docs/10.17/ref/rreffunccosh.html",
+              "/derby/docs/10.17/ref/rreffunccot.html",
+              "/derby/docs/10.17/ref/rreffuncdegrees.html",
+              "/derby/docs/10.17/ref/rreffuncexp.html",
+              "/derby/docs/10.17/ref/rreffuncfloor.html",
+              "/derby/docs/10.17/ref/rreffunclog.html",
+              "/derby/docs/10.17/ref/rreffunclog10.html",
+              "/derby/docs/10.17/ref/rreffuncpi.html",
+              "/derby/docs/10.17/ref/rreffuncradians.html",
+              "/derby/docs/10.17/ref/rreffuncrand.html",
+              "/derby/docs/10.17/ref/rreffuncrandom.html",
+              "/derby/docs/10.17/ref/rreffuncrownumber.html",
+              "/derby/docs/10.17/ref/rreffuncsign.html",
+              "/derby/docs/10.17/ref/rreffuncsin.html",
+              "/derby/docs/10.17/ref/rreffuncsinh.html",
+              "/derby/docs/10.17/ref/rreffunctan.html",
+              "/derby/docs/10.17/ref/rreffunctanh.html",
+              "/derby/docs/10.17/ref/rreffuncxmlexists.html",
+              "/derby/docs/10.17/ref/rreffuncxmlparse.html",
+              "/derby/docs/10.17/ref/rreffuncxmlquery.html",
+              "/derby/docs/10.17/ref/rreffuncxmlserialize.html",
+              "/derby/docs/10.17/ref/rrefhourfunc.html",
+              "/derby/docs/10.17/ref/rrefidentityvallocal.html",
+              "/derby/docs/10.17/ref/rrefminutefunc.html",
+              "/derby/docs/10.17/ref/rrefmonthfunc.html",
+              "/derby/docs/10.17/ref/rrefsecondfunc.html",
+              "/derby/docs/10.17/ref/rrefsqlj1055824.html",
+              "/derby/docs/10.17/ref/rrefsqlj10696.html",
+              "/derby/docs/10.17/ref/rrefsqlj1080779.html",
+              "/derby/docs/10.17/ref/rrefsqlj12362.html",
+              "/derby/docs/10.17/ref/rrefsqlj13083.html",
+              "/derby/docs/10.17/ref/rrefsqlj13733.html",
+              "/derby/docs/10.17/ref/rrefsqlj14122.html",
+              "/derby/docs/10.17/ref/rrefsqlj15147.html",
+              "/derby/docs/10.17/ref/rrefsqlj15260.html",
+              "/derby/docs/10.17/ref/rrefsqlj15866.html",
+              "/derby/docs/10.17/ref/rrefsqlj16221.html",
+              "/derby/docs/10.17/ref/rrefsqlj16762.html",
+              "/derby/docs/10.17/ref/rrefsqlj18730.html",
+              "/derby/docs/10.17/ref/rrefsqlj19433.html",
+              "/derby/docs/10.17/ref/rrefsqlj21908.html",
+              "/derby/docs/10.17/ref/rrefsqlj23075.html",
+              "/derby/docs/10.17/ref/rrefsqlj25228.html",
+              "/derby/docs/10.17/ref/rrefsqlj27281.html",
+              "/derby/docs/10.17/ref/rrefsqlj27620.html",
+              "/derby/docs/10.17/ref/rrefsqlj27781.html",
+              "/derby/docs/10.17/ref/rrefsqlj29026.html",
+              "/derby/docs/10.17/ref/rrefsqlj29930.html",
+              "/derby/docs/10.17/ref/rrefsqlj30118.html",
+              "/derby/docs/10.17/ref/rrefsqlj30435.html",
+              "/derby/docs/10.17/ref/rrefsqlj32613.html",
+              "/derby/docs/10.17/ref/rrefsqlj32693.html",
+              "/derby/docs/10.17/ref/rrefsqlj32714.html",
+              "/derby/docs/10.17/ref/rrefsqlj33520.html",
+              "/derby/docs/10.17/ref/rrefsqlj33562.html",
+              "/derby/docs/10.17/ref/rrefsqlj33772.html",
+              "/derby/docs/10.17/ref/rrefsqlj34177.html",
+              "/derby/docs/10.17/ref/rrefsqlj38716.html",
+              "/derby/docs/10.17/ref/rrefsqlj40899.html",
+              "/derby/docs/10.17/ref/rrefsqlj41207.html",
+              "/derby/docs/10.17/ref/rrefsqlj42002.html",
+              "/derby/docs/10.17/ref/rrefsqlj42049.html",
+              "/derby/docs/10.17/ref/rrefsqlj42324.html",
+              "/derby/docs/10.17/ref/rrefsqlj42476.html",
+              "/derby/docs/10.17/ref/rrefsqlj57924.html",
+              "/derby/docs/10.17/ref/rrefsqlj61998.html",
+              "/derby/docs/10.17/ref/rrefsqlj66113.html",
+              "/derby/docs/10.17/ref/rrefsqlj73147.html",
+              "/derby/docs/10.17/ref/rrefsqlj93082.html",
+              "/derby/docs/10.17/ref/rrefsqlj97870.html",
+              "/derby/docs/10.17/ref/rrefsqlj98067.html",
+              "/derby/docs/10.17/ref/rrefsqljBoolean.html",
+              "/derby/docs/10.17/ref/rrefsqljcurrentdate.html",
+              "/derby/docs/10.17/ref/rrefsqljcurrentschema.html",
+              "/derby/docs/10.17/ref/rrefsqljcurrenttimestamp.html",
+              "/derby/docs/10.17/ref/rrefsqljdoubleprecision.html",
+              "/derby/docs/10.17/ref/rrefsqljmod.html",
+              "/derby/docs/10.17/ref/rrefsqljstddevpop.html",
+              "/derby/docs/10.17/ref/rrefsqljstddevsamp.html",
+              "/derby/docs/10.17/ref/rrefsqljtypexml.html",
+              "/derby/docs/10.17/ref/rrefsqljvarpop.html",
+              "/derby/docs/10.17/ref/rrefsqljvarsamp.html",
+              "/derby/docs/10.17/ref/rreftimefunc.html",
+              "/derby/docs/10.17/ref/rreftimestampfunc.html",
+              "/derby/docs/10.17/ref/rreftrimfunc.html",
+              "/derby/docs/10.17/ref/rrefyearfunc.html"
+            ],
+            "table_headers_any": [
+              "Operator"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Operator"
+                ],
+                "token_pattern": "\\b[A-Z]{2,}(?:\\s+(?:NOT|NULL))*\\b"
+              },
+              {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Explanation and Example"
+                ],
+                "text_pattern": "([<>=, ]+)\\s+are applicable.*",
+                "capture_group": 1,
+                "token_pattern": "[<>=]+"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Explanation and Example"
+                ]
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Syntax"
+                ]
+              },
+              "sharing": "DECLARED_MEMBERS"
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "operator_definition_pages",
+        "structure": "A",
+        "identity_slot": "PAGE_SUBJECT",
+        "boundary": "SUBJECT_PAGE",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "OPERATOR",
+          "when": {
+            "page_path_prefixes": [
+              "/derby/docs/10.17/ref/rreffuncxmlexists.html",
+              "/derby/docs/10.17/ref/rreffuncxmlparse.html",
+              "/derby/docs/10.17/ref/rreffuncxmlquery.html",
+              "/derby/docs/10.17/ref/rreffuncxmlserialize.html",
+              "/derby/docs/10.17/ref/rrefsqlj40899.html"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING",
+                "heading_level": 1,
+                "text_pattern": "([A-Z][A-Z0-9_]*)\\s+operator",
+                "capture_group": 1
+              }
+            ],
+            "cardinality": "ONE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Signature",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Example",
+                  "Examples",
+                  "Usage examples"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Returns"
+                ]
+              },
+              "sharing": "DECLARED_MEMBERS"
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "operator_precedence_entries",
+        "structure": "C",
+        "identity_slot": "LEADING_TERM",
+        "boundary": "CURRENT_ENTRY",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "OPERATOR",
+          "when": {
+            "page_path_prefixes": [
+              "/derby/docs/10.17/ref/rrefsqlj1080779.html"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "FIRST_BLOCK_TEXT",
+                "text_pattern": "(?:Unary|Binary)\\s+.*|[*/|].*",
+                "token_pattern": "[+*/|\\-]+"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": []
+        }
+      }
+    ]
+  },
+  "manual_edit": true,
+  "profile_id": "manual_profile:derby_explicit_v3",
+  "run_id": "unified_derby_d9d5c4939b2b29d0",
+  "schema_version": "featurecrawler-cold-profile/v1",
+  "source_pages": [
+    {
+      "block_kinds": [
+        "CODE",
+        "HEADING",
+        "LIST_ITEM",
+        "TABLE_ROW",
+        "TEXT"
+      ],
+      "page_hash": "a958c69f6b56a22ba07bb69374cdd3df6547f6c8aea272e66931a6b4bb3025f4",
+      "page_id": "page:e4188164afab2101ffea80a2",
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj33562.html"
+    },
+    {
+      "block_kinds": [
+        "CODE",
+        "DEFINITION",
+        "HEADING",
+        "LIST_ITEM",
+        "TEXT"
+      ],
+      "page_hash": "7fa3763567d4a62f4a8c8913a4c1230c19b47018fc6a24ae2fe062f514d4e424",
+      "page_id": "page:95b4728a7f8e18b84f26de85",
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefbuiltchar.html"
+    },
+    {
+      "block_kinds": [
+        "HEADING",
+        "LIST_ITEM",
+        "TEXT"
+      ],
+      "page_hash": "34ac3ca835f6af655cfbf37b8cda05f63f90ec9ca5bb56baed1fd627e88bba6e",
+      "page_id": "page:01c4951a370f37b648ffd39c",
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj29026.html"
+    },
+    {
+      "block_kinds": [
+        "CODE",
+        "HEADING",
+        "LIST_ITEM",
+        "TEXT"
+      ],
+      "page_hash": "ab0d2f84c6edd97ae965cfb6a250ffba6513c97b0d2ad5e0f54b4f71c1451c18",
+      "page_id": "page:ba55dc0779ca4156083c4709",
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreftrimfunc.html"
+    },
+    {
+      "block_kinds": [
+        "CODE",
+        "HEADING",
+        "LIST_ITEM",
+        "TEXT"
+      ],
+      "page_hash": "82c654cdd70dc97a5e3cbad5120f10f1f1f545fce583fc7e13eea5e48396715e",
+      "page_id": "page:950564afb1d044035584c3b6",
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj61998.html"
+    },
+    {
+      "block_kinds": [
+        "CODE",
+        "DEFINITION",
+        "HEADING",
+        "TEXT"
+      ],
+      "page_hash": "70cf81dd85fdbe12345cb3c50e819248a62d3f1c1a6c1077c157862637dfbc57",
+      "page_id": "page:0c4287a2ddbadcf36f596206",
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefbuiltdouble.html"
+    },
+    {
+      "block_kinds": [
+        "CODE",
+        "HEADING",
+        "LIST_ITEM",
+        "TEXT"
+      ],
+      "page_hash": "4b280aa5bfd4ca9181e11c67f334f31ff5cae72be13dfa1526e3b6c9b8241db5",
+      "page_id": "page:72044e02229e8b3f3f01b4c2",
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefdatefunc.html"
+    },
+    {
+      "block_kinds": [
+        "CODE",
+        "HEADING",
+        "TEXT"
+      ],
+      "page_hash": "94b20dbd168372a58f14f2234c0a527ac2e0def7c1eebac09f65a2ec534cfba8",
+      "page_id": "page:a1ef5120fe98d00c36414758",
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncrownumber.html"
+    },
+    {
+      "block_kinds": [
+        "CODE",
+        "HEADING",
+        "TEXT"
+      ],
+      "page_hash": "b7dc957f5cb14601a6be112171248a6187a7ba458929085871c133f606879ade",
+      "page_id": "page:f56280928f40b33a1939a09b",
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj93082.html"
+    },
+    {
+      "block_kinds": [
+        "CODE",
+        "HEADING",
+        "TEXT"
+      ],
+      "page_hash": "25b7a108ca9629930f67d5a072388d4e8e8566a47355ce96fa66026cb809d228",
+      "page_id": "page:04a00ff7b145aaef2cd3c784",
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqljstddevpop.html"
+    },
+    {
+      "block_kinds": [
+        "CODE",
+        "HEADING",
+        "TEXT"
+      ],
+      "page_hash": "0afeef76a7f46cc1af1cc3a2d34b129e0ba849388ec2ff7af0b4c543fd227e0f",
+      "page_id": "page:f79e460ebb0443a927795fa2",
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqljstddevsamp.html"
+    },
+    {
+      "block_kinds": [
+        "CODE",
+        "HEADING",
+        "TEXT"
+      ],
+      "page_hash": "94f6074d315f33e24e6cdbdd0448db2e2ea05eccabaf9aba49cf8667ccf41d29",
+      "page_id": "page:8ead5bce662335b1fe3ad458",
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqljvarpop.html"
+    }
+  ],
+  "surfaces": [
+    {
+      "feature_bearing": true,
+      "feature_evidence": [
+        {
+          "count": 8,
+          "signal": "definition_term_with_body"
+        }
+      ],
+      "identity_slot": "definition_term",
+      "observed_block_count": 16,
+      "observed_pages": [
+        "https://db.apache.org/derby/docs/10.17/ref/rrefbuiltchar.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefbuiltdouble.html"
+      ],
+      "owner_strategy": "definition_list",
+      "page_hint": "definition_list",
+      "role_distribution": {
+        "FEATURE_DEFINITION": 8,
+        "SUPPORTING_CONTEXT": 8
+      },
+      "surface_confidence": 0.4868,
+      "surface_confidence_label": "LOW",
+      "surface_evidence": [
+        {
+          "count": 8,
+          "signal": "definition_term_with_body"
+        },
+        {
+          "count": 8,
+          "signal": "definition_without_identity_term"
+        }
+      ],
+      "surface_role": "FEATURE_REFERENCE",
+      "type_hint": "FUNCTION"
+    },
+    {
+      "feature_bearing": false,
+      "feature_evidence": [],
+      "identity_slot": "heading",
+      "observed_block_count": 50,
+      "observed_pages": [
+        "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj33562.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefbuiltchar.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj29026.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rreftrimfunc.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj61998.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefbuiltdouble.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefdatefunc.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rreffuncrownumber.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj93082.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefsqljstddevpop.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefsqljstddevsamp.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefsqljvarpop.html"
+      ],
+      "owner_strategy": "heading_section",
+      "page_hint": "heading_section",
+      "role_distribution": {
+        "SUPPORTING_CONTEXT": 50
+      },
+      "surface_confidence": 0.22,
+      "surface_confidence_label": "LOW",
+      "surface_evidence": [
+        {
+          "count": 50,
+          "signal": "ordinary_heading"
+        }
+      ],
+      "surface_role": "SUPPORTING_CONTEXT",
+      "type_hint": "FUNCTION"
+    },
+    {
+      "feature_bearing": false,
+      "feature_evidence": [],
+      "identity_slot": "inline_literal_or_label",
+      "observed_block_count": 112,
+      "observed_pages": [
+        "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj33562.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefbuiltchar.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj29026.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rreftrimfunc.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj61998.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefdatefunc.html"
+      ],
+      "owner_strategy": "list_item",
+      "page_hint": "list_item",
+      "role_distribution": {
+        "SUPPORTING_CONTEXT": 112
+      },
+      "surface_confidence": 0.25,
+      "surface_confidence_label": "LOW",
+      "surface_evidence": [
+        {
+          "count": 112,
+          "signal": "list_item_without_bounded_identity"
+        }
+      ],
+      "surface_role": "SUPPORTING_CONTEXT",
+      "type_hint": "FUNCTION"
+    },
+    {
+      "feature_bearing": true,
+      "feature_evidence": [
+        {
+          "count": 16,
+          "signal": "standalone_signature"
+        }
+      ],
+      "identity_slot": "code_or_heading",
+      "observed_block_count": 46,
+      "observed_pages": [
+        "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj33562.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefbuiltchar.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rreftrimfunc.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj61998.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefbuiltdouble.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefdatefunc.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rreffuncrownumber.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj93082.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefsqljstddevpop.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefsqljstddevsamp.html",
+        "https://db.apache.org/derby/docs/10.17/ref/rrefsqljvarpop.html"
+      ],
+      "owner_strategy": "signature",
+      "page_hint": "signature",
+      "role_distribution": {
+        "FEATURE_DEFINITION": 16,
+        "SUPPORTING_CONTEXT": 30
+      },
+      "surface_confidence": 0.3882,
+      "surface_confidence_label": "LOW",
+      "surface_evidence": [
+        {
+          "count": 27,
+          "signal": "executable_or_example_context"
+        },
+        {
+          "count": 16,
+          "signal": "standalone_signature"
+        },
+        {
+          "count": 4,
+          "signal": "programming_api_declaration"
+        },
+        {
+          "count": 3,
+          "signal": "non_signature_code"
+        }
+      ],
+      "surface_role": "FEATURE_REFERENCE",
+      "type_hint": "FUNCTION"
+    },
+    {
+      "feature_bearing": false,
+      "feature_evidence": [],
+      "identity_slot": "first_cell",
+      "observed_block_count": 21,
+      "observed_pages": [
+        "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj33562.html"
+      ],
+      "owner_strategy": "table_row",
+      "page_hint": "table_row",
+      "role_distribution": {
+        "SUPPORTING_CONTEXT": 21
+      },
+      "surface_confidence": 0.3,
+      "surface_confidence_label": "LOW",
+      "surface_evidence": [
+        {
+          "count": 21,
+          "signal": "header:types"
+        },
+        {
+          "count": 21,
+          "signal": "table_without_identity_slot"
+        }
+      ],
+      "surface_role": "SUPPORTING_CONTEXT",
+      "type_hint": "FUNCTION"
+    }
+  ],
+  "profile_provenance": {
+    "author": "Codex: explicit structural migration",
+    "authored_at": "2026-11-09",
+    "revision": "3",
+    "derived_from_digest": "c480f67eca7bd268910a6ae8a290af8800fd4359c88c0fd48dd74fa742213dc3"
+  }
+}

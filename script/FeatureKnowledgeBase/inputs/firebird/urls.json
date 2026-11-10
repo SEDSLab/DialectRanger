@@ -1,0 +1,119 @@
+{
+  "dbms": "firebird",
+  "documents": [
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-datatypes.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-datatypes-floattypes.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-datatypes-fixedtypes.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-datatypes-datetime.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-datatypes-chartypes.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-datatypes-booleantypes.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-datatypes-bnrytypes.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-datatypes-array.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-datatypes-special.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-datatypes-conversion.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-datatypes-custom.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-datatypes-syntax.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-commons.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-commons-predicates.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-functions.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-functions-math.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-functions-string.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-functions-datetime.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-functions-casting.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-functions-bitwise.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-functions-uuid.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-functions-generators.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-functions-conditional.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-scalarfuncs-decfloat.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-scalarfuncs-crypto.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-scalarfuncs-other.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-aggfuncs.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-aggfuncs-general.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-aggfuncs-stats.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-aggfuncs-regr.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-windowfuncs.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-windowfuncs-partition.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-windowfuncs-order-by.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-windowfuncs-frame.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-windowfuncs-named-windows.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-windowfuncs-rankfuncs.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-windowfuncs-navfuncs.html"
+    },
+    {
+      "url": "https://www.firebirdsql.org/file/documentation/chunk/en/refdocs/fblangref50/fblangref50-windowfuncs-aggfuncs-windowspec.html"
+    }
+  ]
+}

@@ -1,0 +1,1395 @@
+{
+  "schema_version": "featurecrawler-cold-profile/v1",
+  "profile_id": "manual_profile:sqlite_explicit_v2",
+  "dbms": "sqlite",
+  "generated": false,
+  "generated_at": "2026-10-19T16:03:41.058469+00:00",
+  "run_id": "sqlite-official-input-preparation",
+  "generation_mode": "MANUAL_REVISED",
+  "manual_edit": true,
+  "source_pages": [
+    {
+      "page_id": "page:87404f3466902c3cb97143b1",
+      "url": "https://www.sqlite.org/fts5.html",
+      "page_hash": "de3092630358518a6869bf047055b3938e18b476e3fbc54f4e2146d1e593497f",
+      "block_kinds": [
+        "CODE",
+        "DEFINITION",
+        "HEADING",
+        "LIST_ITEM",
+        "TABLE_ROW",
+        "TEXT"
+      ]
+    },
+    {
+      "page_id": "page:b0d497f00e81dd77c40916b0",
+      "url": "https://www.sqlite.org/cli.html",
+      "page_hash": "88eb383a6604ffdc2661c2be00112e0eb6c9eaefab2f967b11cee3a64a52c916",
+      "block_kinds": [
+        "CODE",
+        "HEADING",
+        "LIST_ITEM",
+        "TABLE_ROW",
+        "TEXT"
+      ]
+    },
+    {
+      "page_id": "page:ec2576ad5821b48ab11fc735",
+      "url": "https://www.sqlite.org/fts3.html",
+      "page_hash": "bd345527c0aa91b54adffce72df4e08e2a6ef1dbf778c10a38d1278206387f83",
+      "block_kinds": [
+        "CODE",
+        "HEADING",
+        "LIST_ITEM",
+        "TABLE_ROW",
+        "TEXT"
+      ]
+    },
+    {
+      "page_id": "page:940a3d02c5d98f350934a7cd",
+      "url": "https://www.sqlite.org/json1.html",
+      "page_hash": "bca8f665a03ab34e83ed8965b7dee2e12f1a6ffa4202d6bf2acc0f574becafb9",
+      "block_kinds": [
+        "CODE",
+        "HEADING",
+        "LIST_ITEM",
+        "TABLE_ROW",
+        "TEXT"
+      ]
+    },
+    {
+      "page_id": "page:94d2614c807d10234ecd20a2",
+      "url": "https://www.sqlite.org/lang_corefunc.html",
+      "page_hash": "ec49b7c5fb5905f6adaff7d09ace92db22a9f6310435d098501f163f48257885",
+      "block_kinds": [
+        "CODE",
+        "DEFINITION",
+        "HEADING",
+        "LIST_ITEM",
+        "TEXT"
+      ]
+    },
+    {
+      "page_id": "page:48a2fd99c924c90f93e1eb88",
+      "url": "https://www.sqlite.org/pragma.html",
+      "page_hash": "af75d7d7ab00c29e6eea98618cb1259a3919c308af60a6173215bf9798706034",
+      "block_kinds": [
+        "CODE",
+        "DEFINITION",
+        "HEADING",
+        "LIST_ITEM",
+        "TABLE_ROW",
+        "TEXT"
+      ]
+    },
+    {
+      "page_id": "page:b80463f7ce938f9ad9b6181e",
+      "url": "https://www.sqlite.org/windowfunctions.html",
+      "page_hash": "541a738f7fd26efca132111ef51e74c2a3233054faa3471ee88f9696ebe97e98",
+      "block_kinds": [
+        "CODE",
+        "DEFINITION",
+        "HEADING",
+        "LIST_ITEM",
+        "TABLE_ROW",
+        "TEXT"
+      ]
+    },
+    {
+      "page_id": "page:9b7be97a3839d0240c239024",
+      "url": "https://www.sqlite.org/spellfix1.html",
+      "page_hash": "7db521acd602dd15fa3734bd38f381c5f9782001210b2771a07aef9906fe9f26",
+      "block_kinds": [
+        "CODE",
+        "DEFINITION",
+        "HEADING",
+        "LIST_ITEM",
+        "TABLE_ROW",
+        "TEXT"
+      ]
+    },
+    {
+      "page_id": "page:b063b5e6450632716ad37990",
+      "url": "https://www.sqlite.org/lang_expr.html",
+      "page_hash": "a618cf34414eaf5390a5b7814b8b720a08daff6a64fdcf7b3a02bf7b474a65a4",
+      "block_kinds": [
+        "HEADING",
+        "LIST_ITEM",
+        "TABLE_ROW",
+        "TEXT"
+      ]
+    },
+    {
+      "page_id": "page:005ebf5ba491035ea6ebd4a3",
+      "url": "https://www.sqlite.org/lang_datefunc.html",
+      "page_hash": "4e8179554f5097120b8a484192806a7251711fc38421cf9530f3678602655d1f",
+      "block_kinds": [
+        "HEADING",
+        "LIST_ITEM",
+        "TABLE_ROW",
+        "TEXT"
+      ]
+    },
+    {
+      "page_id": "page:e3c76f2ddc216feb2e869185",
+      "url": "https://www.sqlite.org/lang_mathfunc.html",
+      "page_hash": "0abb3bb0063244255ea833450cdaf3123c905995c37a506e91c4334e74359a4f",
+      "block_kinds": [
+        "DEFINITION",
+        "HEADING",
+        "LIST_ITEM",
+        "TEXT"
+      ]
+    },
+    {
+      "page_id": "page:57021163189bf8f5b6be04eb",
+      "url": "https://www.sqlite.org/lang_createtable.html",
+      "page_hash": "76396a8a82203639387f766fbd59ef2a5b131e43cb4ebabe4516c3a39ce5074c",
+      "block_kinds": [
+        "CODE",
+        "HEADING",
+        "LIST_ITEM",
+        "TABLE_ROW",
+        "TEXT"
+      ]
+    }
+  ],
+  "surfaces": [
+    {
+      "page_hint": "definition_list",
+      "owner_strategy": "definition_list",
+      "identity_slot": "definition_term",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://www.sqlite.org/fts5.html",
+        "https://www.sqlite.org/lang_corefunc.html",
+        "https://www.sqlite.org/pragma.html",
+        "https://www.sqlite.org/windowfunctions.html",
+        "https://www.sqlite.org/spellfix1.html",
+        "https://www.sqlite.org/lang_mathfunc.html"
+      ],
+      "observed_block_count": 290,
+      "surface_role": "FEATURE_REFERENCE",
+      "surface_confidence": 0.4482,
+      "surface_confidence_label": "LOW",
+      "feature_bearing": true,
+      "feature_evidence": [
+        {
+          "signal": "definition_term_with_body",
+          "count": 118
+        }
+      ],
+      "surface_evidence": [
+        {
+          "signal": "definition_without_identity_term",
+          "count": 172
+        },
+        {
+          "signal": "definition_term_with_body",
+          "count": 118
+        },
+        {
+          "signal": "programming_api_declaration",
+          "count": 28
+        }
+      ],
+      "role_distribution": {
+        "FEATURE_DEFINITION": 118,
+        "SUPPORTING_CONTEXT": 172
+      }
+    },
+    {
+      "page_hint": "heading_section",
+      "owner_strategy": "heading_section",
+      "identity_slot": "heading",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://www.sqlite.org/fts5.html",
+        "https://www.sqlite.org/cli.html",
+        "https://www.sqlite.org/fts3.html",
+        "https://www.sqlite.org/json1.html",
+        "https://www.sqlite.org/lang_corefunc.html",
+        "https://www.sqlite.org/pragma.html",
+        "https://www.sqlite.org/windowfunctions.html",
+        "https://www.sqlite.org/spellfix1.html",
+        "https://www.sqlite.org/lang_expr.html",
+        "https://www.sqlite.org/lang_datefunc.html",
+        "https://www.sqlite.org/lang_mathfunc.html",
+        "https://www.sqlite.org/lang_createtable.html"
+      ],
+      "observed_block_count": 291,
+      "surface_role": "FEATURE_REFERENCE",
+      "surface_confidence": 0.2777,
+      "surface_confidence_label": "LOW",
+      "feature_bearing": true,
+      "feature_evidence": [
+        {
+          "signal": "identity_shaped_heading",
+          "count": 28
+        }
+      ],
+      "surface_evidence": [
+        {
+          "signal": "ordinary_heading",
+          "count": 263
+        },
+        {
+          "signal": "identity_shaped_heading",
+          "count": 28
+        }
+      ],
+      "role_distribution": {
+        "FEATURE_DEFINITION": 28,
+        "SUPPORTING_CONTEXT": 263
+      }
+    },
+    {
+      "page_hint": "list_item",
+      "owner_strategy": "list_item",
+      "identity_slot": "inline_literal_or_label",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://www.sqlite.org/fts5.html",
+        "https://www.sqlite.org/cli.html",
+        "https://www.sqlite.org/fts3.html",
+        "https://www.sqlite.org/json1.html",
+        "https://www.sqlite.org/lang_corefunc.html",
+        "https://www.sqlite.org/pragma.html",
+        "https://www.sqlite.org/windowfunctions.html",
+        "https://www.sqlite.org/spellfix1.html",
+        "https://www.sqlite.org/lang_expr.html",
+        "https://www.sqlite.org/lang_datefunc.html",
+        "https://www.sqlite.org/lang_mathfunc.html",
+        "https://www.sqlite.org/lang_createtable.html"
+      ],
+      "observed_block_count": 824,
+      "surface_role": "FEATURE_REFERENCE",
+      "surface_confidence": 0.3324,
+      "surface_confidence_label": "LOW",
+      "feature_bearing": true,
+      "feature_evidence": [
+        {
+          "signal": "bounded_identity_surface",
+          "count": 134
+        }
+      ],
+      "surface_evidence": [
+        {
+          "signal": "list_item_without_bounded_identity",
+          "count": 690
+        },
+        {
+          "signal": "bounded_identity_surface",
+          "count": 134
+        }
+      ],
+      "role_distribution": {
+        "FEATURE_CATALOG": 134,
+        "SUPPORTING_CONTEXT": 690
+      }
+    },
+    {
+      "page_hint": "signature",
+      "owner_strategy": "signature",
+      "identity_slot": "code_or_heading",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://www.sqlite.org/fts5.html",
+        "https://www.sqlite.org/cli.html",
+        "https://www.sqlite.org/fts3.html",
+        "https://www.sqlite.org/json1.html",
+        "https://www.sqlite.org/lang_corefunc.html",
+        "https://www.sqlite.org/pragma.html",
+        "https://www.sqlite.org/windowfunctions.html",
+        "https://www.sqlite.org/spellfix1.html",
+        "https://www.sqlite.org/lang_createtable.html"
+      ],
+      "observed_block_count": 290,
+      "surface_role": "SUPPORTING_CONTEXT",
+      "surface_confidence": 0.1918,
+      "surface_confidence_label": "LOW",
+      "feature_bearing": false,
+      "feature_evidence": [],
+      "surface_evidence": [
+        {
+          "signal": "executable_or_example_context",
+          "count": 234
+        },
+        {
+          "signal": "programming_api_declaration",
+          "count": 188
+        },
+        {
+          "signal": "non_signature_code",
+          "count": 56
+        }
+      ],
+      "role_distribution": {
+        "SUPPORTING_CONTEXT": 290
+      }
+    },
+    {
+      "page_hint": "table_row",
+      "owner_strategy": "table_row",
+      "identity_slot": "first_cell",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://www.sqlite.org/fts5.html",
+        "https://www.sqlite.org/cli.html",
+        "https://www.sqlite.org/fts3.html",
+        "https://www.sqlite.org/json1.html",
+        "https://www.sqlite.org/pragma.html",
+        "https://www.sqlite.org/windowfunctions.html",
+        "https://www.sqlite.org/spellfix1.html",
+        "https://www.sqlite.org/lang_expr.html",
+        "https://www.sqlite.org/lang_datefunc.html",
+        "https://www.sqlite.org/lang_createtable.html"
+      ],
+      "observed_block_count": 242,
+      "surface_role": "FEATURE_REFERENCE",
+      "surface_confidence": 0.6193,
+      "surface_confidence_label": "MEDIUM",
+      "feature_bearing": true,
+      "feature_evidence": [
+        {
+          "signal": "identity_header",
+          "count": 28
+        },
+        {
+          "signal": "adjacent_context_cell",
+          "count": 20
+        },
+        {
+          "signal": "first_cell_operator_label",
+          "count": 14
+        },
+        {
+          "signal": "first_cell_symbol",
+          "count": 6
+        },
+        {
+          "signal": "first_cell_identifier",
+          "count": 5
+        },
+        {
+          "signal": "first_cell_callable",
+          "count": 3
+        }
+      ],
+      "surface_evidence": [
+        {
+          "signal": "supporting_table_headers",
+          "count": 109
+        },
+        {
+          "signal": "table_without_identity_slot",
+          "count": 105
+        },
+        {
+          "signal": "header:column",
+          "count": 43
+        },
+        {
+          "signal": "header:option",
+          "count": 35
+        },
+        {
+          "signal": "identity_header",
+          "count": 28
+        },
+        {
+          "signal": "adjacent_context_cell",
+          "count": 20
+        },
+        {
+          "signal": "header:operator",
+          "count": 18
+        },
+        {
+          "signal": "first_cell_operator_label",
+          "count": 14
+        },
+        {
+          "signal": "header:operators",
+          "count": 13
+        },
+        {
+          "signal": "header:name",
+          "count": 12
+        },
+        {
+          "signal": "header:type",
+          "count": 12
+        },
+        {
+          "signal": "header:values",
+          "count": 10
+        },
+        {
+          "signal": "header:result",
+          "count": 9
+        },
+        {
+          "signal": "header:function",
+          "count": 8
+        },
+        {
+          "signal": "header:syntax",
+          "count": 8
+        },
+        {
+          "signal": "header:argument",
+          "count": 7
+        },
+        {
+          "signal": "header:default",
+          "count": 7
+        },
+        {
+          "signal": "header:value",
+          "count": 7
+        },
+        {
+          "signal": "first_cell_symbol",
+          "count": 6
+        },
+        {
+          "signal": "header:expression",
+          "count": 6
+        },
+        {
+          "signal": "first_cell_identifier",
+          "count": 5
+        },
+        {
+          "signal": "header:command",
+          "count": 4
+        },
+        {
+          "signal": "header:meaning",
+          "count": 4
+        },
+        {
+          "signal": "first_cell_callable",
+          "count": 3
+        }
+      ],
+      "role_distribution": {
+        "FEATURE_CATALOG": 28,
+        "SUPPORTING_CONTEXT": 214
+      }
+    }
+  ],
+  "hint_contract": {
+    "schema_version": "profile-structural-hints/v1",
+    "page_granularity": "MULTI_FEATURE",
+    "structural_region_hints": [
+      "DEFINITION_LIST",
+      "HEADING_SECTION",
+      "LIST_ITEM",
+      "SIGNATURE_BLOCK_OR_SPAN",
+      "TABLE_ROW"
+    ],
+    "identity_surface_hints": [
+      "DEFINITION_TERM",
+      "FIRST_CELL_OR_LINK",
+      "HEADING",
+      "LABEL_OR_INLINE_LITERAL",
+      "SIGNATURE_TEXT_OR_HEADING"
+    ],
+    "boundary_hints": [
+      "HEADING_BOUNDED_SECTION",
+      "SIBLING_LIST_ITEM",
+      "SIBLING_TABLE_ROW",
+      "SIGNATURE_SPAN_OR_BLOCK",
+      "TERM_BODY_PAIR"
+    ],
+    "negative_surface_hints": [
+      "EXAMPLE_CODE",
+      "NAVIGATION",
+      "CROSS_REFERENCE"
+    ],
+    "example_surface_hints": [
+      "CODE_BLOCK",
+      "INLINE_LITERAL"
+    ],
+    "legacy_owner_strategy_hints": [
+      "definition_list",
+      "heading_section",
+      "list_item",
+      "signature",
+      "table_row"
+    ],
+    "selection_authority": "EXPLICIT_PROFILE_DEFINITIONS",
+    "definition_scope_patterns": [
+      {
+        "relation": "SIGNATURE_CONTAINER",
+        "identity_slot": "LEADING_SIGNATURE",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "relation": "SELF_DEFINITION",
+        "identity_slot": "EXPLICIT_SELF_SUBJECT",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "PARAGRAPH_SIGNATURE",
+        "identity_slot": "LABEL_AND_SIGNATURE",
+        "boundary": "NEXT_LABEL_OR_HEADING"
+      },
+      {
+        "relation": "STORAGE_CLASS",
+        "identity_slot": "EXPLICIT_TYPE_LABEL",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "TERM_BODY_PAIR",
+        "identity_slot": "TERM",
+        "boundary": "NEXT_TERM"
+      },
+      {
+        "relation": "HEADING_SECTION",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING"
+      },
+      {
+        "relation": "CATALOG_ROW",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW"
+      },
+      {
+        "relation": "CATALOG_MEMBER_CONTEXT",
+        "identity_slot": "TYPED_LITERAL_MEMBER",
+        "boundary": "LIST_AND_SHARED_PARENT"
+      },
+      {
+        "relation": "GRAMMAR_MEMBER_CONTEXT",
+        "identity_slot": "GRAMMAR_MEMBER",
+        "boundary": "HEADING_SECTION"
+      },
+      {
+        "relation": "PAGE_SUBJECT_RELATION",
+        "identity_slot": "TYPED_SUBJECT_HEADING",
+        "boundary": "DEFINITION_PREFIX"
+      }
+    ],
+    "definition_patterns": [
+      {
+        "grammar": "DATATYPE_DECLARATION",
+        "container": "LIST_ITEM",
+        "identity_slot": "LEADING_LITERAL",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "grammar": "OPERATOR_EXPRESSION",
+        "container": "LIST_ITEM",
+        "identity_slot": "LEADING_LITERAL",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "grammar": "DATATYPE_DECLARATION",
+        "container": "REPEATED_CONTAINER",
+        "identity_slot": "LEADING_LITERAL",
+        "boundary": "CURRENT_CONTAINER"
+      }
+    ],
+    "definition_structure_patterns": [
+      {
+        "plan_id": "function_entries",
+        "structure": "C",
+        "identity_slot": "LEADING_TERM",
+        "boundary": "CURRENT_ENTRY",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "FUNCTION",
+          "when": {
+            "page_path_prefixes": [
+              "/base64.html",
+              "/base85.html",
+              "/bytecodevtab.html",
+              "/carray.html",
+              "/completion.html",
+              "/csv.html",
+              "/dbpage.html",
+              "/dbstat.html",
+              "/diskusedfunc.html",
+              "/floatingpoint.html",
+              "/fts3.html",
+              "/fts5.html",
+              "/geopoly.html",
+              "/json1.html",
+              "/lang_aggfunc.html",
+              "/lang_corefunc.html",
+              "/lang_datefunc.html",
+              "/lang_mathfunc.html",
+              "/memstat.html",
+              "/percentile.html",
+              "/rtree.html",
+              "/series.html",
+              "/spellfix1.html",
+              "/stmt.html",
+              "/swarmvtab.html",
+              "/uintcseq.html",
+              "/unionvtab.html",
+              "/vec1doc.html",
+              "/vec1ref.html",
+              "/vtablist.html",
+              "/windowfunctions.html",
+              "/zipfile.html"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "FIRST_BLOCK_TEXT",
+                "text_pattern": "[A-Za-z_][\\w.]*\\s*\\([^;]*\\)(?:\\s+[A-Za-z_][\\w.]*\\s*\\([^;]*\\))*",
+                "token_pattern": "[A-Za-z_][\\w.]*(?=\\s*\\()"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Signature",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ]
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Example",
+                  "Examples",
+                  "Usage examples"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Returns"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "storage_classes",
+        "structure": "C",
+        "identity_slot": "LEADING_TERM",
+        "boundary": "CURRENT_ENTRY",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "DATATYPE",
+          "when": {
+            "page_path_prefixes": [
+              "/datatype3.html"
+            ],
+            "heading_context_any": [
+              "2. Storage Classes and Datatypes"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "FIRST_BLOCK_TEXT",
+                "text_pattern": "([A-Z][A-Z0-9_]*)\\s*\\.\\s+.+",
+                "capture_group": 1
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "affinity_definitions",
+        "structure": "D",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "DATATYPE",
+          "when": {
+            "page_path_prefixes": [
+              "/datatype3.html"
+            ],
+            "table_headers_any": [
+              "Resulting Affinity"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Resulting Affinity"
+                ],
+                "text_pattern": "[A-Z][A-Z0-9_]*"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": []
+        }
+      },
+      {
+        "plan_id": "operator_catalog",
+        "structure": "D",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "OPERATOR",
+          "when": {
+            "page_path_prefixes": [
+              "/lang_expr.html"
+            ],
+            "table_headers_any": [
+              "Operators 2"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "FIRST_DATA_CELL",
+                "token_pattern": "[A-Z][A-Z_]*(?:\\s+(?:NOT|DISTINCT|FROM|NULL))*|[!<>=|&~+*/%\\-]+"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": []
+        }
+      },
+      {
+        "plan_id": "function_heading_1",
+        "structure": "B",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "FUNCTION",
+          "when": {
+            "page_path_prefixes": [
+              "/base64.html",
+              "/base85.html",
+              "/bytecodevtab.html",
+              "/carray.html",
+              "/completion.html",
+              "/csv.html",
+              "/dbpage.html",
+              "/dbstat.html",
+              "/diskusedfunc.html",
+              "/floatingpoint.html",
+              "/fts3.html",
+              "/fts5.html",
+              "/geopoly.html",
+              "/json1.html",
+              "/lang_aggfunc.html",
+              "/lang_corefunc.html",
+              "/lang_datefunc.html",
+              "/lang_mathfunc.html",
+              "/memstat.html",
+              "/percentile.html",
+              "/rtree.html",
+              "/series.html",
+              "/spellfix1.html",
+              "/stmt.html",
+              "/swarmvtab.html",
+              "/uintcseq.html",
+              "/unionvtab.html",
+              "/vec1doc.html",
+              "/vec1ref.html",
+              "/vtablist.html",
+              "/windowfunctions.html",
+              "/zipfile.html"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING",
+                "heading_level": 1,
+                "text_pattern": "(?i)(?:\\d+(?:\\.\\d+)*\\.?\\s+)?(?:the\\s+)?((?:[A-Z_]\\w*\\([^()]*\\)(?:\\s*(?:,|and|/|&)\\s*)?)+)(?:\\s+(?:SQL\\s+)?functions?)?",
+                "capture_group": 1,
+                "token_pattern": "[A-Za-z_]\\w*(?=\\s*\\()"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Signature",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ]
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Example",
+                  "Examples",
+                  "Usage examples"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Returns"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "function_heading_2",
+        "structure": "B",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "FUNCTION",
+          "when": {
+            "page_path_prefixes": [
+              "/base64.html",
+              "/base85.html",
+              "/bytecodevtab.html",
+              "/carray.html",
+              "/completion.html",
+              "/csv.html",
+              "/dbpage.html",
+              "/dbstat.html",
+              "/diskusedfunc.html",
+              "/floatingpoint.html",
+              "/fts3.html",
+              "/fts5.html",
+              "/geopoly.html",
+              "/json1.html",
+              "/lang_aggfunc.html",
+              "/lang_corefunc.html",
+              "/lang_datefunc.html",
+              "/lang_mathfunc.html",
+              "/memstat.html",
+              "/percentile.html",
+              "/rtree.html",
+              "/series.html",
+              "/spellfix1.html",
+              "/stmt.html",
+              "/swarmvtab.html",
+              "/uintcseq.html",
+              "/unionvtab.html",
+              "/vec1doc.html",
+              "/vec1ref.html",
+              "/vtablist.html",
+              "/windowfunctions.html",
+              "/zipfile.html"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING",
+                "heading_level": 2,
+                "text_pattern": "(?i)(?:\\d+(?:\\.\\d+)*\\.?\\s+)?(?:the\\s+)?((?:[A-Z_]\\w*\\([^()]*\\)(?:\\s*(?:,|and|/|&)\\s*)?)+)(?:\\s+(?:SQL\\s+)?functions?)?",
+                "capture_group": 1,
+                "token_pattern": "[A-Za-z_]\\w*(?=\\s*\\()"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Signature",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ]
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Example",
+                  "Examples",
+                  "Usage examples"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Returns"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "function_heading_3",
+        "structure": "B",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "FUNCTION",
+          "when": {
+            "page_path_prefixes": [
+              "/base64.html",
+              "/base85.html",
+              "/bytecodevtab.html",
+              "/carray.html",
+              "/completion.html",
+              "/csv.html",
+              "/dbpage.html",
+              "/dbstat.html",
+              "/diskusedfunc.html",
+              "/floatingpoint.html",
+              "/fts3.html",
+              "/fts5.html",
+              "/geopoly.html",
+              "/json1.html",
+              "/lang_aggfunc.html",
+              "/lang_corefunc.html",
+              "/lang_datefunc.html",
+              "/lang_mathfunc.html",
+              "/memstat.html",
+              "/percentile.html",
+              "/rtree.html",
+              "/series.html",
+              "/spellfix1.html",
+              "/stmt.html",
+              "/swarmvtab.html",
+              "/uintcseq.html",
+              "/unionvtab.html",
+              "/vec1doc.html",
+              "/vec1ref.html",
+              "/vtablist.html",
+              "/windowfunctions.html",
+              "/zipfile.html"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING",
+                "heading_level": 3,
+                "text_pattern": "(?i)(?:\\d+(?:\\.\\d+)*\\.?\\s+)?(?:the\\s+)?((?:[A-Z_]\\w*\\([^()]*\\)(?:\\s*(?:,|and|/|&)\\s*)?)+)(?:\\s+(?:SQL\\s+)?functions?)?",
+                "capture_group": 1,
+                "token_pattern": "[A-Za-z_]\\w*(?=\\s*\\()"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Signature",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ]
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Example",
+                  "Examples",
+                  "Usage examples"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Returns"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "function_heading_4",
+        "structure": "B",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "FUNCTION",
+          "when": {
+            "page_path_prefixes": [
+              "/base64.html",
+              "/base85.html",
+              "/bytecodevtab.html",
+              "/carray.html",
+              "/completion.html",
+              "/csv.html",
+              "/dbpage.html",
+              "/dbstat.html",
+              "/diskusedfunc.html",
+              "/floatingpoint.html",
+              "/fts3.html",
+              "/fts5.html",
+              "/geopoly.html",
+              "/json1.html",
+              "/lang_aggfunc.html",
+              "/lang_corefunc.html",
+              "/lang_datefunc.html",
+              "/lang_mathfunc.html",
+              "/memstat.html",
+              "/percentile.html",
+              "/rtree.html",
+              "/series.html",
+              "/spellfix1.html",
+              "/stmt.html",
+              "/swarmvtab.html",
+              "/uintcseq.html",
+              "/unionvtab.html",
+              "/vec1doc.html",
+              "/vec1ref.html",
+              "/vtablist.html",
+              "/windowfunctions.html",
+              "/zipfile.html"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING",
+                "heading_level": 4,
+                "text_pattern": "(?i)(?:\\d+(?:\\.\\d+)*\\.?\\s+)?(?:the\\s+)?((?:[A-Z_]\\w*\\([^()]*\\)(?:\\s*(?:,|and|/|&)\\s*)?)+)(?:\\s+(?:SQL\\s+)?functions?)?",
+                "capture_group": 1,
+                "token_pattern": "[A-Za-z_]\\w*(?=\\s*\\()"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "See also",
+              "Related content",
+              "Feedback"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "DECLARATION_ANCHORS"
+              }
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Signature",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ]
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Example",
+                  "Examples",
+                  "Usage examples"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "OWNER_SQL_APPLICATION"
+              },
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return type",
+                  "Returns"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "bootstrap": {
+    "method": "deterministic_structural_observation",
+    "input_document_count": 40,
+    "representative_page_count": 12,
+    "inventory_used": false,
+    "db_specific_repair_used": false
+  },
+  "profile_provenance": {
+    "author": "Codex: explicit structural migration",
+    "authored_at": "2026-11-08",
+    "revision": "2",
+    "derived_from_digest": "0e4616f9edda9f9bacb9ee2b6c782168f323e369e0594d8425902201800fc651"
+  }
+}

@@ -1,0 +1,8 @@
+.runtime/
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+output/
+reports/
+frontend/data/

@@ -1,0 +1,335 @@
+{
+  "dbms": "derby",
+  "documents": [
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/crefsqlj21305.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/crefsqlj28138.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/crefsqlj31068.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/crefsqlj41507.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefblob.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefbuiltbigint.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefbuiltchar.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefbuiltdouble.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefbuiltinteger.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefbuiltsmallint.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefbuiltvarchar.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefcasenullif.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefclob.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefcurrentisolation.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefcurrentrole.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefdatefunc.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefdayfunc.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncacos.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncasin.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncatan.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncatan2.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncceil.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffunccoalesce.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffunccos.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffunccosh.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffunccot.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncdegrees.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncexp.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncfloor.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffunclog.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffunclog10.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncpi.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncradians.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncrand.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncrandom.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncrownumber.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncsign.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncsin.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncsinh.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffunctan.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffunctanh.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncxmlexists.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncxmlparse.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncxmlquery.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreffuncxmlserialize.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefhourfunc.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefidentityvallocal.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefminutefunc.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefmonthfunc.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsecondfunc.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj1055824.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj10696.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj1080779.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj12362.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj13083.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj13733.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj14122.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj15147.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj15260.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj15866.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj16221.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj16762.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj18730.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj19433.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj21908.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj23075.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj25228.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj27281.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj27620.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj27781.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj29026.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj29930.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj30118.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj30435.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj32613.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj32693.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj32714.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj33520.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj33562.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj33772.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj34177.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj38716.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj40899.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj41207.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj42002.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj42049.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj42324.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj42476.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj57924.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj61998.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj66113.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj73147.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj93082.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj97870.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqlj98067.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqljBoolean.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqljcurrentdate.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqljcurrentschema.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqljcurrenttimestamp.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqljdoubleprecision.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqljmod.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqljstddevpop.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqljstddevsamp.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqljtypexml.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqljvarpop.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefsqljvarsamp.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreftimefunc.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreftimestampfunc.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rreftrimfunc.html"
+    },
+    {
+      "url": "https://db.apache.org/derby/docs/10.17/ref/rrefyearfunc.html"
+    }
+  ]
+}

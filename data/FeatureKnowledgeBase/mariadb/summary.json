@@ -1,0 +1,22 @@
+{
+  "dbms": "mariadb",
+  "updated_at": "2026-11-10T08:46:52.801139+00:00",
+  "final_count": 402,
+  "review_count": 80,
+  "by_type": {
+    "function": 344,
+    "operator": 25,
+    "datatype": 33
+  },
+  "with_fields": {
+    "description": 366,
+    "syntax": 332,
+    "examples": 296
+  },
+  "quality_status": "QUALITY_PARTIAL",
+  "actual_model_calls": 0,
+  "official_recall": "NOT_EVALUATED",
+  "projection_loss": 0,
+  "duplicate_ids": 0,
+  "runtime_artifacts_published": false
+}

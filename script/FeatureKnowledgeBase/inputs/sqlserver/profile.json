@@ -1,0 +1,737 @@
+{
+  "schema_version": "featurecrawler-cold-profile/v1",
+  "profile_id": "manual_profile:sqlserver_explicit_definitions_v2",
+  "dbms": "sqlserver",
+  "generated": false,
+  "generated_at": null,
+  "run_id": "sqlserver-input-preparation-20261106-v1",
+  "generation_mode": "MANUAL_REVISED",
+  "manual_edit": true,
+  "profile_provenance": {
+    "author": "Codex: official reference structure preparation",
+    "authored_at": "2026-11-06",
+    "revision": "2",
+    "derived_from_digest": "fff5d4402cfb692056935ece2e93be4be217ee8c73548841093e36b8f4ce5c36"
+  },
+  "source_pages": [
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/functions/abs-transact-sql?view=sql-server-ver17",
+      "page_hash": "08a440116644a98bee7dc60e6443402d60ffbc3485d0b98129135917676eba17"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-ver17",
+      "page_hash": "bca87c98382d566e731d8956c0d806703d8f8ea442ef19b665b279305260bdb2"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/arithmetic-operators-transact-sql?view=sql-server-ver17",
+      "page_hash": "7e5cba0e27180d885222f0ee78c0b1eb8c08b3310fe1ddcaa783b932f0420262"
+    }
+  ],
+  "surfaces": [
+    {
+      "page_hint": "page_singleton",
+      "owner_strategy": "page_singleton",
+      "identity_slot": "PAGE_SUBJECT",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://learn.microsoft.com/en-us/sql/t-sql/functions/abs-transact-sql?view=sql-server-ver17",
+        "https://learn.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-ver17",
+        "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/arithmetic-operators-transact-sql?view=sql-server-ver17"
+      ],
+      "observed_block_count": 3
+    },
+    {
+      "page_hint": "heading_section",
+      "owner_strategy": "heading_section",
+      "identity_slot": "HEADING",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://learn.microsoft.com/en-us/sql/t-sql/functions/abs-transact-sql?view=sql-server-ver17",
+        "https://learn.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-ver17",
+        "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/arithmetic-operators-transact-sql?view=sql-server-ver17"
+      ],
+      "observed_block_count": 23
+    },
+    {
+      "page_hint": "table_row",
+      "owner_strategy": "table_row",
+      "identity_slot": "VERIFIED_IDENTITY_CELL",
+      "type_hint": "UNCERTAIN",
+      "observed_pages": [
+        "https://learn.microsoft.com/en-us/sql/t-sql/functions/abs-transact-sql?view=sql-server-ver17",
+        "https://learn.microsoft.com/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql?view=sql-server-ver17",
+        "https://learn.microsoft.com/en-us/sql/t-sql/language-elements/arithmetic-operators-transact-sql?view=sql-server-ver17"
+      ],
+      "observed_block_count": 18
+    }
+  ],
+  "hint_contract": {
+    "schema_version": "profile-structural-hints/v1",
+    "page_granularity": "MIXED",
+    "structural_region_hints": [
+      "PAGE",
+      "HEADING_SECTION",
+      "TABLE_ROW",
+      "SIGNATURE_BLOCK_OR_SPAN"
+    ],
+    "identity_surface_hints": [
+      "PAGE_TITLE_OR_PRIMARY_HEADING",
+      "HEADING",
+      "FIRST_CELL_OR_LINK",
+      "SIGNATURE_TEXT_OR_HEADING"
+    ],
+    "boundary_hints": [
+      "PAGE_BOUNDARY",
+      "HEADING_BOUNDED_SECTION",
+      "SIBLING_TABLE_ROW",
+      "SIGNATURE_SPAN_OR_BLOCK"
+    ],
+    "negative_surface_hints": [
+      "NAVIGATION",
+      "CROSS_REFERENCE",
+      "EXAMPLE_CODE"
+    ],
+    "example_surface_hints": [
+      "CODE_BLOCK",
+      "INLINE_LITERAL"
+    ],
+    "legacy_owner_strategy_hints": [
+      "page_singleton",
+      "heading_section",
+      "table_row"
+    ],
+    "selection_authority": "EXPLICIT_PROFILE_DEFINITIONS",
+    "definition_patterns": [],
+    "definition_scope_patterns": [
+      {
+        "relation": "SIGNATURE_CONTAINER",
+        "identity_slot": "LEADING_SIGNATURE",
+        "boundary": "CURRENT_CONTAINER"
+      },
+      {
+        "relation": "SELF_DEFINITION",
+        "identity_slot": "EXPLICIT_SELF_SUBJECT",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "PARAGRAPH_SIGNATURE",
+        "identity_slot": "LABEL_AND_SIGNATURE",
+        "boundary": "NEXT_LABEL_OR_HEADING"
+      },
+      {
+        "relation": "STORAGE_CLASS",
+        "identity_slot": "EXPLICIT_TYPE_LABEL",
+        "boundary": "CURRENT_BLOCK"
+      },
+      {
+        "relation": "TERM_BODY_PAIR",
+        "identity_slot": "TERM",
+        "boundary": "NEXT_TERM"
+      },
+      {
+        "relation": "HEADING_SECTION",
+        "identity_slot": "HEADING",
+        "boundary": "NEXT_PEER_OR_PARENT_HEADING"
+      },
+      {
+        "relation": "CATALOG_ROW",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW"
+      },
+      {
+        "relation": "CATALOG_MEMBER_CONTEXT",
+        "identity_slot": "TYPED_LITERAL_MEMBER",
+        "boundary": "LIST_AND_SHARED_PARENT"
+      },
+      {
+        "relation": "GRAMMAR_MEMBER_CONTEXT",
+        "identity_slot": "GRAMMAR_MEMBER",
+        "boundary": "HEADING_SECTION"
+      },
+      {
+        "relation": "PAGE_SUBJECT_RELATION",
+        "identity_slot": "TYPED_SUBJECT_HEADING",
+        "boundary": "DEFINITION_PREFIX"
+      }
+    ],
+    "definition_structure_patterns": [
+      {
+        "plan_id": "function_reference_pages",
+        "structure": "A",
+        "identity_slot": "PAGE_SUBJECT",
+        "boundary": "SUBJECT_PAGE",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "FUNCTION",
+          "when": {
+            "page_path_prefixes": [
+              "/en-us/sql/t-sql/functions"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING",
+                "heading_level": 1,
+                "text_pattern": "([@A-Za-z_][@A-Za-z0-9_$]*)\\s+\\(Transact-SQL\\)",
+                "capture_group": 1
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "Related content",
+              "See also",
+              "Feedback",
+              "Additional resources"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "exclude_text_prefixes": [
+                "Applies to:",
+                "Transact-SQL syntax conventions"
+              ]
+            },
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Remarks",
+                  "Description"
+                ]
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ]
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ]
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Examples",
+                  "Example"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ]
+            },
+            {
+              "role": "PARAMETER",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Arguments",
+                  "Parameters"
+                ]
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "TABLE_ROW"
+              ]
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return types",
+                  "Return type",
+                  "Returns"
+                ]
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "TABLE_ROW",
+                "CODE"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "type_definition_pages",
+        "structure": "A",
+        "identity_slot": "PAGE_SUBJECT",
+        "boundary": "SUBJECT_PAGE",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "DATATYPE",
+          "when": {
+            "page_path_prefixes": [
+              "/en-us/sql/t-sql/data-types/binary-and-varbinary-transact-sql",
+              "/en-us/sql/t-sql/data-types/bit-transact-sql",
+              "/en-us/sql/t-sql/data-types/char-and-varchar-transact-sql",
+              "/en-us/sql/t-sql/data-types/cursor-transact-sql",
+              "/en-us/sql/t-sql/data-types/date-transact-sql",
+              "/en-us/sql/t-sql/data-types/datetime-transact-sql",
+              "/en-us/sql/t-sql/data-types/datetime2-transact-sql",
+              "/en-us/sql/t-sql/data-types/datetimeoffset-transact-sql",
+              "/en-us/sql/t-sql/data-types/decimal-and-numeric-transact-sql",
+              "/en-us/sql/t-sql/data-types/float-and-real-transact-sql",
+              "/en-us/sql/t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql",
+              "/en-us/sql/t-sql/data-types/money-and-smallmoney-transact-sql",
+              "/en-us/sql/t-sql/data-types/nchar-and-nvarchar-transact-sql",
+              "/en-us/sql/t-sql/data-types/ntext-text-and-image-transact-sql",
+              "/en-us/sql/t-sql/data-types/rowversion-transact-sql",
+              "/en-us/sql/t-sql/data-types/smalldatetime-transact-sql",
+              "/en-us/sql/t-sql/data-types/sql-variant-transact-sql",
+              "/en-us/sql/t-sql/data-types/table-transact-sql",
+              "/en-us/sql/t-sql/data-types/time-transact-sql",
+              "/en-us/sql/t-sql/data-types/uniqueidentifier-transact-sql"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING",
+                "heading_level": 1,
+                "strip_suffix": " (Transact-SQL)",
+                "split_pattern": "\\s*,\\s*(?:and\\s+)?|\\s+and\\s+",
+                "name_pattern": "[A-Za-z_][A-Za-z0-9_]*"
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "Related content",
+              "See also",
+              "Feedback",
+              "Additional resources"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "exclude_text_prefixes": [
+                "Applies to:",
+                "Transact-SQL syntax conventions"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Remarks",
+                  "Description"
+                ]
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Examples",
+                  "Example"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "PARAMETER",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Arguments",
+                  "Parameters"
+                ]
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "TABLE_ROW"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return types",
+                  "Return type",
+                  "Returns"
+                ]
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "TABLE_ROW",
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "type_page_suffix",
+        "structure": "A",
+        "identity_slot": "PAGE_SUBJECT",
+        "boundary": "SUBJECT_PAGE",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "DATATYPE",
+          "when": {
+            "page_path_prefixes": [
+              "/en-us/sql/t-sql/data-types/json-data-type",
+              "/en-us/sql/t-sql/data-types/vector-data-type"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING",
+                "heading_level": 1,
+                "text_pattern": "([A-Za-z_][A-Za-z0-9_]*) data type",
+                "capture_group": 1
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "Related content",
+              "See also",
+              "Feedback",
+              "Additional resources"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "exclude_text_prefixes": [
+                "Applies to:",
+                "Transact-SQL syntax conventions"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Remarks",
+                  "Description"
+                ]
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Examples",
+                  "Example"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "PARAMETER",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Arguments",
+                  "Parameters"
+                ]
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "TABLE_ROW"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return types",
+                  "Return type",
+                  "Returns"
+                ]
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "TABLE_ROW",
+                "CODE"
+              ],
+              "sharing": "DECLARED_MEMBERS"
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "operator_reference_pages",
+        "structure": "A",
+        "identity_slot": "PAGE_SUBJECT",
+        "boundary": "SUBJECT_PAGE",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "OPERATOR",
+          "when": {
+            "page_path_prefixes": [
+              "/en-us/sql/t-sql/language-elements"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "HEADING",
+                "heading_level": 1,
+                "text_pattern": "([A-Z][A-Z_]*|[^\\w\\s]+)(?:\\s+\\([^)]*\\))?\\s+\\(Transact-SQL\\)",
+                "capture_group": 1
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "boundary": {
+            "stop_headings": [
+              "Related content",
+              "See also",
+              "Feedback",
+              "Additional resources"
+            ]
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "BODY_PROSE"
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ],
+              "exclude_text_prefixes": [
+                "Applies to:",
+                "Transact-SQL syntax conventions"
+              ]
+            },
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Remarks",
+                  "Description"
+                ]
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "LIST_ITEM"
+              ]
+            },
+            {
+              "role": "FORMAL_SYNTAX",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Syntax",
+                  "Synopsis"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ]
+            },
+            {
+              "role": "EXAMPLE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Examples",
+                  "Example"
+                ]
+              },
+              "block_kinds": [
+                "CODE"
+              ]
+            },
+            {
+              "role": "PARAMETER",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Arguments",
+                  "Parameters"
+                ]
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "TABLE_ROW"
+              ]
+            },
+            {
+              "role": "RETURN_TYPE",
+              "locator": {
+                "kind": "SECTION_LABEL",
+                "labels": [
+                  "Return types",
+                  "Return type",
+                  "Returns"
+                ]
+              },
+              "block_kinds": [
+                "TEXT",
+                "DEFINITION",
+                "TABLE_ROW",
+                "CODE"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "plan_id": "operator_catalog_rows",
+        "structure": "D",
+        "identity_slot": "VERIFIED_IDENTITY_CELL",
+        "boundary": "CURRENT_ROW",
+        "execution": {
+          "version": 1,
+          "authority": "EXPLICIT_DEFINITION",
+          "declaration_kind": "OPERATOR",
+          "when": {
+            "page_path_prefixes": [
+              "/en-us/sql/t-sql/language-elements"
+            ],
+            "table_headers_any": [
+              "Operator"
+            ]
+          },
+          "identity": {
+            "alternatives": [
+              {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Operator"
+                ],
+                "text_pattern": "([!<>=~%&|^+*/:@?-]+|[A-Z][A-Z_ ]*)(?:\\s+\\([^)]*\\))?",
+                "capture_group": 1
+              }
+            ],
+            "cardinality": "ONE_OR_MORE"
+          },
+          "fields": [
+            {
+              "role": "DESCRIPTION",
+              "locator": {
+                "kind": "COLUMN_HEADER",
+                "headers": [
+                  "Meaning",
+                  "Description"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
