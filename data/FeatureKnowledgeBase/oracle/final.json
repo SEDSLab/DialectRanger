@@ -1292,342 +1292,6 @@
   },
   {
     "canonical_identity": {
-      "canonical_name": "NCLOB",
-      "dbms": "oracle",
-      "discriminator": "DEFAULT",
-      "feature_type": "datatype",
-      "key": "oracle|datatype|nclob|default"
-    },
-    "canonical_name": "NCLOB",
-    "dbms": "oracle",
-    "doc_version": "current",
-    "feature_id": "canonical:b26120b81b0f260774aee1e6",
-    "feature_type": "datatype",
-    "field_validation_status": "PASS",
-    "name": "NCLOB",
-    "promotion_eligibility": "promotion_ready",
-    "provenance": {
-      "admission_id": "admission:30673dc1d25f7afcb523c7ed",
-      "evidence_ids": [
-        "evidence:4b0b899413baa012d34b2643",
-        "evidence:52613976b0dfcbb42f3cda49"
-      ],
-      "identity_unit_id": "identity_unit:25b1155275ea81909905f535",
-      "producer_stage": "generic_canonical_projection",
-      "producer_version": "generic-unified-contract/v1",
-      "semantic_record_id": "semantic_record:784a01afb50505db88330bf8"
-    },
-    "quality": {
-      "conflict_state": "clear",
-      "fields_missing": [
-        "official_examples",
-        "notes",
-        "parameters",
-        "return_type"
-      ],
-      "fields_populated": [
-        "description",
-        "formal_syntax"
-      ],
-      "ownership_ambiguity": false,
-      "semantic_evidence_resolved": true,
-      "structural_evidence_resolved": true
-    },
-    "schema_version": "canonical-feature-kb-projection/v1",
-    "semantic_execution_state": "PARTIAL",
-    "semantic_extensions": {
-      "datatype": {
-        "definition_names": [
-          {
-            "evidence_refs": [
-              "block:6fb5342012447726d02740eb"
-            ],
-            "provenance": [
-              {
-                "block_id": "block:6fb5342012447726d02740eb",
-                "document_id": "doc_ffbdee0a93d94c4e",
-                "evidence_ids": [
-                  "evidence:52613976b0dfcbb42f3cda49"
-                ],
-                "html_path": "D:\\PyCharm 2025.1.2\\code\\FeatureCrawler\\.runtime\\runs\\oracle_de915f43456948998bb5320d6cf2f6b2\\scoped_discovery\\corpus\\pages\\doc_ffbdee0a93d94c4e.html",
-                "identity_unit_id": "identity_unit:25b1155275ea81909905f535",
-                "owner_ids": [
-                  "owner:a45aae093e094331bd5febce"
-                ],
-                "page_id": "page:aaeeffd469215dc80644dda4",
-                "row_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(15)",
-                "source_cell": {
-                  "cell_index": 0,
-                  "cell_kind": "TD",
-                  "colspan": 1,
-                  "column_end": 0,
-                  "column_start": 0,
-                  "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(15) > td:nth-of-type(1)",
-                  "explicit_header_ids": [],
-                  "footnote_links": [],
-                  "fragments": [],
-                  "header_role": "DATA_CELL",
-                  "header_status": "OBSERVED_GRID",
-                  "headers": [
-                    {
-                      "colspan": 1,
-                      "column_end": 0,
-                      "column_start": 0,
-                      "dom_locator": "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)",
-                      "markers": [],
-                      "row_index": 0,
-                      "rowspan": 1,
-                      "text": "DataType"
-                    }
-                  ],
-                  "html_id": null,
-                  "links": [],
-                  "markers": [],
-                  "nested_table": false,
-                  "raw_colspan": null,
-                  "raw_rowspan": null,
-                  "row_index": 15,
-                  "rowspan": 1,
-                  "scope": null,
-                  "text": "NCLOB"
-                },
-                "source_hash": "7108041601eaedf488fcaa1540b43dee070915f85c81b1bd3b59a3b05a66f9c2",
-                "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html",
-                "table_locator": "html > body > article > table:nth-of-type(2)",
-                "value_cell": {
-                  "cell_index": 0,
-                  "cell_kind": "TD",
-                  "colspan": 1,
-                  "column_end": 0,
-                  "column_start": 0,
-                  "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(15) > td:nth-of-type(1)",
-                  "explicit_header_ids": [],
-                  "footnote_links": [],
-                  "fragments": [],
-                  "header_role": "DATA_CELL",
-                  "header_status": "OBSERVED_GRID",
-                  "headers": [
-                    {
-                      "colspan": 1,
-                      "column_end": 0,
-                      "column_start": 0,
-                      "dom_locator": "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)",
-                      "markers": [],
-                      "row_index": 0,
-                      "rowspan": 1,
-                      "text": "DataType"
-                    }
-                  ],
-                  "html_id": null,
-                  "links": [],
-                  "markers": [],
-                  "nested_table": false,
-                  "raw_colspan": null,
-                  "raw_rowspan": null,
-                  "row_index": 15,
-                  "rowspan": 1,
-                  "scope": null,
-                  "text": "NCLOB"
-                }
-              }
-            ],
-            "source_locations": [
-              {
-                "block_id": "block:6fb5342012447726d02740eb",
-                "cell_index": 0,
-                "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(15) > td:nth-of-type(1)",
-                "header_locators": [
-                  "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)"
-                ]
-              }
-            ],
-            "status": "VERIFIED",
-            "text": "NCLOB"
-          }
-        ],
-        "mappings": [],
-        "notes": [],
-        "uncertain_observations": []
-      },
-      "diagnostics": [],
-      "schema_version": "canonical-semantic-extensions/v1"
-    },
-    "semantic_status": "PARTIAL",
-    "semantics": {
-      "aliases": [],
-      "constraints": [],
-      "description": [
-        {
-          "additional_provenance": [],
-          "evidence": {
-            "block_id": "block:5d0cc72e262f167c01df590d",
-            "block_type": "TABLE_ROW",
-            "evidence_role": "DESCRIPTION",
-            "evidence_span": {
-              "end": 274,
-              "start": 0,
-              "text": "112 NCLOB A character large object containing Unicode characters. Both fixed-width and variable-width character sets are supported, both using the database national character set. Maximum size is (4 gigabytes - 1) * (database block size). Stores national character set data."
-            },
-            "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
-            "page_id": "page:b293eb921135eeb63868744c",
-            "section_heading": "Data Types / Oracle Built-in Data Types",
-            "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
-            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
-          },
-          "evidence_refs": [
-            "block:5d0cc72e262f167c01df590d"
-          ],
-          "field_evidence": [
-            {
-              "basis": "PROFILE_PHYSICAL_SLOT",
-              "block_id": "block:5d0cc72e262f167c01df590d",
-              "cell_index": 2,
-              "definition_unit_id": "definition_unit:93359aeb55d6d00237d98ad4",
-              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(21) > td:nth-of-type(3)",
-              "field": "description",
-              "fragment_id": "field_fragment:a05a2c86536341a1434b6fd3f05c98e7",
-              "identity_unit_id": "identity_unit:25b1155275ea81909905f535",
-              "owner_ids": [
-                "owner:9653531737bb67cd9f7a0329"
-              ],
-              "page_id": "page:b293eb921135eeb63868744c",
-              "profile_digest": "4d7dce047bd239f2e3495a73003c92a416c223f1bcefd1f818ac60cf4c60d949",
-              "proof_level": "VERIFIED",
-              "raw_text": "A character large object containing Unicode characters. Both fixed-width and variable-width character sets are supported, both using the database national character set. Maximum size is (4 gigabytes - 1) * (database block size). Stores national character set data.",
-              "schema_version": "FieldEvidence/v1",
-              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
-              "source_order": 98,
-              "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
-              "subject": "NCLOB"
-            }
-          ],
-          "fragment_refs": [
-            "field_fragment:a05a2c86536341a1434b6fd3f05c98e7"
-          ],
-          "source_locations": [
-            {
-              "block_id": "block:5d0cc72e262f167c01df590d",
-              "cell_index": 2,
-              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(21) > td:nth-of-type(3)",
-              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42"
-            }
-          ],
-          "value": "A character large object containing Unicode characters. Both fixed-width and variable-width character sets are supported, both using the database national character set. Maximum size is (4 gigabytes - 1) * (database block size). Stores national character set data."
-        }
-      ],
-      "examples": [],
-      "parameters": [],
-      "return_type": [],
-      "syntax": [
-        {
-          "additional_provenance": [],
-          "evidence": {
-            "block_id": "block:5d0cc72e262f167c01df590d",
-            "block_type": "TABLE_ROW",
-            "evidence_role": "FORMAL_SYNTAX",
-            "evidence_span": {
-              "end": 274,
-              "start": 0,
-              "text": "112 NCLOB A character large object containing Unicode characters. Both fixed-width and variable-width character sets are supported, both using the database national character set. Maximum size is (4 gigabytes - 1) * (database block size). Stores national character set data."
-            },
-            "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
-            "page_id": "page:b293eb921135eeb63868744c",
-            "section_heading": "Data Types / Oracle Built-in Data Types",
-            "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
-            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
-          },
-          "evidence_refs": [
-            "block:5d0cc72e262f167c01df590d"
-          ],
-          "field_evidence": [
-            {
-              "basis": "PROFILE_PHYSICAL_SLOT",
-              "block_id": "block:5d0cc72e262f167c01df590d",
-              "cell_index": 1,
-              "definition_unit_id": "definition_unit:93359aeb55d6d00237d98ad4",
-              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(21) > td:nth-of-type(2)",
-              "field": "formal_syntax",
-              "fragment_id": "field_fragment:34bf924b53a3f2248fe8863c05aa0374",
-              "identity_unit_id": "identity_unit:25b1155275ea81909905f535",
-              "owner_ids": [
-                "owner:9653531737bb67cd9f7a0329"
-              ],
-              "page_id": "page:b293eb921135eeb63868744c",
-              "profile_digest": "4d7dce047bd239f2e3495a73003c92a416c223f1bcefd1f818ac60cf4c60d949",
-              "proof_level": "VERIFIED",
-              "raw_text": "NCLOB",
-              "schema_version": "FieldEvidence/v1",
-              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
-              "source_order": 98,
-              "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
-              "subject": "NCLOB"
-            }
-          ],
-          "fragment_refs": [
-            "field_fragment:34bf924b53a3f2248fe8863c05aa0374"
-          ],
-          "source_locations": [
-            {
-              "block_id": "block:5d0cc72e262f167c01df590d",
-              "cell_index": 1,
-              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(21) > td:nth-of-type(2)",
-              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42"
-            }
-          ],
-          "value": "NCLOB"
-        }
-      ]
-    },
-    "structural": {
-      "aliases": [],
-      "attributes": {
-        "field_reviews": [],
-        "identity_unit_id": "identity_unit:25b1155275ea81909905f535",
-        "quarantined_fields": [],
-        "sense_id": "sense:4d712a4e1edaf9da9d9d81c8"
-      },
-      "canonical_name": "NCLOB",
-      "name": "NCLOB",
-      "primary_evidence": {
-        "block_id": "block:6fb5342012447726d02740eb",
-        "block_type": "TABLE_ROW",
-        "evidence_role": "IDENTITY",
-        "evidence_span": {
-          "end": 37,
-          "start": 0,
-          "text": "NCLOB X X X X – – – – - X – – X – – –"
-        },
-        "page_hash": "7108041601eaedf488fcaa1540b43dee070915f85c81b1bd3b59a3b05a66f9c2",
-        "page_id": "page:aaeeffd469215dc80644dda4",
-        "section_heading": "Data Type Comparison Rules / Data Conversion / Implicit Data Conversion",
-        "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html",
-        "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html"
-      },
-      "return_types": [],
-      "signatures": [
-        "NCLOB"
-      ],
-      "supporting_evidence": [
-        {
-          "block_id": "block:5d0cc72e262f167c01df590d",
-          "block_type": "TABLE_ROW",
-          "evidence_role": "SUPPORTING",
-          "evidence_span": {
-            "end": 274,
-            "start": 0,
-            "text": "112 NCLOB A character large object containing Unicode characters. Both fixed-width and variable-width character sets are supported, both using the database national character set. Maximum size is (4 gigabytes - 1) * (database block size). Stores national character set data."
-          },
-          "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
-          "page_id": "page:b293eb921135eeb63868744c",
-          "section_heading": "Data Types / Oracle Built-in Data Types",
-          "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
-          "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
-        }
-      ]
-    }
-  },
-  {
-    "canonical_identity": {
       "canonical_name": "FLOAT",
       "dbms": "oracle",
       "discriminator": "DEFAULT",
@@ -12154,7 +11818,7 @@
                 "evidence_ids": [
                   "evidence:0ca99fed4bca925a563747e9"
                 ],
-                "html_path": "D:\\PyCharm 2025.1.2\\code\\FeatureCrawler\\.runtime\\runs\\oracle_de915f43456948998bb5320d6cf2f6b2\\scoped_discovery\\corpus\\pages\\doc_ffbdee0a93d94c4e.html",
+                "html_path": "/home/runner/work/DialectRanger/DialectRanger/script/FeatureKnowledgeBase/.runtime/runs/oracle_344c29355ec1438e86a01e2ce320b8d3/scoped_discovery/corpus/pages/doc_ffbdee0a93d94c4e.html",
                 "identity_unit_id": "identity_unit:0e6f5e07521fddd1199ad8bd",
                 "owner_ids": [
                   "owner:ebff3afaba8dea9b4e9b94e0"
@@ -13382,7 +13046,7 @@
                 "evidence_ids": [
                   "evidence:003ba388f21a189996b73158"
                 ],
-                "html_path": "D:\\PyCharm 2025.1.2\\code\\FeatureCrawler\\.runtime\\runs\\oracle_de915f43456948998bb5320d6cf2f6b2\\scoped_discovery\\corpus\\pages\\doc_ffbdee0a93d94c4e.html",
+                "html_path": "/home/runner/work/DialectRanger/DialectRanger/script/FeatureKnowledgeBase/.runtime/runs/oracle_344c29355ec1438e86a01e2ce320b8d3/scoped_discovery/corpus/pages/doc_ffbdee0a93d94c4e.html",
                 "identity_unit_id": "identity_unit:10a28bf7502b7fcb77314583",
                 "owner_ids": [
                   "owner:9b96039bdaa6533bac74613c"
@@ -30142,7 +29806,7 @@
                 "evidence_ids": [
                   "evidence:7587ffef96eb8c31490772e3"
                 ],
-                "html_path": "D:\\PyCharm 2025.1.2\\code\\FeatureCrawler\\.runtime\\runs\\oracle_de915f43456948998bb5320d6cf2f6b2\\scoped_discovery\\corpus\\pages\\doc_ffbdee0a93d94c4e.html",
+                "html_path": "/home/runner/work/DialectRanger/DialectRanger/script/FeatureKnowledgeBase/.runtime/runs/oracle_344c29355ec1438e86a01e2ce320b8d3/scoped_discovery/corpus/pages/doc_ffbdee0a93d94c4e.html",
                 "identity_unit_id": "identity_unit:20f6f4d8b22ff9a1a56e2fbb",
                 "owner_ids": [
                   "owner:7b67ade4ab585d60be669979"
@@ -30478,7 +30142,7 @@
                 "evidence_ids": [
                   "evidence:7eb4951f5b700c27e6eaf105"
                 ],
-                "html_path": "D:\\PyCharm 2025.1.2\\code\\FeatureCrawler\\.runtime\\runs\\oracle_de915f43456948998bb5320d6cf2f6b2\\scoped_discovery\\corpus\\pages\\doc_ffbdee0a93d94c4e.html",
+                "html_path": "/home/runner/work/DialectRanger/DialectRanger/script/FeatureKnowledgeBase/.runtime/runs/oracle_344c29355ec1438e86a01e2ce320b8d3/scoped_discovery/corpus/pages/doc_ffbdee0a93d94c4e.html",
                 "identity_unit_id": "identity_unit:217b8a27fea84551138c542a",
                 "owner_ids": [
                   "owner:35f17aed3e37483dd5842525"
@@ -35993,6 +35657,342 @@
   },
   {
     "canonical_identity": {
+      "canonical_name": "NCLOB",
+      "dbms": "oracle",
+      "discriminator": "DEFAULT",
+      "feature_type": "datatype",
+      "key": "oracle|datatype|nclob|default"
+    },
+    "canonical_name": "NCLOB",
+    "dbms": "oracle",
+    "doc_version": "current",
+    "feature_id": "canonical:b26120b81b0f260774aee1e6",
+    "feature_type": "datatype",
+    "field_validation_status": "PASS",
+    "name": "NCLOB",
+    "promotion_eligibility": "promotion_ready",
+    "provenance": {
+      "admission_id": "admission:30673dc1d25f7afcb523c7ed",
+      "evidence_ids": [
+        "evidence:4b0b899413baa012d34b2643",
+        "evidence:52613976b0dfcbb42f3cda49"
+      ],
+      "identity_unit_id": "identity_unit:25b1155275ea81909905f535",
+      "producer_stage": "generic_canonical_projection",
+      "producer_version": "generic-unified-contract/v1",
+      "semantic_record_id": "semantic_record:784a01afb50505db88330bf8"
+    },
+    "quality": {
+      "conflict_state": "clear",
+      "fields_missing": [
+        "official_examples",
+        "notes",
+        "parameters",
+        "return_type"
+      ],
+      "fields_populated": [
+        "description",
+        "formal_syntax"
+      ],
+      "ownership_ambiguity": false,
+      "semantic_evidence_resolved": true,
+      "structural_evidence_resolved": true
+    },
+    "schema_version": "canonical-feature-kb-projection/v1",
+    "semantic_execution_state": "PARTIAL",
+    "semantic_extensions": {
+      "datatype": {
+        "definition_names": [
+          {
+            "evidence_refs": [
+              "block:6fb5342012447726d02740eb"
+            ],
+            "provenance": [
+              {
+                "block_id": "block:6fb5342012447726d02740eb",
+                "document_id": "doc_ffbdee0a93d94c4e",
+                "evidence_ids": [
+                  "evidence:52613976b0dfcbb42f3cda49"
+                ],
+                "html_path": "/home/runner/work/DialectRanger/DialectRanger/script/FeatureKnowledgeBase/.runtime/runs/oracle_344c29355ec1438e86a01e2ce320b8d3/scoped_discovery/corpus/pages/doc_ffbdee0a93d94c4e.html",
+                "identity_unit_id": "identity_unit:25b1155275ea81909905f535",
+                "owner_ids": [
+                  "owner:a45aae093e094331bd5febce"
+                ],
+                "page_id": "page:aaeeffd469215dc80644dda4",
+                "row_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(15)",
+                "source_cell": {
+                  "cell_index": 0,
+                  "cell_kind": "TD",
+                  "colspan": 1,
+                  "column_end": 0,
+                  "column_start": 0,
+                  "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(15) > td:nth-of-type(1)",
+                  "explicit_header_ids": [],
+                  "footnote_links": [],
+                  "fragments": [],
+                  "header_role": "DATA_CELL",
+                  "header_status": "OBSERVED_GRID",
+                  "headers": [
+                    {
+                      "colspan": 1,
+                      "column_end": 0,
+                      "column_start": 0,
+                      "dom_locator": "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)",
+                      "markers": [],
+                      "row_index": 0,
+                      "rowspan": 1,
+                      "text": "DataType"
+                    }
+                  ],
+                  "html_id": null,
+                  "links": [],
+                  "markers": [],
+                  "nested_table": false,
+                  "raw_colspan": null,
+                  "raw_rowspan": null,
+                  "row_index": 15,
+                  "rowspan": 1,
+                  "scope": null,
+                  "text": "NCLOB"
+                },
+                "source_hash": "7108041601eaedf488fcaa1540b43dee070915f85c81b1bd3b59a3b05a66f9c2",
+                "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html",
+                "table_locator": "html > body > article > table:nth-of-type(2)",
+                "value_cell": {
+                  "cell_index": 0,
+                  "cell_kind": "TD",
+                  "colspan": 1,
+                  "column_end": 0,
+                  "column_start": 0,
+                  "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(15) > td:nth-of-type(1)",
+                  "explicit_header_ids": [],
+                  "footnote_links": [],
+                  "fragments": [],
+                  "header_role": "DATA_CELL",
+                  "header_status": "OBSERVED_GRID",
+                  "headers": [
+                    {
+                      "colspan": 1,
+                      "column_end": 0,
+                      "column_start": 0,
+                      "dom_locator": "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)",
+                      "markers": [],
+                      "row_index": 0,
+                      "rowspan": 1,
+                      "text": "DataType"
+                    }
+                  ],
+                  "html_id": null,
+                  "links": [],
+                  "markers": [],
+                  "nested_table": false,
+                  "raw_colspan": null,
+                  "raw_rowspan": null,
+                  "row_index": 15,
+                  "rowspan": 1,
+                  "scope": null,
+                  "text": "NCLOB"
+                }
+              }
+            ],
+            "source_locations": [
+              {
+                "block_id": "block:6fb5342012447726d02740eb",
+                "cell_index": 0,
+                "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(15) > td:nth-of-type(1)",
+                "header_locators": [
+                  "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)"
+                ]
+              }
+            ],
+            "status": "VERIFIED",
+            "text": "NCLOB"
+          }
+        ],
+        "mappings": [],
+        "notes": [],
+        "uncertain_observations": []
+      },
+      "diagnostics": [],
+      "schema_version": "canonical-semantic-extensions/v1"
+    },
+    "semantic_status": "PARTIAL",
+    "semantics": {
+      "aliases": [],
+      "constraints": [],
+      "description": [
+        {
+          "additional_provenance": [],
+          "evidence": {
+            "block_id": "block:5d0cc72e262f167c01df590d",
+            "block_type": "TABLE_ROW",
+            "evidence_role": "DESCRIPTION",
+            "evidence_span": {
+              "end": 274,
+              "start": 0,
+              "text": "112 NCLOB A character large object containing Unicode characters. Both fixed-width and variable-width character sets are supported, both using the database national character set. Maximum size is (4 gigabytes - 1) * (database block size). Stores national character set data."
+            },
+            "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
+            "page_id": "page:b293eb921135eeb63868744c",
+            "section_heading": "Data Types / Oracle Built-in Data Types",
+            "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
+          },
+          "evidence_refs": [
+            "block:5d0cc72e262f167c01df590d"
+          ],
+          "field_evidence": [
+            {
+              "basis": "PROFILE_PHYSICAL_SLOT",
+              "block_id": "block:5d0cc72e262f167c01df590d",
+              "cell_index": 2,
+              "definition_unit_id": "definition_unit:93359aeb55d6d00237d98ad4",
+              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(21) > td:nth-of-type(3)",
+              "field": "description",
+              "fragment_id": "field_fragment:a05a2c86536341a1434b6fd3f05c98e7",
+              "identity_unit_id": "identity_unit:25b1155275ea81909905f535",
+              "owner_ids": [
+                "owner:9653531737bb67cd9f7a0329"
+              ],
+              "page_id": "page:b293eb921135eeb63868744c",
+              "profile_digest": "4d7dce047bd239f2e3495a73003c92a416c223f1bcefd1f818ac60cf4c60d949",
+              "proof_level": "VERIFIED",
+              "raw_text": "A character large object containing Unicode characters. Both fixed-width and variable-width character sets are supported, both using the database national character set. Maximum size is (4 gigabytes - 1) * (database block size). Stores national character set data.",
+              "schema_version": "FieldEvidence/v1",
+              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
+              "source_order": 98,
+              "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
+              "subject": "NCLOB"
+            }
+          ],
+          "fragment_refs": [
+            "field_fragment:a05a2c86536341a1434b6fd3f05c98e7"
+          ],
+          "source_locations": [
+            {
+              "block_id": "block:5d0cc72e262f167c01df590d",
+              "cell_index": 2,
+              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(21) > td:nth-of-type(3)",
+              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42"
+            }
+          ],
+          "value": "A character large object containing Unicode characters. Both fixed-width and variable-width character sets are supported, both using the database national character set. Maximum size is (4 gigabytes - 1) * (database block size). Stores national character set data."
+        }
+      ],
+      "examples": [],
+      "parameters": [],
+      "return_type": [],
+      "syntax": [
+        {
+          "additional_provenance": [],
+          "evidence": {
+            "block_id": "block:5d0cc72e262f167c01df590d",
+            "block_type": "TABLE_ROW",
+            "evidence_role": "FORMAL_SYNTAX",
+            "evidence_span": {
+              "end": 274,
+              "start": 0,
+              "text": "112 NCLOB A character large object containing Unicode characters. Both fixed-width and variable-width character sets are supported, both using the database national character set. Maximum size is (4 gigabytes - 1) * (database block size). Stores national character set data."
+            },
+            "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
+            "page_id": "page:b293eb921135eeb63868744c",
+            "section_heading": "Data Types / Oracle Built-in Data Types",
+            "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
+          },
+          "evidence_refs": [
+            "block:5d0cc72e262f167c01df590d"
+          ],
+          "field_evidence": [
+            {
+              "basis": "PROFILE_PHYSICAL_SLOT",
+              "block_id": "block:5d0cc72e262f167c01df590d",
+              "cell_index": 1,
+              "definition_unit_id": "definition_unit:93359aeb55d6d00237d98ad4",
+              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(21) > td:nth-of-type(2)",
+              "field": "formal_syntax",
+              "fragment_id": "field_fragment:34bf924b53a3f2248fe8863c05aa0374",
+              "identity_unit_id": "identity_unit:25b1155275ea81909905f535",
+              "owner_ids": [
+                "owner:9653531737bb67cd9f7a0329"
+              ],
+              "page_id": "page:b293eb921135eeb63868744c",
+              "profile_digest": "4d7dce047bd239f2e3495a73003c92a416c223f1bcefd1f818ac60cf4c60d949",
+              "proof_level": "VERIFIED",
+              "raw_text": "NCLOB",
+              "schema_version": "FieldEvidence/v1",
+              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
+              "source_order": 98,
+              "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
+              "subject": "NCLOB"
+            }
+          ],
+          "fragment_refs": [
+            "field_fragment:34bf924b53a3f2248fe8863c05aa0374"
+          ],
+          "source_locations": [
+            {
+              "block_id": "block:5d0cc72e262f167c01df590d",
+              "cell_index": 1,
+              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(21) > td:nth-of-type(2)",
+              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42"
+            }
+          ],
+          "value": "NCLOB"
+        }
+      ]
+    },
+    "structural": {
+      "aliases": [],
+      "attributes": {
+        "field_reviews": [],
+        "identity_unit_id": "identity_unit:25b1155275ea81909905f535",
+        "quarantined_fields": [],
+        "sense_id": "sense:4d712a4e1edaf9da9d9d81c8"
+      },
+      "canonical_name": "NCLOB",
+      "name": "NCLOB",
+      "primary_evidence": {
+        "block_id": "block:6fb5342012447726d02740eb",
+        "block_type": "TABLE_ROW",
+        "evidence_role": "IDENTITY",
+        "evidence_span": {
+          "end": 37,
+          "start": 0,
+          "text": "NCLOB X X X X – – – – - X – – X – – –"
+        },
+        "page_hash": "7108041601eaedf488fcaa1540b43dee070915f85c81b1bd3b59a3b05a66f9c2",
+        "page_id": "page:aaeeffd469215dc80644dda4",
+        "section_heading": "Data Type Comparison Rules / Data Conversion / Implicit Data Conversion",
+        "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html",
+        "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html"
+      },
+      "return_types": [],
+      "signatures": [
+        "NCLOB"
+      ],
+      "supporting_evidence": [
+        {
+          "block_id": "block:5d0cc72e262f167c01df590d",
+          "block_type": "TABLE_ROW",
+          "evidence_role": "SUPPORTING",
+          "evidence_span": {
+            "end": 274,
+            "start": 0,
+            "text": "112 NCLOB A character large object containing Unicode characters. Both fixed-width and variable-width character sets are supported, both using the database national character set. Maximum size is (4 gigabytes - 1) * (database block size). Stores national character set data."
+          },
+          "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
+          "page_id": "page:b293eb921135eeb63868744c",
+          "section_heading": "Data Types / Oracle Built-in Data Types",
+          "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
+          "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
+        }
+      ]
+    }
+  },
+  {
+    "canonical_identity": {
       "canonical_name": "STATS_MODE",
       "dbms": "oracle",
       "discriminator": "DEFAULT",
@@ -37504,343 +37504,6 @@
           "section_heading": "COLLATE Operator / COLLATE Operator: Example",
           "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/COLLATE-Operator.html",
           "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/COLLATE-Operator.html"
-        }
-      ]
-    }
-  },
-  {
-    "canonical_identity": {
-      "canonical_name": "NVARCHAR2",
-      "dbms": "oracle",
-      "discriminator": "DEFAULT",
-      "feature_type": "datatype",
-      "key": "oracle|datatype|nvarchar2|default"
-    },
-    "canonical_name": "NVARCHAR2",
-    "dbms": "oracle",
-    "doc_version": "current",
-    "feature_id": "canonical:d1a5eda52f6a1a67cd9507b4",
-    "feature_type": "datatype",
-    "field_validation_status": "PASS",
-    "name": "NVARCHAR2",
-    "promotion_eligibility": "promotion_ready",
-    "provenance": {
-      "admission_id": "admission:5a042ede00fb35910d85b4ed",
-      "evidence_ids": [
-        "evidence:0c8de2d53344bbaf0203c39c",
-        "evidence:d3c9dd163fc89a3fda3737c4"
-      ],
-      "identity_unit_id": "identity_unit:9ccf648f22f1e5d121f70742",
-      "producer_stage": "generic_canonical_projection",
-      "producer_version": "generic-unified-contract/v1",
-      "semantic_record_id": "semantic_record:f6b5fda442ddbe72c2a203b4"
-    },
-    "quality": {
-      "conflict_state": "clear",
-      "fields_missing": [
-        "official_examples",
-        "notes",
-        "parameters",
-        "return_type"
-      ],
-      "fields_populated": [
-        "description",
-        "formal_syntax"
-      ],
-      "ownership_ambiguity": false,
-      "semantic_evidence_resolved": true,
-      "structural_evidence_resolved": true
-    },
-    "schema_version": "canonical-feature-kb-projection/v1",
-    "semantic_execution_state": "PARTIAL",
-    "semantic_extensions": {
-      "datatype": {
-        "definition_names": [
-          {
-            "evidence_refs": [
-              "block:be70cf9f1d1fece32e0b9181"
-            ],
-            "provenance": [
-              {
-                "block_id": "block:be70cf9f1d1fece32e0b9181",
-                "document_id": "doc_ffbdee0a93d94c4e",
-                "evidence_ids": [
-                  "evidence:0c8de2d53344bbaf0203c39c"
-                ],
-                "html_path": "D:\\PyCharm 2025.1.2\\code\\FeatureCrawler\\.runtime\\runs\\oracle_de915f43456948998bb5320d6cf2f6b2\\scoped_discovery\\corpus\\pages\\doc_ffbdee0a93d94c4e.html",
-                "identity_unit_id": "identity_unit:9ccf648f22f1e5d121f70742",
-                "owner_ids": [
-                  "owner:50c3625491c2c331479d8520"
-                ],
-                "page_id": "page:aaeeffd469215dc80644dda4",
-                "row_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(4)",
-                "source_cell": {
-                  "cell_index": 0,
-                  "cell_kind": "TD",
-                  "colspan": 1,
-                  "column_end": 0,
-                  "column_start": 0,
-                  "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(4) > td:nth-of-type(1)",
-                  "explicit_header_ids": [],
-                  "footnote_links": [],
-                  "fragments": [],
-                  "header_role": "DATA_CELL",
-                  "header_status": "OBSERVED_GRID",
-                  "headers": [
-                    {
-                      "colspan": 1,
-                      "column_end": 0,
-                      "column_start": 0,
-                      "dom_locator": "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)",
-                      "markers": [],
-                      "row_index": 0,
-                      "rowspan": 1,
-                      "text": "DataType"
-                    }
-                  ],
-                  "html_id": null,
-                  "links": [],
-                  "markers": [],
-                  "nested_table": false,
-                  "raw_colspan": null,
-                  "raw_rowspan": null,
-                  "row_index": 4,
-                  "rowspan": 1,
-                  "scope": null,
-                  "text": "NVARCHAR2"
-                },
-                "source_hash": "7108041601eaedf488fcaa1540b43dee070915f85c81b1bd3b59a3b05a66f9c2",
-                "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html",
-                "table_locator": "html > body > article > table:nth-of-type(2)",
-                "value_cell": {
-                  "cell_index": 0,
-                  "cell_kind": "TD",
-                  "colspan": 1,
-                  "column_end": 0,
-                  "column_start": 0,
-                  "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(4) > td:nth-of-type(1)",
-                  "explicit_header_ids": [],
-                  "footnote_links": [],
-                  "fragments": [],
-                  "header_role": "DATA_CELL",
-                  "header_status": "OBSERVED_GRID",
-                  "headers": [
-                    {
-                      "colspan": 1,
-                      "column_end": 0,
-                      "column_start": 0,
-                      "dom_locator": "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)",
-                      "markers": [],
-                      "row_index": 0,
-                      "rowspan": 1,
-                      "text": "DataType"
-                    }
-                  ],
-                  "html_id": null,
-                  "links": [],
-                  "markers": [],
-                  "nested_table": false,
-                  "raw_colspan": null,
-                  "raw_rowspan": null,
-                  "row_index": 4,
-                  "rowspan": 1,
-                  "scope": null,
-                  "text": "NVARCHAR2"
-                }
-              }
-            ],
-            "source_locations": [
-              {
-                "block_id": "block:be70cf9f1d1fece32e0b9181",
-                "cell_index": 0,
-                "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(4) > td:nth-of-type(1)",
-                "header_locators": [
-                  "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)"
-                ]
-              }
-            ],
-            "status": "VERIFIED",
-            "text": "NVARCHAR2"
-          }
-        ],
-        "mappings": [],
-        "notes": [],
-        "uncertain_observations": []
-      },
-      "diagnostics": [],
-      "schema_version": "canonical-semantic-extensions/v1"
-    },
-    "semantic_status": "PARTIAL",
-    "semantics": {
-      "aliases": [],
-      "constraints": [],
-      "description": [
-        {
-          "additional_provenance": [],
-          "evidence": {
-            "block_id": "block:d1862215928971b3b00649b6",
-            "block_type": "TABLE_ROW",
-            "evidence_role": "DESCRIPTION",
-            "evidence_span": {
-              "end": 524,
-              "start": 0,
-              "text": "1 NVARCHAR2 ( size ) Variable-length Unicode character string having maximum length size characters. You must specify size for NVARCHAR2 . The number of bytes can be up to two times size for AL16UTF16 encoding and three times size for UTF8 encoding. Maximum size is determined by the national character set definition, with an upper limit of: 32767 bytes if MAX_STRING_SIZE = EXTENDED 4000 bytes if MAX_STRING_SIZE = STANDARD Refer to Extended Data Types for more information on the MAX_STRING_SIZE initialization parameter."
-            },
-            "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
-            "page_id": "page:b293eb921135eeb63868744c",
-            "section_heading": "Data Types / Oracle Built-in Data Types",
-            "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
-            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
-          },
-          "evidence_refs": [
-            "block:d1862215928971b3b00649b6"
-          ],
-          "field_evidence": [
-            {
-              "basis": "PROFILE_PHYSICAL_SLOT",
-              "block_id": "block:d1862215928971b3b00649b6",
-              "cell_index": 2,
-              "definition_unit_id": "definition_unit:30a34d0a7701cb76ddb75e94",
-              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(2) > td:nth-of-type(3)",
-              "field": "description",
-              "fragment_id": "field_fragment:626ff5ed492d065af5ed1eeff3aaaf44",
-              "identity_unit_id": "identity_unit:9ccf648f22f1e5d121f70742",
-              "owner_ids": [
-                "owner:d67c8c1a6ce3c3c52bfcd892"
-              ],
-              "page_id": "page:b293eb921135eeb63868744c",
-              "profile_digest": "4d7dce047bd239f2e3495a73003c92a416c223f1bcefd1f818ac60cf4c60d949",
-              "proof_level": "VERIFIED",
-              "raw_text": "Variable-length Unicode character string having maximum length size characters. You must specify size for NVARCHAR2 . The number of bytes can be up to two times size for AL16UTF16 encoding and three times size for UTF8 encoding. Maximum size is determined by the national character set definition, with an upper limit of: 32767 bytes if MAX_STRING_SIZE = EXTENDED 4000 bytes if MAX_STRING_SIZE = STANDARD Refer to Extended Data Types for more information on the MAX_STRING_SIZE initialization parameter.",
-              "schema_version": "FieldEvidence/v1",
-              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
-              "source_order": 61,
-              "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
-              "subject": "NVARCHAR2"
-            }
-          ],
-          "fragment_refs": [
-            "field_fragment:626ff5ed492d065af5ed1eeff3aaaf44"
-          ],
-          "source_locations": [
-            {
-              "block_id": "block:d1862215928971b3b00649b6",
-              "cell_index": 2,
-              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(2) > td:nth-of-type(3)",
-              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42"
-            }
-          ],
-          "value": "Variable-length Unicode character string having maximum length size characters. You must specify size for NVARCHAR2 . The number of bytes can be up to two times size for AL16UTF16 encoding and three times size for UTF8 encoding. Maximum size is determined by the national character set definition, with an upper limit of: 32767 bytes if MAX_STRING_SIZE = EXTENDED 4000 bytes if MAX_STRING_SIZE = STANDARD Refer to Extended Data Types for more information on the MAX_STRING_SIZE initialization parameter."
-        }
-      ],
-      "examples": [],
-      "parameters": [],
-      "return_type": [],
-      "syntax": [
-        {
-          "additional_provenance": [],
-          "evidence": {
-            "block_id": "block:d1862215928971b3b00649b6",
-            "block_type": "TABLE_ROW",
-            "evidence_role": "FORMAL_SYNTAX",
-            "evidence_span": {
-              "end": 524,
-              "start": 0,
-              "text": "1 NVARCHAR2 ( size ) Variable-length Unicode character string having maximum length size characters. You must specify size for NVARCHAR2 . The number of bytes can be up to two times size for AL16UTF16 encoding and three times size for UTF8 encoding. Maximum size is determined by the national character set definition, with an upper limit of: 32767 bytes if MAX_STRING_SIZE = EXTENDED 4000 bytes if MAX_STRING_SIZE = STANDARD Refer to Extended Data Types for more information on the MAX_STRING_SIZE initialization parameter."
-            },
-            "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
-            "page_id": "page:b293eb921135eeb63868744c",
-            "section_heading": "Data Types / Oracle Built-in Data Types",
-            "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
-            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
-          },
-          "evidence_refs": [
-            "block:d1862215928971b3b00649b6"
-          ],
-          "field_evidence": [
-            {
-              "basis": "PROFILE_PHYSICAL_SLOT",
-              "block_id": "block:d1862215928971b3b00649b6",
-              "cell_index": 1,
-              "definition_unit_id": "definition_unit:30a34d0a7701cb76ddb75e94",
-              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(2) > td:nth-of-type(2)",
-              "field": "formal_syntax",
-              "fragment_id": "field_fragment:edaab53f3533b33fc6d2c5537921013d",
-              "identity_unit_id": "identity_unit:9ccf648f22f1e5d121f70742",
-              "owner_ids": [
-                "owner:d67c8c1a6ce3c3c52bfcd892"
-              ],
-              "page_id": "page:b293eb921135eeb63868744c",
-              "profile_digest": "4d7dce047bd239f2e3495a73003c92a416c223f1bcefd1f818ac60cf4c60d949",
-              "proof_level": "VERIFIED",
-              "raw_text": "NVARCHAR2 ( size )",
-              "schema_version": "FieldEvidence/v1",
-              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
-              "source_order": 61,
-              "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
-              "subject": "NVARCHAR2"
-            }
-          ],
-          "fragment_refs": [
-            "field_fragment:edaab53f3533b33fc6d2c5537921013d"
-          ],
-          "source_locations": [
-            {
-              "block_id": "block:d1862215928971b3b00649b6",
-              "cell_index": 1,
-              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(2) > td:nth-of-type(2)",
-              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42"
-            }
-          ],
-          "value": "NVARCHAR2 ( size )"
-        }
-      ]
-    },
-    "structural": {
-      "aliases": [],
-      "attributes": {
-        "field_reviews": [],
-        "identity_unit_id": "identity_unit:9ccf648f22f1e5d121f70742",
-        "quarantined_fields": [],
-        "sense_id": "sense:f2da29a050287a9f95efbfda"
-      },
-      "canonical_name": "NVARCHAR2",
-      "name": "NVARCHAR2",
-      "primary_evidence": {
-        "block_id": "block:be70cf9f1d1fece32e0b9181",
-        "block_type": "TABLE_ROW",
-        "evidence_role": "IDENTITY",
-        "evidence_span": {
-          "end": 41,
-          "start": 0,
-          "text": "NVARCHAR2 X X X – X X X X X X X X X – X –"
-        },
-        "page_hash": "7108041601eaedf488fcaa1540b43dee070915f85c81b1bd3b59a3b05a66f9c2",
-        "page_id": "page:aaeeffd469215dc80644dda4",
-        "section_heading": "Data Type Comparison Rules / Data Conversion / Implicit Data Conversion",
-        "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html",
-        "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html"
-      },
-      "return_types": [],
-      "signatures": [
-        "NVARCHAR2",
-        "NVARCHAR2( size )"
-      ],
-      "supporting_evidence": [
-        {
-          "block_id": "block:d1862215928971b3b00649b6",
-          "block_type": "TABLE_ROW",
-          "evidence_role": "SUPPORTING",
-          "evidence_span": {
-            "end": 524,
-            "start": 0,
-            "text": "1 NVARCHAR2 ( size ) Variable-length Unicode character string having maximum length size characters. You must specify size for NVARCHAR2 . The number of bytes can be up to two times size for AL16UTF16 encoding and three times size for UTF8 encoding. Maximum size is determined by the national character set definition, with an upper limit of: 32767 bytes if MAX_STRING_SIZE = EXTENDED 4000 bytes if MAX_STRING_SIZE = STANDARD Refer to Extended Data Types for more information on the MAX_STRING_SIZE initialization parameter."
-          },
-          "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
-          "page_id": "page:b293eb921135eeb63868744c",
-          "section_heading": "Data Types / Oracle Built-in Data Types",
-          "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
-          "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
         }
       ]
     }
@@ -64163,6 +63826,343 @@
   },
   {
     "canonical_identity": {
+      "canonical_name": "NVARCHAR2",
+      "dbms": "oracle",
+      "discriminator": "DEFAULT",
+      "feature_type": "datatype",
+      "key": "oracle|datatype|nvarchar2|default"
+    },
+    "canonical_name": "NVARCHAR2",
+    "dbms": "oracle",
+    "doc_version": "current",
+    "feature_id": "canonical:d1a5eda52f6a1a67cd9507b4",
+    "feature_type": "datatype",
+    "field_validation_status": "PASS",
+    "name": "NVARCHAR2",
+    "promotion_eligibility": "promotion_ready",
+    "provenance": {
+      "admission_id": "admission:5a042ede00fb35910d85b4ed",
+      "evidence_ids": [
+        "evidence:0c8de2d53344bbaf0203c39c",
+        "evidence:d3c9dd163fc89a3fda3737c4"
+      ],
+      "identity_unit_id": "identity_unit:9ccf648f22f1e5d121f70742",
+      "producer_stage": "generic_canonical_projection",
+      "producer_version": "generic-unified-contract/v1",
+      "semantic_record_id": "semantic_record:f6b5fda442ddbe72c2a203b4"
+    },
+    "quality": {
+      "conflict_state": "clear",
+      "fields_missing": [
+        "official_examples",
+        "notes",
+        "parameters",
+        "return_type"
+      ],
+      "fields_populated": [
+        "description",
+        "formal_syntax"
+      ],
+      "ownership_ambiguity": false,
+      "semantic_evidence_resolved": true,
+      "structural_evidence_resolved": true
+    },
+    "schema_version": "canonical-feature-kb-projection/v1",
+    "semantic_execution_state": "PARTIAL",
+    "semantic_extensions": {
+      "datatype": {
+        "definition_names": [
+          {
+            "evidence_refs": [
+              "block:be70cf9f1d1fece32e0b9181"
+            ],
+            "provenance": [
+              {
+                "block_id": "block:be70cf9f1d1fece32e0b9181",
+                "document_id": "doc_ffbdee0a93d94c4e",
+                "evidence_ids": [
+                  "evidence:0c8de2d53344bbaf0203c39c"
+                ],
+                "html_path": "/home/runner/work/DialectRanger/DialectRanger/script/FeatureKnowledgeBase/.runtime/runs/oracle_344c29355ec1438e86a01e2ce320b8d3/scoped_discovery/corpus/pages/doc_ffbdee0a93d94c4e.html",
+                "identity_unit_id": "identity_unit:9ccf648f22f1e5d121f70742",
+                "owner_ids": [
+                  "owner:50c3625491c2c331479d8520"
+                ],
+                "page_id": "page:aaeeffd469215dc80644dda4",
+                "row_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(4)",
+                "source_cell": {
+                  "cell_index": 0,
+                  "cell_kind": "TD",
+                  "colspan": 1,
+                  "column_end": 0,
+                  "column_start": 0,
+                  "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(4) > td:nth-of-type(1)",
+                  "explicit_header_ids": [],
+                  "footnote_links": [],
+                  "fragments": [],
+                  "header_role": "DATA_CELL",
+                  "header_status": "OBSERVED_GRID",
+                  "headers": [
+                    {
+                      "colspan": 1,
+                      "column_end": 0,
+                      "column_start": 0,
+                      "dom_locator": "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)",
+                      "markers": [],
+                      "row_index": 0,
+                      "rowspan": 1,
+                      "text": "DataType"
+                    }
+                  ],
+                  "html_id": null,
+                  "links": [],
+                  "markers": [],
+                  "nested_table": false,
+                  "raw_colspan": null,
+                  "raw_rowspan": null,
+                  "row_index": 4,
+                  "rowspan": 1,
+                  "scope": null,
+                  "text": "NVARCHAR2"
+                },
+                "source_hash": "7108041601eaedf488fcaa1540b43dee070915f85c81b1bd3b59a3b05a66f9c2",
+                "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html",
+                "table_locator": "html > body > article > table:nth-of-type(2)",
+                "value_cell": {
+                  "cell_index": 0,
+                  "cell_kind": "TD",
+                  "colspan": 1,
+                  "column_end": 0,
+                  "column_start": 0,
+                  "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(4) > td:nth-of-type(1)",
+                  "explicit_header_ids": [],
+                  "footnote_links": [],
+                  "fragments": [],
+                  "header_role": "DATA_CELL",
+                  "header_status": "OBSERVED_GRID",
+                  "headers": [
+                    {
+                      "colspan": 1,
+                      "column_end": 0,
+                      "column_start": 0,
+                      "dom_locator": "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)",
+                      "markers": [],
+                      "row_index": 0,
+                      "rowspan": 1,
+                      "text": "DataType"
+                    }
+                  ],
+                  "html_id": null,
+                  "links": [],
+                  "markers": [],
+                  "nested_table": false,
+                  "raw_colspan": null,
+                  "raw_rowspan": null,
+                  "row_index": 4,
+                  "rowspan": 1,
+                  "scope": null,
+                  "text": "NVARCHAR2"
+                }
+              }
+            ],
+            "source_locations": [
+              {
+                "block_id": "block:be70cf9f1d1fece32e0b9181",
+                "cell_index": 0,
+                "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(4) > td:nth-of-type(1)",
+                "header_locators": [
+                  "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)"
+                ]
+              }
+            ],
+            "status": "VERIFIED",
+            "text": "NVARCHAR2"
+          }
+        ],
+        "mappings": [],
+        "notes": [],
+        "uncertain_observations": []
+      },
+      "diagnostics": [],
+      "schema_version": "canonical-semantic-extensions/v1"
+    },
+    "semantic_status": "PARTIAL",
+    "semantics": {
+      "aliases": [],
+      "constraints": [],
+      "description": [
+        {
+          "additional_provenance": [],
+          "evidence": {
+            "block_id": "block:d1862215928971b3b00649b6",
+            "block_type": "TABLE_ROW",
+            "evidence_role": "DESCRIPTION",
+            "evidence_span": {
+              "end": 524,
+              "start": 0,
+              "text": "1 NVARCHAR2 ( size ) Variable-length Unicode character string having maximum length size characters. You must specify size for NVARCHAR2 . The number of bytes can be up to two times size for AL16UTF16 encoding and three times size for UTF8 encoding. Maximum size is determined by the national character set definition, with an upper limit of: 32767 bytes if MAX_STRING_SIZE = EXTENDED 4000 bytes if MAX_STRING_SIZE = STANDARD Refer to Extended Data Types for more information on the MAX_STRING_SIZE initialization parameter."
+            },
+            "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
+            "page_id": "page:b293eb921135eeb63868744c",
+            "section_heading": "Data Types / Oracle Built-in Data Types",
+            "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
+          },
+          "evidence_refs": [
+            "block:d1862215928971b3b00649b6"
+          ],
+          "field_evidence": [
+            {
+              "basis": "PROFILE_PHYSICAL_SLOT",
+              "block_id": "block:d1862215928971b3b00649b6",
+              "cell_index": 2,
+              "definition_unit_id": "definition_unit:30a34d0a7701cb76ddb75e94",
+              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(2) > td:nth-of-type(3)",
+              "field": "description",
+              "fragment_id": "field_fragment:626ff5ed492d065af5ed1eeff3aaaf44",
+              "identity_unit_id": "identity_unit:9ccf648f22f1e5d121f70742",
+              "owner_ids": [
+                "owner:d67c8c1a6ce3c3c52bfcd892"
+              ],
+              "page_id": "page:b293eb921135eeb63868744c",
+              "profile_digest": "4d7dce047bd239f2e3495a73003c92a416c223f1bcefd1f818ac60cf4c60d949",
+              "proof_level": "VERIFIED",
+              "raw_text": "Variable-length Unicode character string having maximum length size characters. You must specify size for NVARCHAR2 . The number of bytes can be up to two times size for AL16UTF16 encoding and three times size for UTF8 encoding. Maximum size is determined by the national character set definition, with an upper limit of: 32767 bytes if MAX_STRING_SIZE = EXTENDED 4000 bytes if MAX_STRING_SIZE = STANDARD Refer to Extended Data Types for more information on the MAX_STRING_SIZE initialization parameter.",
+              "schema_version": "FieldEvidence/v1",
+              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
+              "source_order": 61,
+              "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
+              "subject": "NVARCHAR2"
+            }
+          ],
+          "fragment_refs": [
+            "field_fragment:626ff5ed492d065af5ed1eeff3aaaf44"
+          ],
+          "source_locations": [
+            {
+              "block_id": "block:d1862215928971b3b00649b6",
+              "cell_index": 2,
+              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(2) > td:nth-of-type(3)",
+              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42"
+            }
+          ],
+          "value": "Variable-length Unicode character string having maximum length size characters. You must specify size for NVARCHAR2 . The number of bytes can be up to two times size for AL16UTF16 encoding and three times size for UTF8 encoding. Maximum size is determined by the national character set definition, with an upper limit of: 32767 bytes if MAX_STRING_SIZE = EXTENDED 4000 bytes if MAX_STRING_SIZE = STANDARD Refer to Extended Data Types for more information on the MAX_STRING_SIZE initialization parameter."
+        }
+      ],
+      "examples": [],
+      "parameters": [],
+      "return_type": [],
+      "syntax": [
+        {
+          "additional_provenance": [],
+          "evidence": {
+            "block_id": "block:d1862215928971b3b00649b6",
+            "block_type": "TABLE_ROW",
+            "evidence_role": "FORMAL_SYNTAX",
+            "evidence_span": {
+              "end": 524,
+              "start": 0,
+              "text": "1 NVARCHAR2 ( size ) Variable-length Unicode character string having maximum length size characters. You must specify size for NVARCHAR2 . The number of bytes can be up to two times size for AL16UTF16 encoding and three times size for UTF8 encoding. Maximum size is determined by the national character set definition, with an upper limit of: 32767 bytes if MAX_STRING_SIZE = EXTENDED 4000 bytes if MAX_STRING_SIZE = STANDARD Refer to Extended Data Types for more information on the MAX_STRING_SIZE initialization parameter."
+            },
+            "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
+            "page_id": "page:b293eb921135eeb63868744c",
+            "section_heading": "Data Types / Oracle Built-in Data Types",
+            "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
+          },
+          "evidence_refs": [
+            "block:d1862215928971b3b00649b6"
+          ],
+          "field_evidence": [
+            {
+              "basis": "PROFILE_PHYSICAL_SLOT",
+              "block_id": "block:d1862215928971b3b00649b6",
+              "cell_index": 1,
+              "definition_unit_id": "definition_unit:30a34d0a7701cb76ddb75e94",
+              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(2) > td:nth-of-type(2)",
+              "field": "formal_syntax",
+              "fragment_id": "field_fragment:edaab53f3533b33fc6d2c5537921013d",
+              "identity_unit_id": "identity_unit:9ccf648f22f1e5d121f70742",
+              "owner_ids": [
+                "owner:d67c8c1a6ce3c3c52bfcd892"
+              ],
+              "page_id": "page:b293eb921135eeb63868744c",
+              "profile_digest": "4d7dce047bd239f2e3495a73003c92a416c223f1bcefd1f818ac60cf4c60d949",
+              "proof_level": "VERIFIED",
+              "raw_text": "NVARCHAR2 ( size )",
+              "schema_version": "FieldEvidence/v1",
+              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
+              "source_order": 61,
+              "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
+              "subject": "NVARCHAR2"
+            }
+          ],
+          "fragment_refs": [
+            "field_fragment:edaab53f3533b33fc6d2c5537921013d"
+          ],
+          "source_locations": [
+            {
+              "block_id": "block:d1862215928971b3b00649b6",
+              "cell_index": 1,
+              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(2) > td:nth-of-type(2)",
+              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42"
+            }
+          ],
+          "value": "NVARCHAR2 ( size )"
+        }
+      ]
+    },
+    "structural": {
+      "aliases": [],
+      "attributes": {
+        "field_reviews": [],
+        "identity_unit_id": "identity_unit:9ccf648f22f1e5d121f70742",
+        "quarantined_fields": [],
+        "sense_id": "sense:f2da29a050287a9f95efbfda"
+      },
+      "canonical_name": "NVARCHAR2",
+      "name": "NVARCHAR2",
+      "primary_evidence": {
+        "block_id": "block:be70cf9f1d1fece32e0b9181",
+        "block_type": "TABLE_ROW",
+        "evidence_role": "IDENTITY",
+        "evidence_span": {
+          "end": 41,
+          "start": 0,
+          "text": "NVARCHAR2 X X X – X X X X X X X X X – X –"
+        },
+        "page_hash": "7108041601eaedf488fcaa1540b43dee070915f85c81b1bd3b59a3b05a66f9c2",
+        "page_id": "page:aaeeffd469215dc80644dda4",
+        "section_heading": "Data Type Comparison Rules / Data Conversion / Implicit Data Conversion",
+        "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html",
+        "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html"
+      },
+      "return_types": [],
+      "signatures": [
+        "NVARCHAR2",
+        "NVARCHAR2( size )"
+      ],
+      "supporting_evidence": [
+        {
+          "block_id": "block:d1862215928971b3b00649b6",
+          "block_type": "TABLE_ROW",
+          "evidence_role": "SUPPORTING",
+          "evidence_span": {
+            "end": 524,
+            "start": 0,
+            "text": "1 NVARCHAR2 ( size ) Variable-length Unicode character string having maximum length size characters. You must specify size for NVARCHAR2 . The number of bytes can be up to two times size for AL16UTF16 encoding and three times size for UTF8 encoding. Maximum size is determined by the national character set definition, with an upper limit of: 32767 bytes if MAX_STRING_SIZE = EXTENDED 4000 bytes if MAX_STRING_SIZE = STANDARD Refer to Extended Data Types for more information on the MAX_STRING_SIZE initialization parameter."
+          },
+          "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
+          "page_id": "page:b293eb921135eeb63868744c",
+          "section_heading": "Data Types / Oracle Built-in Data Types",
+          "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
+          "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
+        }
+      ]
+    }
+  },
+  {
+    "canonical_identity": {
       "canonical_name": "XMLPATCH",
       "dbms": "oracle",
       "discriminator": "DEFAULT",
@@ -64940,7 +64940,7 @@
                 "evidence_ids": [
                   "evidence:9c641056342f2a08c34fa253"
                 ],
-                "html_path": "D:\\PyCharm 2025.1.2\\code\\FeatureCrawler\\.runtime\\runs\\oracle_de915f43456948998bb5320d6cf2f6b2\\scoped_discovery\\corpus\\pages\\doc_ffbdee0a93d94c4e.html",
+                "html_path": "/home/runner/work/DialectRanger/DialectRanger/script/FeatureKnowledgeBase/.runtime/runs/oracle_344c29355ec1438e86a01e2ce320b8d3/scoped_discovery/corpus/pages/doc_ffbdee0a93d94c4e.html",
                 "identity_unit_id": "identity_unit:4da8ebbbe8a85c37e15f8212",
                 "owner_ids": [
                   "owner:c0f3343c6e9ec5a5e794de5b"
@@ -75911,7 +75911,7 @@
                 "evidence_ids": [
                   "evidence:ae6dfdf60c1ff30aa9490266"
                 ],
-                "html_path": "D:\\PyCharm 2025.1.2\\code\\FeatureCrawler\\.runtime\\runs\\oracle_de915f43456948998bb5320d6cf2f6b2\\scoped_discovery\\corpus\\pages\\doc_ffbdee0a93d94c4e.html",
+                "html_path": "/home/runner/work/DialectRanger/DialectRanger/script/FeatureKnowledgeBase/.runtime/runs/oracle_344c29355ec1438e86a01e2ce320b8d3/scoped_discovery/corpus/pages/doc_ffbdee0a93d94c4e.html",
                 "identity_unit_id": "identity_unit:5772326df0c7e339031bba55",
                 "owner_ids": [
                   "owner:3e9558cff4c1883380915f24"
@@ -78199,7 +78199,7 @@
                 "evidence_ids": [
                   "evidence:615d26f4f22b1e2cc3acb0d2"
                 ],
-                "html_path": "D:\\PyCharm 2025.1.2\\code\\FeatureCrawler\\.runtime\\runs\\oracle_de915f43456948998bb5320d6cf2f6b2\\scoped_discovery\\corpus\\pages\\doc_ffbdee0a93d94c4e.html",
+                "html_path": "/home/runner/work/DialectRanger/DialectRanger/script/FeatureKnowledgeBase/.runtime/runs/oracle_344c29355ec1438e86a01e2ce320b8d3/scoped_discovery/corpus/pages/doc_ffbdee0a93d94c4e.html",
                 "identity_unit_id": "identity_unit:595d26a0aadc1a52379e6d38",
                 "owner_ids": [
                   "owner:4227496883bdb09988aff018"
@@ -97290,7 +97290,7 @@
                 "evidence_ids": [
                   "evidence:2f5018559819c54a0fad53b2"
                 ],
-                "html_path": "D:\\PyCharm 2025.1.2\\code\\FeatureCrawler\\.runtime\\runs\\oracle_de915f43456948998bb5320d6cf2f6b2\\scoped_discovery\\corpus\\pages\\doc_ffbdee0a93d94c4e.html",
+                "html_path": "/home/runner/work/DialectRanger/DialectRanger/script/FeatureKnowledgeBase/.runtime/runs/oracle_344c29355ec1438e86a01e2ce320b8d3/scoped_discovery/corpus/pages/doc_ffbdee0a93d94c4e.html",
                 "identity_unit_id": "identity_unit:6ac3a36611df671303a7b615",
                 "owner_ids": [
                   "owner:d9ee0e729324e59aa5b025f6"
@@ -107988,342 +107988,6 @@
           "section_heading": "TREAT / Examples",
           "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TREAT.html",
           "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/TREAT.html"
-        }
-      ]
-    }
-  },
-  {
-    "canonical_identity": {
-      "canonical_name": "CLOB",
-      "dbms": "oracle",
-      "discriminator": "DEFAULT",
-      "feature_type": "datatype",
-      "key": "oracle|datatype|clob|default"
-    },
-    "canonical_name": "CLOB",
-    "dbms": "oracle",
-    "doc_version": "current",
-    "feature_id": "canonical:2140ab10766fb6d059177e14",
-    "feature_type": "datatype",
-    "field_validation_status": "PASS",
-    "name": "CLOB",
-    "promotion_eligibility": "promotion_ready",
-    "provenance": {
-      "admission_id": "admission:42cc37515b8a6e4dedf095bc",
-      "evidence_ids": [
-        "evidence:6db16ac48eb5ced59aad0cb6",
-        "evidence:9a71b12633a0b11396dbe981"
-      ],
-      "identity_unit_id": "identity_unit:f95b6c95ef5349f8aa661088",
-      "producer_stage": "generic_canonical_projection",
-      "producer_version": "generic-unified-contract/v1",
-      "semantic_record_id": "semantic_record:bf659b4427252431d74547e6"
-    },
-    "quality": {
-      "conflict_state": "clear",
-      "fields_missing": [
-        "official_examples",
-        "notes",
-        "parameters",
-        "return_type"
-      ],
-      "fields_populated": [
-        "description",
-        "formal_syntax"
-      ],
-      "ownership_ambiguity": false,
-      "semantic_evidence_resolved": true,
-      "structural_evidence_resolved": true
-    },
-    "schema_version": "canonical-feature-kb-projection/v1",
-    "semantic_execution_state": "PARTIAL",
-    "semantic_extensions": {
-      "datatype": {
-        "definition_names": [
-          {
-            "evidence_refs": [
-              "block:5eb9c3f695a86abac5a5b5ec"
-            ],
-            "provenance": [
-              {
-                "block_id": "block:5eb9c3f695a86abac5a5b5ec",
-                "document_id": "doc_ffbdee0a93d94c4e",
-                "evidence_ids": [
-                  "evidence:6db16ac48eb5ced59aad0cb6"
-                ],
-                "html_path": "D:\\PyCharm 2025.1.2\\code\\FeatureCrawler\\.runtime\\runs\\oracle_de915f43456948998bb5320d6cf2f6b2\\scoped_discovery\\corpus\\pages\\doc_ffbdee0a93d94c4e.html",
-                "identity_unit_id": "identity_unit:f95b6c95ef5349f8aa661088",
-                "owner_ids": [
-                  "owner:2033446ebb121fc4225efe64"
-                ],
-                "page_id": "page:aaeeffd469215dc80644dda4",
-                "row_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(13)",
-                "source_cell": {
-                  "cell_index": 0,
-                  "cell_kind": "TD",
-                  "colspan": 1,
-                  "column_end": 0,
-                  "column_start": 0,
-                  "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(13) > td:nth-of-type(1)",
-                  "explicit_header_ids": [],
-                  "footnote_links": [],
-                  "fragments": [],
-                  "header_role": "DATA_CELL",
-                  "header_status": "OBSERVED_GRID",
-                  "headers": [
-                    {
-                      "colspan": 1,
-                      "column_end": 0,
-                      "column_start": 0,
-                      "dom_locator": "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)",
-                      "markers": [],
-                      "row_index": 0,
-                      "rowspan": 1,
-                      "text": "DataType"
-                    }
-                  ],
-                  "html_id": null,
-                  "links": [],
-                  "markers": [],
-                  "nested_table": false,
-                  "raw_colspan": null,
-                  "raw_rowspan": null,
-                  "row_index": 13,
-                  "rowspan": 1,
-                  "scope": null,
-                  "text": "CLOB"
-                },
-                "source_hash": "7108041601eaedf488fcaa1540b43dee070915f85c81b1bd3b59a3b05a66f9c2",
-                "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html",
-                "table_locator": "html > body > article > table:nth-of-type(2)",
-                "value_cell": {
-                  "cell_index": 0,
-                  "cell_kind": "TD",
-                  "colspan": 1,
-                  "column_end": 0,
-                  "column_start": 0,
-                  "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(13) > td:nth-of-type(1)",
-                  "explicit_header_ids": [],
-                  "footnote_links": [],
-                  "fragments": [],
-                  "header_role": "DATA_CELL",
-                  "header_status": "OBSERVED_GRID",
-                  "headers": [
-                    {
-                      "colspan": 1,
-                      "column_end": 0,
-                      "column_start": 0,
-                      "dom_locator": "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)",
-                      "markers": [],
-                      "row_index": 0,
-                      "rowspan": 1,
-                      "text": "DataType"
-                    }
-                  ],
-                  "html_id": null,
-                  "links": [],
-                  "markers": [],
-                  "nested_table": false,
-                  "raw_colspan": null,
-                  "raw_rowspan": null,
-                  "row_index": 13,
-                  "rowspan": 1,
-                  "scope": null,
-                  "text": "CLOB"
-                }
-              }
-            ],
-            "source_locations": [
-              {
-                "block_id": "block:5eb9c3f695a86abac5a5b5ec",
-                "cell_index": 0,
-                "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(13) > td:nth-of-type(1)",
-                "header_locators": [
-                  "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)"
-                ]
-              }
-            ],
-            "status": "VERIFIED",
-            "text": "CLOB"
-          }
-        ],
-        "mappings": [],
-        "notes": [],
-        "uncertain_observations": []
-      },
-      "diagnostics": [],
-      "schema_version": "canonical-semantic-extensions/v1"
-    },
-    "semantic_status": "PARTIAL",
-    "semantics": {
-      "aliases": [],
-      "constraints": [],
-      "description": [
-        {
-          "additional_provenance": [],
-          "evidence": {
-            "block_id": "block:97e42c10f28442e4ee0eeb48",
-            "block_type": "TABLE_ROW",
-            "evidence_role": "DESCRIPTION",
-            "evidence_span": {
-              "end": 245,
-              "start": 0,
-              "text": "112 CLOB A character large object containing single-byte or multibyte characters. Both fixed-width and variable-width character sets are supported, both using the database character set. Maximum size is (4 gigabytes - 1) * (database block size)."
-            },
-            "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
-            "page_id": "page:b293eb921135eeb63868744c",
-            "section_heading": "Data Types / Oracle Built-in Data Types",
-            "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
-            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
-          },
-          "evidence_refs": [
-            "block:97e42c10f28442e4ee0eeb48"
-          ],
-          "field_evidence": [
-            {
-              "basis": "PROFILE_PHYSICAL_SLOT",
-              "block_id": "block:97e42c10f28442e4ee0eeb48",
-              "cell_index": 2,
-              "definition_unit_id": "definition_unit:b29a3f188ddd418d970e01b7",
-              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(20) > td:nth-of-type(3)",
-              "field": "description",
-              "fragment_id": "field_fragment:8bb654e87402f4e7073dbdfbb954a3b3",
-              "identity_unit_id": "identity_unit:f95b6c95ef5349f8aa661088",
-              "owner_ids": [
-                "owner:70f4b8f1297c04b29d4dff7c"
-              ],
-              "page_id": "page:b293eb921135eeb63868744c",
-              "profile_digest": "4d7dce047bd239f2e3495a73003c92a416c223f1bcefd1f818ac60cf4c60d949",
-              "proof_level": "VERIFIED",
-              "raw_text": "A character large object containing single-byte or multibyte characters. Both fixed-width and variable-width character sets are supported, both using the database character set. Maximum size is (4 gigabytes - 1) * (database block size).",
-              "schema_version": "FieldEvidence/v1",
-              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
-              "source_order": 97,
-              "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
-              "subject": "CLOB"
-            }
-          ],
-          "fragment_refs": [
-            "field_fragment:8bb654e87402f4e7073dbdfbb954a3b3"
-          ],
-          "source_locations": [
-            {
-              "block_id": "block:97e42c10f28442e4ee0eeb48",
-              "cell_index": 2,
-              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(20) > td:nth-of-type(3)",
-              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42"
-            }
-          ],
-          "value": "A character large object containing single-byte or multibyte characters. Both fixed-width and variable-width character sets are supported, both using the database character set. Maximum size is (4 gigabytes - 1) * (database block size)."
-        }
-      ],
-      "examples": [],
-      "parameters": [],
-      "return_type": [],
-      "syntax": [
-        {
-          "additional_provenance": [],
-          "evidence": {
-            "block_id": "block:97e42c10f28442e4ee0eeb48",
-            "block_type": "TABLE_ROW",
-            "evidence_role": "FORMAL_SYNTAX",
-            "evidence_span": {
-              "end": 245,
-              "start": 0,
-              "text": "112 CLOB A character large object containing single-byte or multibyte characters. Both fixed-width and variable-width character sets are supported, both using the database character set. Maximum size is (4 gigabytes - 1) * (database block size)."
-            },
-            "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
-            "page_id": "page:b293eb921135eeb63868744c",
-            "section_heading": "Data Types / Oracle Built-in Data Types",
-            "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
-            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
-          },
-          "evidence_refs": [
-            "block:97e42c10f28442e4ee0eeb48"
-          ],
-          "field_evidence": [
-            {
-              "basis": "PROFILE_PHYSICAL_SLOT",
-              "block_id": "block:97e42c10f28442e4ee0eeb48",
-              "cell_index": 1,
-              "definition_unit_id": "definition_unit:b29a3f188ddd418d970e01b7",
-              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(20) > td:nth-of-type(2)",
-              "field": "formal_syntax",
-              "fragment_id": "field_fragment:8377b46e8decea5d9a6e090b74cd6960",
-              "identity_unit_id": "identity_unit:f95b6c95ef5349f8aa661088",
-              "owner_ids": [
-                "owner:70f4b8f1297c04b29d4dff7c"
-              ],
-              "page_id": "page:b293eb921135eeb63868744c",
-              "profile_digest": "4d7dce047bd239f2e3495a73003c92a416c223f1bcefd1f818ac60cf4c60d949",
-              "proof_level": "VERIFIED",
-              "raw_text": "CLOB",
-              "schema_version": "FieldEvidence/v1",
-              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
-              "source_order": 97,
-              "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
-              "subject": "CLOB"
-            }
-          ],
-          "fragment_refs": [
-            "field_fragment:8377b46e8decea5d9a6e090b74cd6960"
-          ],
-          "source_locations": [
-            {
-              "block_id": "block:97e42c10f28442e4ee0eeb48",
-              "cell_index": 1,
-              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(20) > td:nth-of-type(2)",
-              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42"
-            }
-          ],
-          "value": "CLOB"
-        }
-      ]
-    },
-    "structural": {
-      "aliases": [],
-      "attributes": {
-        "field_reviews": [],
-        "identity_unit_id": "identity_unit:f95b6c95ef5349f8aa661088",
-        "quarantined_fields": [],
-        "sense_id": "sense:e039a824c987ec1b88667bfc"
-      },
-      "canonical_name": "CLOB",
-      "name": "CLOB",
-      "primary_evidence": {
-        "block_id": "block:5eb9c3f695a86abac5a5b5ec",
-        "block_type": "TABLE_ROW",
-        "evidence_role": "IDENTITY",
-        "evidence_span": {
-          "end": 36,
-          "start": 0,
-          "text": "CLOB X X X X – – – – - X – – – – X –"
-        },
-        "page_hash": "7108041601eaedf488fcaa1540b43dee070915f85c81b1bd3b59a3b05a66f9c2",
-        "page_id": "page:aaeeffd469215dc80644dda4",
-        "section_heading": "Data Type Comparison Rules / Data Conversion / Implicit Data Conversion",
-        "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html",
-        "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html"
-      },
-      "return_types": [],
-      "signatures": [
-        "CLOB"
-      ],
-      "supporting_evidence": [
-        {
-          "block_id": "block:97e42c10f28442e4ee0eeb48",
-          "block_type": "TABLE_ROW",
-          "evidence_role": "SUPPORTING",
-          "evidence_span": {
-            "end": 245,
-            "start": 0,
-            "text": "112 CLOB A character large object containing single-byte or multibyte characters. Both fixed-width and variable-width character sets are supported, both using the database character set. Maximum size is (4 gigabytes - 1) * (database block size)."
-          },
-          "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
-          "page_id": "page:b293eb921135eeb63868744c",
-          "section_heading": "Data Types / Oracle Built-in Data Types",
-          "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
-          "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
         }
       ]
     }
@@ -120503,6 +120167,342 @@
   },
   {
     "canonical_identity": {
+      "canonical_name": "CLOB",
+      "dbms": "oracle",
+      "discriminator": "DEFAULT",
+      "feature_type": "datatype",
+      "key": "oracle|datatype|clob|default"
+    },
+    "canonical_name": "CLOB",
+    "dbms": "oracle",
+    "doc_version": "current",
+    "feature_id": "canonical:2140ab10766fb6d059177e14",
+    "feature_type": "datatype",
+    "field_validation_status": "PASS",
+    "name": "CLOB",
+    "promotion_eligibility": "promotion_ready",
+    "provenance": {
+      "admission_id": "admission:42cc37515b8a6e4dedf095bc",
+      "evidence_ids": [
+        "evidence:6db16ac48eb5ced59aad0cb6",
+        "evidence:9a71b12633a0b11396dbe981"
+      ],
+      "identity_unit_id": "identity_unit:f95b6c95ef5349f8aa661088",
+      "producer_stage": "generic_canonical_projection",
+      "producer_version": "generic-unified-contract/v1",
+      "semantic_record_id": "semantic_record:bf659b4427252431d74547e6"
+    },
+    "quality": {
+      "conflict_state": "clear",
+      "fields_missing": [
+        "official_examples",
+        "notes",
+        "parameters",
+        "return_type"
+      ],
+      "fields_populated": [
+        "description",
+        "formal_syntax"
+      ],
+      "ownership_ambiguity": false,
+      "semantic_evidence_resolved": true,
+      "structural_evidence_resolved": true
+    },
+    "schema_version": "canonical-feature-kb-projection/v1",
+    "semantic_execution_state": "PARTIAL",
+    "semantic_extensions": {
+      "datatype": {
+        "definition_names": [
+          {
+            "evidence_refs": [
+              "block:5eb9c3f695a86abac5a5b5ec"
+            ],
+            "provenance": [
+              {
+                "block_id": "block:5eb9c3f695a86abac5a5b5ec",
+                "document_id": "doc_ffbdee0a93d94c4e",
+                "evidence_ids": [
+                  "evidence:6db16ac48eb5ced59aad0cb6"
+                ],
+                "html_path": "/home/runner/work/DialectRanger/DialectRanger/script/FeatureKnowledgeBase/.runtime/runs/oracle_344c29355ec1438e86a01e2ce320b8d3/scoped_discovery/corpus/pages/doc_ffbdee0a93d94c4e.html",
+                "identity_unit_id": "identity_unit:f95b6c95ef5349f8aa661088",
+                "owner_ids": [
+                  "owner:2033446ebb121fc4225efe64"
+                ],
+                "page_id": "page:aaeeffd469215dc80644dda4",
+                "row_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(13)",
+                "source_cell": {
+                  "cell_index": 0,
+                  "cell_kind": "TD",
+                  "colspan": 1,
+                  "column_end": 0,
+                  "column_start": 0,
+                  "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(13) > td:nth-of-type(1)",
+                  "explicit_header_ids": [],
+                  "footnote_links": [],
+                  "fragments": [],
+                  "header_role": "DATA_CELL",
+                  "header_status": "OBSERVED_GRID",
+                  "headers": [
+                    {
+                      "colspan": 1,
+                      "column_end": 0,
+                      "column_start": 0,
+                      "dom_locator": "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)",
+                      "markers": [],
+                      "row_index": 0,
+                      "rowspan": 1,
+                      "text": "DataType"
+                    }
+                  ],
+                  "html_id": null,
+                  "links": [],
+                  "markers": [],
+                  "nested_table": false,
+                  "raw_colspan": null,
+                  "raw_rowspan": null,
+                  "row_index": 13,
+                  "rowspan": 1,
+                  "scope": null,
+                  "text": "CLOB"
+                },
+                "source_hash": "7108041601eaedf488fcaa1540b43dee070915f85c81b1bd3b59a3b05a66f9c2",
+                "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html",
+                "table_locator": "html > body > article > table:nth-of-type(2)",
+                "value_cell": {
+                  "cell_index": 0,
+                  "cell_kind": "TD",
+                  "colspan": 1,
+                  "column_end": 0,
+                  "column_start": 0,
+                  "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(13) > td:nth-of-type(1)",
+                  "explicit_header_ids": [],
+                  "footnote_links": [],
+                  "fragments": [],
+                  "header_role": "DATA_CELL",
+                  "header_status": "OBSERVED_GRID",
+                  "headers": [
+                    {
+                      "colspan": 1,
+                      "column_end": 0,
+                      "column_start": 0,
+                      "dom_locator": "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)",
+                      "markers": [],
+                      "row_index": 0,
+                      "rowspan": 1,
+                      "text": "DataType"
+                    }
+                  ],
+                  "html_id": null,
+                  "links": [],
+                  "markers": [],
+                  "nested_table": false,
+                  "raw_colspan": null,
+                  "raw_rowspan": null,
+                  "row_index": 13,
+                  "rowspan": 1,
+                  "scope": null,
+                  "text": "CLOB"
+                }
+              }
+            ],
+            "source_locations": [
+              {
+                "block_id": "block:5eb9c3f695a86abac5a5b5ec",
+                "cell_index": 0,
+                "dom_locator": "html > body > article > table:nth-of-type(2) > tbody > tr:nth-of-type(13) > td:nth-of-type(1)",
+                "header_locators": [
+                  "html > body > article > table:nth-of-type(2) > thead > tr > th:nth-of-type(1)"
+                ]
+              }
+            ],
+            "status": "VERIFIED",
+            "text": "CLOB"
+          }
+        ],
+        "mappings": [],
+        "notes": [],
+        "uncertain_observations": []
+      },
+      "diagnostics": [],
+      "schema_version": "canonical-semantic-extensions/v1"
+    },
+    "semantic_status": "PARTIAL",
+    "semantics": {
+      "aliases": [],
+      "constraints": [],
+      "description": [
+        {
+          "additional_provenance": [],
+          "evidence": {
+            "block_id": "block:97e42c10f28442e4ee0eeb48",
+            "block_type": "TABLE_ROW",
+            "evidence_role": "DESCRIPTION",
+            "evidence_span": {
+              "end": 245,
+              "start": 0,
+              "text": "112 CLOB A character large object containing single-byte or multibyte characters. Both fixed-width and variable-width character sets are supported, both using the database character set. Maximum size is (4 gigabytes - 1) * (database block size)."
+            },
+            "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
+            "page_id": "page:b293eb921135eeb63868744c",
+            "section_heading": "Data Types / Oracle Built-in Data Types",
+            "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
+          },
+          "evidence_refs": [
+            "block:97e42c10f28442e4ee0eeb48"
+          ],
+          "field_evidence": [
+            {
+              "basis": "PROFILE_PHYSICAL_SLOT",
+              "block_id": "block:97e42c10f28442e4ee0eeb48",
+              "cell_index": 2,
+              "definition_unit_id": "definition_unit:b29a3f188ddd418d970e01b7",
+              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(20) > td:nth-of-type(3)",
+              "field": "description",
+              "fragment_id": "field_fragment:8bb654e87402f4e7073dbdfbb954a3b3",
+              "identity_unit_id": "identity_unit:f95b6c95ef5349f8aa661088",
+              "owner_ids": [
+                "owner:70f4b8f1297c04b29d4dff7c"
+              ],
+              "page_id": "page:b293eb921135eeb63868744c",
+              "profile_digest": "4d7dce047bd239f2e3495a73003c92a416c223f1bcefd1f818ac60cf4c60d949",
+              "proof_level": "VERIFIED",
+              "raw_text": "A character large object containing single-byte or multibyte characters. Both fixed-width and variable-width character sets are supported, both using the database character set. Maximum size is (4 gigabytes - 1) * (database block size).",
+              "schema_version": "FieldEvidence/v1",
+              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
+              "source_order": 97,
+              "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
+              "subject": "CLOB"
+            }
+          ],
+          "fragment_refs": [
+            "field_fragment:8bb654e87402f4e7073dbdfbb954a3b3"
+          ],
+          "source_locations": [
+            {
+              "block_id": "block:97e42c10f28442e4ee0eeb48",
+              "cell_index": 2,
+              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(20) > td:nth-of-type(3)",
+              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42"
+            }
+          ],
+          "value": "A character large object containing single-byte or multibyte characters. Both fixed-width and variable-width character sets are supported, both using the database character set. Maximum size is (4 gigabytes - 1) * (database block size)."
+        }
+      ],
+      "examples": [],
+      "parameters": [],
+      "return_type": [],
+      "syntax": [
+        {
+          "additional_provenance": [],
+          "evidence": {
+            "block_id": "block:97e42c10f28442e4ee0eeb48",
+            "block_type": "TABLE_ROW",
+            "evidence_role": "FORMAL_SYNTAX",
+            "evidence_span": {
+              "end": 245,
+              "start": 0,
+              "text": "112 CLOB A character large object containing single-byte or multibyte characters. Both fixed-width and variable-width character sets are supported, both using the database character set. Maximum size is (4 gigabytes - 1) * (database block size)."
+            },
+            "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
+            "page_id": "page:b293eb921135eeb63868744c",
+            "section_heading": "Data Types / Oracle Built-in Data Types",
+            "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
+            "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
+          },
+          "evidence_refs": [
+            "block:97e42c10f28442e4ee0eeb48"
+          ],
+          "field_evidence": [
+            {
+              "basis": "PROFILE_PHYSICAL_SLOT",
+              "block_id": "block:97e42c10f28442e4ee0eeb48",
+              "cell_index": 1,
+              "definition_unit_id": "definition_unit:b29a3f188ddd418d970e01b7",
+              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(20) > td:nth-of-type(2)",
+              "field": "formal_syntax",
+              "fragment_id": "field_fragment:8377b46e8decea5d9a6e090b74cd6960",
+              "identity_unit_id": "identity_unit:f95b6c95ef5349f8aa661088",
+              "owner_ids": [
+                "owner:70f4b8f1297c04b29d4dff7c"
+              ],
+              "page_id": "page:b293eb921135eeb63868744c",
+              "profile_digest": "4d7dce047bd239f2e3495a73003c92a416c223f1bcefd1f818ac60cf4c60d949",
+              "proof_level": "VERIFIED",
+              "raw_text": "CLOB",
+              "schema_version": "FieldEvidence/v1",
+              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
+              "source_order": 97,
+              "source_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
+              "subject": "CLOB"
+            }
+          ],
+          "fragment_refs": [
+            "field_fragment:8377b46e8decea5d9a6e090b74cd6960"
+          ],
+          "source_locations": [
+            {
+              "block_id": "block:97e42c10f28442e4ee0eeb48",
+              "cell_index": 1,
+              "dom_locator": "html > body > article > table:nth-of-type(1) > tbody > tr:nth-of-type(20) > td:nth-of-type(2)",
+              "source_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42"
+            }
+          ],
+          "value": "CLOB"
+        }
+      ]
+    },
+    "structural": {
+      "aliases": [],
+      "attributes": {
+        "field_reviews": [],
+        "identity_unit_id": "identity_unit:f95b6c95ef5349f8aa661088",
+        "quarantined_fields": [],
+        "sense_id": "sense:e039a824c987ec1b88667bfc"
+      },
+      "canonical_name": "CLOB",
+      "name": "CLOB",
+      "primary_evidence": {
+        "block_id": "block:5eb9c3f695a86abac5a5b5ec",
+        "block_type": "TABLE_ROW",
+        "evidence_role": "IDENTITY",
+        "evidence_span": {
+          "end": 36,
+          "start": 0,
+          "text": "CLOB X X X X – – – – - X – – – – X –"
+        },
+        "page_hash": "7108041601eaedf488fcaa1540b43dee070915f85c81b1bd3b59a3b05a66f9c2",
+        "page_id": "page:aaeeffd469215dc80644dda4",
+        "section_heading": "Data Type Comparison Rules / Data Conversion / Implicit Data Conversion",
+        "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html",
+        "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Type-Comparison-Rules.html"
+      },
+      "return_types": [],
+      "signatures": [
+        "CLOB"
+      ],
+      "supporting_evidence": [
+        {
+          "block_id": "block:97e42c10f28442e4ee0eeb48",
+          "block_type": "TABLE_ROW",
+          "evidence_role": "SUPPORTING",
+          "evidence_span": {
+            "end": 245,
+            "start": 0,
+            "text": "112 CLOB A character large object containing single-byte or multibyte characters. Both fixed-width and variable-width character sets are supported, both using the database character set. Maximum size is (4 gigabytes - 1) * (database block size)."
+          },
+          "page_hash": "838c71cd932d638731111f8865838ffd24feffbfbb23d6655c8415166983da42",
+          "page_id": "page:b293eb921135eeb63868744c",
+          "section_heading": "Data Types / Oracle Built-in Data Types",
+          "source_anchor": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html",
+          "url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/sqlrf/Data-Types.html"
+        }
+      ]
+    }
+  },
+  {
+    "canonical_identity": {
       "canonical_name": "TIMESTAMP_TO_SCN",
       "dbms": "oracle",
       "discriminator": "DEFAULT",
@@ -122721,7 +122721,7 @@
                 "evidence_ids": [
                   "evidence:40fd1ad3e4a0797d4763000a"
                 ],
-                "html_path": "D:\\PyCharm 2025.1.2\\code\\FeatureCrawler\\.runtime\\runs\\oracle_de915f43456948998bb5320d6cf2f6b2\\scoped_discovery\\corpus\\pages\\doc_ffbdee0a93d94c4e.html",
+                "html_path": "/home/runner/work/DialectRanger/DialectRanger/script/FeatureKnowledgeBase/.runtime/runs/oracle_344c29355ec1438e86a01e2ce320b8d3/scoped_discovery/corpus/pages/doc_ffbdee0a93d94c4e.html",
                 "identity_unit_id": "identity_unit:a9a2db38014eeaa41dd57783",
                 "owner_ids": [
                   "owner:8d0ab18da10575b6eaf4b9b2"
@@ -123098,7 +123098,7 @@
                 "evidence_ids": [
                   "evidence:cd3e6f9e750f89064ee1994e"
                 ],
-                "html_path": "D:\\PyCharm 2025.1.2\\code\\FeatureCrawler\\.runtime\\runs\\oracle_de915f43456948998bb5320d6cf2f6b2\\scoped_discovery\\corpus\\pages\\doc_ffbdee0a93d94c4e.html",
+                "html_path": "/home/runner/work/DialectRanger/DialectRanger/script/FeatureKnowledgeBase/.runtime/runs/oracle_344c29355ec1438e86a01e2ce320b8d3/scoped_discovery/corpus/pages/doc_ffbdee0a93d94c4e.html",
                 "identity_unit_id": "identity_unit:88ba321620a6fdecc1b02cb3",
                 "owner_ids": [
                   "owner:d3c0f4480212f2a853678aa5"
@@ -125097,7 +125097,7 @@
                 "evidence_ids": [
                   "evidence:dafe116e2e5b4b17b1c1fefe"
                 ],
-                "html_path": "D:\\PyCharm 2025.1.2\\code\\FeatureCrawler\\.runtime\\runs\\oracle_de915f43456948998bb5320d6cf2f6b2\\scoped_discovery\\corpus\\pages\\doc_ffbdee0a93d94c4e.html",
+                "html_path": "/home/runner/work/DialectRanger/DialectRanger/script/FeatureKnowledgeBase/.runtime/runs/oracle_344c29355ec1438e86a01e2ce320b8d3/scoped_discovery/corpus/pages/doc_ffbdee0a93d94c4e.html",
                 "identity_unit_id": "identity_unit:8f0befffa7ae6de27de91518",
                 "owner_ids": [
                   "owner:728be53fc2ac22891baf9c60"
@@ -151205,7 +151205,7 @@
                 "evidence_ids": [
                   "evidence:77a89a01baddef189a5c06f1"
                 ],
-                "html_path": "D:\\PyCharm 2025.1.2\\code\\FeatureCrawler\\.runtime\\runs\\oracle_de915f43456948998bb5320d6cf2f6b2\\scoped_discovery\\corpus\\pages\\doc_ffbdee0a93d94c4e.html",
+                "html_path": "/home/runner/work/DialectRanger/DialectRanger/script/FeatureKnowledgeBase/.runtime/runs/oracle_344c29355ec1438e86a01e2ce320b8d3/scoped_discovery/corpus/pages/doc_ffbdee0a93d94c4e.html",
                 "identity_unit_id": "identity_unit:f28c8a7afab9d608d952e6c9",
                 "owner_ids": [
                   "owner:7886a921a69f8707e94c40d0"
@@ -167477,7 +167477,7 @@
                 "evidence_ids": [
                   "evidence:efdcbe0022036310271bf6c8"
                 ],
-                "html_path": "D:\\PyCharm 2025.1.2\\code\\FeatureCrawler\\.runtime\\runs\\oracle_de915f43456948998bb5320d6cf2f6b2\\scoped_discovery\\corpus\\pages\\doc_ffbdee0a93d94c4e.html",
+                "html_path": "/home/runner/work/DialectRanger/DialectRanger/script/FeatureKnowledgeBase/.runtime/runs/oracle_344c29355ec1438e86a01e2ce320b8d3/scoped_discovery/corpus/pages/doc_ffbdee0a93d94c4e.html",
                 "identity_unit_id": "identity_unit:c2c4e6c0d1e6448b135b7923",
                 "owner_ids": [
                   "owner:a269e23d53709803e465c279"
