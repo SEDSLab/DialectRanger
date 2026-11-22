@@ -1,16 +1,16 @@
 {
   "dbms": "duckdb",
-  "updated_at": "2026-11-14T22:48:50.386099+00:00",
-  "final_count": 716,
+  "updated_at": "2026-11-21T23:42:23.509212+00:00",
+  "final_count": 718,
   "review_count": 295,
   "by_type": {
-    "function": 596,
+    "function": 598,
     "operator": 57,
     "datatype": 63
   },
   "with_fields": {
-    "description": 697,
-    "syntax": 594,
+    "description": 699,
+    "syntax": 596,
     "examples": 481
   },
   "quality_status": "QUALITY_PARTIAL",

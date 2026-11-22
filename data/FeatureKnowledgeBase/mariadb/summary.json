@@ -1,12 +1,12 @@
 {
   "dbms": "mariadb",
-  "updated_at": "2026-11-14T23:16:26.329734+00:00",
+  "updated_at": "2026-11-22T00:10:14.638873+00:00",
   "final_count": 402,
   "review_count": 80,
   "by_type": {
     "function": 344,
-    "datatype": 33,
-    "operator": 25
+    "operator": 25,
+    "datatype": 33
   },
   "with_fields": {
     "description": 366,
